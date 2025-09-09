@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: whiteBoxGrotto.ma
-//Last modified: Tue, Sep 09, 2025 11:09:15 AM
+//Last modified: Tue, Sep 09, 2025 10:49:52 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "4A7E1377-434B-BDEB-FA82-29885CEA696D";
+fileInfo "UUID" "D57AB8C7-7645-AA5F-3E85-4B8859FE10EA";
 createNode transform -s -n "persp";
 	rename -uid "6D09C13C-9D40-2496-D94D-DF85EB219279";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.186774066758481 38.151118260059938 45.068320435019587 ;
-	setAttr ".r" -type "double3" -39.000000000027029 28.800000000000136 3.6294995278414616e-15 ;
+	setAttr ".t" -type "double3" 5.0738034964565619 19.558734457017596 53.154445449695977 ;
+	setAttr ".r" -type "double3" -17.400000000025482 11.999999999999334 -4.064512706310196e-16 ;
 	setAttr ".rp" -type "double3" 0 -2.2737367544323206e-15 0 ;
 	setAttr ".rpt" -type "double3" -7.2106549170798821e-16 5.1985139237982054e-17 -2.9142163777335989e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -29,7 +29,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 51.523387494846631;
+	setAttr ".coi" 46.255677892870239;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -415,7 +415,7 @@ createNode mesh -n "pCubeShape6" -p "pCube6";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 2 ".pt[23:24]" -type "float3"  0 0 -2.4414062e-06 0 0 -2.4414062e-06;
+	setAttr -s 3 ".pt[23:24]" -type "float3"  0 0 -2.4414062e-06 0 0 -2.4414062e-06;
 	setAttr -s 34 ".vt[0:33]"  2.78358555 0.028060913 -10.78768539 2.59743643 0.028060913 -10.41343784
 		 2.78358555 9.57729721 -10.78768539 2.59743929 9.57729721 -10.41343975 7.82405758 9.57729721 -8.2805872
 		 7.63790751 9.57729721 -7.90633678 7.82405758 0.028060913 -8.2805872 7.63790941 0.028060913 -7.90633774
@@ -535,7 +535,7 @@ createNode mesh -n "pCubeShape7" -p "pCube7";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 13 ".pt";
+	setAttr -s 15 ".pt";
 	setAttr ".pt[5]" -type "float3" 3.0882916 0 9.3390636 ;
 	setAttr ".pt[10]" -type "float3" 3.0882916 0 9.3390636 ;
 	setAttr ".pt[11]" -type "float3" 3.0882916 0 9.3390636 ;
@@ -666,7 +666,7 @@ createNode mesh -n "pCubeShape8" -p "pCube8";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt";
+	setAttr -s 10 ".pt";
 	setAttr ".pt[16]" -type "float3" 0 0 -4.8828124e-06 ;
 	setAttr ".pt[17]" -type "float3" 1.2207031e-06 0 -3.6621093e-06 ;
 	setAttr ".pt[18]" -type "float3" 1.2207031e-06 0 -3.6621093e-06 ;
@@ -4380,20 +4380,20 @@ createNode mesh -n "pConeShape12" -p "pCone12";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E339476D-E249-1A0B-B4BB-9EA53DB0D267";
+	rename -uid "50C5329B-744A-74AE-9D7F-719D0CC3A4EF";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8FA26274-654C-1139-36AA-23B5808B5D31";
+	rename -uid "5A335BEA-374C-023F-5A10-4590747040A2";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "2FBE1995-574E-A697-3285-229E434D4520";
+	rename -uid "AAC997FE-5048-30A2-1161-C89605CA0B1D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C6958200-D746-E40D-E42B-EB96A40B6666";
+	rename -uid "4E493FDE-544D-C77E-E3C9-22BDC4B3E01C";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5FC30E4F-6B40-C9E8-D1EC-D284DF83AC4D";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "862A569D-3142-ECD7-9DCD-B89299CE4230";
+	rename -uid "65ECAD70-C64F-EC38-9C24-0BB69C2065D4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "AE45D2B4-B94F-3D9A-62C1-78BBAA1A7298";
 	setAttr ".g" yes;
@@ -4415,15 +4415,9 @@ createNode reference -n "SkeletonRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SkeletonRN"
 		"SkeletonRN" 0
-		"SkeletonRN" 4
+		"SkeletonRN" 1
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls" 
-		"translate" " -type \"double3\" 0 -0.98768524169921879 -0.025223000049590907"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls" 
-		"translateY" " -av"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls" 
-		"translateZ" " -av";
+		"translate" " -type \"double3\" 0 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode script -n "uiConfigurationScriptNode";
@@ -4495,7 +4489,7 @@ createNode polyExtrudeFace -n "polyExtrudeFace2";
 	setAttr ".cbn" -type "double3" -12.20224365234375 14.92670654296875 5.8346466064453129 ;
 	setAttr ".cbx" -type "double3" -3.1158706665039064 21.100595703125002 7.2526373291015629 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "DC174BD8-2048-5D3E-ADD5-F8970251342E";
+	rename -uid "4F3AAA01-F946-9929-FE9E-59BDC52BB8D8";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 81;
