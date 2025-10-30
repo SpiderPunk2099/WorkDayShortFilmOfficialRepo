@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Shot26.ma
-//Last modified: Thu, Oct 30, 2025 11:25:54 AM
+//Last modified: Thu, Oct 30, 2025 11:22:13 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "Chair_Workday_Project" -rfn "Chair_Workday_ProjectRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/chair/Chair_Workday_Project.ma";
@@ -34,13 +34,13 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "7C8B378C-2044-74BD-208C-55841C740CC1";
+fileInfo "UUID" "0AEE6144-684A-8D27-788C-7983E9692AFB";
 file -r -ns "workspace" -dr 1 -rfn "workspaceRN1" -op "v=0;p=17" -typ "mel" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/cerealBowl/workspace.mel";
 createNode transform -s -n "persp";
 	rename -uid "2B77CC5B-4D44-8AC7-3A86-8A82D0249693";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.6867882086341248 1.2178625423380702 1.5771450927987543 ;
-	setAttr ".r" -type "double3" -6.0000000001223688 -1032.7999999999151 -1.7554246379635033e-15 ;
+	setAttr ".t" -type "double3" 3.9597402599294025 2.3540255930800202 0.69797367046361969 ;
+	setAttr ".r" -type "double3" -20.400000000118517 -996.79999999992208 0 ;
 	setAttr ".rpt" -type "double3" 2.5220488450746243e-18 1.5232540434985685e-18 -1.148491842110326e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5EEFE4D7-4F42-9965-E034-DD827589BD24";
@@ -49,7 +49,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 0.59604531385765769;
+	setAttr ".coi" 2.3767119596209727;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -2934,7 +2934,7 @@ createNode reference -n "LivingRoomSetRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "D76D23E6-FD47-F27A-49E2-03AF6607F7A4";
+	rename -uid "00AF5B9A-F14F-CB88-4E07-8EAAC808DEBF";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 18;
