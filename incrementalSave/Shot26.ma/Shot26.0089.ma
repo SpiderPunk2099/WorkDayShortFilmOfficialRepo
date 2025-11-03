@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Shot26.ma
-//Last modified: Mon, Nov 03, 2025 11:47:42 AM
+//Last modified: Mon, Nov 03, 2025 11:38:53 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "Chair_Workday_Project" -rfn "Chair_Workday_ProjectRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/chair/Chair_Workday_Project.ma";
@@ -34,13 +34,13 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "A8D0D547-E448-2C26-78BC-A5B88320C744";
+fileInfo "UUID" "ABEBACD4-1541-8F2F-801D-C19A2609EBCE";
 file -r -ns "workspace" -dr 1 -rfn "workspaceRN1" -op "v=0;p=17" -typ "mel" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/cerealBowl/workspace.mel";
 createNode transform -s -n "persp";
 	rename -uid "2B77CC5B-4D44-8AC7-3A86-8A82D0249693";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.0945563406513377 1.4040311408154542 2.8062719029679402 ;
-	setAttr ".r" -type "double3" -13.200000000248789 -1170.3999999991254 0 ;
+	setAttr ".t" -type "double3" 3.2093318626415979 1.0875624847105032 2.7599301794231401 ;
+	setAttr ".r" -type "double3" -3.5999999999999797 -1171.9999999991462 0 ;
 	setAttr ".rpt" -type "double3" 2.5220488450746243e-18 1.5232540434985685e-18 -1.148491842110326e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5EEFE4D7-4F42-9965-E034-DD827589BD24";
@@ -49,7 +49,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 1.8510613752137639;
+	setAttr ".coi" 1.6917015555433224;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -161,7 +161,7 @@ createNode reference -n "Chair_Workday_ProjectRN";
 		"Chair_Workday_ProjectRN" 0
 		"Chair_Workday_ProjectRN" 3
 		2 "|Chair_Workday_Project:Chair_Geo|Chair_Workday_Project:Chair" "translate" 
-		" -type \"double3\" 5.17983636782236534 0.54594498849891193 2.77153300751492138"
+		" -type \"double3\" 5.17983636782236534 0.54594498849891193 1.39171682604381575"
 		2 "|Chair_Workday_Project:Chair_Geo|Chair_Workday_Project:Chair" "rotate" 
 		" -type \"double3\" 0 -89.89948383808271615 0"
 		2 "|Chair_Workday_Project:Chair_Geo|Chair_Workday_Project:Chair" "scale" 
@@ -314,7 +314,7 @@ createNode reference -n "SkeletonRN";
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 4.24015715816999705"
+		"rotate" " -type \"double3\" 0 0 4.18407920969390279"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_Ctrl_Grp|Skeleton:Head_Ctrl" 
@@ -1882,15 +1882,8 @@ createNode reference -n "DiningTableRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DiningTableRN"
 		"DiningTableRN" 0
-		"DiningTableRN" 15
+		"DiningTableRN" 10
 		0 "|DiningTable:DiningTable" "|group1" "-s -r "
-		2 "|group1|DiningTable:DiningTable" "translate" " -type \"double3\" -0.051472053764728777 0.4320183990007827 0.70208849049230282"
-		
-		2 "|group1|DiningTable:DiningTable" "translateX" " -av"
-		2 "|group1|DiningTable:DiningTable" "translateZ" " -av"
-		2 "|group1|DiningTable:DiningTable" "rotate" " -type \"double3\" 0 91.61711298060029662 0"
-		
-		2 "|group1|DiningTable:DiningTable" "rotateY" " -av"
 		5 4 "DiningTableRN" "|group1|DiningTable:DiningTable.translateX" "DiningTableRN.placeHolderList[1]" 
 		""
 		5 4 "DiningTableRN" "|group1|DiningTable:DiningTable.translateY" "DiningTableRN.placeHolderList[2]" 
@@ -2990,11 +2983,11 @@ createNode animCurveTA -n "Chest_Redundancy_Ctrl_rotateY";
 	setAttr -s 3 ".kix[1:2]"  1 1;
 	setAttr -s 3 ".kiy[1:2]"  0 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "DE8BA0D0-0A40-79F6-7F08-239885C7FF8B";
+	rename -uid "491B5490-FB47-42E8-FFE1-EB81D5FB5967";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 1;
-	setAttr ".unw" 1;
+	setAttr ".o" 44;
+	setAttr ".unw" 44;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
