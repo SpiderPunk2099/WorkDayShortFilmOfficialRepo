@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Shot26.ma
-//Last modified: Thu, Nov 06, 2025 10:47:30 AM
+//Last modified: Thu, Nov 06, 2025 12:46:31 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Chair_Workday_Project" -rfn "Chair_Workday_ProjectRN" -op "v=0;"
 		 -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/chair/Chair_Workday_Project.ma";
@@ -33,7 +33,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "B7A938CE-264B-1FDA-8A31-E6BEEF8F939C";
+fileInfo "UUID" "BFBB8BAE-9F4D-5C0A-58AB-92BBDE7E4516";
 file -r -ns "workspace" -dr 1 -rfn "workspaceRN1" -op "v=0;p=17" -typ "mel" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/ApartmentProps/cerealBowl/workspace.mel";
 createNode transform -s -n "persp";
 	rename -uid "2B77CC5B-4D44-8AC7-3A86-8A82D0249693";
@@ -121,7 +121,7 @@ createNode transform -n "group1";
 	setAttr ".rp" -type "double3" -0.49999944559492471 0.90717818839270636 0.44774400023405064 ;
 	setAttr ".sp" -type "double3" -0.49999944559492471 0.90717818839270636 0.44774400023405064 ;
 createNode fosterParent -n "SkeletonRNfosterParent1";
-	rename -uid "25762D70-2F45-BAA8-39C6-F8A1008087BB";
+	rename -uid "2F376AF7-9A48-AA9D-6973-4C84ADC0126C";
 createNode transform -n "R_Mouth_Ctrl1" -p "SkeletonRNfosterParent1";
 	rename -uid "3D5FD82B-0149-7F36-7A01-8E968F9FE2D6";
 	setAttr ".rp" -type "double3" 4.4408920985006263e-18 0 0 ;
@@ -273,7 +273,7 @@ createNode nurbsCurve -n "L_Mouth_CtrlShape" -p "L_Mouth_Ctrl";
 		-0.0044441804335628434 -0.0044441804335639563 0.018994117194849523
 		;
 createNode fosterParent -n "Spoon_and_BowlRNfosterParent1";
-	rename -uid "39F01B37-C24F-6911-D300-86865F5ED8D2";
+	rename -uid "D60F1FFA-4C4E-4BD5-6B61-6BA968BCEF39";
 createNode parentConstraint -n "Spoon_parentConstraint1" -p "Spoon_and_BowlRNfosterParent1";
 	rename -uid "015A0FA7-134F-DA23-A8E9-3BBB7BAF17D6";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Arm_IK_End_CtrlW0" -dv 1 -min 0 
@@ -292,7 +292,7 @@ createNode parentConstraint -n "Spoon_parentConstraint1" -p "Spoon_and_BowlRNfos
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.066703836538221428 0.033219497092928443 0.04549035383266168 ;
 	setAttr ".tg[0].tor" -type "double3" -93.782870204162222 -35.835535951371398 10.813130621859029 ;
-	setAttr ".lr" -type "double3" -192.33436159476244 38.256721635434516 182.34205565787315 ;
+	setAttr ".lr" -type "double3" -162.61195715688044 30.415451046777402 200.31169076029744 ;
 	setAttr ".rst" -type "double3" 4.7252149878479006 0.82572274389994893 2.8678153499779548 ;
 	setAttr ".rsrr" -type "double3" -197.78817128071168 38.748855717149695 178.79591496735162 ;
 	setAttr -k on ".w0";
@@ -6375,8 +6375,8 @@ createNode animCurveTA -n "Spine_03_Ctrl_rotateZ";
 	setAttr ".ktv[0]"  45 0;
 	setAttr ".kot[0]"  5;
 select -ne :time1;
-	setAttr ".o" 31;
-	setAttr ".unw" 31;
+	setAttr ".o" 48;
+	setAttr ".unw" 48;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
