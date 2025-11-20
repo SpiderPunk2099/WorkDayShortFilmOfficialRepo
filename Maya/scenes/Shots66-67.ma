@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Shots66-67.ma
-//Last modified: Tue, Nov 18, 2025 09:29:43 PM
+//Last modified: Thu, Nov 20, 2025 01:37:40 PM
 //Codeset: 1252
 file -rdi 1 -ns "Dragon_Rig" -rfn "Dragon_RigRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/characters/dragon/Dragon_Rig.ma";
@@ -41,7 +41,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202405151550-05a853e76d";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "797EF31F-4BF1-25C3-46DE-E9914B83B561";
+fileInfo "UUID" "FD2D5305-4608-A8AC-6A5D-FEB9E341C754";
 createNode transform -s -n "persp";
 	rename -uid "A8A977FC-4ACC-7E86-3730-96A88FB6B747";
 	setAttr ".v" no;
@@ -116,14 +116,14 @@ createNode camera -n "CAM_01Shape" -p "CAM_01";
 	rename -uid "9A7F3A32-4030-EBCE-BD39-4E8AEAC093AC";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2188.4369216918008;
+	setAttr ".coi" 1235.5431466482919;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -310.50939221347596 794.14750788280412 549.27970189833047 ;
+	setAttr ".tp" -type "double3" -50.177998801797791 308.52274965394724 -114.35040349905282 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode fosterParent -n "woodenChestRNfosterParent1";
-	rename -uid "33E9CD53-4EBB-04D9-D766-B680091A411B";
+	rename -uid "558C41FE-47B7-5407-308E-F1A79C16E5E4";
 createNode parentConstraint -n "polySurface2_parentConstraint1" -p "woodenChestRNfosterParent1";
 	rename -uid "E84F0B5D-4E87-5EC9-9290-1A93787C6FE4";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "L_Arm_03_IK_CtrlW0" -dv 1 -min 0 
@@ -197,7 +197,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|CAM_01\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
 		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
-		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1740\n            -height 1083\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1740\n            -height 1079\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
 		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n"
 		+ "            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n"
@@ -224,8 +224,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
 		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|CAM_01\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1740\\n    -height 1083\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|CAM_01\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1740\\n    -height 1083\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|CAM_01\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1740\\n    -height 1079\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|CAM_01\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1740\\n    -height 1079\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.05 -size 0.12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -234,7 +234,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".st" 6;
 createNode reference -n "Dragon_RigRN";
 	rename -uid "D4DBAC17-411A-068C-C477-86910E338E1D";
-	setAttr -s 551 ".phl";
+	setAttr -s 684 ".phl";
 	setAttr ".phl[420]" 0;
 	setAttr ".phl[421]" 0;
 	setAttr ".phl[422]" 0;
@@ -784,6 +784,139 @@ createNode reference -n "Dragon_RigRN";
 	setAttr ".phl[966]" 0;
 	setAttr ".phl[967]" 0;
 	setAttr ".phl[968]" 0;
+	setAttr ".phl[969]" 0;
+	setAttr ".phl[970]" 0;
+	setAttr ".phl[971]" 0;
+	setAttr ".phl[972]" 0;
+	setAttr ".phl[973]" 0;
+	setAttr ".phl[974]" 0;
+	setAttr ".phl[975]" 0;
+	setAttr ".phl[976]" 0;
+	setAttr ".phl[977]" 0;
+	setAttr ".phl[978]" 0;
+	setAttr ".phl[979]" 0;
+	setAttr ".phl[980]" 0;
+	setAttr ".phl[981]" 0;
+	setAttr ".phl[982]" 0;
+	setAttr ".phl[983]" 0;
+	setAttr ".phl[984]" 0;
+	setAttr ".phl[985]" 0;
+	setAttr ".phl[986]" 0;
+	setAttr ".phl[987]" 0;
+	setAttr ".phl[988]" 0;
+	setAttr ".phl[989]" 0;
+	setAttr ".phl[990]" 0;
+	setAttr ".phl[991]" 0;
+	setAttr ".phl[992]" 0;
+	setAttr ".phl[993]" 0;
+	setAttr ".phl[994]" 0;
+	setAttr ".phl[995]" 0;
+	setAttr ".phl[996]" 0;
+	setAttr ".phl[997]" 0;
+	setAttr ".phl[998]" 0;
+	setAttr ".phl[999]" 0;
+	setAttr ".phl[1000]" 0;
+	setAttr ".phl[1001]" 0;
+	setAttr ".phl[1002]" 0;
+	setAttr ".phl[1003]" 0;
+	setAttr ".phl[1004]" 0;
+	setAttr ".phl[1005]" 0;
+	setAttr ".phl[1006]" 0;
+	setAttr ".phl[1007]" 0;
+	setAttr ".phl[1008]" 0;
+	setAttr ".phl[1009]" 0;
+	setAttr ".phl[1010]" 0;
+	setAttr ".phl[1011]" 0;
+	setAttr ".phl[1012]" 0;
+	setAttr ".phl[1013]" 0;
+	setAttr ".phl[1014]" 0;
+	setAttr ".phl[1015]" 0;
+	setAttr ".phl[1016]" 0;
+	setAttr ".phl[1017]" 0;
+	setAttr ".phl[1018]" 0;
+	setAttr ".phl[1019]" 0;
+	setAttr ".phl[1020]" 0;
+	setAttr ".phl[1021]" 0;
+	setAttr ".phl[1022]" 0;
+	setAttr ".phl[1023]" 0;
+	setAttr ".phl[1024]" 0;
+	setAttr ".phl[1025]" 0;
+	setAttr ".phl[1026]" 0;
+	setAttr ".phl[1027]" 0;
+	setAttr ".phl[1028]" 0;
+	setAttr ".phl[1029]" 0;
+	setAttr ".phl[1030]" 0;
+	setAttr ".phl[1031]" 0;
+	setAttr ".phl[1032]" 0;
+	setAttr ".phl[1033]" 0;
+	setAttr ".phl[1034]" 0;
+	setAttr ".phl[1035]" 0;
+	setAttr ".phl[1036]" 0;
+	setAttr ".phl[1037]" 0;
+	setAttr ".phl[1038]" 0;
+	setAttr ".phl[1039]" 0;
+	setAttr ".phl[1040]" 0;
+	setAttr ".phl[1041]" 0;
+	setAttr ".phl[1042]" 0;
+	setAttr ".phl[1043]" 0;
+	setAttr ".phl[1044]" 0;
+	setAttr ".phl[1045]" 0;
+	setAttr ".phl[1046]" 0;
+	setAttr ".phl[1047]" 0;
+	setAttr ".phl[1048]" 0;
+	setAttr ".phl[1049]" 0;
+	setAttr ".phl[1050]" 0;
+	setAttr ".phl[1051]" 0;
+	setAttr ".phl[1052]" 0;
+	setAttr ".phl[1053]" 0;
+	setAttr ".phl[1054]" 0;
+	setAttr ".phl[1055]" 0;
+	setAttr ".phl[1056]" 0;
+	setAttr ".phl[1057]" 0;
+	setAttr ".phl[1058]" 0;
+	setAttr ".phl[1059]" 0;
+	setAttr ".phl[1060]" 0;
+	setAttr ".phl[1061]" 0;
+	setAttr ".phl[1062]" 0;
+	setAttr ".phl[1063]" 0;
+	setAttr ".phl[1064]" 0;
+	setAttr ".phl[1065]" 0;
+	setAttr ".phl[1066]" 0;
+	setAttr ".phl[1067]" 0;
+	setAttr ".phl[1068]" 0;
+	setAttr ".phl[1069]" 0;
+	setAttr ".phl[1070]" 0;
+	setAttr ".phl[1071]" 0;
+	setAttr ".phl[1072]" 0;
+	setAttr ".phl[1073]" 0;
+	setAttr ".phl[1074]" 0;
+	setAttr ".phl[1075]" 0;
+	setAttr ".phl[1076]" 0;
+	setAttr ".phl[1077]" 0;
+	setAttr ".phl[1078]" 0;
+	setAttr ".phl[1079]" 0;
+	setAttr ".phl[1080]" 0;
+	setAttr ".phl[1081]" 0;
+	setAttr ".phl[1082]" 0;
+	setAttr ".phl[1083]" 0;
+	setAttr ".phl[1084]" 0;
+	setAttr ".phl[1085]" 0;
+	setAttr ".phl[1086]" 0;
+	setAttr ".phl[1087]" 0;
+	setAttr ".phl[1088]" 0;
+	setAttr ".phl[1089]" 0;
+	setAttr ".phl[1090]" 0;
+	setAttr ".phl[1091]" 0;
+	setAttr ".phl[1092]" 0;
+	setAttr ".phl[1093]" 0;
+	setAttr ".phl[1094]" 0;
+	setAttr ".phl[1095]" 0;
+	setAttr ".phl[1096]" 0;
+	setAttr ".phl[1097]" 0;
+	setAttr ".phl[1098]" 0;
+	setAttr ".phl[1099]" 0;
+	setAttr ".phl[1100]" 0;
+	setAttr ".phl[1101]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Dragon_RigRN"
 		"Dragon_RigRN" 4
@@ -795,7 +928,7 @@ createNode reference -n "Dragon_RigRN";
 		"Dragon_RigRN.placeHolderList[226]" ""
 		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_Flap" 
 		"Dragon_RigRN.placeHolderList[419]" ""
-		"Dragon_RigRN" 649
+		"Dragon_RigRN" 757
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_01_FK_Ctrl_Grp|Dragon_Rig:Tail_01_FK_Ctrl" 
@@ -814,11 +947,37 @@ createNode reference -n "Dragon_RigRN";
 		"Follow_Translate" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_04_FK_Ctrl_Grp|Dragon_Rig:Tail_04_FK_Ctrl" 
 		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_05_FK_Ctrl_Grp|Dragon_Rig:Tail_05_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_05_FK_Ctrl_Grp|Dragon_Rig:Tail_05_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_06_FK_Ctrl_Grp|Dragon_Rig:Tail_06_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_06_FK_Ctrl_Grp|Dragon_Rig:Tail_06_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_07_FK_Ctrl_Grp|Dragon_Rig:Tail_07_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_07_FK_Ctrl_Grp|Dragon_Rig:Tail_07_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_08_FK_Ctrl_Grp|Dragon_Rig:Tail_08_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_08_FK_Ctrl_Grp|Dragon_Rig:Tail_08_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_09_FK_Ctrl_Grp|Dragon_Rig:Tail_09_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_09_FK_Ctrl_Grp|Dragon_Rig:Tail_09_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_10_FK_Ctrl_Grp|Dragon_Rig:Tail_10_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_10_FK_Ctrl_Grp|Dragon_Rig:Tail_10_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_11_FK_Ctrl_Grp|Dragon_Rig:Tail_11_FK_Ctrl" 
+		"Follow_Translate" " -k 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_11_FK_Ctrl_Grp|Dragon_Rig:Tail_11_FK_Ctrl" 
+		"Follow_Rotate" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_01_Ctrl_Grp|Dragon_Rig:Spine_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl" 
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_01_Ctrl_Grp|Dragon_Rig:Spine_01_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl" 
 		"Follow_Translate" " -k 1"
@@ -886,38 +1045,10 @@ createNode reference -n "Dragon_RigRN";
 		"Wing_Flap_Animation" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:L_Leg_Clav_Ctrl_Grp|Dragon_Rig:L_Leg_Clav_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl" 
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Leg_01_IK_Ctrl_Grp|Dragon_Rig:L_Leg_01_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl" 
+		"Operating_Space" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl" 
 		"visibility" " 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl" 
@@ -926,73 +1057,25 @@ createNode reference -n "Dragon_RigRN";
 		"rotate" " -type \"double3\" 0 0 -100"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_01_Ctrl" 
 		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl" 
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:R_Leg_Clav_Ctrl_Grp|Dragon_Rig:R_Leg_Clav_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl" 
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Leg_01_IK_Ctrl_Grp|Dragon_Rig:R_Leg_01_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl" 
-		"visibility" " 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -100"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl" 
+		"Operating_Space" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl" 
 		"Operating_Space" " -k 1"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_01_IK_Ctrl_Grp|Dragon_Rig:R_Wing_01_IK_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_01_IK_Ctrl_Grp|Dragon_Rig:R_Wing_01_IK_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_PV_Ctrl_Grp|Dragon_Rig:R_Wing_PV_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_PV_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_PV_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl" 
 		"Operating_Space" " -k 1"
 		2 "Dragon_Rig:Geo" "displayType" " 2"
 		2 "Dragon_Rig:Jnt" "visibility" " 0"
-		2 "Dragon_Rig:Ctrl" "visibility" " 1"
+		2 "Dragon_Rig:Ctrl" "visibility" " 0"
 		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[420]" ""
 		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl.translateY" 
@@ -1297,800 +1380,1066 @@ createNode reference -n "Dragon_RigRN";
 		"Dragon_RigRN.placeHolderList[570]" ""
 		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Hip_Down|Dragon_Rig:Tail_11_FK_Ctrl_Grp|Dragon_Rig:Tail_11_FK_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[571]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[572]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[573]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[574]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[575]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[576]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[577]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[578]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[579]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[580]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[581]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[582]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Spine_02_Ctrl_Grp|Dragon_Rig:Spine_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[583]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[584]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[585]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[586]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[587]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[588]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[589]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[590]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[591]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[592]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[593]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[594]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Chest_Ctrl_Grp|Dragon_Rig:Chest_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[595]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[596]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[597]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[598]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[599]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[600]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[601]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[602]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[603]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[604]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[605]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[606]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_01_Ctrl_Grp|Dragon_Rig:Neck_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[607]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[608]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[609]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[610]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[611]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[612]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[613]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[614]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[615]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[616]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[617]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[618]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_02_Ctrl_Grp|Dragon_Rig:Neck_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[619]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[620]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[621]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[622]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[623]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[624]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[625]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[626]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[627]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[628]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[629]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[630]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_03_Ctrl_Grp|Dragon_Rig:Neck_03_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[631]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[632]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[633]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[634]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[635]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[636]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[637]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[638]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[639]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[640]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[641]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[642]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_04_Ctrl_Grp|Dragon_Rig:Neck_04_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[643]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[644]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[645]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[646]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[647]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[648]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[649]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[650]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[651]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[652]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[653]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[654]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Neck_05_Ctrl_Grp|Dragon_Rig:Neck_05_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[655]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[656]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[657]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[658]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[659]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[660]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[661]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[662]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[663]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[664]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[665]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[666]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Head_Ctrl_Grp|Dragon_Rig:Head_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[667]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[668]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[669]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[670]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[671]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[672]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[673]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[674]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[675]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[676]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Spine_Up|Dragon_Rig:Jaw_Ctrl_Grp|Dragon_Rig:Jaw_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[677]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[678]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[679]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateOrder" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[680]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.parentMatrix" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[681]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[682]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[683]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[684]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[685]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[686]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Clav_Ctrl_Grp|Dragon_Rig:L_Clav_Ctrl_Offset_Grp|Dragon_Rig:L_Clav_Ctrl_Flap_Grp|Dragon_Rig:L_Clav_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[687]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scale" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotate" 
 		"Dragon_RigRN.placeHolderList[688]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[689]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[690]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[691]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotatePivot" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotateOrder" 
 		"Dragon_RigRN.placeHolderList[692]" ""
-		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotatePivotTranslate" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.parentMatrix" 
 		"Dragon_RigRN.placeHolderList[693]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.Operating_Space" 
 		"Dragon_RigRN.placeHolderList[694]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateX" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translate" 
 		"Dragon_RigRN.placeHolderList[695]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[696]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[697]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[698]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[699]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateZ" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scale" 
 		"Dragon_RigRN.placeHolderList[700]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[701]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[702]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[703]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateX" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotatePivot" 
 		"Dragon_RigRN.placeHolderList[704]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateY" 
+		5 3 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl.rotatePivotTranslate" 
 		"Dragon_RigRN.placeHolderList[705]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[706]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[707]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[708]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[709]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[710]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[711]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[712]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[713]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Spread" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[714]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Grab" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[715]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Side_Movement" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[716]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_Flap_Effect" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[717]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_Flap_Animation" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[718]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Arm_IKFK_Switch" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[719]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_IKFK_Switch" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[720]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[721]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[722]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[723]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[724]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Arm_IK|Dragon_Rig:L_Arm_03_IK_Ctrl_Grp|Dragon_Rig:L_Arm_03_IK_Ctrl|Dragon_Rig:L_Arm_IK_Out_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Out_Ctrl|Dragon_Rig:L_Arm_IK_In_Ctrl_Grp|Dragon_Rig:L_Arm_IK_In_Ctrl|Dragon_Rig:L_Arm_IK_Heel_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Heel_Ctrl|Dragon_Rig:L_Arm_IK_Tip_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Tip_Ctrl|Dragon_Rig:L_Arm_IK_Ball_Ctrl_Grp|Dragon_Rig:L_Arm_IK_Ball_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[725]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Spread" 
 		"Dragon_RigRN.placeHolderList[726]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Grab" 
 		"Dragon_RigRN.placeHolderList[727]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Winger_Side_Movement" 
 		"Dragon_RigRN.placeHolderList[728]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_Flap_Effect" 
 		"Dragon_RigRN.placeHolderList[729]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_Flap_Animation" 
 		"Dragon_RigRN.placeHolderList[730]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Arm_IKFK_Switch" 
 		"Dragon_RigRN.placeHolderList[731]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl.Wing_IKFK_Switch" 
 		"Dragon_RigRN.placeHolderList[732]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[733]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[734]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[735]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[736]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[737]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[738]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[739]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[740]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[741]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[742]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[743]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[744]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[745]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[746]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[747]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[748]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[749]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[750]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[751]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[752]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[753]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Thumb|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_01_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[754]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[755]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[756]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[757]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[758]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[759]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[760]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[761]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[762]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[763]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[764]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[765]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[766]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[767]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[768]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[769]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[770]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[771]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[772]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[773]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[774]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[775]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_02_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[776]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[777]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[778]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[779]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[780]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[781]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[782]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[783]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[784]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[785]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[786]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[787]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[788]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[789]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[790]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[791]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[792]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[793]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[794]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[795]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[796]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[797]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_03_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[798]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[799]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[800]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[801]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[802]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[803]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[804]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[805]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[806]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[807]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[808]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[809]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[810]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[811]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[812]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[813]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[814]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[815]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[816]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[817]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[818]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[819]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:Left_Hand_Controls|Dragon_Rig:Left_Fingers|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Finger_04_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[820]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[821]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[822]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[823]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.Operating_Space" 
 		"Dragon_RigRN.placeHolderList[824]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[825]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[826]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[827]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[828]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[829]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[830]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_01_IK_Ctrl_Grp|Dragon_Rig:R_Arm_01_IK_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[831]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[832]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[833]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[834]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.Operating_Space" 
 		"Dragon_RigRN.placeHolderList[835]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[836]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[837]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[838]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[839]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[840]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[841]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Arm_IK|Dragon_Rig:R_Arm_03_IK_Ctrl_Grp|Dragon_Rig:R_Arm_03_IK_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[842]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[843]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[844]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[845]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[846]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[847]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[848]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[849]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[850]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[851]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[852]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[853]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[854]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[855]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[856]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[857]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[858]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[859]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[860]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[861]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[862]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[863]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Thumb|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_01_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[864]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[865]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[866]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[867]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[868]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[869]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[870]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[871]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[872]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[873]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[874]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[875]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[876]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[877]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[878]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[879]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[880]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[881]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[882]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[883]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[884]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[885]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_02_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[886]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[887]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[888]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[889]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[890]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[891]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[892]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[893]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[894]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[895]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.Follow_Translate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[896]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.Follow_Rotate" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[897]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[898]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[899]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[900]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[901]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[902]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[903]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[904]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[905]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[906]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[907]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_03_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[908]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[909]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[910]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[911]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[912]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[913]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[914]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[915]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[916]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[917]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Spread" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_01_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[918]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Grab" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.Follow_Translate" 
 		"Dragon_RigRN.placeHolderList[919]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Side_Movement" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.Follow_Rotate" 
 		"Dragon_RigRN.placeHolderList[920]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_Flap_Effect" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[921]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_Flap_Animation" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[922]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Arm_IKFK_Switch" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[923]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_IKFK_Switch" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[924]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[925]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[926]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[927]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[928]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[929]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:Right_Hand_Controls|Dragon_Rig:Right_Fingers|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Finger_04_Knuckle_02_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[930]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[931]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[932]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[933]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[934]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[935]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[936]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[937]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[938]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[939]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Clav_Ctrl_Grp|Dragon_Rig:R_Clav_Ctrl_Offset_Grp|Dragon_Rig:R_Clav_Flap_Grp|Dragon_Rig:R_Clav_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[940]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Spread" 
 		"Dragon_RigRN.placeHolderList[941]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Grab" 
 		"Dragon_RigRN.placeHolderList[942]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Winger_Side_Movement" 
 		"Dragon_RigRN.placeHolderList[943]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_Flap_Effect" 
 		"Dragon_RigRN.placeHolderList[944]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_Flap_Animation" 
 		"Dragon_RigRN.placeHolderList[945]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Arm_IKFK_Switch" 
 		"Dragon_RigRN.placeHolderList[946]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl.Wing_IKFK_Switch" 
 		"Dragon_RigRN.placeHolderList[947]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.Operating_Space" 
 		"Dragon_RigRN.placeHolderList[948]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[949]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[950]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[951]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[952]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[953]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[954]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.visibility" 
 		"Dragon_RigRN.placeHolderList[955]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[956]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[957]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Foot_IK_Ctrl_Grp|Dragon_Rig:L_Foot_IK_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[958]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.translateX" 
 		"Dragon_RigRN.placeHolderList[959]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.translateY" 
 		"Dragon_RigRN.placeHolderList[960]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.Operating_Space" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.translateZ" 
 		"Dragon_RigRN.placeHolderList[961]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.rotateZ" 
 		"Dragon_RigRN.placeHolderList[962]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateZ" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.rotateX" 
 		"Dragon_RigRN.placeHolderList[963]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.rotateY" 
 		"Dragon_RigRN.placeHolderList[964]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.visibility" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.scaleX" 
 		"Dragon_RigRN.placeHolderList[965]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.scaleX" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.scaleY" 
 		"Dragon_RigRN.placeHolderList[966]" ""
-		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.scaleY" 
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.scaleZ" 
 		"Dragon_RigRN.placeHolderList[967]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_01_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[968]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[969]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[970]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[971]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[972]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[973]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[974]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[975]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[976]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[977]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_01_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[978]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[979]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[980]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[981]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[982]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[983]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[984]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[985]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[986]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[987]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_01_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[988]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[989]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[990]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[991]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[992]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[993]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[994]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[995]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[996]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[997]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_02_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[998]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[999]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1000]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1001]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1002]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1003]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1004]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1005]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1006]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1007]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Foot_Controls|Dragon_Rig:Left_Foot_Toe_Controls|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:L_Toe_03_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1008]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.Operating_Space" 
+		"Dragon_RigRN.placeHolderList[1009]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1010]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1011]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1012]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1013]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1014]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1015]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1016]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1017]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1018]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Foot_IK_Ctrl_Grp|Dragon_Rig:R_Foot_IK_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1019]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1020]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1021]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1022]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1023]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1024]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1025]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1026]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1027]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1028]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_01_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1029]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1030]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1031]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1032]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1033]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1034]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1035]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1036]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1037]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1038]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_01_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1039]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1040]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1041]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1042]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1043]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1044]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1045]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1046]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1047]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1048]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_01_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1049]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1050]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1051]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1052]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1053]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1054]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1055]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1056]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1057]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1058]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_02_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1059]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1060]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1061]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1062]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1063]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1064]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1065]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1066]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1067]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1068]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_01_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1069]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1070]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1071]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1072]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1073]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1074]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1075]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1076]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1077]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1078]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Foot_Controls|Dragon_Rig:Right_Foot_Toe_Controls|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl_Grp|Dragon_Rig:R_Toe_03_Knuckle_02_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1079]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1080]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1081]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1082]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.Operating_Space" 
+		"Dragon_RigRN.placeHolderList[1083]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1084]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1085]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1086]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1087]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1088]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1089]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Left_Wing_Controls|Dragon_Rig:Left_Wing_IK_Controls|Dragon_Rig:L_Wing_03_IK_Ctrl_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:L_Wing_03_IK_Ctrl.scaleZ" 
+		"Dragon_RigRN.placeHolderList[1090]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateY" 
+		"Dragon_RigRN.placeHolderList[1091]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateZ" 
+		"Dragon_RigRN.placeHolderList[1092]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.rotateX" 
+		"Dragon_RigRN.placeHolderList[1093]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.Operating_Space" 
+		"Dragon_RigRN.placeHolderList[1094]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateX" 
+		"Dragon_RigRN.placeHolderList[1095]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateZ" 
+		"Dragon_RigRN.placeHolderList[1096]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.translateY" 
+		"Dragon_RigRN.placeHolderList[1097]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.visibility" 
+		"Dragon_RigRN.placeHolderList[1098]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.scaleX" 
+		"Dragon_RigRN.placeHolderList[1099]" ""
+		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.scaleY" 
+		"Dragon_RigRN.placeHolderList[1100]" ""
 		5 4 "Dragon_RigRN" "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Wing_Controls|Dragon_Rig:Right_Wing_Controls|Dragon_Rig:Right_Wing_IK_Controls|Dragon_Rig:R_Wing_03_IK_Ctrl_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Offset_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl_Flap_Grp|Dragon_Rig:R_Wing_03_IK_Ctrl.scaleZ" 
-		"Dragon_RigRN.placeHolderList[968]" "";
+		"Dragon_RigRN.placeHolderList[1101]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
@@ -2267,74 +2616,99 @@ createNode animCurveTL -n "Chest_Ctrl_translateX";
 	rename -uid "94B6572D-4210-4105-661C-D884CED5A57A";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 -50 1 0 28 10;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 -50 1 0 29 10 30 10 31 10 32 10 33 0 34 0
+		 35 0 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Chest_Ctrl_translateY";
 	rename -uid "10F50D8A-4734-8997-907B-2980525FE4BA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 28 -50;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 0 1 0 29 -50 30 -50 31 -50 32 -50 33 -40
+		 34 -40 35 -40 36 -40 37 -20 38 -20 39 -20 40 -20 41 -40 42 -40 43 -40 44 -40 45 -50;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Chest_Ctrl_translateZ";
 	rename -uid "89961357-486D-CFA6-4029-FD8BBA91556D";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 28 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 0 1 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_visibility";
 	rename -uid "16252701-4D3C-7452-8017-EEB30CA0F6D9";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Chest_Ctrl_rotateX";
 	rename -uid "0D3CC882-482D-D9FB-BE83-4FA132916DE5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 28 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 0 1 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Chest_Ctrl_rotateY";
 	rename -uid "C4A5FBC2-495F-C6C6-866A-B3879004F9E7";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 28 0;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 0 1 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Chest_Ctrl_rotateZ";
 	rename -uid "AD093B08-401B-AA18-4392-7BA247A175C2";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 0 1 0 28 15.931515852949866;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 0 1 0 29 20 30 17 31 14.999999999999998
+		 32 12.000000000000002 33 10 34 7 35 5 36 3.0000000000000004 37 0 38 3.0000000000000004
+		 39 5 40 7 41 10 42 12.000000000000002 43 14.999999999999998 44 17 45 20;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_scaleX";
 	rename -uid "4F9F985C-48A8-C275-397D-23907D0AA833";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_scaleY";
 	rename -uid "04A6AA5A-444A-2FB1-E543-A9B7A0F02758";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_scaleZ";
 	rename -uid "26AE2AE0-4506-442C-0F6B-17B1B38D8D17";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_Follow_Translate";
 	rename -uid "4286D100-4352-83BE-7EB5-EBA00DF2DD27";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Chest_Ctrl_Follow_Rotate";
 	rename -uid "100B25D8-4819-1C88-40EF-5D8931C4DD72";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  0 1 1 1 28 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 19 ".ktv[0:18]"  0 1 1 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 19 ".kot[0:18]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "L_Clav_Ctrl_translateX";
 	rename -uid "153D8C3D-40C1-FF0C-41BE-878CAD28CE74";
 	setAttr ".tan" 10;
@@ -2561,63 +2935,82 @@ createNode animCurveTA -n "Hip_Ctrl_rotateX";
 	rename -uid "048BBCC0-4ED1-80D8-475C-DFA64F1479E0";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 2 0 4 0 10 0 28 0;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 0 2 0 4 0 10 0 28 0 32 0 36 0 40 0
+		 44 0;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTA -n "Hip_Ctrl_rotateY";
 	rename -uid "9698FBA4-4A87-FB19-EE74-0DAE0B4400EC";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 2 0 4 0 10 0 28 0;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 0 2 0 4 0 10 0 28 0 32 0 36 0 40 0
+		 44 0;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTA -n "Hip_Ctrl_rotateZ";
 	rename -uid "ABBA972F-40CF-88DF-4951-2E8648E26359";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 2 0 4 0 10 0 28 0;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 0 2 0 4 0 10 0 28 -5 32 0 36 5 40 0
+		 44 -5;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTU -n "Hip_Ctrl_visibility";
 	rename -uid "5DF6FA1B-4A43-79C1-C143-02AB43C81835";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 2 1 4 1 10 1 28 1;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 1 1 1 2 1 4 1 10 1 28 1 32 1 36 1 40 1
+		 44 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTL -n "Hip_Ctrl_translateX";
 	rename -uid "34A68AAB-4DDD-FD02-5616-FAB39A041903";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 -50 2 -100 4 -120 10 -120 28 -120;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 -50 2 -100 4 -120 10 -120 28 -120
+		 32 -120 36 -120 40 -120 44 -120;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTL -n "Hip_Ctrl_translateY";
 	rename -uid "242A2AA0-4F3A-566C-3634-B9850B50C3AC";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 2 10 4 30 10 1.9738360844604212
-		 28 30;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 0 2 10 4 30 10 1.9738360844604212
+		 28 30 32 30 36 30 40 30 44 30;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTL -n "Hip_Ctrl_translateZ";
 	rename -uid "2A1AAF6E-40CB-960C-1EAC-A89BDDC0254C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 0 1 0 2 0 4 0 10 0 28 0;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 0 1 0 2 0 4 0 10 0 28 0 32 0 36 0 40 0
+		 44 0;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTU -n "Hip_Ctrl_scaleX";
 	rename -uid "D7B34A89-4C24-0CC0-820A-358632BA7BBE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 2 1 4 1 10 1 28 1;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 1 1 1 2 1 4 1 10 1 28 1 32 1 36 1 40 1
+		 44 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTU -n "Hip_Ctrl_scaleY";
 	rename -uid "C207E69E-4E49-74DB-BEE0-ADB8756E492A";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 2 1 4 1 10 1 28 1;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 1 1 1 2 1 4 1 10 1 28 1 32 1 36 1 40 1
+		 44 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTU -n "Hip_Ctrl_scaleZ";
 	rename -uid "4EA73D9E-4CDA-60FC-6D7E-49929C573C4E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  0 1 1 1 2 1 4 1 10 1 28 1;
-	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  0 1 1 1 2 1 4 1 10 1 28 1 32 1 36 1 40 1
+		 44 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTA -n "L_Finger_02_Knuckle_01_Ctrl_rotateX";
 	rename -uid "51AD4F33-4B0F-D8D7-8323-418B8F0B23B5";
 	setAttr ".tan" 10;
@@ -3286,8 +3679,9 @@ createNode animCurveTA -n "Transform_Ctrl_rotateX";
 	rename -uid "BB59466B-4025-9B73-39D3-AABEC70894CE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 23 ".ktv[0:22]"  0 0 28 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
-		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 52 0 60 0 68 0 76 0 84 0;
+	setAttr -s 23 ".ktv[0:22]"  0 0 28 0 29 0 30 0 31 0 32 -1 33 -2 34 -3.0000000000000004
+		 35 -4 36 -5 37 -4 38 -3.0000000000000004 39 -2 40 -1 41 0 42 0 43 0 44 0 52 0 60 0
+		 68 0 76 0 84 0;
 	setAttr -s 23 ".kot[0:22]"  5 5 5 5 5 5 5 5 
 		5 5 5 5 5 5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Transform_Ctrl_rotateY";
@@ -3988,136 +4382,278 @@ createNode animCurveTU -n "R_Finger_02_Knuckle_02_Ctrl_Follow_Rotate";
 	setAttr ".kot[0]"  5;
 createNode animCurveTL -n "L_Foot_IK_Ctrl_translateX";
 	rename -uid "242FFA51-4C72-7E29-2366-FA92918AF139";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 -2.8421709430404007e-14
+		 31.000000340136054 0 32 -1.4210854715202004e-14 33 -1.4210854715202004e-14 33.000000595238092 0
+		 34 0 35.000000850340136 0 36 -1.4210854715202004e-14 37 -2.8421709430404007e-14 37.000000850340136 0
+		 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 -1.4210854715202004e-14 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTL -n "L_Foot_IK_Ctrl_translateY";
 	rename -uid "F6472331-4BD0-E5A2-2987-B18119A7DFBD";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 126.41961203680984;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 130 28 129.99999999999994 29.000000340136054 130
+		 30 130 31 130 31.000000340136054 120.00000000000007 32 120.0000000000001 33 120.00000000000011
+		 33.000000595238092 120.00000000000009 34 120.00000000000007 35.000000850340136 100.00000000000009
+		 36 100.00000000000009 37 123.79958329112846 37.000000850340136 100.00000000000016
+		 38 100.00000000000024 39.000001105442173 100.00000000000006 40 99.999999999999972
+		 41.000001105442173 100.00000000000006 42 100.00000000000006 43.000001445578228 125;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTL -n "L_Foot_IK_Ctrl_translateZ";
 	rename -uid "7E1CEDC0-4888-48CF-6FA8-70B004C9DA01";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 24.751070514653687;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 40 28 43.76387119857219 29.000000340136054 19.934934316538374
+		 30 13.663879027240867 31 -2.498033457304274 31.000000340136054 -13.883997191176578
+		 32 -18.902274383395163 33 -24.291025604976163 33.000000595238092 -46.353266167793201
+		 34 -58.900025181373081 35.000000850340136 -52.543919963787779 36 -47.540953799976457
+		 37 -47.540953799976478 37.000000850340136 -33.786729362367147 38 -26.263986196117887
+		 39.000001105442173 -11.123676547915437 40 2.6730164107640668 41.000001105442173 12.732874067119127
+		 42 21.514719756006656 43.000001445578228 40;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTL -n "R_Foot_IK_Ctrl_translateX";
 	rename -uid "A6CEA229-4E9C-BBAF-0074-F0897024B050";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 -2.8421709430404007e-14
+		 31.000000340136054 0 32 -1.4210854715202004e-14 33 -1.4210854715202004e-14 33.000000595238092 0
+		 34 0 35.000000850340136 0 36 -1.4210854715202004e-14 37 -2.8421709430404007e-14 37.000000850340136 0
+		 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 -1.4210854715202004e-14 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTL -n "R_Foot_IK_Ctrl_translateY";
 	rename -uid "1D42EEC1-4847-75E8-8575-BDB503CDD3D5";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 98.465559727704488;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 100 28 99.999999999999943 29.000000340136054 100
+		 30 100 31 100 31.000000340136054 90.000000000000071 32 90.000000000000099 33 90.000000000000114
+		 33.000000595238092 90.000000000000085 34 90.000000000000071 35.000000850340136 80.000000000000085
+		 36 80.000000000000085 37 103.79958329112846 37.000000850340136 80.000000000000156
+		 38 80.000000000000242 39.000001105442173 80.000000000000057 40 79.999999999999972
+		 41.000001105442173 80.000000000000057 42 80.000000000000057 43.000001445578228 100;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTL -n "R_Foot_IK_Ctrl_translateZ";
 	rename -uid "56EB1097-4172-BD0F-D685-469006329EB2";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 98.135257711805423;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 100 28 103.76387119857219 29.000000340136054 79.934934316538374
+		 30 73.663879027240867 31 57.501966542695726 31.000000340136054 46.116002808823431
+		 32 41.097725616604841 33 35.708974395023844 33.000000595238092 13.646733832206817
+		 34 1.0999748186269427 35.000000850340136 7.4560800362122066 36 12.459046200023527
+		 37 12.459046200023524 37.000000850340136 26.213270637632842 38 33.736013803882102
+		 39.000001105442173 48.87632345208457 40 62.673016410764077 41.000001105442173 72.732874067119127
+		 42 81.514719756006656 43.000001445578228 100;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "R_Foot_IK_Ctrl_visibility";
 	rename -uid "D4B3F7ED-4A77-9874-743C-31A816213530";
-	setAttr ".tan" 9;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 1;
+	setAttr -s 20 ".kix[19]"  1;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "R_Foot_IK_Ctrl_rotateX";
 	rename -uid "3B45FEA8-4FD5-468F-DEC2-928584D919B9";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 40;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 90 28 90 29.000000340136054 90 30 90
+		 31 90 31.000000340136054 90 32 90 33 90 33.000000595238092 90 34 90 35.000000850340136 90
+		 36 90 37 90 37.000000850340136 90 38 90 39.000001105442173 90 40 90 41.000001105442173 90
+		 42 90 43.000001445578228 90;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "R_Foot_IK_Ctrl_rotateY";
 	rename -uid "7D79C605-431D-ECB8-6B66-8CB037B99FAF";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 0
+		 31.000000340136054 0 32 0 33 0 33.000000595238092 0 34 0 35.000000850340136 0 36 0
+		 37 0 37.000000850340136 0 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 0
+		 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "R_Foot_IK_Ctrl_rotateZ";
 	rename -uid "E7965954-4895-96B1-3BD9-CBB4D26C7A10";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 0
+		 31.000000340136054 0 32 0 33 0 33.000000595238092 0 34 0 35.000000850340136 0 36 0
+		 37 0 37.000000850340136 0 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 0
+		 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "R_Foot_IK_Ctrl_scaleX";
 	rename -uid "3F609D79-42DD-4DAC-54F5-F1BB7FDC6344";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "R_Foot_IK_Ctrl_scaleY";
 	rename -uid "B47FA8D8-46E4-98F8-4F63-A88A3D9582A1";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "R_Foot_IK_Ctrl_scaleZ";
 	rename -uid "D7A71CFD-4429-073D-DA14-24BEEDA46EC6";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "R_Foot_IK_Ctrl_Operating_Space";
 	rename -uid "7F7A7018-493B-8DC8-AE8D-BEACBD745A07";
-	setAttr ".tan" 9;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 4;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 4 28 4 29.000000340136054 4 30 4 31 4
+		 31.000000340136054 4 32 4 33 4 33.000000595238092 4 34 4 35.000000850340136 4 36 4
+		 37 4 37.000000850340136 4 38 4 39.000001105442173 4 40 4 41.000001105442173 4 42 4
+		 43.000001445578228 4;
+	setAttr -s 20 ".kit[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 1;
+	setAttr -s 20 ".kix[19]"  1;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "L_Foot_IK_Ctrl_visibility";
 	rename -uid "050EDA8F-47FE-6F3E-85B9-439E52AD35BE";
-	setAttr ".tan" 9;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 1;
+	setAttr -s 20 ".kix[19]"  1;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "L_Foot_IK_Ctrl_rotateX";
 	rename -uid "8742A590-4AFA-377C-1EE3-C6B26624E1C2";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 40;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 90 28 90 29.000000340136054 90 30 90
+		 31 90 31.000000340136054 90 32 90 33 90 33.000000595238092 90 34 90 35.000000850340136 90
+		 36 90 37 90 37.000000850340136 90 38 90 39.000001105442173 90 40 90 41.000001105442173 90
+		 42 90 43.000001445578228 90;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "L_Foot_IK_Ctrl_rotateY";
 	rename -uid "6EAEE325-4709-7A64-91EC-1883A624FC85";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 0
+		 31.000000340136054 0 32 0 33 0 33.000000595238092 0 34 0 35.000000850340136 0 36 0
+		 37 0 37.000000850340136 0 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 0
+		 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTA -n "L_Foot_IK_Ctrl_rotateZ";
 	rename -uid "EE107A86-490A-E579-185C-DE8BDB09F3B1";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 0 28 0 29.000000340136054 0 30 0 31 0
+		 31.000000340136054 0 32 0 33 0 33.000000595238092 0 34 0 35.000000850340136 0 36 0
+		 37 0 37.000000850340136 0 38 0 39.000001105442173 0 40 0 41.000001105442173 0 42 0
+		 43.000001445578228 0;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "L_Foot_IK_Ctrl_scaleX";
 	rename -uid "4DB5F638-466F-7338-8741-4692FACDF5A0";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "L_Foot_IK_Ctrl_scaleY";
 	rename -uid "8E3BB088-4732-CBA5-473A-B98B7C61652E";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "L_Foot_IK_Ctrl_scaleZ";
 	rename -uid "EB132F96-4654-30FB-B2CF-1D98B668A7F4";
-	setAttr ".tan" 10;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 1 28 1 29.000000340136054 1 30 1 31 1
+		 31.000000340136054 1 32 1 33 1 33.000000595238092 1 34 1 35.000000850340136 1 36 1
+		 37 1 37.000000850340136 1 38 1 39.000001105442173 1 40 1 41.000001105442173 1 42 1
+		 43.000001445578228 1;
+	setAttr -s 20 ".kit[0:19]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 10 10 10 1;
+	setAttr -s 20 ".kix[19]"  0;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode animCurveTU -n "L_Foot_IK_Ctrl_Operating_Space";
 	rename -uid "188A447F-4D33-05EE-FCB6-CF827E02C89D";
-	setAttr ".tan" 9;
+	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 4;
-	setAttr ".kot[0]"  5;
+	setAttr -s 20 ".ktv[0:19]"  27 4 28 4 29.000000340136054 4 30 4 31 4
+		 31.000000340136054 4 32 4 33 4 33.000000595238092 4 34 4 35.000000850340136 4 36 4
+		 37 4 37.000000850340136 4 38 4 39.000001105442173 4 40 4 41.000001105442173 4 42 4
+		 43.000001445578228 4;
+	setAttr -s 20 ".kit[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 1;
+	setAttr -s 20 ".kix[19]"  1;
+	setAttr -s 20 ".kiy[19]"  0;
 createNode reference -n "sharedReferenceNode";
 	rename -uid "81043785-4CD8-0829-DFCB-A49209A9E97B";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -4126,62 +4662,63 @@ createNode animCurveTA -n "Jaw_Ctrl_rotateX";
 	rename -uid "D9939799-4174-0928-2FE1-ECBECBD0DDEE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 -10;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 -16 32 -12.000000000000002 36 -8 40 -12.000000000000002
+		 44 -16;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTA -n "Jaw_Ctrl_rotateY";
 	rename -uid "540DC926-407E-9CB2-EDAC-2DAF6A2C618B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 0 32 0 36 0 40 0 44 0;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTA -n "Jaw_Ctrl_rotateZ";
 	rename -uid "1B87790D-474F-D6ED-B6A3-41AFC3ECD8EF";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 0 32 0 36 0 40 0 44 0;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTU -n "Jaw_Ctrl_visibility";
 	rename -uid "06D8139D-4305-63FB-BF69-2180BA3B05E6";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 1 32 1 36 1 40 1 44 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Jaw_Ctrl_translateX";
 	rename -uid "1CCC039D-457B-7D2B-27DD-1A88476E7045";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 0 32 0 36 0 40 0 44 0;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Jaw_Ctrl_translateY";
 	rename -uid "B18AD33A-458F-F283-44A0-E49502819CEA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 0 32 0 36 0 40 0 44 0;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Jaw_Ctrl_translateZ";
 	rename -uid "F5678611-469E-4913-99A8-F6AE16E5851B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 0 32 0 36 0 40 0 44 0;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTU -n "Jaw_Ctrl_scaleX";
 	rename -uid "58C1ABAF-4512-FA33-DC67-58BA4D574E26";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 1 32 1 36 1 40 1 44 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTU -n "Jaw_Ctrl_scaleY";
 	rename -uid "8DF76B6E-4F31-15F1-8547-1498DD24AA11";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 1 32 1 36 1 40 1 44 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTU -n "Jaw_Ctrl_scaleZ";
 	rename -uid "613F12D5-4124-971E-018F-0E8E0C0C14E6";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 5 ".ktv[0:4]"  28 1 32 1 36 1 40 1 44 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTU -n "R_Arm_IKFK_Ctrl_Arm_IKFK_Switch";
 	rename -uid "0E700924-4946-F0BF-D8E8-10ABD4B39117";
 	setAttr ".tan" 5;
@@ -4601,794 +5138,584 @@ createNode animCurveTA -n "Tail_01_FK_Ctrl_rotateX";
 	rename -uid "45739302-4494-7E4C-46A0-23BF69B8F16E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_01_FK_Ctrl_rotateY";
 	rename -uid "BCD2F4EC-4EB5-99EF-8AB9-239A3839FE1C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_01_FK_Ctrl_rotateZ";
 	rename -uid "3D35CEEF-41CC-3ADD-62AE-808F81F2C6EC";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_02_FK_Ctrl_rotateX";
 	rename -uid "EE1EAF8B-4DFB-E3EB-49A9-1F90D900DAD6";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_02_FK_Ctrl_rotateY";
 	rename -uid "4AC8562B-4966-8B90-C44D-0E926CE04925";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_02_FK_Ctrl_rotateZ";
 	rename -uid "E98845BF-4551-2313-6557-B6B4E70933CE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_03_FK_Ctrl_rotateX";
 	rename -uid "B5605CAC-43F7-D5C0-F8C6-A489AA687D19";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_03_FK_Ctrl_rotateY";
 	rename -uid "2EC61F02-4EF0-27C5-3BB7-AC8B2F453DE5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_03_FK_Ctrl_rotateZ";
 	rename -uid "4D4455A2-4EB3-0607-BAD5-9F86C57FE45F";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_04_FK_Ctrl_rotateX";
 	rename -uid "E71A8329-46DB-BACF-A6D5-129D34AB6CED";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_04_FK_Ctrl_rotateY";
 	rename -uid "0AD8FC16-421E-F51C-0E20-FAAA479E3A2C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_04_FK_Ctrl_rotateZ";
 	rename -uid "54FF63C3-41AD-5E5D-3445-FFB0B9A4D455";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_05_FK_Ctrl_rotateX";
 	rename -uid "24FCF310-42FF-5F1F-836F-F995AD2027B8";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_05_FK_Ctrl_rotateY";
 	rename -uid "D437C297-4E12-9E5D-3A8F-43AB64E77DD2";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_05_FK_Ctrl_rotateZ";
 	rename -uid "042D6ACF-40AB-38A7-E3F9-97BA775403ED";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_06_FK_Ctrl_rotateX";
 	rename -uid "0757372F-4820-89BD-10E0-63907BDC6F0B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_06_FK_Ctrl_rotateY";
 	rename -uid "82B86977-45A5-6B29-FA4F-2D86B2CF46E3";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Tail_06_FK_Ctrl_rotateZ";
 	rename -uid "83790036-4CA0-810D-B277-13850EDA34AC";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 4 28 -4;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateX";
-	rename -uid "02EB24FA-4340-B4FB-8A68-CEA0A6387B28";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateY";
-	rename -uid "035DFDFE-4EE1-3538-351C-CBBF406E70C3";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateZ";
-	rename -uid "A0D7008C-40DE-CE5F-AEFD-90A1AA3D93ED";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 8;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateX";
-	rename -uid "FD3E2633-4478-3B39-83E6-1DA3B94D7313";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateY";
-	rename -uid "882DD377-4BB8-88B9-C8BF-8AA414F44C9F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateZ";
-	rename -uid "FAE5AD80-4C12-5105-920F-DFBE4B03C3A0";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 8;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateX";
-	rename -uid "EE4C2931-4BB7-2FE4-1DB0-6286D1E6FC84";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateY";
-	rename -uid "70829FF9-4106-12D6-20DF-E0A05021460F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateZ";
-	rename -uid "610ABE78-4FD2-7787-4A34-BC909E5E643A";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 8;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateX";
-	rename -uid "5E4A9998-406A-9C97-2783-C9A40251E162";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateY";
-	rename -uid "0CD6E6F0-4884-F17B-B48A-C88FCAC5460F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateZ";
-	rename -uid "50915273-4BD0-C9DC-3C06-E3B781F3DDE0";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 8;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateX";
-	rename -uid "6C6740AD-45B4-AA9A-3296-4986B7FD162E";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateY";
-	rename -uid "0FB8D42E-42A8-0B3F-3C20-F9923F1FCB00";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateZ";
-	rename -uid "F482AA83-4127-C161-A1EA-1E9A12201FEB";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 8;
-	setAttr ".kot[0]"  5;
+	setAttr -s 18 ".ktv[0:17]"  26 4 29 -6.0000000000000009 30 -3.0000000000000004
+		 31 0 32 2 33 4 34 5 35 6.0000000000000009 36 7 37 6.0000000000000009 38 4 39 2 40 1
+		 41 0 42 -2 43 -4 44 -5 45 -6.0000000000000009;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_visibility";
 	rename -uid "120BBA8B-4F27-BE21-6DF4-71B5FEEBA98A";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_01_FK_Ctrl_translateX";
 	rename -uid "5AFA7325-4231-6BFB-80A6-1ABEDACF54FF";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_01_FK_Ctrl_translateY";
 	rename -uid "C34E4EA9-4546-2A87-23FE-42988ED9E3EE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_01_FK_Ctrl_translateZ";
 	rename -uid "1E7DD36D-430E-49FD-728C-75B929E40FEE";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_scaleX";
 	rename -uid "EF872891-41A9-6D91-43CE-BDB9F2FE110E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_scaleY";
 	rename -uid "658BDA70-4846-F467-A84B-3AACA0A80A40";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_scaleZ";
 	rename -uid "124A7603-49A4-DAA3-7FB1-F0AE9662082E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_Follow_Translate";
 	rename -uid "50488016-4921-80C6-0886-35A6750DF916";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_01_FK_Ctrl_Follow_Rotate";
 	rename -uid "E77AB336-4F46-15D1-3C5C-12AA1561334B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_visibility";
 	rename -uid "BC301E40-47F1-3EC9-4116-19A46FA90F87";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_02_FK_Ctrl_translateX";
 	rename -uid "8932AF28-44B3-2E20-9F57-0C9D59816FF9";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_02_FK_Ctrl_translateY";
 	rename -uid "7BAA750D-4E63-6A8A-DAD0-6190C4BEFA3D";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_02_FK_Ctrl_translateZ";
 	rename -uid "C07AE3D6-4F9C-DA31-E877-0790162560DA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_scaleX";
 	rename -uid "3C025E28-4F06-F2C9-A5BF-48BF41AEF809";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_scaleY";
 	rename -uid "E2A1CF8E-4FF2-1A8C-9C55-40A7A7878094";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_scaleZ";
 	rename -uid "482A1772-48AB-37C3-A21C-75A7135CB1B2";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_Follow_Translate";
 	rename -uid "2054AF01-4762-26D9-A6F3-AF9FA7A01AC4";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_02_FK_Ctrl_Follow_Rotate";
 	rename -uid "2A7CBD1C-455C-5A90-AC48-DBB9A3E67DD4";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_visibility";
 	rename -uid "07602DF3-4016-960F-7C42-63AE8EA98F1A";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_03_FK_Ctrl_translateX";
 	rename -uid "DEB30C34-4EAB-B37F-4C06-FAB07C5D2E87";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_03_FK_Ctrl_translateY";
 	rename -uid "41D2AC97-41F8-7679-2325-369F9EE89400";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_03_FK_Ctrl_translateZ";
 	rename -uid "C05E9703-49AE-DE0A-0950-8992F1B5D675";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_scaleX";
 	rename -uid "80ABE428-4E8F-97A5-EB8D-8CADAA073007";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_scaleY";
 	rename -uid "39DA748E-4B60-9184-E875-36909EB29835";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_scaleZ";
 	rename -uid "E4ABE70B-4D66-60B2-E54B-F78B58C90555";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_Follow_Translate";
 	rename -uid "F2A13178-478D-37AB-90C7-51BDBA6D6EE9";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_03_FK_Ctrl_Follow_Rotate";
 	rename -uid "5F1FB094-4BE2-0D72-386B-D1A336038337";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_visibility";
 	rename -uid "BC7E82C6-4AF5-FF25-8B54-4AAABF0D62C5";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_04_FK_Ctrl_translateX";
 	rename -uid "086B42AC-42CC-5EA0-BA05-B1A47F5D0F94";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_04_FK_Ctrl_translateY";
 	rename -uid "DE349953-47FA-05DC-CFC0-828E58D01146";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_04_FK_Ctrl_translateZ";
 	rename -uid "A571223B-42D3-73D5-BFA0-0DA09189ABC6";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_scaleX";
 	rename -uid "FC93C0AB-400E-41EC-E440-1B8DFD3FA023";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_scaleY";
 	rename -uid "C9792C58-4BBF-0811-6BF2-F4B4375E6AC7";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_scaleZ";
 	rename -uid "99F2D59C-4192-A164-28F8-DE8E61C1EB99";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_Follow_Translate";
 	rename -uid "C27785CA-4C84-AA6D-0470-85A1468D2AB3";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_04_FK_Ctrl_Follow_Rotate";
 	rename -uid "C42D5F3B-4F1D-7E21-E78A-FD834A30942E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_visibility";
 	rename -uid "AB76BBD2-40F8-C98C-59FA-B4A12FF5E0C8";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_05_FK_Ctrl_translateX";
 	rename -uid "2E770374-465D-628F-0DF9-09B4155B562B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_05_FK_Ctrl_translateY";
 	rename -uid "CA17667A-4371-A171-BB9D-67A40AD38E87";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_05_FK_Ctrl_translateZ";
 	rename -uid "E8FA12C9-4FD1-36CD-9DDE-47B0BAEC756C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_scaleX";
 	rename -uid "5F265654-4E44-67C0-4780-E69308F9C737";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_scaleY";
 	rename -uid "4C22EE32-4A59-8E35-07F9-4BA7F4877AB3";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_scaleZ";
 	rename -uid "00D1D0CD-406B-12EF-E26C-29A7F4417969";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_Follow_Translate";
 	rename -uid "F24F4215-469E-E033-4ECD-139CDECB5707";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_05_FK_Ctrl_Follow_Rotate";
 	rename -uid "17C224EE-491C-BCCF-592E-01837D8932B1";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_visibility";
 	rename -uid "3EA3CF01-4189-9B01-6125-27AF7061E1E3";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_06_FK_Ctrl_translateX";
 	rename -uid "C3625FCF-41F1-DD66-4172-ADADA3AB03DD";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_06_FK_Ctrl_translateY";
 	rename -uid "4B85C44B-4FBC-7C11-42EB-2B9856D2DCD6";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Tail_06_FK_Ctrl_translateZ";
 	rename -uid "DA579B34-4BB2-E24B-A01F-7BBB488D65C5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 0 28 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 0 29 0 30 0 31 0 32 0 33 0 34 0 35 0
+		 36 0 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_scaleX";
 	rename -uid "B5F2C773-466D-EAEC-9DE8-B68EA645F966";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_scaleY";
 	rename -uid "C6DB4B54-4FD9-E0D3-87C7-E2885EEAE837";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_scaleZ";
 	rename -uid "028FA0EB-466E-B7EC-0B6D-28A3086A608E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_Follow_Translate";
 	rename -uid "2F68746B-4664-D888-6D48-8D999E904488";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Tail_06_FK_Ctrl_Follow_Rotate";
 	rename -uid "71EC3D81-4BFB-1D4D-2987-248A5E0BB4D3";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  26 1 28 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_visibility";
-	rename -uid "FF718A72-4F48-547B-57EB-6FB73D7EBB80";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_07_FK_Ctrl_translateX";
-	rename -uid "B33955D6-4079-80CA-B766-6BBAF5F564CF";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_07_FK_Ctrl_translateY";
-	rename -uid "45EB78D4-4617-975A-1E62-0EA1E4792D59";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_07_FK_Ctrl_translateZ";
-	rename -uid "D82486AA-4726-A60C-D51F-9EA0E300E11F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleX";
-	rename -uid "214C2699-44A2-49AA-6254-21B497D35A09";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleY";
-	rename -uid "116E0678-4510-A59E-04CF-57812DEAEA49";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleZ";
-	rename -uid "8A6CE32A-4824-27D5-1ACE-F98252847DF3";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_Follow_Translate";
-	rename -uid "6DF5315B-4916-716C-75BC-A5933A358087";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_07_FK_Ctrl_Follow_Rotate";
-	rename -uid "DA25C8E7-457C-AA40-BB07-9EA0E4BDBEA8";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_visibility";
-	rename -uid "9FB8AD2A-4E73-4391-A34A-6C944206DADB";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_08_FK_Ctrl_translateX";
-	rename -uid "90B89E50-4C51-5A01-C9F1-8BB88244EAA2";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_08_FK_Ctrl_translateY";
-	rename -uid "84479F6C-4393-8164-71FB-1A9D2BDA5E6D";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_08_FK_Ctrl_translateZ";
-	rename -uid "E0CFD627-42EE-DC5E-347C-75A7E5841A22";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleX";
-	rename -uid "B54788A1-433D-B342-6A3D-138BB65CD582";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleY";
-	rename -uid "28A20AE9-4BC4-ADC8-D51E-9C96CBF4BE7D";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleZ";
-	rename -uid "6D506DF3-4532-4D5E-33AB-FF8DF6A67454";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_Follow_Translate";
-	rename -uid "15C14569-4E6F-4B74-5A47-E29F033D85FE";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_08_FK_Ctrl_Follow_Rotate";
-	rename -uid "9BCD4E67-42F3-07E5-6BE0-C0B81A640B0F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_visibility";
-	rename -uid "281C6B43-4EEF-A83A-ECF0-22974556CF14";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_09_FK_Ctrl_translateX";
-	rename -uid "5AACB314-4B44-5470-3DB3-F48B4C39633A";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_09_FK_Ctrl_translateY";
-	rename -uid "E9F8BA48-4044-48EC-8978-F69D848BECFD";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_09_FK_Ctrl_translateZ";
-	rename -uid "9C86D971-4C7D-5EFB-3BEA-79A6976DCD82";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleX";
-	rename -uid "B91A6846-42F9-36B6-C5E2-819B07D4E6E2";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleY";
-	rename -uid "A606D9B7-4C2B-AC74-82F8-64B2771C5742";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleZ";
-	rename -uid "B51EDF0B-409E-2A15-08B4-D291B908466A";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_Follow_Translate";
-	rename -uid "AE166012-4CCB-E256-35E8-25966359AED6";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_09_FK_Ctrl_Follow_Rotate";
-	rename -uid "D1B7B4F0-450B-AB35-70F9-F69F10F53ABF";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_visibility";
-	rename -uid "B0717CCA-4647-F393-0888-328359610CBD";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_10_FK_Ctrl_translateX";
-	rename -uid "4986CEC2-46B4-F941-9CC3-978667C1C24F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_10_FK_Ctrl_translateY";
-	rename -uid "711D0BA9-4202-FA69-264E-358934649C18";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_10_FK_Ctrl_translateZ";
-	rename -uid "66B94AF8-4C52-282D-6AB4-F788CF1190CF";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleX";
-	rename -uid "07B35875-4FFD-A74E-0CD4-F9ADDAD107E3";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleY";
-	rename -uid "61385C69-4C88-F9C2-5E00-C3B0D63BC124";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleZ";
-	rename -uid "4AFC4DB2-4315-1CAB-F759-08A1B486F023";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_Follow_Translate";
-	rename -uid "7439B61B-481B-F001-3E69-03A87B9B1348";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_10_FK_Ctrl_Follow_Rotate";
-	rename -uid "BFCBCFCF-4BAE-359A-64CC-43944B3D8EB6";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_visibility";
-	rename -uid "3814E14B-4F9B-436F-180A-EF8C826F6E7A";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_11_FK_Ctrl_translateX";
-	rename -uid "2998EEEE-4FAB-DC2E-C64F-67B92F106701";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_11_FK_Ctrl_translateY";
-	rename -uid "FF0B3F8B-4405-48AE-B4BF-59ABF2AFDE56";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Tail_11_FK_Ctrl_translateZ";
-	rename -uid "74E879A4-4BE7-4650-2272-4AB7B9454590";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleX";
-	rename -uid "CA2C8F79-4901-34C9-2536-BF9D53970BA5";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleY";
-	rename -uid "EB4EEAE0-4786-AD75-8465-F1BE27228FD4";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleZ";
-	rename -uid "E34627BC-4E9E-FCC0-F4BE-F0892E7356E8";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_Follow_Translate";
-	rename -uid "B4FD5433-4AC0-DF81-26D2-978AD523B5E7";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Tail_11_FK_Ctrl_Follow_Rotate";
-	rename -uid "3C861323-4BDF-49A0-06A2-22A07D7123E0";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 18 ".ktv[0:17]"  26 1 29 1 30 1 31 1 32 1 33 1 34 1 35 1
+		 36 1 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 18 ".kot[0:17]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "polySurface2_blendParent1";
 	rename -uid "D01CE137-46C0-B73F-822C-59AA8E4FDECE";
 	setAttr ".tan" 10;
@@ -5493,74 +5820,99 @@ createNode animCurveTL -n "Neck_05_Ctrl_translateX";
 	rename -uid "8A41B114-462F-8C28-0667-E4B8024F4B1C";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 -5;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 -5 30 -5 31 -5 32 -5 33 -5 34 -5 35 -5
+		 36 -5 37 -5 38 -5 39 -5 40 -5 41 -5 42 -5 43 -5 44 -5 45 -5;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Neck_05_Ctrl_translateY";
 	rename -uid "3A83A9F4-4B01-EEE7-1BA0-FFB2294A2049";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 -5.3290705182007514e-15;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Neck_05_Ctrl_translateZ";
 	rename -uid "2C2BD7C5-42EE-FB8D-08DD-7C900DBF9AF3";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 2.5243548967072378e-29;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_visibility";
 	rename -uid "6C22898B-4949-C70D-C8B6-C0ACF662C195";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Neck_05_Ctrl_rotateX";
 	rename -uid "C629FF90-40D8-A1FA-EFBA-61B6801E599E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Neck_05_Ctrl_rotateY";
 	rename -uid "FCF6B0D3-4321-D996-A2D5-1681A7F05729";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Neck_05_Ctrl_rotateZ";
 	rename -uid "E0C3A37E-463F-999E-034E-AC85E193D78B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 -10;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 -1 31 -2 32 -3.0000000000000004
+		 33 -4 34 -6.0000000000000009 35 -8 36 -10 37 -12.000000000000002 38 -10 39 -8 40 -6.0000000000000009
+		 41 -4 42 -3.0000000000000004 43 -2 44 -1 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_scaleX";
 	rename -uid "C96F2DD5-47A8-76E2-01C5-AEB20EEB503D";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_scaleY";
 	rename -uid "F7D62E94-4CF7-A07C-347F-E0B0B52FD8D7";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_scaleZ";
 	rename -uid "275660CD-42C9-103C-FBF2-6EB9F023CBAA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_Follow_Translate";
 	rename -uid "6CE0FFE5-4676-D7D7-C233-67890A4504C4";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_05_Ctrl_Follow_Rotate";
 	rename -uid "4B9BC422-41A8-C786-D4E2-818ABA9E6F8E";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Neck_04_Ctrl_visibility";
 	rename -uid "FF68FABA-4059-C1AF-070E-7AA17A91FBD2";
 	setAttr ".tan" 9;
@@ -5727,74 +6079,99 @@ createNode animCurveTL -n "Head_Ctrl_translateX";
 	rename -uid "417F7620-47A3-75E8-F33D-56BAE7D08BF5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Head_Ctrl_translateY";
 	rename -uid "42DE6AF0-4B53-0EF5-F5A9-C48D4C5F7627";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Head_Ctrl_translateZ";
 	rename -uid "4DD6F6A2-4848-D1C5-3911-01B2D6F73EC1";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_visibility";
 	rename -uid "33085215-4AAC-2F48-1261-A2A84C301A04";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Head_Ctrl_rotateX";
 	rename -uid "A6D35592-4AEC-7C37-94A4-4A9006CB28B5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Head_Ctrl_rotateY";
 	rename -uid "70F1353B-4C7F-7918-68D9-FF963D799DA5";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Head_Ctrl_rotateZ";
 	rename -uid "48696CF1-4F67-AAD8-E423-CCBC75E14B4F";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 -1 31 -2 32 -3.0000000000000004
+		 33 -4 34 -6.0000000000000009 35 -8 36 -10 37 -12.000000000000002 38 -10 39 -8 40 -6.0000000000000009
+		 41 -4 42 -3.0000000000000004 43 -2 44 -1 45 0;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_scaleX";
 	rename -uid "2BCA009D-41E7-7CFD-7053-8DB5434B172B";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_scaleY";
 	rename -uid "3B40BE08-42BD-5BB5-9982-99841A3DACBB";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_scaleZ";
 	rename -uid "F75765B3-4B67-CE00-F118-F098574CE6F0";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_Follow_Translate";
 	rename -uid "ADCD0F9E-44BE-B8CD-45B9-75AD40A026FA";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "Head_Ctrl_Follow_Rotate";
 	rename -uid "4328DC35-47DB-C352-9119-1990906359E7";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "R_Clav_Ctrl_translateX";
 	rename -uid "2F1588AA-44BE-A350-E6B1-7E9374EE843C";
 	setAttr ".tan" 10;
@@ -5935,83 +6312,1524 @@ createNode script -n "gsColorShaderStorageNode";
 	setAttr ".layerColor" -type "string" (
 		"{0: (0.7984413609279095, 0.48571250528763743, 0.3719060607277287), 1: (0.6818147650102486, 0.21389866699492988, 0.2176215081164145), 2: (0.48371481405843464, 0.006397331053460409, 0.9509527118032294), 3: (0.8057018945795161, 0.9000625273794245, 0.39353637347244885), 4: (0.1549791601877708, 0.5792246500243711, 0.46291644990959946), 5: (0.9585197555904406, 0.5930246408996835, 0.14947957798652056), 6: (0.40763300128180147, 0.856608466979504, 0.848113476503844), 7: (0.27720005734219855, 0.9063399979634129, 0.7767141442268326), 8: (0.2037017150796857, 0.33598019373821064, 0.728634762016803), 9: (0.2804231909720389, 0.49770831263799126, 0.14391807409927398), 10: (0.2261584458310373, 0.09250781276698894, 0.5582682779261959), 11: (0.45912581407559416, 0.05491158773747262, 0.5958550861356452), 12: (0.8217493715881348, 0.7412401171368656, 0.30515034231907934), 13: (0.1859752244895312, 0.2898742169782868, 0.9273729224190792), 14: (0.612799303924179, 0.3444453710264453, 0.09947672120940787), 15: (0.8435330561637575, 0.8257802552057306, 0.41063836742042037), 16: (0.26484805718913607, 0.9881354710786472, 0.07596716925091251), 17: (0.3554849033343853, 0.4066651470632432, 0.9536373146155998), 18: (0.3811703334344828, 0.821194089669506, 0.8281839793467903), 19: (0.3626397379449584, 0.8482309129738723, 0.6352143644404155), 20: (0.9771303193145738, 0.2462361361274985, 0.9859866320124753), 21: (0.3167596138162815, 0.5649386918782905, 0.08118632642243329), 22: (0.06310674068415068, 0.3338046160775997, 0.846436731843431), 23: (0.8167959165755454, 0.35336058491409883, 0.95751260015174), 24: (0.41691516326700195, 0.6000785090805015, 0.8648805854109994), 25: (0.2272481922533907, 0.020572642425076837, 0.6576795906440678), 26: (0.49303690261403244, 0.8263790868847471, 0.8492898986129422), 27: (0.017002167109579136, 0.8105577205537644, 0.7051081154698954), 28: (0.12366932054333533, 0.09428335009245026, 0.7315799709957432), 29: (0.5185869067832798, 0.46141965601813684, 0.8737198260714781), 30: (0.4630665008507634, 0.9342580563069265, 0.06012755135364023), 31: (0.7477080341209593, 0.08963814332224185, 0.7647987957756865), 32: (0.48555484864759013, 0.8971128964627252, 0.6436118668630836), 33: (0.09752664293779342, 0.029776696868023755, 0.5757627647474098), 34: (0.14657205849638255, 0.21960922617935397, 0.5246383004664342), 35: (0.3040025955092962, 0.17089223855860447, 0.6440050800409309), 36: (0.16927322289830382, 0.33355729395214495, 0.7879346939275981), 37: (0.16460739687533543, 0.8245568075112888, 0.21030881913574961), 38: (0.9002890048269123, 0.8735250328567213, 0.24537987724494292), 39: (0.6966834503936647, 0.13087268950114928, 0.4958163244305122), 40: (0.48978458256289215, 0.855612952878621, 0.17682084768562578), 41: (0.26523975407260925, 0.35047591845112747, 0.9996492483520878), 42: (0.9819703253864815, 0.33007406378560655, 0.45284111343111094), 43: (0.5877778758786575, 0.08961946169199164, 0.11642005501641495), 44: (0.4974093609629245, 0.775332289348381, 0.2483231358203063), 45: (0.6191970588254452, 0.8681607973945765, 0.49095136185854027), 46: (0.7989854141354406, 0.850559304722591, 0.15084910742247826), 47: (0.5586382773964592, 0.052589659594518334, 0.4955578913032627), 48: (0.8645724171834743, 0.6558649239963916, 0.3114802535004779), 49: (0.6483837469036989, 0.29776054205859026, 0.12446290987564224), 50: (0.8197520559733148, 0.6501411185971332, 0.24830014260947875), 51: (0.7502227568542552, 0.025196646696310054, 0.5749611031501605), 52: (0.9039791307619769, 0.2224867653130813, 0.42147235296228047), 53: (0.3735799559296902, 0.9933079181242355, 0.7757620094385128), 54: (0.31205064894777923, 0.49545911221856626, 0.7923661940671081), 55: (0.43194307515886315, 0.3728710232829078, 0.832823714673963), 56: (0.4073110711336938, 0.9761896423452532, 0.5042265652180615), 57: (0.5589129193981661, 0.07185414459442219, 0.8402083483977542), 58: (0.28424373707806216, 0.11377947995415627, 0.9666894131724391), 59: (0.9492263066144329, 0.6049825743010727, 0.4402556011495511), 60: (0.9218311140639053, 0.49185643649538385, 0.054138512277711826), 61: (0.18451358965221687, 0.5313065445328327, 0.5632342643391741), 62: (0.4539645534154287, 0.23302247628346762, 0.8102184656298639), 63: (0.6712205486927783, 0.2885105522401439, 0.20822104615162296), 64: (0.048795410422244445, 0.39547714716891874, 0.7646843149830167), 65: (0.8512037829654127, 0.6780681318442023, 0.4955206122765934), 66: (0.32905111169229473, 0.8980931999636333, 0.14757534119510185), 67: (0.4378963040998194, 0.4473373093627286, 0.8418400928834124), 68: (0.5802552435617998, 0.05464284446860335, 0.6665337642881283), 69: (0.025035462132864117, 0.8899586089848412, 0.16347649349912946), 70: (0.827168554194246, 0.4508355468757115, 0.8841486459071222), 71: (0.1262703651601904, 0.5179360720017372, 0.670222652981923), 72: (0.9576125304096822, 0.8760204553102953, 0.362880170918051), 73: (0.8495801009309059, 0.5725403729836929, 0.42296269291226873), 74: (0.7760110550084536, 0.14374431163383228, 0.6865705972526661), 75: (0.4935280506073929, 0.8984102755174708, 0.6904439277353374), 76: (0.8335007226780299, 0.03206465867865527, 0.7659159501548047), 77: (0.41998471658734104, 0.9454590525275485, 0.5624564461107677), 78: (0.38378382976381464, 0.9630229753002758, 0.8597926944870087), 79: (0.3757468990334606, 0.868730995667366, 0.8036029468890503)}");
 	setAttr ".layerName" -type "string" "{0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: '', 18: '', 19: '', 20: '', 21: '', 22: '', 23: '', 24: '', 25: '', 26: '', 27: '', 28: '', 29: '', 30: '', 31: '', 32: '', 33: '', 34: '', 35: '', 36: '', 37: '', 38: '', 39: '', 40: '', 41: '', 42: '', 43: '', 44: '', 45: '', 46: '', 47: '', 48: '', 49: '', 50: '', 51: '', 52: '', 53: '', 54: '', 55: '', 56: '', 57: '', 58: '', 59: '', 60: '', 61: '', 62: '', 63: '', 64: '', 65: '', 66: '', 67: '', 68: '', 69: '', 70: '', 71: '', 72: '', 73: '', 74: '', 75: '', 76: '', 77: '', 78: '', 79: ''}";
-createNode animCurveTA -n "Neck_01_Ctrl_rotateX";
-	rename -uid "A0010DB3-4677-CF40-37E9-BF96B12414B7";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Neck_01_Ctrl_rotateY";
-	rename -uid "34E23B66-4056-01EA-82B7-24966489950B";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTA -n "Neck_01_Ctrl_rotateZ";
-	rename -uid "D808B193-4D0E-978F-C757-D2A714E17E80";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 5;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_visibility";
-	rename -uid "8C273768-48B2-AB70-B86C-CEAF14773263";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Neck_01_Ctrl_translateX";
-	rename -uid "361AAEB2-4952-3A98-D085-8280FE7E3CF1";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Neck_01_Ctrl_translateY";
-	rename -uid "993C17B2-4DBA-1380-4269-519D04EF2F4F";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTL -n "Neck_01_Ctrl_translateZ";
-	rename -uid "0768AF3B-47AD-CE23-73D5-2D8FBD3179E9";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 0;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_scaleX";
-	rename -uid "53110873-4C36-9802-788B-C9824596A82D";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_scaleY";
-	rename -uid "E0B1A778-4634-609B-C74E-C48FF04A43EF";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_scaleZ";
-	rename -uid "7E550B5E-4873-7FB7-DE1F-C083B777B8D9";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_Follow_Translate";
-	rename -uid "955F5312-482F-21B8-15A3-5F9D75003160";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
-createNode animCurveTU -n "Neck_01_Ctrl_Follow_Rotate";
-	rename -uid "86501632-44EA-A0D0-0076-BF9062E1646E";
-	setAttr ".tan" 10;
-	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  28 1;
-	setAttr ".kot[0]"  5;
 createNode displayLayer -n "Cave";
 	rename -uid "D103D147-46A3-C8DD-9BDA-FDABEE2F3870";
 	setAttr ".dt" 2;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
+createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateX";
+	rename -uid "1FB9C21E-4075-23DC-8136-1AB3E223F86B";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateY";
+	rename -uid "CD7057A0-4AD9-8675-0CEA-ADA93B488259";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_07_FK_Ctrl_rotateZ";
+	rename -uid "E0C1C79A-4148-64EB-EEA4-28A06067220C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 4 30 0 31 -6.0000000000000009 32 -10
+		 33 -14 34 -12.000000000000002 35 -8 36 -2 37 2 38 4 39 6.0000000000000009 40 9 41 6.0000000000000009
+		 42 10 43 8 44 6.0000000000000009 45 4;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateX";
+	rename -uid "9037CC3D-49BD-164D-D818-459DF0058AD4";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateY";
+	rename -uid "868CDD69-4CF1-5195-F934-A1AA0DCCE602";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_08_FK_Ctrl_rotateZ";
+	rename -uid "F699F131-4842-541E-ACC1-9398C511910C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 4 30 0 31 -6.0000000000000009 32 -10
+		 33 -14 34 -12.000000000000002 35 -8 36 -2 37 2 38 4 39 6.0000000000000009 40 9 41 6.0000000000000009
+		 42 10 43 8 44 6.0000000000000009 45 4;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateX";
+	rename -uid "D788ED84-46A6-144E-912D-07A0054BB18C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateY";
+	rename -uid "83F58CF3-4A36-F3DF-238F-F6980B6EA69C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_09_FK_Ctrl_rotateZ";
+	rename -uid "18736C1D-46B9-B628-FF98-FD8B027901D3";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 4 30 0 31 -6.0000000000000009 32 -10
+		 33 -14 34 -12.000000000000002 35 -8 36 -2 37 2 38 4 39 6.0000000000000009 40 9 41 6.0000000000000009
+		 42 10 43 8 44 6.0000000000000009 45 4;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateX";
+	rename -uid "39B8D7A2-4A4A-31C3-CFA8-E785B8A097BE";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateY";
+	rename -uid "94419A89-4F20-A9BA-1921-ACAC5ADBB9F0";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_10_FK_Ctrl_rotateZ";
+	rename -uid "6007EBA7-4C41-8594-3827-21BBD7D20F82";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 4 30 0 31 -6.0000000000000009 32 -10
+		 33 -14 34 -12.000000000000002 35 -8 36 -2 37 2 38 4 39 6.0000000000000009 40 9 41 6.0000000000000009
+		 42 10 43 8 44 6.0000000000000009 45 4;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateX";
+	rename -uid "F6C167A6-449E-30CF-53CC-21BF240F52B3";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateY";
+	rename -uid "5B738346-40D1-F709-5000-FB9338827830";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTA -n "Tail_11_FK_Ctrl_rotateZ";
+	rename -uid "B52D19D3-46A5-C52D-46C3-F489BD5AFD58";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 4 30 0 31 -6.0000000000000009 32 -10
+		 33 -14 34 -12.000000000000002 35 -8 36 -2 37 2 38 4 39 6.0000000000000009 40 9 41 6.0000000000000009
+		 42 10 43 8 44 6.0000000000000009 45 4;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_visibility";
+	rename -uid "570EB3D6-4565-48BF-6CA5-99A665E14EFA";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 1;
+	setAttr -s 17 ".kix[16]"  1;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_07_FK_Ctrl_translateX";
+	rename -uid "1FC833D4-4205-8BFC-F4A4-55BD907DD4A2";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_07_FK_Ctrl_translateY";
+	rename -uid "444BC1E9-47E5-FBB5-DCE8-969F6FBD7A6E";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_07_FK_Ctrl_translateZ";
+	rename -uid "E7A476A2-4CC9-EDC7-3796-9D8BCEA8E903";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleX";
+	rename -uid "553C3383-442E-76CA-78A0-3B8D972DB40C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleY";
+	rename -uid "804C0C47-4AB0-8BBC-D6EC-BF95117D668B";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_scaleZ";
+	rename -uid "01261E16-46E2-6F1F-757F-52A17F92FF2D";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_Follow_Translate";
+	rename -uid "BB431558-455C-F5A4-0EE0-A296437A449A";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_07_FK_Ctrl_Follow_Rotate";
+	rename -uid "FF6B2755-4029-4B1A-C845-B28C40624A95";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_visibility";
+	rename -uid "CFB63D22-4AA8-67A4-664A-09A94AF07CE8";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 1;
+	setAttr -s 17 ".kix[16]"  1;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_08_FK_Ctrl_translateX";
+	rename -uid "3D608647-4AD6-7B70-1640-BCB818152D2D";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_08_FK_Ctrl_translateY";
+	rename -uid "5733A52A-4D0C-3E69-CCC0-73984FF00DC4";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_08_FK_Ctrl_translateZ";
+	rename -uid "3CEE12ED-4E7A-A729-1DDF-DF8BFFB81E45";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleX";
+	rename -uid "B35E35B5-48A4-68C1-E86E-DFB5F6C3AF36";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleY";
+	rename -uid "DF032CC8-4CC2-A2A3-A9DD-80A680A8AEF9";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_scaleZ";
+	rename -uid "77B93E00-4ADE-FCCE-2493-4CA9988DE5CC";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_Follow_Translate";
+	rename -uid "B2424E4F-4971-730E-C556-E995EBAAAA50";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_08_FK_Ctrl_Follow_Rotate";
+	rename -uid "28806568-4F0F-DD9A-FFB3-7C9B88696D6A";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_visibility";
+	rename -uid "22DE20EE-42E0-9458-BD1F-32915EC54AE2";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 1;
+	setAttr -s 17 ".kix[16]"  1;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_09_FK_Ctrl_translateX";
+	rename -uid "E8010570-4A59-DB7F-1467-B59EB5C71571";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_09_FK_Ctrl_translateY";
+	rename -uid "62587F4A-4B83-7AFA-89FB-98B3E85D30D0";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_09_FK_Ctrl_translateZ";
+	rename -uid "D9C647B3-4744-3DD7-92FE-D79A1FE460B3";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleX";
+	rename -uid "66DD2911-4C47-EFE8-1F62-9F95AC3C2E8A";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleY";
+	rename -uid "D3CBE7BC-4B5C-2D89-BA48-A3ADD0AA0091";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_scaleZ";
+	rename -uid "90164145-49E2-E08D-CF2A-568981AFCF83";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_Follow_Translate";
+	rename -uid "464A228D-46BA-9323-EED6-1892D675BB69";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_09_FK_Ctrl_Follow_Rotate";
+	rename -uid "8F524DEF-42C3-3E34-18AE-1D9BC69F5959";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_visibility";
+	rename -uid "90CE8522-4659-117F-EAC7-23BB2C715808";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 1;
+	setAttr -s 17 ".kix[16]"  1;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_10_FK_Ctrl_translateX";
+	rename -uid "44DBDC93-40E6-344C-9312-619C397325A7";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_10_FK_Ctrl_translateY";
+	rename -uid "25F9D86F-4682-7F62-F21D-80B3D68B1881";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_10_FK_Ctrl_translateZ";
+	rename -uid "BDE73192-4CDB-67AF-8B50-A9AC7938F9B6";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleX";
+	rename -uid "FCD15A3A-4556-C80E-194D-84BF68839380";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleY";
+	rename -uid "44DC8C63-4A3E-6482-D396-D3998CA9EA7A";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_scaleZ";
+	rename -uid "43C59179-43C6-C24A-355F-269BE32B1386";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_Follow_Translate";
+	rename -uid "F3BDF196-4C79-937D-1578-A984A9290B6C";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_10_FK_Ctrl_Follow_Rotate";
+	rename -uid "1B5D506C-443B-02E0-CA4B-489E661731F9";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_visibility";
+	rename -uid "8DCA1C92-49C0-1A82-9978-1E9DC8DE1A39";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 1;
+	setAttr -s 17 ".kix[16]"  1;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_11_FK_Ctrl_translateX";
+	rename -uid "6AB89521-44DB-F6F2-EF31-A7B389EE0BDF";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_11_FK_Ctrl_translateY";
+	rename -uid "8B947907-49B8-2D14-4FDE-5CB50E86979F";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Tail_11_FK_Ctrl_translateZ";
+	rename -uid "888F05C0-49AC-6EAA-0B58-909E9A1953AE";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 0 30 0 31 0 32 0 33 0 34 0 35 0 36 0
+		 37 0 38 0 39 0 40 0 41 0 42 0 43 0 44 0 45 0;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleX";
+	rename -uid "08015606-4CE8-0521-8BDE-96AAC3306126";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleY";
+	rename -uid "217FD935-41B4-5D3A-3DAE-23A93E313BE4";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_scaleZ";
+	rename -uid "4BABE5CB-4DD9-E594-8295-9984F7BABE45";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_Follow_Translate";
+	rename -uid "B259B50F-4C48-2614-205E-538101327245";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTU -n "Tail_11_FK_Ctrl_Follow_Rotate";
+	rename -uid "ADEB0B41-4CB6-8295-433F-DCB803B2EC03";
+	setAttr ".tan" 5;
+	setAttr ".wgt" no;
+	setAttr -s 17 ".ktv[0:16]"  29 1 30 1 31 1 32 1 33 1 34 1 35 1 36 1
+		 37 1 38 1 39 1 40 1 41 1 42 1 43 1 44 1 45 1;
+	setAttr -s 17 ".kit[0:16]"  10 10 10 10 10 10 10 10 
+		10 10 10 10 10 10 10 10 1;
+	setAttr -s 17 ".kix[16]"  0;
+	setAttr -s 17 ".kiy[16]"  0;
+createNode animCurveTL -n "Neck_01_Ctrl_translateX";
+	rename -uid "3CA3DE46-4549-544A-7325-3C9573D0F500";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 -10 31 0 33 10 35 5 37 0 39 5 41 10 43 0
+		 45 -10;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTL -n "Neck_01_Ctrl_translateY";
+	rename -uid "E6EC136A-4569-183F-EB7E-D2AC4F27DB16";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 0 31 0 33 0 35 0 37 0 39 0 41 0 43 0
+		 45 0;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTL -n "Neck_01_Ctrl_translateZ";
+	rename -uid "341CF3CE-42C3-45E8-7971-DB839BA2BB53";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 0 31 0 33 0 35 0 37 0 39 0 41 0 43 0
+		 45 0;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_visibility";
+	rename -uid "D2B6DD7E-4F57-8A43-84E6-D28DD1BBC8A9";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTA -n "Neck_01_Ctrl_rotateX";
+	rename -uid "A90B5FD4-4AA9-0920-451F-CAA30BC823B1";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 0 31 0 33 0 35 0 37 0 39 0 41 0 43 0
+		 45 0;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTA -n "Neck_01_Ctrl_rotateY";
+	rename -uid "49C0EFA5-4517-35BF-9410-2BA79640AFA2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 0 31 0 33 0 35 0 37 0 39 0 41 0 43 0
+		 45 0;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTA -n "Neck_01_Ctrl_rotateZ";
+	rename -uid "0CF6BB64-46E7-C030-2D1F-4CA23C1E3DDB";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 14.999999999999998 31 14.999999999999998
+		 33 14.999999999999998 35 14.999999999999998 37 14.999999999999998 39 14.999999999999998
+		 41 14.999999999999998 43 14.999999999999998 45 14.999999999999998;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_scaleX";
+	rename -uid "09DC6CDA-4760-AF7B-4F8F-499C433C514C";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_scaleY";
+	rename -uid "6F6A3C18-4A3C-17C4-9BF3-5FA2DC9EEB9D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_scaleZ";
+	rename -uid "795A5EF5-4183-E05B-6DA9-9A879CA12855";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_Follow_Translate";
+	rename -uid "A75F22A2-4EF1-CB93-9AD5-9A819D3ABD30";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTU -n "Neck_01_Ctrl_Follow_Rotate";
+	rename -uid "C2B5EB22-438B-0777-6313-0A99EB8B02B5";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 9 ".ktv[0:8]"  29 1 31 1 33 1 35 1 37 1 39 1 41 1 43 1
+		 45 1;
+	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
+		5;
+createNode animCurveTL -n "R_Arm_01_IK_Ctrl_translateX";
+	rename -uid "730A72F6-433A-DE13-B8AE-CCA68927201D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTL -n "R_Arm_01_IK_Ctrl_translateY";
+	rename -uid "067F796B-48FA-6903-8BDE-498D673C6E27";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 -30.640358891010194 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTL -n "R_Arm_01_IK_Ctrl_translateZ";
+	rename -uid "DCBF45FA-425A-7962-F91F-4FBD6ED44DAB";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 1.3056222769591841e-13;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "R_Arm_01_IK_Ctrl_visibility";
+	rename -uid "74FD95B9-40A3-B49B-CE88-ADB4286BD324";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 1 35 1 44 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTA -n "R_Arm_01_IK_Ctrl_rotateX";
+	rename -uid "43B7680C-400C-B4AE-DCEF-39B152D0953B";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTA -n "R_Arm_01_IK_Ctrl_rotateY";
+	rename -uid "F939E205-4309-E7CC-D7B9-BFB10D509FF8";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTA -n "R_Arm_01_IK_Ctrl_rotateZ";
+	rename -uid "938930D7-47C4-3365-1854-5684EC79DEA9";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "R_Arm_01_IK_Ctrl_scaleX";
+	rename -uid "18FD7C57-49AF-28E8-E403-7096B989DF91";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 1 35 1 44 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "R_Arm_01_IK_Ctrl_scaleY";
+	rename -uid "DBB1E9A3-4B29-3715-8BA0-849E4ACB57C4";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 1 35 1 44 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "R_Arm_01_IK_Ctrl_scaleZ";
+	rename -uid "2FDFA49C-47D0-2146-5AB4-A7925ECDF2DC";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 1 35 1 44 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTU -n "R_Arm_01_IK_Ctrl_Operating_Space";
+	rename -uid "EEB4416F-4917-AABC-344E-F0A3A6A823E0";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  28 0 35 0 44 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_01_Ctrl_rotateX";
+	rename -uid "6AE0FB12-4A4F-A2DE-0B1D-3BABD721A047";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_01_Ctrl_rotateY";
+	rename -uid "D6549AD1-423B-F618-A513-92A2D3F2808E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_01_Ctrl_rotateZ";
+	rename -uid "32DB3A94-4233-6801-4FBB-578713FCBC66";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_02_Ctrl_rotateX";
+	rename -uid "8DF38BB6-495A-3977-9BEB-A19C2E37A77D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_02_Ctrl_rotateY";
+	rename -uid "E5CDFF08-48C7-A2ED-EA48-02B1FF92D9EB";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_01_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "51A2097C-41E0-8B8B-B2E2-0989CA2489A8";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_01_Ctrl_rotateX";
+	rename -uid "6ED3A520-4602-ACE6-1139-81ABD6634B07";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_01_Ctrl_rotateY";
+	rename -uid "286F3B63-4F88-3834-0C16-E1BE1C8826EA";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_01_Ctrl_rotateZ";
+	rename -uid "98222159-4AB4-6524-9F4E-648E0439907B";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_02_Ctrl_rotateX";
+	rename -uid "A62530F0-4A1F-275A-18D7-F6868417742E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_02_Ctrl_rotateY";
+	rename -uid "9A9CEE5A-4C0C-4B74-6130-2DBA5E62B3ED";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_02_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "5C921BBC-487E-02AB-6793-EA9A99D65E93";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_03_Knuckle_02_Ctrl_rotateX";
+	rename -uid "2B93A328-43AF-C744-5A52-2F8D9E607AAF";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_03_Knuckle_02_Ctrl_rotateY";
+	rename -uid "2762C2D5-4B99-40A4-6508-9C8F822C0896";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "L_Toe_03_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "0B681408-4474-4833-E700-53ACC0ED9F8A";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_01_Ctrl_rotateX";
+	rename -uid "99CC4D54-431F-E813-3B99-72BEE1356DC4";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_01_Ctrl_rotateY";
+	rename -uid "D1067A5B-4E2B-CC55-DC1A-83B981AC3A88";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_01_Ctrl_rotateZ";
+	rename -uid "B1C70931-478C-69A6-F88B-7EB109831093";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_02_Ctrl_rotateX";
+	rename -uid "C1B96E6B-49EE-A271-0720-98964D601BC8";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_02_Ctrl_rotateY";
+	rename -uid "01FE76B6-4594-5674-37D4-75BD82C1CDD2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_01_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "146082DD-44CF-1878-CF7B-E498A6994482";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_01_Ctrl_rotateX";
+	rename -uid "B16007C2-4993-C15A-9306-D9ACC5E1C973";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_01_Ctrl_rotateY";
+	rename -uid "4E1B6C02-4718-6F83-631B-4F9B4376A0AC";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_01_Ctrl_rotateZ";
+	rename -uid "27F2AE05-4968-5E99-EDED-858C9EEDB2A9";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_02_Ctrl_rotateX";
+	rename -uid "6ECA771D-4F19-A60F-FAFB-DCAE1E3A161D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_02_Ctrl_rotateY";
+	rename -uid "F225A2BD-4E66-FE28-B2DA-C299E521B522";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_02_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "237AA49B-4B15-DEFF-269A-878D4A674FAF";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_01_Ctrl_rotateX";
+	rename -uid "FF7F859D-48A9-FB4D-E384-07834B73F89E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_01_Ctrl_rotateY";
+	rename -uid "569E254C-4B99-A5E2-EDD4-CA9DD6301617";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_01_Ctrl_rotateZ";
+	rename -uid "5A535781-4934-F09A-CBBA-30BE5755CA20";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_02_Ctrl_rotateX";
+	rename -uid "167C5E52-4558-34EB-646E-D1A2BC809714";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_02_Ctrl_rotateY";
+	rename -uid "63C92186-4EA8-386A-A690-D4A87217B6EA";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTA -n "R_Toe_03_Knuckle_02_Ctrl_rotateZ";
+	rename -uid "27BA2AAA-426B-88FD-EF7B-F7B8C7210AAC";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 -100 30 -80 32 -100 38 -119.99999999999999
+		 40 -100 44 -100;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_01_Ctrl_visibility";
+	rename -uid "7A8C26A2-478A-C7F2-4AF5-B08FEA7A4662";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_01_Ctrl_translateX";
+	rename -uid "AE6FDCE9-4D05-14E6-E55C-C9BCCA08AA2C";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_01_Ctrl_translateY";
+	rename -uid "940CC3C2-4DF0-C660-0063-2EB549BCAB5F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_01_Ctrl_translateZ";
+	rename -uid "75D9D6F1-4E33-826D-C67B-BCA283786E2C";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_01_Ctrl_scaleX";
+	rename -uid "13D57D38-41C1-CBD1-11ED-D3BAC4D3AC38";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_01_Ctrl_scaleY";
+	rename -uid "1153E0FD-4DD2-CBE9-D09B-B2B9AFAE7BD8";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_01_Ctrl_scaleZ";
+	rename -uid "C7918383-4886-C969-EA53-EF907DBDF0CA";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_02_Ctrl_visibility";
+	rename -uid "7A329CB7-433F-943A-BB16-419AF376DB97";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_02_Ctrl_translateX";
+	rename -uid "F185CAA1-47CD-97E8-2D3F-28B11165722F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_02_Ctrl_translateY";
+	rename -uid "2A8F5115-4551-20EF-88C3-98B768D6ACFD";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_01_Knuckle_02_Ctrl_translateZ";
+	rename -uid "E64AB9FF-4741-9980-F987-7786A24468A0";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_02_Ctrl_scaleX";
+	rename -uid "D9EAFB7A-4609-1105-124D-5283349186E2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_02_Ctrl_scaleY";
+	rename -uid "738E1889-401F-8C18-158D-D98F3E230E75";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_01_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "6D574C6D-40D5-57D8-38C3-5E8EE8C850B0";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_01_Ctrl_visibility";
+	rename -uid "257B7E09-4058-09F5-8F5C-01B26609C399";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_01_Ctrl_translateX";
+	rename -uid "F5CC2A96-442A-66B7-8295-059118B2E30E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_01_Ctrl_translateY";
+	rename -uid "6E37A9A2-4415-2347-354D-E0B545EAEFAE";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_01_Ctrl_translateZ";
+	rename -uid "AA9400A5-4632-A741-0205-1E9AEB0A6FBF";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_01_Ctrl_scaleX";
+	rename -uid "84B4D71F-4528-FAAC-08CE-DCBB634D21D6";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_01_Ctrl_scaleY";
+	rename -uid "4509E612-47BD-46EB-E0EE-C4936704BEEC";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_01_Ctrl_scaleZ";
+	rename -uid "36AB6746-4FBA-73E6-ED74-3CBD8D4F8638";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_02_Ctrl_visibility";
+	rename -uid "5F3AC017-4BF4-E8E8-EC11-A78B1BF32F41";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_02_Ctrl_translateX";
+	rename -uid "37588680-45B8-953F-B3BC-1AA304F204D2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_02_Ctrl_translateY";
+	rename -uid "6202E8E5-48A0-7D6E-CD89-D2A609A73450";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_02_Knuckle_02_Ctrl_translateZ";
+	rename -uid "D7960A80-4C01-68B7-81E8-549813B089F0";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_02_Ctrl_scaleX";
+	rename -uid "9D28C478-4865-6007-8D96-51B34F31CAB8";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_02_Ctrl_scaleY";
+	rename -uid "4C009FA9-4DFE-6211-2A31-F2ACF8C5E44C";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_02_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "4EB8070F-495B-B171-1FF8-4E8B6B893102";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_03_Knuckle_02_Ctrl_visibility";
+	rename -uid "29D56C88-40C4-4947-07F8-7BA141489C1C";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_03_Knuckle_02_Ctrl_translateX";
+	rename -uid "081914EF-4909-D33E-CAD9-09ADC727FABA";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_03_Knuckle_02_Ctrl_translateY";
+	rename -uid "AC16E3E3-458A-FAF7-DB88-FE8A3728DE2F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "L_Toe_03_Knuckle_02_Ctrl_translateZ";
+	rename -uid "0B44EE5F-4871-8127-61E0-ED9E7C30FD5A";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_03_Knuckle_02_Ctrl_scaleX";
+	rename -uid "88DFFA26-4F34-3A82-C8A3-D0AB5B4FA3C2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_03_Knuckle_02_Ctrl_scaleY";
+	rename -uid "E509C790-4466-0331-AC14-FB93C816BDFB";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "L_Toe_03_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "DF74645A-460F-A926-3AC2-4C82C390D071";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_01_Ctrl_visibility";
+	rename -uid "5F36A087-45DB-45F3-7D9B-9B854753743F";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_01_Ctrl_translateX";
+	rename -uid "0FB804D3-4359-1F5F-B096-268846CEA928";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_01_Ctrl_translateY";
+	rename -uid "191B4D12-420C-AE7C-001B-3D90334C5EC9";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_01_Ctrl_translateZ";
+	rename -uid "9AC9CD18-4820-4043-62C6-88B6D9328F02";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_01_Ctrl_scaleX";
+	rename -uid "F96E96ED-45D4-D293-6EEA-1689B47FB063";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_01_Ctrl_scaleY";
+	rename -uid "FBFE9047-4568-7507-A432-81895153328A";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_01_Ctrl_scaleZ";
+	rename -uid "7F9416F2-4F8D-4667-1CBD-F2B7E163E23F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_01_Ctrl_visibility";
+	rename -uid "F5B52160-403C-2F7A-0DF3-B285226CDB96";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_01_Ctrl_translateX";
+	rename -uid "71048E86-414A-C0FB-6888-E587A8380187";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_01_Ctrl_translateY";
+	rename -uid "6D77DB0E-4D0F-5FE9-C37F-97A9B0797177";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_01_Ctrl_translateZ";
+	rename -uid "90341C36-4C4C-047C-3EF5-C58A3529C75F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_01_Ctrl_scaleX";
+	rename -uid "7DAB3A6C-4982-2D16-4DDF-4FA2C8AE7171";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_01_Ctrl_scaleY";
+	rename -uid "C207D0A1-4124-7191-97C4-5E8EC779BE94";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_01_Ctrl_scaleZ";
+	rename -uid "43DE050F-4FA5-A2D8-F3D7-ABB4875DE00D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_01_Ctrl_visibility";
+	rename -uid "60689796-4C96-08A4-FCE2-419846CD7864";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_01_Ctrl_translateX";
+	rename -uid "2ADE29F9-4C65-D98D-3DE6-D6A2451AA907";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_01_Ctrl_translateY";
+	rename -uid "B78AAAD4-4349-8B53-955C-0CAFD1FDA59E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_01_Ctrl_translateZ";
+	rename -uid "135D8DB0-458A-20D9-A93C-D28661555DB9";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_01_Ctrl_scaleX";
+	rename -uid "F3AFD2D0-4F0A-7431-E62A-21A7D0AE2846";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_01_Ctrl_scaleY";
+	rename -uid "24A7EE32-480F-6F57-4215-99B406782980";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_01_Ctrl_scaleZ";
+	rename -uid "9778C3F5-4F2D-0CC4-9F29-69A5BEFE87F4";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_02_Ctrl_visibility";
+	rename -uid "2E16C985-4244-5231-0584-D5ACB692441F";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_02_Ctrl_translateX";
+	rename -uid "CB6A1477-4963-60C4-64A5-6FA8457E109E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_02_Ctrl_translateY";
+	rename -uid "56B245AC-4893-23E9-1ED6-019B62C7816D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_01_Knuckle_02_Ctrl_translateZ";
+	rename -uid "44689174-4159-6FE4-E8BF-CD9B07F64C63";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_02_Ctrl_scaleX";
+	rename -uid "23123E9A-4913-BE24-49E6-AE80985D3C85";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_02_Ctrl_scaleY";
+	rename -uid "92A6AAAC-42CF-9AEA-8666-FAB404224EF7";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_01_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "FC367758-4A1C-1C8E-866F-8AAAD6822DB1";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_02_Ctrl_visibility";
+	rename -uid "D9D9FA22-4261-DF46-A846-D78BDC2A3D93";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_02_Ctrl_translateX";
+	rename -uid "45BFF2F9-4953-B517-615F-F787AD8A29E9";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_02_Ctrl_translateY";
+	rename -uid "7689EB84-462C-9913-B134-44B07D5D4F01";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_02_Knuckle_02_Ctrl_translateZ";
+	rename -uid "6F6E2B00-481B-6BB1-DF29-06B95321CD0F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_02_Ctrl_scaleX";
+	rename -uid "9C9F3891-4DB8-C701-E246-8BA76E768089";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_02_Ctrl_scaleY";
+	rename -uid "982BE59D-4948-431F-7FE2-10A130E5DF54";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_02_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "6F2931BE-4F04-8CF8-921F-7296ED086636";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_02_Ctrl_visibility";
+	rename -uid "F6CE4089-4D14-EA05-97FA-B687972E5765";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_02_Ctrl_translateX";
+	rename -uid "9BC44862-4071-81FC-41D8-5490A7CDF86B";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_02_Ctrl_translateY";
+	rename -uid "B7372BD8-4488-F1BB-F4F2-758AD4D0E136";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "R_Toe_03_Knuckle_02_Ctrl_translateZ";
+	rename -uid "670BA30D-4EB5-ED88-04CA-C59B8E9ADD42";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 0 30 0 32 0 38 0 40 0 44 0;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_02_Ctrl_scaleX";
+	rename -uid "59CD4FCD-40CD-B604-A05C-8FAFE55FFE34";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_02_Ctrl_scaleY";
+	rename -uid "294B52A0-4BF8-43C2-6505-3E9D4D8EF9A3";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTU -n "R_Toe_03_Knuckle_02_Ctrl_scaleZ";
+	rename -uid "A8B3B3B5-44EC-601A-9FAD-29A2F7909B87";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  28 1 30 1 32 1 38 1 40 1 44 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
+createNode animCurveTL -n "Spine_02_Ctrl_translateX";
+	rename -uid "8AD92222-4887-0343-C174-E787D00D8969";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 2.5979218776228663e-14 29 2.5979218776228663e-14
+		 30 2.5979218776228663e-14 31 0 37 0 38 0 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTL -n "Spine_02_Ctrl_translateY";
+	rename -uid "9422E49D-44B6-C7EF-62E8-9FA46354A274";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 0 29 0 30 -40 31 0 37 0 38 30 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTL -n "Spine_02_Ctrl_translateZ";
+	rename -uid "19F6D61E-4110-6305-C18F-FE868EDA8A94";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1.5777218104420236e-30 29 1.5777218104420236e-30
+		 30 1.5777218104420236e-30 31 0 37 0 38 0 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_visibility";
+	rename -uid "A2C9A0DE-4718-30D1-65CF-C5A63C9FF952";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTA -n "Spine_02_Ctrl_rotateX";
+	rename -uid "AA6FAFA2-4BAA-CC8B-0B7D-CE926CB18BBD";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 0 29 0 30 0 31 0 37 0 38 0 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTA -n "Spine_02_Ctrl_rotateY";
+	rename -uid "CFF52235-4E70-6E5C-73CA-029BE1E7614B";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 0 29 0 30 0 31 0 37 0 38 0 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTA -n "Spine_02_Ctrl_rotateZ";
+	rename -uid "A662D7A0-416C-D30D-D155-64BE6EEADBDF";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 0 29 0 30 0 31 0 37 0 38 0 39 0;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_scaleX";
+	rename -uid "84FB419F-4CE3-80BC-1E0F-D6B91A1E9993";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_scaleY";
+	rename -uid "C0C0D27F-4920-D256-CE12-4E8ED6CEA20C";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_scaleZ";
+	rename -uid "A94BF802-4303-EFB6-513F-F7B684D441C1";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_Follow_Translate";
+	rename -uid "9879BE5A-42A7-09DA-5A18-D1A04B5FC599";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
+createNode animCurveTU -n "Spine_02_Ctrl_Follow_Rotate";
+	rename -uid "3DA860CF-4E35-4AEB-F5D6-32A803C29C7F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr -s 7 ".ktv[0:6]"  28 1 29 1 30 1 31 1 37 1 38 1 39 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 select -ne :time1;
 	setAttr ".o" 28;
 	setAttr ".unw" 28;
@@ -6212,419 +8030,552 @@ connectAttr "Tail_11_FK_Ctrl_scaleX.o" "Dragon_RigRN.phl[568]";
 connectAttr "Tail_11_FK_Ctrl_scaleY.o" "Dragon_RigRN.phl[569]";
 connectAttr "Tail_11_FK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[570]";
 connectAttr "Tail_11_FK_Ctrl_visibility.o" "Dragon_RigRN.phl[571]";
-connectAttr "Chest_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[572]";
-connectAttr "Chest_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[573]";
-connectAttr "Chest_Ctrl_translateX.o" "Dragon_RigRN.phl[574]";
-connectAttr "Chest_Ctrl_translateY.o" "Dragon_RigRN.phl[575]";
-connectAttr "Chest_Ctrl_translateZ.o" "Dragon_RigRN.phl[576]";
-connectAttr "Chest_Ctrl_rotateX.o" "Dragon_RigRN.phl[577]";
-connectAttr "Chest_Ctrl_rotateY.o" "Dragon_RigRN.phl[578]";
-connectAttr "Chest_Ctrl_rotateZ.o" "Dragon_RigRN.phl[579]";
-connectAttr "Chest_Ctrl_scaleX.o" "Dragon_RigRN.phl[580]";
-connectAttr "Chest_Ctrl_scaleY.o" "Dragon_RigRN.phl[581]";
-connectAttr "Chest_Ctrl_scaleZ.o" "Dragon_RigRN.phl[582]";
-connectAttr "Chest_Ctrl_visibility.o" "Dragon_RigRN.phl[583]";
-connectAttr "Neck_01_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[584]";
-connectAttr "Neck_01_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[585]";
-connectAttr "Neck_01_Ctrl_translateX.o" "Dragon_RigRN.phl[586]";
-connectAttr "Neck_01_Ctrl_translateY.o" "Dragon_RigRN.phl[587]";
-connectAttr "Neck_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[588]";
-connectAttr "Neck_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[589]";
-connectAttr "Neck_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[590]";
-connectAttr "Neck_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[591]";
-connectAttr "Neck_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[592]";
-connectAttr "Neck_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[593]";
-connectAttr "Neck_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[594]";
-connectAttr "Neck_01_Ctrl_visibility.o" "Dragon_RigRN.phl[595]";
-connectAttr "Neck_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[596]";
-connectAttr "Neck_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[597]";
-connectAttr "Neck_02_Ctrl_translateX.o" "Dragon_RigRN.phl[598]";
-connectAttr "Neck_02_Ctrl_translateY.o" "Dragon_RigRN.phl[599]";
-connectAttr "Neck_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[600]";
-connectAttr "Neck_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[601]";
-connectAttr "Neck_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[602]";
-connectAttr "Neck_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[603]";
-connectAttr "Neck_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[604]";
-connectAttr "Neck_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[605]";
-connectAttr "Neck_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[606]";
-connectAttr "Neck_02_Ctrl_visibility.o" "Dragon_RigRN.phl[607]";
-connectAttr "Neck_03_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[608]";
-connectAttr "Neck_03_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[609]";
-connectAttr "Neck_03_Ctrl_translateX.o" "Dragon_RigRN.phl[610]";
-connectAttr "Neck_03_Ctrl_translateY.o" "Dragon_RigRN.phl[611]";
-connectAttr "Neck_03_Ctrl_translateZ.o" "Dragon_RigRN.phl[612]";
-connectAttr "Neck_03_Ctrl_rotateX.o" "Dragon_RigRN.phl[613]";
-connectAttr "Neck_03_Ctrl_rotateY.o" "Dragon_RigRN.phl[614]";
-connectAttr "Neck_03_Ctrl_rotateZ.o" "Dragon_RigRN.phl[615]";
-connectAttr "Neck_03_Ctrl_scaleX.o" "Dragon_RigRN.phl[616]";
-connectAttr "Neck_03_Ctrl_scaleY.o" "Dragon_RigRN.phl[617]";
-connectAttr "Neck_03_Ctrl_scaleZ.o" "Dragon_RigRN.phl[618]";
-connectAttr "Neck_03_Ctrl_visibility.o" "Dragon_RigRN.phl[619]";
-connectAttr "Neck_04_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[620]";
-connectAttr "Neck_04_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[621]";
-connectAttr "Neck_04_Ctrl_translateX.o" "Dragon_RigRN.phl[622]";
-connectAttr "Neck_04_Ctrl_translateY.o" "Dragon_RigRN.phl[623]";
-connectAttr "Neck_04_Ctrl_translateZ.o" "Dragon_RigRN.phl[624]";
-connectAttr "Neck_04_Ctrl_rotateX.o" "Dragon_RigRN.phl[625]";
-connectAttr "Neck_04_Ctrl_rotateY.o" "Dragon_RigRN.phl[626]";
-connectAttr "Neck_04_Ctrl_rotateZ.o" "Dragon_RigRN.phl[627]";
-connectAttr "Neck_04_Ctrl_scaleX.o" "Dragon_RigRN.phl[628]";
-connectAttr "Neck_04_Ctrl_scaleY.o" "Dragon_RigRN.phl[629]";
-connectAttr "Neck_04_Ctrl_scaleZ.o" "Dragon_RigRN.phl[630]";
-connectAttr "Neck_04_Ctrl_visibility.o" "Dragon_RigRN.phl[631]";
-connectAttr "Neck_05_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[632]";
-connectAttr "Neck_05_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[633]";
-connectAttr "Neck_05_Ctrl_translateX.o" "Dragon_RigRN.phl[634]";
-connectAttr "Neck_05_Ctrl_translateY.o" "Dragon_RigRN.phl[635]";
-connectAttr "Neck_05_Ctrl_translateZ.o" "Dragon_RigRN.phl[636]";
-connectAttr "Neck_05_Ctrl_rotateX.o" "Dragon_RigRN.phl[637]";
-connectAttr "Neck_05_Ctrl_rotateY.o" "Dragon_RigRN.phl[638]";
-connectAttr "Neck_05_Ctrl_rotateZ.o" "Dragon_RigRN.phl[639]";
-connectAttr "Neck_05_Ctrl_scaleX.o" "Dragon_RigRN.phl[640]";
-connectAttr "Neck_05_Ctrl_scaleY.o" "Dragon_RigRN.phl[641]";
-connectAttr "Neck_05_Ctrl_scaleZ.o" "Dragon_RigRN.phl[642]";
-connectAttr "Neck_05_Ctrl_visibility.o" "Dragon_RigRN.phl[643]";
-connectAttr "Head_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[644]";
-connectAttr "Head_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[645]";
-connectAttr "Head_Ctrl_translateX.o" "Dragon_RigRN.phl[646]";
-connectAttr "Head_Ctrl_translateY.o" "Dragon_RigRN.phl[647]";
-connectAttr "Head_Ctrl_translateZ.o" "Dragon_RigRN.phl[648]";
-connectAttr "Head_Ctrl_rotateX.o" "Dragon_RigRN.phl[649]";
-connectAttr "Head_Ctrl_rotateY.o" "Dragon_RigRN.phl[650]";
-connectAttr "Head_Ctrl_rotateZ.o" "Dragon_RigRN.phl[651]";
-connectAttr "Head_Ctrl_scaleX.o" "Dragon_RigRN.phl[652]";
-connectAttr "Head_Ctrl_scaleY.o" "Dragon_RigRN.phl[653]";
-connectAttr "Head_Ctrl_scaleZ.o" "Dragon_RigRN.phl[654]";
-connectAttr "Head_Ctrl_visibility.o" "Dragon_RigRN.phl[655]";
-connectAttr "Jaw_Ctrl_translateX.o" "Dragon_RigRN.phl[656]";
-connectAttr "Jaw_Ctrl_translateY.o" "Dragon_RigRN.phl[657]";
-connectAttr "Jaw_Ctrl_translateZ.o" "Dragon_RigRN.phl[658]";
-connectAttr "Jaw_Ctrl_rotateX.o" "Dragon_RigRN.phl[659]";
-connectAttr "Jaw_Ctrl_rotateY.o" "Dragon_RigRN.phl[660]";
-connectAttr "Jaw_Ctrl_rotateZ.o" "Dragon_RigRN.phl[661]";
-connectAttr "Jaw_Ctrl_scaleX.o" "Dragon_RigRN.phl[662]";
-connectAttr "Jaw_Ctrl_scaleY.o" "Dragon_RigRN.phl[663]";
-connectAttr "Jaw_Ctrl_scaleZ.o" "Dragon_RigRN.phl[664]";
-connectAttr "Jaw_Ctrl_visibility.o" "Dragon_RigRN.phl[665]";
-connectAttr "L_Clav_Ctrl_translateX.o" "Dragon_RigRN.phl[666]";
-connectAttr "L_Clav_Ctrl_translateY.o" "Dragon_RigRN.phl[667]";
-connectAttr "L_Clav_Ctrl_translateZ.o" "Dragon_RigRN.phl[668]";
-connectAttr "L_Clav_Ctrl_rotateX.o" "Dragon_RigRN.phl[669]";
-connectAttr "L_Clav_Ctrl_rotateY.o" "Dragon_RigRN.phl[670]";
-connectAttr "L_Clav_Ctrl_rotateZ.o" "Dragon_RigRN.phl[671]";
-connectAttr "L_Clav_Ctrl_scaleX.o" "Dragon_RigRN.phl[672]";
-connectAttr "L_Clav_Ctrl_scaleY.o" "Dragon_RigRN.phl[673]";
-connectAttr "L_Clav_Ctrl_scaleZ.o" "Dragon_RigRN.phl[674]";
-connectAttr "L_Clav_Ctrl_visibility.o" "Dragon_RigRN.phl[675]";
-connectAttr "Dragon_RigRN.phl[676]" "polySurface2_parentConstraint1.tg[0].tr";
-connectAttr "L_Arm_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[677]";
-connectAttr "L_Arm_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[678]";
-connectAttr "L_Arm_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[679]";
-connectAttr "Dragon_RigRN.phl[680]" "polySurface2_parentConstraint1.tg[0].tro";
-connectAttr "Dragon_RigRN.phl[681]" "polySurface2_parentConstraint1.tg[0].tpm";
-connectAttr "L_Arm_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[682]";
-connectAttr "Dragon_RigRN.phl[683]" "polySurface2_parentConstraint1.tg[0].tt";
-connectAttr "L_Arm_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[684]";
-connectAttr "L_Arm_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[685]";
-connectAttr "L_Arm_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[686]";
-connectAttr "L_Arm_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[687]";
-connectAttr "Dragon_RigRN.phl[688]" "polySurface2_parentConstraint1.tg[0].ts";
-connectAttr "L_Arm_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[689]";
-connectAttr "L_Arm_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[690]";
-connectAttr "L_Arm_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[691]";
-connectAttr "Dragon_RigRN.phl[692]" "polySurface2_parentConstraint1.tg[0].trp";
-connectAttr "Dragon_RigRN.phl[693]" "polySurface2_parentConstraint1.tg[0].trt";
-connectAttr "L_Arm_IK_Tip_Ctrl_rotateZ.o" "Dragon_RigRN.phl[694]";
-connectAttr "L_Arm_IK_Tip_Ctrl_rotateX.o" "Dragon_RigRN.phl[695]";
-connectAttr "L_Arm_IK_Tip_Ctrl_rotateY.o" "Dragon_RigRN.phl[696]";
-connectAttr "L_Arm_IK_Tip_Ctrl_visibility.o" "Dragon_RigRN.phl[697]";
-connectAttr "L_Arm_IK_Tip_Ctrl_translateX.o" "Dragon_RigRN.phl[698]";
-connectAttr "L_Arm_IK_Tip_Ctrl_translateY.o" "Dragon_RigRN.phl[699]";
-connectAttr "L_Arm_IK_Tip_Ctrl_translateZ.o" "Dragon_RigRN.phl[700]";
-connectAttr "L_Arm_IK_Tip_Ctrl_scaleX.o" "Dragon_RigRN.phl[701]";
-connectAttr "L_Arm_IK_Tip_Ctrl_scaleY.o" "Dragon_RigRN.phl[702]";
-connectAttr "L_Arm_IK_Tip_Ctrl_scaleZ.o" "Dragon_RigRN.phl[703]";
-connectAttr "L_Arm_IK_Ball_Ctrl_translateX.o" "Dragon_RigRN.phl[704]";
-connectAttr "L_Arm_IK_Ball_Ctrl_translateY.o" "Dragon_RigRN.phl[705]";
-connectAttr "L_Arm_IK_Ball_Ctrl_translateZ.o" "Dragon_RigRN.phl[706]";
-connectAttr "L_Arm_IK_Ball_Ctrl_rotateZ.o" "Dragon_RigRN.phl[707]";
-connectAttr "L_Arm_IK_Ball_Ctrl_rotateX.o" "Dragon_RigRN.phl[708]";
-connectAttr "L_Arm_IK_Ball_Ctrl_rotateY.o" "Dragon_RigRN.phl[709]";
-connectAttr "L_Arm_IK_Ball_Ctrl_visibility.o" "Dragon_RigRN.phl[710]";
-connectAttr "L_Arm_IK_Ball_Ctrl_scaleX.o" "Dragon_RigRN.phl[711]";
-connectAttr "L_Arm_IK_Ball_Ctrl_scaleY.o" "Dragon_RigRN.phl[712]";
-connectAttr "L_Arm_IK_Ball_Ctrl_scaleZ.o" "Dragon_RigRN.phl[713]";
-connectAttr "L_Arm_IKFK_Ctrl_Winger_Spread.o" "Dragon_RigRN.phl[714]";
-connectAttr "L_Arm_IKFK_Ctrl_Winger_Grab.o" "Dragon_RigRN.phl[715]";
-connectAttr "L_Arm_IKFK_Ctrl_Winger_Side_Movement.o" "Dragon_RigRN.phl[716]";
-connectAttr "L_Arm_IKFK_Ctrl_Wing_Flap_Effect.o" "Dragon_RigRN.phl[717]";
-connectAttr "L_Arm_IKFK_Ctrl_Wing_Flap_Animation.o" "Dragon_RigRN.phl[718]";
-connectAttr "L_Arm_IKFK_Ctrl_Arm_IKFK_Switch.o" "Dragon_RigRN.phl[719]";
-connectAttr "L_Arm_IKFK_Ctrl_Wing_IKFK_Switch.o" "Dragon_RigRN.phl[720]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[721]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[722]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[723]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[724]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[725]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[726]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[727]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[728]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[729]";
-connectAttr "L_Finger_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[730]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[731]"
+connectAttr "Spine_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[572]";
+connectAttr "Spine_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[573]";
+connectAttr "Spine_02_Ctrl_translateX.o" "Dragon_RigRN.phl[574]";
+connectAttr "Spine_02_Ctrl_translateY.o" "Dragon_RigRN.phl[575]";
+connectAttr "Spine_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[576]";
+connectAttr "Spine_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[577]";
+connectAttr "Spine_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[578]";
+connectAttr "Spine_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[579]";
+connectAttr "Spine_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[580]";
+connectAttr "Spine_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[581]";
+connectAttr "Spine_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[582]";
+connectAttr "Spine_02_Ctrl_visibility.o" "Dragon_RigRN.phl[583]";
+connectAttr "Chest_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[584]";
+connectAttr "Chest_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[585]";
+connectAttr "Chest_Ctrl_translateX.o" "Dragon_RigRN.phl[586]";
+connectAttr "Chest_Ctrl_translateY.o" "Dragon_RigRN.phl[587]";
+connectAttr "Chest_Ctrl_translateZ.o" "Dragon_RigRN.phl[588]";
+connectAttr "Chest_Ctrl_rotateX.o" "Dragon_RigRN.phl[589]";
+connectAttr "Chest_Ctrl_rotateY.o" "Dragon_RigRN.phl[590]";
+connectAttr "Chest_Ctrl_rotateZ.o" "Dragon_RigRN.phl[591]";
+connectAttr "Chest_Ctrl_scaleX.o" "Dragon_RigRN.phl[592]";
+connectAttr "Chest_Ctrl_scaleY.o" "Dragon_RigRN.phl[593]";
+connectAttr "Chest_Ctrl_scaleZ.o" "Dragon_RigRN.phl[594]";
+connectAttr "Chest_Ctrl_visibility.o" "Dragon_RigRN.phl[595]";
+connectAttr "Neck_01_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[596]";
+connectAttr "Neck_01_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[597]";
+connectAttr "Neck_01_Ctrl_translateX.o" "Dragon_RigRN.phl[598]";
+connectAttr "Neck_01_Ctrl_translateY.o" "Dragon_RigRN.phl[599]";
+connectAttr "Neck_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[600]";
+connectAttr "Neck_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[601]";
+connectAttr "Neck_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[602]";
+connectAttr "Neck_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[603]";
+connectAttr "Neck_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[604]";
+connectAttr "Neck_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[605]";
+connectAttr "Neck_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[606]";
+connectAttr "Neck_01_Ctrl_visibility.o" "Dragon_RigRN.phl[607]";
+connectAttr "Neck_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[608]";
+connectAttr "Neck_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[609]";
+connectAttr "Neck_02_Ctrl_translateX.o" "Dragon_RigRN.phl[610]";
+connectAttr "Neck_02_Ctrl_translateY.o" "Dragon_RigRN.phl[611]";
+connectAttr "Neck_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[612]";
+connectAttr "Neck_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[613]";
+connectAttr "Neck_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[614]";
+connectAttr "Neck_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[615]";
+connectAttr "Neck_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[616]";
+connectAttr "Neck_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[617]";
+connectAttr "Neck_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[618]";
+connectAttr "Neck_02_Ctrl_visibility.o" "Dragon_RigRN.phl[619]";
+connectAttr "Neck_03_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[620]";
+connectAttr "Neck_03_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[621]";
+connectAttr "Neck_03_Ctrl_translateX.o" "Dragon_RigRN.phl[622]";
+connectAttr "Neck_03_Ctrl_translateY.o" "Dragon_RigRN.phl[623]";
+connectAttr "Neck_03_Ctrl_translateZ.o" "Dragon_RigRN.phl[624]";
+connectAttr "Neck_03_Ctrl_rotateX.o" "Dragon_RigRN.phl[625]";
+connectAttr "Neck_03_Ctrl_rotateY.o" "Dragon_RigRN.phl[626]";
+connectAttr "Neck_03_Ctrl_rotateZ.o" "Dragon_RigRN.phl[627]";
+connectAttr "Neck_03_Ctrl_scaleX.o" "Dragon_RigRN.phl[628]";
+connectAttr "Neck_03_Ctrl_scaleY.o" "Dragon_RigRN.phl[629]";
+connectAttr "Neck_03_Ctrl_scaleZ.o" "Dragon_RigRN.phl[630]";
+connectAttr "Neck_03_Ctrl_visibility.o" "Dragon_RigRN.phl[631]";
+connectAttr "Neck_04_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[632]";
+connectAttr "Neck_04_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[633]";
+connectAttr "Neck_04_Ctrl_translateX.o" "Dragon_RigRN.phl[634]";
+connectAttr "Neck_04_Ctrl_translateY.o" "Dragon_RigRN.phl[635]";
+connectAttr "Neck_04_Ctrl_translateZ.o" "Dragon_RigRN.phl[636]";
+connectAttr "Neck_04_Ctrl_rotateX.o" "Dragon_RigRN.phl[637]";
+connectAttr "Neck_04_Ctrl_rotateY.o" "Dragon_RigRN.phl[638]";
+connectAttr "Neck_04_Ctrl_rotateZ.o" "Dragon_RigRN.phl[639]";
+connectAttr "Neck_04_Ctrl_scaleX.o" "Dragon_RigRN.phl[640]";
+connectAttr "Neck_04_Ctrl_scaleY.o" "Dragon_RigRN.phl[641]";
+connectAttr "Neck_04_Ctrl_scaleZ.o" "Dragon_RigRN.phl[642]";
+connectAttr "Neck_04_Ctrl_visibility.o" "Dragon_RigRN.phl[643]";
+connectAttr "Neck_05_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[644]";
+connectAttr "Neck_05_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[645]";
+connectAttr "Neck_05_Ctrl_translateX.o" "Dragon_RigRN.phl[646]";
+connectAttr "Neck_05_Ctrl_translateY.o" "Dragon_RigRN.phl[647]";
+connectAttr "Neck_05_Ctrl_translateZ.o" "Dragon_RigRN.phl[648]";
+connectAttr "Neck_05_Ctrl_rotateX.o" "Dragon_RigRN.phl[649]";
+connectAttr "Neck_05_Ctrl_rotateY.o" "Dragon_RigRN.phl[650]";
+connectAttr "Neck_05_Ctrl_rotateZ.o" "Dragon_RigRN.phl[651]";
+connectAttr "Neck_05_Ctrl_scaleX.o" "Dragon_RigRN.phl[652]";
+connectAttr "Neck_05_Ctrl_scaleY.o" "Dragon_RigRN.phl[653]";
+connectAttr "Neck_05_Ctrl_scaleZ.o" "Dragon_RigRN.phl[654]";
+connectAttr "Neck_05_Ctrl_visibility.o" "Dragon_RigRN.phl[655]";
+connectAttr "Head_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[656]";
+connectAttr "Head_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[657]";
+connectAttr "Head_Ctrl_translateX.o" "Dragon_RigRN.phl[658]";
+connectAttr "Head_Ctrl_translateY.o" "Dragon_RigRN.phl[659]";
+connectAttr "Head_Ctrl_translateZ.o" "Dragon_RigRN.phl[660]";
+connectAttr "Head_Ctrl_rotateX.o" "Dragon_RigRN.phl[661]";
+connectAttr "Head_Ctrl_rotateY.o" "Dragon_RigRN.phl[662]";
+connectAttr "Head_Ctrl_rotateZ.o" "Dragon_RigRN.phl[663]";
+connectAttr "Head_Ctrl_scaleX.o" "Dragon_RigRN.phl[664]";
+connectAttr "Head_Ctrl_scaleY.o" "Dragon_RigRN.phl[665]";
+connectAttr "Head_Ctrl_scaleZ.o" "Dragon_RigRN.phl[666]";
+connectAttr "Head_Ctrl_visibility.o" "Dragon_RigRN.phl[667]";
+connectAttr "Jaw_Ctrl_translateX.o" "Dragon_RigRN.phl[668]";
+connectAttr "Jaw_Ctrl_translateY.o" "Dragon_RigRN.phl[669]";
+connectAttr "Jaw_Ctrl_translateZ.o" "Dragon_RigRN.phl[670]";
+connectAttr "Jaw_Ctrl_rotateX.o" "Dragon_RigRN.phl[671]";
+connectAttr "Jaw_Ctrl_rotateY.o" "Dragon_RigRN.phl[672]";
+connectAttr "Jaw_Ctrl_rotateZ.o" "Dragon_RigRN.phl[673]";
+connectAttr "Jaw_Ctrl_scaleX.o" "Dragon_RigRN.phl[674]";
+connectAttr "Jaw_Ctrl_scaleY.o" "Dragon_RigRN.phl[675]";
+connectAttr "Jaw_Ctrl_scaleZ.o" "Dragon_RigRN.phl[676]";
+connectAttr "Jaw_Ctrl_visibility.o" "Dragon_RigRN.phl[677]";
+connectAttr "L_Clav_Ctrl_translateX.o" "Dragon_RigRN.phl[678]";
+connectAttr "L_Clav_Ctrl_translateY.o" "Dragon_RigRN.phl[679]";
+connectAttr "L_Clav_Ctrl_translateZ.o" "Dragon_RigRN.phl[680]";
+connectAttr "L_Clav_Ctrl_rotateX.o" "Dragon_RigRN.phl[681]";
+connectAttr "L_Clav_Ctrl_rotateY.o" "Dragon_RigRN.phl[682]";
+connectAttr "L_Clav_Ctrl_rotateZ.o" "Dragon_RigRN.phl[683]";
+connectAttr "L_Clav_Ctrl_scaleX.o" "Dragon_RigRN.phl[684]";
+connectAttr "L_Clav_Ctrl_scaleY.o" "Dragon_RigRN.phl[685]";
+connectAttr "L_Clav_Ctrl_scaleZ.o" "Dragon_RigRN.phl[686]";
+connectAttr "L_Clav_Ctrl_visibility.o" "Dragon_RigRN.phl[687]";
+connectAttr "Dragon_RigRN.phl[688]" "polySurface2_parentConstraint1.tg[0].tr";
+connectAttr "L_Arm_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[689]";
+connectAttr "L_Arm_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[690]";
+connectAttr "L_Arm_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[691]";
+connectAttr "Dragon_RigRN.phl[692]" "polySurface2_parentConstraint1.tg[0].tro";
+connectAttr "Dragon_RigRN.phl[693]" "polySurface2_parentConstraint1.tg[0].tpm";
+connectAttr "L_Arm_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[694]";
+connectAttr "Dragon_RigRN.phl[695]" "polySurface2_parentConstraint1.tg[0].tt";
+connectAttr "L_Arm_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[696]";
+connectAttr "L_Arm_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[697]";
+connectAttr "L_Arm_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[698]";
+connectAttr "L_Arm_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[699]";
+connectAttr "Dragon_RigRN.phl[700]" "polySurface2_parentConstraint1.tg[0].ts";
+connectAttr "L_Arm_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[701]";
+connectAttr "L_Arm_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[702]";
+connectAttr "L_Arm_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[703]";
+connectAttr "Dragon_RigRN.phl[704]" "polySurface2_parentConstraint1.tg[0].trp";
+connectAttr "Dragon_RigRN.phl[705]" "polySurface2_parentConstraint1.tg[0].trt";
+connectAttr "L_Arm_IK_Tip_Ctrl_rotateZ.o" "Dragon_RigRN.phl[706]";
+connectAttr "L_Arm_IK_Tip_Ctrl_rotateX.o" "Dragon_RigRN.phl[707]";
+connectAttr "L_Arm_IK_Tip_Ctrl_rotateY.o" "Dragon_RigRN.phl[708]";
+connectAttr "L_Arm_IK_Tip_Ctrl_visibility.o" "Dragon_RigRN.phl[709]";
+connectAttr "L_Arm_IK_Tip_Ctrl_translateX.o" "Dragon_RigRN.phl[710]";
+connectAttr "L_Arm_IK_Tip_Ctrl_translateY.o" "Dragon_RigRN.phl[711]";
+connectAttr "L_Arm_IK_Tip_Ctrl_translateZ.o" "Dragon_RigRN.phl[712]";
+connectAttr "L_Arm_IK_Tip_Ctrl_scaleX.o" "Dragon_RigRN.phl[713]";
+connectAttr "L_Arm_IK_Tip_Ctrl_scaleY.o" "Dragon_RigRN.phl[714]";
+connectAttr "L_Arm_IK_Tip_Ctrl_scaleZ.o" "Dragon_RigRN.phl[715]";
+connectAttr "L_Arm_IK_Ball_Ctrl_translateX.o" "Dragon_RigRN.phl[716]";
+connectAttr "L_Arm_IK_Ball_Ctrl_translateY.o" "Dragon_RigRN.phl[717]";
+connectAttr "L_Arm_IK_Ball_Ctrl_translateZ.o" "Dragon_RigRN.phl[718]";
+connectAttr "L_Arm_IK_Ball_Ctrl_rotateZ.o" "Dragon_RigRN.phl[719]";
+connectAttr "L_Arm_IK_Ball_Ctrl_rotateX.o" "Dragon_RigRN.phl[720]";
+connectAttr "L_Arm_IK_Ball_Ctrl_rotateY.o" "Dragon_RigRN.phl[721]";
+connectAttr "L_Arm_IK_Ball_Ctrl_visibility.o" "Dragon_RigRN.phl[722]";
+connectAttr "L_Arm_IK_Ball_Ctrl_scaleX.o" "Dragon_RigRN.phl[723]";
+connectAttr "L_Arm_IK_Ball_Ctrl_scaleY.o" "Dragon_RigRN.phl[724]";
+connectAttr "L_Arm_IK_Ball_Ctrl_scaleZ.o" "Dragon_RigRN.phl[725]";
+connectAttr "L_Arm_IKFK_Ctrl_Winger_Spread.o" "Dragon_RigRN.phl[726]";
+connectAttr "L_Arm_IKFK_Ctrl_Winger_Grab.o" "Dragon_RigRN.phl[727]";
+connectAttr "L_Arm_IKFK_Ctrl_Winger_Side_Movement.o" "Dragon_RigRN.phl[728]";
+connectAttr "L_Arm_IKFK_Ctrl_Wing_Flap_Effect.o" "Dragon_RigRN.phl[729]";
+connectAttr "L_Arm_IKFK_Ctrl_Wing_Flap_Animation.o" "Dragon_RigRN.phl[730]";
+connectAttr "L_Arm_IKFK_Ctrl_Arm_IKFK_Switch.o" "Dragon_RigRN.phl[731]";
+connectAttr "L_Arm_IKFK_Ctrl_Wing_IKFK_Switch.o" "Dragon_RigRN.phl[732]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[733]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[734]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[735]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[736]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[737]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[738]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[739]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[740]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[741]";
+connectAttr "L_Finger_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[742]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[743]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[732]"
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[744]"
 		;
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[733]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[734]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[735]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[736]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[737]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[738]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[739]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[740]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[741]";
-connectAttr "L_Finger_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[742]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[743]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[744]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[745]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[746]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[747]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[748]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[749]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[750]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[751]";
-connectAttr "L_Finger_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[752]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[753]"
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[745]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[746]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[747]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[748]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[749]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[750]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[751]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[752]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[753]";
+connectAttr "L_Finger_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[754]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[755]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[756]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[757]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[758]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[759]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[760]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[761]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[762]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[763]";
+connectAttr "L_Finger_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[764]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[765]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[754]"
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[766]"
 		;
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[755]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[756]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[757]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[758]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[759]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[760]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[761]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[762]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[763]";
-connectAttr "L_Finger_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[764]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[765]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[766]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[767]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[768]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[769]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[770]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[771]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[772]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[773]";
-connectAttr "L_Finger_03_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[774]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[775]"
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[767]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[768]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[769]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[770]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[771]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[772]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[773]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[774]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[775]";
+connectAttr "L_Finger_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[776]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[777]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[778]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[779]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[780]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[781]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[782]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[783]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[784]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[785]";
+connectAttr "L_Finger_03_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[786]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[787]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[776]"
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[788]"
 		;
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[777]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[778]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[779]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[780]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[781]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[782]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[783]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[784]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[785]";
-connectAttr "L_Finger_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[786]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[787]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[788]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[789]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[790]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[791]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[792]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[793]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[794]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[795]";
-connectAttr "L_Finger_04_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[796]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[797]"
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[789]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[790]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[791]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[792]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[793]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[794]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[795]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[796]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[797]";
+connectAttr "L_Finger_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[798]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[799]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[800]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[801]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[802]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[803]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[804]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[805]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[806]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[807]";
+connectAttr "L_Finger_04_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[808]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[809]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[798]"
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[810]"
 		;
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[799]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[800]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[801]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[802]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[803]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[804]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[805]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[806]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[807]";
-connectAttr "L_Finger_04_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[808]";
-connectAttr "R_Arm_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[809]";
-connectAttr "R_Arm_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[810]";
-connectAttr "R_Arm_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[811]";
-connectAttr "R_Arm_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[812]";
-connectAttr "R_Arm_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[813]";
-connectAttr "R_Arm_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[814]";
-connectAttr "R_Arm_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[815]";
-connectAttr "R_Arm_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[816]";
-connectAttr "R_Arm_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[817]";
-connectAttr "R_Arm_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[818]";
-connectAttr "R_Arm_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[819]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[820]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[821]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[822]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[823]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[824]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[825]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[826]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[827]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[828]";
-connectAttr "R_Finger_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[829]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[830]"
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[811]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[812]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[813]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[814]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[815]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[816]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[817]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[818]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[819]";
+connectAttr "L_Finger_04_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[820]";
+connectAttr "R_Arm_01_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[821]";
+connectAttr "R_Arm_01_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[822]";
+connectAttr "R_Arm_01_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[823]";
+connectAttr "R_Arm_01_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[824]";
+connectAttr "R_Arm_01_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[825]";
+connectAttr "R_Arm_01_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[826]";
+connectAttr "R_Arm_01_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[827]";
+connectAttr "R_Arm_01_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[828]";
+connectAttr "R_Arm_01_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[829]";
+connectAttr "R_Arm_01_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[830]";
+connectAttr "R_Arm_01_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[831]";
+connectAttr "R_Arm_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[832]";
+connectAttr "R_Arm_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[833]";
+connectAttr "R_Arm_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[834]";
+connectAttr "R_Arm_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[835]";
+connectAttr "R_Arm_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[836]";
+connectAttr "R_Arm_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[837]";
+connectAttr "R_Arm_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[838]";
+connectAttr "R_Arm_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[839]";
+connectAttr "R_Arm_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[840]";
+connectAttr "R_Arm_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[841]";
+connectAttr "R_Arm_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[842]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[843]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[844]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[845]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[846]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[847]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[848]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[849]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[850]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[851]";
+connectAttr "R_Finger_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[852]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[853]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[831]"
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[854]"
 		;
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[832]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[833]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[834]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[835]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[836]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[837]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[838]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[839]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[840]";
-connectAttr "R_Finger_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[841]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[842]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[843]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[844]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[845]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[846]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[847]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[848]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[849]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[850]";
-connectAttr "R_Finger_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[851]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[852]"
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[855]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[856]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[857]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[858]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[859]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[860]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[861]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[862]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[863]";
+connectAttr "R_Finger_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[864]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[865]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[866]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[867]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[868]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[869]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[870]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[871]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[872]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[873]";
+connectAttr "R_Finger_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[874]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[875]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[853]"
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[876]"
 		;
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[854]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[855]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[856]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[857]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[858]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[859]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[860]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[861]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[862]";
-connectAttr "R_Finger_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[863]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[864]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[865]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[866]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[867]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[868]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[869]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[870]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[871]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[872]";
-connectAttr "R_Finger_03_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[873]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[874]"
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[877]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[878]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[879]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[880]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[881]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[882]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[883]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[884]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[885]";
+connectAttr "R_Finger_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[886]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[887]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[888]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[889]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[890]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[891]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[892]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[893]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[894]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[895]";
+connectAttr "R_Finger_03_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[896]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[897]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[875]"
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[898]"
 		;
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[876]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[877]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[878]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[879]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[880]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[881]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[882]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[883]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[884]";
-connectAttr "R_Finger_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[885]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[886]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[887]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[888]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[889]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[890]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[891]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[892]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[893]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[894]";
-connectAttr "R_Finger_04_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[895]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[896]"
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[899]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[900]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[901]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[902]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[903]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[904]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[905]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[906]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[907]";
+connectAttr "R_Finger_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[908]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[909]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[910]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[911]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[912]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[913]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[914]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[915]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[916]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[917]";
+connectAttr "R_Finger_04_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[918]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_Follow_Translate.o" "Dragon_RigRN.phl[919]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[897]"
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_Follow_Rotate.o" "Dragon_RigRN.phl[920]"
 		;
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[898]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[899]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[900]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[901]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[902]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[903]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[904]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[905]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[906]";
-connectAttr "R_Finger_04_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[907]";
-connectAttr "R_Clav_Ctrl_translateX.o" "Dragon_RigRN.phl[908]";
-connectAttr "R_Clav_Ctrl_translateY.o" "Dragon_RigRN.phl[909]";
-connectAttr "R_Clav_Ctrl_translateZ.o" "Dragon_RigRN.phl[910]";
-connectAttr "R_Clav_Ctrl_rotateX.o" "Dragon_RigRN.phl[911]";
-connectAttr "R_Clav_Ctrl_rotateY.o" "Dragon_RigRN.phl[912]";
-connectAttr "R_Clav_Ctrl_rotateZ.o" "Dragon_RigRN.phl[913]";
-connectAttr "R_Clav_Ctrl_scaleX.o" "Dragon_RigRN.phl[914]";
-connectAttr "R_Clav_Ctrl_scaleY.o" "Dragon_RigRN.phl[915]";
-connectAttr "R_Clav_Ctrl_scaleZ.o" "Dragon_RigRN.phl[916]";
-connectAttr "R_Clav_Ctrl_visibility.o" "Dragon_RigRN.phl[917]";
-connectAttr "R_Arm_IKFK_Ctrl_Winger_Spread.o" "Dragon_RigRN.phl[918]";
-connectAttr "R_Arm_IKFK_Ctrl_Winger_Grab.o" "Dragon_RigRN.phl[919]";
-connectAttr "R_Arm_IKFK_Ctrl_Winger_Side_Movement.o" "Dragon_RigRN.phl[920]";
-connectAttr "R_Arm_IKFK_Ctrl_Wing_Flap_Effect.o" "Dragon_RigRN.phl[921]";
-connectAttr "R_Arm_IKFK_Ctrl_Wing_Flap_Animation.o" "Dragon_RigRN.phl[922]";
-connectAttr "R_Arm_IKFK_Ctrl_Arm_IKFK_Switch.o" "Dragon_RigRN.phl[923]";
-connectAttr "R_Arm_IKFK_Ctrl_Wing_IKFK_Switch.o" "Dragon_RigRN.phl[924]";
-connectAttr "L_Foot_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[925]";
-connectAttr "L_Foot_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[926]";
-connectAttr "L_Foot_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[927]";
-connectAttr "L_Foot_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[928]";
-connectAttr "L_Foot_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[929]";
-connectAttr "L_Foot_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[930]";
-connectAttr "L_Foot_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[931]";
-connectAttr "L_Foot_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[932]";
-connectAttr "L_Foot_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[933]";
-connectAttr "L_Foot_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[934]";
-connectAttr "L_Foot_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[935]";
-connectAttr "R_Foot_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[936]";
-connectAttr "R_Foot_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[937]";
-connectAttr "R_Foot_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[938]";
-connectAttr "R_Foot_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[939]";
-connectAttr "R_Foot_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[940]";
-connectAttr "R_Foot_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[941]";
-connectAttr "R_Foot_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[942]";
-connectAttr "R_Foot_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[943]";
-connectAttr "R_Foot_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[944]";
-connectAttr "R_Foot_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[945]";
-connectAttr "R_Foot_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[946]";
-connectAttr "L_Wing_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[947]";
-connectAttr "L_Wing_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[948]";
-connectAttr "L_Wing_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[949]";
-connectAttr "L_Wing_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[950]";
-connectAttr "L_Wing_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[951]";
-connectAttr "L_Wing_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[952]";
-connectAttr "L_Wing_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[953]";
-connectAttr "L_Wing_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[954]";
-connectAttr "L_Wing_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[955]";
-connectAttr "L_Wing_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[956]";
-connectAttr "L_Wing_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[957]";
-connectAttr "R_Wing_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[958]";
-connectAttr "R_Wing_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[959]";
-connectAttr "R_Wing_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[960]";
-connectAttr "R_Wing_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[961]";
-connectAttr "R_Wing_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[962]";
-connectAttr "R_Wing_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[963]";
-connectAttr "R_Wing_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[964]";
-connectAttr "R_Wing_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[965]";
-connectAttr "R_Wing_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[966]";
-connectAttr "R_Wing_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[967]";
-connectAttr "R_Wing_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[968]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[921]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[922]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[923]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[924]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[925]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[926]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[927]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[928]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[929]";
+connectAttr "R_Finger_04_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[930]";
+connectAttr "R_Clav_Ctrl_translateX.o" "Dragon_RigRN.phl[931]";
+connectAttr "R_Clav_Ctrl_translateY.o" "Dragon_RigRN.phl[932]";
+connectAttr "R_Clav_Ctrl_translateZ.o" "Dragon_RigRN.phl[933]";
+connectAttr "R_Clav_Ctrl_rotateX.o" "Dragon_RigRN.phl[934]";
+connectAttr "R_Clav_Ctrl_rotateY.o" "Dragon_RigRN.phl[935]";
+connectAttr "R_Clav_Ctrl_rotateZ.o" "Dragon_RigRN.phl[936]";
+connectAttr "R_Clav_Ctrl_scaleX.o" "Dragon_RigRN.phl[937]";
+connectAttr "R_Clav_Ctrl_scaleY.o" "Dragon_RigRN.phl[938]";
+connectAttr "R_Clav_Ctrl_scaleZ.o" "Dragon_RigRN.phl[939]";
+connectAttr "R_Clav_Ctrl_visibility.o" "Dragon_RigRN.phl[940]";
+connectAttr "R_Arm_IKFK_Ctrl_Winger_Spread.o" "Dragon_RigRN.phl[941]";
+connectAttr "R_Arm_IKFK_Ctrl_Winger_Grab.o" "Dragon_RigRN.phl[942]";
+connectAttr "R_Arm_IKFK_Ctrl_Winger_Side_Movement.o" "Dragon_RigRN.phl[943]";
+connectAttr "R_Arm_IKFK_Ctrl_Wing_Flap_Effect.o" "Dragon_RigRN.phl[944]";
+connectAttr "R_Arm_IKFK_Ctrl_Wing_Flap_Animation.o" "Dragon_RigRN.phl[945]";
+connectAttr "R_Arm_IKFK_Ctrl_Arm_IKFK_Switch.o" "Dragon_RigRN.phl[946]";
+connectAttr "R_Arm_IKFK_Ctrl_Wing_IKFK_Switch.o" "Dragon_RigRN.phl[947]";
+connectAttr "L_Foot_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[948]";
+connectAttr "L_Foot_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[949]";
+connectAttr "L_Foot_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[950]";
+connectAttr "L_Foot_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[951]";
+connectAttr "L_Foot_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[952]";
+connectAttr "L_Foot_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[953]";
+connectAttr "L_Foot_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[954]";
+connectAttr "L_Foot_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[955]";
+connectAttr "L_Foot_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[956]";
+connectAttr "L_Foot_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[957]";
+connectAttr "L_Foot_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[958]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[959]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[960]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[961]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[962]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[963]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[964]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[965]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[966]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[967]";
+connectAttr "L_Toe_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[968]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[969]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[970]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[971]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[972]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[973]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[974]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[975]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[976]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[977]";
+connectAttr "L_Toe_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[978]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[979]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[980]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[981]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[982]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[983]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[984]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[985]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[986]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[987]";
+connectAttr "L_Toe_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[988]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[989]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[990]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[991]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[992]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[993]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[994]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[995]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[996]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[997]";
+connectAttr "L_Toe_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[998]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[999]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[1000]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[1001]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1002]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[1003]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[1004]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[1005]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[1006]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1007]";
+connectAttr "L_Toe_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[1008]";
+connectAttr "R_Foot_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[1009]";
+connectAttr "R_Foot_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[1010]";
+connectAttr "R_Foot_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[1011]";
+connectAttr "R_Foot_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[1012]";
+connectAttr "R_Foot_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[1013]";
+connectAttr "R_Foot_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[1014]";
+connectAttr "R_Foot_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1015]";
+connectAttr "R_Foot_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[1016]";
+connectAttr "R_Foot_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[1017]";
+connectAttr "R_Foot_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[1018]";
+connectAttr "R_Foot_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1019]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[1020]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[1021]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[1022]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1023]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[1024]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[1025]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[1026]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[1027]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1028]";
+connectAttr "R_Toe_01_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[1029]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[1030]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[1031]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[1032]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1033]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[1034]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[1035]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[1036]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[1037]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1038]";
+connectAttr "R_Toe_01_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[1039]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[1040]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[1041]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[1042]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1043]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[1044]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[1045]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[1046]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[1047]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1048]";
+connectAttr "R_Toe_02_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[1049]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[1050]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[1051]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[1052]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1053]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[1054]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[1055]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[1056]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[1057]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1058]";
+connectAttr "R_Toe_02_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[1059]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_translateX.o" "Dragon_RigRN.phl[1060]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_translateY.o" "Dragon_RigRN.phl[1061]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_translateZ.o" "Dragon_RigRN.phl[1062]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1063]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_rotateX.o" "Dragon_RigRN.phl[1064]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_rotateY.o" "Dragon_RigRN.phl[1065]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_scaleX.o" "Dragon_RigRN.phl[1066]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_scaleY.o" "Dragon_RigRN.phl[1067]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1068]";
+connectAttr "R_Toe_03_Knuckle_01_Ctrl_visibility.o" "Dragon_RigRN.phl[1069]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_translateX.o" "Dragon_RigRN.phl[1070]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_translateY.o" "Dragon_RigRN.phl[1071]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_translateZ.o" "Dragon_RigRN.phl[1072]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1073]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_rotateX.o" "Dragon_RigRN.phl[1074]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_rotateY.o" "Dragon_RigRN.phl[1075]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_scaleX.o" "Dragon_RigRN.phl[1076]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_scaleY.o" "Dragon_RigRN.phl[1077]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1078]";
+connectAttr "R_Toe_03_Knuckle_02_Ctrl_visibility.o" "Dragon_RigRN.phl[1079]";
+connectAttr "L_Wing_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1080]";
+connectAttr "L_Wing_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[1081]";
+connectAttr "L_Wing_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[1082]";
+connectAttr "L_Wing_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[1083]";
+connectAttr "L_Wing_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[1084]";
+connectAttr "L_Wing_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[1085]";
+connectAttr "L_Wing_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[1086]";
+connectAttr "L_Wing_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[1087]";
+connectAttr "L_Wing_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[1088]";
+connectAttr "L_Wing_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[1089]";
+connectAttr "L_Wing_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1090]";
+connectAttr "R_Wing_03_IK_Ctrl_rotateY.o" "Dragon_RigRN.phl[1091]";
+connectAttr "R_Wing_03_IK_Ctrl_rotateZ.o" "Dragon_RigRN.phl[1092]";
+connectAttr "R_Wing_03_IK_Ctrl_rotateX.o" "Dragon_RigRN.phl[1093]";
+connectAttr "R_Wing_03_IK_Ctrl_Operating_Space.o" "Dragon_RigRN.phl[1094]";
+connectAttr "R_Wing_03_IK_Ctrl_translateX.o" "Dragon_RigRN.phl[1095]";
+connectAttr "R_Wing_03_IK_Ctrl_translateZ.o" "Dragon_RigRN.phl[1096]";
+connectAttr "R_Wing_03_IK_Ctrl_translateY.o" "Dragon_RigRN.phl[1097]";
+connectAttr "R_Wing_03_IK_Ctrl_visibility.o" "Dragon_RigRN.phl[1098]";
+connectAttr "R_Wing_03_IK_Ctrl_scaleX.o" "Dragon_RigRN.phl[1099]";
+connectAttr "R_Wing_03_IK_Ctrl_scaleY.o" "Dragon_RigRN.phl[1100]";
+connectAttr "R_Wing_03_IK_Ctrl_scaleZ.o" "Dragon_RigRN.phl[1101]";
 connectAttr "woodenChestRN.phl[1]" "pairBlend1.w";
 connectAttr "polySurface2_blendParent1.o" "woodenChestRN.phl[2]";
 connectAttr "pairBlend1.otx" "woodenChestRN.phl[3]";
