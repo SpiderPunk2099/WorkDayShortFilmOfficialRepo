@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: shot40.ma
-//Last modified: Tue, Dec 02, 2025 11:29:43 AM
+//Last modified: Tue, Dec 02, 2025 11:24:13 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
@@ -14,11 +14,11 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "230128A9-9A41-0CB8-4044-A8A404448866";
+fileInfo "UUID" "9EA774B0-8143-D328-47C1-71A6D91639E5";
 createNode transform -s -n "persp";
 	rename -uid "DC41707E-2D40-9E1E-F5B2-64A7B85F7B99";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.029392171819210083 1.1114953470750775 1.7435653223569543 ;
+	setAttr ".t" -type "double3" -0.017983290719312327 1.1185487655901776 1.5603526991504577 ;
 	setAttr ".r" -type "double3" 11.39999999998693 358.39999999997491 0 ;
 	setAttr ".rpt" -type "double3" 3.3757528666778756e-19 -6.8423180355291449e-18 1.2892358283878701e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -28,7 +28,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 1.7099229368725504;
+	setAttr ".coi" 1.5286884762047594;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -92,20 +92,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "217683E3-D345-B639-BE10-96A128DDD669";
+	rename -uid "5633D588-464D-D001-5DBC-7F8DBD15F4EB";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9974A928-154E-05E7-2B8C-99A416E1F688";
+	rename -uid "0A3A1CC1-0448-A1F7-688A-CDB9F3A8952B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7FB4737A-6249-E9E5-4426-2F8987809C65";
+	rename -uid "66E76998-9845-3EB7-E4E9-25B0F858C8E7";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DFDD5684-754D-2443-CD67-4DB9D4FBCB81";
+	rename -uid "3BB019BE-1A41-A4B5-88A7-AAB4C1B55DDB";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "40819297-3449-0F42-6A11-5885BD4794C2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "51B92035-C345-740B-62B9-A9BB3A03C5EB";
+	rename -uid "ACF7FDE3-194F-1DBC-067B-A6A68C8A9487";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1EE2E22C-4A44-2DC6-2AF9-AB94253C1088";
 	setAttr ".g" yes;
@@ -154,7 +154,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "20B2B203-AA46-A68D-E250-7B8AB0147EAB";
-	setAttr ".b" -type "string" "playbackOptions -min 2 -max 54 -ast 1 -aet 54 ";
+	setAttr ".b" -type "string" "playbackOptions -min 2 -max 36 -ast 1 -aet 36 ";
 	setAttr ".st" 6;
 createNode reference -n "SkeletonRN";
 	rename -uid "54B53184-3B45-D806-B4C9-AD9281FC0E38";
@@ -535,15 +535,12 @@ createNode animCurveTA -n "R_Arm_01_FK_Ctrl_rotateY";
 	setAttr ".kot[0]"  5;
 createNode animCurveTA -n "Head_Ctrl_rotateZ";
 	rename -uid "011B79B5-A947-2FF8-5B21-2CADD15E6417";
-	setAttr ".tan" 5;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  2 31.65073789405832 12 26.017234582217153
-		 18 32.767159029819659 26 48.805997446891681 30 48.805997446891723 34 48.805997446891723
-		 38 48.805997446891787 42 48.80599744689178 45 48.805997446891723 48 48.805997446891723;
-	setAttr -s 10 ".kit[0:9]"  18 18 18 18 18 18 18 18 
-		1 1;
-	setAttr -s 10 ".kix[8:9]"  1 1;
-	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 8 ".ktv[0:7]"  2 31.65073789405832 12 26.017234582217153
+		 18 32.767159029819659 26 48.805997446891681 28 48.805997446891723 30 48.805997446891723
+		 32 48.805997446891787 34 48.80599744689178;
+	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "R_Brow_Ctrl_rotateZ";
 	rename -uid "A7BEE342-434A-EF98-6AFF-1096428B8960";
 	setAttr ".tan" 5;
@@ -564,15 +561,12 @@ createNode animCurveTA -n "L_Brow_Ctrl_rotateZ";
 	setAttr -s 5 ".kiy[4]"  0;
 createNode animCurveTA -n "Head_Ctrl_rotateY";
 	rename -uid "34834023-3744-4A4C-E5FF-5C928711D1BB";
-	setAttr ".tan" 5;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  2 7.8060795543502781 12 7.9871338984169311
-		 18 7.7612684642199197 26 2.4493722076682736 30 2.4493722076682687 34 2.4493722076682665
-		 38 2.4493722076682642 42 2.4493722076682514 45 2.4493722076682687 48 2.4493722076682665;
-	setAttr -s 10 ".kit[0:9]"  18 18 18 18 18 18 18 18 
-		1 1;
-	setAttr -s 10 ".kix[8:9]"  1 1;
-	setAttr -s 10 ".kiy[8:9]"  0 0;
+	setAttr -s 8 ".ktv[0:7]"  2 7.8060795543502781 12 7.9871338984169311
+		 18 7.7612684642199197 26 2.4493722076682736 28 2.4493722076682687 30 2.4493722076682665
+		 32 2.4493722076682642 34 2.4493722076682514;
+	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTA -n "Neck_02_Ctrl_rotateZ";
 	rename -uid "B3CE1C56-C04E-A9CA-E8FC-2497CEAF204E";
 	setAttr ".tan" 18;
@@ -914,15 +908,12 @@ createNode animCurveTL -n "Head_Ctrl_translateZ";
 	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "Head_Ctrl_rotateX";
 	rename -uid "2B02C73F-4C4A-8C7E-4F9C-F5B3945393F1";
-	setAttr ".tan" 5;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  2 2.2441884323678778 12 1.4696113051224267
-		 18 2.3953936952952226 26 3.1658744468894433 30 -13.686602806362853 34 1.1111387312899239
-		 38 21.554034885550063 42 0.22781379778748559 45 -13.686602806362853 48 1.1111387312899239;
-	setAttr -s 10 ".kit[0:9]"  18 18 18 18 18 18 18 18 
-		1 1;
-	setAttr -s 10 ".kix[8:9]"  1 0.73497895313120465;
-	setAttr -s 10 ".kiy[8:9]"  0 0.67808991915096217;
+	setAttr -s 8 ".ktv[0:7]"  2 2.2441884323678778 12 1.4696113051224267
+		 18 2.3953936952952226 26 3.1658744468894433 28 -6.8152992473182143 30 1.1111387312899239
+		 32 11.589588379270218 34 0.22781379778748559;
+	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "Neck_02_Ctrl_translateX";
 	rename -uid "D12F6782-004F-0F43-1151-1C87BA1E9B16";
 	setAttr ".tan" 18;
@@ -1264,11 +1255,11 @@ createNode reference -n "_UNKNOWN_REF_NODE_";
 		
 		2 ":openPBR_shader1" "sr" " 0.5";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E8378320-0B48-CFEB-73B2-16956E7C4D1F";
+	rename -uid "C495B6B7-A747-7FDD-7714-B1B4BFC55005";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 54;
-	setAttr ".unw" 54;
+	setAttr ".o" 36;
+	setAttr ".unw" 36;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
