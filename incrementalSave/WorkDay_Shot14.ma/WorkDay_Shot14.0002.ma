@@ -1,26 +1,13 @@
 //Maya ASCII 2026 scene
 //Name: WorkDay_Shot14.ma
-//Last modified: Thu, Dec 04, 2025 10:39:02 AM
+//Last modified: Thu, Dec 04, 2025 10:30:21 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "Axe" -rfn "AxeRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/HandheldProps/axe/Axe.ma";
-file -rdi 1 -ns "ChestProp" -dr 1 -rfn "ChestPropRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/DungeonProps/treasureChest/ChestProp.ma";
-file -rdi 1 -ns "TreasureGuardSet" -dr 1 -rfn "TreasureGuardSetRN" -op "v=0;"
-		 -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/TreasureGuard/TreasureGuardSet.ma";
-file -rdi 1 -ns "TreasureCaveSet" -dr 1 -rfn "TreasureCaveSetRN" -op "v=0;"
-		 -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/caveInterior/TreasureCaveSet.ma";
-file -rdi 1 -ns "TreasureCaveSet1" -rfn "TreasureCaveSetRN1" -op "v=0;" -typ
-		 "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/caveInterior/TreasureCaveSet.ma";
+file -rdi 1 -ns "ChestProp" -rfn "ChestPropRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/DungeonProps/treasureChest/ChestProp.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
 file -r -ns "Axe" -dr 1 -rfn "AxeRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/HandheldProps/axe/Axe.ma";
 file -r -ns "ChestProp" -dr 1 -rfn "ChestPropRN" -op "v=0;" -typ "mayaAscii" "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/props/DungeonProps/treasureChest/ChestProp.ma";
-file -r -ns "TreasureGuardSet" -dr 1 -rfn "TreasureGuardSetRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/TreasureGuard/TreasureGuardSet.ma";
-file -r -ns "TreasureCaveSet" -dr 1 -rfn "TreasureCaveSetRN" -op "v=0;" -typ "mayaAscii"
-		 "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/caveInterior/TreasureCaveSet.ma";
-file -r -ns "TreasureCaveSet1" -dr 1 -rfn "TreasureCaveSetRN1" -op "v=0;" -typ "mayaAscii"
-		 "/Users/kierasheppard/Documents/UVU/WorkDayShortFilmOfficialRepo/Maya/assets/environment/caveInterior/TreasureCaveSet.ma";
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
@@ -31,12 +18,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 14.5";
-fileInfo "UUID" "D910CBBB-6844-75A6-DEAD-6EA809C014F4";
+fileInfo "UUID" "ACDCA350-B740-834D-D609-6C96C81452EE";
 createNode transform -s -n "persp";
 	rename -uid "3C235B87-3847-51D4-74A9-6E9CB2F1FB6A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.36254385415520352 1.7232864715474674 3.02556801624003 ;
-	setAttr ".r" -type "double3" -8.0680272857585944 20.37094403896667 4.2409266846007056e-16 ;
+	setAttr ".t" -type "double3" 0.23412442312574264 1.5834123558203823 2.7718335650030732 ;
+	setAttr ".r" -type "double3" -6.8680272857585969 17.970944038966572 2.0898016110932036e-16 ;
 	setAttr ".rp" -type "double3" 7.105427357601002e-17 0 1.1368683772161603e-15 ;
 	setAttr ".rpt" -type "double3" 1.8165337234206165e-16 7.6456581774333929e-17 -2.5143361588345205e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -46,7 +33,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 4.0287795626092882;
+	setAttr ".coi" 3.9897602123240468;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -109,26 +96,40 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".man" -type "string" "side_mask";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
+createNode transform -n "pPlane1";
+	rename -uid "D6D0EA54-9446-D814-4C9F-6FA0BDDF9FA3";
+	setAttr ".s" -type "double3" 14.619463485664941 14.619463485664941 14.619463485664941 ;
+createNode mesh -n "pPlaneShape1" -p "pPlane1";
+	rename -uid "35F1D68B-2B45-C51C-3339-C2A2FACA77E5";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.5 0.60000002384185791 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "group1";
 	rename -uid "67D66F12-6C46-B2C5-CF66-FC8310A0B6A7";
 	setAttr ".rp" -type "double3" 1.6425575043106759 0.767863614296451 -3.3911332502774316 ;
 	setAttr ".sp" -type "double3" 1.6425575043106759 0.767863614296451 -3.3911332502774316 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "703F7549-3B4F-2568-B720-639CD00C335B";
-	setAttr -s 21 ".lnk";
-	setAttr -s 21 ".slnk";
+	rename -uid "57245976-E84D-A190-76B6-03ABA1BD98BA";
+	setAttr -s 8 ".lnk";
+	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A4092C75-B849-28A8-9CD2-38BB9E748E5A";
-	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
+	rename -uid "3D952640-7A4A-18EC-DCD4-C7806D961C4E";
+	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "166CC389-E140-30CD-1486-F0BADF0A666A";
+	rename -uid "A09B61CA-EE4F-69D3-4B6D-D7B4AE6D85A3";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "CDACDEDC-EC4E-03DD-502C-09A79C72B191";
+	rename -uid "273EE924-6B4D-64BA-DF42-86B2F1573870";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "644EB563-274D-90E0-7ADB-58AA664ED8F1";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "0F73A3F4-6240-6B4F-326B-C28C07FE0DC6";
+	rename -uid "09C37785-4A43-84B5-F3F5-378FD8B54496";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "FD0B3160-C640-8614-D5C9-39B4DF59E7E3";
 	setAttr ".g" yes;
@@ -243,7 +244,7 @@ createNode reference -n "SkeletonRN";
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_Ctrl_Grp|Skeleton:Head_Ctrl" 
-		"rotate" " -type \"double3\" -58.45522708431539627 0 0"
+		"rotate" " -type \"double3\" -19.43181852748238825 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls|Skeleton:L_Brow_Ctrl_Grp|Skeleton:L_Brow_Ctrl" 
 		"translate" " -type \"double3\" 0 0.032103936480327493 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Face_Controls|Skeleton:L_Brow_Ctrl_Grp|Skeleton:L_Brow_Ctrl" 
@@ -289,7 +290,7 @@ createNode reference -n "SkeletonRN";
 		"rotate" " -type \"double3\" 0 0 32.62278557131329393"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Right_Arm|Skeleton:R_Arm_Reg_Controls|Skeleton:Right_Hand|Skeleton:Right_Finger_05|Skeleton:R_Finger_05_Knuckle_03_Ctrl_Grp|Skeleton:R_Finger_05_Knuckle_03_Ctrl" 
 		"rotate" " -type \"double3\" 0 0 32.62278557131329393"
-		2 "Skeleton:Ctrl_Layer" "visibility" " 0"
+		2 "Skeleton:Ctrl_Layer" "visibility" " 1"
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.translateX" 
 		"SkeletonRN.placeHolderList[1]" ""
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.translateY" 
@@ -503,6 +504,12 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	rename -uid "82A0C806-4278-14D8-DBD3-D0B892F6D7AF";
 	setAttr ".ai_translator" -type "string" "maya";
 	setAttr ".output_mode" 0;
+createNode polyPlane -n "polyPlane1";
+	rename -uid "C6074CD2-D94A-E4FE-873B-BF880AEECFB3";
+	setAttr ".ax" -type "double3" 0 1 0 ;
+	setAttr ".w" 1;
+	setAttr ".h" 1;
+	setAttr ".cuv" 2;
 createNode reference -n "AxeRN";
 	rename -uid "E9B24DB6-3E4A-2302-1A81-32B438A7713F";
 	setAttr -s 6 ".phl";
@@ -532,6 +539,7 @@ createNode reference -n "ChestPropRN";
 	rename -uid "89B96BAC-094E-6779-AC80-9BA696D3AB7C";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ChestPropRN"
+		"ChestPropRN" 0
 		"ChestPropRN" 3
 		0 "|ChestProp:ChestProp" "|group1" "-s -r "
 		2 "|group1|ChestProp:ChestProp" "translate" " -type \"double3\" 1.61307560260678895 0.49839632525905608 -3.36147584278207834"
@@ -1106,17 +1114,20 @@ createNode animCurveTA -n "Transform_Ctrl_rotateX";
 	rename -uid "89C986EF-2C4C-F1BF-1F2F-BFB442331705";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.67778905615420237;
+	setAttr -s 2 ".ktv[0:1]"  1 0.67778905615420237 19 0.67778905615420237;
+	setAttr -s 2 ".kot[1]"  5;
 createNode animCurveTA -n "Transform_Ctrl_rotateY";
 	rename -uid "2B57F1DD-9249-278F-FD62-4595EE2CE0C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 34.915125421093478;
+	setAttr -s 2 ".ktv[0:1]"  1 34.915125421093478 19 34.915125421093478;
+	setAttr -s 2 ".kot[1]"  5;
 createNode animCurveTA -n "Transform_Ctrl_rotateZ";
 	rename -uid "5878F032-4042-9112-939C-7898E0C6B790";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.43001010985727001;
+	setAttr -s 2 ".ktv[0:1]"  1 0.43001010985727001 19 0.43001010985727001;
+	setAttr -s 2 ".kot[1]"  5;
 createNode animCurveTL -n "group1_translateX";
 	rename -uid "447DF573-DA40-0072-324E-BE81B5364962";
 	setAttr ".tan" 18;
@@ -1187,90 +1198,65 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "5151AD05-7340-D771-5E39-D8B1CB98AF43";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 72 -ast 1 -aet 72 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 31 -ast 1 -aet 72 ";
 	setAttr ".st" 6;
 createNode animCurveTL -n "Axe_translateX";
 	rename -uid "01437A18-1245-7DF3-FE56-99B6C3EA2DE2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -0.63405838580307283;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 -0.38055224118740155 19 -0.38055224118740155;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "Transform_Ctrl_translateX";
 	rename -uid "40BE2845-EE4E-28A5-3026-858C5BC40AE2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -1.0017348585403258;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 -0.74822871392465462 19 -0.74822871392465462;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "Axe_translateY";
 	rename -uid "88160B00-9F4F-7D0C-7C8B-C288FC49B9D8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 1.3856601121882404;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 1.3856601121882404 19 1.3856601121882404;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "Transform_Ctrl_translateY";
 	rename -uid "447008F1-AD42-3427-9424-E8B8F88F9FC3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "Axe_translateZ";
 	rename -uid "75DEBE59-8D4C-2923-F56F-449DE30BDAC9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0.36017898206077376;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 0.36017898206077376 19 0.36017898206077376;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTL -n "Transform_Ctrl_translateZ";
 	rename -uid "6E48BFE6-9045-3474-A6AE-4FB106B88CD1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 0;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 0 19 0;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "Axe_rotateX";
 	rename -uid "D55BFCCA-EF49-7F91-BA7C-57B9E83F73D1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 4.4810118854350591;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 4.4810118854350591 19 4.4810118854350591;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "Axe_rotateY";
 	rename -uid "61572D26-4C4E-F1B4-147A-3B988C01D6C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -27.944669117875367;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  1 -27.944669117875367 19 -27.944669117875367;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "Axe_rotateZ";
 	rename -uid "7A895086-E84C-7CEF-9819-BE9C63BFF8F7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  1 -27.705425900933978;
-	setAttr ".kot[0]"  5;
-createNode reference -n "TreasureGuardSetRN";
-	rename -uid "41F217C4-BC40-A3EE-9399-C0AC8769C7B4";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"TreasureGuardSetRN"
-		"TreasureGuardSetRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "sharedReferenceNode";
-	rename -uid "8E71B77B-E24D-E621-3DE7-03A548E3E5FF";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"sharedReferenceNode";
-createNode reference -n "TreasureCaveSetRN";
-	rename -uid "036230D0-D04A-8EE7-48F6-BFBA98474017";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"TreasureCaveSetRN"
-		"TreasureCaveSetRN" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "TreasureCaveSetRN1";
-	rename -uid "193F6E12-734B-FC4D-5ADE-C5B0D04CBE8C";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"TreasureCaveSetRN1"
-		"TreasureCaveSetRN1" 0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
+	setAttr -s 2 ".ktv[0:1]"  1 -27.705425900933978 19 -27.705425900933978;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 select -ne :time1;
-	setAttr ".o" 8;
-	setAttr ".unw" 8;
+	setAttr ".o" 4;
+	setAttr ".unw" 4;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1279,10 +1265,10 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 3;
 select -ne :renderPartition;
-	setAttr -s 21 ".st";
+	setAttr -s 8 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 23 ".s";
+	setAttr -s 10 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
@@ -1298,9 +1284,9 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 323 ".dsm";
+	setAttr -s 77 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 273 ".gn";
+	setAttr -s 79 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -1427,6 +1413,7 @@ connectAttr "Axe_translateZ.o" "AxeRN.phl[3]";
 connectAttr "Axe_rotateX.o" "AxeRN.phl[4]";
 connectAttr "Axe_rotateY.o" "AxeRN.phl[5]";
 connectAttr "Axe_rotateZ.o" "AxeRN.phl[6]";
+connectAttr "polyPlane1.out" "pPlaneShape1.i";
 connectAttr "group1_translateX.o" "group1.tx";
 connectAttr "group1_translateY.o" "group1.ty";
 connectAttr "group1_translateZ.o" "group1.tz";
@@ -1438,8 +1425,6 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr "sharedReferenceNode.sr" "ChestPropRN.sr";
-connectAttr "sharedReferenceNode.sr" "TreasureGuardSetRN.sr";
-connectAttr "sharedReferenceNode.sr" "TreasureCaveSetRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of WorkDay_Shot14.ma
