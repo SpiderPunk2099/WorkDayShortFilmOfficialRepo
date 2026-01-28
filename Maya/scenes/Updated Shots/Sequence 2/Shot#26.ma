@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Shot#26.ma
-//Last modified: Tue, Jan 27, 2026 02:46:00 PM
+//Last modified: Tue, Jan 27, 2026 07:42:59 PM
 //Codeset: 1252
 file -rdi 1 -ns "LivingRoomSet" -rfn "LivingRoomSetRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/trist/WorkDayShortFilmOfficialRepo/Maya/assets/environment/apartmentInterior/LivingRoomSet.ma";
@@ -30,7 +30,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0261B1C0-43A0-C67E-2FE3-ED9AA0B65533";
+fileInfo "UUID" "4CA4F23A-4632-F270-9B9D-EC9CD31EE513";
 createNode transform -s -n "persp";
 	rename -uid "5010DEAE-4626-166E-1082-9ABA420A8954";
 	setAttr ".v" no;
@@ -152,7 +152,7 @@ createNode baseLattice -n "ffd1BaseShape" -p "ffd1Base";
 	setAttr ".ihi" 0;
 	setAttr -k off ".v";
 createNode fosterParent -n "SkeletonRNfosterParent1";
-	rename -uid "B1992490-45F1-315A-08C7-74BA64827001";
+	rename -uid "773279DD-499F-9636-9D5F-B082D3F6548C";
 createNode mesh -n "Skeleton_Smooth_GeoShapeOrig1Tag" -p "SkeletonRNfosterParent1";
 	rename -uid "E39C1F40-4782-1AE2-6E47-BCB2D10DDCB3";
 	setAttr -k off ".v";
@@ -17357,8 +17357,8 @@ createNode displayLayer -n "Latice";
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 select -ne :time1;
-	setAttr ".o" 3;
-	setAttr ".unw" 3;
+	setAttr ".o" 64;
+	setAttr ".unw" 64;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
