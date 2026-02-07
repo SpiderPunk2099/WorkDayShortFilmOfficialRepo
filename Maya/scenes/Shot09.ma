@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Shot09.ma
-//Last modified: Mon, Jan 19, 2026 11:34:46 AM
+//Last modified: Fri, Feb 06, 2026 04:51:40 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "DragonGateCaveSet" -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
@@ -27,34 +27,38 @@ file -r -ns "DragonGateCaveSet" -dr 1 -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 requires maya "2024";
 requires -nodeType "ikSpringSolver" "ikSpringSolver" "1.0";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
+requires -nodeType "aiOptions" -nodeType "aiAOV" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter"
+		 -nodeType "aiAreaLight" -nodeType "aiNoise" -nodeType "aiUserDataColor" -nodeType "cryptomatte"
+		 "mtoa" "5.3.4.1";
 requires -nodeType "mayaUsdLayerManager" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.25.0";
-requires "stereoCamera" "10.0";
+requires -nodeType "simpleSelector" -nodeType "renderSetupLayer" -nodeType "renderSetup"
+		 -nodeType "collection" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
 currentUnit -l meter -a degree -t 12fps;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
-fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B1C1064D-49F7-D33D-D669-10A5EA604426";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
+fileInfo "UUID" "A4BEED31-48FC-8AC4-189C-21BAA308A612";
 createNode transform -s -n "persp";
 	rename -uid "913CC8DD-4015-E66B-8046-32B9361BA6E8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.20033653493610939 1.3253583305067893 5.565825137452511 ;
-	setAttr ".r" -type "double3" -12.338352706132749 561.80000000021334 0 ;
+	setAttr ".t" -type "double3" -17.996443232557148 5.3379887605078258 2.2215870673029348 ;
+	setAttr ".r" -type "double3" 0.26164729127344988 625.80000000009102 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "16DFFEAE-4556-CFCE-025E-718677808DDA";
 	setAttr -k off ".v" no;
+	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 0.50534000391387845;
+	setAttr ".coi" 18.912513988690357;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -1.700410229684107 121.73750780975548 602.41889186322192 ;
+	setAttr ".tp" -type "double3" -641.86429537122012 923.62978823467995 500.52220511814301 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C3FF5175-43F9-3FEA-5FF4-5EA30A907A6C";
@@ -120,17 +124,16 @@ createNode transform -n "camera1";
 createNode camera -n "cameraShape1" -p "camera1";
 	rename -uid "FCBA4931-4483-9EE0-D330-15856DF63725";
 	setAttr -k off ".v";
-	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 40;
-	setAttr ".coi" 1.1153949779296854;
+	setAttr ".coi" 25.492852236014173;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
-	setAttr ".tp" -type "double3" -15.956398495945825 128.53287704548453 133.24431185707829 ;
+	setAttr ".tp" -type "double3" 877.21081824124349 397.34420274482073 1192.3934807237342 ;
 	setAttr ".dgo" 0.5;
 	setAttr ".dr" yes;
 createNode transform -n "TempEnvironment";
@@ -200,16 +203,83 @@ createNode mesh -n "pPlaneShape3" -p "pPlane3";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "pointLight1";
+	rename -uid "2E4A2FB1-4F91-4E0A-DE27-34869694420B";
+	setAttr ".t" -type "double3" 8.7721081824124347 3.9734420274482081 -4.0856963923816414 ;
+createNode pointLight -n "pointLightShape1" -p "pointLight1";
+	rename -uid "60853428-45A0-E6EB-19DB-03871EEF5CE4";
+	setAttr -k off ".v";
+	setAttr ".us" no;
+	setAttr ".ai_exposure" 15;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 2478.260986328125;
+createNode transform -n "pointLight3";
+	rename -uid "AF3319B3-425C-7EBB-234A-B8B0DFD33AD1";
+	setAttr ".t" -type "double3" 8.7721081824124347 3.9734420274482081 11.802649951858269 ;
+createNode pointLight -n "pointLightShape3" -p "pointLight3";
+	rename -uid "9E12E6CB-4D05-C9E1-7E9D-E8BC7FFD2053";
+	setAttr -k off ".v";
+	setAttr ".us" no;
+	setAttr ".ai_exposure" 15;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 2478.260986328125;
+createNode transform -n "aiAreaLight1";
+	rename -uid "4D72F078-41D0-0024-D0A0-658AAFD61E4A";
+	setAttr ".t" -type "double3" -6.4186429537122009 9.2362978823468005 5.0052220511814305 ;
+	setAttr ".r" -type "double3" -83.296533243264349 275.19999999999976 0 ;
+	setAttr ".s" -type "double3" 264.06045325645857 264.06045325645857 1 ;
+createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
+	rename -uid "7BEC4EC7-4EA1-A9CA-48FD-2E9198DC9C9B";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".ai_exposure" 21;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 9417.177734375;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure","normalize","aiNormalize"
+		} ;
+createNode transform -n "Skelly_Light_01";
+	rename -uid "AE151CBF-4475-8C9B-79F8-F99453FF2DE8";
+	setAttr ".t" -type "double3" 0 1.641748406314107 5.4282660952498416 ;
+	setAttr ".r" -type "double3" -206.85546852325038 29.354086493194529 184.35062389780506 ;
+	setAttr ".s" -type "double3" 16.708199584914176 16.708199584914176 16.708199584914176 ;
+createNode directionalLight -n "Skelly_Light_Shape1" -p "Skelly_Light_01";
+	rename -uid "43333C2A-4B8B-3E6C-7737-549737B04ECF";
+	setAttr -k off ".v";
+	setAttr ".ai_exposure" 3;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 5086.95654296875;
+	setAttr ".ai_cast_volumetric_shadows" no;
+createNode transform -n "aiAreaLight2";
+	rename -uid "C964C3E1-44D1-7162-4990-5F9FFFABEFEA";
+	setAttr ".t" -type "double3" 2.4523069048091557 9.2362978823468005 5.0052220511814305 ;
+	setAttr ".r" -type "double3" -107.02586317940039 275.19999999999976 1.0527852151587161e-13 ;
+	setAttr ".s" -type "double3" 264.06045325645857 264.06045325645857 1 ;
+createNode aiAreaLight -n "aiAreaLightShape2" -p "aiAreaLight2";
+	rename -uid "D55F733F-4BD5-8C58-BF5E-ACB452C21F99";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".ai_exposure" 18;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 4435.5830078125;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure","normalize","aiNormalize"
+		} ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DB2063B1-406E-2441-EAEE-99B9DA809B3B";
+	rename -uid "F56AA9C3-451F-EB48-BEB1-288B3A7C81B9";
 	setAttr -s 58 ".lnk";
+	setAttr -s 53 ".ign";
 	setAttr -s 58 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D54E7B81-407E-0AD0-BBF6-BBA33D78B78F";
+	rename -uid "A9B167B9-4D6A-60F0-7972-36BEB55CD84D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D23D6F22-48D4-5C11-46EC-1B9B1D420DBD";
+	rename -uid "D0D0255D-42A2-7737-8579-B3B62CF7AE99";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0184B3C1-4DDA-EE8E-97AC-D1BBEA32FE31";
+	rename -uid "3D8FBFC7-47B4-7271-834B-EC9C370C799F";
 	setAttr ".cdl" 1;
 	setAttr -s 5 ".dli[1:4]"  2 3 4 1;
 	setAttr -s 2 ".dli";
@@ -217,13 +287,18 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "2780EDA6-4886-B13B-2F6D-FF960FF0EBAB";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5704B6BF-4202-2744-8F18-C6B953229248";
+	rename -uid "A6413A2A-45C8-DA68-76CD-A4AA4E4B0022";
+	setAttr -s 2 ".rlmi[1]"  1;
+	setAttr -s 2 ".rlmi";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "88A19A9D-4D39-F6D0-E308-3BB69EA25F18";
 	setAttr ".g" yes;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "AD721FC2-43EF-5E19-03AF-C5B2C7C270E0";
+	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
+	setAttr -s 6 ".aovs";
 	setAttr ".version" -type "string" "5.3.4.1";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=cameraShape1;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "53123174-4529-0368-EC6A-49A34D8F738B";
 	setAttr ".ai_translator" -type "string" "gaussian";
@@ -240,17 +315,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 638\n            -height 440\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 98\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 98\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -camera \"|camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1161\n            -height 710\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1034\n            -height 710\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
 		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n"
@@ -272,23 +347,17 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n"
-		+ "                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n"
-		+ "                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n"
-		+ "                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n"
-		+ "                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Model Panel5\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Model Panel5\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
-		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 4 4 \n            -bumpResolution 4 4 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n"
-		+ "            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n"
-		+ "            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 0\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Model Panel6\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Model Panel6\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
-		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -objectFilterShowInHUD 1\n            -isFiltered 0\n"
-		+ "            -colorResolution 4 4 \n            -bumpResolution 4 4 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n"
-		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 0\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Model Panel7\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tmodelPanel -edit -l (localizedPanelLabel(\"Model Panel7\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n"
-		+ "            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 4 4 \n            -bumpResolution 4 4 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n"
-		+ "            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 0\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
-		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap true\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1161\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1161\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
+		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 4 4 \n            -bumpResolution 4 4 \n"
+		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 0\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n"
+		+ "                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n"
+		+ "                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n"
+		+ "                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap true\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n"
+		+ "\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1034\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1034\\n    -height 710\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -2243,7 +2312,7 @@ createNode reference -n "SkeletonRN";
 		"SkeletonRN" 1
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_COG_Ctrl_Grp|Skeleton:Head_COG_Ctrl" 
 		"visibility" " 1"
-		"SkeletonRN" 1961
+		"SkeletonRN" 2011
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_COG_Ctrl_Grp|Skeleton:Head_COG_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_COG_Ctrl_Grp|Skeleton:Head_COG_Ctrl" 
@@ -2279,6 +2348,98 @@ createNode reference -n "SkeletonRN";
 		2 "Skeleton:Ctrl_Layer" "displayOrder" " 3"
 		2 "Skeleton:Loc_Layer" "visibility" " 0"
 		2 "Skeleton:Loc_Layer" "displayOrder" " 4"
+		2 "Skeleton:lambert1SG" "aiCustomAOVs" " -s 9"
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "Skeleton:lambert1SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs" " -s 9"
+		2 "Skeleton:set1" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		2 "Skeleton:set1" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		2 "Skeleton:set1" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		2 "Skeleton:set1" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "Skeleton:set1" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs" " -s 9"
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "Skeleton:NIghtCapSG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs" " -s 9"
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "Skeleton:NIghtCapSG1" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs" " -s 9"
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "Skeleton:NightCapBallSG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.Master_Scale" 
 		"SkeletonRN.placeHolderList[1]" ""
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.Body_Poly" 
@@ -26258,16 +26419,1094 @@ createNode reference -n "DragonGateCaveSetRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DragonGateCaveSetRN"
 		"DragonGateCaveSet:roundedRocksRN" 0
-		"DragonGateCaveSet:BonesRN" 0
 		"DragonGateCaveSet:Stalagmite_2RN" 0
+		"DragonGateCaveSet:BonesRN" 0
 		"DragonGateCaveSet:Stalagmite_1RN" 0
 		"DragonGateCaveSet:DragonGateRN" 0
 		"DragonGateCaveSet:Emergency_ButtonRN" 0
 		"DragonGateCaveSet:DragonGateTorchRN" 0
 		"DragonGateCaveSet:Large_BoulderRN" 0
 		"DragonGateCaveSetRN" 0
-		"DragonGateCaveSetRN" 5
-		2 "|DragonGateCaveSet:CaveSet" "translate" " -type \"double3\" -11.77535559256889464 4.08284149169921839 14.37072009687280527"
+		"DragonGateCaveSet:roundedRocksRN" 11
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:roundedRocks:lambert2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		"DragonGateCaveSet:DragonGateTorchRN" 55
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs" 
+		" -s 9"
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs" 
+		" -s 9"
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs" 
+		" -s 9"
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs" 
+		" -s 9"
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs" 
+		" -s 9"
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		"DragonGateCaveSet:BonesRN" 11
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:Bones:Skeleton1:set1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		"DragonGateCaveSet:DragonGateRN" 462
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs" " -s 9"
+		
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[0].aovName" 
+		" -type \"string\" \"ID\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[1].aovName" 
+		" -type \"string\" \"Z\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[2].aovName" 
+		" -type \"string\" \"Alpha\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[3].aovName" 
+		" -type \"string\" \"N\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[4].aovName" 
+		" -type \"string\" \"CameraSpaceNormals\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[5].aovName" 
+		" -type \"string\" \"crypto_object\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[6].aovName" 
+		" -type \"string\" \"crypto_material\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[7].aovName" 
+		" -type \"string\" \"crypto_asset\""
+		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[8].aovName" 
+		" -type \"string\" \"LightsPosAlpha\""
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:Extract10SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:Extract7SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:standardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		"DragonGateCaveSetRN" 27
+		2 "|DragonGateCaveSet:CaveSet" "translate" " -type \"double3\" -11.77535559256889464 4.0673008054161679 14.37072009687280527"
 		
 		2 "|DragonGateCaveSet:CaveSet" "rotate" " -type \"double3\" 0 -179.99999999999994316 0"
 		
@@ -26275,37 +27514,132 @@ createNode reference -n "DragonGateCaveSetRN";
 		
 		2 "|DragonGateCaveSet:CaveSet" "scalePivot" " -type \"double3\" 0 -4.08284149169921839 0"
 		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs" " -s 9"
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
+		
+		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
+		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1]" ""
-		"DragonGateCaveSet:Stalagmite_2RN" 8
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"translate" " -type \"double3\" -0.059906495170206221 0.10637920445397449 0.0034621740668891524"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"translateY" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translate" " -type \"double3\" -0.0024747098652441934 -0.00584415260432662 0.0024089645667960458"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translateY" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translateZ" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scale" " -type \"double3\" 1 1.05770059949990314 1"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scaleX" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scaleY" " -av";
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0
+		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
+		0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
 	rename -uid "B699CCAD-416A-0662-0AB9-2C89B878D6D0";
+createNode lightEditor -n "lightEditor";
+	rename -uid "362866F3-4EB7-D4EE-855A-E0B430BFBAD0";
+createNode lightItem -n "pointLightShape1__LEItem";
+	rename -uid "37583852-44D9-B1E9-AFD4-D38ABEBB440D";
+createNode lightItem -n "pointLightShape3__LEItem";
+	rename -uid "D9833178-45F7-5A80-6774-8F8C41AB6C3E";
+createNode lightItem -n "Skelly_Light_Shape1__LEItem";
+	rename -uid "1DCEA463-4F56-B155-4188-5290C7C370AD";
+createNode lightItem -n "aiAreaLightShape1__LEItem";
+	rename -uid "3A63847C-4D53-7E68-99B4-81B1D6ABAEE2";
+createNode renderSetup -n "renderSetup";
+	rename -uid "C56AD4E0-4B38-B932-C362-D5BEBFC2515A";
+createNode aiAOV -n "aiAOV_ID";
+	rename -uid "20F51D7F-4757-B22A-EF55-8A816C0D44E5";
+	setAttr ".aovn" -type "string" "ID";
+	setAttr ".aovt" 2;
+createNode aiAOVFilter -n "aiAOVFilter1";
+	rename -uid "6A749C42-48AB-65FA-0A76-A78D3762BDBB";
+	setAttr ".ai_translator" -type "string" "closest";
+createNode aiAOV -n "aiAOV_Z";
+	rename -uid "01B88F5A-4E63-8FEF-AB59-A4AE0044B3AD";
+	setAttr ".aovn" -type "string" "Z";
+	setAttr ".aovt" 4;
+createNode aiAOVFilter -n "aiAOVFilter2";
+	rename -uid "2B528CF6-4CF2-9332-8D8C-84BFFECF4E5A";
+	setAttr ".ai_translator" -type "string" "closest";
+createNode aiAOV -n "aiAOV_Alpha";
+	rename -uid "BC8867A9-43E6-B2F4-54D5-438AB68A2CA7";
+	setAttr ".aovn" -type "string" "Alpha";
+createNode aiUserDataColor -n "aiUserDataColor1";
+	rename -uid "57116647-4A2B-2DC9-6571-ACB2EFF5B151";
+	setAttr ".defaultValue" -type "float3" 1 1 1 ;
+createNode renderSetupLayer -n "Alpha";
+	rename -uid "79EA7F3D-4A9C-38A8-F0AC-13B265C4620C";
+createNode renderLayer -n "rs_Alpha";
+	rename -uid "FC46DEA4-40AE-7445-02A5-82968EEB45FA";
+	setAttr ".do" 1;
+createNode collection -n "Skelly";
+	rename -uid "3CF4C748-4B8F-BFF8-419E-81B35A8E48FF";
+createNode simpleSelector -n "collection1Selector";
+	rename -uid "1427F988-4DAA-D6A4-DA5B-91AD8F17CA77";
+	setAttr ".ssl" -type "string" "|Skeleton:Skeleton_Asset";
+createNode aiAOV -n "aiAOV_N";
+	rename -uid "85FBD9B6-4066-92F2-67A4-4FBEAE88AC12";
+	setAttr ".aovn" -type "string" "N";
+	setAttr ".aovt" 7;
+createNode aiAOVFilter -n "aiAOVFilter3";
+	rename -uid "2A12BF61-47A7-63B4-DB41-0B96B0D65C52";
+	setAttr ".ai_translator" -type "string" "closest";
+createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
+	rename -uid "086F832E-4BDC-E9B2-23BC-1E9B09101866";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -1548.8094622653655 -524.99997913837512 ;
+	setAttr ".tgi[0].vh" -type "double2" 1479.7618459614521 551.19045428813536 ;
+createNode aiAOV -n "aiAOV_CameraSpaceNormals";
+	rename -uid "44FC8516-490C-ABC1-9A84-7297237D7CA6";
+	setAttr ".aovn" -type "string" "CameraSpaceNormals";
+createNode aiNoise -n "aiNoise1";
+	rename -uid "FC94A5CF-4C0C-0682-BE77-CAB43E7ED605";
+	setAttr ".octaves" 2;
+	setAttr ".distortion" 10;
+createNode cryptomatte -n "_aov_cryptomatte";
+	rename -uid "E0FBC733-4BEE-CDC3-6A42-D28080AA70D7";
+createNode aiAOV -n "aiAOV_crypto_material";
+	rename -uid "C29B0AD5-41C4-1814-71FB-FFA0C7685950";
+	setAttr ".aovn" -type "string" "crypto_material";
+	setAttr ".aovt" 5;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "256D107D-4F6B-C7CF-A854-BD84EC7EF71B";
+	rename -uid "16D91817-458F-CADE-884B-14B64784A392";
 	setAttr ".sst" -type "string" "";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "DD58F52A-40E4-8657-1FE1-7AA435B5DE12";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -117.56756289585233 23.809522863418401 ;
+	setAttr ".tgi[0].vh" -type "double2" 522.32945157396477 416.66665010982149 ;
 select -ne :time1;
-	setAttr ".o" 48;
-	setAttr ".unw" 48;
+	setAttr ".o" 24;
+	setAttr ".unw" 24;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -26317,35 +27651,75 @@ select -ne :renderPartition;
 	setAttr -s 58 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 23 ".s";
+	setAttr -s 24 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 5 ".u";
+	setAttr -s 6 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 11 ".r";
+	setAttr -s 12 ".r";
+select -ne :lightList1;
+	setAttr -s 5 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 6 ".tx";
+	setAttr -s 7 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr -s 88 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 14 ".gn";
+	setAttr -s 9 ".aovs";
+	setAttr ".aovs[0].aov_name" -type "string" "ID";
+	setAttr ".aovs[1].aov_name" -type "string" "Z";
+	setAttr ".aovs[2].aov_name" -type "string" "Alpha";
+	setAttr ".aovs[3].aov_name" -type "string" "N";
+	setAttr ".aovs[4].aov_name" -type "string" "CameraSpaceNormals";
+	setAttr ".aovs[5].aov_name" -type "string" "crypto_object";
+	setAttr ".aovs[6].aov_name" -type "string" "crypto_material";
+	setAttr ".aovs[7].aov_name" -type "string" "crypto_asset";
+	setAttr ".aovs[8].aov_name" -type "string" "LightsPosAlpha";
+	setAttr ".aal" -type "attributeAlias" {"ai_aov_ID","aiCustomAOVs[0].aovName","ai_aov_Z"
+		,"aiCustomAOVs[1].aovName","ai_aov_Alpha","aiCustomAOVs[2].aovName","ai_aov_N","aiCustomAOVs[3].aovName"
+		,"ai_aov_CameraSpaceNormals","aiCustomAOVs[4].aovName","ai_aov_crypto_object","aiCustomAOVs[5].aovName"
+		,"ai_aov_crypto_material","aiCustomAOVs[6].aovName","ai_aov_crypto_asset","aiCustomAOVs[7].aovName"
+		,"ai_aov_LightsPosAlpha","aiCustomAOVs[8].aovName"} ;
 select -ne :initialParticleSE;
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
 	setAttr ".ro" yes;
+	setAttr -s 9 ".aovs";
+	setAttr ".aovs[0].aov_name" -type "string" "ID";
+	setAttr ".aovs[1].aov_name" -type "string" "Z";
+	setAttr ".aovs[2].aov_name" -type "string" "Alpha";
+	setAttr ".aovs[3].aov_name" -type "string" "N";
+	setAttr ".aovs[4].aov_name" -type "string" "CameraSpaceNormals";
+	setAttr ".aovs[5].aov_name" -type "string" "crypto_object";
+	setAttr ".aovs[6].aov_name" -type "string" "crypto_material";
+	setAttr ".aovs[7].aov_name" -type "string" "crypto_asset";
+	setAttr ".aovs[8].aov_name" -type "string" "LightsPosAlpha";
+	setAttr ".aal" -type "attributeAlias" {"ai_aov_ID","aiCustomAOVs[0].aovName","ai_aov_Z"
+		,"aiCustomAOVs[1].aovName","ai_aov_Alpha","aiCustomAOVs[2].aovName","ai_aov_N","aiCustomAOVs[3].aovName"
+		,"ai_aov_CameraSpaceNormals","aiCustomAOVs[4].aovName","ai_aov_crypto_object","aiCustomAOVs[5].aovName"
+		,"ai_aov_crypto_material","aiCustomAOVs[6].aovName","ai_aov_crypto_asset","aiCustomAOVs[7].aovName"
+		,"ai_aov_LightsPosAlpha","aiCustomAOVs[8].aovName"} ;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
 	setAttr ".outf" 51;
 	setAttr ".imfkey" -type "string" "exr";
+	setAttr ".an" yes;
+	setAttr ".fs" 24;
+	setAttr ".ef" 24;
+	setAttr ".pff" yes;
 	setAttr ".dss" -type "string" "standardSurface1";
 select -ne :defaultResolution;
 	setAttr ".w" 1920;
 	setAttr ".h" 1080;
 	setAttr ".pa" 1;
 	setAttr ".dar" 1.7769999504089355;
+select -ne :defaultLightSet;
+	setAttr -s 5 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -28316,16 +29690,29 @@ connectAttr "polyPlane1.out" "pPlaneShape1.i";
 connectAttr "polySoftEdge1.out" "pCylinderShape1.i";
 connectAttr "deleteComponent5.og" "pPlaneShape2.i";
 connectAttr "deleteComponent6.og" "pPlaneShape3.i";
+connectAttr "pointLightShape1__LEItem.en" "pointLightShape1.v";
+connectAttr "pointLightShape3__LEItem.en" "pointLightShape3.v";
+connectAttr "aiAreaLightShape1__LEItem.en" "aiAreaLightShape1.v";
+connectAttr "Skelly_Light_Shape1__LEItem.en" "Skelly_Light_Shape1.v";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "ignore" ":lightLinker1" ":initialParticleSE.message" "Skelly_Light_Shape1.message";
+relationship "ignore" ":lightLinker1" ":initialShadingGroup.message" "Skelly_Light_Shape1.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
+connectAttr "aiAOV_ID.msg" ":defaultArnoldRenderOptions.aovs" -na;
+connectAttr "aiAOV_Z.msg" ":defaultArnoldRenderOptions.aovs" -na;
+connectAttr "aiAOV_Alpha.msg" ":defaultArnoldRenderOptions.aovs" -na;
+connectAttr "aiAOV_N.msg" ":defaultArnoldRenderOptions.aovs" -na;
+connectAttr "aiAOV_CameraSpaceNormals.msg" ":defaultArnoldRenderOptions.aovs" -na
+		;
+connectAttr "aiAOV_crypto_material.msg" ":defaultArnoldRenderOptions.aovs" -na;
 connectAttr "polyCylinder1.out" "deleteComponent1.ig";
 connectAttr "deleteComponent1.og" "deleteComponent2.ig";
 connectAttr "deleteComponent2.og" "deleteComponent3.ig";
@@ -28344,9 +29731,69 @@ connectAttr "polyPlane3.out" "polySplit1.ip";
 connectAttr "polySplit1.out" "polySplit2.ip";
 connectAttr "polySplit2.out" "deleteComponent6.ig";
 connectAttr "layerManager.dli[4]" "TempEnvLayer.id";
+connectAttr "pointLightShape1__LEItem.msg" "lightEditor.fi";
+connectAttr "aiAreaLightShape1__LEItem.msg" "lightEditor.li";
+connectAttr "pointLightShape1.msg" "pointLightShape1__LEItem.lgt";
+connectAttr "lightEditor.lit" "pointLightShape1__LEItem.pls";
+connectAttr "lightEditor.en" "pointLightShape1__LEItem.pen";
+connectAttr "lightEditor.nic" "pointLightShape1__LEItem.pic";
+connectAttr "pointLightShape3.msg" "pointLightShape3__LEItem.lgt";
+connectAttr "pointLightShape1__LEItem.nxt" "pointLightShape3__LEItem.prv";
+connectAttr "lightEditor.lit" "pointLightShape3__LEItem.pls";
+connectAttr "lightEditor.en" "pointLightShape3__LEItem.pen";
+connectAttr "lightEditor.nic" "pointLightShape3__LEItem.pic";
+connectAttr "Skelly_Light_Shape1.msg" "Skelly_Light_Shape1__LEItem.lgt";
+connectAttr "pointLightShape3__LEItem.nxt" "Skelly_Light_Shape1__LEItem.prv";
+connectAttr "lightEditor.lit" "Skelly_Light_Shape1__LEItem.pls";
+connectAttr "lightEditor.en" "Skelly_Light_Shape1__LEItem.pen";
+connectAttr "lightEditor.nic" "Skelly_Light_Shape1__LEItem.pic";
+connectAttr "aiAreaLightShape1.msg" "aiAreaLightShape1__LEItem.lgt";
+connectAttr "Skelly_Light_Shape1__LEItem.nxt" "aiAreaLightShape1__LEItem.prv";
+connectAttr "lightEditor.lit" "aiAreaLightShape1__LEItem.pls";
+connectAttr "lightEditor.en" "aiAreaLightShape1__LEItem.pen";
+connectAttr "lightEditor.nic" "aiAreaLightShape1__LEItem.pic";
+connectAttr "Alpha.msg" "renderSetup.frl";
+connectAttr "Alpha.msg" "renderSetup.lrl";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_ID.out[0].drvr";
+connectAttr "aiAOVFilter1.msg" "aiAOV_ID.out[0].ftr";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_Z.out[0].drvr";
+connectAttr "aiAOVFilter2.msg" "aiAOV_Z.out[0].ftr";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_Alpha.out[0].drvr";
+connectAttr ":defaultArnoldFilter.msg" "aiAOV_Alpha.out[0].ftr";
+connectAttr "aiUserDataColor1.out" "aiAOV_Alpha.dftv";
+connectAttr "rs_Alpha.msg" "Alpha.lrl";
+connectAttr "renderSetup.lit" "Alpha.pls";
+connectAttr "Skelly.msg" "Alpha.cl";
+connectAttr "Skelly.msg" "Alpha.ch";
+connectAttr "renderLayerManager.rlmi[1]" "rs_Alpha.rlid";
+connectAttr "collection1Selector.c" "Skelly.sel";
+connectAttr "Alpha.lit" "Skelly.pls";
+connectAttr "Alpha.nic" "Skelly.pic";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_N.out[0].drvr";
+connectAttr "aiAOVFilter3.msg" "aiAOV_N.out[0].ftr";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_CameraSpaceNormals.out[0].drvr";
+connectAttr ":defaultArnoldFilter.msg" "aiAOV_CameraSpaceNormals.out[0].ftr";
+connectAttr "aiNoise1.out" "aiAOV_CameraSpaceNormals.dftv";
+connectAttr ":defaultArnoldDriver.msg" "aiAOV_crypto_material.out[0].drvr";
+connectAttr ":defaultArnoldFilter.msg" "aiAOV_crypto_material.out[0].ftr";
+connectAttr "_aov_cryptomatte.out" "aiAOV_crypto_material.dftv";
+connectAttr "_aov_cryptomatte.msg" ":defaultShaderList1.s" -na;
+connectAttr "aiUserDataColor1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "rs_Alpha.msg" ":defaultRenderingList1.r" -na;
+connectAttr "pointLightShape1.ltd" ":lightList1.l" -na;
+connectAttr "pointLightShape3.ltd" ":lightList1.l" -na;
+connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
+connectAttr "Skelly_Light_Shape1.ltd" ":lightList1.l" -na;
+connectAttr "aiAreaLightShape2.ltd" ":lightList1.l" -na;
+connectAttr "aiNoise1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pPlaneShape3.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "pointLight3.iog" ":defaultLightSet.dsm" -na;
+connectAttr "aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
+connectAttr "Skelly_Light_01.iog" ":defaultLightSet.dsm" -na;
+connectAttr "aiAreaLight2.iog" ":defaultLightSet.dsm" -na;
 // End of Shot09.ma
