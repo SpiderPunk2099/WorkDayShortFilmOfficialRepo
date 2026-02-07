@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Shot09_Alpha.ma
-//Last modified: Fri, Feb 06, 2026 05:21:08 PM
+//Last modified: Fri, Feb 06, 2026 05:28:25 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "DragonGateCaveSet" -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
@@ -39,7 +39,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "DBB71FEA-4735-9D4C-3A49-62AC5AD31E9A";
+fileInfo "UUID" "B0024F64-4997-B977-3298-E59225C8C37B";
 createNode transform -s -n "persp";
 	rename -uid "913CC8DD-4015-E66B-8046-32B9361BA6E8";
 	setAttr ".v" no;
@@ -30746,11 +30746,8 @@ createNode noise -n "noise1";
 	setAttr ".nty" 4;
 createNode place2dTexture -n "place2dTexture2";
 	rename -uid "C8BB5546-4C70-4AB1-0C3C-82906E6F8B43";
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "FC3711F3-4993-4EE9-EA75-A1808D710864";
-	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "106B2AEF-465B-31C8-53D5-849318A7CF37";
+	rename -uid "606CF7C8-4AB0-00E0-937A-CC888A45FC25";
 	setAttr -s 3 ".tgi";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -14.618189037314957 -124.99999503294647 ;
@@ -30803,6 +30800,9 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[2].ni[5].x" -206.08050537109375;
 	setAttr ".tgi[2].ni[5].y" -56.389915466308594;
 	setAttr ".tgi[2].ni[5].nvs" 1923;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "0FE6999D-4DD2-EA55-A5C5-DD87DAB5DF70";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 24;
 	setAttr ".unw" 24;
