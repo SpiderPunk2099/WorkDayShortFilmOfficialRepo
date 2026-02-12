@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: DeskModel.ma
-//Last modified: Thu, Feb 12, 2026 10:40:03 AM
+//Last modified: Thu, Feb 12, 2026 10:45:40 AM
 //Codeset: 1252
 requires maya "2025ff03";
 currentUnit -l foot -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "AD937E02-4F49-FDE1-2C1A-599FF52BD3AD";
+fileInfo "UUID" "E47733D4-4AD1-6E58-0E05-D3ACEA848B55";
 createNode transform -s -n "persp";
 	rename -uid "A35B17CF-4033-87AD-DCA3-CE97B407BE3D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.7638259934410634 4.6817671242962042 -2.5878230514610197 ;
-	setAttr ".r" -type "double3" -21.338352729495881 105.00000000000003 0 ;
+	setAttr ".t" -type "double3" 10.747214945446522 -0.38177766626086368 0.77222226671278404 ;
+	setAttr ".r" -type "double3" 6.8616472705167899 85.399999999982271 -9.9145802392850406e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5731380D-4928-F5B1-D15A-F6A3ACFEDF23";
 	setAttr -k off ".v" no;
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 10.209949982484568;
+	setAttr ".coi" 11.286310416390451;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -87,7 +87,7 @@ createNode camera -s -n "sideShape" -p "side";
 createNode transform -n "pCube1";
 	rename -uid "075CF1D9-4C0E-5990-83F1-FE919305C442";
 	setAttr ".t" -type "double3" 0 1.4094091943649403 0 ;
-	setAttr ".s" -type "double3" 2.677791556942446 0.27778118155369658 5.1864636809486742 ;
+	setAttr ".s" -type "double3" 2.677791556942446 0.20960906661472045 5.8098586998119481 ;
 	setAttr ".rp" -type "double3" 0 0.49999997571072397 0 ;
 	setAttr ".sp" -type "double3" 0 0.49999997571072397 0 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
@@ -95,15 +95,25 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999997764825821 0.44569149613380432 ;
+	setAttr ".pv" -type "double2" 0.25 0.125 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[8:15]" -type "float3"  0 -1.3501877 0 0 -1.3501877 
-		0 0 -1.3501877 0 0 -1.3501877 0 0 -1.3501877 0 0 -1.3501877 0 0 -1.3501877 0 0 -1.3501877 
-		0;
+	setAttr -s 12 ".pt";
+	setAttr ".pt[0]" -type "float3" 0 0.38078514 0 ;
+	setAttr ".pt[2]" -type "float3" 0 0.63981748 0 ;
+	setAttr ".pt[4]" -type "float3" 0 0.63981748 0 ;
+	setAttr ".pt[6]" -type "float3" 0 0.38078514 0 ;
+	setAttr ".pt[8]" -type "float3" 0 -0.8729139 0 ;
+	setAttr ".pt[9]" -type "float3" 0 -1.1319476 0 ;
+	setAttr ".pt[10]" -type "float3" 0 -1.3501877 0 ;
+	setAttr ".pt[11]" -type "float3" 0 -1.3501877 0 ;
+	setAttr ".pt[12]" -type "float3" 0 -1.1319476 0 ;
+	setAttr ".pt[13]" -type "float3" 0 -0.8729139 0 ;
+	setAttr ".pt[14]" -type "float3" 0 -1.3501877 0 ;
+	setAttr ".pt[15]" -type "float3" 0 -1.3501877 0 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "6F7743DC-4AFE-A5A8-4979-248919BB49BD";
 	setAttr -s 2 ".lnk";
