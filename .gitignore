@@ -37,3 +37,4 @@ Maya/scenes/Shot_3_Blockout.ma
 # Ignore Texture Files
 Maya\Textures
 *.swatch
+*.swatches
