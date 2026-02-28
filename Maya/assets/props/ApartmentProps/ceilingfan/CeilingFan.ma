@@ -1,7 +1,11 @@
 //Maya ASCII 2024 scene
 //Name: CeilingFan.ma
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 //Last modified: Fri, Feb 27, 2026 11:48:09 PM
+=======
+//Last modified: Fri, Feb 27, 2026 11:38:34 PM
+>>>>>>> Stashed changes
 =======
 //Last modified: Fri, Feb 27, 2026 11:38:34 PM
 >>>>>>> Stashed changes
@@ -19,12 +23,21 @@ fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 fileInfo "UUID" "07FC6B72-47CF-E9C7-0EFB-01AA197CEF29";
 createNode transform -s -n "persp";
 	rename -uid "770F2AE6-4E45-8849-5393-C2B7C03647E5";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -4.3872638793998684 7.7095686814778785 -1.806049189291739 ;
 	setAttr ".r" -type "double3" -50.138352729515312 247.39999999991937 0 ;
+=======
+fileInfo "UUID" "F3CCE30E-497B-C628-3F70-7EBD9D10DEDB";
+createNode transform -s -n "persp";
+	rename -uid "770F2AE6-4E45-8849-5393-C2B7C03647E5";
+	setAttr ".v" no;
+	setAttr ".t" -type "double3" -4.2886346098999502 7.2861736343423535 -2.9549587483949309 ;
+	setAttr ".r" -type "double3" -45.338352729532453 235.39999999993387 0 ;
+>>>>>>> Stashed changes
 =======
 fileInfo "UUID" "F3CCE30E-497B-C628-3F70-7EBD9D10DEDB";
 createNode transform -s -n "persp";
@@ -15555,15 +15568,21 @@ createNode place2dTexture -n "place2dTexture4";
 	rename -uid "FB9B19A8-4AB6-ECA9-C5D2-8EB3B55EF980";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	rename -uid "5344B802-43A7-A9BE-EB6B-7D8DE30F46AD";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "111E3989-4D95-E66C-A8DC-D1B832B46211";
 =======
+=======
+>>>>>>> Stashed changes
 	rename -uid "272256ED-4903-CFD5-DFC4-A6AE99BF5180";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "C0BBDD1E-426B-4C7B-2AE8-59AB4AD3B666";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -611.60234652775375 -605.90303203575297 ;
