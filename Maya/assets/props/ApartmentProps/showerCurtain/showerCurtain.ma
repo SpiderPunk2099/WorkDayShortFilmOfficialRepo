@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: showerCurtain.ma
-//Last modified: Sun, Mar 01, 2026 09:32:25 PM
+//Last modified: Sun, Mar 01, 2026 09:33:17 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "DA4D9F2E-4948-BF33-CEA2-64ACB07862FE";
+fileInfo "UUID" "C23D58F6-465D-5660-08F4-2BAB41EFA898";
 createNode transform -s -n "persp";
 	rename -uid "CF7593C8-459F-30D3-9C08-3AAA6FFD6AFB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 27.834195258129178 15.376213072701736 14.074688765864703 ;
-	setAttr ".r" -type "double3" -13.538352750274436 -6777.4000000098104 0 ;
+	setAttr ".t" -type "double3" 30.493536281077684 18.464925151260399 2.0610092168156027 ;
+	setAttr ".r" -type "double3" -18.938352748359382 -6755.8000000090733 -1.5736548662309738e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "25872738-42F3-72AC-8468-5385C833035A";
 	setAttr -k off ".v" no;
