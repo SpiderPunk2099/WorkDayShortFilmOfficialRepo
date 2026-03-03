@@ -33,3 +33,5 @@ Maya/AfterEffectsLocal/
 Maya/scenes/Shot_2_Blockout.ma
 
 Maya/scenes/Shot_3_Blockout.ma
+
+*.DS_Store
