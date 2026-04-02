@@ -1,56 +1,59 @@
 //Maya ASCII 2023 scene
 //Name: Shot #5(Josh).ma
-//Last modified: Wed, Mar 04, 2026 10:31:57 PM
+//Last modified: Tue, Mar 31, 2026 08:09:27 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "BathroomSet" -rfn "BathroomSetRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/environment/BathroomInterior/BathroomSet.ma";
 file -rdi 2 -ns "toilet" -rfn "BathroomSet:toiletRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toilet/toilet.ma";
-file -rdi 2 -ns "Bathroom_Sink" -rfn "BathroomSet:Bathroom_SinkRN" -op "v=0;"
-		 -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/newBathroom_Sink.ma";
+		 "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toilet/toilet.ma";
 file -rdi 2 -ns "Mirror" -rfn "BathroomSet:MirrorRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
+		 "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
 file -rdi 2 -ns "ToiletBrush" -rfn "BathroomSet:ToiletBrushRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
+		 "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
 file -rdi 2 -ns "TowelBar" -dr 1 -rfn "BathroomSet:TowelBarRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/bathroomTowels/TowelBar.ma";
+		 "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/bathroomTowels/TowelBar.ma";
 file -rdi 2 -ns "Skeleton" -dr 1 -rfn "BathroomSet:SkeletonRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
+		 "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "Toothbrush" -rfn "ToothbrushRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/toothbrush/Toothbrush.ma";
-file -rdi 2 -ns "Toothbrush" -rfn "Toothbrush:ToothbrushRN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/tgwar/Desktop/School/Repositories/WorkDayShortFilmOfficialRepo/Maya/assets/props/HandheldProps/toothbrush//Toothbrush.ma";
+file -rdi 1 -ns "ToiletPaper" -rfn "ToiletPaperRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletPaper/ToiletPaper.ma";
+file -rdi 1 -ns "TowelBar" -rfn "TowelBarRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/bathroomTowels/TowelBar.ma";
+file -rdi 1 -ns "new_Sink" -rfn "new_SinkRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/new_Sink.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -r -ns "BathroomSet" -dr 1 -rfn "BathroomSetRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/environment/BathroomInterior/BathroomSet.ma";
 file -r -ns "Toothbrush" -dr 1 -rfn "ToothbrushRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/toothbrush/Toothbrush.ma";
+file -r -ns "ToiletPaper" -dr 1 -rfn "ToiletPaperRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletPaper/ToiletPaper.ma";
+file -r -ns "TowelBar" -dr 1 -rfn "TowelBarRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/bathroomTowels/TowelBar.ma";
+file -r -ns "new_Sink" -dr 1 -rfn "new_SinkRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/new_Sink.ma";
 requires maya "2023";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.2.1.1";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
-fileInfo "cutIdentifier" "202405151550-05a853e76d";
-fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "7ECD059D-4412-177E-0D22-FAB89AD95BF1";
+fileInfo "cutIdentifier" "202511291957-757d6cf478";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
+fileInfo "UUID" "C4C051D8-4F73-ED58-D333-A7844A4116DA";
 createNode transform -s -n "persp";
 	rename -uid "38DAA0C6-4DEB-0015-6E57-3EBFD58A9455";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 284.97095508547108 480.6648434918684 382.44500958443433 ;
-	setAttr ".r" -type "double3" -33.600000000005942 46.000000000000071 -2.289294145669015e-15 ;
+	setAttr ".t" -type "double3" 47.110874607989913 182.78481824995089 172.81948373164042 ;
+	setAttr ".r" -type "double3" -9.0000000000053024 51.199999999999953 6.344827911550882e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9FA11388-4E1A-6D2E-CD14-EE8C632BBB1D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 770.81547036649761;
+	setAttr ".coi" 286.65342592552264;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -203.54693509050912 58.666192067557162 -167.30291329062649 ;
+	setAttr ".tp" -type "double3" -203.57825012851254 34.921875885517963 236.89366478249508 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "06BF82D1-4155-B7DB-3287-AA991DA76C65";
@@ -120,15 +123,17 @@ createNode camera -n "Render_CamShape" -p "Render_Cam";
 createNode transform -n "Background";
 	rename -uid "A3A1BD49-4121-0A47-E543-3E9AF5CAA072";
 	setAttr ".t" -type "double3" 116.24149757484518 0 -280.54458554026093 ;
-createNode transform -n "BathroomSink";
+createNode transform -n "Props" -p "Background";
+	rename -uid "A5DAAE3A-4D69-31A4-A083-03B7B74E5984";
+createNode transform -n "BathroomSink" -p "Props";
 	rename -uid "9E707B74-4B68-7AED-3CB2-DCBF3032465B";
-	setAttr ".t" -type "double3" -204.70969012048857 8.3647039091850743 -373.3757658451662 ;
+	setAttr ".t" -type "double3" -320.95118769533377 8.3647039091850743 -92.831180304905104 ;
 	setAttr ".s" -type "double3" 11.405051 11.405051 11.405051 ;
-	setAttr ".rp" -type "double3" 1.1627550299794673 58.666192067557169 351.33086777706291 ;
+	setAttr ".rp" -type "double3" 1.1627550299794673 58.666192067557169 351.33086777706285 ;
 	setAttr ".sp" -type "double3" 0.10195088386535645 5.1438780999363498 30.804848463813336 ;
-	setAttr ".spt" -type "double3" 1.0608041461141109 53.522313967620818 320.52601931324955 ;
+	setAttr ".spt" -type "double3" 1.0608041461141109 53.522313967620818 320.52601931324949 ;
 createNode fosterParent -n "ToothbrushRNfosterParent1";
-	rename -uid "1EF57763-495D-BEA1-E528-5993AB687B2B";
+	rename -uid "8F1738D2-49EA-12E7-38BF-399D79C16B17";
 createNode parentConstraint -n "polySurface319_parentConstraint1" -p "ToothbrushRNfosterParent1";
 	rename -uid "D125F43A-4E36-A8A9-E67B-2DBF004E73D7";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "R_Arm_IK_End_CtrlW0" -dv 1 -min 0 
@@ -147,19 +152,19 @@ createNode parentConstraint -n "polySurface319_parentConstraint1" -p "Toothbrush
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -5.3985386509262705 3.5273105743663979 3.3098819380492519 ;
 	setAttr ".tg[0].tor" -type "double3" 0 91.357349543099787 0 ;
-	setAttr ".lr" -type "double3" 79.491657255754888 0.060902678142672827 180.14865784357374 ;
+	setAttr ".lr" -type "double3" 79.491657255754902 0.06090267814267443 180.14865784357374 ;
 	setAttr ".rst" -type "double3" -129.95872903950746 123.04855382425467 -78.190857893435364 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D62D8EEB-486E-70DB-F37D-E88469D1FFDD";
-	setAttr -s 35 ".lnk";
-	setAttr -s 35 ".slnk";
+	rename -uid "52FCF34D-443C-2443-9CA6-DBB1EB564AEB";
+	setAttr -s 56 ".lnk";
+	setAttr -s 56 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "491B1F68-4C9A-A4FE-1D1E-068DB9D31C2C";
+	rename -uid "0D6EFB21-46E0-3518-EB7B-90AE463DA0C6";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3CE8A12F-4E20-87E8-648D-4CA48B968D6F";
+	rename -uid "A4EEC92C-4E3F-2FFC-5D90-82A355F914CA";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C2DAB02B-4494-B767-DBEF-D9B35829786D";
+	rename -uid "0CF406EA-4839-C6D2-C72C-55AA23D363E0";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -167,7 +172,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "4010D827-436F-2549-B8C7-9B95EF5635E8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "BDEFEE59-4311-B330-6640-ABACBA69D598";
+	rename -uid "FBE13DDA-49CB-1EB8-E211-EAB0DDA1897C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "009B877F-42BC-DCEB-D73E-36BDB7847EC4";
 	setAttr ".g" yes;
@@ -188,47 +193,46 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "2AAE062B-48AB-4E31-DE9E-809F963B47E2";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Render_Cam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2350\n            -height 1480\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
-		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
-		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n"
-		+ "            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
-		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 827\n            -height 500\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
+		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 827\n            -height 499\n            -sceneRenderFilter 0\n            $editorName;\n"
+		+ "        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n"
+		+ "            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n"
+		+ "            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n"
+		+ "            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 827\n            -height 499\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Render_Cam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
+		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
 		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
-		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
-		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
-		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
-		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n"
-		+ "            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n"
-		+ "            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n"
-		+ "            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
-		+ "                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n"
-		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n"
-		+ "                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n"
-		+ "                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n"
-		+ "                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
-		+ "                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n"
-		+ "                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n"
-		+ "                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n"
-		+ "                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
-		+ "                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n"
-		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
-		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
-		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
-		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2350\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2350\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1662\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
+		+ "            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
+		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n"
+		+ "                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n"
+		+ "                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n"
+		+ "                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
+		+ "                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n"
+		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n"
+		+ "                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
+		+ "                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n"
+		+ "\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n"
+		+ "                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n"
+		+ "                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 712\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 712\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.05 -size 0.12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -1074,78 +1078,7 @@ createNode animCurveTU -n "Render_Cam_scaleZ";
 	setAttr ".kot[0]"  5;
 createNode reference -n "BathroomSetRN";
 	rename -uid "33D84E41-43CA-BDCF-34CD-609F81CA6156";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"BathroomSetRN"
-		"BathroomSet:ToiletBrushRN" 0
-		"BathroomSetRN" 0
-		"BathroomSet:MirrorRN" 0
-		"BathroomSet:Bathroom_SinkRN" 0
-		"BathroomSet:toiletRN" 0
-		"BathroomSet:Bathroom_SinkRN" 26
-		0 "|BathroomSet:Bathroom_Sink:pCube3" "|BathroomSink" "-s -r "
-		0 "|BathroomSet:Bathroom_Sink:Base5" "|BathroomSink" "-s -r "
-		0 "|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1" "|BathroomSink" "-s -r "
-		
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_10" 
-		"translate" " -type \"double3\" 2.29832273464212289 2.69301959251481948 1.70367070777763896"
-		
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_10" 
-		"translateX" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_10" 
-		"translateZ" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"translate" " -type \"double3\" 2.32843060828069826 2.38557281638653018 1.72190209775662018"
-		
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"translateX" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"translateY" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"translateZ" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"rotate" " -type \"double3\" 0 -39.95269437643731436 93.59905064223714533"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"rotateX" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"rotateY" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_11" 
-		"rotateZ" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_12" 
-		"translate" " -type \"double3\" 2.36257701884410931 2.19511809860537221 1.77270922599923431"
-		
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Screw_12" 
-		"translateZ" " -av"
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Hinge3" 
-		"translate" " -type \"double3\" -3.17042410272267405 2.45594047207074784 1.63613242550049587"
-		
-		2 "|Background|BathroomSet:Sink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate|BathroomSet:Bathroom_Sink:Hinge3" 
-		"translateZ" " -av"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:L_Gear" 
-		"visibility" " 0"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:R_Gear" 
-		"visibility" " 0"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:Bowl" 
-		"visibility" " 0"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:Water_Spout" 
-		"visibility" " 0"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:Faucet" 
-		"visibility" " 0"
-		2 "|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1|BathroomSet:Bathroom_Sink:Sink_Holder" 
-		"visibility" " 0"
-		2 "|BathroomSet:Bathroom_Sink:polySurface1" "visibility" " 0"
-		2 "|BathroomSet:Bathroom_Sink:polySurface3" "visibility" " 0"
-		"BathroomSetRN" 6
-		0 "|BathroomSet:Toilet" "|Background" "-s -r "
-		0 "|BathroomSet:Sink" "|Background" "-s -r "
-		0 "|BathroomSet:BathroomMirror" "|Background" "-s -r "
-		0 "|BathroomSet:Brush" "|Background" "-s -r "
-		0 "|BathroomSet:WhiteBox" "|Background" "-s -r "
-		2 "|Background|BathroomSet:Sink" "translate" " -type \"double3\" -319.81974770335773428 34.92187588551796296 261.16551870817988856";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "ToothbrushRN";
-	rename -uid "A7AB550E-47F0-A9C2-E75C-8092FD07776A";
-	setAttr -s 11 ".phl";
+	setAttr -s 224 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -1157,10 +1090,959 @@ createNode reference -n "ToothbrushRN";
 	setAttr ".phl[9]" 0;
 	setAttr ".phl[10]" 0;
 	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
+	setAttr ".phl[21]" 0;
+	setAttr ".phl[22]" 0;
+	setAttr ".phl[23]" 0;
+	setAttr ".phl[24]" 0;
+	setAttr ".phl[25]" 0;
+	setAttr ".phl[26]" 0;
+	setAttr ".phl[27]" 0;
+	setAttr ".phl[28]" 0;
+	setAttr ".phl[29]" 0;
+	setAttr ".phl[30]" 0;
+	setAttr ".phl[31]" 0;
+	setAttr ".phl[32]" 0;
+	setAttr ".phl[33]" 0;
+	setAttr ".phl[34]" 0;
+	setAttr ".phl[35]" 0;
+	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[41]" 0;
+	setAttr ".phl[42]" 0;
+	setAttr ".phl[43]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[45]" 0;
+	setAttr ".phl[46]" 0;
+	setAttr ".phl[47]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[49]" 0;
+	setAttr ".phl[50]" 0;
+	setAttr ".phl[51]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
+	setAttr ".phl[58]" 0;
+	setAttr ".phl[59]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[61]" 0;
+	setAttr ".phl[62]" 0;
+	setAttr ".phl[63]" 0;
+	setAttr ".phl[64]" 0;
+	setAttr ".phl[65]" 0;
+	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[74]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[76]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[78]" 0;
+	setAttr ".phl[79]" 0;
+	setAttr ".phl[80]" 0;
+	setAttr ".phl[81]" 0;
+	setAttr ".phl[82]" 0;
+	setAttr ".phl[83]" 0;
+	setAttr ".phl[84]" 0;
+	setAttr ".phl[85]" 0;
+	setAttr ".phl[86]" 0;
+	setAttr ".phl[87]" 0;
+	setAttr ".phl[88]" 0;
+	setAttr ".phl[89]" 0;
+	setAttr ".phl[90]" 0;
+	setAttr ".phl[91]" 0;
+	setAttr ".phl[92]" 0;
+	setAttr ".phl[93]" 0;
+	setAttr ".phl[94]" 0;
+	setAttr ".phl[95]" 0;
+	setAttr ".phl[96]" 0;
+	setAttr ".phl[97]" 0;
+	setAttr ".phl[98]" 0;
+	setAttr ".phl[99]" 0;
+	setAttr ".phl[100]" 0;
+	setAttr ".phl[101]" 0;
+	setAttr ".phl[102]" 0;
+	setAttr ".phl[103]" 0;
+	setAttr ".phl[104]" 0;
+	setAttr ".phl[105]" 0;
+	setAttr ".phl[106]" 0;
+	setAttr ".phl[107]" 0;
+	setAttr ".phl[108]" 0;
+	setAttr ".phl[109]" 0;
+	setAttr ".phl[110]" 0;
+	setAttr ".phl[111]" 0;
+	setAttr ".phl[112]" 0;
+	setAttr ".phl[113]" 0;
+	setAttr ".phl[114]" 0;
+	setAttr ".phl[115]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[117]" 0;
+	setAttr ".phl[118]" 0;
+	setAttr ".phl[119]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[121]" 0;
+	setAttr ".phl[122]" 0;
+	setAttr ".phl[123]" 0;
+	setAttr ".phl[124]" 0;
+	setAttr ".phl[125]" 0;
+	setAttr ".phl[126]" 0;
+	setAttr ".phl[127]" 0;
+	setAttr ".phl[128]" 0;
+	setAttr ".phl[129]" 0;
+	setAttr ".phl[130]" 0;
+	setAttr ".phl[131]" 0;
+	setAttr ".phl[132]" 0;
+	setAttr ".phl[133]" 0;
+	setAttr ".phl[134]" 0;
+	setAttr ".phl[135]" 0;
+	setAttr ".phl[136]" 0;
+	setAttr ".phl[137]" 0;
+	setAttr ".phl[138]" 0;
+	setAttr ".phl[139]" 0;
+	setAttr ".phl[140]" 0;
+	setAttr ".phl[141]" 0;
+	setAttr ".phl[142]" 0;
+	setAttr ".phl[143]" 0;
+	setAttr ".phl[144]" 0;
+	setAttr ".phl[145]" 0;
+	setAttr ".phl[146]" 0;
+	setAttr ".phl[147]" 0;
+	setAttr ".phl[148]" 0;
+	setAttr ".phl[149]" 0;
+	setAttr ".phl[150]" 0;
+	setAttr ".phl[151]" 0;
+	setAttr ".phl[152]" 0;
+	setAttr ".phl[153]" 0;
+	setAttr ".phl[154]" 0;
+	setAttr ".phl[155]" 0;
+	setAttr ".phl[156]" 0;
+	setAttr ".phl[157]" 0;
+	setAttr ".phl[158]" 0;
+	setAttr ".phl[159]" 0;
+	setAttr ".phl[160]" 0;
+	setAttr ".phl[161]" 0;
+	setAttr ".phl[162]" 0;
+	setAttr ".phl[163]" 0;
+	setAttr ".phl[164]" 0;
+	setAttr ".phl[165]" 0;
+	setAttr ".phl[166]" 0;
+	setAttr ".phl[167]" 0;
+	setAttr ".phl[168]" 0;
+	setAttr ".phl[169]" 0;
+	setAttr ".phl[170]" 0;
+	setAttr ".phl[171]" 0;
+	setAttr ".phl[172]" 0;
+	setAttr ".phl[173]" 0;
+	setAttr ".phl[174]" 0;
+	setAttr ".phl[175]" 0;
+	setAttr ".phl[176]" 0;
+	setAttr ".phl[177]" 0;
+	setAttr ".phl[178]" 0;
+	setAttr ".phl[179]" 0;
+	setAttr ".phl[180]" 0;
+	setAttr ".phl[181]" 0;
+	setAttr ".phl[182]" 0;
+	setAttr ".phl[183]" 0;
+	setAttr ".phl[184]" 0;
+	setAttr ".phl[185]" 0;
+	setAttr ".phl[186]" 0;
+	setAttr ".phl[187]" 0;
+	setAttr ".phl[188]" 0;
+	setAttr ".phl[189]" 0;
+	setAttr ".phl[190]" 0;
+	setAttr ".phl[191]" 0;
+	setAttr ".phl[192]" 0;
+	setAttr ".phl[193]" 0;
+	setAttr ".phl[194]" 0;
+	setAttr ".phl[195]" 0;
+	setAttr ".phl[196]" 0;
+	setAttr ".phl[197]" 0;
+	setAttr ".phl[198]" 0;
+	setAttr ".phl[199]" 0;
+	setAttr ".phl[200]" 0;
+	setAttr ".phl[201]" 0;
+	setAttr ".phl[202]" 0;
+	setAttr ".phl[203]" 0;
+	setAttr ".phl[204]" 0;
+	setAttr ".phl[205]" 0;
+	setAttr ".phl[206]" 0;
+	setAttr ".phl[207]" 0;
+	setAttr ".phl[208]" 0;
+	setAttr ".phl[209]" 0;
+	setAttr ".phl[210]" 0;
+	setAttr ".phl[211]" 0;
+	setAttr ".phl[212]" 0;
+	setAttr ".phl[213]" 0;
+	setAttr ".phl[214]" 0;
+	setAttr ".phl[215]" 0;
+	setAttr ".phl[216]" 0;
+	setAttr ".phl[217]" 0;
+	setAttr ".phl[218]" 0;
+	setAttr ".phl[219]" 0;
+	setAttr ".phl[220]" 0;
+	setAttr ".phl[221]" 0;
+	setAttr ".phl[222]" 0;
+	setAttr ".phl[223]" 0;
+	setAttr ".phl[224]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"BathroomSetRN"
+		"BathroomSet:ToiletBrushRN" 0
+		"BathroomSetRN" 0
+		"BathroomSet:MirrorRN" 0
+		"BathroomSet:Bathroom_SinkRN" 13
+		0 "|BathroomSet:Bathroom_Sink:pCube3" "|Background|Props|BathroomSink" "-s -r "
+		
+		0 "|BathroomSet:Bathroom_Sink:Base5" "|Background|Props|BathroomSink" "-s -r "
+		
+		0 "|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1" "|Background|Props|BathroomSink" 
+		"-s -r "
+		2 "|Background|Props|BathroomSink|BathroomSet:Bathroom_Sink:Smoothed_Duplicate1" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo" "translate" " -type \"double3\" -10.93273235474296712 0 0"
+		
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:L_Gear" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:polySurface1" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:Water_Spout" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:Bowl" "visibility" 
+		" 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:Faucet" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:R_Gear" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:polySurface3" 
+		"visibility" " 1"
+		2 "|BathroomSet:Bathroom_Sink:Sink_Geo|BathroomSet:Bathroom_Sink:Sink_Holder" 
+		"visibility" " 1"
+		"BathroomSet:toiletRN" 1
+		3 "BathroomSet:toilet:Toilet_Mat.message" "BathroomSet:toilet:materialInfo2.texture" 
+		"-na"
+		"BathroomSet:ToiletBrushRN" 220
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Brush_holder|BathroomSet:ToiletBrush:Brush_holderShape.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Brush_Handle|BathroomSet:ToiletBrush:Brush_HandleShape1Orig.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		3 "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "-na"
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[5]" 
+		"BathroomSetRN.placeHolderList[6]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[7]" 
+		"BathroomSetRN.placeHolderList[8]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[9]" 
+		"BathroomSetRN.placeHolderList[10]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[11]" 
+		"BathroomSetRN.placeHolderList[12]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[13]" 
+		"BathroomSetRN.placeHolderList[14]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group1|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[15]" 
+		"BathroomSetRN.placeHolderList[16]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[17]" 
+		"BathroomSetRN.placeHolderList[18]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[19]" 
+		"BathroomSetRN.placeHolderList[20]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[21]" 
+		"BathroomSetRN.placeHolderList[22]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[23]" 
+		"BathroomSetRN.placeHolderList[24]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[25]" 
+		"BathroomSetRN.placeHolderList[26]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group2|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[27]" 
+		"BathroomSetRN.placeHolderList[28]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[29]" 
+		"BathroomSetRN.placeHolderList[30]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[31]" 
+		"BathroomSetRN.placeHolderList[32]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[33]" 
+		"BathroomSetRN.placeHolderList[34]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[35]" 
+		"BathroomSetRN.placeHolderList[36]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[37]" 
+		"BathroomSetRN.placeHolderList[38]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group3|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[39]" 
+		"BathroomSetRN.placeHolderList[40]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[41]" 
+		"BathroomSetRN.placeHolderList[42]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[43]" 
+		"BathroomSetRN.placeHolderList[44]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[45]" 
+		"BathroomSetRN.placeHolderList[46]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[47]" 
+		"BathroomSetRN.placeHolderList[48]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[49]" 
+		"BathroomSetRN.placeHolderList[50]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group4|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[51]" 
+		"BathroomSetRN.placeHolderList[52]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[53]" 
+		"BathroomSetRN.placeHolderList[54]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[55]" 
+		"BathroomSetRN.placeHolderList[56]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[57]" 
+		"BathroomSetRN.placeHolderList[58]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[59]" 
+		"BathroomSetRN.placeHolderList[60]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[61]" 
+		"BathroomSetRN.placeHolderList[62]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group5|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[63]" 
+		"BathroomSetRN.placeHolderList[64]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[65]" 
+		"BathroomSetRN.placeHolderList[66]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[67]" 
+		"BathroomSetRN.placeHolderList[68]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[69]" 
+		"BathroomSetRN.placeHolderList[70]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[71]" 
+		"BathroomSetRN.placeHolderList[72]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[73]" 
+		"BathroomSetRN.placeHolderList[74]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group6|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[75]" 
+		"BathroomSetRN.placeHolderList[76]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[77]" 
+		"BathroomSetRN.placeHolderList[78]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[79]" 
+		"BathroomSetRN.placeHolderList[80]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[81]" 
+		"BathroomSetRN.placeHolderList[82]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[83]" 
+		"BathroomSetRN.placeHolderList[84]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[85]" 
+		"BathroomSetRN.placeHolderList[86]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group7|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[87]" 
+		"BathroomSetRN.placeHolderList[88]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[89]" 
+		"BathroomSetRN.placeHolderList[90]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[91]" 
+		"BathroomSetRN.placeHolderList[92]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[93]" 
+		"BathroomSetRN.placeHolderList[94]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[95]" 
+		"BathroomSetRN.placeHolderList[96]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[97]" 
+		"BathroomSetRN.placeHolderList[98]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group8|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[99]" 
+		"BathroomSetRN.placeHolderList[100]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[101]" 
+		"BathroomSetRN.placeHolderList[102]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[103]" 
+		"BathroomSetRN.placeHolderList[104]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[105]" 
+		"BathroomSetRN.placeHolderList[106]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[107]" 
+		"BathroomSetRN.placeHolderList[108]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[109]" 
+		"BathroomSetRN.placeHolderList[110]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group9|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[111]" 
+		"BathroomSetRN.placeHolderList[112]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[113]" 
+		"BathroomSetRN.placeHolderList[114]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[115]" 
+		"BathroomSetRN.placeHolderList[116]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[117]" 
+		"BathroomSetRN.placeHolderList[118]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[119]" 
+		"BathroomSetRN.placeHolderList[120]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[121]" 
+		"BathroomSetRN.placeHolderList[122]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group10|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[123]" 
+		"BathroomSetRN.placeHolderList[124]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[125]" 
+		"BathroomSetRN.placeHolderList[126]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[127]" 
+		"BathroomSetRN.placeHolderList[128]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[129]" 
+		"BathroomSetRN.placeHolderList[130]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[131]" 
+		"BathroomSetRN.placeHolderList[132]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[133]" 
+		"BathroomSetRN.placeHolderList[134]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group11|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[135]" 
+		"BathroomSetRN.placeHolderList[136]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[137]" 
+		"BathroomSetRN.placeHolderList[138]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[139]" 
+		"BathroomSetRN.placeHolderList[140]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[141]" 
+		"BathroomSetRN.placeHolderList[142]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[143]" 
+		"BathroomSetRN.placeHolderList[144]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[145]" 
+		"BathroomSetRN.placeHolderList[146]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group12|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[147]" 
+		"BathroomSetRN.placeHolderList[148]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[149]" 
+		"BathroomSetRN.placeHolderList[150]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[151]" 
+		"BathroomSetRN.placeHolderList[152]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[153]" 
+		"BathroomSetRN.placeHolderList[154]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[155]" 
+		"BathroomSetRN.placeHolderList[156]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[157]" 
+		"BathroomSetRN.placeHolderList[158]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group13|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[159]" 
+		"BathroomSetRN.placeHolderList[160]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[161]" 
+		"BathroomSetRN.placeHolderList[162]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[163]" 
+		"BathroomSetRN.placeHolderList[164]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[165]" 
+		"BathroomSetRN.placeHolderList[166]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[167]" 
+		"BathroomSetRN.placeHolderList[168]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[169]" 
+		"BathroomSetRN.placeHolderList[170]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group14|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[171]" 
+		"BathroomSetRN.placeHolderList[172]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[173]" 
+		"BathroomSetRN.placeHolderList[174]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[175]" 
+		"BathroomSetRN.placeHolderList[176]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[177]" 
+		"BathroomSetRN.placeHolderList[178]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[179]" 
+		"BathroomSetRN.placeHolderList[180]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[181]" 
+		"BathroomSetRN.placeHolderList[182]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group15|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[183]" 
+		"BathroomSetRN.placeHolderList[184]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[185]" 
+		"BathroomSetRN.placeHolderList[186]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[187]" 
+		"BathroomSetRN.placeHolderList[188]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[189]" 
+		"BathroomSetRN.placeHolderList[190]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[191]" 
+		"BathroomSetRN.placeHolderList[192]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[193]" 
+		"BathroomSetRN.placeHolderList[194]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group16|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[195]" 
+		"BathroomSetRN.placeHolderList[196]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[197]" 
+		"BathroomSetRN.placeHolderList[198]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[199]" 
+		"BathroomSetRN.placeHolderList[200]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[201]" 
+		"BathroomSetRN.placeHolderList[202]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[203]" 
+		"BathroomSetRN.placeHolderList[204]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[205]" 
+		"BathroomSetRN.placeHolderList[206]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group17|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[207]" 
+		"BathroomSetRN.placeHolderList[208]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface16|BathroomSet:ToiletBrush:polySurfaceShape16.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[209]" 
+		"BathroomSetRN.placeHolderList[210]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface14|BathroomSet:ToiletBrush:polySurfaceShape14.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[211]" 
+		"BathroomSetRN.placeHolderList[212]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface15|BathroomSet:ToiletBrush:polySurfaceShape15.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[213]" 
+		"BathroomSetRN.placeHolderList[214]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface17|BathroomSet:ToiletBrush:polySurfaceShape17.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[215]" 
+		"BathroomSetRN.placeHolderList[216]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface19|BathroomSet:ToiletBrush:polySurfaceShape19.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[217]" 
+		"BathroomSetRN.placeHolderList[218]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Bristles_new|BathroomSet:ToiletBrush:group18|BathroomSet:ToiletBrush:polySurface18|BathroomSet:ToiletBrush:polySurfaceShape18.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[219]" 
+		"BathroomSetRN.placeHolderList[220]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Brush_Handle|BathroomSet:ToiletBrush:Brush_HandleShape1Orig.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[221]" 
+		"BathroomSetRN.placeHolderList[222]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Brush|BathroomSet:ToiletBrush:Toilet_Brush|BathroomSet:ToiletBrush:Brush_holder|BathroomSet:ToiletBrush:Brush_holderShape.instObjGroups" 
+		"BathroomSet:ToiletBrush:standardSurface6SG.dagSetMembers" "BathroomSetRN.placeHolderList[223]" 
+		"BathroomSetRN.placeHolderList[224]" "BathroomSet:ToiletBrush:standardSurface6SG.dsm"
+		
+		"BathroomSet:toiletRN" 3
+		3 "|Background|Props|BathroomSet:Toilet|BathroomSet:toilet:Toilet|BathroomSet:toilet:ToiletShape.instObjGroups" 
+		"BathroomSet:toilet:standardSurface2SG.dagSetMembers" "-na"
+		5 0 "BathroomSetRN" "|Background|Props|BathroomSet:Toilet|BathroomSet:toilet:Toilet|BathroomSet:toilet:ToiletShape.instObjGroups" 
+		"BathroomSet:toilet:standardSurface2SG.dagSetMembers" "BathroomSetRN.placeHolderList[1]" 
+		"BathroomSetRN.placeHolderList[2]" "BathroomSet:toilet:standardSurface2SG.dsm"
+		5 0 "BathroomSetRN" "BathroomSet:toilet:file1.message" "BathroomSet:toilet:materialInfo2.texture" 
+		"BathroomSetRN.placeHolderList[3]" "BathroomSetRN.placeHolderList[4]" ""
+		"BathroomSetRN" 16
+		0 "|BathroomSet:BathroomMirror" "|Background|Props" "-s -r "
+		0 "|BathroomSet:Brush" "|Background|Props" "-s -r "
+		0 "|BathroomSet:Toilet" "|Background|Props" "-s -r "
+		0 "|BathroomSet:Sink" "|Background|Props" "-s -r "
+		0 "|BathroomSet:WhiteBox" "|Background" "-s -r "
+		2 "|Background|Props|BathroomSet:Toilet" "translate" " -type \"double3\" -350.21663316358257134 0 72.02164032783139191"
+		
+		2 "|Background|Props|BathroomSet:Sink" "visibility" " 1"
+		2 "|Background|Props|BathroomSet:Sink" "translate" " -type \"double3\" -319.81974770335773428 34.92187588551796296 261.16551870817988856"
+		
+		2 "|Background|Props|BathroomSet:BathroomMirror" "translate" " -type \"double3\" 363.19757164936675053 80.69453035211981273 -6.04987238343011313"
+		
+		2 "|Background|Props|BathroomSet:Brush" "rotatePivot" " -type \"double3\" 0.3912371397018431 0.031477928161621094 143.5340118408203125"
+		
+		2 "|Background|Props|BathroomSet:Brush" "scalePivotTranslate" " -type \"double3\" 0.24540922434304699 0.019744991336856959 90.03381054146760221"
+		
+		2 "|Background|BathroomSet:WhiteBox|BathroomSet:pCube8" "visibility" " 0"
+		
+		2 "BathroomSet:Bathroom_SinkRN" "fileNames" " -s 3"
+		2 "BathroomSet:Bathroom_SinkRN" "fileNames[0]" " -type \"string\" \"C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/new_Sink.ma{1}\""
+		
+		2 "BathroomSet:Bathroom_SinkRN" "fileNames[1]" " -type \"string\" \"C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/newBathroom_Sink.ma\""
+		
+		2 "BathroomSet:Bathroom_SinkRN" "fileNames[2]" " -type \"string\" \"C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/sink/new_Sink.ma\"";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "ToothbrushRN";
+	rename -uid "A7AB550E-47F0-A9C2-E75C-8092FD07776A";
+	setAttr -s 11 ".phl";
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
+	setAttr ".phl[11]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ToothbrushRN"
-		"Toothbrush:ToothbrushRN" 0
-		"ToothbrushRN" 0
 		"Toothbrush:ToothbrushRN" 14
 		0 "|ToothbrushRNfosterParent1|polySurface319_parentConstraint1" "|Toothbrush:Toothbrush:polySurface319" 
 		"-s -r "
@@ -1189,6 +2071,7 @@ createNode reference -n "ToothbrushRN";
 		"ToothbrushRN.placeHolderList[10]" ""
 		5 3 "ToothbrushRN" "|Toothbrush:Toothbrush:polySurface319.rotatePivotTranslate" 
 		"ToothbrushRN.placeHolderList[11]" ""
+		"ToothbrushRN" 0
 		"ToothbrushRN" 2
 		2 "|Toothbrush:polySurface319" "visibility" " 0"
 		2 "|Toothbrush:polySurface319" "translate" " -type \"double3\" 0 0 9.75486913330690619";
@@ -3819,40 +4702,286 @@ createNode animCurveTU -n "Nose_Ctrl_scaleZ";
 		1 18 18 1 18 18 1;
 	setAttr -s 15 ".kix[2:14]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 15 ".kiy[2:14]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+createNode reference -n "ToiletPaperRN";
+	rename -uid "04980C95-449D-B90F-5249-E1AD642CA961";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"ToiletPaperRN"
+		"ToiletPaperRN" 0
+		"ToiletPaperRN" 4
+		0 "|ToiletPaper:Geo_Toilet_Paper" "|Background|Props" "-s -r "
+		2 "|Background|Props|ToiletPaper:Geo_Toilet_Paper" "translate" " -type \"double3\" -361.11704464502628298 45.13387336344647593 141.88951829200968291"
+		
+		2 "|Background|Props|ToiletPaper:Geo_Toilet_Paper" "rotate" " -type \"double3\" 0 90 0"
+		
+		2 "|Background|Props|ToiletPaper:Geo_Toilet_Paper" "scale" " -type \"double3\" 8 8 8";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "TowelBarRN";
+	rename -uid "45D66B5C-4CCD-A7CC-FFE3-6F886F8845FA";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"TowelBarRN"
+		"TowelBarRN" 0
+		"TowelBarRN" 8
+		0 "|TowelBar:Small_towel" "|Background|Props" "-s -r "
+		0 "|TowelBar:Large_towel" "|Background|Props" "-s -r "
+		2 "|Background|Props|TowelBar:Large_towel" "translate" " -type \"double3\" -363.76410844154401047 124.53429525361553942 79.33156097700822329"
+		
+		2 "|Background|Props|TowelBar:Large_towel" "rotate" " -type \"double3\" 0 90 0"
+		
+		2 "|Background|Props|TowelBar:Large_towel" "rotatePivotTranslate" " -type \"double3\" -29.82333436901736334 0 -12.16611162121462897"
+		
+		2 "|Background|Props|TowelBar:Small_towel" "translate" " -type \"double3\" -363.96107145906057667 104.20049092920268663 284.04250562368002875"
+		
+		2 "|Background|Props|TowelBar:Small_towel" "rotate" " -type \"double3\" 0 90 0"
+		
+		2 "|Background|Props|TowelBar:Small_towel" "rotatePivotTranslate" " -type \"double3\" 29.02791023254394531 0 46.54255485534667969";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode timeEditor -s -n "timeEditor";
+	rename -uid "1B466FC7-8847-5C5A-11BC-B8B5830A73E8";
+createNode reference -n "sharedReferenceNode";
+	rename -uid "33739DD6-4F1A-51D8-377D-D981B0AB05B5";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
+createNode reference -n "new_SinkRN";
+	rename -uid "CC2E1E22-4B59-E00D-F492-B9A1A30DDA3E";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"new_SinkRN"
+		"new_SinkRN" 0
+		"new_SinkRN" 3
+		0 "|new_Sink:Sink_Geo" "|Background|Props" "-s -r "
+		2 "|Background|Props|new_Sink:Sink_Geo" "translate" " -type \"double3\" -314.55551084797878048 0 256.37490564468174625"
+		
+		2 "|Background|Props|new_Sink:Sink_Geo" "scale" " -type \"double3\" 12.4596276609106571 12.4596276609106571 12.4596276609106571";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
-	setAttr ".o" 0;
-select -ne :sequenceManager1;
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -av -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".o" 0;
+	setAttr -av -k on ".unw";
+	setAttr -av -k on ".etw";
+	setAttr -av -k on ".tps";
+	setAttr -av -k on ".tms";
 select -ne :hardwareRenderingGlobals;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
+	setAttr -k on ".hwi";
+	setAttr -av ".ta";
+	setAttr -av ".tq";
+	setAttr -av ".etmr";
+	setAttr -av ".tmr";
+	setAttr -av ".aoon";
+	setAttr -av ".aoam";
+	setAttr -av ".aora";
+	setAttr -k on ".hff";
+	setAttr -av -k on ".hfd";
+	setAttr -av -k on ".hfs";
+	setAttr -av -k on ".hfe";
+	setAttr -av ".hfc";
+	setAttr -av -k on ".hfcr";
+	setAttr -av -k on ".hfcg";
+	setAttr -av -k on ".hfcb";
+	setAttr -av -k on ".hfa";
+	setAttr -av ".mbe";
+	setAttr -av -k on ".mbsof";
+	setAttr -k on ".blen";
+	setAttr -k on ".blat";
+	setAttr -av ".msaa";
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 35 ".st";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 56 ".st";
+	setAttr -cb on ".an";
+	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 select -ne :defaultShaderList1;
-	setAttr -s 34 ".s";
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 43 ".s";
 select -ne :postProcessList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 4 ".u";
+	setAttr -s 106 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 8 ".r";
+	setAttr -k on ".ihi";
+	setAttr -s 10 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 4 ".tx";
+	setAttr -s 100 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 20 ".dsm";
-	setAttr ".ro" yes;
-	setAttr -s 9 ".gn";
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".bbx";
+	setAttr -k on ".vwm";
+	setAttr -k on ".tpv";
+	setAttr -k on ".uit";
+	setAttr -s 9 ".dsm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+	setAttr -s 4 ".gn";
 select -ne :initialParticleSE;
-	setAttr ".ro" yes;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
-	setAttr ".ren" -type "string" "arnold";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k on ".macc";
+	setAttr -av -k on ".macd";
+	setAttr -av -k on ".macq";
+	setAttr -av -k on ".mcfr";
+	setAttr -cb on ".ifg";
+	setAttr -av -k on ".clip";
+	setAttr -av -k on ".edm";
+	setAttr -av -k on ".edl";
+	setAttr -av -cb on ".ren" -type "string" "arnold";
+	setAttr -av -k on ".esr";
+	setAttr -av -k on ".ors";
+	setAttr -cb on ".sdf";
+	setAttr -av -k on ".outf";
+	setAttr -av -cb on ".imfkey";
+	setAttr -av -k on ".gama";
+	setAttr -k on ".exrc";
+	setAttr -k on ".expt";
+	setAttr -av -k on ".an";
+	setAttr -cb on ".ar";
+	setAttr -av -k on ".fs";
+	setAttr -av -k on ".ef";
+	setAttr -av -k on ".bfs";
+	setAttr -av -cb on ".me";
+	setAttr -cb on ".se";
+	setAttr -av -k on ".be";
+	setAttr -av -cb on ".ep";
+	setAttr -av -k on ".fec";
+	setAttr -av -k on ".ofc";
+	setAttr -cb on ".ofe";
+	setAttr -cb on ".efe";
+	setAttr -cb on ".oft";
+	setAttr -cb on ".umfn";
+	setAttr -cb on ".ufe";
+	setAttr -av -cb on ".pff";
+	setAttr -av -cb on ".peie";
+	setAttr -av -cb on ".ifp";
+	setAttr -k on ".rv";
+	setAttr -av -k on ".comp";
+	setAttr -av -k on ".cth";
+	setAttr -av -k on ".soll";
+	setAttr -cb on ".sosl";
+	setAttr -av -k on ".rd";
+	setAttr -av -k on ".lp";
+	setAttr -av -k on ".sp";
+	setAttr -av -k on ".shs";
+	setAttr -av -k on ".lpr";
+	setAttr -cb on ".gv";
+	setAttr -cb on ".sv";
+	setAttr -av -k on ".mm";
+	setAttr -av -k on ".npu";
+	setAttr -av -k on ".itf";
+	setAttr -av -k on ".shp";
+	setAttr -cb on ".isp";
+	setAttr -av -k on ".uf";
+	setAttr -av -k on ".oi";
+	setAttr -av -k on ".rut";
+	setAttr -av -k on ".mot";
+	setAttr -av -cb on ".mb";
+	setAttr -av -k on ".mbf";
+	setAttr -av -k on ".mbso";
+	setAttr -av -k on ".mbsc";
+	setAttr -av -k on ".afp";
+	setAttr -av -k on ".pfb";
+	setAttr -av -k on ".pram";
+	setAttr -av -k on ".poam";
+	setAttr -av -k on ".prlm";
+	setAttr -av -k on ".polm";
+	setAttr -av -cb on ".prm";
+	setAttr -av -cb on ".pom";
+	setAttr -cb on ".pfrm";
+	setAttr -cb on ".pfom";
+	setAttr -av -k on ".bll";
+	setAttr -av -k on ".bls";
+	setAttr -av -k on ".smv";
+	setAttr -av -k on ".ubc";
+	setAttr -av -k on ".mbc";
+	setAttr -cb on ".mbt";
+	setAttr -av -k on ".udbx";
+	setAttr -av -k on ".smc";
+	setAttr -av -k on ".kmv";
+	setAttr -cb on ".isl";
+	setAttr -cb on ".ism";
+	setAttr -cb on ".imb";
+	setAttr -av -k on ".rlen";
+	setAttr -av -k on ".frts";
+	setAttr -av -k on ".tlwd";
+	setAttr -av -k on ".tlht";
+	setAttr -av -k on ".jfc";
+	setAttr -cb on ".rsb";
+	setAttr -av -k on ".ope";
+	setAttr -av -k on ".oppf";
+	setAttr -av -k on ".rcp";
+	setAttr -av -k on ".icp";
+	setAttr -av -k on ".ocp";
+	setAttr -cb on ".hbl";
 	setAttr ".dss" -type "string" "lambert1";
 select -ne :defaultResolution;
-	setAttr ".pa" 1;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".w";
+	setAttr -av -k on ".h";
+	setAttr -av -k on ".pa" 1;
+	setAttr -av -k on ".al";
+	setAttr -av -k on ".dar";
+	setAttr -av -k on ".ldar";
+	setAttr -av -k on ".dpi";
+	setAttr -av -k on ".off";
+	setAttr -av -k on ".fld";
+	setAttr -av -k on ".zsl";
+	setAttr -av -k on ".isu";
+	setAttr -av -k on ".pdu";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -3863,10 +4992,45 @@ select -ne :defaultColorMgtGlobals;
 	setAttr ".otn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 	setAttr ".potn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 select -ne :hardwareRenderGlobals;
-	setAttr ".ctrs" 256;
-	setAttr ".btrs" 512;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k off -cb on ".ctrs" 256;
+	setAttr -av -k off -cb on ".btrs" 512;
+	setAttr -av -k off -cb on ".fbfm";
+	setAttr -av -k off -cb on ".ehql";
+	setAttr -av -k off -cb on ".eams";
+	setAttr -av -k off -cb on ".eeaa";
+	setAttr -av -k off -cb on ".engm";
+	setAttr -av -k off -cb on ".mes";
+	setAttr -av -k off -cb on ".emb";
+	setAttr -av -k off -cb on ".mbbf";
+	setAttr -av -k off -cb on ".mbs";
+	setAttr -av -k off -cb on ".trm";
+	setAttr -av -k off -cb on ".tshc";
+	setAttr -av -k off -cb on ".enpt";
+	setAttr -av -k off -cb on ".clmt";
+	setAttr -av -k off -cb on ".tcov";
+	setAttr -av -k off -cb on ".lith";
+	setAttr -av -k off -cb on ".sobc";
+	setAttr -av -k off -cb on ".cuth";
+	setAttr -av -k off -cb on ".hgcd";
+	setAttr -av -k off -cb on ".hgci";
+	setAttr -av -k off -cb on ".mgcs";
+	setAttr -av -k off -cb on ".twa";
+	setAttr -av -k off -cb on ".twz";
+	setAttr -k on ".hwcc";
+	setAttr -k on ".hwdp";
+	setAttr -k on ".hwql";
+	setAttr -k on ".hwfr";
+	setAttr -k on ".soll";
+	setAttr -k on ".sosl";
+	setAttr -k on ".bswa";
+	setAttr -k on ".shml";
+	setAttr -k on ".hwel";
 select -ne :ikSystem;
-	setAttr -s 4 ".sol";
+	setAttr -s 2 ".sol";
 connectAttr "Spine_01_Ctrl_rotateZ.o" "SkeletonRN.phl[1]";
 connectAttr "Spine_01_Ctrl_rotateX.o" "SkeletonRN.phl[2]";
 connectAttr "Spine_01_Ctrl_rotateY.o" "SkeletonRN.phl[3]";
@@ -4096,17 +5260,118 @@ connectAttr "R_Finger_05_Knuckle_02_Ctrl_rotateY.o" "SkeletonRN.phl[226]";
 connectAttr "R_Finger_05_Knuckle_03_Ctrl_rotateZ.o" "SkeletonRN.phl[227]";
 connectAttr "R_Finger_05_Knuckle_03_Ctrl_rotateX.o" "SkeletonRN.phl[228]";
 connectAttr "R_Finger_05_Knuckle_03_Ctrl_rotateY.o" "SkeletonRN.phl[229]";
-connectAttr "polySurface319_parentConstraint1.cty" "ToothbrushRN.phl[1]";
-connectAttr "polySurface319_parentConstraint1.ctx" "ToothbrushRN.phl[2]";
-connectAttr "polySurface319_parentConstraint1.ctz" "ToothbrushRN.phl[3]";
-connectAttr "Toothbrush_Layer.di" "ToothbrushRN.phl[4]";
-connectAttr "polySurface319_parentConstraint1.crx" "ToothbrushRN.phl[5]";
-connectAttr "polySurface319_parentConstraint1.cry" "ToothbrushRN.phl[6]";
-connectAttr "polySurface319_parentConstraint1.crz" "ToothbrushRN.phl[7]";
-connectAttr "ToothbrushRN.phl[8]" "polySurface319_parentConstraint1.cro";
-connectAttr "ToothbrushRN.phl[9]" "polySurface319_parentConstraint1.cpim";
-connectAttr "ToothbrushRN.phl[10]" "polySurface319_parentConstraint1.crp";
-connectAttr "ToothbrushRN.phl[11]" "polySurface319_parentConstraint1.crt";
+connectAttr "BathroomSetRN.phl[5]" "BathroomSetRN.phl[6]";
+connectAttr "BathroomSetRN.phl[7]" "BathroomSetRN.phl[8]";
+connectAttr "BathroomSetRN.phl[9]" "BathroomSetRN.phl[10]";
+connectAttr "BathroomSetRN.phl[11]" "BathroomSetRN.phl[12]";
+connectAttr "BathroomSetRN.phl[13]" "BathroomSetRN.phl[14]";
+connectAttr "BathroomSetRN.phl[15]" "BathroomSetRN.phl[16]";
+connectAttr "BathroomSetRN.phl[17]" "BathroomSetRN.phl[18]";
+connectAttr "BathroomSetRN.phl[19]" "BathroomSetRN.phl[20]";
+connectAttr "BathroomSetRN.phl[21]" "BathroomSetRN.phl[22]";
+connectAttr "BathroomSetRN.phl[23]" "BathroomSetRN.phl[24]";
+connectAttr "BathroomSetRN.phl[25]" "BathroomSetRN.phl[26]";
+connectAttr "BathroomSetRN.phl[27]" "BathroomSetRN.phl[28]";
+connectAttr "BathroomSetRN.phl[29]" "BathroomSetRN.phl[30]";
+connectAttr "BathroomSetRN.phl[31]" "BathroomSetRN.phl[32]";
+connectAttr "BathroomSetRN.phl[33]" "BathroomSetRN.phl[34]";
+connectAttr "BathroomSetRN.phl[35]" "BathroomSetRN.phl[36]";
+connectAttr "BathroomSetRN.phl[37]" "BathroomSetRN.phl[38]";
+connectAttr "BathroomSetRN.phl[39]" "BathroomSetRN.phl[40]";
+connectAttr "BathroomSetRN.phl[41]" "BathroomSetRN.phl[42]";
+connectAttr "BathroomSetRN.phl[43]" "BathroomSetRN.phl[44]";
+connectAttr "BathroomSetRN.phl[45]" "BathroomSetRN.phl[46]";
+connectAttr "BathroomSetRN.phl[47]" "BathroomSetRN.phl[48]";
+connectAttr "BathroomSetRN.phl[49]" "BathroomSetRN.phl[50]";
+connectAttr "BathroomSetRN.phl[51]" "BathroomSetRN.phl[52]";
+connectAttr "BathroomSetRN.phl[53]" "BathroomSetRN.phl[54]";
+connectAttr "BathroomSetRN.phl[55]" "BathroomSetRN.phl[56]";
+connectAttr "BathroomSetRN.phl[57]" "BathroomSetRN.phl[58]";
+connectAttr "BathroomSetRN.phl[59]" "BathroomSetRN.phl[60]";
+connectAttr "BathroomSetRN.phl[61]" "BathroomSetRN.phl[62]";
+connectAttr "BathroomSetRN.phl[63]" "BathroomSetRN.phl[64]";
+connectAttr "BathroomSetRN.phl[65]" "BathroomSetRN.phl[66]";
+connectAttr "BathroomSetRN.phl[67]" "BathroomSetRN.phl[68]";
+connectAttr "BathroomSetRN.phl[69]" "BathroomSetRN.phl[70]";
+connectAttr "BathroomSetRN.phl[71]" "BathroomSetRN.phl[72]";
+connectAttr "BathroomSetRN.phl[73]" "BathroomSetRN.phl[74]";
+connectAttr "BathroomSetRN.phl[75]" "BathroomSetRN.phl[76]";
+connectAttr "BathroomSetRN.phl[77]" "BathroomSetRN.phl[78]";
+connectAttr "BathroomSetRN.phl[79]" "BathroomSetRN.phl[80]";
+connectAttr "BathroomSetRN.phl[81]" "BathroomSetRN.phl[82]";
+connectAttr "BathroomSetRN.phl[83]" "BathroomSetRN.phl[84]";
+connectAttr "BathroomSetRN.phl[85]" "BathroomSetRN.phl[86]";
+connectAttr "BathroomSetRN.phl[87]" "BathroomSetRN.phl[88]";
+connectAttr "BathroomSetRN.phl[89]" "BathroomSetRN.phl[90]";
+connectAttr "BathroomSetRN.phl[91]" "BathroomSetRN.phl[92]";
+connectAttr "BathroomSetRN.phl[93]" "BathroomSetRN.phl[94]";
+connectAttr "BathroomSetRN.phl[95]" "BathroomSetRN.phl[96]";
+connectAttr "BathroomSetRN.phl[97]" "BathroomSetRN.phl[98]";
+connectAttr "BathroomSetRN.phl[99]" "BathroomSetRN.phl[100]";
+connectAttr "BathroomSetRN.phl[101]" "BathroomSetRN.phl[102]";
+connectAttr "BathroomSetRN.phl[103]" "BathroomSetRN.phl[104]";
+connectAttr "BathroomSetRN.phl[105]" "BathroomSetRN.phl[106]";
+connectAttr "BathroomSetRN.phl[107]" "BathroomSetRN.phl[108]";
+connectAttr "BathroomSetRN.phl[109]" "BathroomSetRN.phl[110]";
+connectAttr "BathroomSetRN.phl[111]" "BathroomSetRN.phl[112]";
+connectAttr "BathroomSetRN.phl[113]" "BathroomSetRN.phl[114]";
+connectAttr "BathroomSetRN.phl[115]" "BathroomSetRN.phl[116]";
+connectAttr "BathroomSetRN.phl[117]" "BathroomSetRN.phl[118]";
+connectAttr "BathroomSetRN.phl[119]" "BathroomSetRN.phl[120]";
+connectAttr "BathroomSetRN.phl[121]" "BathroomSetRN.phl[122]";
+connectAttr "BathroomSetRN.phl[123]" "BathroomSetRN.phl[124]";
+connectAttr "BathroomSetRN.phl[125]" "BathroomSetRN.phl[126]";
+connectAttr "BathroomSetRN.phl[127]" "BathroomSetRN.phl[128]";
+connectAttr "BathroomSetRN.phl[129]" "BathroomSetRN.phl[130]";
+connectAttr "BathroomSetRN.phl[131]" "BathroomSetRN.phl[132]";
+connectAttr "BathroomSetRN.phl[133]" "BathroomSetRN.phl[134]";
+connectAttr "BathroomSetRN.phl[135]" "BathroomSetRN.phl[136]";
+connectAttr "BathroomSetRN.phl[137]" "BathroomSetRN.phl[138]";
+connectAttr "BathroomSetRN.phl[139]" "BathroomSetRN.phl[140]";
+connectAttr "BathroomSetRN.phl[141]" "BathroomSetRN.phl[142]";
+connectAttr "BathroomSetRN.phl[143]" "BathroomSetRN.phl[144]";
+connectAttr "BathroomSetRN.phl[145]" "BathroomSetRN.phl[146]";
+connectAttr "BathroomSetRN.phl[147]" "BathroomSetRN.phl[148]";
+connectAttr "BathroomSetRN.phl[149]" "BathroomSetRN.phl[150]";
+connectAttr "BathroomSetRN.phl[151]" "BathroomSetRN.phl[152]";
+connectAttr "BathroomSetRN.phl[153]" "BathroomSetRN.phl[154]";
+connectAttr "BathroomSetRN.phl[155]" "BathroomSetRN.phl[156]";
+connectAttr "BathroomSetRN.phl[157]" "BathroomSetRN.phl[158]";
+connectAttr "BathroomSetRN.phl[159]" "BathroomSetRN.phl[160]";
+connectAttr "BathroomSetRN.phl[161]" "BathroomSetRN.phl[162]";
+connectAttr "BathroomSetRN.phl[163]" "BathroomSetRN.phl[164]";
+connectAttr "BathroomSetRN.phl[165]" "BathroomSetRN.phl[166]";
+connectAttr "BathroomSetRN.phl[167]" "BathroomSetRN.phl[168]";
+connectAttr "BathroomSetRN.phl[169]" "BathroomSetRN.phl[170]";
+connectAttr "BathroomSetRN.phl[171]" "BathroomSetRN.phl[172]";
+connectAttr "BathroomSetRN.phl[173]" "BathroomSetRN.phl[174]";
+connectAttr "BathroomSetRN.phl[175]" "BathroomSetRN.phl[176]";
+connectAttr "BathroomSetRN.phl[177]" "BathroomSetRN.phl[178]";
+connectAttr "BathroomSetRN.phl[179]" "BathroomSetRN.phl[180]";
+connectAttr "BathroomSetRN.phl[181]" "BathroomSetRN.phl[182]";
+connectAttr "BathroomSetRN.phl[183]" "BathroomSetRN.phl[184]";
+connectAttr "BathroomSetRN.phl[185]" "BathroomSetRN.phl[186]";
+connectAttr "BathroomSetRN.phl[187]" "BathroomSetRN.phl[188]";
+connectAttr "BathroomSetRN.phl[189]" "BathroomSetRN.phl[190]";
+connectAttr "BathroomSetRN.phl[191]" "BathroomSetRN.phl[192]";
+connectAttr "BathroomSetRN.phl[193]" "BathroomSetRN.phl[194]";
+connectAttr "BathroomSetRN.phl[195]" "BathroomSetRN.phl[196]";
+connectAttr "BathroomSetRN.phl[197]" "BathroomSetRN.phl[198]";
+connectAttr "BathroomSetRN.phl[199]" "BathroomSetRN.phl[200]";
+connectAttr "BathroomSetRN.phl[201]" "BathroomSetRN.phl[202]";
+connectAttr "BathroomSetRN.phl[203]" "BathroomSetRN.phl[204]";
+connectAttr "BathroomSetRN.phl[205]" "BathroomSetRN.phl[206]";
+connectAttr "BathroomSetRN.phl[207]" "BathroomSetRN.phl[208]";
+connectAttr "BathroomSetRN.phl[209]" "BathroomSetRN.phl[210]";
+connectAttr "BathroomSetRN.phl[211]" "BathroomSetRN.phl[212]";
+connectAttr "BathroomSetRN.phl[213]" "BathroomSetRN.phl[214]";
+connectAttr "BathroomSetRN.phl[215]" "BathroomSetRN.phl[216]";
+connectAttr "BathroomSetRN.phl[217]" "BathroomSetRN.phl[218]";
+connectAttr "BathroomSetRN.phl[219]" "BathroomSetRN.phl[220]";
+connectAttr "BathroomSetRN.phl[221]" "BathroomSetRN.phl[222]";
+connectAttr "BathroomSetRN.phl[223]" "BathroomSetRN.phl[224]";
+connectAttr "BathroomSetRN.phl[1]" "BathroomSetRN.phl[2]";
+connectAttr "BathroomSetRN.phl[3]" "BathroomSetRN.phl[4]";
 connectAttr "Render_Cam_visibility.o" "Render_Cam.v";
 connectAttr "Render_Cam_translateX.o" "Render_Cam.tx";
 connectAttr "Render_Cam_translateY.o" "Render_Cam.ty";
@@ -4120,6 +5385,10 @@ connectAttr "Render_Cam_scaleZ.o" "Render_Cam.sz";
 connectAttr "Background_Layer.di" "Background.do";
 connectAttr "polySurface319_parentConstraint1.w0" "polySurface319_parentConstraint1.tg[0].tw"
 		;
+connectAttr "ToothbrushRN.phl[8]" "polySurface319_parentConstraint1.cro";
+connectAttr "ToothbrushRN.phl[9]" "polySurface319_parentConstraint1.cpim";
+connectAttr "ToothbrushRN.phl[10]" "polySurface319_parentConstraint1.crp";
+connectAttr "ToothbrushRN.phl[11]" "polySurface319_parentConstraint1.crt";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -4132,6 +5401,14 @@ connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "Background_Layer.di" "Bathroom_WhiteboxRN.phl[1]";
 connectAttr "layerManager.dli[1]" "Background_Layer.id";
+connectAttr "sharedReferenceNode.sr" "BathroomSetRN.sr";
+connectAttr "polySurface319_parentConstraint1.cty" "ToothbrushRN.phl[1]";
+connectAttr "polySurface319_parentConstraint1.ctx" "ToothbrushRN.phl[2]";
+connectAttr "polySurface319_parentConstraint1.ctz" "ToothbrushRN.phl[3]";
+connectAttr "Toothbrush_Layer.di" "ToothbrushRN.phl[4]";
+connectAttr "polySurface319_parentConstraint1.crx" "ToothbrushRN.phl[5]";
+connectAttr "polySurface319_parentConstraint1.cry" "ToothbrushRN.phl[6]";
+connectAttr "polySurface319_parentConstraint1.crz" "ToothbrushRN.phl[7]";
 connectAttr "ToothbrushRNfosterParent1.msg" "ToothbrushRN.fp";
 connectAttr "layerManager.dli[2]" "Toothbrush_Layer.id";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;

@@ -1,49 +1,87 @@
-//Maya ASCII 2025ff03 scene
+//Maya ASCII 2023 scene
 //Name: Shot07.ma
-//Last modified: Wed, Jan 14, 2026 09:31:11 PM
+//Last modified: Thu, Apr 02, 2026 12:28:30 AM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
-file -rdi 1 -ns "SkeletonFish" -dr 1 -rfn "SkeletonFishRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fish/SkeletonFish.ma";
-file -rdi 1 -ns "FishBowl" -rfn "FishBowlRN" -op "v=0;" -typ "mayaAscii" "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fishbowl/FishBowl.ma";
 file -rdi 1 -ns "LivingRoomSet" -rfn "LivingRoomSetRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/trist/WorkDayShortFilmOfficialRepo/Maya/assets/environment/apartmentInterior/LivingRoomSet.ma";
+		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/environment/apartmentInterior/LivingRoomSet.ma";
 file -rdi 2 -ns "Skeleton" -dr 1 -rfn "LivingRoomSet:SkeletonRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
+file -rdi 1 -ns "FishBowl" -rfn "FishBowlRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fishbowl/FishBowl.ma";
+file -rdi 1 -ns "livingroomKitchen" -rfn "livingroomKitchenRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/livingroomKitchen.ma";
+file -rdi 2 -ns "LivingRoomSet" -rfn "livingroomKitchen:LivingRoomSetRN" -op
+		 "v=0;" -typ "mayaAscii" "../Maya/assets/environment/apartmentInterior//LivingRoomSet.ma";
+file -rdi 3 -ns "Skeleton" -dr 1 -rfn "livingroomKitchen:LivingRoomSet:SkeletonRN"
+		 -op "v=0;" -typ "mayaAscii" "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
+file -rdi 2 -ns "bowlAndSpoon" -rfn "livingroomKitchen:bowlAndSpoonRN" -op "v=0;"
+		 -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/bowlAndSpoon/bowlAndSpoon.ma";
+file -rdi 2 -ns "Cabinets" -rfn "livingroomKitchen:CabinetsRN" -op "v=0;" -typ
+		 "mayaAscii" "../Maya/assets/props/ApartmentProps/cabinets/scenes/Cabinets.ma";
+file -rdi 2 -ns "Spoon_and_Bowl" -rfn "livingroomKitchen:Spoon_and_BowlRN" 
+		-op "v=0;" -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/cerealBowl/scenes/Spoon and Bowl.ma";
+file -rdi 2 -ns "cerealBox" -rfn "livingroomKitchen:cerealBoxRN" -op "v=0;"
+		 -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/cerealBox/cerealBox.ma";
+file -rdi 2 -ns "FridgeForWorkDay" -rfn "livingroomKitchen:FridgeForWorkDayRN"
+		 -op "v=0;" -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/fridge/FridgeForWorkDay.ma";
+file -rdi 2 -ns "Milk" -rfn "livingroomKitchen:MilkRN" -op "v=0;" -typ "mayaAscii"
+		 "../Maya/assets/props/ApartmentProps/milkCarton/Milk.ma";
+file -rdi 2 -ns "OvenStovetop" -rfn "livingroomKitchen:OvenStovetopRN" -op "v=0;"
+		 -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/Oven/OvenStovetop.ma";
+file -rdi 2 -ns "PotHooks" -rfn "livingroomKitchen:PotHooksRN" -op "v=0;" -typ
+		 "mayaAscii" "../Maya/assets/props/ApartmentProps/PotHooks/PotHooks.ma";
+file -rdi 2 -ns "PottedPlant" -rfn "livingroomKitchen:PottedPlantRN" -op "v=0;"
+		 -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/pottedPlant/PottedPlant.ma";
+file -rdi 2 -ns "Spatula_holder" -rfn "livingroomKitchen:Spatula_holderRN" 
+		-op "v=0;" -typ "mayaAscii" "../Maya/assets/props/ApartmentProps/spatulaholder/Spatula holder.ma";
+file -rdi 2 -ns "Fan" -rfn "livingroomKitchen:FanRN" -op "v=0;" -typ "mayaAscii"
+		 "../Maya/assets/props/ApartmentProps/fan/Fan.ma";
+file -rdi 2 -ns "LivingRoomCouch" -rfn "livingroomKitchen:LivingRoomCouchRN"
+		 -op "v=0;" -typ "mayaAscii" "C:/Users/irela/Documents/WorkdayFilm_2025/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/LivingRoomCouch/LivingRoomCouch.ma";
+file -rdi 2 -ns "owlbearskinRug" -rfn "livingroomKitchen:owlbearskinRugRN" 
+		-op "v=0;" -typ "mayaAscii" "C:/Users/irela/Documents/WorkdayFilm_2025/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/owlBearRug/owlbearskinRug.ma";
+file -rdi 2 -ns "CouchChair" -rfn "livingroomKitchen:CouchChairRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/irela/Documents/WorkdayFilm_2025/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/couchChair/CouchChair.ma";
+file -rdi 2 -ns "Broom" -rfn "livingroomKitchen:BroomRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/irela/Documents/WorkdayFilm_2025/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/broomAndDustpan/Broom.ma";
+file -rdi 2 -ns "Door" -rfn "livingroomKitchen:DoorRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/irela/Documents/WorkdayFilm_2025/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/door/Door.ma";
+file -rdi 1 -ns "TallTable" -rfn "TallTableRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/talltable/TallTable.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
-file -r -ns "SkeletonFish" -dr 1 -rfn "SkeletonFishRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fish/SkeletonFish.ma";
-file -r -ns "FishBowl" -dr 1 -rfn "FishBowlRN" -op "v=0;" -typ "mayaAscii" "D:/trist/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fishbowl/FishBowl.ma";
 file -r -ns "LivingRoomSet" -dr 1 -rfn "LivingRoomSetRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/trist/WorkDayShortFilmOfficialRepo/Maya/assets/environment/apartmentInterior/LivingRoomSet.ma";
-requires maya "2025ff03";
+		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/environment/apartmentInterior/LivingRoomSet.ma";
+file -r -ns "FishBowl" -dr 1 -rfn "FishBowlRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/fishbowl/FishBowl.ma";
+file -r -ns "livingroomKitchen" -dr 1 -rfn "livingroomKitchenRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/livingroomKitchen.ma";
+file -r -ns "TallTable" -dr 1 -rfn "TallTableRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/talltable/TallTable.ma";
+requires maya "2023";
+requires -dataType "czLayerData" "bluePencil" "2.6.1";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
-		 "mtoa" "5.4.2.1";
+		 "mtoa" "5.2.1.1";
 requires "Mayatomr" "2010.0m - 3.7.53.5 ";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t 12fps;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2025";
-fileInfo "version" "2025";
-fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
+fileInfo "product" "Maya 2023";
+fileInfo "version" "2023";
+fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0E6623BC-4C4A-9BA5-E1E0-BA9DCC191487";
+fileInfo "UUID" "F8D8E670-4279-241B-52DD-6C8150B3C223";
 createNode transform -s -n "persp";
 	rename -uid "A5AB0C49-4479-4887-1D93-CEA0A071F624";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -515.91568829479957 155.66675670260764 149.29019100944572 ;
-	setAttr ".r" -type "double3" -13.200000000000232 -78.40000000000002 -7.9087615968406674e-15 ;
+	setAttr ".t" -type "double3" -185.35520593806507 223.23838978124726 1484.8611469600362 ;
+	setAttr ".r" -type "double3" -4.200000000000002 -1.2000000000000088 -3.1066917799626233e-17 ;
 	setAttr ".rpt" -type "double3" -9.8925255661042063e-15 -6.1054270402985097e-15 -3.5779937789318686e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "44D0B96A-4FD5-521A-C047-4AAD0045C9B8";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 578.02858811421504;
+	setAttr ".coi" 1379.9457204604882;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 91.203665606722154 193.35437502465695 252.56557986504043 ;
+	setAttr ".tp" -type "double3" 18.24753165054517 291.56938965608077 139.50493741133778 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "B8815CA9-4320-B6DB-D06F-04BD3C459ED5";
@@ -108,10 +146,6 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "Fishbowl";
-	rename -uid "6D52123B-42DB-EF28-5DB6-D2B13829F78A";
-	setAttr ".rp" -type "double3" -52.187994753514552 81.006230499296521 91.702164218925873 ;
-	setAttr ".sp" -type "double3" -52.187994753514552 81.006230499296521 91.702164218925873 ;
 createNode transform -n "ShotCamera";
 	rename -uid "9545FC9E-46A6-E2F5-1584-B88481E00DB7";
 	setAttr ".t" -type "double3" 15.839699716583002 125.05678280251206 463.57398121883455 ;
@@ -169,21 +203,102 @@ createNode camera -n "bottomShape" -p "bottom";
 	setAttr ".man" -type "string" "bottom1_mask";
 	setAttr ".hc" -type "string" "viewSet -bo %camera";
 	setAttr ".o" yes;
+createNode transform -n "FishBowl_grp";
+	rename -uid "EA7D5169-4BE7-8782-6589-DD8ABEBD5E8A";
+	setAttr ".t" -type "double3" -52.615360300816675 68.298097069805664 90.313856035258368 ;
+	setAttr ".s" -type "double3" 0.3 0.3 0.3 ;
+createNode transform -n "Props";
+	rename -uid "234C59C9-4122-3FF9-6DE3-F2ACE9393A52";
+createNode transform -n "Background";
+	rename -uid "D3FB6763-4B82-CDCD-DA32-E59E15740EAB";
+createNode fosterParent -n "livingroomKitchenRNfosterParent1";
+	rename -uid "0D6DC58A-44D8-C47E-A2FB-5A9C5E89281E";
+createNode transform -n "Ceiling" -p "livingroomKitchenRNfosterParent1";
+	rename -uid "286EB469-4ECE-5C34-F2EE-EFA8A3073CB6";
+	setAttr ".t" -type "double3" 292.77340940787457 269.69152448158229 -55.358535018471443 ;
+	setAttr ".r" -type "double3" 0 -90 0 ;
+	setAttr ".rp" -type "double3" -2.2737367544323206e-13 0 140.98699233778231 ;
+	setAttr ".rpt" -type "double3" -140.98699233778208 0 -140.98699233778254 ;
+	setAttr ".sp" -type "double3" -2.2737367544323206e-13 0 140.98699233778231 ;
+createNode mesh -n "CeilingShape" -p "Ceiling";
+	rename -uid "68E32DBF-4EE9-4A08-C139-31BD11743EC9";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.47256045491667464 0.4999999925494194 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape1" -p "Ceiling";
+	rename -uid "C0F850D9-49CC-BBCA-7690-E59EF69183D5";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 6 ".gtag";
+	setAttr ".gtag[0].gtagnm" -type "string" "back";
+	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[2]";
+	setAttr ".gtag[1].gtagnm" -type "string" "bottom";
+	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "f[3]";
+	setAttr ".gtag[2].gtagnm" -type "string" "front";
+	setAttr ".gtag[2].gtagcmp" -type "componentList" 1 "f[0]";
+	setAttr ".gtag[3].gtagnm" -type "string" "left";
+	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "f[5]";
+	setAttr ".gtag[4].gtagnm" -type "string" "right";
+	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "f[4]";
+	setAttr ".gtag[5].gtagnm" -type "string" "top";
+	setAttr ".gtag[5].gtagcmp" -type "componentList" 1 "f[1]";
+	setAttr ".pv" -type "double2" 0.75 0.125 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 14 ".uvst[0].uvsp[0:13]" -type "float2" 0.375 0 0.625 0 0.375
+		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
+		 0.875 0.25 0.125 0 0.125 0.25;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  2.9814312 -8.9944124 875.3399 
+		633.67828 -8.9944124 875.3399 2.9814312 8.9944124 875.3399 633.67828 8.9944124 875.3399 
+		2.9814312 8.9944124 -593.36597 633.67828 8.9944124 -593.36597 2.9814312 -8.9944124 
+		-593.36597 633.67828 -8.9944124 -593.36597;
+	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
+		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
+	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
+		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
+	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 1 3 2
+		f 4 1 7 -3 -7
+		mu 0 4 2 3 5 4
+		f 4 2 9 -4 -9
+		mu 0 4 4 5 7 6
+		f 4 3 11 -1 -11
+		mu 0 4 6 7 9 8
+		f 4 -12 -10 -8 -6
+		mu 0 4 1 10 11 3
+		f 4 10 4 6 8
+		mu 0 4 12 0 2 13;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2D4E8EE9-48A2-D343-D32B-B6BA4FAD8060";
-	setAttr -s 36 ".lnk";
-	setAttr -s 36 ".slnk";
+	rename -uid "3B0E9926-42F9-F30C-26D9-EDAA792C7335";
+	setAttr -s 223 ".lnk";
+	setAttr -s 223 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9BAA900A-4EC0-88F4-A547-3BB427026740";
+	rename -uid "BA5B13D2-457B-2504-0B06-46823BEDF214";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9EC2544E-4F54-B2F1-C01D-499850EEF6F3";
+	rename -uid "E1EFC885-431B-E4EA-B559-93A3815F6E9A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E3B9EC81-4A6C-7CE9-0010-5F98E89657F2";
+	rename -uid "8DB4D404-4EC0-4412-EBD8-A9AAFE0BAFC0";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "AEC4204B-4076-C7C5-C591-F49B865660C6";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "83834D54-430E-B5D1-40E4-9099ACFAF3FA";
+	rename -uid "8083C05F-4EE3-5F7D-B741-7F951D9DF7FF";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "BDB40158-45CD-07E7-2C59-69953C09C507";
 	setAttr ".g" yes;
@@ -191,48 +306,47 @@ createNode script -n "uiConfigurationScriptNode";
 	rename -uid "C1491AB5-4364-3F75-7336-8F8271E07B97";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 1\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|ShotCamera\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 443\n            -height 240\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1302\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 442\n            -height 239\n            -sceneRenderFilter 0\n"
-		+ "            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 1\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n"
-		+ "            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n"
-		+ "            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n"
-		+ "            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 443\n            -height 239\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|ShotCamera\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
-		+ "            -useDefaultMaterial 1\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
-		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 892\n            -height 526\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n"
-		+ "            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n"
-		+ "            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n"
-		+ "            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n"
-		+ "            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n"
-		+ "                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n"
-		+ "                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n"
-		+ "                -smoothness \"fine\" \n                -resultSamples 0.5\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -limitToSelectedCurves 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n"
-		+ "                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n"
-		+ "                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n"
-		+ "                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -hierarchyBelow 0\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n"
-		+ "                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n"
-		+ "                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n"
-		+ "                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n"
-		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
-		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
-		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n"
-		+ "\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|ShotCamera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 892\\n    -height 526\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|ShotCamera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 892\\n    -height 526\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
-		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 14 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n"
+		+ "        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n"
+		+ "            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n"
+		+ "            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n"
+		+ "            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n"
+		+ "            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n"
+		+ "            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n"
+		+ "            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1602\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
+		+ "            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
+		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n"
+		+ "                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n"
+		+ "                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 0.5\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n"
+		+ "                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
+		+ "                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n"
+		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n"
+		+ "                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
+		+ "                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n"
+		+ "\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n"
+		+ "                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n"
+		+ "                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|ShotCamera\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 712\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 712\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.05 -size 0.12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "BCF21B46-48DE-FDEE-A6DA-FC94AC6B6360";
@@ -1788,47 +1902,25 @@ createNode reference -n "SkeletonRN";
 		""
 		5 3 "SkeletonRN" "|Skeleton:Skeleton_Asset.instObjGroups" "SkeletonRN.placeHolderList[125]" 
 		""
-		"SkeletonRN" 1629
+		"SkeletonRN" 1616
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Hip_Ctrl_Grp|Skeleton:Hip_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Spine_02_Ctrl_Grp|Skeleton:Spine_02_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Spine_02_Ctrl_Grp|Skeleton:Spine_02_Ctrl" 
-		"Follow_Translate" " -k 1"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Spine_02_Ctrl_Grp|Skeleton:Spine_02_Ctrl" 
-		"Follow_Rotate" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Chest_Ctrl_Grp|Skeleton:Chest_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Chest_Ctrl_Grp|Skeleton:Chest_Ctrl" 
-		"Follow_Translate" " -k 1"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Chest_Ctrl_Grp|Skeleton:Chest_Ctrl" 
-		"Follow_Rotate" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_01_Ctrl_Grp|Skeleton:Neck_01_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_01_Ctrl_Grp|Skeleton:Neck_01_Ctrl" 
-		"Follow_Translate" " -k 1"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_01_Ctrl_Grp|Skeleton:Neck_01_Ctrl" 
-		"Follow_Rotate" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
-		"Follow_Translate" " -k 1"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Neck_02_Ctrl_Grp|Skeleton:Neck_02_Ctrl" 
-		"Follow_Rotate" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:L_Scap_Ctrl_Grp|Skeleton:L_Scap_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:L_Arm_IKFK_Ctrl_Grp|Skeleton:L_Arm_IKFK_Ctrl" 
-		"IKFK_Switch" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_FK|Skeleton:L_Arm_02_FK_Ctrl_Grp|Skeleton:L_Arm_02_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_FK|Skeleton:L_Arm_03_FK_Ctrl_Grp|Skeleton:L_Arm_03_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_IK|Skeleton:L_Arm_IK_End_Ctrl_Grp|Skeleton:L_Arm_IK_End_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_IK|Skeleton:L_Arm_IK_End_Ctrl_Grp|Skeleton:L_Arm_IK_End_Ctrl" 
-		"Operating_Space" " -k 1"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_IK|Skeleton:L_Arm_PV_Ctrl_Grp|Skeleton:L_Arm_PV_Ctrl_Offset_Grp|Skeleton:L_Arm_PV_Ctrl" 
-		"Operating_Space" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_IK|Skeleton:L_Arm_IK_Base_Ctrl_Grp|Skeleton:L_Arm_IK_Base_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Arm_IK|Skeleton:L_Arm_IK_Base_Ctrl_Grp|Skeleton:L_Arm_IK_Base_Ctrl" 
@@ -1871,8 +1963,6 @@ createNode reference -n "SkeletonRN";
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Arm|Skeleton:Left_Arm_Reg_Controls|Skeleton:Left_Hand|Skeleton:Left_Finger_05|Skeleton:L_Finger_05_Knuckle_03_Ctrl_Grp|Skeleton:L_Finger_05_Knuckle_03_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Leg|Skeleton:Left_Leg_IK|Skeleton:L_Leg_IK_End_Ctrl_Grp|Skeleton:L_Leg_IK_End_Ctrl" 
-		"Operating_Space" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Leg|Skeleton:Left_Leg_IK|Skeleton:L_Leg_IK_End_Ctrl_Grp|Skeleton:L_Leg_IK_End_Ctrl|Skeleton:L_Foot_IK_Out_Ctrl_Grp|Skeleton:L_Foot_IK_Out_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Left_Leg|Skeleton:Left_Leg_IK|Skeleton:Left_Toes_IK|Skeleton:Left_Toe_01_IK|Skeleton:L_MetTars_01_IK_Ctrl_Grp|Skeleton:L_MetTars_01_IK_Ctrl" 
@@ -1909,8 +1999,6 @@ createNode reference -n "SkeletonRN";
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Right_Arm|Skeleton:R_Scap_Ctrl_Grp|Skeleton:R_Scap_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Right_Arm|Skeleton:R_Arm_IKFK_Ctrl_Grp|Skeleton:R_Arm_IKFK_Ctrl" 
-		"IKFK_Switch" " -k 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Right_Arm|Skeleton:R_Arm_Reg_Controls|Skeleton:Right_Arm_FK|Skeleton:R_Arm_01_FK_Ctrl_Grp|Skeleton:R_Arm_01_FK_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Right_Arm|Skeleton:R_Arm_Reg_Controls|Skeleton:Right_Arm_FK|Skeleton:R_Arm_02_FK_Ctrl_Grp|Skeleton:R_Arm_02_FK_Ctrl" 
@@ -5056,1125 +5144,8 @@ createNode aiAOVDriver -s -n "defaultArnoldDriver";
 	setAttr ".ai_translator" -type "string" "exr";
 createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	rename -uid "82A0C806-4278-14D8-DBD3-D0B892F6D7AF";
-	setAttr ".ai_translator" -type "string" "maya";
 	setAttr ".output_mode" 0;
-createNode reference -n "SkeletonFishRN";
-	rename -uid "9B7F786E-4CA5-B24F-4066-1CB621CE2834";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"SkeletonFishRN"
-		"SkeletonFishRN" 4
-		2 "|SkeletonFish:SkelyFish" "translate" " -type \"double3\" 0 0 0"
-		2 "|SkeletonFish:SkelyFish|SkeletonFish:Head_eyes|SkeletonFish:Head_eyesShape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|SkeletonFish:SkelyFish|SkeletonFish:FishRibs|SkeletonFish:Rib1|SkeletonFish:RibShape1" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|SkeletonFish:SkelyFish|SkeletonFish:FishRibs|SkeletonFish:Rib2|SkeletonFish:RibShape2" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\"";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "FishBowlRN";
-	rename -uid "0BF18973-4D7C-FA84-F1F9-5B81BCB4FF65";
-	setAttr -s 218 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
-	setAttr ".phl[25]" 0;
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[27]" 0;
-	setAttr ".phl[28]" 0;
-	setAttr ".phl[29]" 0;
-	setAttr ".phl[30]" 0;
-	setAttr ".phl[31]" 0;
-	setAttr ".phl[32]" 0;
-	setAttr ".phl[33]" 0;
-	setAttr ".phl[34]" 0;
-	setAttr ".phl[35]" 0;
-	setAttr ".phl[36]" 0;
-	setAttr ".phl[37]" 0;
-	setAttr ".phl[38]" 0;
-	setAttr ".phl[39]" 0;
-	setAttr ".phl[40]" 0;
-	setAttr ".phl[41]" 0;
-	setAttr ".phl[42]" 0;
-	setAttr ".phl[43]" 0;
-	setAttr ".phl[44]" 0;
-	setAttr ".phl[45]" 0;
-	setAttr ".phl[46]" 0;
-	setAttr ".phl[47]" 0;
-	setAttr ".phl[48]" 0;
-	setAttr ".phl[49]" 0;
-	setAttr ".phl[50]" 0;
-	setAttr ".phl[51]" 0;
-	setAttr ".phl[52]" 0;
-	setAttr ".phl[53]" 0;
-	setAttr ".phl[54]" 0;
-	setAttr ".phl[55]" 0;
-	setAttr ".phl[56]" 0;
-	setAttr ".phl[57]" 0;
-	setAttr ".phl[58]" 0;
-	setAttr ".phl[59]" 0;
-	setAttr ".phl[60]" 0;
-	setAttr ".phl[61]" 0;
-	setAttr ".phl[62]" 0;
-	setAttr ".phl[63]" 0;
-	setAttr ".phl[64]" 0;
-	setAttr ".phl[65]" 0;
-	setAttr ".phl[66]" 0;
-	setAttr ".phl[67]" 0;
-	setAttr ".phl[68]" 0;
-	setAttr ".phl[69]" 0;
-	setAttr ".phl[70]" 0;
-	setAttr ".phl[71]" 0;
-	setAttr ".phl[72]" 0;
-	setAttr ".phl[73]" 0;
-	setAttr ".phl[74]" 0;
-	setAttr ".phl[75]" 0;
-	setAttr ".phl[76]" 0;
-	setAttr ".phl[77]" 0;
-	setAttr ".phl[78]" 0;
-	setAttr ".phl[79]" 0;
-	setAttr ".phl[80]" 0;
-	setAttr ".phl[81]" 0;
-	setAttr ".phl[82]" 0;
-	setAttr ".phl[83]" 0;
-	setAttr ".phl[84]" 0;
-	setAttr ".phl[85]" 0;
-	setAttr ".phl[86]" 0;
-	setAttr ".phl[87]" 0;
-	setAttr ".phl[88]" 0;
-	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
-	setAttr ".phl[93]" 0;
-	setAttr ".phl[94]" 0;
-	setAttr ".phl[95]" 0;
-	setAttr ".phl[96]" 0;
-	setAttr ".phl[97]" 0;
-	setAttr ".phl[98]" 0;
-	setAttr ".phl[99]" 0;
-	setAttr ".phl[100]" 0;
-	setAttr ".phl[101]" 0;
-	setAttr ".phl[102]" 0;
-	setAttr ".phl[103]" 0;
-	setAttr ".phl[104]" 0;
-	setAttr ".phl[105]" 0;
-	setAttr ".phl[106]" 0;
-	setAttr ".phl[107]" 0;
-	setAttr ".phl[108]" 0;
-	setAttr ".phl[109]" 0;
-	setAttr ".phl[110]" 0;
-	setAttr ".phl[111]" 0;
-	setAttr ".phl[112]" 0;
-	setAttr ".phl[113]" 0;
-	setAttr ".phl[114]" 0;
-	setAttr ".phl[115]" 0;
-	setAttr ".phl[116]" 0;
-	setAttr ".phl[117]" 0;
-	setAttr ".phl[118]" 0;
-	setAttr ".phl[119]" 0;
-	setAttr ".phl[120]" 0;
-	setAttr ".phl[121]" 0;
-	setAttr ".phl[122]" 0;
-	setAttr ".phl[123]" 0;
-	setAttr ".phl[124]" 0;
-	setAttr ".phl[125]" 0;
-	setAttr ".phl[126]" 0;
-	setAttr ".phl[127]" 0;
-	setAttr ".phl[128]" 0;
-	setAttr ".phl[129]" 0;
-	setAttr ".phl[130]" 0;
-	setAttr ".phl[131]" 0;
-	setAttr ".phl[132]" 0;
-	setAttr ".phl[133]" 0;
-	setAttr ".phl[134]" 0;
-	setAttr ".phl[135]" 0;
-	setAttr ".phl[136]" 0;
-	setAttr ".phl[137]" 0;
-	setAttr ".phl[138]" 0;
-	setAttr ".phl[139]" 0;
-	setAttr ".phl[140]" 0;
-	setAttr ".phl[141]" 0;
-	setAttr ".phl[142]" 0;
-	setAttr ".phl[143]" 0;
-	setAttr ".phl[144]" 0;
-	setAttr ".phl[145]" 0;
-	setAttr ".phl[146]" 0;
-	setAttr ".phl[147]" 0;
-	setAttr ".phl[148]" 0;
-	setAttr ".phl[149]" 0;
-	setAttr ".phl[150]" 0;
-	setAttr ".phl[151]" 0;
-	setAttr ".phl[152]" 0;
-	setAttr ".phl[153]" 0;
-	setAttr ".phl[154]" 0;
-	setAttr ".phl[155]" 0;
-	setAttr ".phl[156]" 0;
-	setAttr ".phl[157]" 0;
-	setAttr ".phl[158]" 0;
-	setAttr ".phl[159]" 0;
-	setAttr ".phl[160]" 0;
-	setAttr ".phl[161]" 0;
-	setAttr ".phl[162]" 0;
-	setAttr ".phl[163]" 0;
-	setAttr ".phl[164]" 0;
-	setAttr ".phl[165]" 0;
-	setAttr ".phl[166]" 0;
-	setAttr ".phl[167]" 0;
-	setAttr ".phl[168]" 0;
-	setAttr ".phl[169]" 0;
-	setAttr ".phl[170]" 0;
-	setAttr ".phl[171]" 0;
-	setAttr ".phl[172]" 0;
-	setAttr ".phl[173]" 0;
-	setAttr ".phl[174]" 0;
-	setAttr ".phl[175]" 0;
-	setAttr ".phl[176]" 0;
-	setAttr ".phl[177]" 0;
-	setAttr ".phl[178]" 0;
-	setAttr ".phl[179]" 0;
-	setAttr ".phl[180]" 0;
-	setAttr ".phl[181]" 0;
-	setAttr ".phl[182]" 0;
-	setAttr ".phl[183]" 0;
-	setAttr ".phl[184]" 0;
-	setAttr ".phl[185]" 0;
-	setAttr ".phl[186]" 0;
-	setAttr ".phl[187]" 0;
-	setAttr ".phl[188]" 0;
-	setAttr ".phl[189]" 0;
-	setAttr ".phl[190]" 0;
-	setAttr ".phl[191]" 0;
-	setAttr ".phl[192]" 0;
-	setAttr ".phl[193]" 0;
-	setAttr ".phl[194]" 0;
-	setAttr ".phl[195]" 0;
-	setAttr ".phl[196]" 0;
-	setAttr ".phl[197]" 0;
-	setAttr ".phl[198]" 0;
-	setAttr ".phl[199]" 0;
-	setAttr ".phl[200]" 0;
-	setAttr ".phl[201]" 0;
-	setAttr ".phl[202]" 0;
-	setAttr ".phl[203]" 0;
-	setAttr ".phl[204]" 0;
-	setAttr ".phl[205]" 0;
-	setAttr ".phl[206]" 0;
-	setAttr ".phl[207]" 0;
-	setAttr ".phl[208]" 0;
-	setAttr ".phl[209]" 0;
-	setAttr ".phl[210]" 0;
-	setAttr ".phl[211]" 0;
-	setAttr ".phl[212]" 0;
-	setAttr ".phl[213]" 0;
-	setAttr ".phl[214]" 0;
-	setAttr ".phl[215]" 0;
-	setAttr ".phl[216]" 0;
-	setAttr ".phl[217]" 0;
-	setAttr ".phl[218]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"FishBowlRN"
-		"FishBowlRN" 0
-		"FishBowlRN" 371
-		0 "|FishBowl:Castle" "|Fishbowl" "-s -r "
-		0 "|FishBowl:Seaweeds" "|Fishbowl" "-s -r "
-		0 "|FishBowl:SkelyFish" "|Fishbowl" "-s -r "
-		0 "|FishBowl:Sand" "|Fishbowl" "-s -r "
-		0 "|FishBowl:Fishbowl" "|Fishbowl" "-s -r "
-		2 "|Fishbowl|FishBowl:Fishbowl" "rotatePivot" " -type \"double3\" 197.29718017578125 -5.40749804824308455 -3.814697265625e-06"
-		
-		2 "|Fishbowl|FishBowl:Fishbowl" "scalePivot" " -type \"double3\" 197.29718017578125 -5.40749804824308455 -3.814697265625e-06"
-		
-		2 "|Fishbowl|FishBowl:Fishbowl|FishBowl:FishbowlShape" "uvSet[0].uvSetName" 
-		" -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Castle" "translate" " -type \"double3\" 16.87867805004567145 -11.31355617873167319 -3.88883265336907868"
-		
-		2 "|Fishbowl|FishBowl:Castle" "scale" " -type \"double3\" 0.3 0.3 0.3"
-		2 "|Fishbowl|FishBowl:Castle" "rotatePivot" " -type \"double3\" -75.856062685643451 83.85318756103515625 91.70216803362312419"
-		
-		2 "|Fishbowl|FishBowl:Castle" "scalePivot" " -type \"double3\" -75.856062685643451 83.85318756103515625 91.70216803362312419"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase" "rotatePivot" " -type \"double3\" 173.61876678466796875 24.2956385612487793 0.66473531723022461"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase" "scalePivot" " -type \"double3\" 173.61876678466796875 24.2956385612487793 0.66473531723022461"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:CastleBaseShape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door" "rotatePivot" 
-		" -type \"double3\" 175.22748991994544099 22.98713853534620455 5.94099998474082636"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door" "scalePivot" 
-		" -type \"double3\" 175.22748991994549783 22.98713853534638574 5.94099998474109903"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door|FishBowl:DoorShape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown" "rotatePivot" " -type \"double3\" 173.62911224365234375 42.51902961730957031 0"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown" "scalePivot" " -type \"double3\" 173.62911224365234375 42.51902961730957031 0"
-		
-		2 "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown|FishBowl:CastleCrownShape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Seaweeds" "translate" " -type \"double3\" 0 -10.09189903431119717 0"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds" "scale" " -type \"double3\" 0.3 0.3 0.3"
-		2 "|Fishbowl|FishBowl:Seaweeds" "rotatePivot" " -type \"double3\" -52.85059240976454475 81.94195556640625 88.42830710222663981"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds" "scalePivot" " -type \"double3\" -52.85059240976454475 81.94195556640625 88.42830710222663981"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1" "rotatePivot" " -type \"double3\" 228.57273101806640625 26.87006139755249023 20.81066513061523438"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1" "scalePivot" " -type \"double3\" 228.57273101806640625 26.87006139755249023 20.81066513061523438"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1|FishBowl:Seaweed1Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4" "rotatePivot" " -type \"double3\" 196.52178192138671875 30.75301790237426758 -27.56361770629882812"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4" "scalePivot" " -type \"double3\" 196.52178192138671875 30.75301790237426758 -27.56361770629882812"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:Seaweed4Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "translate" 
-		" -type \"double3\" 197.3407749632469006 30.75301745259372055 -27.52228287565719"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "scale" 
-		" -type \"double3\" 18.33872983313376892 21.61394365873112022 18.33872983313376892"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "rotatePivot" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "scalePivot" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:twist2Handle" "scalePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8" "rotatePivot" " -type \"double3\" 228.842376708984375 30.75301790237426758 12.16011238098144531"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8" "scalePivot" " -type \"double3\" 228.842376708984375 30.75301790237426758 12.16011238098144531"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:Seaweed8Shape" 
-		"pnts" " -s 600"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:Seaweed8Shape" 
-		"pt[0:165]" (" -type \"float3\" 226.77621 0 39.87862 226.77621 0 39.878647 226.77621 0 39.878647 226.77621 0 39.878658 226.77621 0 39.878666 227.1591 0 39.827316 227.1591 0 39.827335 227.1591 0 39.827335 227.15912 0 39.827347 227.1591 0 39.827362 226.11215 0 39.967606 226.11215 0 39.967628 226.11215 0 39.967628 226.11215 0 39.967628 226.11215 0 39.967648 225.03754 0 40.111607 225.03754 0 40.111618 225.03754 0 40.111618 225.03754 0 40.111629 225.03754 0 40.111652 225.05037 0 40.530602 225.05038 0 40.530621 225.05038 0 40.530621 225.05038 0 40.530632 225.05038 0 40.530643 225.68352 0 40.830418 225.68353 0 40.830418 225.68353 0 40.830418 225.68353 0 40.830429 225.68353 0 40.830444 226.68466 0 40.67041 226.68468 0 40.670422 226.68468 0 40.670422 226.68468 0 40.670433 226.68469 0 40.670444 227.02733 0 40.731842 227.02734 0 40.731865 227.02734 0 40.731865 227.02736 0 40.731873 227.02736 0 40.731884 226.74713 0 41.605988 226.74715 0 41.605991 226.74715 0 41.605991 226.74716 0 41.606003 226.74718 0 41.606018 226.52173 0 43.143528 22"
-		+ "6.52174 0 43.143543 226.52174 0 43.143543 226.52176 0 43.143547 226.52177 0 43.143547 227.00133 0 44.007591 227.00134 0 44.007595 227.00134 0 44.007595 227.00134 0 44.007603 227.00136 0 44.00761 227.75786 0 44.548817 227.75789 0 44.54882 227.75789 0 44.54882 227.7579 0 44.548828 227.7579 0 44.548824 228.59981 0 44.353642 228.59982 0 44.353626 228.59982 0 44.353626 228.59984 0 44.353622 228.59985 0 44.353626 229.19458 0 43.478172 229.1946 0 43.478172 229.1946 0 43.478172 229.1946 0 43.478172 229.19461 0 43.478172 229.46671 0 42.489819 229.46672 0 42.489819 229.46672 0 42.489819 229.46672 0 42.489811 229.46672 0 42.489811 230.00795 0 42.277565 230.00797 0 42.27755 230.00797 0 42.27755 230.00797 0 42.27755 230.00798 0 42.277542 230.62437 0 42.053413 230.62437 0 42.05341 230.62437 0 42.05341 230.62439 0 42.053402 230.62439 0 42.053394 231.60255 0 41.921959 231.60257 0 41.92194 231.60257 0 41.92194 231.60257 0 41.921932 231.60258 0 41.921921 233.17107 0 41.729118 233.17108 0 41.729099 233.17108 0 41.729099 233.171"
-		+ "08 0 41.729084 233.17108 0 41.729076 234.16437 0 40.920036 234.16437 0 40.920013 234.16437 0 40.920013 234.16438 0 40.92001 234.16438 0 40.919994 234.57611 0 39.811268 234.57611 0 39.811245 234.57611 0 39.811245 234.57611 0 39.811234 234.57611 0 39.811226 234.05844 0 38.71373 234.05844 0 38.713726 234.05844 0 38.713726 234.05843 0 38.713711 234.05843 0 38.713703 232.71913 0 38.034145 232.71913 0 38.034126 232.71913 0 38.034126 232.71913 0 38.034122 232.71913 0 38.034122 230.1039 0 38.509918 230.10388 0 38.509922 230.10388 0 38.509922 230.10388 0 38.509914 230.10388 0 38.509907 227.15163 0 40.432327 227.15163 0 40.432327 227.15163 0 40.432327 227.15161 0 40.432331 227.15161 0 40.432323 227.31885 0 40.959499 226.66081 0 40.177406 227.27263 0 41.23296 226.38347 0 40.176193 227.19366 0 41.467522 226.13885 0 40.21389 226.94452 0 41.499817 226.06444 0 40.453835 226.86278 0 41.731079 225.8226 0 40.494827 226.61525 0 41.765324 225.74654 0 40.732853 226.33702 0 41.76305 225.7012 0 41.007381 225.85735 0 41.521339 225.8"
-		+ "5733 0 41.521339 225.85735 0 41.521324 225.85732 0 41.521332 225.85733 0 41.52132 224.80606 0 41.549629 224.80606 0 41.549618 224.80606 0 41.549618 224.80606 0 41.54961 224.80606 0 41.549603 226.87851 0 40.115543 226.87851 0 40.11552 226.87851 0 40.11552 226.87851 0 40.115517 226.87851 0 40.115509 227.75836 0 39.75478 227.75836 0 39.754761 227.75836 0 39.754761 227.75836 0 39.754753 227.75836 0 39.754742 227.54953 0 39.707188 227.54953 0 39.707184 227.54953 0 39.707184 227.54953 0 39.707176 227.54953 0 39.707161 226.48912 0 39.417015 226.48912 0 39.416996"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:Seaweed8Shape" 
-		"pt[166:331]" (" 226.48912 0 39.416996 226.48912 0 39.416992 226.48912 0 39.416977 225.52716 0 38.747147 225.52716 0 38.747143 225.52716 0 38.747143 225.52716 0 38.747128 225.52718 0 38.74712 224.70329 0 37.687031 224.70331 0 37.687012 224.70331 0 37.687012 224.70331 0 37.686996 224.70332 0 37.686989 225.09581 0 37.114822 225.09583 0 37.114811 225.09583 0 37.114811 225.09583 0 37.114799 225.09583 0 37.114792 225.80386 0 36.895508 225.80386 0 36.895508 225.80386 0 36.895508 225.80388 0 36.895504 225.80388 0 36.8955 226.67189 0 37.180744 226.67191 0 37.180729 226.67191 0 37.180729 226.67192 0 37.180729 226.67192 0 37.180721 227.21892 0 37.224281 227.21893 0 37.224281 227.21893 0 37.224281 227.21893 0 37.224281 227.21893 0 37.224281 227.45432 0 35.412125 227.45433 0 35.412117 227.45433 0 35.412117 227.45433 0 35.412117 227.45435 0 35.412113 228.22195 0 35.484505 228.22198 0 35.484493 228.22198 0 35.484493 228.22198 0 35.484501 228.222 0 35.484509 228.72025 0 36.657185 228.72026 0 36.657181 228.72026 0 36.657181 228.72028 0 36.6"
-		+ "57177 228.72029 0 36.657185 229.51202 0 36.231316 229.51204 0 36.231316 229.51204 0 36.231316 229.51205 0 36.231323 229.51207 0 36.231331 231.20773 0 34.898632 231.20775 0 34.898636 231.20775 0 34.898636 231.20776 0 34.898647 231.20778 0 34.898655 232.24397 0 35.302719 232.24399 0 35.302727 232.24399 0 35.302727 232.24399 0 35.302742 232.244 0 35.302753 232.54593 0 36.425674 232.54594 0 36.42569 232.54594 0 36.42569 232.54594 0 36.425705 232.54594 0 36.425716 231.87541 0 37.853027 231.87541 0 37.853039 231.87541 0 37.853039 231.87543 0 37.85305 231.87543 0 37.853058 233.00018 0 38.333504 233.00018 0 38.333523 233.00018 0 38.333523 233.00018 0 38.333534 233.00018 0 38.333546 234.51862 0 38.841148 234.51862 0 38.841183 234.51862 0 38.841183 234.51862 0 38.841194 234.51862 0 38.841194 233.44402 0 38.985149 233.44402 0 38.985168 233.44402 0 38.985168 233.44403 0 38.985184 233.44403 0 38.985195 231.979 0 39.181461 231.979 0 39.181488 231.979 0 39.181488 231.979 0 39.181492 231.979 0 39.181492 232.77995 0 39.074131"
-		+ " 232.77995 0 39.074154 232.77995 0 39.074154 232.77995 0 39.074165 232.77995 0 39.074181 231.90567 0 38.250637 232.15332 0 40.098785 231.11017 0 38.015144 231.44788 0 40.535408 230.32692 0 37.871128 230.73018 0 40.88055 229.60843 0 38.210369 229.94772 0 40.742424 228.82599 0 38.07225 229.22923 0 41.081673 228.10828 0 38.4174 228.446 0 40.937656 227.40285 0 38.854019 227.6505 0 40.702164 231.50075 0 40.189461 230.94348 0 40.607449 230.37386 0 40.933567 229.73929 0 40.774834 229.16888 0 41.095047 228.53352 0 40.930386 227.88586 0 40.673882 232.68002 0 40.245857 231.81894 0 40.782242 230.94289 0 41.206604 229.98701 0 41.035603 229.10991 0 41.452221 228.15302 0 41.273476 227.18112 0 40.982712 233.49751 0 40.223904 232.37202 0 40.82782 231.23027 0 41.310593 230.00278 0 41.153252 228.86 0 41.628201 227.63147 0 41.463055 226.38669 0 41.176746 232.33437 0 39.794621 231.45987 0 40.500679 230.55292 0 41.08923 229.47444 0 41.057217 228.56532 0 41.638058 227.48489 0 41.599018 226.37199 0 41.442383 231.53653 0 39.130024 2"
-		+ "30.92068 0 39.831112 230.26192 0 40.442814 229.37526 0 40.580738 228.71355 0 41.186375 227.82451 0 41.319324 226.89258 0 41.363003 232.48746 0 37.887218 232.00017 0 38.756618 231.44615 0 39.533897 230.53952 0 39.824257 229.98117 0 40.595554 229.06996 0 40.879562 228.09216 0 41.071651 232.48314 0 36.837688 232.15514 0 37.827782 231.73897 0 38.733067 230.85667 0 39.190525 230.4348 0 40.090363 229.54681 0 40.542351 228.57062 0 40.909584 231.64417 0 36.398117 231.44759 0 37.476631 231.15359 0 38.490311 230.3396 0 39.158222 230.03896 0 40.167503"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:Seaweed8Shape" 
-		"pt[332:497]" (" 229.2186 0 40.831139 228.29941 0 41.429108 230.02792 0 37.480221 229.97768 0 38.484215 229.83937 0 39.450108 229.23557 0 40.214622 229.09128 0 41.177956 228.48224 0 41.940201 227.78181 0 42.662922 229.49327 0 37.807003 229.63698 0 38.809666 229.68292 0 39.789455 229.21399 0 40.648823 229.25471 0 41.627399 228.77834 0 42.485054 228.20407 0 43.319809 229.34833 0 36.678181 229.72104 0 37.833271 229.97652 0 38.982372 229.61256 0 40.099747 229.86049 0 41.248447 229.48898 0 42.365433 229.00026 0 43.476425 228.60391 0 36.400887 229.1131 0 37.471691 229.52267 0 38.555264 229.4059 0 39.706249 229.80904 0 40.790604 229.68585 0 41.942444 229.46304 0 43.107002 228.15054 0 37.789715 228.64648 0 38.492805 229.07436 0 39.217377 229.14473 0 40.054886 229.56859 0 40.780773 229.63429 0 41.619766 229.63205 0 42.480232 227.59166 0 37.544113 228.14832 0 38.098602 228.64845 0 38.682842 228.85066 0 39.423962 229.34747 0 40.009964 229.54585 0 40.753078 229.68767 0 41.525948 226.95456 0 37.079903 227.70743 0 37.575077 228.39859 0 38"
-		+ ".118431 228.76263 0 38.917309 229.44974 0 39.463844 229.80968 0 40.26593 230.10764 0 41.116451 226.36513 0 37.084801 227.26648 0 37.46674 228.11075 0 37.912567 228.6525 0 38.697071 229.49307 0 39.147003 230.03104 0 39.935734 230.51172 0 40.788609 226.1237 0 37.30732 227.18903 0 37.506084 228.19916 0 37.794846 228.91742 0 38.559029 229.92393 0 38.853565 230.63869 0 39.623562 231.29814 0 40.483509 226.84892 0 38.180935 227.9364 0 38.215401 228.98862 0 38.340248 229.84972 0 38.954922 230.89966 0 39.085548 231.75853 0 39.706013 232.58102 0 40.419647 227.6105 0 38.777775 228.6288 0 38.664894 229.63112 0 38.633705 230.54871 0 39.035057 231.55003 0 39.008869 232.46661 0 39.415379 233.36681 0 39.905724 228.43936 0 38.943657 229.32187 0 38.674271 230.20323 0 38.481743 231.07858 0 38.69532 231.95988 0 38.507744 232.83513 0 38.726292 233.70927 0 39.021709 228.41605 0 38.838882 229.15634 0 38.423016 229.90947 0 38.084904 230.73044 0 38.1572 231.4832 0 37.816799 232.30365 0 37.88607 233.13771 0 38.037582 227.38046 0 39.21"
-		+ "5237 228.02475 0 38.714321 228.69141 0 38.276165 229.48033 0 38.181087 230.1503 0 37.752277 230.93723 0 37.651608 231.74586 0 37.611866 225.2332 0 40.759888 225.80843 0 40.228291 226.40137 0 39.727577 227.11639 0 39.439671 227.70068 0 38.923862 228.4175 0 38.639034 229.16672 0 38.41069 231.25226 0 38.334961 230.6046 0 38.078438 229.96921 0 37.913776 229.39882 0 38.23399 228.76424 0 38.075249 228.19464 0 38.401367 227.63736 0 38.819313 232.37508 0 37.970097 231.40315 0 37.679321 230.44629 0 37.500568 229.56915 0 37.917194 228.61331 0 37.746185 227.73723 0 38.170559 226.87617 0 38.706928 233.16951 0 37.776054 231.92473 0 37.489754 230.69615 0 37.3246 229.55339 0 37.799549 228.3259 0 37.642212 227.18417 0 38.124969 226.05869 0 38.728886 231.67856 0 37.421711 230.5656 0 37.264915 229.48512 0 37.225628 228.57614 0 37.806923 227.49779 0 37.77536 226.59074 0 38.363682 225.71622 0 39.069595 230.66637 0 37.320389 229.73421 0 37.363667 228.84506 0 37.496269 228.1837 0 38.102711 227.29744 0 38.241425 226.6385 0 38.85283"
-		+ "3 226.02248 0 39.55349 231.1391 0 36.025372 230.16107 0 36.217148 229.24977 0 36.501064 228.69109 0 37.271885 227.7841 0 37.561764 227.23003 0 38.338917 226.74251 0 39.208015 230.7007 0 35.125027 229.7245 0 35.49226 228.83653 0 35.944233 228.41466 0 36.844086 227.53236 0 37.301525 227.11618 0 38.206841 226.78819 0 39.196918 229.65617 0 35.076046 228.73759 0 35.674381 227.91644 0 36.337517 227.61528 0 37.346458 226.8008 0 38.014019 226.506 0 39.027176 226.31001 0 40.106098 228.2486 0 36.710476 227.55127 0 37.434528 226.942 0 38.196682"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:Seaweed8Shape" 
-		"pt[498:599]" (" 226.79823 0 39.160213 226.19493 0 39.924973 226.05641 0 40.89077 226.00926 0 41.896107 227.51753 0 37.344967 226.94409 0 38.179913 226.46841 0 39.037724 226.50763 0 40.015934 226.03717 0 40.87495 226.08382 0 41.854919 226.22833 0 42.857769 226.97961 0 36.556892 226.49088 0 37.667885 226.11938 0 38.784893 226.36729 0 39.93359 226.00336 0 41.050968 226.25883 0 42.20005 226.63153 0 43.355141 226.59111 0 36.658749 226.36832 0 37.823326 226.24512 0 38.975151 226.64827 0 40.059528 226.53148 0 41.210487 226.94106 0 42.294094 227.45024 0 43.364868 226.78123 0 38.222301 226.77921 0 39.082695 226.84525 0 39.921574 227.26878 0 40.647522 227.33885 0 41.485168 227.76706 0 42.209629 228.26323 0 42.912655 226.45087 0 38.144661 226.5929 0 38.917419 226.79146 0 39.660408 227.28796 0 40.246597 227.48985 0 40.987862 227.99019 0 41.572014 228.54706 0 42.126396 225.70419 0 38.056599 226.00235 0 38.906971 226.36221 0 39.709114 227.04919 0 40.255749 227.41312 0 41.054718 228.1042 0 41.598137 228.85727 0 42.09314 225.20865 0 38.379"
-		+ "444 225.68944 0 39.232185 226.22733 0 40.020992 227.06772 0 40.471161 227.60927 0 41.255848 228.45345 0 41.701778 229.35493 0 42.083572 225.00771 0 39.125431 225.66718 0 39.985367 226.38191 0 40.755367 227.38844 0 41.049908 228.1067 0 41.814083 229.11684 0 42.102856 230.18214 0 42.301624 226.11635 0 40.058807 226.9399 0 40.769855 227.79868 0 41.390518 228.84854 0 41.521309 229.70956 0 42.136196 230.76172 0 42.261208 231.85019 0 42.293068 227.28658 0 40.43198 228.18707 0 40.920616 229.10358 0 41.327572 230.10478 0 41.301956 231.02226 0 41.703899 232.02448 0 41.673145 233.04314 0 41.558567 228.41637 0 40.496719 229.2905 0 40.792114 230.16579 0 41.01067 231.04707 0 40.82309 231.92242 0 41.03669 232.80376 0 40.844154 233.68628 0 40.574757 228.67572 0 40.410362 229.51045 0 40.565979 230.33232 0 40.643829 231.08638 0 40.311268 231.90865 0 40.391411 232.66319 0 40.061882 233.40416 0 39.650116 227.8367 0 40.49548 228.65257 0 40.476032 229.44608 0 40.393852 230.11732 0 39.968563 230.90749 0 39.877029 231.58073 0 39.45"
-		+ "7363 232.23227 0 38.976742 225.7034 0 41.579399 226.45264 0 41.351074 227.18414 0 41.091862 227.79355 0 40.619865 228.53372 0 40.375732 229.14136 0 39.900646 229.7166 0 39.369076"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "translate" 
-		" -type \"double3\" 228.04903119454544935 30.75301745259372055 12.19164825710347699"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "rotate" 
-		" -type \"double3\" 0 26.67835474050549038 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "scale" 
-		" -type \"double3\" 18.33872983313376892 21.61394365873112022 18.33872983313376892"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "rotatePivot" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "scalePivot" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8|FishBowl:twist2Handle" "scalePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9" "rotatePivot" " -type \"double3\" 218.997955322265625 25.49977540969848633 11.19077014923095703"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9" "scalePivot" " -type \"double3\" 218.997955322265625 25.49977540969848633 11.19077014923095703"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9|FishBowl:Seaweed9Shape" 
-		"pnts" " -s 642"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9|FishBowl:Seaweed9Shape" 
-		"pt[0:165]" (" -type \"float3\" 194.15665 -0.30324811000000002 -7.534647 194.15662 -0.30325004 -7.53463789999999989 194.15662 -0.30325004 -7.53463789999999989 194.15662 -0.30325139000000001 -7.53464080000000003 194.1566 -0.30325197999999998 -7.53462929999999975 194.07793 -0.30079373999999998 -7.3978628999999998 194.0779 -0.30079612 -7.39785480000000017 194.0779 -0.30079612 -7.39785480000000017 194.0779 -0.30079630000000002 -7.39784240000000004 194.07788 -0.30079805999999998 -7.39784570000000041 193.63109 -0.44278255 -8.59277729999999984 193.63106 -0.44278448999999998 -8.59276769999999956 193.63106 -0.44278448999999998 -8.59276769999999956 193.63104 -0.44278627999999998 -8.59277149999999956 193.63103 -0.44278731999999998 -8.592761 193.17712 -0.58756666999999996 -9.81348320000000029 193.17709 -0.58756947999999998 -9.8134756000000003 193.17709 -0.58756947999999998 -9.8134756000000003 193.17708 -0.58757055000000002 -9.81346510000000016 193.17706 -0.58757113999999999 -9.81345370000000017 192.98161 -0.63094163000000003 -10.099216 "
-		+ "192.98158 -0.63094401 -10.099207 192.98158 -0.63094401 -10.099207 192.98155 -0.63094550000000005 -10.099197 192.98155 -0.63094682000000002 -10.0992 192.9292 -0.61816203999999997 -9.86722759999999965 192.92918 -0.61816393999999997 -9.867218 192.92918 -0.61816393999999997 -9.867218 192.92917 -0.61816530999999997 -9.86722089999999952 192.92915 -0.61816638999999995 -9.86721039999999938 192.99323 -0.55970149999999996 -9.21409230000000079 192.99319 -0.55970436000000001 -9.21408560000000065 192.99319 -0.55970436000000001 -9.21408560000000065 192.99318 -0.55970615000000001 -9.21408940000000065 192.99316 -0.55970721999999995 -9.21407789999999949 192.87183 -0.57399476000000005 -9.23171420000000076 192.8718 -0.57399756000000002 -9.23170660000000076 192.8718 -0.57399756000000002 -9.23170660000000076 192.87178 -0.57399911000000003 -9.23169709999999988 192.87177 -0.57400041999999996 -9.231699 192.55167 -0.68806230999999995 -10.243812 192.55164 -0.68806517 -10.243805 192.55164 -0.68806517 -10.243805 192.55162 -0.68806577000"
-		+ "000002 -10.243793 192.55161 -0.68806725999999996 -10.243783 191.979 -0.86906081000000002 -11.762896 191.97897 -0.86906236000000003 -11.762886 191.97897 -0.86906236000000003 -11.762886 191.97896 -0.86906368000000001 -11.762889 191.97894 -0.86906475000000005 -11.762878 191.55032 -0.97486304999999995 -12.524693 191.55029 -0.97486501999999997 -12.524683 191.55029 -0.97486501999999997 -12.524683 191.55028 -0.97486633 -12.524686 191.55026 -0.97486675 -12.524671 191.15651 -1.05774839999999992 -13.043572 191.15648 -1.05775149999999996 -13.043578 191.15648 -1.05775149999999996 -13.043578 191.15646 -1.05775149999999996 -13.043562 191.15645 -1.05775259999999993 -13.043551 191.04543 -1.0713047 -13.065728 191.04539 -1.07130670000000006 -13.065719 191.04539 -1.07130670000000006 -13.065719 191.04538 -1.07130679999999989 -13.065706 191.04536 -1.07130729999999996 -13.065691 191.21552 -1.02273759999999991 -12.680191 191.2155 -1.02273729999999996 -12.680161 191.2155 -1.02273729999999996 -12.680161 191.21548 -1.02273820000000004"
-		+ " -12.680163 191.21548 -1.02273790000000009 -12.68015 191.28784 -0.98849052000000004 -12.344359 191.28783 -0.988491 -12.344347 191.28783 -0.988491 -12.344347 191.28783 -0.98849070000000006 -12.344334 191.28783 -0.98849052000000004 -12.34433 190.57443 -1.0910652999999999 -12.682812 190.57442 -1.09106679999999989 -12.682812 190.57442 -1.09106679999999989 -12.682812 190.57442 -1.0910664000000001 -12.682795 190.5744 -1.09106590000000003 -12.68278 189.55324 -1.23242180000000001 -13.098087 189.55322 -1.23242159999999989 -13.098071 189.55322 -1.23242159999999989 -13.098071 189.55322 -1.23242129999999994 -13.098057 189.55321 -1.23242080000000009 -13.09804 188.04384 -1.43969170000000002 -13.690848 188.04382 -1.43969140000000007 -13.69083 188.04382 -1.43969140000000007 -13.69083 188.04381 -1.4396909 -13.690814 188.04381 -1.43969039999999993 -13.690796 186.00731 -1.71284039999999993 -14.408376 186.00731 -1.7128391999999999 -14.408356 186.00731 -1.7128391999999999 -14.408356 186.00729 -1.7128391999999999 -14.40834 186.007"
-		+ "29 -1.71283840000000009 -14.408325 184.26895 -1.92406340000000009 -14.743507 184.26894 -1.9240619000000001 -14.743476 184.26894 -1.9240619000000001 -14.743476 184.26894 -1.92406089999999996 -14.743458 184.26894 -1.92406089999999996 -14.743458 182.71394 -2.09902189999999989 -14.866466 182.71394 -2.09902070000000007 -14.866446 182.71394 -2.09902070000000007 -14.866446 182.71393 -2.09902 -14.866432 182.71393 -2.09901980000000021 -14.866428 181.42276 -2.23495460000000001 -14.85046 181.42276 -2.234952 -14.850426 181.42276 -2.234952 -14.850426 181.42276 -2.23495169999999987 -14.850422 181.42276 -2.23495169999999987 -14.850418 180.22556 -2.36488560000000003 -14.884815 180.22556 -2.36488459999999989 -14.884797 180.22556 -2.36488459999999989 -14.884797 180.22554 -2.36488459999999989 -14.884782 180.22556 -2.36488390000000015 -14.88478 179.14821 -2.50362680000000015 -15.191574 179.14821 -2.50362520000000011 -15.191555 179.14821 -2.50362520000000011 -15.191555 179.14819 -2.50362680000000015 -15.19157 179.14819 -2.5036260"
-		+ "9999999997 -15.191557 177.68732 -2.728018 -16.065983 177.68732 -2.72801640000000001 -16.065968 177.68732 -2.72801640000000001 -16.065968 177.6873 -2.72801640000000001 -16.06595 177.6873 -2.72801640000000001 -16.06595 177.79285 -2.77846219999999988 -16.845577 177.72543 -2.72634789999999994 -16.096075 177.72543 -2.72634789999999994 -16.096075 177.72543 -2.72634789999999994 -16.096075 177.65802 -2.67423270000000013 -15.346588 177.85466 -2.79509659999999993 -17.138929 177.76357 -2.72467760000000014 -16.126198 177.76357 -2.72467760000000014 -16.126198 177.76357 -2.72467680000000012 -16.126183 177.67247 -2.65425829999999996 -15.113455 177.90976 -2.8065471999999998 -17.357733 177.80168 -2.72300839999999988 -16.156307 177.80168 -2.72300839999999988 -16.156307 177.8017 -2.72300740000000019 -16.156305 177.69362 -2.63946959999999997 -14.954896 177.92999 -2.79103849999999998 -17.188831 177.83983 -2.72133830000000021 -16.18643 177.83983 -2.72133830000000021 -16.18643 177.83983 -2.72133830000000021 -16.18643 177.74965 -2.6"
-		+ "5163759999999993 -15.184011 177.98451 -2.80204919999999991 -17.401299 177.87796 -2.71966790000000014 -16.216537 177.87796 -2.71966790000000014 -16.216537 177.87794 -2.71966859999999988 -16.216536 177.77138 -2.63728829999999981 -15.031778 178.00508 -2.78679919999999992 -17.236118 177.91608 -2.71800020000000009 -16.24666 177.91608 -2.71800020000000009 -16.24666 177.91608 -2.71800020000000009 -16.24666 177.82707 -2.64919880000000019 -15.257191 178.01935 -2.76668480000000017 -17.000967 177.95421 -2.71633080000000016 -16.276785 177.95421 -2.71633080000000016 -16.276785 177.95419 -2.71633009999999997 -16.27677 177.88905 -2.66597339999999994 -15.552568 177.99232 -2.71466209999999997 -16.30691 177.99232 -2.7146606000000002 -16.306892 177.99232 -2.7146596999999999 -16.306877 177.99234 -2.714659 -16.306877 177.99232 -2.71466040000000008 -16.306875 180.82619 -2.3529564999999999 -15.540923"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9|FishBowl:Seaweed9Shape" 
-		"pt[166:331]" (" 180.82619 -2.35295560000000004 -15.540918 180.82619 -2.35295560000000004 -15.540918 180.82619 -2.35295560000000004 -15.540918 180.82619 -2.35295370000000004 -15.540898 182.48363 -2.11067610000000005 -14.704388 182.48363 -2.1106758000000001 -14.704385 182.48363 -2.1106758000000001 -14.704385 182.48363 -2.11067410000000022 -14.704369 182.48363 -2.1106739000000001 -14.704365 184.27007 -1.87400359999999999 -14.112067 184.27005 -1.87400260000000007 -14.112046 184.27005 -1.87400260000000007 -14.112046 184.27007 -1.874001 -14.11203 184.27005 -1.87400079999999991 -14.112026 186.34949 -1.60067160000000008 -13.449871 186.34949 -1.60066960000000003 -13.449839 186.34949 -1.60066960000000003 -13.449839 186.34949 -1.60066949999999997 -13.449838 186.34949 -1.60066850000000005 -13.44982 188.77638 -1.26812729999999996 -12.505839 188.77638 -1.268126 -12.505808 188.77638 -1.268126 -12.505808 188.77637 -1.26812490000000011 -12.505789 188.77637 -1.26812490000000011 -12.505789 191.10324 -0.93229306000000001 -11.385795 191.10323 -"
-		+ "0.93229198000000002 -11.385777 191.10323 -0.93229198000000002 -11.385777 191.10323 -0.93229156999999996 -11.385759 191.10321 -0.93229127000000001 -11.385746 193.30849 -0.59367687000000002 -10.067213 193.30847 -0.59367669000000001 -10.067197 193.30847 -0.59367669000000001 -10.067197 193.30847 -0.59367608999999999 -10.067179 193.30846 -0.59367537000000004 -10.067164 194.47067 -0.40322119000000001 -9.22057060000000028 194.47067 -0.40322116000000002 -9.22055439999999926 194.47067 -0.40322116000000002 -9.22055439999999926 194.47066 -0.40322089 -9.220541 194.47066 -0.40322121999999999 -9.220541 195.08133 -0.29131397999999997 -8.62606530000000049 195.08131 -0.29131433000000001 -8.62605 195.08131 -0.29131433000000001 -8.62605 195.0813 -0.29131406999999998 -8.62603660000000083 195.0813 -0.29131377000000003 -8.62602329999999995 195.13045 -0.26705657999999999 -8.3853579000000007 195.13043 -0.26705644000000001 -8.38534070000000042 195.13043 -0.26705644000000001 -8.38534070000000042 195.13043 -0.26705616999999998 -8.38532"
-		+ "730000000015 195.13042 -0.26705706000000001 -8.38532919999999926 195.18919 -0.22698351999999999 -7.95762250000000027 195.18919 -0.22698413000000001 -7.95761110000000027 195.18919 -0.22698413000000001 -7.95761110000000027 195.18918 -0.22698431999999999 -7.95760820000000013 195.18918 -0.22698404 -7.95759490000000014 196.07233 0.014818375999999999 -6.08685779999999976 196.07231 0.014817785 -6.08683010000000024 196.07231 0.014817785 -6.08683010000000024 196.0723 0.014816447999999999 -6.08683249999999987 196.07228 0.014816284000000001 -6.08682009999999973 195.65733 0.0060732518000000003 -5.639883 195.6573 0.0060720332000000002 -5.6398596999999997 195.6573 0.0060720332000000002 -5.6398596999999997 195.65729 0.0060702506000000003 -5.639863 195.65727 0.0060693780000000003 -5.63984869999999994 194.8055 -0.12001786 -6.0896783000000001 194.80547 -0.12001982 -6.08966920000000034 194.80547 -0.12001982 -6.08966920000000034 194.80547 -0.12001953 -6.08965590000000034 194.80544 -0.12002058 -6.08964540000000021 194.72043 -0.05"
-		+ "1090337 -5.103899 194.7204 -0.051092546000000003 -5.10388709999999968 194.7204 -0.051092546000000003 -5.10388709999999968 194.72038 -0.051093436999999998 -5.103889 194.72037 -0.051094048000000003 -5.10387710000000006 194.92505 0.14431062 -2.90822979999999998 194.92502 0.14430821999999999 -2.90822169999999991 194.92502 0.14430821999999999 -2.90822169999999991 194.92499 0.14430672999999999 -2.90821189999999996 194.92497 0.14430567999999999 -2.90820120000000015 194.79312 0.17987083000000001 -2.28137869999999987 194.79308 0.17986870999999999 -2.28135729999999981 194.79308 0.17986870999999999 -2.28135729999999981 194.79306 0.17986648999999999 -2.28136159999999988 194.79305 0.17986542999999999 -2.28135090000000007 194.8399 0.16489349 -2.53361439999999982 194.83989 0.16489108999999999 -2.5336063000000002 194.83989 0.16489108999999999 -2.5336063000000002 194.83986 0.16488886 -2.53361079999999994 194.83984 0.16488826000000001 -2.53359909999999999 194.68242 0.069755569000000003 -3.52490710000000007 194.68239 0.06975362"
-		+ "4 -3.52489829999999982 194.68239 0.069753624 -3.52489829999999982 194.68239 0.069752290999999994 -3.5249009 194.68237 0.069750503000000005 -3.52490430000000021 195.08627 0.19487745000000001 -2.48549409999999993 195.08624 0.19487461 -2.485487 195.08624 0.19487461 -2.485487 195.08623 0.19487283 -2.48549059999999988 195.08621 0.19487222000000001 -2.48547889999999994 195.61812 0.37021756 -0.9830932 195.61809 0.37021514999999999 -0.98308510000000005 195.61809 0.37021514999999999 -0.98308510000000005 195.61807 0.37021409999999999 -0.98307436999999998 195.61806 0.37021305999999998 -0.98306364000000002 195.51875 0.29788688000000002 -1.76411549999999995 195.51871 0.29788476000000003 -1.764094 195.51871 0.29788476000000003 -1.764094 195.51869 0.29788372000000002 -1.76408330000000002 195.51869 0.29788238 -1.76408589999999998 195.31886 0.18611568000000001 -2.90875320000000004 195.31883 0.18611327999999999 -2.90874509999999997 195.31883 0.18611327999999999 -2.90874509999999997 195.31882 0.18611195999999999 -2.908747700000"
-		+ "00016 195.3188 0.1861109 -2.90873690000000007 195.70236 0.30325352999999999 -1.94294579999999995 195.70233 0.30325159000000002 -1.94293690000000008 195.70233 0.30325159000000002 -1.94293690000000008 195.70233 0.30325025 -1.94293950000000004 195.70232 0.30324918000000001 -1.94292880000000001 196.84222 0.33827358000000002 -3.03157019999999999 195.50912 0.2274379 -2.64190980000000009 195.50912 0.2274379 -2.64190980000000009 195.50911 0.22743817999999999 -2.64189650000000009 194.17603 0.11660384 -2.25223370000000012 197.13382 0.30276805000000001 -3.87224559999999984 195.3159 0.15162584000000001 -3.34086680000000014 195.3159 0.15162584000000001 -3.34086680000000014 195.31589 0.15162405000000001 -3.34087040000000002 193.49799 0.00048318402999999999 -2.809489 197.29346 0.25629202000000001 -4.67434450000000012 195.1227 0.075811706000000006 -4.03984070000000006 195.1227 0.075811706000000006 -4.03984070000000006 195.12268 0.075811989999999996 -4.03982729999999979 192.95192 -0.10466654 -3.4053201999999998 196.75589 0.15"
-		+ "184949 -5.27264979999999994 194.92947 -3.5375251e-07 -4.73879770000000011 194.92947 -3.5375251e-07 -4.73879770000000011 194.92946 -1.6907931000000001e-06 -4.73880049999999997 193.10306 -0.15184948000000001 -4.20493130000000015 196.90703 0.10466583 -6.07227519999999998 194.73625 -0.075813307999999996 -5.43775649999999988 194.73625 -0.075813307999999996 -5.43775649999999988 194.73625 -0.075813754999999997 -5.43775750000000002 192.56549 -0.25629273000000002 -4.80325079999999982 196.36096 -0.00048316366000000001 -6.66809229999999964 194.54305 -0.15162610000000001 -6.13672780000000007 194.54305 -0.15162610000000001 -6.13672780000000007 194.54303 -0.15162671 -6.13671589999999956 192.72513 -0.30276831999999998 -5.60534909999999975 195.68294 -0.11660365 -7.22535989999999995 194.34982 -0.22743905 -6.8356861999999996 194.34982 -0.22743905 -6.8356861999999996 194.34982 -0.22743994000000001 -6.8356880999999996 193.01672 -0.33827430000000003 -6.44602539999999991 193.82602 0.014031949 -3.07888979999999979 193.18437 -0.0872"
-		+ "81406000000006 -3.497793 192.67525 -0.17757870000000001 -3.955471 192.8656 -0.20971975000000001 -4.61759 192.36501 -0.2993055 -5.07774350000000041 192.5639 -0.33073679 -5.74235730000000011 192.89528 -0.35115126000000002 -6.44568350000000034 193.6412 0.068820967999999996 -2.13785459999999983 192.80859 -0.073369898000000003 -2.8170598 192.1376 -0.20212052999999999 -3.54345130000000008 192.32552 -0.25946540000000001 -4.52095890000000011 191.66568 -0.38728994 -5.250639"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9|FishBowl:Seaweed9Shape" 
-		"pt[332:497]" (" 191.86478 -0.44370303 -6.23137950000000007 192.22546 -0.48668113000000002 -7.25936130000000013 193.54727 0.10369396 -1.57074169999999991 192.60002 -0.069415659000000005 -2.4868412000000002 191.82753 -0.22799871999999999 -3.45406060000000004 191.9785 -0.30980131 -4.69116879999999981 191.21729 -0.46744417999999999 -5.66165210000000041 191.37952 -0.54830944999999998 -6.90204910000000016 191.71652 -0.61464571999999995 -8.19354249999999951 193.0631 -0.054684058000000001 -2.922719 192.16002 -0.21112291999999999 -3.68738149999999987 191.43123 -0.35306734000000001 -4.50296119999999966 191.62306 -0.41847381 -5.58766219999999958 190.90575 -0.55946660000000004 -6.4065947999999997 191.10799 -0.624008 -7.49434280000000008 191.4847 -0.67404233999999996 -8.63306049999999914 193.02769 -0.13558769000000001 -3.89806410000000003 192.28668 -0.26496628 -4.5383382000000001 191.68747 -0.38255139999999999 -5.22000119999999956 191.83998 -0.43764269 -6.12145660000000014 191.25043 -0.55442749999999996 -6.80596780000000035 191.41084 -0"
-		+ ".60886048999999998 -7.70970870000000019 191.71286 -0.65151930000000002 -8.65483189999999958 192.96556 -0.062325414000000003 -2.88828949999999995 192.13655 -0.20263096999999999 -3.5485028999999999 191.47023 -0.32941260999999999 -4.25627230000000001 191.6635 -0.38472741999999999 -5.21529769999999981 191.00772 -0.51063126000000003 -5.92614030000000014 191.21219 -0.56501292999999997 -6.88843349999999965 191.57896 -0.60590166000000001 -7.89816759999999984 192.78569 -0.061293036000000002 -2.63358330000000018 191.90283 -0.20896155999999999 -3.31452990000000014 191.1949 -0.34208404999999997 -4.04658319999999971 191.41124 -0.39836627000000002 -5.048831 190.71458 -0.53055280000000005 -5.78419159999999977 190.94218 -0.58589548000000002 -6.78970770000000012 191.34471 -0.62669724000000004 -7.84637549999999973 192.94316 -0.093624770999999996 -3.25393130000000008 192.03444 -0.24629685000000001 -3.96340730000000008 191.29091 -0.38584458999999999 -4.72886659999999992 191.42896 -0.45535502 -5.79317670000000007 190.69672 -0.594"
-		+ "00593999999995 -6.5624646999999996 190.84557 -0.66265565000000004 -7.63042550000000031 191.16191 -0.71800070999999999 -8.755208 193.04716 -0.24987577 -5.36924120000000027 192.2206 -0.38723096000000001 -5.99542570000000019 191.52574 -0.51502924999999999 -6.67770580000000002 191.52707 -0.59231590999999995 -7.65667439999999999 190.84113 -0.71946812000000004 -8.34278109999999984 190.85031 -0.79618560999999999 -9.32511429999999919 190.99615 -0.86298722000000005 -10.365662 193.05382 -0.31456878999999999 -6.19613839999999971 192.15881 -0.45325777 -6.74721909999999969 191.39688 -0.58326529999999999 -7.367331 191.33585 -0.66756481000000001 -8.35119440000000068 190.58104 -0.79710859000000001 -8.97499939999999974 190.53011 -0.88075101 -9.96412750000000003 190.61244 -0.95570314000000001 -11.022404 193.58795 -0.21321407000000001 -5.63224459999999993 192.47739 -0.37757923999999998 -6.21838430000000031 191.51596 -0.53340374999999995 -6.89688679999999987 191.34256 -0.64408659999999995 -8.06336210000000086 190.39075 -0.799358"
-		+ "73000000002 -8.74780559999999952 190.22697 -0.90949088 -9.92023280000000085 190.21233 -1.011081 -11.185025 194.21819 -0.18049411000000001 -6.06526850000000017 193.14406 -0.33791405000000002 -6.612536 192.19124 -0.48944193000000003 -7.24829390000000018 191.8795 -0.60982543 -8.351553 190.93454 -0.76096856999999996 -8.9929875999999993 190.6306 -0.8809768 -10.101983 190.44801 -0.99508512000000005 -11.299425 193.88606 -0.35636677999999999 -7.84273050000000005 193.09608 -0.46671595999999999 -8.17661189999999927 192.38629 -0.57408977000000005 -8.58059120000000064 192.09756 -0.665842 -9.35277269999999916 191.39249 -0.77304326999999995 -9.76092240000000011 191.10928 -0.86459213000000001 -10.537932 190.90607 -0.95317333999999998 -11.384912 193.99071 -0.37242952000000001 -8.186409 193.27074 -0.46812727999999998 -8.4290894999999999 192.61609 -0.56232082999999999 -8.74053570000000057 192.30588 -0.64858347000000005 -9.41442389999999918 191.65508 -0.74268997000000003 -9.72991850000000014 191.34927 -0.82884860000000005 -10.4"
-		+ "08444 191.10887 -0.91349941000000001 -11.155748 193.79474 -0.39517881999999999 -8.21077060000000003 192.96838 -0.49656426999999997 -8.38243010000000055 192.21338 -0.59756558999999998 -8.64511680000000027 191.83681 -0.69652902999999999 -9.39044479999999915 191.08653 -0.79750425000000003 -9.65913489999999975 190.71471 -0.89644128000000001 -10.410509 190.41458 -0.99499243000000004 -11.253335 193.16713 -0.4949325 -8.62881759999999964 192.30193 -0.59424286999999998 -8.722065 191.50475 -0.694731 -8.92158889999999971 191.06796 -0.80146521000000004 -9.684268 190.27516 -0.90202724999999995 -9.89061640000000075 189.84286 -1.00883820000000002 -10.660307 189.47885 -1.11683289999999991 -11.536696 191.93188 -0.66544150999999996 -9.12512019999999957 191.01251 -0.75883155999999996 -9.07073590000000074 190.16423 -0.85559112000000004 -9.15445519999999924 189.69176 -0.97011917999999997 -9.96774669999999929 188.8481 -1.06709040000000011 -10.060349 188.38017 -1.18184219999999995 -10.882568 187.9834 -1.29995060000000007 -11.84283 "
-		+ "189.90567 -0.98060733 -10.387745 189.06671 -1.06043409999999994 -10.269889 188.28171 -1.14499909999999994 -10.284454 187.78917 -1.25525759999999997 -11.016788 187.00761 -1.34012449999999994 -11.039802 186.51851 -1.45068989999999998 -11.780638 186.08504 -1.56613979999999997 -12.657978 187.83711 -1.29597819999999997 -11.596067 187.13702 -1.35828170000000004 -11.44324 186.47404 -1.42593419999999993 -11.407892 186.00763 -1.5219007 -11.994624 185.34692 -1.58987889999999998 -11.966473 184.88284 -1.68618130000000011 -12.560586 184.45683 -1.78797469999999992 -13.275278 185.62553 -1.60278450000000006 -12.503948 185.07309 -1.64319159999999997 -12.272629 184.54729 -1.6895578 -12.152466 184.16248 -1.76739690000000005 -12.619625 183.63841 -1.81414629999999999 -12.506628 183.25531 -1.89236709999999997 -12.980933 182.89888 -1.97654770000000002 -13.566409 183.70445 -1.84888180000000002 -13.034536 183.27228 -1.86845639999999991 -12.701402 182.86086 -1.89498380000000011 -12.484076 182.55898 -1.95819720000000008 -12.87773 182.1"
-		+ "4694 -1.9845212000000001 -12.657 181.84425 -2.04746410000000001 -13.046171 181.56349 -2.11775920000000006 -13.557755 182.06683 -2.07720709999999986 -13.721263 181.73398 -2.08444710000000022 -13.365609 181.41431 -2.09808210000000006 -13.108526 181.16675 -2.146688 -13.390484 180.84904 -2.16127439999999993 -13.148083 180.6003 -2.20930790000000021 -13.421212 180.36438 -2.263552 -13.790095 180.54387 -2.32423659999999987 -14.798519 180.30728 -2.32547240000000022 -14.496274 180.07616 -2.33029149999999996 -14.246687 179.88269 -2.3598081999999998 -14.359978 179.6489 -2.36287860000000016 -14.084696 179.45599 -2.39275189999999993 -14.203235 179.27309 -2.42918089999999998 -14.418099 196.5014 0.23646452000000001 -3.86089830000000012 196.83284 0.21605439000000001 -4.56424189999999985 197.03172 0.18462086 -5.22887609999999992 196.53113 0.095035843999999994 -5.68901539999999972 196.72148 0.062893621999999996 -6.35114960000000028 196.21237 -0.027400254999999998 -6.80879160000000017 195.57077 -0.12871045 -7.2277269000000004 19"
-		+ "6.92432 0.34178248 -3.09749559999999979 197.28499 0.29880106000000001 -4.12550310000000042 197.4841 0.24239084 -5.1062183000000001 196.82425 0.11456271 -5.8359375 197.01218 0.057221882000000002 -6.8134055 196.34117 -0.071532800999999993 -7.53983690000000006 195.50858 -0.21371962 -8.21900179999999914 197.07866 0.39729625000000002 -2.60296439999999984 197.41568 0.33096038999999999 -3.89445640000000015 197.5779 0.25009062999999998 -5.1348944000000003"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9|FishBowl:Seaweed9Shape" 
-		"pt[498:641]" (" 196.81668 0.092447765000000001 -6.10537770000000002 196.96765 0.010645180000000001 -7.34248589999999979 196.19518 -0.14793339 -8.30966470000000079 195.24792 -0.32104346 -9.22576519999999967 196.58322 0.23798224000000001 -3.95165040000000012 196.96014 0.18796341 -5.09045550000000002 197.16277 0.12345494 -6.17828890000000008 196.44476 -0.017594365000000001 -6.997026 196.63591 -0.083057358999999997 -8.08153150000000053 195.9075 -0.22497295 -8.89723590000000009 195.00464 -0.38139075 -9.66191770000000005 195.89879 0.10311766 -4.73728660000000001 196.20149 0.060512647000000003 -5.6826433999999999 196.36241 0.0061257272000000001 -6.58647920000000031 195.77158 -0.11076701999999999 -7.27065560000000044 195.92284 -0.16596103000000001 -8.17172049999999928 195.32413 -0.28350776 -8.85355850000000011 194.5838 -0.41282650999999998 -9.49400230000000001 196.25255 0.21095770999999999 -3.8490641000000001 196.61986 0.17011367999999999 -4.85896639999999991 196.82452 0.11574634 -5.82132429999999967 196.16957 -0.010089135000000001"
-		+ " -6.53242920000000016 196.36368 -0.065333545000000007 -7.49169969999999985 195.69754 -0.19209767999999999 -8.1994953000000006 194.86911 -0.33235790999999998 -8.859889 196.32018 0.23256611999999999 -3.66670870000000004 196.72269 0.19176436999999999 -4.7233767999999996 196.9503 0.13642322000000001 -5.72888610000000043 196.25365 0.0042344391999999996 -6.46426769999999973 196.46997 -0.052045545999999998 -7.46649459999999987 195.76204 -0.18516954999999999 -8.198554 194.87918 -0.33283808999999998 -8.87950129999999938 196.31351 0.17414235 -4.3964515000000004 196.62888 0.1187209 -5.52086260000000006 196.77907 0.050177886999999997 -6.58927580000000024 196.04768 -0.088406675000000004 -7.35888149999999985 196.18658 -0.15784814999999999 -8.423481 195.4444 -0.297288 -9.18937780000000082 194.53468 -0.45004198000000001 -9.898551 195.70828 -0.056801091999999997 -6.5032867999999997 195.84949 -0.12393909 -7.5418687000000002 195.85899 -0.2006318 -8.524312 195.17232 -0.32783768000000002 -9.21009639999999941 195.17288 -0.40518116"
-		+ "999999998 -10.188751 194.47833 -0.53295707999999997 -10.871188 193.64714 -0.67064661000000003 -11.495375 195.74333 -0.13917914000000001 -7.59192369999999972 195.82454 -0.21420501 -8.64962859999999978 195.77269 -0.29790794999999998 -9.63827129999999954 195.01993 -0.42731672999999998 -10.263135 194.96095 -0.51148426999999996 -11.248086 194.19807 -0.64155375999999997 -11.867709 193.30196 -0.78031318999999999 -12.418192 196.60146 -0.040599103999999997 -7.49840969999999984 196.58682 -0.14218873000000001 -8.76320169999999976 196.42302 -0.25232359999999998 -9.93564989999999959 195.47121 -0.40759455999999999 -10.620079 195.29782 -0.51827758999999995 -11.786557 194.3364 -0.67410040000000004 -12.465051 193.22583 -0.83846485999999998 -13.051175 196.66969 -0.061405659000000001 -7.85315370000000001 196.48709 -0.17551494000000001 -9.0505905000000002 196.18318 -0.29552131999999998 -10.159589 195.23819 -0.44666675 -10.801022 194.92647 -0.56704854999999998 -11.904287 193.97363 -0.71857709000000003 -12.540033 192.89952 -0.8759"
-		+ "9450000000001 -13.087283 195.4989 -0.29653758000000002 -9.25311280000000025 195.29546 -0.38512744999999998 -10.099877 195.01183 -0.47669204999999998 -10.876545 194.30714 -0.58387429000000002 -11.28497 194.01875 -0.67561859000000002 -12.0575 193.30856 -0.78300649 -12.461129 192.51833 -0.89336519999999997 -12.794788 195.30949 -0.34204844000000001 -9.57407569999999986 195.06885 -0.42670390000000002 -10.321107 194.76285 -0.51286566 -10.999391 194.1124 -0.60696620000000001 -11.315285 193.80254 -0.69321834999999998 -11.989532 193.14767 -0.78741837000000003 -12.300759 192.42746 -0.88312345999999997 -12.543202 195.24117 -0.38738662000000001 -10.055509 194.9408 -0.48593997999999999 -10.89804 194.56908 -0.58487630000000002 -11.649536 193.81892 -0.68585180999999995 -11.918416 193.44249 -0.78481334000000003 -12.663894 192.68759 -0.88581430999999999 -12.926709 191.86099 -0.98720121000000005 -13.098075 194.54486 -0.51880693 -10.781652 194.18069 -0.62679821000000002 -11.657793 193.7485 -0.73361164000000001 -12.427655 192.95"
-		+ "592 -0.83417940000000002 -12.634363 192.51936 -0.94091511000000005 -13.397378 191.72229 -1.04140530000000009 -13.597059 190.85693 -1.14071260000000008 -13.690072 193.3689 -0.73341447000000004 -11.915174 192.97214 -0.85152452999999995 -12.875451 192.50421 -0.96627587000000004 -13.697671 191.66055 -1.06324590000000008 -13.790258 191.18808 -1.17777470000000006 -14.603549 190.33978 -1.2745339 -14.687268 189.42043 -1.36792369999999996 -14.632887 191.02682 -1.079109 -13.139419 190.59177 -1.19442610000000005 -14.012954 190.1028 -1.30499779999999999 -14.754036 189.32137 -1.38987670000000008 -14.777363 188.82893 -1.50014449999999999 -15.509967 188.04402 -1.58472030000000008 -15.52479 187.20352 -1.6644076000000001 -15.403112 188.58878 -1.40425859999999991 -13.974973 188.16202 -1.50593709999999992 -14.68721 187.69814 -1.60227 -15.281975 187.0377 -1.67028730000000003 -15.254668 186.57155 -1.7662909 -15.842228 185.90877 -1.8339707999999999 -15.807515 185.20789 -1.89616640000000003 -15.65225 186.16455 -1.72314410000000007 "
-		+ "-14.749904 185.80812 -1.80732139999999997 -15.335345 185.42502 -1.88554569999999999 -15.809674 184.90096 -1.932294 -15.696673 184.51613 -2.01013330000000012 -16.163818 183.99036 -2.05649609999999994 -16.043652 183.4379 -2.09690520000000014 -15.812335 184.12384 -1.98936139999999995 -15.374156 183.84418 -2.060024 -15.891872 183.54378 -2.12373419999999991 -16.293812 183.13385 -2.150758 -16.084743 182.83405 -2.21467379999999991 -16.490086 182.42493 -2.2419665000000002 -16.285511 181.99385 -2.26190969999999991 -15.958513 182.33591 -2.20769450000000012 -15.732598 182.10425 -2.26400759999999979 -16.133364 181.85939 -2.31392430000000004 -16.435528 181.54243 -2.32887289999999991 -16.198698 181.29562 -2.37783770000000017 -16.486195 180.97983 -2.39335750000000003 -16.258163 180.65125 -2.4026660999999998 -15.934402 180.689 -2.41934229999999983 -16.195972 180.5061 -2.45577310000000004 -16.41086 180.31773 -2.48862169999999994 -16.573118 180.09169 -2.4967731999999998 -16.372496 179.90599 -2.53137040000000013 -16.56045 179.6"
-		+ "794 -2.53916379999999986 -16.354553 179.44279 -2.54040379999999999 -16.052361"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10" "rotatePivot" " -type \"double3\" 187.69342803955078125 20.19068717956542969 -23.21642112731933594"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10" "scalePivot" " -type \"double3\" 187.69342803955078125 20.19068717956542969 -23.21642112731933594"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10|FishBowl:Seaweed10Shape" 
-		"pnts" " -s 642"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10|FishBowl:Seaweed10Shape" 
-		"pt[0:165]" (" -type \"float3\" 157.90462 -3.3679342000000001 -46.38623 157.90462 -3.3679342000000001 -46.386215 157.90462 -3.3679342000000001 -46.386215 157.9046 -3.3679342000000001 -46.386211 157.9046 -3.3679342000000001 -46.3862 158.12524 -3.65240259999999983 -46.293873 158.12523 -3.65240259999999983 -46.293858 158.12523 -3.65240259999999983 -46.293858 158.12524 -3.65240259999999983 -46.293846 158.12523 -3.65240259999999983 -46.293842 157.52199 -3.93687060000000022 -46.54641 157.52197 -3.93687060000000022 -46.546394 157.52197 -3.93687060000000022 -46.546394 157.52197 -3.93687060000000022 -46.546391 157.52197 -3.93687060000000022 -46.546375 156.90277 -4.22133830000000021 -46.805637 156.90276 -4.22133830000000021 -46.805618 156.90276 -4.22133830000000021 -46.805618 156.90276 -4.22133830000000021 -46.805603 156.90276 -4.22133830000000021 -46.805592 156.862 -4.505806 -46.822701 156.86198 -4.505806 -46.822685 156.86198 -4.505806 -46.822685 156.86198 -4.505806 -46.82267 156.86198 -4.505806 -46.822666 157.14151 -4.79027460000000"
-		+ "005 -46.705685 157.14151 -4.79027460000000005 -46.705666 157.14151 -4.79027460000000005 -46.705666 157.14151 -4.79027460000000005 -46.705662 157.14149 -4.79027460000000005 -46.70565 157.68159 -5.0747422999999996 -46.479599 157.68158 -5.0747422999999996 -46.47958 157.68158 -5.0747422999999996 -46.47958 157.68158 -5.0747422999999996 -46.479572 157.68158 -5.0747422999999996 -46.479561 157.80669 -5.359211 -46.427231 157.80669 -5.359211 -46.427212 157.80669 -5.359211 -46.427212 157.80667 -5.359211 -46.427197 157.80667 -5.359211 -46.427193 157.34744 -5.64367959999999957 -46.670498 157.34744 -5.64367959999999957 -46.670479 157.34744 -5.64367959999999957 -46.670479 157.34744 -5.64367959999999957 -46.670467 157.34744 -5.64367959999999957 -46.670452 156.52893 -5.92814779999999963 -46.98888 156.52893 -5.92814779999999963 -46.988865 156.52893 -5.92814779999999963 -46.988865 156.52892 -5.92814779999999963 -46.988861 156.52892 -5.92814779999999963 -46.98885 156.15239 -6.21261550000000007 -47.078461 156.15239 -6.21261550000"
-		+ "000007 -47.078445 156.15239 -6.21261550000000007 -47.078445 156.15239 -6.21261550000000007 -47.078442 156.15239 -6.21261550000000007 -47.078426 155.91304 -6.49708370000000013 -47.088982 155.91302 -6.49708370000000013 -47.088974 155.91302 -6.49708370000000013 -47.088974 155.91302 -6.49708370000000013 -47.088959 155.91302 -6.49708370000000013 -47.088947 156.04002 -6.78155230000000042 -47.043571 156.04002 -6.78155230000000042 -47.043556 156.04002 -6.78155230000000042 -47.043556 156.04002 -6.78155230000000042 -47.043545 156.04002 -6.78155230000000042 -47.04353 156.47264 -7.04273080000000018 -46.976711 156.47264 -7.04273080000000018 -46.976688 156.47264 -7.04273080000000018 -46.976688 156.47264 -7.04273080000000018 -46.976688 156.47264 -7.04273080000000018 -46.976677 156.85011 -7.3190021999999999 -46.880779 156.85011 -7.31900119999999976 -46.880764 156.85011 -7.31900119999999976 -46.880764 156.85011 -7.31900119999999976 -46.880756 156.85011 -7.31900119999999976 -46.880756 156.55672 -7.57914919999999981 -46.65971 1"
-		+ "56.5567 -7.57914879999999958 -46.659702 156.5567 -7.57914879999999958 -46.659702 156.55672 -7.57914879999999958 -46.659691 156.55672 -7.57914780000000032 -46.659683 156.08849 -7.82226230000000022 -46.31517 156.08849 -7.82226130000000008 -46.315159 156.08849 -7.82226130000000008 -46.315159 156.08849 -7.82226089999999985 -46.315147 156.08849 -7.82226089999999985 -46.31514 155.30383 -8.0213985000000001 -45.796806 155.30383 -8.02139659999999921 -45.796795 155.30383 -8.02139659999999921 -45.796795 155.30383 -8.02139659999999921 -45.796783 155.30385 -8.02139569999999935 -45.796772 154.19315 -8.144721 -45.064072 154.19316 -8.14471909999999966 -45.06406 154.19316 -8.14471909999999966 -45.06406 154.19316 -8.14471909999999966 -45.064049 154.19316 -8.1447181999999998 -45.064041 153.39809 -8.2694693000000008 -44.328533 153.3981 -8.2694693000000008 -44.328518 153.3981 -8.2694693000000008 -44.328518 153.3981 -8.2694693000000008 -44.32851 153.3981 -8.2694693000000008 -44.32851 152.78993 -8.40199950000000051 -43.600441 152.7"
-		+ "8995 -8.40199849999999948 -43.600433 152.78995 -8.40199849999999948 -43.600433 152.78995 -8.40199849999999948 -43.600426 152.78995 -8.40199759999999962 -43.600422 152.39313 -8.58708380000000027 -42.949326 152.39314 -8.58708290000000041 -42.94931 152.39314 -8.58708290000000041 -42.94931 152.39314 -8.58708290000000041 -42.949306 152.39316 -8.58708290000000041 -42.949306 152.05156 -8.83826260000000019 -42.365509 152.05157 -8.83826260000000019 -42.365498 152.05157 -8.83826260000000019 -42.365498 152.05157 -8.83826260000000019 -42.365486 152.05157 -8.83826260000000019 -42.36549 151.72708 -9.25454620000000006 -41.950596 151.7271 -9.25454620000000006 -41.950588 151.7271 -9.25454620000000006 -41.950588 151.72708 -9.25454620000000006 -41.950592 151.72708 -9.25454620000000006 -41.950584 151.03206 -9.78358169999999916 -41.569912 151.03207 -9.78358270000000019 -41.569908 151.03207 -9.78358270000000019 -41.569908 151.03207 -9.78358270000000019 -41.569893 151.03207 -9.78358270000000019 -41.569893 150.69228 -9.8024921000000"
-		+ "0026 -41.932442 151.049 -9.80948640000000083 -41.601048 151.049 -9.80948640000000083 -41.601048 151.049 -9.80948640000000083 -41.601048 151.4057 -9.81648060000000022 -41.269665 150.58391 -9.82594109999999965 -42.079983 151.0659 -9.835391 -41.632202 151.0659 -9.835391 -41.632202 151.06592 -9.835391 -41.632195 151.54791 -9.844842 -41.184422 150.51102 -9.85008430000000068 -42.194557 151.08282 -9.86129569999999944 -41.663349 151.08282 -9.86129569999999944 -41.663349 151.08282 -9.86129569999999944 -41.663349 151.65463 -9.87250610000000073 -41.132145 150.62267 -9.87784480000000009 -42.137714 151.09975 -9.88719940000000008 -41.694504 151.09975 -9.88719940000000008 -41.694504 151.09975 -9.88719940000000008 -41.694504 151.57684 -9.89655209999999919 -41.251282 150.55278 -9.90204720000000016 -42.249489 151.11667 -9.91310310000000072 -41.725651 151.11667 -9.91310310000000072 -41.725651 151.11667 -9.91310310000000072 -41.725647 151.68054 -9.924159 -41.201805 150.66266 -9.92977430000000005 -42.19429 151.13358 -9.9390067999"
-		+ "9999959 -41.756798 151.13358 -9.93900679999999959 -41.756798 151.13358 -9.93900679999999959 -41.756798 151.60451 -9.94824030000000015 -41.319305 150.80583 -9.95815280000000058 -42.108154 151.1505 -9.96491050000000023 -41.787952 151.1505 -9.96491050000000023 -41.787952 151.1505 -9.96491050000000023 -41.787945 151.49518 -9.97166819999999987 -41.467743 151.1674 -9.99081130000000073 -41.819107 151.16742 -9.99081420000000087 -41.819099 151.16742 -9.99081229999999998 -41.819092 151.16743 -9.99081420000000087 -41.819096 151.16742 -9.99081229999999998 -41.819088 152.69771 -9.97826960000000085 -42.931808"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10|FishBowl:Seaweed10Shape" 
-		"pt[166:331]" (" 152.69771 -9.97826960000000085 -42.931808 152.69771 -9.97826960000000085 -42.931808 152.69771 -9.97826960000000085 -42.931808 152.69772 -9.97826960000000085 -42.931801 153.50861 -9.53500939999999986 -43.426216 153.50861 -9.53500939999999986 -43.426216 153.50861 -9.53500939999999986 -43.426216 153.50862 -9.53500939999999986 -43.426208 153.50862 -9.53500939999999986 -43.426208 154.35234 -9.25337410000000027 -44.082893 154.35236 -9.25337410000000027 -44.082882 154.35236 -9.25337410000000027 -44.082882 154.35236 -9.25337410000000027 -44.082878 154.35236 -9.25337410000000027 -44.082874 155.41191 -9.06718919999999962 -44.858768 155.41193 -9.06718919999999962 -44.858753 155.41193 -9.06718919999999962 -44.858753 155.41193 -9.06718829999999976 -44.858753 155.41194 -9.06718829999999976 -44.858742 156.78261 -8.92341419999999985 -45.69664 156.78262 -8.92341329999999999 -45.696621 156.78262 -8.92341329999999999 -45.696621 156.78262 -8.92341230000000074 -45.696609 156.78262 -8.92341230000000074 -45.696609 158.17105 -8.731"
-		+ "87260000000087 -46.414341 158.17105 -8.73187159999999984 -46.414333 158.17105 -8.73187159999999984 -46.414333 158.17107 -8.73187159999999984 -46.414322 158.17107 -8.73187159999999984 -46.414314 159.58344 -8.4980525999999994 -46.992184 159.58344 -8.49805160000000015 -46.992168 159.58344 -8.49805160000000015 -46.992168 159.58344 -8.49805070000000029 -46.992161 159.58345 -8.49805070000000029 -46.992153 160.26816 -8.16306209999999943 -47.235447 160.26817 -8.16306209999999943 -47.235432 160.26817 -8.16306209999999943 -47.235432 160.26817 -8.16306209999999943 -47.235424 160.26817 -8.16306110000000018 -47.235424 160.58719 -7.80618570000000034 -47.302967 160.58719 -7.80618519999999982 -47.302956 160.58719 -7.80618519999999982 -47.302956 160.58719 -7.80618519999999982 -47.302944 160.5872 -7.80618519999999982 -47.302937 160.49666 -7.4455581000000004 -47.230225 160.49666 -7.44555710000000026 -47.230213 160.49666 -7.44555710000000026 -47.230213 160.49666 -7.44555710000000026 -47.230202 160.49666 -7.44555710000000026 -47."
-		+ "230202 160.51939 -7.10764840000000042 -47.088112 160.51939 -7.10764840000000042 -47.0881 160.51939 -7.10764840000000042 -47.0881 160.51939 -7.10764789999999991 -47.088097 160.51939 -7.10764789999999991 -47.088089 161.61522 -6.78155230000000042 -46.78508 161.61523 -6.78155230000000042 -46.785057 161.61523 -6.78155230000000042 -46.785057 161.61522 -6.78155230000000042 -46.785053 161.61522 -6.78155230000000042 -46.785042 161.48982 -6.49708459999999999 -46.398685 161.48982 -6.49708459999999999 -46.398663 161.48982 -6.49708459999999999 -46.398663 161.48981 -6.49708459999999999 -46.398659 161.48981 -6.49708459999999999 -46.398643 160.73289 -6.21261639999999993 -46.150066 160.73288 -6.21261639999999993 -46.150051 160.73288 -6.21261639999999993 -46.150051 160.73289 -6.21261639999999993 -46.15004 160.73289 -6.21261639999999993 -46.150028 161.0143 -5.92814779999999963 -45.714626 161.0143 -5.92814779999999963 -45.714607 161.0143 -5.92814779999999963 -45.714607 161.01428 -5.92814779999999963 -45.714607 161.01428 -5.92814"
-		+ "779999999963 -45.714592 162.02605 -5.64368010000000009 -44.943455 162.02605 -5.64368010000000009 -44.943436 162.02605 -5.64368010000000009 -44.943436 162.02605 -5.64368010000000009 -44.94342 162.02603 -5.64368010000000009 -44.943409 162.10666 -5.359211 -44.627155 162.10666 -5.359211 -44.627129 162.10666 -5.359211 -44.627129 162.10664 -5.359211 -44.627121 162.10664 -5.359211 -44.62711 161.81461 -5.07474329999999973 -44.749413 161.81459 -5.07474329999999973 -44.749393 161.81459 -5.07474329999999973 -44.749393 161.81459 -5.07474329999999973 -44.749386 161.81459 -5.07474329999999973 -44.749374 161.06532 -4.79027460000000005 -45.06308 161.06531 -4.79027460000000005 -45.063065 161.06531 -4.79027460000000005 -45.063065 161.06531 -4.79027460000000005 -45.063061 161.06531 -4.79027460000000005 -45.063053 161.57237 -4.50580689999999962 -44.850815 161.57237 -4.50580689999999962 -44.850796 161.57237 -4.50580689999999962 -44.850796 161.57236 -4.50580689999999962 -44.850792 161.57236 -4.50580689999999962 -44.850777 162.3658"
-		+ "8 -4.22133870000000044 -44.518642 162.36586 -4.22133870000000044 -44.518623 162.36586 -4.22133870000000044 -44.518623 162.36586 -4.22133870000000044 -44.518612 162.36586 -4.22133870000000044 -44.518597 161.74667 -3.93687060000000022 -44.777855 161.74667 -3.93687060000000022 -44.777828 161.74667 -3.93687060000000022 -44.777828 161.74667 -3.93687060000000022 -44.777813 161.74666 -3.93687060000000022 -44.777809 160.90253 -3.65240259999999983 -45.131233 160.90251 -3.65240259999999983 -45.131218 160.90251 -3.65240259999999983 -45.131218 160.90251 -3.65240259999999983 -45.131214 160.90251 -3.65240259999999983 -45.131199 161.36403 -3.3679342000000001 -44.93803 161.36403 -3.3679342000000001 -44.938015 161.36403 -3.3679342000000001 -44.938015 161.36403 -3.3679342000000001 -44.938011 161.36403 -3.3679342000000001 -44.937996 161.27545 -3.3679342000000001 -45.940418 160.93159 -3.3679342000000001 -45.119041 160.93159 -3.3679342000000001 -45.119041 160.93159 -3.3679342000000001 -45.119034 160.58775 -3.3679342000000001 -44."
-		+ "297661 160.96806 -3.3679342000000001 -46.420155 160.49918 -3.3679342000000001 -45.300068 160.49918 -3.3679342000000001 -45.300068 160.49916 -3.3679342000000001 -45.30006 160.03027 -3.3679342000000001 -44.179974 160.62666 -3.3679342000000001 -46.818588 160.06674 -3.3679342000000001 -45.481094 160.06674 -3.3679342000000001 -45.481094 160.06674 -3.3679342000000001 -45.481083 159.50684 -3.3679342000000001 -44.143597 160.10541 -3.3679342000000001 -46.787441 159.63431 -3.3679342000000001 -45.662117 159.63431 -3.3679342000000001 -45.662117 159.63431 -3.3679342000000001 -45.662113 159.16322 -3.3679342000000001 -44.536789 159.7618 -3.3679342000000001 -47.180637 159.20189 -3.3679342000000001 -45.84314 159.20189 -3.3679342000000001 -45.84314 159.20189 -3.3679342000000001 -45.843136 158.64197 -3.3679342000000001 -44.505646 159.23836 -3.3679342000000001 -47.144253 158.76945 -3.3679342000000001 -46.02417 158.76945 -3.3679342000000001 -46.02417 158.76945 -3.3679342000000001 -46.024158 158.30057 -3.3679342000000001 -44.90407"
-		+ "9 158.68088 -3.3679342000000001 -47.026577 158.33704 -3.3679342000000001 -46.205189 158.33704 -3.3679342000000001 -46.205189 158.33702 -3.3679342000000001 -46.205189 157.99318 -3.3679342000000001 -45.383816 160.21031 -3.65240259999999983 -44.452347 159.73767 -3.65240259999999983 -44.297894 159.29919 -3.65240259999999983 -44.225109 159.04114 -3.65240259999999983 -44.583298 158.60487 -3.65240259999999983 -44.51577 158.34903 -3.65240259999999983 -44.879215 158.12737 -3.65240259999999983 -45.324291 160.79518 -3.93687060000000022 -43.987473 160.11319 -3.93687060000000022 -43.840935 159.4729 -3.93687060000000022 -43.793949 159.05412 -3.93687060000000022 -44.276192 158.41672 -3.93687060000000022 -44.236095"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10|FishBowl:Seaweed10Shape" 
-		"pt[332:497]" (" 158.00084 -3.93687060000000022 -44.725212 157.62665 -3.93687060000000022 -45.313896 161.22755 -4.22133830000000021 -43.716576 160.37904 -4.22133830000000021 -43.606804 159.57559 -4.22133830000000021 -43.604729 159.01036 -4.22133830000000021 -44.171616 158.20982 -4.22133830000000021 -44.176476 157.64749 -4.22133830000000021 -44.750305 157.13023 -4.22133830000000021 -45.43182 160.5296 -4.505806 -44.012833 159.77571 -4.505806 -43.864994 159.0668 -4.505806 -43.824543 158.59534 -4.505806 -44.351326 157.88939 -4.505806 -44.317932 157.42059 -4.505806 -44.851131 156.99683 -4.505806 -45.491814 160.20457 -4.79027460000000005 -44.383884 159.57948 -4.79027460000000005 -44.267685 158.991 -4.79027460000000005 -44.238827 158.59637 -4.79027460000000005 -44.673161 158.01036 -4.79027460000000005 -44.650261 157.61778 -4.79027460000000005 -45.089451 157.26173 -4.79027460000000005 -45.615891 160.87405 -5.0747422999999996 -43.953053 160.20314 -5.0747422999999996 -43.800774 159.57419 -5.0747422999999996 -43.748726 159.16695 -5.074"
-		+ "7422999999996 -44.226303 158.54073 -5.0747422999999996 -44.180748 158.13638 -5.0747422999999996 -44.665234 157.7739 -5.0747422999999996 -45.24971 161.11333 -5.359211 -43.763275 160.41006 -5.359211 -43.5923 159.75192 -5.359211 -43.529095 159.33215 -5.359211 -44.035378 158.67691 -5.359211 -43.979122 158.26007 -5.359211 -44.49234 157.88834 -5.359211 -45.113338 161.04639 -5.64367959999999957 -44.08976 160.31818 -5.64367959999999957 -43.917191 159.62866 -5.64367959999999957 -43.849453 159.14568 -5.64367959999999957 -44.341236 158.45882 -5.64367959999999957 -44.280666 157.97836 -5.64367959999999957 -44.779308 157.53716 -5.64367959999999957 -45.384277 160.20062 -5.92814779999999963 -44.983337 159.54794 -5.92814779999999963 -44.81876 158.9203 -5.92814779999999963 -44.742317 158.42505 -5.92814779999999963 -45.131844 157.7991 -5.92814779999999963 -45.061386 157.30533 -5.92814779999999963 -45.456177 156.83755 -5.92814779999999963 -45.942425 159.96785 -6.21261550000000007 -45.31646 159.32541 -6.21261550000000007 -45.0878"
-		+ "22 158.70204 -6.21261550000000007 -44.953148 158.17899 -6.21261550000000007 -45.313438 157.55664 -6.21261550000000007 -45.183788 157.03502 -6.21261550000000007 -45.551224 156.53249 -6.21261550000000007 -46.012756 160.65358 -6.49708370000000013 -45.360889 159.90588 -6.49708370000000013 -45.038395 159.17195 -6.49708370000000013 -44.82716 158.51079 -6.49708370000000013 -45.2038 157.77776 -6.49708370000000013 -44.999733 157.11749 -6.49708370000000013 -45.383545 156.47099 -6.49708370000000013 -45.878616 160.87344 -6.78155230000000042 -45.849369 160.16022 -6.78155230000000042 -45.529652 159.45143 -6.78155230000000042 -45.305744 158.76613 -6.78155230000000042 -45.588097 158.05765 -6.78155230000000042 -45.370369 157.3726 -6.78155230000000042 -45.658901 156.69205 -6.78155230000000042 -46.043243 160.03642 -7.08884380000000025 -46.390774 159.53889 -7.07684089999999966 -46.128326 159.03909 -7.06590179999999979 -45.933819 158.52736 -7.06054539999999964 -46.096146 158.02742 -7.04966830000000044 -45.905659 157.51552 -7.0443"
-		+ "8350000000035 -46.072659 157.00134 -7.04015970000000024 -46.307461 160.11324 -7.41221619999999959 -46.581131 159.68375 -7.39002849999999967 -46.317413 159.24707 -7.36957739999999983 -46.113689 158.77257 -7.35827779999999976 -46.226192 158.33546 -7.33792780000000011 -46.025993 157.86047 -7.326746 -46.142555 157.37833 -7.31730220000000031 -46.319141 160.23824 -7.748817 -46.494404 159.79074 -7.70989470000000043 -46.149197 159.32797 -7.67383379999999971 -45.875847 158.78415 -7.65294119999999989 -45.983505 158.32037 -7.61706829999999968 -45.714897 157.77556 -7.5963674000000001 -45.827332 157.21538 -7.57853940000000037 -46.011963 159.9873 -8.08337210000000006 -46.348198 159.5527 -8.02728369999999991 -45.952347 159.09424 -7.97485779999999966 -45.632736 158.50938 -7.94183540000000043 -45.717121 158.04939 -7.88964649999999956 -45.402416 157.46297 -7.85686589999999985 -45.491837 156.85258 -7.82776169999999993 -45.657795 159.43195 -8.38980869999999967 -45.929115 159.03647 -8.31253049999999938 -45.447433 158.603 -8.24006"
-		+ "649999999929 -45.056175 157.96901 -8.19305519999999987 -45.142757 157.53311 -8.12090489999999932 -44.757343 156.89665 -8.07420160000000031 -44.849743 156.22226 -8.03231809999999946 -45.032578 158.11369 -8.61292270000000038 -45.418522 157.77492 -8.52311229999999931 -44.951775 157.39381 -8.43769069999999921 -44.564632 156.78323 -8.3760356999999992 -44.608952 156.39943 -8.29089360000000042 -44.226891 155.78613 -8.22951789999999939 -44.276306 155.1292 -8.17266270000000006 -44.407784 156.78679 -8.80662820000000046 -44.865047 156.5191 -8.71214389999999916 -44.453831 156.2092 -8.62111849999999968 -44.107849 155.67586 -8.54842089999999999 -44.107342 155.36337 -8.45761010000000013 -43.765362 154.82738 -8.3851299000000008 -43.768955 154.24806 -8.31620030000000021 -43.8395 155.526 -8.95688819999999986 -44.12051 155.35893 -8.86386590000000041 -43.751949 155.14812 -8.773531 -43.44088 154.70624 -8.69739530000000016 -43.433662 154.49261 -8.607233 -43.126305 154.04794 -8.53127379999999924 -43.122787 153.55951 -8.457997300000"
-		+ "00061 -43.176777 154.60159 -9.14963820000000005 -43.371567 154.53639 -9.05891510000000011 -43.022713 154.42229 -8.97021960000000007 -42.730251 154.05009 -8.8921986000000004 -42.735294 153.93741 -8.80343910000000029 -42.441174 153.56711 -8.72534369999999981 -42.444038 153.1451 -8.64938549999999928 -42.506504 153.77499 -9.43831250000000033 -42.826839 153.76154 -9.34760570000000079 -42.518703 153.70412 -9.25784110000000027 -42.256317 153.4063 -9.17322350000000064 -42.244129 153.34233 -9.0836029000000007 -41.988564 153.04845 -8.99890139999999938 -41.972279 152.71185 -8.91511440000000022 -42.000443 152.90054 -9.88741109999999956 -42.495323 152.89917 -9.79680059999999919 -42.256535 152.87338 -9.70621970000000012 -42.041397 152.67923 -9.61584470000000024 -41.989239 152.66536 -9.52524949999999926 -41.762562 152.46878 -9.43487550000000041 -41.712765 152.22751 -9.34455490000000033 -41.70623 160.90038 -3.65240259999999983 -46.10075 160.67873 -3.65240259999999983 -46.54586 160.42287 -3.65240259999999983 -46.909313 159.98"
-		+ "66 -3.65240259999999983 -46.841774 159.72855 -3.65240259999999983 -47.19997 159.29008 -3.65240259999999983 -47.127174 158.81744 -3.65240259999999983 -46.972759 161.642 -3.93687060000000022 -46.010326 161.26779 -3.93687060000000022 -46.599018 160.85193 -3.93687060000000022 -47.088127 160.21449 -3.93687060000000022 -47.048042 159.79575 -3.93687060000000022 -47.530277 159.15544 -3.93687060000000022 -47.483303 158.47348 -3.93687060000000022 -47.33675 162.13843 -4.22133830000000021 -45.892403 161.62115 -4.22133830000000021 -46.573921 161.05881 -4.22133830000000021 -47.147758"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10|FishBowl:Seaweed10Shape" 
-		"pt[498:641]" (" 160.25827 -4.22133830000000021 -47.152618 159.69302 -4.22133830000000021 -47.719505 158.8896 -4.22133830000000021 -47.717419 158.04109 -4.22133830000000021 -47.607651 161.43756 -4.505806 -46.181725 161.01382 -4.505806 -46.822544 160.54515 -4.505806 -47.355965 159.83902 -4.505806 -47.322155 159.36737 -4.505806 -47.848522 158.65855 -4.505806 -47.8083 157.90474 -4.505806 -47.66058 160.94511 -4.79027460000000005 -46.152885 160.58923 -4.79027460000000005 -46.679756 160.19681 -4.79027460000000005 -47.119236 159.61046 -4.79027460000000005 -47.09557 159.21552 -4.79027460000000005 -47.529121 158.62714 -4.79027460000000005 -47.50058 158.00224 -4.79027460000000005 -47.384789 161.72188 -5.0747422999999996 -45.978291 161.35953 -5.0747422999999996 -46.56311 160.95523 -5.0747422999999996 -47.04771 160.32921 -5.0747422999999996 -47.002682 159.9222 -5.0747422999999996 -47.480778 159.29329 -5.0747422999999996 -47.428833 158.62253 -5.0747422999999996 -47.276905 162.02499 -5.359211 -45.941006 161.65326 -5.359211 -46.562008 161."
-		+ "23642 -5.359211 -47.075226 160.58116 -5.359211 -47.018978 160.16141 -5.359211 -47.525253 159.50327 -5.359211 -47.462048 158.79999 -5.359211 -47.291073 161.83601 -5.64367959999999957 -46.228878 161.39459 -5.64367959999999957 -46.833202 160.91446 -5.64367959999999957 -47.332695 160.22778 -5.64367959999999957 -47.272682 159.74501 -5.64367959999999957 -47.765011 159.05582 -5.64367959999999957 -47.69812 158.32735 -5.64367959999999957 -47.524929 160.70662 -5.92814779999999963 -46.76445 160.23796 -5.92814779999999963 -47.247601 159.74426 -5.92814779999999963 -47.642593 159.11816 -5.92814779999999963 -47.571632 158.62276 -5.92814779999999963 -47.960651 157.99518 -5.92814779999999963 -47.884434 157.34163 -5.92814779999999963 -47.716747 160.35281 -6.21261550000000007 -47.215733 159.85011 -6.21261550000000007 -47.676476 159.32835 -6.21261550000000007 -48.043251 158.7063 -6.21261550000000007 -47.915054 158.18353 -6.21261550000000007 -48.276802 157.56003 -6.21261550000000007 -48.14146 156.91743 -6.21261550000000007 -47.91"
-		+ "2033 160.93185 -6.49708370000000013 -47.609013 160.28535 -6.49708370000000013 -48.104092 159.62508 -6.49708370000000013 -48.487904 158.89204 -6.49708370000000013 -48.283833 158.2309 -6.49708370000000013 -48.660473 157.49696 -6.49708370000000013 -48.449238 156.74927 -6.49708370000000013 -48.126736 160.9632 -6.78155230000000042 -47.785378 160.28262 -6.78155230000000042 -48.169716 159.5976 -6.78155230000000042 -48.45826 158.88911 -6.78155230000000042 -48.24052 158.20381 -6.78155230000000042 -48.522884 157.49503 -6.78155230000000042 -48.298965 156.78181 -6.78155230000000042 -47.979248 159.99068 -7.11022230000000022 -47.757572 159.47652 -7.10599470000000011 -47.992172 158.96463 -7.10070509999999988 -48.158833 158.46469 -7.08983369999999979 -47.968647 157.95293 -7.08448079999999969 -48.131279 157.45314 -7.07353640000000006 -47.936436 156.95561 -7.06153060000000021 -47.673771 159.96841 -7.44725889999999957 -47.791939 159.4863 -7.437808 -47.968292 159.01134 -7.42662050000000029 -48.084652 158.57419 -7.406280500000000"
-		+ "27 -47.884792 158.09966 -7.39499040000000019 -47.99762 157.66299 -7.37453369999999975 -47.793697 157.23354 -7.35234020000000044 -47.529762 159.92853 -7.80679459999999992 -47.950691 159.36839 -7.78895759999999981 -48.135082 158.82356 -7.7682595000000001 -48.247616 158.35974 -7.73239330000000002 -47.979153 157.81592 -7.71150680000000044 -48.086937 157.35312 -7.67544890000000013 -47.813686 156.90567 -7.63651750000000007 -47.468246 159.50412 -8.15755180000000024 -47.892597 158.8938 -8.1284389000000008 -48.058384 158.30733 -8.095665 -48.147923 157.84726 -8.0434865999999996 -47.833466 157.26233 -8.01047709999999924 -47.918102 156.80383 -7.95805640000000025 -47.598602 156.36928 -7.90195989999999959 -47.202583 158.66502 -8.48713210000000018 -47.756382 157.99063 -8.44524859999999933 -47.939224 157.35417 -8.3985442999999993 -48.031628 156.91827 -8.32639409999999991 -47.646202 156.28429 -8.27938269999999932 -47.73278 155.85081 -8.20691970000000026 -47.341526 155.45534 -8.12964149999999997 -46.859848 157.23398 -8.7040366"
-		+ "9999999963 -47.072571 156.57823 -8.64705280000000087 -47.201744 155.96486 -8.58568759999999997 -47.25132 155.58096 -8.500556 -46.869446 154.97031 -8.4389094999999994 -46.913925 154.58911 -8.35349459999999944 -46.526932 154.25156 -8.26356029999999997 -46.057899 155.93231 -8.87670989999999982 -46.186169 155.35388 -8.80771060000000006 -46.255363 154.81766 -8.73524759999999922 -46.259315 154.50487 -8.64446159999999963 -45.917805 153.97122 -8.57178779999999918 -45.917759 153.6611 -8.48078349999999936 -45.572136 153.39427 -8.38622379999999978 -45.15955 154.64235 -9.01119040000000027 -45.282425 154.15395 -8.93791479999999972 -45.336399 153.70924 -8.86195370000000082 -45.332886 153.49562 -8.77179150000000085 -45.025532 153.05374 -8.69565580000000082 -45.018303 152.84296 -8.60532380000000074 -44.707245 152.67587 -8.51229949999999924 -44.338676 153.6133 -9.19053360000000019 -44.510803 153.18871 -9.11468409999999984 -44.576256 152.813 -9.03681090000000076 -44.585335 152.6954 -8.94825550000000014 -44.296894 152.31827 -8."
-		+ "8704414000000007 -44.307625 152.19878 -8.78196619999999939 -44.021378 152.13098 -8.69135 -43.675507 152.87798 -9.45752240000000022 -43.76041 152.52716 -9.37403959999999969 -43.803371 152.22034 -9.28961660000000045 -43.800564 152.15388 -9.20004460000000002 -43.547581 151.85359 -9.11548329999999929 -43.537968 151.78322 -9.02599529999999994 -43.289066 151.75554 -8.93559459999999994 -42.995731 152.25223 -9.88819409999999976 -43.122986 152.01094 -9.79787349999999968 -43.116459 151.79408 -9.70752330000000008 -43.086296 151.74557 -9.616972 -42.893154 151.51678 -9.5266371000000003 -42.874535 151.47072 -9.43608090000000033 -42.679016 151.46931 -9.34547039999999996 -42.44025"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11" "rotatePivot" " -type \"double3\" 162.685455322265625 20.19068717956542969 16.19692039489746094"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11" "scalePivot" " -type \"double3\" 162.685455322265625 20.19068717956542969 16.19692039489746094"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11|FishBowl:Seaweed11Shape" 
-		"pnts" " -s 642"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11|FishBowl:Seaweed11Shape" 
-		"pt[0:165]" (" -type \"float3\" 133.33244 -3.3679342000000001 -6.9101796000000002 133.33243 -3.3679342000000001 -6.910162 133.33243 -3.3679342000000001 -6.910162 133.33243 -3.3679342000000001 -6.9101581999999997 133.33243 -3.3679342000000001 -6.9101442999999998 133.57268 -3.65240259999999983 -6.76232529999999965 133.57266 -3.65240259999999983 -6.76230669999999989 133.57266 -3.65240259999999983 -6.76230669999999989 133.57266 -3.65240259999999983 -6.76229380000000013 133.57265 -3.65240259999999983 -6.76228859999999976 132.9158 -3.93687060000000022 -7.16660930000000018 132.9158 -3.93687060000000022 -7.16659160000000028 132.9158 -3.93687060000000022 -7.16659160000000028 132.91579 -3.93687060000000022 -7.16658639999999991 132.91579 -3.93687060000000022 -7.16657109999999964 132.24158 -4.22133830000000021 -7.58159730000000032 132.24156 -4.22133830000000021 -7.58157730000000019 132.24156 -4.22133830000000021 -7.58157730000000019 132.24156 -4.22133830000000021 -7.581562 132.24156 -4.22133830000000021 -7.58154820000000029 132.19717 -4"
-		+ ".505806 -7.6089190999999996 132.19717 -4.505806 -7.60890009999999961 132.19717 -4.505806 -7.60890009999999961 132.19716 -4.505806 -7.60888390000000037 132.19716 -4.505806 -7.60887959999999985 132.50154 -4.79027460000000005 -7.421587 132.50153 -4.79027460000000005 -7.42156929999999981 132.50153 -4.79027460000000005 -7.42156929999999981 132.50153 -4.79027460000000005 -7.42156549999999982 132.50151 -4.79027460000000005 -7.42155029999999982 133.0896 -5.0747422999999996 -7.059648 133.08958 -5.0747422999999996 -7.05962750000000039 133.08958 -5.0747422999999996 -7.05962750000000039 133.08958 -5.0747422999999996 -7.05962230000000002 133.08957 -5.0747422999999996 -7.059607 133.22581 -5.359211 -6.975812 133.2258 -5.359211 -6.97579189999999993 133.2258 -5.359211 -6.97579189999999993 133.2258 -5.359211 -6.97577520000000018 133.22578 -5.359211 -6.97577140000000018 132.73508 -5.64367959999999957 -7.34303 132.73506 -5.64367959999999957 -7.34300949999999997 132.73506 -5.64367959999999957 -7.34300949999999997 132.73506 -5.643"
-		+ "67959999999957 -7.34299560000000007 132.73505 -5.64367959999999957 -7.34297939999999993 131.8394 -5.92814779999999963 -7.86329749999999983 131.8394 -5.92814779999999963 -7.8632812000000003 131.8394 -5.92814779999999963 -7.8632812000000003 131.83939 -5.92814779999999963 -7.86327740000000031 131.83939 -5.92814779999999963 -7.86326220000000031 131.41701 -6.21261550000000007 -8.03635219999999961 131.41699 -6.21261550000000007 -8.036334 131.41699 -6.21261550000000007 -8.036334 131.41699 -6.21261550000000007 -8.03633020000000009 131.41698 -6.21261550000000007 -8.036314 131.14003 -6.49708370000000013 -8.092268 131.14 -6.49708370000000013 -8.0922584999999998 131.14 -6.49708370000000013 -8.0922584999999998 131.14 -6.49708370000000013 -8.09224410000000027 131.14 -6.49708370000000013 -8.09222890000000028 131.27971 -6.78155230000000042 -8.01619340000000058 131.27969 -6.78155230000000042 -8.01617620000000031 131.27969 -6.78155230000000042 -8.01617620000000031 131.27969 -6.78155230000000042 -8.01616379999999928 131.27969 -"
-		+ "6.78155230000000042 -8.01614760000000004 131.77159 -7.04273080000000018 -7.859385 131.77159 -7.04273080000000018 -7.85935930000000038 131.77159 -7.04273080000000018 -7.85935930000000038 131.77159 -7.04273080000000018 -7.85935640000000024 131.77159 -7.04273080000000018 -7.85934539999999959 132.19392 -7.3190021999999999 -7.67875719999999973 132.19392 -7.31900119999999976 -7.67874380000000034 132.19392 -7.31900119999999976 -7.67874380000000034 132.19392 -7.31900119999999976 -7.67873240000000035 132.19392 -7.31900119999999976 -7.67873 131.81174 -7.57914919999999981 -7.4746794999999997 131.81172 -7.57914879999999958 -7.47467180000000031 131.81172 -7.57914879999999958 -7.47467180000000031 131.81174 -7.57914879999999958 -7.474658 131.81174 -7.57914780000000032 -7.474647 131.20331 -7.82226230000000022 -7.15862040000000022 131.20331 -7.82226130000000008 -7.15860559999999957 131.20331 -7.82226130000000008 -7.15860559999999957 131.20331 -7.82226089999999985 -7.15859410000000018 131.20332 -7.82226089999999985 -7.15858080"
-		+ "000000019 130.19449 -8.0213985000000001 -6.69773149999999973 130.19449 -8.02139659999999921 -6.69771669999999997 130.19449 -8.02139659999999921 -6.69771669999999997 130.19449 -8.02139659999999921 -6.69770290000000035 130.1945 -8.02139569999999935 -6.69768950000000007 128.76668 -8.144721 -6.04651829999999979 128.76668 -8.14471909999999966 -6.04650640000000017 128.76668 -8.14471909999999966 -6.04650640000000017 128.76668 -8.14471909999999966 -6.04649160000000041 128.76669 -8.1447181999999998 -6.0464815999999999 127.70612 -8.2694693000000008 -5.33447840000000006 127.70612 -8.2694693000000008 -5.33445639999999965 127.70612 -8.2694693000000008 -5.33445639999999965 127.70613 -8.2694693000000008 -5.334444 127.70613 -8.2694693000000008 -5.334444 126.86469 -8.40199950000000051 -4.59702110000000008 126.8647 -8.40199849999999948 -4.59700869999999995 126.8647 -8.40199849999999948 -4.59700869999999995 126.86471 -8.40199849999999948 -4.59699870000000033 126.86471 -8.40199759999999962 -4.59699629999999981 126.28358 -8.58708"
-		+ "380000000027 -3.91070679999999982 126.2836 -8.58708290000000041 -3.91068719999999992 126.2836 -8.58708290000000041 -3.91068719999999992 126.2836 -8.58708290000000041 -3.91068479999999985 126.2836 -8.58708290000000041 -3.91068239999999978 125.77911 -8.83826260000000019 -3.2927388999999998 125.77911 -8.83826260000000019 -3.29272650000000011 125.77911 -8.83826260000000019 -3.29272650000000011 125.77911 -8.83826260000000019 -3.29271169999999991 125.77911 -8.83826260000000019 -3.29271439999999993 125.32534 -9.25454620000000006 -2.86846230000000002 125.32535 -9.25454620000000006 -2.86845280000000002 125.32535 -9.25454620000000006 -2.86845280000000002 125.32534 -9.25454620000000006 -2.86845989999999995 125.32535 -9.25454620000000006 -2.86845019999999984 124.44608 -9.78358169999999916 -2.551651 124.44608 -9.78358270000000019 -2.55164379999999991 124.44608 -9.78358270000000019 -2.55164379999999991 124.44608 -9.78358270000000019 -2.55162909999999998 124.44608 -9.78358270000000019 -2.55162909999999998 124.11626 -9.80249"
-		+ "210000000026 -3.03604869999999982 124.47147 -9.80948640000000083 -2.5848422000000002 124.47147 -9.80948640000000083 -2.5848422000000002 124.47147 -9.80948640000000083 -2.5848422000000002 124.82668 -9.81648060000000022 -2.13365340000000003 124.01691 -9.82594109999999965 -3.22772529999999991 124.49687 -9.835391 -2.61806060000000018 124.49687 -9.835391 -2.61806060000000018 124.49688 -9.835391 -2.61805079999999979 124.97684 -9.844842 -2.00838880000000009 123.95287 -9.85008430000000068 -3.37452549999999984 124.52226 -9.86129569999999944 -2.651264 124.52226 -9.86129569999999944 -2.651264 124.52227 -9.86129569999999944 -2.65126660000000003 125.09165 -9.87250610000000073 -1.928015 124.07259 -9.87784480000000009 -3.28793 124.54766 -9.88719940000000008 -2.68448229999999999 124.54766 -9.88719940000000008 -2.68448229999999999 124.54766 -9.88719940000000008 -2.68448229999999999 125.02274 -9.89655209999999919 -2.08102009999999993 124.01157 -9.90204720000000016 -3.43091150000000011 124.57306 -9.91310310000000072 -2.71768829"
-		+ "999999983 124.57306 -9.91310310000000072 -2.71768829999999983 124.57306 -9.91310310000000072 -2.71768330000000002 125.13455 -9.924159 -2.00445770000000012 124.12952 -9.92977430000000005 -3.34655639999999988 124.59845 -9.93900679999999959 -2.75089650000000008 124.59845 -9.93900679999999959 -2.75089650000000008 124.59845 -9.93900679999999959 -2.75089650000000008 125.06739 -9.94824030000000015 -2.1552346 124.28063 -9.95815280000000058 -3.22007660000000007 124.62384 -9.96491050000000023 -2.78411249999999999 124.62384 -9.96491050000000023 -2.78411249999999999 124.62385 -9.96491050000000023 -2.78410240000000009 124.96707 -9.97166819999999987 -2.34813379999999983 124.64923 -9.99081130000000073 -2.817328 124.64924 -9.99081420000000087 -2.8173184 124.64925 -9.99081229999999998 -2.81730839999999993 124.64925 -9.99081420000000087 -2.817311 124.64924 -9.99081229999999998 -2.81730340000000012 126.63528 -9.97826960000000085 -3.83474419999999983"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11|FishBowl:Seaweed11Shape" 
-		"pt[166:331]" (" 126.63529 -9.97826960000000085 -3.83474449999999978 126.63529 -9.97826960000000085 -3.83474449999999978 126.63529 -9.97826960000000085 -3.83474449999999978 126.6353 -9.97826960000000085 -3.83473469999999983 127.67032 -9.53500939999999986 -4.26293469999999974 127.67033 -9.53500939999999986 -4.26293230000000012 127.67033 -9.53500939999999986 -4.26293230000000012 127.67033 -9.53500939999999986 -4.26292510000000036 127.67033 -9.53500939999999986 -4.26292280000000012 128.77321 -9.25337410000000027 -4.87421039999999994 128.77322 -9.25337410000000027 -4.87419560000000018 128.77322 -9.25337410000000027 -4.87419560000000018 128.77322 -9.25337410000000027 -4.87418840000000042 128.77324 -9.25337410000000027 -4.874186 130.14934 -9.06718919999999962 -5.585011 130.14935 -9.06718919999999962 -5.58499 130.14935 -9.06718919999999962 -5.58499 130.14935 -9.06718829999999976 -5.58499 130.14937 -9.06718829999999976 -5.58497809999999983 131.89931 -8.92341419999999985 -6.31130359999999957 131.89931 -8.92341329999999999 -6.31128029"
-		+ "999999995 131.89931 -8.92341329999999999 -6.31128029999999995 131.89932 -8.92341230000000074 -6.31126789999999982 131.89932 -8.92341230000000074 -6.31126789999999982 133.64803 -8.73187260000000087 -6.89434 133.64803 -8.73187159999999984 -6.89432759999999956 133.64803 -8.73187159999999984 -6.89432759999999956 133.64803 -8.73187159999999984 -6.89431429999999956 133.64804 -8.73187159999999984 -6.89430280000000018 135.39912 -8.4980525999999994 -7.310041 135.39912 -8.49805160000000015 -7.31002569999999974 135.39912 -8.49805160000000015 -7.31002569999999974 135.39914 -8.49805070000000029 -7.31001230000000035 135.39914 -8.49805070000000029 -7.31000229999999984 136.24135 -8.16306209999999943 -7.46860549999999979 136.24135 -8.16306209999999943 -7.46859070000000003 136.24135 -8.16306209999999943 -7.46859070000000003 136.24135 -8.16306209999999943 -7.46857979999999966 136.24135 -8.16306110000000018 -7.46857829999999989 136.6254 -7.80618570000000034 -7.48909760000000002 136.6254 -7.80618519999999982 -7.48908139999999989 "
-		+ "136.6254 -7.80618519999999982 -7.48908139999999989 136.6254 -7.80618519999999982 -7.48906989999999961 136.6254 -7.80618519999999982 -7.489059 136.50664 -7.4455581000000004 -7.42084839999999968 136.50664 -7.44555710000000026 -7.42083359999999992 136.50664 -7.44555710000000026 -7.42083359999999992 136.50664 -7.44555710000000026 -7.42082260000000016 136.50664 -7.44555710000000026 -7.4208198000000003 136.5072 -7.10764840000000042 -7.25111289999999986 136.5072 -7.10764840000000042 -7.25109910000000024 136.5072 -7.10764840000000042 -7.25109910000000024 136.5072 -7.10764789999999991 -7.25109530000000024 136.5072 -7.10764789999999991 -7.25108429999999959 137.72881 -6.78155230000000042 -6.6981497000000001 137.72881 -6.78155230000000042 -6.69812109999999983 137.72881 -6.78155230000000042 -6.69812109999999983 137.72881 -6.78155230000000042 -6.69811729999999983 137.72881 -6.78155230000000042 -6.6981048999999997 137.51221 -6.49708459999999999 -6.27079680000000028 137.51221 -6.49708459999999999 -6.27076909999999987 137.512"
-		+ "21 -6.49708459999999999 -6.27076909999999987 137.51219 -6.49708459999999999 -6.27076390000000039 137.51219 -6.49708459999999999 -6.2707461999999996 136.58488 -6.21261639999999993 -6.11915639999999961 136.58488 -6.21261639999999993 -6.11913869999999971 136.58488 -6.21261639999999993 -6.11913869999999971 136.58488 -6.21261639999999993 -6.11912780000000023 136.58487 -6.21261639999999993 -6.11911249999999995 136.83336 -5.92814779999999963 -5.56045630000000024 136.83336 -5.92814779999999963 -5.56043480000000034 136.83336 -5.92814779999999963 -5.56043480000000034 136.83334 -5.92814779999999963 -5.560432 136.83334 -5.92814779999999963 -5.5604180999999997 137.87161 -5.64368010000000009 -4.47734879999999968 137.8716 -5.64368010000000009 -4.4773297000000003 137.8716 -5.64368010000000009 -4.4773297000000003 137.8716 -5.64368010000000009 -4.47731350000000017 137.8716 -5.64368010000000009 -4.47729830000000018 137.90785 -5.359211 -4.09409569999999956 137.90784 -5.359211 -4.09406569999999981 137.90784 -5.359211 -4.094065699"
-		+ "99999981 137.90782 -5.359211 -4.094059 137.90782 -5.359211 -4.09404419999999991 137.58984 -5.07474329999999973 -4.28981540000000017 137.58983 -5.07474329999999973 -4.28979640000000018 137.58983 -5.07474329999999973 -4.28979640000000018 137.58981 -5.07474329999999973 -4.28978970000000004 137.58981 -5.07474329999999973 -4.28977580000000014 136.77399 -4.79027460000000005 -4.79196359999999988 136.77397 -4.79027460000000005 -4.79194589999999998 136.77397 -4.79027460000000005 -4.79194589999999998 136.77397 -4.79027460000000005 -4.79194209999999998 136.77396 -4.79027460000000005 -4.79193689999999961 137.3261 -4.50580689999999962 -4.45215029999999956 137.32608 -4.50580689999999962 -4.45213030000000032 137.32608 -4.50580689999999962 -4.45213030000000032 137.32607 -4.50580689999999962 -4.45212509999999995 137.32607 -4.50580689999999962 -4.45211120000000005 138.19009 -4.22133870000000044 -3.92037730000000018 138.19008 -4.22133870000000044 -3.9203581999999999 138.19008 -4.22133870000000044 -3.9203581999999999 138.19008 -"
-		+ "4.22133870000000044 -3.92034320000000003 138.19006 -4.22133870000000044 -3.92032809999999987 137.51588 -3.93687060000000022 -4.33534620000000004 137.51587 -3.93687060000000022 -4.33531569999999977 137.51587 -3.93687060000000022 -4.33531569999999977 137.51587 -3.93687060000000022 -4.33530090000000001 137.51585 -3.93687060000000022 -4.33529710000000001 136.59671 -3.65240259999999983 -4.9010701000000001 136.59671 -3.65240259999999983 -4.901051 136.59671 -3.65240259999999983 -4.901051 136.59669 -3.65240259999999983 -4.90104719999999983 136.59669 -3.65240259999999983 -4.901032 137.09924 -3.3679342000000001 -4.591773 137.09923 -3.3679342000000001 -4.59175540000000026 137.09923 -3.3679342000000001 -4.59175540000000026 137.09923 -3.3679342000000001 -4.59175109999999975 137.09921 -3.3679342000000001 -4.59173629999999999 137.17885 -3.3679342000000001 -5.7759185000000004 136.62837 -3.3679342000000001 -4.88156130000000044 136.62837 -3.3679342000000001 -4.88156130000000044 136.62837 -3.3679342000000001 -4.8815498000000001"
-		+ "6 136.07791 -3.3679342000000001 -3.98719670000000015 136.90817 -3.3679342000000001 -6.39097259999999956 136.15753 -3.3679342000000001 -5.17135950000000033 136.15753 -3.3679342000000001 -5.17135950000000033 136.15752 -3.3679342000000001 -5.17135429999999996 135.40688 -3.3679342000000001 -3.95174549999999991 136.58304 -3.3679342000000001 -6.91749620000000043 135.68668 -3.3679342000000001 -5.461164 135.68668 -3.3679342000000001 -5.461164 135.68668 -3.3679342000000001 -5.461153 134.79033 -3.3679342000000001 -4.00482650000000007 135.96999 -3.3679342000000001 -6.97627259999999971 135.21582 -3.3679342000000001 -5.75096269999999965 135.21582 -3.3679342000000001 -5.75096269999999965 135.21582 -3.3679342000000001 -5.75095889999999965 134.46167 -3.3679342000000001 -4.52564329999999959 135.64133 -3.3679342000000001 -7.49709939999999975 134.74498 -3.3679342000000001 -6.0407586000000002 134.74498 -3.3679342000000001 -6.0407586000000002 134.74498 -3.3679342000000001 -6.04075770000000034 133.84862 -3.3679342000000001 -4.5844"
-		+ "2930000000004 135.02478 -3.3679342000000001 -7.55017039999999984 134.27412 -3.3679342000000001 -6.33056739999999962 134.27412 -3.3679342000000001 -6.33056739999999962 134.27412 -3.3679342000000001 -6.33055349999999972 133.52347 -3.3679342000000001 -5.11095430000000039 134.35374 -3.3679342000000001 -7.51473139999999962 133.80327 -3.3679342000000001 -6.62036319999999989 133.80327 -3.3679342000000001 -6.62036319999999989 133.80327 -3.3679342000000001 -6.62036040000000003 133.25281 -3.3679342000000001 -5.72600749999999969 135.66634 -3.65240259999999983 -4.23627709999999968 135.08743 -3.65240259999999983 -4.14251039999999993 134.56325 -3.65240259999999983 -4.13767770000000024 134.3279 -3.65240259999999983 -4.60210469999999994 133.80724 -3.65240259999999983 -4.60298919999999967 133.57541 -3.65240259999999983 -5.07314349999999958 133.3983 -3.65240259999999983 -5.63217739999999978 136.26303 -3.93687060000000022 -3.58793139999999999 135.44164 -3.93687060000000022 -3.54157089999999997 134.68701 -3.93687060000000022 -3."
-		+ "60360190000000014 134.28702 -3.93687060000000022 -4.24189469999999957 133.53699 -3.93687060000000022 -4.311429"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11|FishBowl:Seaweed11Shape" 
-		"pt[332:497]" (" 133.14162 -3.93687060000000022 -4.95719960000000004 132.81297 -3.93687060000000022 -5.71138860000000026 136.71744 -4.22133830000000021 -3.1934174999999998 135.70872 -4.22133830000000021 -3.22027250000000009 134.77217 -4.22133830000000021 -3.36439129999999986 134.21693 -4.22133830000000021 -4.128027 133.28505 -4.22133830000000021 -4.27969359999999988 132.73447 -4.22133830000000021 -5.05088660000000012 132.25606 -4.22133830000000021 -5.939333 135.95821 -4.505806 -3.66591719999999999 135.05281 -4.505806 -3.6311574000000002 134.21941 -4.505806 -3.71331880000000014 133.76613 -4.505806 -4.41311929999999997 132.93745 -4.505806 -4.50296689999999966 132.48848 -4.505806 -5.209753 132.11156 -4.505806 -6.03356889999999968 135.64716 -4.79027460000000005 -4.15755180000000024 134.89761 -4.79027460000000005 -4.13616280000000014 134.20663 -4.79027460000000005 -4.20987080000000002 133.82603 -4.79027460000000005 -4.78793429999999987 133.13904 -4.79027460000000005 -4.86813159999999989 132.7617 -4.79027460000000005 -5.4514804000"
-		+ "0000034 132.44286 -4.79027460000000005 -6.129827 136.34866 -5.0747422999999996 -3.53343989999999986 135.53914 -5.0747422999999996 -3.47836919999999994 134.79678 -5.0747422999999996 -3.53243589999999985 134.40938 -5.0747422999999996 -4.1631866000000004 133.67137 -5.0747422999999996 -4.22432419999999986 133.2886 -5.0747422999999996 -4.86259270000000043 132.97284 -5.0747422999999996 -5.6097431000000002 136.59286 -5.359211 -3.26866719999999988 135.74222 -5.359211 -3.19771459999999985 134.96382 -5.359211 -3.244107 134.56705 -5.359211 -3.91058709999999987 133.79329 -5.359211 -3.9645478999999999 133.4012 -5.359211 -4.638577 133.08131 -5.359211 -5.42996880000000015 136.5744 -5.64367959999999957 -3.66130069999999996 135.69441 -5.64367959999999957 -3.59303879999999998 134.87863 -5.64367959999999957 -3.63987060000000007 134.40555 -5.64367959999999957 -4.30098719999999979 133.59416 -5.64367959999999957 -4.35568760000000044 133.12531 -5.64367959999999957 -5.024333 132.72153 -5.64367959999999957 -5.80971810000000044 135.75"
-		+ "189 -5.92814779999999963 -4.85675860000000004 134.96136 -5.92814779999999963 -4.78403430000000007 134.21609 -5.92814779999999963 -4.80943349999999992 133.71007 -5.92814779999999963 -5.353641 132.96786 -5.92814779999999963 -5.3857058999999996 132.46452 -5.92814779999999963 -5.93577810000000028 132.00815 -5.92814779999999963 -6.58767179999999986 135.54143 -6.21261550000000007 -5.28736729999999966 134.75114 -6.21261550000000007 -5.13812919999999984 134.00023 -6.21261550000000007 -5.09490350000000003 133.45648 -6.21261550000000007 -5.6101150999999998 132.70766 -6.21261550000000007 -5.572557 132.16689 -6.21261550000000007 -6.09583 131.66551 -6.21261550000000007 -6.72526690000000027 136.34854 -6.49708370000000013 -5.21406749999999963 135.4185 -6.49708370000000013 -4.97466990000000031 134.52478 -6.49708370000000013 -4.8623972000000002 133.8231 -6.49708370000000013 -5.421845 132.93175 -6.49708370000000013 -5.31776430000000033 132.23241 -6.49708370000000013 -5.88540460000000021 131.5694 -6.49708370000000013 -6.5801806"
-		+ "0000000027 136.6938 -6.78155230000000042 -5.74314639999999965 135.80444 -6.78155230000000042 -5.50069379999999963 134.93773 -6.78155230000000042 -5.36907289999999993 134.1907 -6.78155230000000042 -5.82306050000000042 133.32547 -6.78155230000000042 -5.69858119999999957 132.5799 -6.78155230000000042 -6.15972139999999957 131.85699 -6.78155230000000042 -6.73168949999999988 135.81726 -7.08884380000000025 -6.52665710000000043 135.18967 -7.07684089999999966 -6.31159539999999986 134.57182 -7.06590179999999979 -6.17611120000000025 134.00516 -7.06054539999999964 -6.45858859999999968 133.38788 -7.04966830000000044 -6.32781739999999981 132.82187 -7.04438350000000035 -6.61576889999999995 132.26558 -7.04015970000000024 -6.98314240000000019 135.94148 -7.41221619999999959 -6.73445460000000029 135.39293 -7.39002849999999967 -6.50550169999999994 134.84697 -7.36957739999999983 -6.34776450000000025 134.31459 -7.35827779999999976 -6.56539960000000011 133.76877 -7.33792780000000011 -6.41184849999999962 133.23657 -7.326746 -6.63429"
-		+ "979999999997 132.70697 -7.31730220000000031 -6.92799570000000031 136.07132 -7.748817 -6.61059760000000018 135.48694 -7.70989470000000043 -6.28997850000000014 134.89784 -7.67383379999999971 -6.05587579999999992 134.28383 -7.65294119999999989 -6.28050369999999969 133.69444 -7.61706829999999968 -6.05211020000000044 133.08012 -7.5963674000000001 -6.28248880000000032 132.46107 -7.57853940000000037 -6.59978719999999974 135.75227 -8.08337210000000006 -6.48600720000000042 135.17366 -8.02728369999999991 -6.10402489999999975 134.58118 -7.97485779999999966 -5.81523280000000042 133.91508 -7.94183540000000043 -6.02022790000000008 133.3217 -7.88964649999999956 -5.73742719999999995 132.65471 -7.85686589999999985 -5.94857549999999957 131.97375 -7.82776169999999993 -6.25327780000000022 135.02873 -8.38980869999999967 -6.0989766000000003 134.48006 -8.31253049999999938 -5.60985180000000039 133.90361 -8.24006649999999929 -5.23301649999999974 133.18068 -8.19305519999999987 -5.4495357999999996 132.60248 -8.12090489999999932 -5.0799"
-		+ "47 131.87772 -8.07420160000000031 -5.30369620000000008 131.12526 -8.03231809999999946 -5.639739 133.39957 -8.61292270000000038 -5.7444677000000004 132.91969 -8.52311229999999931 -5.26239870000000032 132.40501 -8.43769069999999921 -4.88080879999999961 131.70164 -8.3760356999999992 -5.04380890000000015 131.18475 -8.29089360000000042 -4.66863160000000033 130.47914 -8.22951789999999939 -4.83807040000000033 129.73766 -8.17266270000000006 -5.11108589999999996 131.7525 -8.80662820000000046 -5.34156660000000016 131.36559 -8.71214389999999916 -4.91123870000000018 130.94138 -8.62111849999999968 -4.56462 130.31982 -8.54842089999999999 -4.66130590000000034 129.89336 -8.45761010000000013 -4.31982369999999971 129.26947 -8.3851299000000008 -4.42176909999999967 128.60732 -8.31620030000000021 -4.60962769999999988 130.14763 -8.95688819999999986 -4.70398280000000035 129.88574 -8.86386590000000041 -4.30500319999999981 129.58336 -8.773531 -3.98099449999999999 129.06717 -8.69739530000000016 -4.05317590000000028 128.76219 -8.607233"
-		+ " -3.73400519999999991 128.24341 -8.53127379999999924 -3.81101249999999991 127.68414 -8.45799730000000061 -3.96300169999999996 128.9339 -9.14963820000000005 -3.99991150000000006 128.79431 -9.05891510000000011 -3.605315 128.608 -8.97021960000000007 -3.28535030000000017 128.17525 -8.8921986000000004 -3.35911079999999984 127.9903 -8.80343910000000029 -3.03694920000000002 127.55936 -8.72534369999999981 -3.10782619999999987 127.07901 -8.64938549999999928 -3.25758079999999994 127.8714 -9.43831250000000033 -3.51595279999999999 127.79952 -9.34760570000000079 -3.159364 127.68476 -9.25784110000000027 -2.864105 127.33551 -9.17322350000000064 -2.90422249999999993 127.21437 -9.0836029000000007 -2.61810110000000007 126.86896 -8.99890139999999938 -2.65272590000000008 126.4819 -8.91511440000000022 -2.746933 126.79202 -9.88741109999999956 -3.289155 126.74687 -9.79680059999999919 -3.01116660000000014 126.67758 -9.70621970000000012 -2.76519389999999987 126.44184 -9.61584470000000024 -2.73982979999999987 126.38433 -9.525249499999"
-		+ "99926 -2.47823569999999993 126.14619 -9.43487550000000041 -2.45606470000000021 125.86387 -9.34455490000000033 -2.492456 136.77106 -3.65240259999999983 -6.03114509999999981 136.59396 -3.65240259999999983 -6.5902156999999999 136.36212 -3.65240259999999983 -7.06037810000000032 135.84146 -3.65240259999999983 -7.06125260000000043 135.60611 -3.65240259999999983 -7.52568820000000027 135.08194 -3.65240259999999983 -7.52083869999999965 134.50305 -3.65240259999999983 -7.42711729999999992 137.6187 -3.93687060000000022 -5.79051920000000031 137.29004 -3.93687060000000022 -6.54471589999999992 136.89468 -3.93687060000000022 -7.1904773999999998 136.14464 -3.93687060000000022 -7.26003120000000024 135.74466 -3.93687060000000022 -7.89830590000000043 134.99001 -3.93687060000000022 -7.96035480000000017 134.16864 -3.93687060000000022 -7.91397619999999957 138.17563 -4.22133830000000021 -5.56257490000000043 137.6972 -4.22133830000000021 -6.45102210000000031 137.14661 -4.22133830000000021 -7.2222318999999997"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11|FishBowl:Seaweed11Shape" 
-		"pt[498:641]" (" 136.21472 -4.22133830000000021 -7.37389850000000013 135.65948 -4.22133830000000021 -8.13753409999999988 134.72295 -4.22133830000000021 -8.28163619999999945 133.71423 -4.22133830000000021 -8.30848980000000026 137.41174 -4.505806 -6.02752110000000041 137.03488 -4.505806 -6.85149380000000008 136.58607 -4.505806 -7.55851749999999978 135.75711 -4.505806 -7.6479115000000002 135.30356 -4.505806 -8.34725859999999997 134.47029 -4.505806 -8.42967510000000075 133.56502 -4.505806 -8.39503380000000021 136.83269 -4.79027460000000005 -6.08373209999999975 136.5141 -4.79027460000000005 -6.76255420000000029 136.13701 -4.79027460000000005 -7.34621190000000013 135.44946 -4.79027460000000005 -7.42558 135.06836 -4.79027460000000005 -8.00278759999999956 134.37758 -4.79027460000000005 -8.07684229999999914 133.62833 -4.79027460000000005 -8.05589870000000019 137.70593 -5.0747422999999996 -5.73862550000000038 137.39038 -5.0747422999999996 -6.48614650000000026 137.00768 -5.0747422999999996 -7.1245440999999996 136.27002 -5.0747422999999"
-		+ "996 -7.186254 135.88297 -5.0747422999999996 -7.81757070000000009 135.1407 -5.0747422999999996 -7.87174610000000019 134.33139 -5.0747422999999996 -7.81706 138.05232 -5.359211 -5.6398969000000001 137.73244 -5.359211 -6.43128920000000015 137.34033 -5.359211 -7.10531950000000023 136.56657 -5.359211 -7.15928840000000033 136.16982 -5.359211 -7.82576040000000006 135.3914 -5.359211 -7.87215139999999991 134.54077 -5.359211 -7.80119849999999992 137.88463 -5.64367959999999957 -6.0097927999999996 137.4805 -5.64367959999999957 -6.79446550000000027 137.01215 -5.64367959999999957 -7.46404409999999974 136.20108 -5.64367959999999957 -7.51935860000000034 135.72835 -5.64367959999999957 -8.181076 134.9131 -5.64367959999999957 -8.22883219999999937 134.03268 -5.64367959999999957 -8.15989590000000042 136.66632 -5.92814779999999963 -6.83982940000000017 136.20836 -5.92814779999999963 -7.48827740000000031 135.70514 -5.92814779999999963 -8.03857230000000023 134.96269 -5.92814779999999963 -8.07007879999999922 134.45639 -5.92814779999999"
-		+ "963 -8.61372090000000057 133.71123 -5.92814779999999963 -8.63937469999999941 132.91911 -5.92814779999999963 -8.56318379999999912 136.33638 -6.21261550000000007 -7.43019579999999991 135.83466 -6.21261550000000007 -8.05874539999999939 135.29361 -6.21261550000000007 -8.581275 134.54541 -6.21261550000000007 -8.54535289999999925 134.00226 -6.21261550000000007 -9.062211 133.25105 -6.21261550000000007 -9.01823229999999931 132.46046 -6.21261550000000007 -8.86809919999999963 137.08281 -6.49708370000000013 -7.78284220000000015 136.4198 -6.49708370000000013 -8.47761919999999947 135.72044 -6.49708370000000013 -9.04526710000000023 134.8291 -6.49708370000000013 -8.94117740000000083 134.12741 -6.49708370000000013 -9.50062750000000023 133.2337 -6.49708370000000013 -9.3883542999999996 132.30368 -6.49708370000000013 -9.14894679999999916 137.1515 -6.78155230000000042 -7.982626 136.4286 -6.78155230000000042 -8.55458549999999995 135.68303 -6.78155230000000042 -9.01573660000000032 134.81778 -6.78155230000000042 -8.8912449000000002"
-		+ "3 134.07077 -6.78155230000000042 -9.34524629999999945 133.20404 -6.78155230000000042 -9.21361160000000012 132.3147 -6.78155230000000042 -8.97115420000000086 136.01324 -7.11022230000000022 -8.1276016000000002 135.45692 -7.10599470000000011 -8.4947329000000007 134.89087 -7.10070509999999988 -8.78228949999999919 134.27367 -7.08983369999999979 -8.65186689999999992 133.707 -7.08448079999999969 -8.93470669999999956 133.08911 -7.07353640000000006 -8.79882910000000074 132.46149 -7.06153060000000021 -8.58351419999999976 135.99358 -7.44725889999999957 -8.17170720000000017 135.46397 -7.437808 -8.465126 134.93178 -7.42662050000000029 -8.68733690000000003 134.38596 -7.40628050000000027 -8.5341863999999994 133.85359 -7.39499040000000019 -8.75220580000000048 133.30762 -7.37453369999999975 -8.59423450000000066 132.75905 -7.35234020000000044 -8.36502459999999992 135.97606 -7.80679459999999992 -8.36395929999999943 135.35703 -7.78895759999999981 -8.680974 134.74269 -7.7682595000000001 -8.91146950000000082 134.15329 -7.732393300"
-		+ "00000002 -8.68325040000000037 133.53928 -7.71150680000000044 -8.90802670000000063 132.95018 -7.67544890000000013 -8.67404559999999947 132.36581 -7.63651750000000007 -8.35314660000000053 135.47093 -8.15755180000000024 -8.37367530000000038 134.79002 -8.1284389000000008 -8.67816350000000014 134.123 -8.095665 -8.88945870000000049 133.52957 -8.0434865999999996 -8.606966 132.86345 -8.01047709999999924 -8.81226629999999922 132.27094 -7.95805640000000025 -8.52361010000000086 131.69235 -7.90195989999999959 -8.14142419999999944 134.46838 -8.48713210000000018 -8.36799530000000047 133.71591 -8.44524859999999933 -8.70404530000000065 132.99115 -8.3985442999999993 -8.92779829999999919 132.41296 -8.32639409999999991 -8.55820079999999983 131.69002 -8.27938269999999932 -8.77471539999999983 131.11359 -8.20691970000000026 -8.39788150000000044 130.56491 -8.12964149999999997 -7.90876010000000029 132.67619 -8.70403669999999963 -7.83222150000000017 131.93568 -8.64705280000000087 -8.102335 131.23001 -8.58568759999999997 -8.2719716999"
-		+ "9999993 130.71304 -8.500556 -7.897028 130.00961 -8.4389094999999994 -8.06023410000000062 129.49486 -8.35349459999999944 -7.678834 129.01601 -8.26356029999999997 -7.19387769999999982 130.99782 -8.87670989999999982 -7.0367917999999996 130.33646 -8.80771060000000006 -7.22291560000000032 129.71236 -8.73524759999999922 -7.32532169999999994 129.2856 -8.64446159999999963 -6.9844394000000003 128.6638 -8.57178779999999918 -7.08171749999999989 128.2394 -8.48078349999999936 -6.735558 127.85323 -8.38622379999999978 -6.30347919999999995 129.32991 -9.01119040000000027 -6.21901659999999978 128.77066 -8.93791479999999972 -6.37098880000000012 128.25185 -8.86195370000000082 -6.44800329999999988 127.94688 -8.77179150000000085 -6.12883279999999964 127.43069 -8.69565580000000082 -6.20100159999999967 127.12834 -8.60532380000000074 -5.87700370000000039 126.86644 -8.51229949999999924 -5.47801730000000031 127.99013 -9.19053360000000019 -5.50760559999999977 127.50732 -9.11468409999999984 -5.66131350000000033 127.07121 -9.0368109000000"
-		+ "0076 -5.74041650000000025 126.88158 -8.94825550000000014 -5.42577219999999993 126.44409 -8.8704414000000007 -5.50706149999999983 126.25265 -8.78196619999999939 -5.19531580000000037 126.11058 -8.69135 -4.80467219999999973 126.99646 -9.45752240000000022 -4.76736019999999971 126.59553 -9.37403959999999969 -4.88140149999999995 126.2375 -9.28961660000000045 -4.93409160000000035 126.11392 -9.20004460000000002 -4.65143389999999979 125.76227 -9.11548329999999929 -4.69500060000000019 125.63486 -9.02599529999999994 -4.41781619999999986 125.54912 -8.93559459999999994 -4.08107190000000042 126.15108 -9.88819409999999976 -4.13875580000000021 125.86874 -9.79787349999999968 -4.175159 125.61055 -9.70752330000000008 -4.17956880000000019 125.51879 -9.616972 -3.96336459999999979 125.24882 -9.5266371000000003 -3.98339579999999982 125.15948 -9.43608090000000033 -3.76398160000000015 125.1143 -9.34547039999999996 -3.486022"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12" "rotatePivot" " -type \"double3\" 168.0555419921875 17.35857152938842773 16.82844257354736328"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12" "scalePivot" " -type \"double3\" 168.0555419921875 17.35857152938842773 16.82844257354736328"
-		
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12|FishBowl:Seaweed12Shape" 
-		"pnts" " -s 642"
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12|FishBowl:Seaweed12Shape" 
-		"pt[0:165]" (" -type \"float3\" 138.62447 -3.36793539999999991 -5.78352310000000003 138.62445 -3.36793539999999991 -5.78351020000000027 138.62445 -3.36793539999999991 -5.78351020000000027 138.62445 -3.36793539999999991 -5.78350730000000013 138.62445 -3.36793539999999991 -5.78349780000000013 138.77002 -3.89569570000000009 -5.6858000999999998 138.77 -3.89569570000000009 -5.68578670000000042 138.77 -3.89569570000000009 -5.68578670000000042 138.77 -3.89569570000000009 -5.68577810000000028 138.77 -3.89569570000000009 -5.68577430000000028 138.37202 -4.42345520000000025 -5.95300769999999968 138.37202 -4.42345520000000025 -5.95299530000000043 138.37202 -4.42345520000000025 -5.95299530000000043 138.37201 -4.42345520000000025 -5.95299150000000044 138.37201 -4.42345520000000025 -5.952981 137.96352 -4.95121430000000018 -6.22729110000000041 137.9635 -4.95121430000000018 -6.22727629999999976 137.9635 -4.95121430000000018 -6.22727629999999976 137.9635 -4.95121430000000018 -6.22726579999999963 137.9635 -4.95121430000000018 -6.22725629999999"
-		+ "963 137.93661 -5.4789734000000001 -6.24534889999999976 137.9366 -5.4789734000000001 -6.24533510000000014 137.9366 -5.4789734000000001 -6.24533510000000014 137.9366 -5.4789734000000001 -6.24532370000000014 137.9366 -5.4789734000000001 -6.24532080000000001 138.12102 -6.00673480000000026 -6.12153290000000005 138.12102 -6.00673480000000026 -6.12152049999999992 138.12102 -6.00673480000000026 -6.12152049999999992 138.121 -6.00673480000000026 -6.12151770000000006 138.121 -6.00673480000000026 -6.12150719999999993 138.47733 -6.53449390000000019 -5.88231280000000023 138.47731 -6.53449390000000019 -5.8822985000000001 138.47731 -6.53449390000000019 -5.8822985000000001 138.47731 -6.53449390000000019 -5.8822947000000001 138.47731 -6.53449390000000019 -5.88228370000000034 138.55986 -7.0622543999999996 -5.82690239999999982 138.55984 -7.0622543999999996 -5.82688809999999968 138.55984 -7.0622543999999996 -5.82688809999999968 138.55984 -7.0622543999999996 -5.82687620000000006 138.55983 -7.0622543999999996 -5.82687329999999992 1"
-		+ "38.26517 -7.5900148999999999 -6.07172160000000005 138.26515 -7.5900148999999999 -6.07170680000000029 138.26515 -7.5900148999999999 -6.07170680000000029 138.26515 -7.5900148999999999 -6.07169720000000002 138.26515 -7.5900148999999999 -6.07168580000000002 137.72122 -8.117775 -6.41458420000000018 137.72122 -8.117775 -6.41457269999999991 137.72122 -8.117775 -6.41457269999999991 137.72121 -8.117775 -6.41456990000000005 137.72121 -8.117775 -6.41455939999999991 137.46176 -8.64553450000000012 -6.52614930000000015 137.46176 -8.64553450000000012 -6.52613640000000039 137.46176 -8.64553450000000012 -6.52613640000000039 137.46176 -8.64553450000000012 -6.52613350000000025 137.46176 -8.64553450000000012 -6.52612259999999988 137.28931 -9.17329409999999967 -6.55939769999999989 137.28929 -9.17329409999999967 -6.559391 137.28929 -9.17329409999999967 -6.559391 137.28929 -9.17329409999999967 -6.55938049999999961 137.28929 -9.17329409999999967 -6.55937 137.37434 -9.70105550000000072 -6.50943760000000005 137.37433 -9.70105550000000"
-		+ "072 -6.50942519999999991 137.37433 -9.70105550000000072 -6.50942519999999991 137.37433 -9.70105550000000072 -6.50941659999999978 137.37433 -9.70105550000000072 -6.50940510000000039 137.67828 -10.185608 -6.4105205999999999 137.67828 -10.185608 -6.41050240000000038 137.67828 -10.185608 -6.41050240000000038 137.67828 -10.185608 -6.41050050000000038 137.67828 -10.185608 -6.41049290000000038 137.93739 -10.69816 -6.29370359999999973 137.93739 -10.698158 -6.293694 137.93739 -10.698158 -6.293694 137.93739 -10.698158 -6.29368640000000035 137.93739 -10.698158 -6.29368450000000035 137.688 -11.180799 -6.144599 137.688 -11.180798 -6.14459369999999971 137.688 -11.180798 -6.14459369999999971 137.688 -11.180798 -6.14458419999999972 137.688 -11.180796 -6.14457650000000033 137.29137 -11.631834 -5.91334870000000024 137.29137 -11.631833 -5.91333869999999973 137.29137 -11.631833 -5.91333869999999973 137.29137 -11.631832 -5.913331 137.29137 -11.631832 -5.91332150000000034 136.63625 -12.001281 -5.5737085000000004 136.63625 -12.0012"
-		+ "78 -5.57369849999999989 136.63625 -12.001278 -5.57369849999999989 136.63625 -12.001278 -5.573689 136.63626 -12.001276 -5.57367990000000013 135.70909 -12.230076 -5.09376669999999976 135.70909 -12.230073 -5.09375809999999962 135.70909 -12.230073 -5.09375809999999962 135.70909 -12.230073 -5.09374760000000038 135.70911 -12.230071 -5.09374090000000024 135.01115 -12.461516 -4.578969 135.01115 -12.461516 -4.57895420000000009 135.01115 -12.461516 -4.57895420000000009 135.01117 -12.461516 -4.57894559999999995 135.01117 -12.461516 -4.57894559999999995 134.45044 -12.707393 -4.05091570000000001 134.45044 -12.707391 -4.05090760000000039 134.45044 -12.707391 -4.05090760000000039 134.45044 -12.707391 -4.05090090000000025 134.45044 -12.707389 -4.050899 134.056 -13.05077 -3.56350729999999993 134.05602 -13.050768 -3.56349420000000006 134.05602 -13.050768 -3.56349420000000006 134.05602 -13.050768 -3.56349250000000017 134.05602 -13.050768 -3.56349090000000013 133.71268 -13.516769 -3.125011 133.71269 -13.516769 -3.125002600000000"
-		+ "19 133.71269 -13.516769 -3.12500260000000019 133.71269 -13.516769 -3.1249924 133.71269 -13.516769 -3.1249943 133.40921 -14.289082 -2.82181380000000015 133.40923 -14.289082 -2.82180739999999997 133.40923 -14.289082 -2.82180739999999997 133.40921 -14.289082 -2.8218122000000001 133.40923 -14.289082 -2.82180549999999997 132.84167 -15.270576 -2.584646 132.84169 -15.270577 -2.58464120000000008 132.84169 -15.270577 -2.58464120000000008 132.84169 -15.270577 -2.58463069999999995 132.84169 -15.270577 -2.58463069999999995 132.65326 -15.305659 -2.91391370000000016 132.85905 -15.318635 -2.60816379999999981 132.85905 -15.318635 -2.60816379999999981 132.85905 -15.318635 -2.60816379999999981 133.06483 -15.331611 -2.30242609999999992 132.59836 -15.349162 -3.044826 132.87642 -15.366694 -2.6317005 132.87642 -15.366694 -2.6317005 132.87642 -15.366694 -2.63169379999999986 133.15448 -15.384228 -2.21857019999999983 132.56392 -15.393954 -3.14532850000000019 132.89378 -15.414753 -2.65522690000000017 132.89378 -15.414753 -2.6552269000"
-		+ "0000017 132.89378 -15.414753 -2.6552289 133.22365 -15.435553 -2.16513370000000016 132.63593 -15.445457 -3.08767630000000004 132.91115 -15.462812 -2.67876359999999991 132.91115 -15.462812 -2.67876359999999991 132.91115 -15.462812 -2.67876359999999991 133.18639 -15.480165 -2.269841 132.60323 -15.490358 -3.18559120000000018 132.92853 -15.51087 -2.702292 132.92853 -15.51087 -2.702292 132.92853 -15.51087 -2.70228819999999992 133.25381 -15.531381 -2.218987 132.67422 -15.541799 -3.12945679999999982 132.94588 -15.558927 -2.72582129999999978 132.94588 -15.558927 -2.72582129999999978 132.94588 -15.558927 -2.72582129999999978 133.21756 -15.576057 -2.32218429999999998 132.76442 -15.594447 -3.04477740000000008 132.96326 -15.606986 -2.749356 132.96326 -15.606986 -2.749356 132.96326 -15.606986 -2.74934939999999983 133.16209 -15.619523 -2.45392510000000019 132.98062 -15.655038 -2.77289079999999988 132.98062 -15.655044 -2.77288440000000014 132.98062 -15.65504 -2.7728777 132.98062 -15.655044 -2.7728796 132.98062 -15.65504 -2.7"
-		+ "7287410000000012 134.2748 -15.63177 -3.517849")
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12|FishBowl:Seaweed12Shape" 
-		"pt[166:331]" (" 134.2748 -15.63177 -3.51784920000000012 134.2748 -15.63177 -3.51784920000000012 134.2748 -15.63177 -3.51784920000000012 134.2748 -15.63177 -3.51784279999999994 134.94511 -14.809411 -3.83534119999999978 134.94511 -14.809411 -3.8353394999999999 134.94511 -14.809411 -3.8353394999999999 134.94513 -14.809411 -3.83533480000000004 134.94513 -14.809411 -3.83533310000000016 135.66568 -14.286906 -4.28112080000000006 135.66568 -14.286906 -4.28111080000000044 135.66568 -14.286906 -4.28111080000000044 135.66568 -14.286906 -4.281106 135.66568 -14.286906 -4.2811041000000003 136.56264 -13.941487 -4.8013458 136.56265 -13.941487 -4.801332 136.56265 -13.941487 -4.801332 136.56265 -13.941485 -4.801332 136.56265 -13.941485 -4.80132340000000024 137.69606 -13.674748 -5.33976030000000002 137.69608 -13.674747 -5.33974409999999988 137.69608 -13.674747 -5.33974409999999988 137.69608 -13.674745 -5.339736 137.69608 -13.674745 -5.339736 138.82291 -13.31939 -5.77882859999999976 138.82291 -13.319389 -5.77882 138.82291 -13.319389 -5.77882 1"
-		+ "38.82291 -13.319389 -5.778811 138.82291 -13.319389 -5.77880329999999987 139.94446 -12.885595 -6.10192870000000021 139.94446 -12.885593 -6.10191820000000007 139.94446 -12.885593 -6.10191820000000007 139.94446 -12.885592 -6.1019091999999997 139.94446 -12.885592 -6.10190249999999956 140.48221 -12.264103 -6.2286444000000003 140.48221 -12.264103 -6.22863390000000017 140.48221 -12.264103 -6.22863390000000017 140.48221 -12.264103 -6.22862630000000017 140.48221 -12.264101 -6.22862530000000003 140.72531 -11.602008 -6.25050310000000042 140.72531 -11.602007 -6.25049209999999977 140.72531 -11.602007 -6.25049209999999977 140.72531 -11.602007 -6.25048449999999978 140.72531 -11.602007 -6.25047680000000039 140.64763 -10.932953 -6.200819 140.64763 -10.932951 -6.200809 140.64763 -10.932951 -6.200809 140.64763 -10.932951 -6.20080139999999957 140.64763 -10.932951 -6.20079949999999958 140.6411 -10.306046 -6.08315089999999969 140.6411 -10.306046 -6.08314130000000031 140.6411 -10.306046 -6.08314130000000031 140.6411 -10.306045 -6.0"
-		+ "8313849999999956 140.6411 -10.306045 -6.08313080000000017 141.38933 -9.70105550000000072 -5.72411389999999987 141.38933 -9.70105550000000072 -5.72409389999999973 141.38933 -9.70105550000000072 -5.72409389999999973 141.38933 -9.70105550000000072 -5.72409109999999988 141.38933 -9.70105550000000072 -5.72408249999999974 141.23535 -9.173296 -5.4235085999999999 141.23535 -9.173296 -5.42348959999999991 141.23535 -9.173296 -5.42348959999999991 141.23535 -9.173296 -5.42348579999999991 141.23534 -9.173296 -5.42347339999999978 140.6442 -8.64553639999999923 -5.29989859999999968 140.6442 -8.64553639999999923 -5.29988620000000044 140.6442 -8.64553639999999923 -5.29988620000000044 140.6442 -8.64553639999999923 -5.29987860000000044 140.6442 -8.64553639999999923 -5.2998681000000003 140.77829 -8.117775 -4.91749529999999968 140.77829 -8.117775 -4.91748049999999992 140.77829 -8.117775 -4.91748049999999992 140.77829 -8.117775 -4.9174781000000003 140.77827 -8.117775 -4.91746850000000002 141.38936 -7.59001590000000004 -4.1872496999"
-		+ "9999974 141.38934 -7.59001590000000004 -4.18723579999999984 141.38934 -7.59001590000000004 -4.18723579999999984 141.38934 -7.59001590000000004 -4.18722439999999985 141.38934 -7.59001590000000004 -4.18721389999999971 141.39667 -7.0622543999999996 -3.92225720000000022 141.39665 -7.0622543999999996 -3.92223619999999995 141.39665 -7.0622543999999996 -3.92223619999999995 141.39665 -7.0622543999999996 -3.92223120000000014 141.39665 -7.0622543999999996 -3.9222207 141.20399 -6.53449539999999995 -4.05161570000000015 141.20398 -6.53449539999999995 -4.05160240000000016 141.20398 -6.53449539999999995 -4.05160240000000016 141.20398 -6.53449539999999995 -4.05159760000000002 141.20396 -6.53449539999999995 -4.05158810000000003 140.70967 -6.00673480000000026 -4.38350680000000015 140.70966 -6.00673480000000026 -4.38349440000000001 140.70966 -6.00673480000000026 -4.38349440000000001 140.70966 -6.00673480000000026 -4.38349149999999987 140.70964 -6.00673480000000026 -4.38348769999999988 141.04419 -5.47897479999999959 -4.158910299"
-		+ "99999962 141.04417 -5.47897479999999959 -4.15889549999999986 141.04417 -5.47897479999999959 -4.15889549999999986 141.04417 -5.47897479999999959 -4.15889169999999986 141.04416 -5.47897479999999959 -4.15888209999999958 141.56767 -4.95121530000000032 -3.80743929999999997 141.56767 -4.95121530000000032 -3.807426 141.56767 -4.95121530000000032 -3.807426 141.56766 -4.95121530000000032 -3.80741549999999984 141.56766 -4.95121530000000032 -3.80740480000000003 141.15918 -4.42345520000000025 -4.08170940000000027 141.15916 -4.42345520000000025 -4.08168839999999999 141.15916 -4.42345520000000025 -4.08168839999999999 141.15916 -4.42345520000000025 -4.08167789999999986 141.15916 -4.42345520000000025 -4.0816751 140.60226 -3.89569570000000009 -4.45561980000000002 140.60225 -3.89569570000000009 -4.455606 140.60225 -3.89569570000000009 -4.455606 140.60225 -3.89569570000000009 -4.45560310000000026 140.60225 -3.89569570000000009 -4.45559260000000013 140.90674 -3.36793539999999991 -4.25119209999999992 140.90672 -3.3679353999999999"
-		+ "1 -4.25117969999999978 140.90672 -3.36793539999999991 -4.25117969999999978 140.90672 -3.36793539999999991 -4.25117679999999964 140.90672 -3.36793539999999991 -4.2511663000000004 141.00497 -3.36793539999999991 -5.07376149999999981 140.62144 -3.36793539999999991 -4.44272419999999979 140.62144 -3.36793539999999991 -4.44272419999999979 140.62144 -3.36793539999999991 -4.44271659999999979 140.23792 -3.36793539999999991 -3.81168269999999998 140.85918 -3.36793539999999991 -5.49479339999999983 140.33617 -3.36793539999999991 -4.63426449999999956 140.33617 -3.36793539999999991 -4.63426449999999956 140.33615 -3.36793539999999991 -4.63426069999999957 139.81314 -3.36793539999999991 -3.77373409999999998 140.67542 -3.36793539999999991 -5.85336069999999964 140.05087 -3.36793539999999991 -4.825808 140.05087 -3.36793539999999991 -4.825808 140.05087 -3.36793539999999991 -4.82580040000000032 139.42635 -3.36793539999999991 -3.79825139999999983 140.29105 -3.36793539999999991 -5.881897 139.76559 -3.36793539999999991 -5.0173477999999"
-		+ "9958 139.76559 -3.36793539999999991 -5.01734779999999958 139.76558 -3.36793539999999991 -5.017345 139.24013 -3.36793539999999991 -4.15279250000000033 140.10484 -3.36793539999999991 -6.23644450000000017 139.4803 -3.36793539999999991 -5.20888569999999973 139.4803 -3.36793539999999991 -5.20888569999999973 139.4803 -3.36793539999999991 -5.20888469999999959 138.85577 -3.36793539999999991 -4.181335 139.71803 -3.36793539999999991 -6.26095489999999977 139.19502 -3.36793539999999991 -5.40043260000000025 139.19502 -3.36793539999999991 -5.40043260000000025 139.19502 -3.36793539999999991 -5.40042259999999974 138.672 -3.36793539999999991 -4.53990320000000036 139.29327 -3.36793539999999991 -6.22301479999999962 138.90973 -3.36793539999999991 -5.59197040000000012 138.90973 -3.36793539999999991 -5.59197040000000012 138.90973 -3.36793539999999991 -5.59196850000000012 138.5262 -3.36793539999999991 -4.96093419999999963 139.98836 -3.89569570000000009 -3.9761728999999999 139.61935 -3.89569570000000009 -3.89962909999999985 139.2884"
-		+ "7 -3.89569570000000009 -3.88583450000000008 139.15883 -3.89569570000000009 -4.20313879999999962 138.83041 -3.89569570000000009 -4.19337840000000028 138.70323 -3.89569570000000009 -4.51472329999999999 138.61417 -3.89569570000000009 -4.89877939999999956 140.3385 -4.42345520000000025 -3.53855539999999991 139.81844 -4.42345520000000025 -3.49004750000000019 139.34489 -4.42345520000000025 -3.518019 139.11844 -4.42345520000000025 -3.95258589999999987 138.6481 -4.42345520000000025 -3.985851"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12|FishBowl:Seaweed12Shape" 
-		"pt[332:497]" (" 138.42487 -4.42345520000000025 -4.42569489999999988 138.24814 -4.42345520000000025 -4.94203569999999992 140.60916 -4.95121430000000018 -3.27408769999999993 139.97391 -4.95121430000000018 -3.27260879999999998 139.38892 -4.95121430000000018 -3.353868 139.06961 -4.95121430000000018 -3.87224389999999996 138.48787 -4.95121430000000018 -3.95882919999999983 138.17181 -4.95121430000000018 -4.48253729999999972 137.90604 -4.95121430000000018 -5.08897590000000033 140.14935 -5.4789734000000001 -3.58655049999999997 139.57678 -5.4789734000000001 -3.54441190000000006 139.05435 -5.4789734000000001 -3.58477069999999998 138.79678 -5.4789734000000001 -4.06091979999999975 138.27765 -5.4789734000000001 -4.10670190000000002 138.02307 -5.4789734000000001 -4.58778 137.8187 -5.4789734000000001 -5.1514325000000003 139.97307 -6.00673480000000026 -3.92120960000000007 139.49934 -6.00673480000000026 -3.89144639999999997 139.06644 -6.00673480000000026 -3.92878170000000004 138.84978 -6.00673480000000026 -4.32197709999999979 138.41963 -6.00"
-		+ "673480000000026 -4.36389159999999965 138.20525 -6.00673480000000026 -4.76081660000000007 138.03162 -6.00673480000000026 -5.22477009999999975 140.3903 -6.53449390000000019 -3.50248170000000014 139.87738 -6.53449390000000019 -3.44817159999999978 139.41125 -6.53449390000000019 -3.470866 139.19244 -6.53449390000000019 -3.90045429999999982 138.72935 -6.53449390000000019 -3.928138 138.51376 -6.53449390000000019 -4.36303139999999967 138.34486 -6.53449390000000019 -4.8747486999999996 140.53362 -7.0622543999999996 -3.323777 139.99411 -7.0622543999999996 -3.25763630000000015 139.50494 -7.0622543999999996 -3.27429179999999986 139.28166 -7.0622543999999996 -3.72846559999999982 138.79573 -7.0622543999999996 -3.75046090000000021 138.5757 -7.0622543999999996 -4.20996140000000008 138.40599 -7.0622543999999996 -4.75227019999999989 140.5379 -7.5900148999999999 -3.59562710000000019 139.97998 -7.5900148999999999 -3.530767 139.46724 -7.5900148999999999 -3.54698249999999993 139.19562 -7.5900148999999999 -3.99591729999999989 138.68"
-		+ "596 -7.5900148999999999 -4.0176753999999999 138.4173 -7.5900148999999999 -4.47191380000000027 138.19443 -7.5900148999999999 -5.0083871000000002 140.0675 -8.117775 -4.40806529999999963 139.56584 -8.117775 -4.3418941000000002 139.09673 -8.117775 -4.344655 138.79956 -8.117775 -4.71187880000000003 138.33264 -8.117775 -4.71932170000000006 138.03741 -8.117775 -5.09066530000000039 137.77594 -8.117775 -5.53353879999999965 139.95219 -8.64553450000000012 -4.70241829999999972 139.44759 -8.64553450000000012 -4.58320430000000023 138.97211 -8.64553450000000012 -4.5382737999999998 138.64998 -8.64553450000000012 -4.8846430999999999 138.17607 -8.64553450000000012 -4.8436836999999997 137.85614 -8.64553450000000012 -5.19570109999999996 137.56537 -8.64553450000000012 -5.622108 140.45839 -9.17329409999999967 -4.66767980000000016 139.86195 -9.17329409999999967 -4.48317190000000032 139.29361 -9.17329409999999967 -4.38752560000000003 138.87363 -9.17329409999999967 -4.76141740000000002 138.3071 -9.17329409999999967 -4.671497300000000"
-		+ "41 137.88893 -9.17329409999999967 -5.051116 137.49886 -9.17329409999999967 -5.51960329999999999 140.69766 -9.70105550000000072 -5.04137609999999992 140.12677 -9.70105550000000072 -4.85556129999999975 139.57466 -9.70105550000000072 -4.74703789999999959 139.12181 -9.70105550000000072 -5.04690930000000026 138.57092 -9.70105550000000072 -4.94336749999999991 138.11928 -9.70105550000000072 -5.24822659999999974 137.68643 -9.70105550000000072 -5.63037589999999977 140.17647 -10.271158 -5.56712960000000034 139.77184 -10.24889 -5.40552089999999996 139.37656 -10.228596 -5.29927779999999959 139.03053 -10.218657 -5.48383239999999983 138.63582 -10.198479 -5.380868 138.29042 -10.188673 -5.56923149999999989 137.95439 -10.180837 -5.81285290000000021 140.26326 -10.871096 -5.71367310000000028 139.90791 -10.829932 -5.54400829999999978 139.5571 -10.79199 -5.423769 139.23007 -10.771027 -5.56405119999999975 138.8795 -10.733273 -5.44671679999999991 138.5528 -10.712527 -5.59034160000000035 138.23059 -10.695006 -5.78341290000000008 140"
-		+ ".34015 -11.495575 -5.63038870000000014 139.95848 -11.423364 -5.39645620000000026 139.57736 -11.356462 -5.22241260000000018 139.19911 -11.317701 -5.36591630000000031 138.81802 -11.251148 -5.1958245999999999 138.43982 -11.212743 -5.34330939999999988 138.06216 -11.179667 -5.55096290000000003 140.13382 -12.116259 -5.537652 139.75331 -12.0122 -5.26129059999999971 139.36781 -11.914937 -5.049262 138.95593 -11.853673 -5.17811630000000012 138.57013 -11.756849 -4.97022489999999983 138.15791 -11.696033 -5.10332730000000012 137.74069 -11.642037 -5.30101349999999982 139.66167 -12.684774 -5.25490279999999998 139.2957 -12.541406 -4.90485430000000022 138.91676 -12.406965 -4.63210440000000023 138.46948 -12.319748 -4.76781610000000011 138.08972 -12.185891 -4.50005529999999965 137.64159 -12.099245 -4.64074279999999995 137.18053 -12.021541 -4.85873410000000039 138.61952 -13.098708 -4.97665690000000005 138.29724 -12.932088 -4.63287159999999965 137.95708 -12.773608 -4.35805609999999977 137.51997 -12.659223 -4.45705219999999969 137"
-		+ ".17868 -12.501263 -4.18663839999999965 136.7404 -12.387395 -4.29005339999999968 136.28371 -12.281916 -4.46456530000000029 137.56413 -13.45808 -4.66450449999999961 137.30258 -13.282789 -4.35844369999999959 137.02092 -13.113914 -4.10967679999999991 136.63274 -12.979042 -4.16432619999999964 136.34984 -12.810564 -3.919075 135.96039 -12.676095 -3.97732470000000005 135.55028 -12.548214 -4.09437660000000037 136.52582 -13.736851 -4.19048360000000031 136.34442 -13.564271 -3.908648 136.14053 -13.396676 -3.67798420000000004 135.81783 -13.255426 -3.71774389999999988 135.61249 -13.088152 -3.49038219999999999 135.28833 -12.947229 -3.53343609999999986 134.94167 -12.811282 -3.6276689000000002 135.73158 -14.094451 -3.67815970000000014 135.62752 -13.926137 -3.4017997000000002 135.49701 -13.761583 -3.17625210000000013 135.22699 -13.616836 -3.2187686000000002 135.09726 -13.452165 -2.99172519999999986 134.82826 -13.307277 -3.03227879999999983 134.53131 -13.166356 -3.12653520000000018 135.04167 -14.630013 -3.32145549999999989 134."
-		+ "98186 -14.46173 -3.07279560000000007 134.89749 -14.295194 -2.86580229999999991 134.67879 -14.138207 -2.88665770000000022 134.59076 -13.971937 -2.68587260000000017 134.37427 -13.814795 -2.7029964999999998 134.13391 -13.659349 -2.76059959999999993 134.35155 -15.463204 -3.14270780000000016 134.31178 -15.295099 -2.94907519999999979 134.2581 -15.127049 -2.7771587000000002 134.10835 -14.95938 -2.75487659999999979 134.06146 -14.791304 -2.57236429999999983 133.91032 -14.623637 -2.55224820000000019 133.7337 -14.45607 -2.57185359999999985 140.75807 -3.89569570000000009 -5.2425885000000001 140.66902 -3.89569570000000009 -5.62667080000000031 140.54184 -3.89569570000000009 -5.94802090000000039 140.21342 -3.89569570000000009 -5.93825390000000031 140.08377 -3.89569570000000009 -6.25556369999999973 139.7529 -3.89569570000000009 -6.24175789999999964 139.38391 -3.89569570000000009 -6.16524550000000016 141.28307 -4.42345520000000025 -5.092648 141.10631 -4.42345520000000025 -5.608994 140.88309 -4.42345520000000025 -6.04883189999"
-		+ "999971 140.41273 -4.42345520000000025 -6.08210989999999985 140.18629 -4.42345520000000025 -6.516665 139.71274 -4.42345520000000025 -6.54464820000000014 139.19269 -4.42345520000000025 -6.49612859999999959 141.62515 -4.95121430000000018 -4.9457078000000001 141.35938 -4.95121430000000018 -5.55214739999999995 141.0433 -4.95121430000000018 -6.07586669999999973"
-		)
-		2 "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12|FishBowl:Seaweed12Shape" 
-		"pt[498:641]" (" 140.46156 -4.95121430000000018 -6.16245170000000009 140.14226 -4.95121430000000018 -6.68082759999999976 139.55728 -4.95121430000000018 -6.76207590000000014 138.92203 -4.95121430000000018 -6.76059629999999956 141.16211 -5.4789734000000001 -5.252841 140.95778 -5.4789734000000001 -5.81660320000000031 140.70332 -5.4789734000000001 -6.29784970000000044 140.18399 -5.4789734000000001 -6.34331129999999987 139.92624 -5.4789734000000001 -6.81914040000000021 139.4039 -5.4789734000000001 -6.85967920000000042 138.83141 -5.4789734000000001 -6.817625 140.79909 -6.00673480000000026 -5.28027580000000007 140.62564 -6.00673480000000026 -5.74456409999999984 140.41142 -6.00673480000000026 -6.14170839999999973 139.9809 -6.00673480000000026 -6.1830368 139.76389 -6.00673480000000026 -6.57562879999999961 139.3311 -6.00673480000000026 -6.61320830000000015 138.85759 -6.00673480000000026 -6.58375980000000016 141.33598 -6.53449390000000019 -5.05840729999999983 141.16724 -6.53449390000000019 -5.57038640000000029 140.95169 -6.534493900000"
-		+ "00019 -6.0053706 140.48885 -6.53449390000000019 -6.03345779999999987 140.27026 -6.53449390000000019 -6.46344570000000029 139.8042 -6.53449390000000019 -6.486217 139.29144 -6.53449390000000019 -6.432178 141.55051 -7.0622543999999996 -4.9968591 141.3808 -7.0622543999999996 -5.53916789999999981 141.16078 -7.0622543999999996 -5.99866960000000038 140.67484 -7.0622543999999996 -6.0206704000000002 140.45157 -7.0622543999999996 -6.47483870000000028 139.96239 -7.0622543999999996 -6.49149319999999985 139.42287 -7.0622543999999996 -6.42535260000000008 141.45972 -7.5900148999999999 -5.24997190000000025 141.23659 -7.5900148999999999 -5.78594350000000013 140.96829 -7.5900148999999999 -6.24083949999999987 140.45886 -7.5900148999999999 -6.26302960000000031 140.18747 -7.5900148999999999 -6.712388 139.67511 -7.5900148999999999 -6.72925519999999988 139.1169 -7.5900148999999999 -6.663919 140.72481 -8.117775 -5.80117320000000003 140.46219 -8.117775 -6.24162579999999956 140.16705 -8.117775 -6.61312630000000024 139.69995 -8.117775 "
-		+ "-6.62017729999999993 139.40259 -8.117775 -6.98700329999999958 138.93355 -8.117775 -6.98994260000000001 138.43076 -8.117775 -6.92133670000000034 140.5406 -8.64553450000000012 -6.20390749999999969 140.24959 -8.64553450000000012 -6.629693 139.92944 -8.64553450000000012 -6.9811892999999996 139.45598 -8.64553450000000012 -6.94137619999999966 139.13429 -8.64553450000000012 -7.28889940000000003 138.65862 -8.64553450000000012 -7.24344110000000008 138.15378 -8.64553450000000012 -7.1236 141.02579 -9.17329409999999967 -6.463274 140.63571 -9.17329409999999967 -6.93176170000000003 140.21754 -9.17329409999999967 -7.31138520000000014 139.651 -9.17329409999999967 -7.22145890000000001 139.23103 -9.17329409999999967 -7.59535260000000001 138.66267 -9.17329409999999967 -7.49970580000000009 138.06625 -9.17329409999999967 -7.3151913000000004 141.07722 -9.70105550000000072 -6.60315510000000039 140.64438 -9.70105550000000072 -6.98529860000000014 140.19273 -9.70105550000000072 -7.29016589999999987 139.64185 -9.70105550000000072 -7.18"
-		+ "661450000000013 139.189 -9.70105550000000072 -7.486496 138.63689 -9.70105550000000072 -7.37796309999999966 138.06599 -9.70105550000000072 -7.19214529999999996 140.36504 -10.310821 -6.6809902000000001 140.02898 -10.302978 -6.92444279999999956 139.68353 -10.293164 -7.11253120000000028 139.28886 -10.272995 -7.00981 138.94286 -10.263064 -7.19461629999999985 138.54756 -10.242759 -7.08809950000000022 138.14288 -10.220486 -6.92631390000000025 140.35442 -10.936109 -6.71117689999999989 140.03221 -10.918574 -6.90405610000000003 139.70549 -10.89782 -7.047514 139.35493 -10.860084 -6.93045760000000044 139.02794 -10.839138 -7.07100629999999963 138.67709 -10.801185 -6.95060490000000009 138.32173 -10.760011 -6.78076119999999971 140.35117 -11.603138 -6.84411910000000034 139.9735 -11.570045 -7.05157469999999975 139.59529 -11.531646 -7.19914050000000039 139.2142 -11.465105 -7.02917 138.83597 -11.426354 -7.17277670000000001 138.45485 -11.359459 -6.99881740000000008 138.07318 -11.28723 -6.76469089999999973 140.0329 -12.25388 -6.8"
-		+ "4079119999999996 139.61569 -12.199869 -7.03832959999999996 139.20346 -12.139064 -7.17153360000000006 138.81764 -12.04226 -6.96385379999999987 138.40573 -11.98102 -7.09291930000000015 138.02023 -11.883766 -6.88098529999999986 137.63974 -11.779693 -6.60448360000000001 139.40019 -12.865335 -6.81687740000000009 138.93913 -12.787631 -7.03487349999999978 138.49098 -12.700982 -7.17556379999999994 138.11124 -12.567125 -6.90779730000000036 137.66396 -12.479908 -7.04350520000000024 137.28502 -12.345469 -6.77075620000000011 136.91905 -12.2021 -6.4207105999999996 138.24785 -13.267748 -6.40971090000000032 137.79166 -13.162028 -6.58223010000000031 137.35336 -13.048181 -6.68578150000000004 137.01202 -12.89024 -6.41552830000000007 136.57487 -12.775869 -6.51466559999999983 136.23468 -12.617405 -6.23998019999999975 135.91292 -12.450553 -5.89421269999999975 137.15678 -13.588099 -5.824789 136.7471 -13.460089 -5.94065379999999976 136.35754 -13.325652 -5.9992188999999998 136.07451 -13.157221 -5.75437829999999995 135.68617 -13.0223"
-		+ "92 -5.80943349999999992 135.4044 -12.853557 -5.56098080000000028 135.14326 -12.678125 -5.25372079999999997 136.07141 -13.837595 -5.22458359999999988 135.72476 -13.701651 -5.3188051999999999 135.40059 -13.560722 -5.3618636000000004 135.19527 -13.393451 -5.13450239999999969 134.87254 -13.252198 -5.17425349999999984 134.66867 -13.08461 -4.9435967999999999 134.48726 -12.912026 -4.66175650000000008 135.19734 -14.170322 -4.70465949999999999 134.899 -14.029601 -4.80160710000000002 134.62709 -13.885127 -4.84776119999999988 134.49469 -13.720834 -4.62583590000000022 134.222 -13.576469 -4.67347860000000015 134.08858 -13.412326 -4.453527 133.98311 -13.24421 -4.17985819999999997 134.54047 -14.665652 -4.17163940000000011 134.29216 -14.510772 -4.24271770000000004 134.06844 -14.354145 -4.27211479999999977 133.979 -14.187967 -4.07368229999999976 133.75894 -14.031084 -4.09688189999999963 133.66733 -13.865062 -3.90216779999999996 133.59956 -13.697345 -3.66699 133.98166 -15.464657 -3.71897650000000013 133.80502 -15.29709 -3.7385"
-		+ "9 133.64232 -15.129468 -3.73650310000000019 133.57567 -14.961473 -3.58477809999999986 133.40616 -14.793879 -3.5932868 133.3409 -14.625874 -3.439384 133.30113 -14.457768 -3.24577120000000008"
-		)
-		2 "|FishBowl:MainCamera" "translate" " -type \"double3\" 100.73639290394720547 -13.63456157248222667 159.82225518049955326"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish" "translate" " -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish" "rotate" " -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish" "scale" " -type \"double3\" 0.3 0.3 0.3"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish" "rotatePivot" " -type \"double3\" -46.40304367520890594 81.92982448364305981 87.14336762539815595"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish" "scalePivot" " -type \"double3\" -94.02700670278218809 -18.09859540826064972 100.40971499300773928"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish" "scalePivotTranslate" " -type \"double3\" 47.62396302757328215 100.02841989190370953 -13.26634736760958333"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail" "rotatePivot" " -type \"double3\" 205.0710296630859375 51.99628067016601562 -10.24437904357910156"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail" "scalePivot" " -type \"double3\" 205.0710296630859375 51.99628067016601562 -10.24437904357910156"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail|FishBowl:TailShape" "uvSet[0].uvSetName" 
-		" -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes" "rotatePivot" " -type \"double3\" 195.2665863037109375 102.95828628539840111 53.94715118408291232"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes" "scalePivot" " -type \"double3\" 195.2665863037109375 102.95828628540039062 53.94715118408203125"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes" "scalePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes|FishBowl:Head_eyesShape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:EyeHole" "rotatePivot" " -type \"double3\" 36.21983687673752428 55.07506091180015062 -16.69356155395500707"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:EyeHole" "scalePivot" " -type \"double3\" 36.21983687673750296 55.07506091180015062 -16.69356155395499997"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:OG_Head" "rotatePivot" " -type \"double3\" 28.2196666180149407 51.99627430933618655 -10.24437913585917315"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:OG_Head" "scalePivot" " -type \"double3\" 28.21966661801493714 51.99627430933617234 -10.24437913585917315"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine" "rotatePivot" " -type \"double3\" 221.52359771728515625 51.99626350402832031 -10.24437618255615234"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine" "scalePivot" " -type \"double3\" 221.52359771728515625 51.99626350402832031 -10.24437618255615234"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine|FishBowl:SpineShape" "uvSet[0].uvSetName" 
-		" -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs" "rotatePivot" " -type \"double3\" -17.98564773085129076 -14.36237260450315034 -10.24437913585922466"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs" "scalePivot" " -type \"double3\" -17.98564773085129076 -14.36237260450315034 -10.24437913585922466"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4" "rotatePivot" 
-		" -type \"double3\" 222.9132843017578125 46.37739753723144531 -10.24436140060424805"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4" "scalePivot" 
-		" -type \"double3\" 222.9132843017578125 46.37739753723144531 -10.24436140060424805"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4|FishBowl:Rib4Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1" "rotatePivot" 
-		" -type \"double3\" 215.93603515625 47.51068496704101562 -10.24436473846435547"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1" "scalePivot" 
-		" -type \"double3\" 215.93603515625 47.51068496704101562 -10.24436473846435547"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1|FishBowl:RibShape1" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2" "rotatePivot" 
-		" -type \"double3\" 222.9132843017578125 57.61831855773925781 -10.2443699836730957"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2" "scalePivot" 
-		" -type \"double3\" 222.9132843017578125 57.61831855773925781 -10.2443699836730957"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2|FishBowl:RibShape2" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3" "rotatePivot" 
-		" -type \"double3\" 215.93603515625 56.55450439453125 -10.24437141418457031"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3" "scalePivot" 
-		" -type \"double3\" 215.93603515625 56.55450439453125 -10.24437141418457031"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3|FishBowl:RibShape3" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "visibility" " 1"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "translate" " -type \"double3\" -113.75526546139060713 -70.16472470023276742 110.64180724712446136"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "rotate" " -type \"double3\" 0 0 0"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "scale" " -type \"double3\" 1 1 1"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "rotatePivot" " -type \"double3\" 17.64888918623786651 45.98008357742467922 -10.24437913585921933"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "rotatePivotTranslate" 
-		" -type \"double3\" 0 0 0"
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve" "scalePivot" " -type \"double3\" 17.64888918623786651 45.98008357742467922 -10.24437913585921933"
-		
-		2 "|Fishbowl|FishBowl:SkelyFish|FishBowl:RibCurve|FishBowl:RibCurveShape" 
-		"primaryVisibility" " 1"
-		2 "|Fishbowl|FishBowl:Sand" "rotatePivot" " -type \"double3\" 197.29718017578125 -0.7286726698251158 -7.62939453125e-06"
-		
-		2 "|Fishbowl|FishBowl:Sand" "scalePivot" " -type \"double3\" 197.29718017578125 -0.7286726698251158 -7.62939453125e-06"
-		
-		2 "|Fishbowl|FishBowl:Sand|FishBowl:SandShape" "uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		
-		3 "FishBowl:polyTweakUV57.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4|FishBowl:Rib4Shape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV56.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine|FishBowl:SpineShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV39.output" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1|FishBowl:Seaweed1Shape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV55.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes|FishBowl:Head_eyesShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV59.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2|FishBowl:RibShape2.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV34.output" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:CastleBaseShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV65.output" "|Fishbowl|FishBowl:Fishbowl|FishBowl:FishbowlShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV5.output" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown|FishBowl:CastleCrownShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV35.output" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door|FishBowl:DoorShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV54.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail|FishBowl:TailShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV58.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1|FishBowl:RibShape1.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV37.output" "|Fishbowl|FishBowl:Sand|FishBowl:SandShape.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV60.output" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3|FishBowl:RibShape3.inMesh" 
-		""
-		3 "FishBowl:polyTweakUV38.output" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:Seaweed4Shape.inMesh" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.translateX" 
-		"FishBowlRN.placeHolderList[1]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.translateY" 
-		"FishBowlRN.placeHolderList[2]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.translateZ" 
-		"FishBowlRN.placeHolderList[3]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.scaleX" 
-		"FishBowlRN.placeHolderList[4]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.scaleY" 
-		"FishBowlRN.placeHolderList[5]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.scaleZ" 
-		"FishBowlRN.placeHolderList[6]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.rotateX" 
-		"FishBowlRN.placeHolderList[7]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.rotateY" 
-		"FishBowlRN.placeHolderList[8]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.rotateZ" 
-		"FishBowlRN.placeHolderList[9]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase.visibility" 
-		"FishBowlRN.placeHolderList[10]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:CastleBaseShape.inMesh" 
-		"FishBowlRN.placeHolderList[11]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.translateX" 
-		"FishBowlRN.placeHolderList[12]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.translateY" 
-		"FishBowlRN.placeHolderList[13]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.translateZ" 
-		"FishBowlRN.placeHolderList[14]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.rotateX" 
-		"FishBowlRN.placeHolderList[15]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.rotateY" 
-		"FishBowlRN.placeHolderList[16]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.rotateZ" 
-		"FishBowlRN.placeHolderList[17]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.visibility" 
-		"FishBowlRN.placeHolderList[18]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.scaleX" 
-		"FishBowlRN.placeHolderList[19]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.scaleY" 
-		"FishBowlRN.placeHolderList[20]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door.scaleZ" 
-		"FishBowlRN.placeHolderList[21]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleBase|FishBowl:Door|FishBowl:DoorShape.inMesh" 
-		"FishBowlRN.placeHolderList[22]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.translateX" 
-		"FishBowlRN.placeHolderList[23]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.translateY" 
-		"FishBowlRN.placeHolderList[24]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.translateZ" 
-		"FishBowlRN.placeHolderList[25]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.scaleX" 
-		"FishBowlRN.placeHolderList[26]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.scaleY" 
-		"FishBowlRN.placeHolderList[27]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.scaleZ" 
-		"FishBowlRN.placeHolderList[28]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.rotateX" 
-		"FishBowlRN.placeHolderList[29]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.rotateY" 
-		"FishBowlRN.placeHolderList[30]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.rotateZ" 
-		"FishBowlRN.placeHolderList[31]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown.visibility" 
-		"FishBowlRN.placeHolderList[32]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Castle|FishBowl:CastleCrown|FishBowl:CastleCrownShape.inMesh" 
-		"FishBowlRN.placeHolderList[33]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.translateX" 
-		"FishBowlRN.placeHolderList[34]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.translateY" 
-		"FishBowlRN.placeHolderList[35]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.translateZ" 
-		"FishBowlRN.placeHolderList[36]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.scaleX" 
-		"FishBowlRN.placeHolderList[37]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.scaleY" 
-		"FishBowlRN.placeHolderList[38]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.scaleZ" 
-		"FishBowlRN.placeHolderList[39]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.rotateX" 
-		"FishBowlRN.placeHolderList[40]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.rotateY" 
-		"FishBowlRN.placeHolderList[41]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.rotateZ" 
-		"FishBowlRN.placeHolderList[42]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1.visibility" 
-		"FishBowlRN.placeHolderList[43]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed1|FishBowl:Seaweed1Shape.inMesh" 
-		"FishBowlRN.placeHolderList[44]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.translateX" 
-		"FishBowlRN.placeHolderList[45]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.translateY" 
-		"FishBowlRN.placeHolderList[46]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.translateZ" 
-		"FishBowlRN.placeHolderList[47]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.scaleX" 
-		"FishBowlRN.placeHolderList[48]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.scaleY" 
-		"FishBowlRN.placeHolderList[49]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.scaleZ" 
-		"FishBowlRN.placeHolderList[50]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.rotateX" 
-		"FishBowlRN.placeHolderList[51]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.rotateY" 
-		"FishBowlRN.placeHolderList[52]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.rotateZ" 
-		"FishBowlRN.placeHolderList[53]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4.visibility" 
-		"FishBowlRN.placeHolderList[54]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed4|FishBowl:Seaweed4Shape.inMesh" 
-		"FishBowlRN.placeHolderList[55]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.translateX" 
-		"FishBowlRN.placeHolderList[56]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.translateY" 
-		"FishBowlRN.placeHolderList[57]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.translateZ" 
-		"FishBowlRN.placeHolderList[58]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.rotateX" 
-		"FishBowlRN.placeHolderList[59]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.rotateY" 
-		"FishBowlRN.placeHolderList[60]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.rotateZ" 
-		"FishBowlRN.placeHolderList[61]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.scaleX" 
-		"FishBowlRN.placeHolderList[62]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.scaleY" 
-		"FishBowlRN.placeHolderList[63]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.scaleZ" 
-		"FishBowlRN.placeHolderList[64]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed8.visibility" 
-		"FishBowlRN.placeHolderList[65]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.translateX" 
-		"FishBowlRN.placeHolderList[66]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.translateY" 
-		"FishBowlRN.placeHolderList[67]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.translateZ" 
-		"FishBowlRN.placeHolderList[68]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.rotateX" 
-		"FishBowlRN.placeHolderList[69]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.rotateY" 
-		"FishBowlRN.placeHolderList[70]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.rotateZ" 
-		"FishBowlRN.placeHolderList[71]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.scaleX" 
-		"FishBowlRN.placeHolderList[72]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.scaleY" 
-		"FishBowlRN.placeHolderList[73]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.scaleZ" 
-		"FishBowlRN.placeHolderList[74]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed9.visibility" 
-		"FishBowlRN.placeHolderList[75]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.translateX" 
-		"FishBowlRN.placeHolderList[76]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.translateY" 
-		"FishBowlRN.placeHolderList[77]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.translateZ" 
-		"FishBowlRN.placeHolderList[78]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.rotateX" 
-		"FishBowlRN.placeHolderList[79]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.rotateY" 
-		"FishBowlRN.placeHolderList[80]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.rotateZ" 
-		"FishBowlRN.placeHolderList[81]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.scaleX" 
-		"FishBowlRN.placeHolderList[82]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.scaleY" 
-		"FishBowlRN.placeHolderList[83]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.scaleZ" 
-		"FishBowlRN.placeHolderList[84]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed10.visibility" 
-		"FishBowlRN.placeHolderList[85]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.translateX" 
-		"FishBowlRN.placeHolderList[86]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.translateY" 
-		"FishBowlRN.placeHolderList[87]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.translateZ" 
-		"FishBowlRN.placeHolderList[88]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.rotateX" 
-		"FishBowlRN.placeHolderList[89]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.rotateY" 
-		"FishBowlRN.placeHolderList[90]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.rotateZ" 
-		"FishBowlRN.placeHolderList[91]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.scaleX" 
-		"FishBowlRN.placeHolderList[92]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.scaleY" 
-		"FishBowlRN.placeHolderList[93]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.scaleZ" 
-		"FishBowlRN.placeHolderList[94]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed11.visibility" 
-		"FishBowlRN.placeHolderList[95]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.translateX" 
-		"FishBowlRN.placeHolderList[96]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.translateY" 
-		"FishBowlRN.placeHolderList[97]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.translateZ" 
-		"FishBowlRN.placeHolderList[98]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.rotateX" 
-		"FishBowlRN.placeHolderList[99]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.rotateY" 
-		"FishBowlRN.placeHolderList[100]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.rotateZ" 
-		"FishBowlRN.placeHolderList[101]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.scaleX" 
-		"FishBowlRN.placeHolderList[102]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.scaleY" 
-		"FishBowlRN.placeHolderList[103]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.scaleZ" 
-		"FishBowlRN.placeHolderList[104]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Seaweeds|FishBowl:Seaweed12.visibility" 
-		"FishBowlRN.placeHolderList[105]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.translateX" 
-		"FishBowlRN.placeHolderList[106]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.translateY" 
-		"FishBowlRN.placeHolderList[107]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.translateZ" 
-		"FishBowlRN.placeHolderList[108]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.rotateX" 
-		"FishBowlRN.placeHolderList[109]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.rotateY" 
-		"FishBowlRN.placeHolderList[110]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.rotateZ" 
-		"FishBowlRN.placeHolderList[111]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.scaleX" 
-		"FishBowlRN.placeHolderList[112]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.scaleY" 
-		"FishBowlRN.placeHolderList[113]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.scaleZ" 
-		"FishBowlRN.placeHolderList[114]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail.visibility" 
-		"FishBowlRN.placeHolderList[115]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Tail|FishBowl:TailShape.inMesh" 
-		"FishBowlRN.placeHolderList[116]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.translateX" 
-		"FishBowlRN.placeHolderList[117]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.translateY" 
-		"FishBowlRN.placeHolderList[118]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.translateZ" 
-		"FishBowlRN.placeHolderList[119]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.rotateX" 
-		"FishBowlRN.placeHolderList[120]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.rotateY" 
-		"FishBowlRN.placeHolderList[121]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.rotateZ" 
-		"FishBowlRN.placeHolderList[122]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.scaleX" 
-		"FishBowlRN.placeHolderList[123]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.scaleY" 
-		"FishBowlRN.placeHolderList[124]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.scaleZ" 
-		"FishBowlRN.placeHolderList[125]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes.visibility" 
-		"FishBowlRN.placeHolderList[126]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Head_eyes|FishBowl:Head_eyesShape.inMesh" 
-		"FishBowlRN.placeHolderList[127]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.translateX" 
-		"FishBowlRN.placeHolderList[128]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.translateY" 
-		"FishBowlRN.placeHolderList[129]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.translateZ" 
-		"FishBowlRN.placeHolderList[130]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.rotateX" 
-		"FishBowlRN.placeHolderList[131]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.rotateY" 
-		"FishBowlRN.placeHolderList[132]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.rotateZ" 
-		"FishBowlRN.placeHolderList[133]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.scaleX" 
-		"FishBowlRN.placeHolderList[134]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.scaleY" 
-		"FishBowlRN.placeHolderList[135]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.scaleZ" 
-		"FishBowlRN.placeHolderList[136]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine.visibility" 
-		"FishBowlRN.placeHolderList[137]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:Spine|FishBowl:SpineShape.inMesh" 
-		"FishBowlRN.placeHolderList[138]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.translateX" 
-		"FishBowlRN.placeHolderList[139]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.translateY" 
-		"FishBowlRN.placeHolderList[140]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.translateZ" 
-		"FishBowlRN.placeHolderList[141]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.rotateX" 
-		"FishBowlRN.placeHolderList[142]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.rotateY" 
-		"FishBowlRN.placeHolderList[143]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.rotateZ" 
-		"FishBowlRN.placeHolderList[144]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.scaleX" 
-		"FishBowlRN.placeHolderList[145]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.scaleY" 
-		"FishBowlRN.placeHolderList[146]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.scaleZ" 
-		"FishBowlRN.placeHolderList[147]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4.visibility" 
-		"FishBowlRN.placeHolderList[148]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib4|FishBowl:Rib4Shape.inMesh" 
-		"FishBowlRN.placeHolderList[149]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.translateX" 
-		"FishBowlRN.placeHolderList[150]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.translateY" 
-		"FishBowlRN.placeHolderList[151]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.translateZ" 
-		"FishBowlRN.placeHolderList[152]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.rotateX" 
-		"FishBowlRN.placeHolderList[153]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.rotateY" 
-		"FishBowlRN.placeHolderList[154]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.rotateZ" 
-		"FishBowlRN.placeHolderList[155]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.scaleX" 
-		"FishBowlRN.placeHolderList[156]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.scaleY" 
-		"FishBowlRN.placeHolderList[157]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.scaleZ" 
-		"FishBowlRN.placeHolderList[158]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1.visibility" 
-		"FishBowlRN.placeHolderList[159]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib1|FishBowl:RibShape1.inMesh" 
-		"FishBowlRN.placeHolderList[160]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.translateX" 
-		"FishBowlRN.placeHolderList[161]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.translateY" 
-		"FishBowlRN.placeHolderList[162]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.translateZ" 
-		"FishBowlRN.placeHolderList[163]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.rotateX" 
-		"FishBowlRN.placeHolderList[164]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.rotateY" 
-		"FishBowlRN.placeHolderList[165]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.rotateZ" 
-		"FishBowlRN.placeHolderList[166]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.scaleX" 
-		"FishBowlRN.placeHolderList[167]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.scaleY" 
-		"FishBowlRN.placeHolderList[168]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.scaleZ" 
-		"FishBowlRN.placeHolderList[169]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2.visibility" 
-		"FishBowlRN.placeHolderList[170]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib2|FishBowl:RibShape2.inMesh" 
-		"FishBowlRN.placeHolderList[171]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.translateX" 
-		"FishBowlRN.placeHolderList[172]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.translateY" 
-		"FishBowlRN.placeHolderList[173]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.translateZ" 
-		"FishBowlRN.placeHolderList[174]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.rotateX" 
-		"FishBowlRN.placeHolderList[175]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.rotateY" 
-		"FishBowlRN.placeHolderList[176]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.rotateZ" 
-		"FishBowlRN.placeHolderList[177]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.scaleX" 
-		"FishBowlRN.placeHolderList[178]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.scaleY" 
-		"FishBowlRN.placeHolderList[179]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.scaleZ" 
-		"FishBowlRN.placeHolderList[180]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3.visibility" 
-		"FishBowlRN.placeHolderList[181]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:SkelyFish|FishBowl:FishRibs|FishBowl:Rib3|FishBowl:RibShape3.inMesh" 
-		"FishBowlRN.placeHolderList[182]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.translateX" "FishBowlRN.placeHolderList[183]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.translateZ" "FishBowlRN.placeHolderList[184]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.translateY" "FishBowlRN.placeHolderList[185]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.scaleX" "FishBowlRN.placeHolderList[186]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.scaleY" "FishBowlRN.placeHolderList[187]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.scaleZ" "FishBowlRN.placeHolderList[188]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.rotateX" "FishBowlRN.placeHolderList[189]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.rotateY" "FishBowlRN.placeHolderList[190]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.rotateZ" "FishBowlRN.placeHolderList[191]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand.visibility" "FishBowlRN.placeHolderList[192]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Sand|FishBowl:SandShape.inMesh" 
-		"FishBowlRN.placeHolderList[193]" ""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.translateX" "FishBowlRN.placeHolderList[194]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.translateZ" "FishBowlRN.placeHolderList[195]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.translateY" "FishBowlRN.placeHolderList[196]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.scaleX" "FishBowlRN.placeHolderList[197]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.scaleY" "FishBowlRN.placeHolderList[198]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.scaleZ" "FishBowlRN.placeHolderList[199]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.rotateX" "FishBowlRN.placeHolderList[200]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.rotateY" "FishBowlRN.placeHolderList[201]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.rotateZ" "FishBowlRN.placeHolderList[202]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl.visibility" "FishBowlRN.placeHolderList[203]" 
-		""
-		5 4 "FishBowlRN" "|Fishbowl|FishBowl:Fishbowl|FishBowl:FishbowlShape.inMesh" 
-		"FishBowlRN.placeHolderList[204]" ""
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV5.output" "FishBowlRN.placeHolderList[205]" 
-		"FishBowl:CastleCrownShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV34.output" "FishBowlRN.placeHolderList[206]" 
-		"FishBowl:CastleBaseShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV35.output" "FishBowlRN.placeHolderList[207]" 
-		"FishBowl:DoorShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV37.output" "FishBowlRN.placeHolderList[208]" 
-		"FishBowl:SandShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV38.output" "FishBowlRN.placeHolderList[209]" 
-		"FishBowl:Seaweed4Shape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV39.output" "FishBowlRN.placeHolderList[210]" 
-		"FishBowl:Seaweed1Shape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV54.output" "FishBowlRN.placeHolderList[211]" 
-		"FishBowl:TailShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV55.output" "FishBowlRN.placeHolderList[212]" 
-		"FishBowl:Head_eyesShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV56.output" "FishBowlRN.placeHolderList[213]" 
-		"FishBowl:SpineShape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV57.output" "FishBowlRN.placeHolderList[214]" 
-		"FishBowl:Rib4Shape.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV58.output" "FishBowlRN.placeHolderList[215]" 
-		"FishBowl:RibShape1.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV59.output" "FishBowlRN.placeHolderList[216]" 
-		"FishBowl:RibShape2.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV60.output" "FishBowlRN.placeHolderList[217]" 
-		"FishBowl:RibShape3.i"
-		5 3 "FishBowlRN" "FishBowl:polyTweakUV65.output" "FishBowlRN.placeHolderList[218]" 
-		"FishBowl:FishbowlShape.i";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
+	setAttr ".ai_translator" -type "string" "maya";
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "861D93BC-5644-D491-C569-3BBF9BAF505A";
 createNode reference -n "sharedReferenceNode";
@@ -24710,7 +23681,7 @@ createNode animCurveTA -n "COG_Ctrl_rotateX";
 		 1.0000000850340136 -6.6187369474363127 2 -6.6187369474363127 3 -5.0736244750617283
 		 4 -3.8228191402823044 5 -3.3077816494907779 6 -7.1998287039170332 7 -2.0633017526907698
 		 8 -7.1875598899227802 9 -8.0166958510133135 10 -7.5817808288005946 11 -5.1950896044112351
-		 12 -0.42634969590787181 13 -4.9873090169232954 14 -5.8258000156446412 15 -6.8265795947636665
+		 12 -0.42634969590787186 13 -4.9873090169232954 14 -5.8258000156446412 15 -6.8265795947636665
 		 16 -4.0038382345641361 17 -7.7081471919856268 18 -8.0166958510133135 20 -8.0166958510133135
 		 21 -8.0166958510133135 22 -8.0166958510133135 23 -8.0166958510133135 24 -8.0166958510133135
 		 25 -8.0166958510133135 26 -8.0166958510133135 27 0 28 0 29 0 30 7.6804961940540029
@@ -28487,20 +27458,20 @@ createNode animCurveTA -n "pCube1_rotateX";
 	rename -uid "9E791AC9-40CA-1952-1599-6792F08AD171";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 0 22 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 21 0 22 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTA -n "pCube1_rotateY";
 	rename -uid "3D078740-4896-AD44-825A-FCA2CBEBE2EE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 0 22 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 21 0 22 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTA -n "pCube1_rotateZ";
 	rename -uid "C5AE6DDD-481A-FCD7-F860-0B860037219E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 0 22 0;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 21 0 22 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTU -n "Head_COG_Ctrl_Hat_Visibility";
 	rename -uid "A5A29AB5-4975-08CF-D9DD-45A86759BC72";
 	setAttr ".tan" 5;
@@ -28731,44 +27702,50 @@ createNode animCurveTU -n "pCube1_visibility";
 	rename -uid "53270F7D-49C1-AC62-654A-D2AEEBA0C9C0";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 1 22 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 0 21 0 22 0;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "pCube1_translateX";
 	rename -uid "2344A5B8-4554-C28E-71B5-4D9CEE42DE11";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 -98.951762039542388 22 -98.951762039542388;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 -98.951762039542388 21 -98.951762039542388
+		 22 -98.951762039542388;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "pCube1_translateY";
 	rename -uid "B7C13EDF-4A81-AE60-AC3A-7D94D64F871A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 66.940470944941453 22 66.940470944941453;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 66.940470944941453 21 66.940470944941453
+		 22 66.940470944941453;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTL -n "pCube1_translateZ";
 	rename -uid "39BF298C-4467-5AA7-D7F3-62B17ABB2F96";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 91.685898895677539 22 91.685898895677539;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 91.685898895677539 21 91.685898895677539
+		 22 91.685898895677539;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTU -n "pCube1_scaleX";
 	rename -uid "F71C3B10-4721-4A3B-710E-ED92B808FED0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 172.06498626033192 22 172.06498626033192;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 172.06498626033192 21 172.06498626033192
+		 22 172.06498626033192;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTU -n "pCube1_scaleY";
 	rename -uid "1DCDB8F1-43F4-3C2C-04FD-F6A64F5488CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 66.723858667134635 22 66.723858667134635;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 66.723858667134635 21 66.723858667134635
+		 22 66.723858667134635;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTU -n "pCube1_scaleZ";
 	rename -uid "9F0F43CF-4BF0-1C31-B21C-098206F33572";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  21 44.308940840080702 22 44.308940840080702;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 44.308940840080702 21 44.308940840080702
+		 22 44.308940840080702;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTU -n "Rib1_visibility";
 	rename -uid "32DC9776-461D-57C1-522E-F79FE22D0910";
 	setAttr ".tan" 9;
@@ -29452,7 +28429,8 @@ createNode reference -n "LivingRoomSetRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"LivingRoomSetRN"
 		"LivingRoomSetRN" 0
-		"LivingRoomSetRN" 5
+		"LivingRoomSetRN" 6
+		2 "|LivingRoomSet:SkellyLivingRoom" "visibility" " 0"
 		2 "|LivingRoomSet:SkellyLivingRoom" "translate" " -type \"double3\" -343.61 7.04240644120988435 9.12823021042937199"
 		
 		2 "LivingRoomSet:DiningTableLayer" "visibility" " 0"
@@ -29730,43 +28708,3331 @@ createNode animCurveTU -n "R_Arm_PV_Ctrl_Operating_Space";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  34 4;
 	setAttr ".kot[0]"  5;
+createNode reference -n "FishBowlRN";
+	rename -uid "9DAA3E8C-4020-A340-11DE-D5AC18F87940";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"FishBowlRN"
+		"FishBowlRN" 0
+		"FishBowlRN" 5
+		0 "|FishBowl:Fishbowl" "|FishBowl_grp" "-s -r "
+		0 "|FishBowl:Castle" "|FishBowl_grp" "-s -r "
+		0 "|FishBowl:Seaweeds" "|FishBowl_grp" "-s -r "
+		0 "|FishBowl:SkelyFish" "|FishBowl_grp" "-s -r "
+		0 "|FishBowl:Sand" "|FishBowl_grp" "-s -r ";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "livingroomKitchenRN";
+	rename -uid "C3C0E8E7-4565-1E4D-A0BE-799EE103FB66";
+	setAttr -s 685 ".phl";
+	setAttr ".phl[40]" 0;
+	setAttr ".phl[44]" 0;
+	setAttr ".phl[48]" 0;
+	setAttr ".phl[52]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[60]" 0;
+	setAttr ".phl[73]" 0;
+	setAttr ".phl[75]" 0;
+	setAttr ".phl[77]" 0;
+	setAttr ".phl[79]" 0;
+	setAttr ".phl[81]" 0;
+	setAttr ".phl[83]" 0;
+	setAttr ".phl[85]" 0;
+	setAttr ".phl[87]" 0;
+	setAttr ".phl[112]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[124]" 0;
+	setAttr ".phl[128]" 0;
+	setAttr ".phl[132]" 0;
+	setAttr ".phl[136]" 0;
+	setAttr ".phl[140]" 0;
+	setAttr ".phl[144]" 0;
+	setAttr ".phl[148]" 0;
+	setAttr ".phl[152]" 0;
+	setAttr ".phl[156]" 0;
+	setAttr ".phl[160]" 0;
+	setAttr ".phl[164]" 0;
+	setAttr ".phl[168]" 0;
+	setAttr ".phl[184]" 0;
+	setAttr ".phl[186]" 0;
+	setAttr ".phl[256]" 0;
+	setAttr ".phl[264]" 0;
+	setAttr ".phl[272]" 0;
+	setAttr ".phl[280]" 0;
+	setAttr ".phl[282]" 0;
+	setAttr ".phl[283]" 0;
+	setAttr ".phl[284]" 0;
+	setAttr ".phl[285]" 0;
+	setAttr ".phl[286]" 0;
+	setAttr ".phl[287]" 0;
+	setAttr ".phl[288]" 0;
+	setAttr ".phl[289]" 0;
+	setAttr ".phl[290]" 0;
+	setAttr ".phl[291]" 0;
+	setAttr ".phl[292]" 0;
+	setAttr ".phl[293]" 0;
+	setAttr ".phl[294]" 0;
+	setAttr ".phl[295]" 0;
+	setAttr ".phl[296]" 0;
+	setAttr ".phl[297]" 0;
+	setAttr ".phl[298]" 0;
+	setAttr ".phl[299]" 0;
+	setAttr ".phl[300]" 0;
+	setAttr ".phl[301]" 0;
+	setAttr ".phl[302]" 0;
+	setAttr ".phl[303]" 0;
+	setAttr ".phl[304]" 0;
+	setAttr ".phl[305]" 0;
+	setAttr ".phl[306]" 0;
+	setAttr ".phl[307]" 0;
+	setAttr ".phl[308]" 0;
+	setAttr ".phl[309]" 0;
+	setAttr ".phl[310]" 0;
+	setAttr ".phl[311]" 0;
+	setAttr ".phl[312]" 0;
+	setAttr ".phl[313]" 0;
+	setAttr ".phl[314]" 0;
+	setAttr ".phl[315]" 0;
+	setAttr ".phl[316]" 0;
+	setAttr ".phl[317]" 0;
+	setAttr ".phl[318]" 0;
+	setAttr ".phl[319]" 0;
+	setAttr ".phl[320]" 0;
+	setAttr ".phl[321]" 0;
+	setAttr ".phl[322]" 0;
+	setAttr ".phl[323]" 0;
+	setAttr ".phl[324]" 0;
+	setAttr ".phl[325]" 0;
+	setAttr ".phl[326]" 0;
+	setAttr ".phl[327]" 0;
+	setAttr ".phl[328]" 0;
+	setAttr ".phl[329]" 0;
+	setAttr ".phl[330]" 0;
+	setAttr ".phl[331]" 0;
+	setAttr ".phl[332]" 0;
+	setAttr ".phl[333]" 0;
+	setAttr ".phl[334]" 0;
+	setAttr ".phl[335]" 0;
+	setAttr ".phl[336]" 0;
+	setAttr ".phl[337]" 0;
+	setAttr ".phl[338]" 0;
+	setAttr ".phl[339]" 0;
+	setAttr ".phl[340]" 0;
+	setAttr ".phl[341]" 0;
+	setAttr ".phl[342]" 0;
+	setAttr ".phl[343]" 0;
+	setAttr ".phl[344]" 0;
+	setAttr ".phl[345]" 0;
+	setAttr ".phl[346]" 0;
+	setAttr ".phl[347]" 0;
+	setAttr ".phl[348]" 0;
+	setAttr ".phl[349]" 0;
+	setAttr ".phl[350]" 0;
+	setAttr ".phl[351]" 0;
+	setAttr ".phl[352]" 0;
+	setAttr ".phl[353]" 0;
+	setAttr ".phl[354]" 0;
+	setAttr ".phl[355]" 0;
+	setAttr ".phl[356]" 0;
+	setAttr ".phl[357]" 0;
+	setAttr ".phl[358]" 0;
+	setAttr ".phl[359]" 0;
+	setAttr ".phl[360]" 0;
+	setAttr ".phl[361]" 0;
+	setAttr ".phl[362]" 0;
+	setAttr ".phl[363]" 0;
+	setAttr ".phl[364]" 0;
+	setAttr ".phl[365]" 0;
+	setAttr ".phl[366]" 0;
+	setAttr ".phl[367]" 0;
+	setAttr ".phl[368]" 0;
+	setAttr ".phl[369]" 0;
+	setAttr ".phl[370]" 0;
+	setAttr ".phl[371]" 0;
+	setAttr ".phl[372]" 0;
+	setAttr ".phl[373]" 0;
+	setAttr ".phl[374]" 0;
+	setAttr ".phl[375]" 0;
+	setAttr ".phl[376]" 0;
+	setAttr ".phl[377]" 0;
+	setAttr ".phl[378]" 0;
+	setAttr ".phl[379]" 0;
+	setAttr ".phl[380]" 0;
+	setAttr ".phl[381]" 0;
+	setAttr ".phl[382]" 0;
+	setAttr ".phl[383]" 0;
+	setAttr ".phl[384]" 0;
+	setAttr ".phl[385]" 0;
+	setAttr ".phl[386]" 0;
+	setAttr ".phl[387]" 0;
+	setAttr ".phl[388]" 0;
+	setAttr ".phl[389]" 0;
+	setAttr ".phl[390]" 0;
+	setAttr ".phl[391]" 0;
+	setAttr ".phl[392]" 0;
+	setAttr ".phl[393]" 0;
+	setAttr ".phl[394]" 0;
+	setAttr ".phl[395]" 0;
+	setAttr ".phl[396]" 0;
+	setAttr ".phl[397]" 0;
+	setAttr ".phl[398]" 0;
+	setAttr ".phl[399]" 0;
+	setAttr ".phl[400]" 0;
+	setAttr ".phl[401]" 0;
+	setAttr ".phl[402]" 0;
+	setAttr ".phl[403]" 0;
+	setAttr ".phl[404]" 0;
+	setAttr ".phl[405]" 0;
+	setAttr ".phl[406]" 0;
+	setAttr ".phl[407]" 0;
+	setAttr ".phl[408]" 0;
+	setAttr ".phl[409]" 0;
+	setAttr ".phl[410]" 0;
+	setAttr ".phl[411]" 0;
+	setAttr ".phl[412]" 0;
+	setAttr ".phl[413]" 0;
+	setAttr ".phl[414]" 0;
+	setAttr ".phl[415]" 0;
+	setAttr ".phl[416]" 0;
+	setAttr ".phl[417]" 0;
+	setAttr ".phl[418]" 0;
+	setAttr ".phl[419]" 0;
+	setAttr ".phl[420]" 0;
+	setAttr ".phl[421]" 0;
+	setAttr ".phl[422]" 0;
+	setAttr ".phl[423]" 0;
+	setAttr ".phl[424]" 0;
+	setAttr ".phl[425]" 0;
+	setAttr ".phl[426]" 0;
+	setAttr ".phl[427]" 0;
+	setAttr ".phl[428]" 0;
+	setAttr ".phl[429]" 0;
+	setAttr ".phl[430]" 0;
+	setAttr ".phl[431]" 0;
+	setAttr ".phl[432]" 0;
+	setAttr ".phl[433]" 0;
+	setAttr ".phl[434]" 0;
+	setAttr ".phl[435]" 0;
+	setAttr ".phl[436]" 0;
+	setAttr ".phl[437]" 0;
+	setAttr ".phl[438]" 0;
+	setAttr ".phl[439]" 0;
+	setAttr ".phl[440]" 0;
+	setAttr ".phl[441]" 0;
+	setAttr ".phl[442]" 0;
+	setAttr ".phl[443]" 0;
+	setAttr ".phl[444]" 0;
+	setAttr ".phl[445]" 0;
+	setAttr ".phl[446]" 0;
+	setAttr ".phl[447]" 0;
+	setAttr ".phl[448]" 0;
+	setAttr ".phl[449]" 0;
+	setAttr ".phl[450]" 0;
+	setAttr ".phl[451]" 0;
+	setAttr ".phl[452]" 0;
+	setAttr ".phl[453]" 0;
+	setAttr ".phl[454]" 0;
+	setAttr ".phl[455]" 0;
+	setAttr ".phl[456]" 0;
+	setAttr ".phl[457]" 0;
+	setAttr ".phl[458]" 0;
+	setAttr ".phl[459]" 0;
+	setAttr ".phl[460]" 0;
+	setAttr ".phl[461]" 0;
+	setAttr ".phl[462]" 0;
+	setAttr ".phl[463]" 0;
+	setAttr ".phl[464]" 0;
+	setAttr ".phl[465]" 0;
+	setAttr ".phl[466]" 0;
+	setAttr ".phl[467]" 0;
+	setAttr ".phl[468]" 0;
+	setAttr ".phl[469]" 0;
+	setAttr ".phl[470]" 0;
+	setAttr ".phl[471]" 0;
+	setAttr ".phl[472]" 0;
+	setAttr ".phl[473]" 0;
+	setAttr ".phl[474]" 0;
+	setAttr ".phl[475]" 0;
+	setAttr ".phl[476]" 0;
+	setAttr ".phl[477]" 0;
+	setAttr ".phl[478]" 0;
+	setAttr ".phl[479]" 0;
+	setAttr ".phl[480]" 0;
+	setAttr ".phl[481]" 0;
+	setAttr ".phl[482]" 0;
+	setAttr ".phl[483]" 0;
+	setAttr ".phl[484]" 0;
+	setAttr ".phl[485]" 0;
+	setAttr ".phl[486]" 0;
+	setAttr ".phl[487]" 0;
+	setAttr ".phl[488]" 0;
+	setAttr ".phl[489]" 0;
+	setAttr ".phl[490]" 0;
+	setAttr ".phl[491]" 0;
+	setAttr ".phl[492]" 0;
+	setAttr ".phl[493]" 0;
+	setAttr ".phl[494]" 0;
+	setAttr ".phl[495]" 0;
+	setAttr ".phl[496]" 0;
+	setAttr ".phl[497]" 0;
+	setAttr ".phl[498]" 0;
+	setAttr ".phl[499]" 0;
+	setAttr ".phl[500]" 0;
+	setAttr ".phl[501]" 0;
+	setAttr ".phl[502]" 0;
+	setAttr ".phl[503]" 0;
+	setAttr ".phl[504]" 0;
+	setAttr ".phl[505]" 0;
+	setAttr ".phl[506]" 0;
+	setAttr ".phl[507]" 0;
+	setAttr ".phl[508]" 0;
+	setAttr ".phl[509]" 0;
+	setAttr ".phl[510]" 0;
+	setAttr ".phl[511]" 0;
+	setAttr ".phl[512]" 0;
+	setAttr ".phl[513]" 0;
+	setAttr ".phl[514]" 0;
+	setAttr ".phl[515]" 0;
+	setAttr ".phl[516]" 0;
+	setAttr ".phl[517]" 0;
+	setAttr ".phl[518]" 0;
+	setAttr ".phl[519]" 0;
+	setAttr ".phl[520]" 0;
+	setAttr ".phl[521]" 0;
+	setAttr ".phl[522]" 0;
+	setAttr ".phl[523]" 0;
+	setAttr ".phl[524]" 0;
+	setAttr ".phl[525]" 0;
+	setAttr ".phl[526]" 0;
+	setAttr ".phl[527]" 0;
+	setAttr ".phl[528]" 0;
+	setAttr ".phl[529]" 0;
+	setAttr ".phl[530]" 0;
+	setAttr ".phl[531]" 0;
+	setAttr ".phl[532]" 0;
+	setAttr ".phl[533]" 0;
+	setAttr ".phl[534]" 0;
+	setAttr ".phl[535]" 0;
+	setAttr ".phl[536]" 0;
+	setAttr ".phl[537]" 0;
+	setAttr ".phl[538]" 0;
+	setAttr ".phl[539]" 0;
+	setAttr ".phl[540]" 0;
+	setAttr ".phl[541]" 0;
+	setAttr ".phl[542]" 0;
+	setAttr ".phl[543]" 0;
+	setAttr ".phl[544]" 0;
+	setAttr ".phl[545]" 0;
+	setAttr ".phl[546]" 0;
+	setAttr ".phl[547]" 0;
+	setAttr ".phl[548]" 0;
+	setAttr ".phl[549]" 0;
+	setAttr ".phl[550]" 0;
+	setAttr ".phl[551]" 0;
+	setAttr ".phl[552]" 0;
+	setAttr ".phl[553]" 0;
+	setAttr ".phl[554]" 0;
+	setAttr ".phl[555]" 0;
+	setAttr ".phl[556]" 0;
+	setAttr ".phl[557]" 0;
+	setAttr ".phl[558]" 0;
+	setAttr ".phl[559]" 0;
+	setAttr ".phl[560]" 0;
+	setAttr ".phl[561]" 0;
+	setAttr ".phl[562]" 0;
+	setAttr ".phl[563]" 0;
+	setAttr ".phl[564]" 0;
+	setAttr ".phl[565]" 0;
+	setAttr ".phl[566]" 0;
+	setAttr ".phl[567]" 0;
+	setAttr ".phl[568]" 0;
+	setAttr ".phl[569]" 0;
+	setAttr ".phl[570]" 0;
+	setAttr ".phl[571]" 0;
+	setAttr ".phl[572]" 0;
+	setAttr ".phl[573]" 0;
+	setAttr ".phl[574]" 0;
+	setAttr ".phl[575]" 0;
+	setAttr ".phl[576]" 0;
+	setAttr ".phl[577]" 0;
+	setAttr ".phl[578]" 0;
+	setAttr ".phl[579]" 0;
+	setAttr ".phl[580]" 0;
+	setAttr ".phl[581]" 0;
+	setAttr ".phl[582]" 0;
+	setAttr ".phl[583]" 0;
+	setAttr ".phl[584]" 0;
+	setAttr ".phl[585]" 0;
+	setAttr ".phl[586]" 0;
+	setAttr ".phl[587]" 0;
+	setAttr ".phl[588]" 0;
+	setAttr ".phl[589]" 0;
+	setAttr ".phl[590]" 0;
+	setAttr ".phl[591]" 0;
+	setAttr ".phl[592]" 0;
+	setAttr ".phl[593]" 0;
+	setAttr ".phl[594]" 0;
+	setAttr ".phl[595]" 0;
+	setAttr ".phl[596]" 0;
+	setAttr ".phl[597]" 0;
+	setAttr ".phl[598]" 0;
+	setAttr ".phl[599]" 0;
+	setAttr ".phl[600]" 0;
+	setAttr ".phl[601]" 0;
+	setAttr ".phl[602]" 0;
+	setAttr ".phl[603]" 0;
+	setAttr ".phl[604]" 0;
+	setAttr ".phl[605]" 0;
+	setAttr ".phl[606]" 0;
+	setAttr ".phl[607]" 0;
+	setAttr ".phl[608]" 0;
+	setAttr ".phl[609]" 0;
+	setAttr ".phl[610]" 0;
+	setAttr ".phl[611]" 0;
+	setAttr ".phl[612]" 0;
+	setAttr ".phl[613]" 0;
+	setAttr ".phl[614]" 0;
+	setAttr ".phl[615]" 0;
+	setAttr ".phl[616]" 0;
+	setAttr ".phl[617]" 0;
+	setAttr ".phl[618]" 0;
+	setAttr ".phl[619]" 0;
+	setAttr ".phl[620]" 0;
+	setAttr ".phl[621]" 0;
+	setAttr ".phl[622]" 0;
+	setAttr ".phl[623]" 0;
+	setAttr ".phl[624]" 0;
+	setAttr ".phl[625]" 0;
+	setAttr ".phl[626]" 0;
+	setAttr ".phl[627]" 0;
+	setAttr ".phl[628]" 0;
+	setAttr ".phl[629]" 0;
+	setAttr ".phl[630]" 0;
+	setAttr ".phl[631]" 0;
+	setAttr ".phl[632]" 0;
+	setAttr ".phl[633]" 0;
+	setAttr ".phl[634]" 0;
+	setAttr ".phl[635]" 0;
+	setAttr ".phl[636]" 0;
+	setAttr ".phl[637]" 0;
+	setAttr ".phl[638]" 0;
+	setAttr ".phl[639]" 0;
+	setAttr ".phl[640]" 0;
+	setAttr ".phl[641]" 0;
+	setAttr ".phl[642]" 0;
+	setAttr ".phl[643]" 0;
+	setAttr ".phl[644]" 0;
+	setAttr ".phl[645]" 0;
+	setAttr ".phl[646]" 0;
+	setAttr ".phl[647]" 0;
+	setAttr ".phl[648]" 0;
+	setAttr ".phl[649]" 0;
+	setAttr ".phl[650]" 0;
+	setAttr ".phl[651]" 0;
+	setAttr ".phl[652]" 0;
+	setAttr ".phl[653]" 0;
+	setAttr ".phl[654]" 0;
+	setAttr ".phl[655]" 0;
+	setAttr ".phl[656]" 0;
+	setAttr ".phl[657]" 0;
+	setAttr ".phl[658]" 0;
+	setAttr ".phl[659]" 0;
+	setAttr ".phl[660]" 0;
+	setAttr ".phl[661]" 0;
+	setAttr ".phl[662]" 0;
+	setAttr ".phl[663]" 0;
+	setAttr ".phl[664]" 0;
+	setAttr ".phl[665]" 0;
+	setAttr ".phl[666]" 0;
+	setAttr ".phl[667]" 0;
+	setAttr ".phl[668]" 0;
+	setAttr ".phl[669]" 0;
+	setAttr ".phl[670]" 0;
+	setAttr ".phl[671]" 0;
+	setAttr ".phl[672]" 0;
+	setAttr ".phl[673]" 0;
+	setAttr ".phl[674]" 0;
+	setAttr ".phl[675]" 0;
+	setAttr ".phl[676]" 0;
+	setAttr ".phl[677]" 0;
+	setAttr ".phl[678]" 0;
+	setAttr ".phl[679]" 0;
+	setAttr ".phl[680]" 0;
+	setAttr ".phl[681]" 0;
+	setAttr ".phl[682]" 0;
+	setAttr ".phl[683]" 0;
+	setAttr ".phl[684]" 0;
+	setAttr ".phl[685]" 0;
+	setAttr ".phl[686]" 0;
+	setAttr ".phl[687]" 0;
+	setAttr ".phl[688]" 0;
+	setAttr ".phl[689]" 0;
+	setAttr ".phl[690]" 0;
+	setAttr ".phl[691]" 0;
+	setAttr ".phl[692]" 0;
+	setAttr ".phl[693]" 0;
+	setAttr ".phl[694]" 0;
+	setAttr ".phl[695]" 0;
+	setAttr ".phl[696]" 0;
+	setAttr ".phl[697]" 0;
+	setAttr ".phl[698]" 0;
+	setAttr ".phl[699]" 0;
+	setAttr ".phl[700]" 0;
+	setAttr ".phl[701]" 0;
+	setAttr ".phl[702]" 0;
+	setAttr ".phl[703]" 0;
+	setAttr ".phl[704]" 0;
+	setAttr ".phl[705]" 0;
+	setAttr ".phl[706]" 0;
+	setAttr ".phl[707]" 0;
+	setAttr ".phl[708]" 0;
+	setAttr ".phl[709]" 0;
+	setAttr ".phl[710]" 0;
+	setAttr ".phl[711]" 0;
+	setAttr ".phl[712]" 0;
+	setAttr ".phl[713]" 0;
+	setAttr ".phl[714]" 0;
+	setAttr ".phl[715]" 0;
+	setAttr ".phl[716]" 0;
+	setAttr ".phl[717]" 0;
+	setAttr ".phl[718]" 0;
+	setAttr ".phl[719]" 0;
+	setAttr ".phl[720]" 0;
+	setAttr ".phl[721]" 0;
+	setAttr ".phl[722]" 0;
+	setAttr ".phl[723]" 0;
+	setAttr ".phl[724]" 0;
+	setAttr ".phl[725]" 0;
+	setAttr ".phl[726]" 0;
+	setAttr ".phl[727]" 0;
+	setAttr ".phl[728]" 0;
+	setAttr ".phl[729]" 0;
+	setAttr ".phl[730]" 0;
+	setAttr ".phl[731]" 0;
+	setAttr ".phl[732]" 0;
+	setAttr ".phl[733]" 0;
+	setAttr ".phl[734]" 0;
+	setAttr ".phl[735]" 0;
+	setAttr ".phl[736]" 0;
+	setAttr ".phl[737]" 0;
+	setAttr ".phl[738]" 0;
+	setAttr ".phl[739]" 0;
+	setAttr ".phl[740]" 0;
+	setAttr ".phl[741]" 0;
+	setAttr ".phl[742]" 0;
+	setAttr ".phl[743]" 0;
+	setAttr ".phl[744]" 0;
+	setAttr ".phl[745]" 0;
+	setAttr ".phl[746]" 0;
+	setAttr ".phl[747]" 0;
+	setAttr ".phl[748]" 0;
+	setAttr ".phl[749]" 0;
+	setAttr ".phl[750]" 0;
+	setAttr ".phl[751]" 0;
+	setAttr ".phl[752]" 0;
+	setAttr ".phl[753]" 0;
+	setAttr ".phl[754]" 0;
+	setAttr ".phl[755]" 0;
+	setAttr ".phl[756]" 0;
+	setAttr ".phl[757]" 0;
+	setAttr ".phl[758]" 0;
+	setAttr ".phl[759]" 0;
+	setAttr ".phl[760]" 0;
+	setAttr ".phl[761]" 0;
+	setAttr ".phl[762]" 0;
+	setAttr ".phl[763]" 0;
+	setAttr ".phl[764]" 0;
+	setAttr ".phl[765]" 0;
+	setAttr ".phl[766]" 0;
+	setAttr ".phl[767]" 0;
+	setAttr ".phl[768]" 0;
+	setAttr ".phl[769]" 0;
+	setAttr ".phl[770]" 0;
+	setAttr ".phl[771]" 0;
+	setAttr ".phl[772]" 0;
+	setAttr ".phl[773]" 0;
+	setAttr ".phl[774]" 0;
+	setAttr ".phl[775]" 0;
+	setAttr ".phl[776]" 0;
+	setAttr ".phl[777]" 0;
+	setAttr ".phl[778]" 0;
+	setAttr ".phl[779]" 0;
+	setAttr ".phl[780]" 0;
+	setAttr ".phl[781]" 0;
+	setAttr ".phl[782]" 0;
+	setAttr ".phl[783]" 0;
+	setAttr ".phl[784]" 0;
+	setAttr ".phl[785]" 0;
+	setAttr ".phl[786]" 0;
+	setAttr ".phl[787]" 0;
+	setAttr ".phl[788]" 0;
+	setAttr ".phl[789]" 0;
+	setAttr ".phl[790]" 0;
+	setAttr ".phl[791]" 0;
+	setAttr ".phl[792]" 0;
+	setAttr ".phl[793]" 0;
+	setAttr ".phl[794]" 0;
+	setAttr ".phl[795]" 0;
+	setAttr ".phl[796]" 0;
+	setAttr ".phl[797]" 0;
+	setAttr ".phl[798]" 0;
+	setAttr ".phl[799]" 0;
+	setAttr ".phl[800]" 0;
+	setAttr ".phl[801]" 0;
+	setAttr ".phl[802]" 0;
+	setAttr ".phl[803]" 0;
+	setAttr ".phl[804]" 0;
+	setAttr ".phl[805]" 0;
+	setAttr ".phl[806]" 0;
+	setAttr ".phl[807]" 0;
+	setAttr ".phl[808]" 0;
+	setAttr ".phl[809]" 0;
+	setAttr ".phl[810]" 0;
+	setAttr ".phl[811]" 0;
+	setAttr ".phl[812]" 0;
+	setAttr ".phl[813]" 0;
+	setAttr ".phl[814]" 0;
+	setAttr ".phl[815]" 0;
+	setAttr ".phl[816]" 0;
+	setAttr ".phl[817]" 0;
+	setAttr ".phl[818]" 0;
+	setAttr ".phl[819]" 0;
+	setAttr ".phl[820]" 0;
+	setAttr ".phl[821]" 0;
+	setAttr ".phl[822]" 0;
+	setAttr ".phl[823]" 0;
+	setAttr ".phl[824]" 0;
+	setAttr ".phl[825]" 0;
+	setAttr ".phl[826]" 0;
+	setAttr ".phl[827]" 0;
+	setAttr ".phl[828]" 0;
+	setAttr ".phl[829]" 0;
+	setAttr ".phl[830]" 0;
+	setAttr ".phl[831]" 0;
+	setAttr ".phl[832]" 0;
+	setAttr ".phl[833]" 0;
+	setAttr ".phl[834]" 0;
+	setAttr ".phl[835]" 0;
+	setAttr ".phl[836]" 0;
+	setAttr ".phl[837]" 0;
+	setAttr ".phl[838]" 0;
+	setAttr ".phl[839]" 0;
+	setAttr ".phl[840]" 0;
+	setAttr ".phl[841]" 0;
+	setAttr ".phl[842]" 0;
+	setAttr ".phl[843]" 0;
+	setAttr ".phl[844]" 0;
+	setAttr ".phl[845]" 0;
+	setAttr ".phl[846]" 0;
+	setAttr ".phl[847]" 0;
+	setAttr ".phl[848]" 0;
+	setAttr ".phl[849]" 0;
+	setAttr ".phl[850]" 0;
+	setAttr ".phl[851]" 0;
+	setAttr ".phl[852]" 0;
+	setAttr ".phl[853]" 0;
+	setAttr ".phl[854]" 0;
+	setAttr ".phl[855]" 0;
+	setAttr ".phl[856]" 0;
+	setAttr ".phl[857]" 0;
+	setAttr ".phl[858]" 0;
+	setAttr ".phl[859]" 0;
+	setAttr ".phl[860]" 0;
+	setAttr ".phl[861]" 0;
+	setAttr ".phl[862]" 0;
+	setAttr ".phl[863]" 0;
+	setAttr ".phl[864]" 0;
+	setAttr ".phl[865]" 0;
+	setAttr ".phl[866]" 0;
+	setAttr ".phl[867]" 0;
+	setAttr ".phl[868]" 0;
+	setAttr ".phl[869]" 0;
+	setAttr ".phl[870]" 0;
+	setAttr ".phl[871]" 0;
+	setAttr ".phl[872]" 0;
+	setAttr ".phl[873]" 0;
+	setAttr ".phl[874]" 0;
+	setAttr ".phl[875]" 0;
+	setAttr ".phl[876]" 0;
+	setAttr ".phl[877]" 0;
+	setAttr ".phl[878]" 0;
+	setAttr ".phl[879]" 0;
+	setAttr ".phl[880]" 0;
+	setAttr ".phl[881]" 0;
+	setAttr ".phl[882]" 0;
+	setAttr ".phl[883]" 0;
+	setAttr ".phl[884]" 0;
+	setAttr ".phl[885]" 0;
+	setAttr ".phl[886]" 0;
+	setAttr ".phl[887]" 0;
+	setAttr ".phl[888]" 0;
+	setAttr ".phl[889]" 0;
+	setAttr ".phl[890]" 0;
+	setAttr ".phl[891]" 0;
+	setAttr ".phl[892]" 0;
+	setAttr ".phl[893]" 0;
+	setAttr ".phl[894]" 0;
+	setAttr ".phl[895]" 0;
+	setAttr ".phl[896]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"livingroomKitchenRN"
+		"livingroomKitchen:PotHooksRN" 0
+		"livingroomKitchen:PottedPlantRN" 28
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set3.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set1.dagSetMembers" "-na"
+		3 "livingroomKitchen:PottedPlant:groupId51.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set3.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId52.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set1.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId53.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId54.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId55.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId56.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId57.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId58.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId51.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[256]" "livingroomKitchenRN.placeHolderList[257]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId55.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[264]" "livingroomKitchenRN.placeHolderList[265]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId53.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[272]" "livingroomKitchenRN.placeHolderList[273]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId57.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[280]" "livingroomKitchenRN.placeHolderList[281]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gid"
+		
+		"livingroomKitchen:CabinetsRN" 0
+		"livingroomKitchen:Spoon_and_BowlRN" 0
+		"livingroomKitchen:LivingRoomCouchRN" 5
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:LivingRoomCouch:groupId15.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.compInstObjGroups.compObjectGroups[1]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:LivingRoomCouch:groupId16.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
+		""
+		"livingroomKitchen:Spatula_holderRN" 6
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId1.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId17.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		"livingroomKitchen:bowlAndSpoonRN" 0
+		"livingroomKitchen:MilkRN" 60
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId8.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId7.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId5.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId11.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId12.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId17.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId4.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId13.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId16.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId14.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId9.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId3.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId6.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId15.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId10.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId3.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[112]" "livingroomKitchenRN.placeHolderList[113]" 
+		"livingroomKitchen:Milk:polySurfaceShape1.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId4.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[116]" "livingroomKitchenRN.placeHolderList[117]" 
+		"livingroomKitchen:Milk:polySurfaceShape2.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId5.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[120]" "livingroomKitchenRN.placeHolderList[121]" 
+		"livingroomKitchen:Milk:polySurfaceShape3.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId6.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[124]" "livingroomKitchenRN.placeHolderList[125]" 
+		"livingroomKitchen:Milk:polySurfaceShape4.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId7.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[128]" "livingroomKitchenRN.placeHolderList[129]" 
+		"livingroomKitchen:Milk:polySurfaceShape5.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId8.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[132]" "livingroomKitchenRN.placeHolderList[133]" 
+		"livingroomKitchen:Milk:polySurfaceShape6.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId9.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[136]" "livingroomKitchenRN.placeHolderList[137]" 
+		"livingroomKitchen:Milk:polySurfaceShape7.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId10.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[140]" "livingroomKitchenRN.placeHolderList[141]" 
+		"livingroomKitchen:Milk:polySurfaceShape8.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId11.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[144]" "livingroomKitchenRN.placeHolderList[145]" 
+		"livingroomKitchen:Milk:polySurfaceShape9.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId12.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[148]" "livingroomKitchenRN.placeHolderList[149]" 
+		"livingroomKitchen:Milk:polySurfaceShape10.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId13.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[152]" "livingroomKitchenRN.placeHolderList[153]" 
+		"livingroomKitchen:Milk:polySurfaceShape11.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId14.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[156]" "livingroomKitchenRN.placeHolderList[157]" 
+		"livingroomKitchen:Milk:polySurfaceShape12.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId15.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[160]" "livingroomKitchenRN.placeHolderList[161]" 
+		"livingroomKitchen:Milk:polySurfaceShape13.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId16.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[164]" "livingroomKitchenRN.placeHolderList[165]" 
+		"livingroomKitchen:Milk:polySurfaceShape14.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId17.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[168]" "livingroomKitchenRN.placeHolderList[169]" 
+		"livingroomKitchen:Milk:polySurfaceShape15.iog.og[0].gid"
+		"livingroomKitchen:CouchChairRN" 0
+		"livingroomKitchen:workspaceRN" 0
+		"livingroomKitchen:LivingRoomSetRN" 0
+		"livingroomKitchen:FanRN" 0
+		"livingroomKitchen:cerealBoxRN" 0
+		"livingroomKitchenRN" 0
+		"livingroomKitchen:BroomRN" 0
+		"livingroomKitchen:DoorRN" 0
+		"livingroomKitchen:owlbearskinRugRN" 0
+		"livingroomKitchen:OvenStovetopRN" 4
+		3 "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.worldMatrix" 
+		"livingroomKitchen:OvenStovetop:polyQuad1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.worldMatrix" 
+		"livingroomKitchen:OvenStovetop:polyPoke1.manipMatrix" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.worldMatrix" 
+		"livingroomKitchen:OvenStovetop:polyPoke1.manipMatrix" "livingroomKitchenRN.placeHolderList[184]" 
+		"livingroomKitchenRN.placeHolderList[185]" "livingroomKitchen:OvenStovetop:polyQuad1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.worldMatrix" 
+		"livingroomKitchen:OvenStovetop:polyQuad1.manipMatrix" "livingroomKitchenRN.placeHolderList[186]" 
+		"livingroomKitchenRN.placeHolderList[187]" "livingroomKitchen:OvenStovetop:polyQuad1.mp"
+		
+		"livingroomKitchen:FridgeForWorkDayRN" 41
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "livingroomKitchen:FridgeForWorkDay:groupId25.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId24.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polySoftEdge1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyRemesh1.manipMatrix" ""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId28.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId27.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId23.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId26.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId7.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId8.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyAutoProj1.manipMatrix" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId23.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[40]" "livingroomKitchenRN.placeHolderList[41]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId24.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[44]" "livingroomKitchenRN.placeHolderList[45]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId25.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[48]" "livingroomKitchenRN.placeHolderList[49]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId26.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[52]" "livingroomKitchenRN.placeHolderList[53]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId27.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[56]" "livingroomKitchenRN.placeHolderList[57]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId28.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[60]" "livingroomKitchenRN.placeHolderList[61]" 
+		"livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId7.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[73]" "livingroomKitchenRN.placeHolderList[74]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape1.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[75]" "livingroomKitchenRN.placeHolderList[76]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape1.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId8.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[77]" "livingroomKitchenRN.placeHolderList[78]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape1.ciog.cog[0].cgid"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dagSetMembers" "livingroomKitchenRN.placeHolderList[79]" 
+		"livingroomKitchenRN.placeHolderList[80]" "livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dagSetMembers" "livingroomKitchenRN.placeHolderList[81]" 
+		"livingroomKitchenRN.placeHolderList[82]" "livingroomKitchen:FridgeForWorkDay:typeStandardSurfaceSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polySoftEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[83]" 
+		"livingroomKitchenRN.placeHolderList[84]" "livingroomKitchen:FridgeForWorkDay:polyRemesh1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyRemesh1.manipMatrix" "livingroomKitchenRN.placeHolderList[85]" 
+		"livingroomKitchenRN.placeHolderList[86]" "livingroomKitchen:FridgeForWorkDay:polyRemesh1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:FridgeForWorkDay:typeMesh1|livingroomKitchen:FridgeForWorkDay:transform2|livingroomKitchen:FridgeForWorkDay:typeMeshShape1.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyAutoProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[87]" 
+		"livingroomKitchenRN.placeHolderList[88]" "livingroomKitchen:FridgeForWorkDay:polyRemesh1.mp"
+		
+		"livingroomKitchen:PotHooksRN" 43
+		0 "|livingroomKitchen:PotHooks:PotHooks" "|Props" "-s -r "
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Hook08|livingroomKitchen:PotHooks:HookShape8.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing9.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyExtrudeFace8.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing10.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel6.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySoftEdge1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook07|livingroomKitchen:PotHooks:HookShape7.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBridgeEdge1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Ground|livingroomKitchen:PotHooks:GroundShape.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook06|livingroomKitchen:PotHooks:HookShape6.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook06|livingroomKitchen:PotHooks:HookShape6.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Hook05|livingroomKitchen:PotHooks:HookShape5.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing11.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook07|livingroomKitchen:PotHooks:HookShape7.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj2.manipMatrix" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Ground|livingroomKitchen:PotHooks:GroundShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[407]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Hook05|livingroomKitchen:PotHooks:HookShape5.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[408]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PotHooks:Hook08|livingroomKitchen:PotHooks:HookShape8.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[409]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[410]" ":initialShadingGroup.dsm"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook06|livingroomKitchen:PotHooks:HookShape6.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[411]" ":initialShadingGroup.dsm"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook07|livingroomKitchen:PotHooks:HookShape7.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[412]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing9.manipMatrix" "livingroomKitchenRN.placeHolderList[413]" 
+		"livingroomKitchenRN.placeHolderList[414]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing10.manipMatrix" "livingroomKitchenRN.placeHolderList[415]" 
+		"livingroomKitchenRN.placeHolderList[416]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySplitRing11.manipMatrix" "livingroomKitchenRN.placeHolderList[417]" 
+		"livingroomKitchenRN.placeHolderList[418]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyExtrudeFace8.manipMatrix" "livingroomKitchenRN.placeHolderList[419]" 
+		"livingroomKitchenRN.placeHolderList[420]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel3.manipMatrix" "livingroomKitchenRN.placeHolderList[421]" 
+		"livingroomKitchenRN.placeHolderList[422]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBridgeEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[423]" 
+		"livingroomKitchenRN.placeHolderList[424]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel4.manipMatrix" "livingroomKitchenRN.placeHolderList[425]" 
+		"livingroomKitchenRN.placeHolderList[426]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel5.manipMatrix" "livingroomKitchenRN.placeHolderList[427]" 
+		"livingroomKitchenRN.placeHolderList[428]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyBevel6.manipMatrix" "livingroomKitchenRN.placeHolderList[429]" 
+		"livingroomKitchenRN.placeHolderList[430]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[431]" 
+		"livingroomKitchenRN.placeHolderList[432]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[433]" 
+		"livingroomKitchenRN.placeHolderList[434]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj3.manipMatrix" "livingroomKitchenRN.placeHolderList[435]" 
+		"livingroomKitchenRN.placeHolderList[436]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook06|livingroomKitchen:PotHooks:HookShape6.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj4.manipMatrix" "livingroomKitchenRN.placeHolderList[437]" 
+		"livingroomKitchenRN.placeHolderList[438]" "livingroomKitchen:PotHooks:polyPlanarProj4.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Hook07|livingroomKitchen:PotHooks:HookShape7.worldMatrix" 
+		"livingroomKitchen:PotHooks:polyPlanarProj5.manipMatrix" "livingroomKitchenRN.placeHolderList[439]" 
+		"livingroomKitchenRN.placeHolderList[440]" "livingroomKitchen:PotHooks:polyPlanarProj5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PotHooks:PotHooks|livingroomKitchen:PotHooks:Board|livingroomKitchen:PotHooks:BoardShape.worldMatrix" 
+		"livingroomKitchen:PotHooks:polySoftEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[441]" 
+		"livingroomKitchenRN.placeHolderList[442]" "livingroomKitchen:PotHooks:polySplitRing10.mp"
+		
+		"livingroomKitchen:PottedPlantRN" 98
+		0 "|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly" "|Props" "-s -r "
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly" "visibility" 
+		" 0"
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 27 \"f[0:384]\" \"f[387]\" \"f[389:390]\" \"f[393:394]\" \"f[397:398]\" \"f[401:402]\" \"f[405:406]\" \"f[409:410]\" \"f[413:414]\" \"f[417:418]\" \"f[421:422]\" \"f[425:426]\" \"f[429:430]\" \"f[433:434]\" \"f[437:438]\" \"f[441:442]\" \"f[445:446]\" \"f[449:450]\" \"f[453:454]\" \"f[457:458]\" \"f[461:462]\" \"f[465:466]\" \"f[469:470]\" \"f[473:474]\" \"f[477:478]\" \"f[576:719]\" \"f[1128]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 26 \"f[385:386]\" \"f[388]\" \"f[391:392]\" \"f[395:396]\" \"f[399:400]\" \"f[403:404]\" \"f[407:408]\" \"f[411:412]\" \"f[415:416]\" \"f[419:420]\" \"f[423:424]\" \"f[427:428]\" \"f[431:432]\" \"f[435:436]\" \"f[439:440]\" \"f[443:444]\" \"f[447:448]\" \"f[451:452]\" \"f[455:456]\" \"f[459:460]\" \"f[463:464]\" \"f[467:468]\" \"f[471:472]\" \"f[475:476]\" \"f[479:575]\" \"f[720:1127]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:83]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 1 \"f[84:246]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[163:246]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 2 \"f[0:162]\" \"f[247:409]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[163:458]\""
+		
+		2 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2" 
+		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 2 \"f[0:162]\" \"f[459:928]\""
+		
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape" 
+		"instObjGroups.objectGroups" " -s 4"
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape" 
+		"instObjGroups.objectGroups" " -s 4"
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape" 
+		"instObjGroups.objectGroups" " -s 4"
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2" 
+		"instObjGroups.objectGroups" " -s 4"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set3.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "-na"
+		3 "livingroomKitchen:PottedPlant:groupId41.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId42.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId39.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set3.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId40.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set1.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set1.dagSetMembers" "-na"
+		3 "livingroomKitchen:PottedPlant:groupId37.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId38.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf3|livingroomKitchen:PottedPlant:Leaf3Shape.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf2|livingroomKitchen:PottedPlant:LeafShape2.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf1|livingroomKitchen:PottedPlant:LeafShape1.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "-na"
+		3 "livingroomKitchen:PottedPlant:groupId35.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set4.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:PottedPlant:groupId36.groupId" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:PottedPlant:set2.memberWireframeColor" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf2|livingroomKitchen:PottedPlant:LeafShape2.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf3|livingroomKitchen:PottedPlant:Leaf3Shape.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf1|livingroomKitchen:PottedPlant:LeafShape1.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set3.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[443]" "livingroomKitchenRN.placeHolderList[444]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId52.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[445]" "livingroomKitchenRN.placeHolderList[446]" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set1.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[447]" "livingroomKitchenRN.placeHolderList[448]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[449]" "livingroomKitchenRN.placeHolderList[450]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId56.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[451]" "livingroomKitchenRN.placeHolderList[452]" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[453]" "livingroomKitchenRN.placeHolderList[454]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[455]" "livingroomKitchenRN.placeHolderList[456]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId54.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[457]" "livingroomKitchenRN.placeHolderList[458]" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[459]" "livingroomKitchenRN.placeHolderList[460]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[461]" "livingroomKitchenRN.placeHolderList[462]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId58.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[463]" "livingroomKitchenRN.placeHolderList[464]" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[465]" "livingroomKitchenRN.placeHolderList[466]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId39.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[467]" "livingroomKitchenRN.placeHolderList[468]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set3.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[469]" "livingroomKitchenRN.placeHolderList[470]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId40.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[471]" "livingroomKitchenRN.placeHolderList[472]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[1].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set1.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[473]" "livingroomKitchenRN.placeHolderList[474]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId37.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[475]" "livingroomKitchenRN.placeHolderList[476]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[477]" "livingroomKitchenRN.placeHolderList[478]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId38.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[479]" "livingroomKitchenRN.placeHolderList[480]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.iog.og[1].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[481]" "livingroomKitchenRN.placeHolderList[482]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId35.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[483]" "livingroomKitchenRN.placeHolderList[484]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[485]" "livingroomKitchenRN.placeHolderList[486]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId36.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[487]" "livingroomKitchenRN.placeHolderList[488]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.iog.og[1].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[489]" "livingroomKitchenRN.placeHolderList[490]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId41.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[491]" "livingroomKitchenRN.placeHolderList[492]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[493]" "livingroomKitchenRN.placeHolderList[494]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[0].gco"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:groupId42.groupId" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[495]" "livingroomKitchenRN.placeHolderList[496]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gid"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:PottedPlant:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[497]" "livingroomKitchenRN.placeHolderList[498]" 
+		"|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.iog.og[1].gco"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set1.dagSetMembers" "livingroomKitchenRN.placeHolderList[499]" 
+		"livingroomKitchenRN.placeHolderList[500]" "livingroomKitchen:PottedPlant:set1.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set1.dagSetMembers" "livingroomKitchenRN.placeHolderList[501]" 
+		"livingroomKitchenRN.placeHolderList[502]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf3|livingroomKitchen:PottedPlant:Leaf3Shape.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[503]" 
+		"livingroomKitchenRN.placeHolderList[504]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf2|livingroomKitchen:PottedPlant:LeafShape2.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[505]" 
+		"livingroomKitchenRN.placeHolderList[506]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf1|livingroomKitchen:PottedPlant:LeafShape1.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[507]" 
+		"livingroomKitchenRN.placeHolderList[508]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[509]" 
+		"livingroomKitchenRN.placeHolderList[510]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[511]" 
+		"livingroomKitchenRN.placeHolderList[512]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[513]" 
+		"livingroomKitchenRN.placeHolderList[514]" "livingroomKitchen:PottedPlant:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf3|livingroomKitchen:PottedPlant:Leaf3Shape.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[515]" 
+		"livingroomKitchenRN.placeHolderList[516]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf2|livingroomKitchen:PottedPlant:LeafShape2.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[517]" 
+		"livingroomKitchenRN.placeHolderList[518]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Leaf1|livingroomKitchen:PottedPlant:LeafShape1.instObjGroups" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[519]" 
+		"livingroomKitchenRN.placeHolderList[520]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[521]" 
+		"livingroomKitchenRN.placeHolderList[522]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[523]" 
+		"livingroomKitchenRN.placeHolderList[524]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:PottedPlant:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[525]" 
+		"livingroomKitchenRN.placeHolderList[526]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set3.dagSetMembers" "livingroomKitchenRN.placeHolderList[527]" 
+		"livingroomKitchenRN.placeHolderList[528]" "livingroomKitchen:PottedPlant:set3.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Pot|livingroomKitchen:PottedPlant:PotShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set3.dagSetMembers" "livingroomKitchenRN.placeHolderList[529]" 
+		"livingroomKitchenRN.placeHolderList[530]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[531]" 
+		"livingroomKitchenRN.placeHolderList[532]" "livingroomKitchen:PottedPlant:set4.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[533]" 
+		"livingroomKitchenRN.placeHolderList[534]" "livingroomKitchen:PottedPlant:set4.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:PottedPlant:GEO_Potted_Plant_HighPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[535]" 
+		"livingroomKitchenRN.placeHolderList[536]" "livingroomKitchen:PottedPlant:set4.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick01|livingroomKitchen:PottedPlant:Stick01Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[537]" 
+		"livingroomKitchenRN.placeHolderList[538]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick03|livingroomKitchen:PottedPlant:Stick03Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[539]" 
+		"livingroomKitchenRN.placeHolderList[540]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:PottedPlant:GEO_Potted_Plant_LowPoly|livingroomKitchen:PottedPlant:Plant|livingroomKitchen:PottedPlant:Stick02|livingroomKitchen:PottedPlant:StickShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:PottedPlant:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[541]" 
+		"livingroomKitchenRN.placeHolderList[542]" ""
+		"livingroomKitchen:CabinetsRN" 55
+		0 "|livingroomKitchen:Cabinets:Cabinets" "|Props" "-s -r "
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetShelf2a|livingroomKitchen:Cabinets:CabinetShelf2aShape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor5|livingroomKitchen:Cabinets:CabinetDoor5Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetBox7Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetShelf3|livingroomKitchen:Cabinets:CabinetShelfShape3.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetShelf6|livingroomKitchen:Cabinets:CabinetShelfShape6.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetShelf2b|livingroomKitchen:Cabinets:CabinetShelf2bShape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetBox2Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetDoor1|livingroomKitchen:Cabinets:CabinetDoor1Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor4|livingroomKitchen:Cabinets:CabinetDoor4Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetDoor2|livingroomKitchen:Cabinets:CabinetDoor2Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetDoor7|livingroomKitchen:Cabinets:CabinetDoor7Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetBox4Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetDoor6|livingroomKitchen:Cabinets:CabinetDoor6Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetShelf1|livingroomKitchen:Cabinets:CabinetShelfShape1.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetBox1Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetDoor3|livingroomKitchen:Cabinets:CabinetDoor3Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetBox3Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetShelf4|livingroomKitchen:Cabinets:CabinetShelfShape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetShelf7|livingroomKitchen:Cabinets:CabinetShelfShape7.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetDoor1|livingroomKitchen:Cabinets:CabinetKnob1|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetDoor2|livingroomKitchen:Cabinets:CabinetKnob2|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetDoor3|livingroomKitchen:Cabinets:CabinetKnob3|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor4|livingroomKitchen:Cabinets:CabinetKnob4|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor5|livingroomKitchen:Cabinets:CabinetKnob5|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetDoor6|livingroomKitchen:Cabinets:CabinetKnob6|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetDoor7|livingroomKitchen:Cabinets:CabinetKnob7|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetBox6Shape.instObjGroups" 
+		"livingroomKitchen:Cabinets:standardSurface2SG.dagSetMembers" "-na"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetBox1Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[286]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetDoor1|livingroomKitchen:Cabinets:CabinetDoor1Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[287]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetDoor1|livingroomKitchen:Cabinets:CabinetKnob1|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[288]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetDoor2|livingroomKitchen:Cabinets:CabinetKnob2|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[289]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetDoor3|livingroomKitchen:Cabinets:CabinetKnob3|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[290]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor4|livingroomKitchen:Cabinets:CabinetKnob4|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[291]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor5|livingroomKitchen:Cabinets:CabinetKnob5|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[292]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetDoor6|livingroomKitchen:Cabinets:CabinetKnob6|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[293]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetDoor7|livingroomKitchen:Cabinets:CabinetKnob7|livingroomKitchen:Cabinets:CabinetKnob2Shape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[294]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox1|livingroomKitchen:Cabinets:CabinetShelf1|livingroomKitchen:Cabinets:CabinetShelfShape1.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[295]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetBox2Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[296]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetDoor2|livingroomKitchen:Cabinets:CabinetDoor2Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[297]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetShelf2a|livingroomKitchen:Cabinets:CabinetShelf2aShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[298]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox2|livingroomKitchen:Cabinets:CabinetShelf2b|livingroomKitchen:Cabinets:CabinetShelf2bShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[299]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetBox3Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[300]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetDoor3|livingroomKitchen:Cabinets:CabinetDoor3Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[301]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox3|livingroomKitchen:Cabinets:CabinetShelf3|livingroomKitchen:Cabinets:CabinetShelfShape3.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[302]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetBox4Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[303]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor4|livingroomKitchen:Cabinets:CabinetDoor4Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[304]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetDoor5|livingroomKitchen:Cabinets:CabinetDoor5Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[305]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox4|livingroomKitchen:Cabinets:CabinetShelf4|livingroomKitchen:Cabinets:CabinetShelfShape4.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[306]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetBox6Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[307]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetDoor6|livingroomKitchen:Cabinets:CabinetDoor6Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[308]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox6|livingroomKitchen:Cabinets:CabinetShelf6|livingroomKitchen:Cabinets:CabinetShelfShape6.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[309]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetBox7Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[310]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetDoor7|livingroomKitchen:Cabinets:CabinetDoor7Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[311]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Cabinets:Cabinets|livingroomKitchen:Cabinets:CabinetBox7|livingroomKitchen:Cabinets:CabinetShelf7|livingroomKitchen:Cabinets:CabinetShelfShape7.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[312]" "livingroomKitchen:Cabinets:standardSurface2SG.dsm"
+		
+		"livingroomKitchen:Spoon_and_BowlRN" 8
+		0 "|livingroomKitchen:Spoon_and_Bowl:Bowl" "|Props" "-s -r "
+		0 "|livingroomKitchen:Spoon_and_Bowl:Spoon" "|Props" "-s -r "
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spoon_and_Bowl:StylizedBowl|livingroomKitchen:Spoon_and_Bowl:StylizedBowlShape.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Spoon_and_Bowl:Spoon|livingroomKitchen:Spoon_and_Bowl:SpoonShape.instObjGroups" 
+		"livingroomKitchen:Spoon_and_Bowl:lambert4SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Spoon_and_Bowl:Bowl|livingroomKitchen:Spoon_and_Bowl:BowlShape.instObjGroups" 
+		"livingroomKitchen:Spoon_and_Bowl:lambert3SG.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spoon_and_Bowl:StylizedBowl|livingroomKitchen:Spoon_and_Bowl:StylizedBowlShape.instObjGroups" 
+		"livingroomKitchen:Spoon_and_Bowl:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[313]" 
+		"livingroomKitchenRN.placeHolderList[314]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Spoon_and_Bowl:Bowl|livingroomKitchen:Spoon_and_Bowl:BowlShape.instObjGroups" 
+		"livingroomKitchen:Spoon_and_Bowl:lambert3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[315]" 
+		"livingroomKitchenRN.placeHolderList[316]" "livingroomKitchen:Spoon_and_Bowl:lambert3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Spoon_and_Bowl:Spoon|livingroomKitchen:Spoon_and_Bowl:SpoonShape.instObjGroups" 
+		"livingroomKitchen:Spoon_and_Bowl:lambert4SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[317]" 
+		"livingroomKitchenRN.placeHolderList[318]" "livingroomKitchen:Spoon_and_Bowl:lambert4SG.dsm"
+		
+		"livingroomKitchen:Spatula_holderRN" 235
+		2 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape" 
+		"instObjGroups.objectGroups" " -s 2"
+		2 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape" 
+		"instObjGroups.objectGroups" " -s 8"
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape" 
+		"instObjGroups.objectGroups" " -s 12"
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1" 
+		"instObjGroups.objectGroups" " -s 4"
+		2 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape" 
+		"instObjGroups.objectGroups" " -s 6"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set7.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge7.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups" 
+		"livingroomKitchen:Spatula_holder:standardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge18.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge22.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge19.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace9.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel6.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge24.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyMergeVert2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace8.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel9.manipMatrix" ""
+		3 "livingroomKitchen:Spatula_holder:groupId16.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set10.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId18.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set9.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId19.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set9.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4]" 
+		"livingroomKitchen:Spatula_holder:set9.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set5.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel11.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace13.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3]" 
+		"livingroomKitchen:Spatula_holder:set8.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:file4.message" ":initialMaterialInfo.texture" 
+		"-na"
+		3 "livingroomKitchen:Spatula_holder:groupId6.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set5.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId7.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set6.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId8.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set7.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId9.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set8.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId10.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set9.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId14.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.compInstObjGroups.compObjectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId15.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge25.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge20.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace11.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge26.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel7.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.instObjGroups" 
+		"livingroomKitchen:Spatula_holder:standardSurface4SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge23.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set3.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel10.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge21.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace7.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polySewEdge1.manipMatrix" ""
+		3 "livingroomKitchen:Spatula_holder:groupId2.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set1.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId3.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set2.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId4.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set3.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2].objectGrpColor" 
+		""
+		3 "livingroomKitchen:Spatula_holder:groupId5.groupId" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set4.memberWireframeColor" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace14.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set1.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3]" 
+		"livingroomKitchen:Spatula_holder:set4.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge14.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge10.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge8.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge12.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace15.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge15.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace10.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge11.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel8.manipMatrix" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:Spatula_holder:set6.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:Spatula_holder:set2.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge17.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge6.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyMergeVert1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge1.manipMatrix" ""
+		3 "livingroomKitchen:Spatula_holder:groupId11.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:Spatula_holder:set10.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId12.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.compInstObjGroups.compObjectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Spatula_holder:groupId13.groupId" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyUnite1.inputMat[1]" ""
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyUnite1.inputMat[0]" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge16.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge13.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace6.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace12.manipMatrix" ""
+		3 "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge9.manipMatrix" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[543]" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId1.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[544]" "livingroomKitchenRN.placeHolderList[545]" 
+		""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[546]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[547]" "livingroomKitchen:Spatula_holder:standardSurface3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId2.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[548]" "livingroomKitchenRN.placeHolderList[549]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set1.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[550]" "livingroomKitchenRN.placeHolderList[551]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId3.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[552]" "livingroomKitchenRN.placeHolderList[553]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[1].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set2.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[554]" "livingroomKitchenRN.placeHolderList[555]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[1].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId4.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[556]" "livingroomKitchenRN.placeHolderList[557]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[2].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set3.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[558]" "livingroomKitchenRN.placeHolderList[559]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[2].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId5.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[560]" "livingroomKitchenRN.placeHolderList[561]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[3].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set4.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[562]" "livingroomKitchenRN.placeHolderList[563]" 
+		"livingroomKitchen:Spatula_holder:spatulaShape.iog.og[3].gco"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[564]" "livingroomKitchen:Spatula_holder:standardSurface4SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId16.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[565]" "livingroomKitchenRN.placeHolderList[566]" 
+		"livingroomKitchen:Spatula_holder:pCube2Shape.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set10.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[567]" "livingroomKitchenRN.placeHolderList[568]" 
+		"livingroomKitchen:Spatula_holder:pCubeShape1.iog.og[0].gco"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchenRN.placeHolderList[569]" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId17.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[570]" "livingroomKitchenRN.placeHolderList[571]" 
+		""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[572]" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId18.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[573]" "livingroomKitchenRN.placeHolderList[574]" 
+		"livingroomKitchen:Spatula_holder:pCube2Shape.iog.og[2].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set9.memberWireframeColor" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[575]" "livingroomKitchenRN.placeHolderList[576]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[4].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId19.groupId" 
+		"|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[577]" "livingroomKitchenRN.placeHolderList[578]" 
+		"livingroomKitchen:Spatula_holder:pCube2Shape.ciog.cog[0].cgid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId6.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[579]" "livingroomKitchenRN.placeHolderList[580]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set5.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[581]" "livingroomKitchenRN.placeHolderList[582]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId7.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[583]" "livingroomKitchenRN.placeHolderList[584]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[1].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set6.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[585]" "livingroomKitchenRN.placeHolderList[586]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[1].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId8.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[587]" "livingroomKitchenRN.placeHolderList[588]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[2].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set7.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[589]" "livingroomKitchenRN.placeHolderList[590]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[2].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId9.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[591]" "livingroomKitchenRN.placeHolderList[592]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[3].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set8.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[593]" "livingroomKitchenRN.placeHolderList[594]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[3].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId10.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[595]" "livingroomKitchenRN.placeHolderList[596]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[4].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set9.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[597]" "livingroomKitchenRN.placeHolderList[598]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[4].gco"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5]" 
+		"livingroomKitchenRN.placeHolderList[599]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId14.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[600]" "livingroomKitchenRN.placeHolderList[601]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.iog.og[5].gid"
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[5].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[602]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[603]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId15.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[604]" "livingroomKitchenRN.placeHolderList[605]" 
+		"livingroomKitchen:Spatula_holder:spatula2Shape.ciog.cog[0].cgid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId11.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[606]" "livingroomKitchenRN.placeHolderList[607]" 
+		"livingroomKitchen:Spatula_holder:pCubeShape1.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:set10.memberWireframeColor" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[608]" "livingroomKitchenRN.placeHolderList[609]" 
+		"livingroomKitchen:Spatula_holder:pCubeShape1.iog.og[0].gco"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1]" 
+		"livingroomKitchenRN.placeHolderList[610]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId12.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[611]" "livingroomKitchenRN.placeHolderList[612]" 
+		"livingroomKitchen:Spatula_holder:pCubeShape1.iog.og[1].gid"
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[1].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[613]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[614]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:groupId13.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[615]" "livingroomKitchenRN.placeHolderList[616]" 
+		"livingroomKitchen:Spatula_holder:pCubeShape1.ciog.cog[0].cgid"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyMergeVert1.manipMatrix" "livingroomKitchenRN.placeHolderList[617]" 
+		"livingroomKitchenRN.placeHolderList[618]" "livingroomKitchen:Spatula_holder:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel1.manipMatrix" "livingroomKitchenRN.placeHolderList[619]" 
+		"livingroomKitchenRN.placeHolderList[620]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel2.manipMatrix" "livingroomKitchenRN.placeHolderList[621]" 
+		"livingroomKitchenRN.placeHolderList[622]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace1.manipMatrix" "livingroomKitchenRN.placeHolderList[623]" 
+		"livingroomKitchenRN.placeHolderList[624]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set1.dagSetMembers" "livingroomKitchenRN.placeHolderList[625]" 
+		"livingroomKitchenRN.placeHolderList[626]" "livingroomKitchen:Spatula_holder:set1.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:Spatula_holder:set2.dagSetMembers" "livingroomKitchenRN.placeHolderList[627]" 
+		"livingroomKitchenRN.placeHolderList[628]" "livingroomKitchen:Spatula_holder:set2.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[629]" 
+		"livingroomKitchenRN.placeHolderList[630]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge2.manipMatrix" "livingroomKitchenRN.placeHolderList[631]" 
+		"livingroomKitchenRN.placeHolderList[632]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge3.manipMatrix" "livingroomKitchenRN.placeHolderList[633]" 
+		"livingroomKitchenRN.placeHolderList[634]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge4.manipMatrix" "livingroomKitchenRN.placeHolderList[635]" 
+		"livingroomKitchenRN.placeHolderList[636]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge5.manipMatrix" "livingroomKitchenRN.placeHolderList[637]" 
+		"livingroomKitchenRN.placeHolderList[638]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge6.manipMatrix" "livingroomKitchenRN.placeHolderList[639]" 
+		"livingroomKitchenRN.placeHolderList[640]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge7.manipMatrix" "livingroomKitchenRN.placeHolderList[641]" 
+		"livingroomKitchenRN.placeHolderList[642]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge8.manipMatrix" "livingroomKitchenRN.placeHolderList[643]" 
+		"livingroomKitchenRN.placeHolderList[644]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge9.manipMatrix" "livingroomKitchenRN.placeHolderList[645]" 
+		"livingroomKitchenRN.placeHolderList[646]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge10.manipMatrix" "livingroomKitchenRN.placeHolderList[647]" 
+		"livingroomKitchenRN.placeHolderList[648]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge11.manipMatrix" "livingroomKitchenRN.placeHolderList[649]" 
+		"livingroomKitchenRN.placeHolderList[650]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge12.manipMatrix" "livingroomKitchenRN.placeHolderList[651]" 
+		"livingroomKitchenRN.placeHolderList[652]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace2.manipMatrix" "livingroomKitchenRN.placeHolderList[653]" 
+		"livingroomKitchenRN.placeHolderList[654]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polySewEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[655]" 
+		"livingroomKitchenRN.placeHolderList[656]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set3.dagSetMembers" "livingroomKitchenRN.placeHolderList[657]" 
+		"livingroomKitchenRN.placeHolderList[658]" "livingroomKitchen:Spatula_holder:set3.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.instObjGroups.objectGroups[3]" 
+		"livingroomKitchen:Spatula_holder:set4.dagSetMembers" "livingroomKitchenRN.placeHolderList[659]" 
+		"livingroomKitchenRN.placeHolderList[660]" "livingroomKitchen:Spatula_holder:set4.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge13.manipMatrix" "livingroomKitchenRN.placeHolderList[661]" 
+		"livingroomKitchenRN.placeHolderList[662]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge14.manipMatrix" "livingroomKitchenRN.placeHolderList[663]" 
+		"livingroomKitchenRN.placeHolderList[664]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyMergeVert2.manipMatrix" "livingroomKitchenRN.placeHolderList[665]" 
+		"livingroomKitchenRN.placeHolderList[666]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel3.manipMatrix" "livingroomKitchenRN.placeHolderList[667]" 
+		"livingroomKitchenRN.placeHolderList[668]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel4.manipMatrix" "livingroomKitchenRN.placeHolderList[669]" 
+		"livingroomKitchenRN.placeHolderList[670]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel5.manipMatrix" "livingroomKitchenRN.placeHolderList[671]" 
+		"livingroomKitchenRN.placeHolderList[672]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel6.manipMatrix" "livingroomKitchenRN.placeHolderList[673]" 
+		"livingroomKitchenRN.placeHolderList[674]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel7.manipMatrix" "livingroomKitchenRN.placeHolderList[675]" 
+		"livingroomKitchenRN.placeHolderList[676]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel8.manipMatrix" "livingroomKitchenRN.placeHolderList[677]" 
+		"livingroomKitchenRN.placeHolderList[678]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge15.manipMatrix" "livingroomKitchenRN.placeHolderList[679]" 
+		"livingroomKitchenRN.placeHolderList[680]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge16.manipMatrix" "livingroomKitchenRN.placeHolderList[681]" 
+		"livingroomKitchenRN.placeHolderList[682]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge17.manipMatrix" "livingroomKitchenRN.placeHolderList[683]" 
+		"livingroomKitchenRN.placeHolderList[684]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge18.manipMatrix" "livingroomKitchenRN.placeHolderList[685]" 
+		"livingroomKitchenRN.placeHolderList[686]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace3.manipMatrix" "livingroomKitchenRN.placeHolderList[687]" 
+		"livingroomKitchenRN.placeHolderList[688]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace4.manipMatrix" "livingroomKitchenRN.placeHolderList[689]" 
+		"livingroomKitchenRN.placeHolderList[690]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace5.manipMatrix" "livingroomKitchenRN.placeHolderList[691]" 
+		"livingroomKitchenRN.placeHolderList[692]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace6.manipMatrix" "livingroomKitchenRN.placeHolderList[693]" 
+		"livingroomKitchenRN.placeHolderList[694]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace7.manipMatrix" "livingroomKitchenRN.placeHolderList[695]" 
+		"livingroomKitchenRN.placeHolderList[696]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace8.manipMatrix" "livingroomKitchenRN.placeHolderList[697]" 
+		"livingroomKitchenRN.placeHolderList[698]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace9.manipMatrix" "livingroomKitchenRN.placeHolderList[699]" 
+		"livingroomKitchenRN.placeHolderList[700]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace10.manipMatrix" "livingroomKitchenRN.placeHolderList[701]" 
+		"livingroomKitchenRN.placeHolderList[702]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace11.manipMatrix" "livingroomKitchenRN.placeHolderList[703]" 
+		"livingroomKitchenRN.placeHolderList[704]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace12.manipMatrix" "livingroomKitchenRN.placeHolderList[705]" 
+		"livingroomKitchenRN.placeHolderList[706]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace13.manipMatrix" "livingroomKitchenRN.placeHolderList[707]" 
+		"livingroomKitchenRN.placeHolderList[708]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel9.manipMatrix" "livingroomKitchenRN.placeHolderList[709]" 
+		"livingroomKitchenRN.placeHolderList[710]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel10.manipMatrix" "livingroomKitchenRN.placeHolderList[711]" 
+		"livingroomKitchenRN.placeHolderList[712]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge19.manipMatrix" "livingroomKitchenRN.placeHolderList[713]" 
+		"livingroomKitchenRN.placeHolderList[714]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge20.manipMatrix" "livingroomKitchenRN.placeHolderList[715]" 
+		"livingroomKitchenRN.placeHolderList[716]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace14.manipMatrix" "livingroomKitchenRN.placeHolderList[717]" 
+		"livingroomKitchenRN.placeHolderList[718]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set5.dagSetMembers" "livingroomKitchenRN.placeHolderList[719]" 
+		"livingroomKitchenRN.placeHolderList[720]" "livingroomKitchen:Spatula_holder:set5.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[1]" 
+		"livingroomKitchen:Spatula_holder:set6.dagSetMembers" "livingroomKitchenRN.placeHolderList[721]" 
+		"livingroomKitchenRN.placeHolderList[722]" "livingroomKitchen:Spatula_holder:set6.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set7.dagSetMembers" "livingroomKitchenRN.placeHolderList[723]" 
+		"livingroomKitchenRN.placeHolderList[724]" "livingroomKitchen:Spatula_holder:set7.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[3]" 
+		"livingroomKitchen:Spatula_holder:set8.dagSetMembers" "livingroomKitchenRN.placeHolderList[725]" 
+		"livingroomKitchenRN.placeHolderList[726]" "livingroomKitchen:Spatula_holder:set8.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge21.manipMatrix" "livingroomKitchenRN.placeHolderList[727]" 
+		"livingroomKitchenRN.placeHolderList[728]" "livingroomKitchen:Spatula_holder:polyBridgeEdge21.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.instObjGroups.objectGroups[4]" 
+		"livingroomKitchen:Spatula_holder:set9.dagSetMembers" "livingroomKitchenRN.placeHolderList[729]" 
+		"livingroomKitchenRN.placeHolderList[730]" "livingroomKitchen:Spatula_holder:set9.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[2]" 
+		"livingroomKitchen:Spatula_holder:set9.dagSetMembers" "livingroomKitchenRN.placeHolderList[731]" 
+		"livingroomKitchenRN.placeHolderList[732]" "livingroomKitchen:Spatula_holder:set9.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyExtrudeFace15.manipMatrix" "livingroomKitchenRN.placeHolderList[733]" 
+		"livingroomKitchenRN.placeHolderList[734]" "livingroomKitchen:Spatula_holder:polyExtrudeFace15.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBevel11.manipMatrix" "livingroomKitchenRN.placeHolderList[735]" 
+		"livingroomKitchenRN.placeHolderList[736]" "livingroomKitchen:Spatula_holder:polyExtrudeFace15.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "livingroomKitchenRN.placeHolderList[737]" 
+		"livingroomKitchenRN.placeHolderList[738]" "livingroomKitchen:Spatula_holder:set10.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "livingroomKitchenRN.placeHolderList[739]" 
+		"livingroomKitchenRN.placeHolderList[740]" "livingroomKitchen:Spatula_holder:set10.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:Spatula_holder:set10.dagSetMembers" "livingroomKitchenRN.placeHolderList[741]" 
+		"livingroomKitchenRN.placeHolderList[742]" "livingroomKitchen:Spatula_holder:set10.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:pCube1|livingroomKitchen:Spatula_holder:transform2|livingroomKitchen:Spatula_holder:pCubeShape1.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyUnite1.inputMat[0]" "livingroomKitchenRN.placeHolderList[743]" 
+		"livingroomKitchenRN.placeHolderList[744]" "livingroomKitchen:Spatula_holder:polyExtrudeFace15.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:Spatula_holder:spatula2|livingroomKitchen:Spatula_holder:transform1|livingroomKitchen:Spatula_holder:spatula2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyUnite1.inputMat[1]" "livingroomKitchenRN.placeHolderList[745]" 
+		"livingroomKitchenRN.placeHolderList[746]" "livingroomKitchen:Spatula_holder:polyBridgeEdge21.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge22.manipMatrix" "livingroomKitchenRN.placeHolderList[747]" 
+		"livingroomKitchenRN.placeHolderList[748]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge23.manipMatrix" "livingroomKitchenRN.placeHolderList[749]" 
+		"livingroomKitchenRN.placeHolderList[750]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge24.manipMatrix" "livingroomKitchenRN.placeHolderList[751]" 
+		"livingroomKitchenRN.placeHolderList[752]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge25.manipMatrix" "livingroomKitchenRN.placeHolderList[753]" 
+		"livingroomKitchenRN.placeHolderList[754]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyBridgeEdge26.manipMatrix" "livingroomKitchenRN.placeHolderList[755]" 
+		"livingroomKitchenRN.placeHolderList[756]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:cup|livingroomKitchen:Spatula_holder:cupShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[757]" 
+		"livingroomKitchenRN.placeHolderList[758]" "livingroomKitchen:Spatula_holder:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:pCube2|livingroomKitchen:Spatula_holder:pCube2Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[759]" 
+		"livingroomKitchenRN.placeHolderList[760]" "livingroomKitchen:Spatula_holder:polyBridgeEdge25.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula1|livingroomKitchen:Spatula_holder:spatula1Shape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj3.manipMatrix" "livingroomKitchenRN.placeHolderList[761]" 
+		"livingroomKitchenRN.placeHolderList[762]" "livingroomKitchen:Spatula_holder:polyExtrudeFace7.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:SpatulaHolder_Reference|livingroomKitchen:Spatula_holder:spatula|livingroomKitchen:Spatula_holder:spatulaShape.worldMatrix" 
+		"livingroomKitchen:Spatula_holder:polyAutoProj4.manipMatrix" "livingroomKitchenRN.placeHolderList[763]" 
+		"livingroomKitchenRN.placeHolderList[764]" "livingroomKitchen:Spatula_holder:polyBevel5.mp"
+		
+		5 3 "livingroomKitchenRN" "livingroomKitchen:Spatula_holder:file4.message" 
+		"livingroomKitchenRN.placeHolderList[765]" ":initialMaterialInfo.t"
+		"livingroomKitchen:LivingRoomCouchRN" 24
+		0 "|livingroomKitchen:LivingRoomCouch:Couch" "|Props" "-s -r "
+		2 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:416]\""
+		
+		2 "|Props|livingroomKitchen:LivingRoomCouch:Couch" "visibility" " 0"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:ClothMain|livingroomKitchen:LivingRoomCouch:outputCloth1.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:BaseSupportGeo|livingroomKitchen:LivingRoomCouch:BaseSupportGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:ClothTempGeo|livingroomKitchen:LivingRoomCouch:ClothTempGeoShape.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:LeftArmGrp|livingroomKitchen:LivingRoomCouch:ArmButtonGeo|livingroomKitchen:LivingRoomCouch:ArmButtonGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert8SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:RightArmGrp|livingroomKitchen:LivingRoomCouch:ArmButtonGeo|livingroomKitchen:LivingRoomCouch:ArmButtonGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert8SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:CouchSeatGeo|livingroomKitchen:LivingRoomCouch:CouchSeatGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert4SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:LeftArmGrp|livingroomKitchen:LivingRoomCouch:LeftArmGeo|livingroomKitchen:LivingRoomCouch:LeftArmGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:RightArmGrp|livingroomKitchen:LivingRoomCouch:RightArmGeo|livingroomKitchen:LivingRoomCouch:RightArmGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert3SG.dagSetMembers" "-na"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[766]" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:LivingRoomCouch:groupId15.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[767]" "livingroomKitchenRN.placeHolderList[768]" 
+		""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[769]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.compInstObjGroups.compObjectGroups[1]" 
+		"livingroomKitchenRN.placeHolderList[770]" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:LivingRoomCouch:groupId16.groupId" 
+		"|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:LowPolySupport|livingroomKitchen:LivingRoomCouch:LowPolySupportShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[771]" "livingroomKitchenRN.placeHolderList[772]" 
+		""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:ClothMain|livingroomKitchen:LivingRoomCouch:outputCloth1.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[773]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:LivingRoomCouch:ClothTempGeo|livingroomKitchen:LivingRoomCouch:ClothTempGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:ClothSG.dagSetMembers" "livingroomKitchenRN.placeHolderList[774]" 
+		"livingroomKitchenRN.placeHolderList[775]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:BaseSupportGeo|livingroomKitchen:LivingRoomCouch:BaseSupportGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[776]" 
+		"livingroomKitchenRN.placeHolderList[777]" "livingroomKitchen:LivingRoomCouch:lambert2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:LeftArmGrp|livingroomKitchen:LivingRoomCouch:LeftArmGeo|livingroomKitchen:LivingRoomCouch:LeftArmGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[778]" 
+		"livingroomKitchenRN.placeHolderList[779]" "livingroomKitchen:LivingRoomCouch:lambert3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:RightArmGrp|livingroomKitchen:LivingRoomCouch:RightArmGeo|livingroomKitchen:LivingRoomCouch:RightArmGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[780]" 
+		"livingroomKitchenRN.placeHolderList[781]" "livingroomKitchen:LivingRoomCouch:lambert3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:CouchSeatGeo|livingroomKitchen:LivingRoomCouch:CouchSeatGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert4SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[782]" 
+		"livingroomKitchenRN.placeHolderList[783]" "livingroomKitchen:LivingRoomCouch:lambert4SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:LeftArmGrp|livingroomKitchen:LivingRoomCouch:ArmButtonGeo|livingroomKitchen:LivingRoomCouch:ArmButtonGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert8SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[784]" 
+		"livingroomKitchenRN.placeHolderList[785]" "livingroomKitchen:LivingRoomCouch:lambert8SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:LivingRoomCouch:Couch|livingroomKitchen:LivingRoomCouch:ArmsGrp|livingroomKitchen:LivingRoomCouch:RightArmGrp|livingroomKitchen:LivingRoomCouch:ArmButtonGeo|livingroomKitchen:LivingRoomCouch:ArmButtonGeoShape.instObjGroups" 
+		"livingroomKitchen:LivingRoomCouch:lambert8SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[786]" 
+		"livingroomKitchenRN.placeHolderList[787]" "livingroomKitchen:LivingRoomCouch:lambert8SG.dsm"
+		
+		"livingroomKitchen:bowlAndSpoonRN" 8
+		0 "|livingroomKitchen:bowlAndSpoon:Bowl" "|Props" "-s -r "
+		0 "|livingroomKitchen:bowlAndSpoon:Spoon" "|Props" "-s -r "
+		2 "|Props|livingroomKitchen:bowlAndSpoon:Spoon" "visibility" " 0"
+		2 "|Props|livingroomKitchen:bowlAndSpoon:Bowl" "visibility" " 0"
+		3 "|Props|livingroomKitchen:bowlAndSpoon:Bowl|livingroomKitchen:bowlAndSpoon:BowlShape.instObjGroups" 
+		"livingroomKitchen:bowlAndSpoon:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:bowlAndSpoon:Spoon|livingroomKitchen:bowlAndSpoon:SpoonShape.instObjGroups" 
+		"livingroomKitchen:bowlAndSpoon:standardSurface2SG.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:bowlAndSpoon:Spoon|livingroomKitchen:bowlAndSpoon:SpoonShape.instObjGroups" 
+		"livingroomKitchen:bowlAndSpoon:SpoonSG.dagSetMembers" "livingroomKitchenRN.placeHolderList[282]" 
+		"livingroomKitchenRN.placeHolderList[283]" "livingroomKitchen:bowlAndSpoon:standardSurface2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:bowlAndSpoon:Bowl|livingroomKitchen:bowlAndSpoon:BowlShape.instObjGroups" 
+		"livingroomKitchen:bowlAndSpoon:SpoonSG.dagSetMembers" "livingroomKitchenRN.placeHolderList[284]" 
+		"livingroomKitchenRN.placeHolderList[285]" "livingroomKitchen:bowlAndSpoon:standardSurface2SG.dsm"
+		
+		"livingroomKitchen:MilkRN" 42
+		0 "|livingroomKitchen:Milk:Milk" "|Props" "-s -r "
+		2 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:862]\""
+		
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId1.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.compInstObjGroups.compObjectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "livingroomKitchen:Milk:groupId2.groupId" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[364]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface1|livingroomKitchen:Milk:polySurfaceShape1.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[365]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[366]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface2|livingroomKitchen:Milk:polySurfaceShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[367]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[368]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface3|livingroomKitchen:Milk:polySurfaceShape3.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[369]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[370]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface4|livingroomKitchen:Milk:polySurfaceShape4.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[371]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[372]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface5|livingroomKitchen:Milk:polySurfaceShape5.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[373]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[374]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface6|livingroomKitchen:Milk:polySurfaceShape6.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[375]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[376]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface7|livingroomKitchen:Milk:polySurfaceShape7.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[377]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[378]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface8|livingroomKitchen:Milk:polySurfaceShape8.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[379]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[380]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface9|livingroomKitchen:Milk:polySurfaceShape9.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[381]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[382]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface10|livingroomKitchen:Milk:polySurfaceShape10.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[383]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[384]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface11|livingroomKitchen:Milk:polySurfaceShape11.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[385]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[386]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface12|livingroomKitchen:Milk:polySurfaceShape12.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[387]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[388]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface13|livingroomKitchen:Milk:polySurfaceShape13.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[389]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[390]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface14|livingroomKitchen:Milk:polySurfaceShape14.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[391]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[392]" ""
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:polySurface15|livingroomKitchen:Milk:polySurfaceShape15.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[393]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[394]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId1.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[395]" "livingroomKitchenRN.placeHolderList[396]" 
+		"livingroomKitchen:Milk:MilkBox_Shape.iog.og[0].gid"
+		5 4 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[397]" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchenRN.placeHolderList[398]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:Milk:groupId2.groupId" 
+		"|Props|livingroomKitchen:Milk:Milk|livingroomKitchen:Milk:MilkBox|livingroomKitchen:Milk:transform1|livingroomKitchen:Milk:MilkBox_Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[399]" "livingroomKitchenRN.placeHolderList[400]" 
+		"livingroomKitchen:Milk:MilkBox_Shape.ciog.cog[0].cgid"
+		"livingroomKitchen:CouchChairRN" 17
+		0 "|livingroomKitchen:CouchChair:CouchChair" "|Props" "-s -r "
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBaseCushion|livingroomKitchen:CouchChair:ChairBaseCushionShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmL|livingroomKitchen:CouchChair:ChairArmLShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairBackShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBaseShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmR|livingroomKitchen:CouchChair:ChairArmRShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmR|livingroomKitchen:CouchChair:ChairArmRButton|livingroomKitchen:CouchChair:ChairArmRButtonShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmL|livingroomKitchen:CouchChair:ChairArmLButton|livingroomKitchen:CouchChair:ChairArmLButtonShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairBackButton|livingroomKitchen:CouchChair:ChairBackButtonShape.instObjGroups" 
+		"livingroomKitchen:CouchChair:standardSurface2SG.dagSetMembers" "-na"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBaseShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[794]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairBackShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[795]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmR|livingroomKitchen:CouchChair:ChairArmRShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[796]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmR|livingroomKitchen:CouchChair:ChairArmRButton|livingroomKitchen:CouchChair:ChairArmRButtonShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[797]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmL|livingroomKitchen:CouchChair:ChairArmLShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[798]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairArmL|livingroomKitchen:CouchChair:ChairArmLButton|livingroomKitchen:CouchChair:ChairArmLButtonShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[799]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBack|livingroomKitchen:CouchChair:ChairBackButton|livingroomKitchen:CouchChair:ChairBackButtonShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[800]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:CouchChair:CouchChair|livingroomKitchen:CouchChair:ChairBase|livingroomKitchen:CouchChair:ChairBaseCushion|livingroomKitchen:CouchChair:ChairBaseCushionShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[801]" "livingroomKitchen:CouchChair:standardSurface2SG.dsm"
+		
+		"livingroomKitchen:LivingRoomSetRN" 8
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:InsideHouse|livingroomKitchen:LivingRoomSet:Living_Room_Table" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:InsideHouse|livingroomKitchen:LivingRoomSet:Coat_Stand" 
+		"translate" " -type \"double3\" 194.93194293572489073 -96.11329923145186171 114.84786450843476757"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:InsideHouse|livingroomKitchen:LivingRoomSet:Hat" 
+		"translate" " -type \"double3\" 170.93009404916830363 163.40976155603274833 96.80648186418120815"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:InsideHouse|livingroomKitchen:LivingRoomSet:Hat|livingroomKitchen:LivingRoomSet:Hat" 
+		"translate" " -type \"double3\" -15.79321589192311137 51.61390468726256842 -69.77042232905343155"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:InsideHouse|livingroomKitchen:LivingRoomSet:Small_Chest" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:OuterHouse|livingroomKitchen:LivingRoomSet:Door|livingroomKitchen:LivingRoomSet:MainDoor" 
+		"translate" " -type \"double3\" -176.19098780780564084 -9.13732690437869977 192.73732414638189425"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:OuterHouse|livingroomKitchen:LivingRoomSet:Door|livingroomKitchen:LivingRoomSet:MainDoor" 
+		"rotate" " -type \"double3\" -90.00000933466733954 -180 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:LivingRoomSet:SkellyLivingRoom|livingroomKitchen:LivingRoomSet:OuterHouse|livingroomKitchen:LivingRoomSet:Door|livingroomKitchen:LivingRoomSet:MainDoor" 
+		"scale" " -type \"double3\" 116.53030172049439273 116.53030172049439273 116.53030172049439273"
+		
+		"livingroomKitchen:cerealBoxRN" 3
+		0 "|livingroomKitchen:cerealBox:cerealBox" "|Props" "-s -r "
+		3 "|Props|livingroomKitchen:cerealBox:cerealBox|livingroomKitchen:cerealBox:cerealBoxShape.instObjGroups" 
+		"livingroomKitchen:cerealBox:lambert2SG.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:cerealBox:cerealBox|livingroomKitchen:cerealBox:cerealBoxShape.instObjGroups" 
+		"livingroomKitchen:cerealBox:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[319]" 
+		"livingroomKitchenRN.placeHolderList[320]" "livingroomKitchen:cerealBox:lambert2SG.dsm"
+		
+		"livingroomKitchenRN" 20
+		0 "|livingroomKitchen:BroomAndPan_References" "|Props" "-s -r "
+		0 "|livingroomKitchen:Fridge_Reference" "|Props" "-s -r "
+		0 "|livingroomKitchen:SpatulaHolder_Reference" "|Props" "-s -r "
+		0 "|livingroomKitchen:Door1" "|Props" "-s -r "
+		0 "|livingroomKitchen:HiddenReferences_Unknown" "|Props" "-s -r "
+		0 "|livingroomKitchen:OriginalSet_AddedRoomStructure" "|Background" "-s -r "
+		
+		0 "|livingroomKitchenRNfosterParent1|Ceiling" "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedRoomStructure" 
+		"-s -r "
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure" "translate" 
+		" -type \"double3\" -133.538885419547114 0 -123.46639997556428625"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedRoomStructure|livingroomKitchen:wall_05" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:GlassCup" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:Candle2" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:Candle3" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:WoodenFrame" 
+		"translate" " -type \"double3\" 92.34483738361616645 142.47845752344881021 22.42785216847539331"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:WoodenFrame" 
+		"rotate" " -type \"double3\" 89.99999064722122455 180 -179.99999635953622601"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:Picture" 
+		"translate" " -type \"double3\" 92.34483738361616645 142.47845752344881021 23.55204128598018798"
+		
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:AddedtoOriginal|livingroomKitchen:Picture" 
+		"rotate" " -type \"double3\" 89.99999064722122455 180 -179.99999635953622601"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:PlaceHolders" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:PlaceHolders|livingroomKitchen:RockShelf_01" 
+		"visibility" " 0"
+		2 "|Background|livingroomKitchen:OriginalSet_AddedRoomStructure|livingroomKitchen:NonReferences|livingroomKitchen:PlaceHolders|livingroomKitchen:BrookesActionFigure_Placeholder" 
+		"visibility" " 0"
+		5 4 "livingroomKitchenRN" "livingroomKitchen:Material_Ref1:standardSurface4SG.dagSetMembers" 
+		"livingroomKitchenRN.placeHolderList[896]" ""
+		"livingroomKitchen:BroomRN" 86
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj10.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush3|livingroomKitchen:Broom:BroomBrushShape3.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPoke1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert4SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert4SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush4|livingroomKitchen:Broom:BroomBrushShape4.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush|livingroomKitchen:Broom:BroomBrushShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace7.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyMergeVert1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace5.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush2|livingroomKitchen:Broom:BroomBrushShape2.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBridgeEdge1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPlanarProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCylProj2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel4.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPlanarProj2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCylProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCut1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySphProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj6.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj9.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace3.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj8.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj7.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing1.manipMatrix" ""
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush4|livingroomKitchen:Broom:BroomBrushShape4.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush3|livingroomKitchen:Broom:BroomBrushShape3.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush2|livingroomKitchen:Broom:BroomBrushShape2.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush|livingroomKitchen:Broom:BroomBrushShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace6.manipMatrix" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing1.manipMatrix" "livingroomKitchenRN.placeHolderList[802]" 
+		"livingroomKitchenRN.placeHolderList[803]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel1.manipMatrix" "livingroomKitchenRN.placeHolderList[804]" 
+		"livingroomKitchenRN.placeHolderList[805]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace1.manipMatrix" "livingroomKitchenRN.placeHolderList[806]" 
+		"livingroomKitchenRN.placeHolderList[807]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace2.manipMatrix" "livingroomKitchenRN.placeHolderList[808]" 
+		"livingroomKitchenRN.placeHolderList[809]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCut1.manipMatrix" "livingroomKitchenRN.placeHolderList[810]" 
+		"livingroomKitchenRN.placeHolderList[811]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPoke1.manipMatrix" "livingroomKitchenRN.placeHolderList[812]" 
+		"livingroomKitchenRN.placeHolderList[813]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[814]" 
+		"livingroomKitchenRN.placeHolderList[815]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing2.manipMatrix" "livingroomKitchenRN.placeHolderList[816]" 
+		"livingroomKitchenRN.placeHolderList[817]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySplitRing3.manipMatrix" "livingroomKitchenRN.placeHolderList[818]" 
+		"livingroomKitchenRN.placeHolderList[819]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace3.manipMatrix" "livingroomKitchenRN.placeHolderList[820]" 
+		"livingroomKitchenRN.placeHolderList[821]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace4.manipMatrix" "livingroomKitchenRN.placeHolderList[822]" 
+		"livingroomKitchenRN.placeHolderList[823]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace5.manipMatrix" "livingroomKitchenRN.placeHolderList[824]" 
+		"livingroomKitchenRN.placeHolderList[825]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace6.manipMatrix" "livingroomKitchenRN.placeHolderList[826]" 
+		"livingroomKitchenRN.placeHolderList[827]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBridgeEdge1.manipMatrix" "livingroomKitchenRN.placeHolderList[828]" 
+		"livingroomKitchenRN.placeHolderList[829]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyExtrudeFace7.manipMatrix" "livingroomKitchenRN.placeHolderList[830]" 
+		"livingroomKitchenRN.placeHolderList[831]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel2.manipMatrix" "livingroomKitchenRN.placeHolderList[832]" 
+		"livingroomKitchenRN.placeHolderList[833]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel3.manipMatrix" "livingroomKitchenRN.placeHolderList[834]" 
+		"livingroomKitchenRN.placeHolderList[835]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyBevel4.manipMatrix" "livingroomKitchenRN.placeHolderList[836]" 
+		"livingroomKitchenRN.placeHolderList[837]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge2.manipMatrix" "livingroomKitchenRN.placeHolderList[838]" 
+		"livingroomKitchenRN.placeHolderList[839]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyMergeVert1.manipMatrix" "livingroomKitchenRN.placeHolderList[840]" 
+		"livingroomKitchenRN.placeHolderList[841]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySoftEdge3.manipMatrix" "livingroomKitchenRN.placeHolderList[842]" 
+		"livingroomKitchenRN.placeHolderList[843]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[844]" 
+		"livingroomKitchenRN.placeHolderList[845]" "livingroomKitchen:Broom:polyAutoProj1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush4|livingroomKitchen:Broom:BroomBrushShape4.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[846]" 
+		"livingroomKitchenRN.placeHolderList[847]" "livingroomKitchen:Broom:polyAutoProj2.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush2|livingroomKitchen:Broom:BroomBrushShape2.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj3.manipMatrix" "livingroomKitchenRN.placeHolderList[848]" 
+		"livingroomKitchenRN.placeHolderList[849]" "livingroomKitchen:Broom:polyAutoProj3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush3|livingroomKitchen:Broom:BroomBrushShape3.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj4.manipMatrix" "livingroomKitchenRN.placeHolderList[850]" 
+		"livingroomKitchenRN.placeHolderList[851]" "livingroomKitchen:Broom:polyAutoProj4.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush|livingroomKitchen:Broom:BroomBrushShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj5.manipMatrix" "livingroomKitchenRN.placeHolderList[852]" 
+		"livingroomKitchenRN.placeHolderList[853]" "livingroomKitchen:Broom:polyAutoProj5.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj6.manipMatrix" "livingroomKitchenRN.placeHolderList[854]" 
+		"livingroomKitchenRN.placeHolderList[855]" "livingroomKitchen:Broom:polySplitRing3.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj7.manipMatrix" "livingroomKitchenRN.placeHolderList[856]" 
+		"livingroomKitchenRN.placeHolderList[857]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj8.manipMatrix" "livingroomKitchenRN.placeHolderList[858]" 
+		"livingroomKitchenRN.placeHolderList[859]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCylProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[860]" 
+		"livingroomKitchenRN.placeHolderList[861]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj9.manipMatrix" "livingroomKitchenRN.placeHolderList[862]" 
+		"livingroomKitchenRN.placeHolderList[863]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPlanarProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[864]" 
+		"livingroomKitchenRN.placeHolderList[865]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyPlanarProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[866]" 
+		"livingroomKitchenRN.placeHolderList[867]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyCylProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[868]" 
+		"livingroomKitchenRN.placeHolderList[869]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polySphProj1.manipMatrix" "livingroomKitchenRN.placeHolderList[870]" 
+		"livingroomKitchenRN.placeHolderList[871]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.worldMatrix" 
+		"livingroomKitchen:Broom:polyAutoProj10.manipMatrix" "livingroomKitchenRN.placeHolderList[872]" 
+		"livingroomKitchenRN.placeHolderList[873]" "livingroomKitchen:Broom:polyBevel1.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush3|livingroomKitchen:Broom:BroomBrushShape3.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[874]" 
+		"livingroomKitchenRN.placeHolderList[875]" "livingroomKitchen:Broom:lambert2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush|livingroomKitchen:Broom:BroomBrushShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[876]" 
+		"livingroomKitchenRN.placeHolderList[877]" "livingroomKitchen:Broom:lambert2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush2|livingroomKitchen:Broom:BroomBrushShape2.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[878]" 
+		"livingroomKitchenRN.placeHolderList[879]" "livingroomKitchen:Broom:lambert2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomBrush4|livingroomKitchen:Broom:BroomBrushShape4.instObjGroups" 
+		"livingroomKitchen:Broom:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[880]" 
+		"livingroomKitchenRN.placeHolderList[881]" "livingroomKitchen:Broom:lambert2SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Dustpan|livingroomKitchen:Broom:DustpanShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[882]" 
+		"livingroomKitchenRN.placeHolderList[883]" "livingroomKitchen:Broom:lambert3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHead|livingroomKitchen:Broom:BroomConnector|livingroomKitchen:Broom:BroomConnectorShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert4SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[884]" 
+		"livingroomKitchenRN.placeHolderList[885]" "livingroomKitchen:Broom:lambert4SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:BroomAndPan_References|livingroomKitchen:Broom:Broom|livingroomKitchen:Broom:BroomHandle|livingroomKitchen:Broom:BroomHandleShape.instObjGroups" 
+		"livingroomKitchen:Broom:lambert4SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[886]" 
+		"livingroomKitchenRN.placeHolderList[887]" "livingroomKitchen:Broom:lambert4SG.dsm"
+		
+		"livingroomKitchen:DoorRN" 8
+		3 "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:knob|livingroomKitchen:Door:knobShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:Door_frame|livingroomKitchen:Door:Door_frameShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:Door|livingroomKitchen:Door:DoorShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:knob1|livingroomKitchen:Door:knob1Shape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "-na"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:Door_frame|livingroomKitchen:Door:Door_frameShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[888]" 
+		"livingroomKitchenRN.placeHolderList[889]" "livingroomKitchen:Door:lambert5SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:knob1|livingroomKitchen:Door:knob1Shape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[890]" 
+		"livingroomKitchenRN.placeHolderList[891]" "livingroomKitchen:Door:lambert5SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:knob|livingroomKitchen:Door:knobShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[892]" 
+		"livingroomKitchenRN.placeHolderList[893]" "livingroomKitchen:Door:lambert5SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Door1|livingroomKitchen:Door:Door|livingroomKitchen:Door:DoorShape.instObjGroups" 
+		"livingroomKitchen:Door:lambert5SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[894]" 
+		"livingroomKitchenRN.placeHolderList[895]" "livingroomKitchen:Door:lambert5SG.dsm"
+		
+		"livingroomKitchen:owlbearskinRugRN" 9
+		0 "|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D" "|Props" 
+		"-s -r "
+		3 "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:owlbearskinRug:OwlRug_LowPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_LowPoly:ZBrushPolyMesh3DShape.instObjGroups" 
+		"livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.worldMatrix" 
+		"livingroomKitchen:polyUnsmooth2.mp" ""
+		3 "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.worldMatrix" 
+		"livingroomKitchen:polyUnsmooth1.mp" ""
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:HiddenReferences_Unknown|livingroomKitchen:owlbearskinRug:OwlRug_LowPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_LowPoly:ZBrushPolyMesh3DShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[788]" "livingroomKitchen:Material_Ref2:Generic_Metal_MatSG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[789]" ":initialShadingGroup.dsm"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.worldMatrix" 
+		"livingroomKitchen:polyUnsmooth1.mp" "livingroomKitchenRN.placeHolderList[790]" "livingroomKitchenRN.placeHolderList[791]" 
+		"livingroomKitchen:polyUnsmooth2.mp"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3D|livingroomKitchen:owlbearskinRug:OwlRug_HighPoly:ZBrushPolyMesh3DShape.worldMatrix" 
+		"livingroomKitchen:polyUnsmooth2.mp" "livingroomKitchenRN.placeHolderList[792]" "livingroomKitchenRN.placeHolderList[793]" 
+		"livingroomKitchen:polyUnsmooth2.mp"
+		"livingroomKitchen:OvenStovetopRN" 8
+		0 "|livingroomKitchen:OvenStovetop:Oven" "|Props" "-s -r "
+		2 "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape" 
+		"instObjGroups.objectGroups[0].objectGrpCompList" " -type \"componentList\" 1 \"f[0:9853]\""
+		
+		3 "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:OvenStovetop:lambert2SG.dagSetMembers" "-na"
+		3 "livingroomKitchen:OvenStovetop:groupId1.groupId" "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:OvenStovetop:lambert2SG.memberWireframeColor" "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:OvenStovetop:groupId1.groupId" 
+		"|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[401]" "livingroomKitchenRN.placeHolderList[402]" 
+		"livingroomKitchen:OvenStovetop:OvenShape.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:OvenStovetop:lambert2SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[403]" "livingroomKitchenRN.placeHolderList[404]" 
+		"livingroomKitchen:OvenStovetop:OvenShape.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:OvenStovetop:Oven|livingroomKitchen:OvenStovetop:OvenShape.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:OvenStovetop:lambert2SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[405]" 
+		"livingroomKitchenRN.placeHolderList[406]" "livingroomKitchen:OvenStovetop:lambert2SG.dsm"
+		
+		"livingroomKitchen:FridgeForWorkDayRN" 35
+		2 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2" 
+		"instObjGroups.objectGroups" " -s 2"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:UpHandle|livingroomKitchen:FridgeForWorkDay:UpHandleShape.instObjGroups" 
+		"livingroomKitchen:FridgeForWorkDay:standardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:DownHandle|livingroomKitchen:FridgeForWorkDay:DownHandleShape.instObjGroups" 
+		"livingroomKitchen:FridgeForWorkDay:standardSurface3SG.dagSetMembers" "-na"
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:FridgeBase|livingroomKitchen:FridgeForWorkDay:FridgeBaseShape.instObjGroups" 
+		"livingroomKitchen:FridgeForWorkDay:standardSurface2SG.dagSetMembers" "-na"
+		3 "livingroomKitchen:FridgeForWorkDay:groupId21.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "livingroomKitchen:FridgeForWorkDay:groupId22.groupId" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		""
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polySoftEdge2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyAutoProj2.manipMatrix" ""
+		3 "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyRemesh2.manipMatrix" ""
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[321]" "livingroomKitchenRN.placeHolderList[322]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[323]" "livingroomKitchenRN.placeHolderList[324]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[325]" "livingroomKitchenRN.placeHolderList[326]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[327]" "livingroomKitchenRN.placeHolderList[328]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[329]" "livingroomKitchenRN.placeHolderList[330]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[331]" "livingroomKitchenRN.placeHolderList[332]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId21.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0].objectGroupId" 
+		"livingroomKitchenRN.placeHolderList[333]" "livingroomKitchenRN.placeHolderList[334]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gid"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.memberWireframeColor" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0].objectGrpColor" 
+		"livingroomKitchenRN.placeHolderList[335]" "livingroomKitchenRN.placeHolderList[336]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.iog.og[0].gco"
+		5 0 "livingroomKitchenRN" "livingroomKitchen:FridgeForWorkDay:groupId22.groupId" 
+		"|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
+		"livingroomKitchenRN.placeHolderList[337]" "livingroomKitchenRN.placeHolderList[338]" 
+		"livingroomKitchen:FridgeForWorkDay:typeMeshShape2.ciog.cog[0].cgid"
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:FridgeBase|livingroomKitchen:FridgeForWorkDay:FridgeBaseShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[339]" "livingroomKitchen:FridgeForWorkDay:standardSurface2SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:UpHandle|livingroomKitchen:FridgeForWorkDay:UpHandleShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[340]" "livingroomKitchen:FridgeForWorkDay:standardSurface3SG.dsm"
+		
+		5 3 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:DownHandle|livingroomKitchen:FridgeForWorkDay:DownHandleShape.instObjGroups" 
+		"livingroomKitchenRN.placeHolderList[341]" "livingroomKitchen:FridgeForWorkDay:standardSurface3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[342]" 
+		"livingroomKitchenRN.placeHolderList[343]" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.compInstObjGroups.compObjectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[344]" 
+		"livingroomKitchenRN.placeHolderList[345]" "livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dsm"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface7|livingroomKitchen:FridgeForWorkDay:polySurfaceShape8.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[346]" 
+		"livingroomKitchenRN.placeHolderList[347]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface8|livingroomKitchen:FridgeForWorkDay:polySurfaceShape9.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[348]" 
+		"livingroomKitchenRN.placeHolderList[349]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface9|livingroomKitchen:FridgeForWorkDay:polySurfaceShape10.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[350]" 
+		"livingroomKitchenRN.placeHolderList[351]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface10|livingroomKitchen:FridgeForWorkDay:polySurfaceShape11.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[352]" 
+		"livingroomKitchenRN.placeHolderList[353]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface11|livingroomKitchen:FridgeForWorkDay:polySurfaceShape12.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[354]" 
+		"livingroomKitchenRN.placeHolderList[355]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:polySurface12|livingroomKitchen:FridgeForWorkDay:polySurfaceShape13.instObjGroups.objectGroups[0]" 
+		"livingroomKitchen:FridgeForWorkDay:typeStandardSurface3SG.dagSetMembers" "livingroomKitchenRN.placeHolderList[356]" 
+		"livingroomKitchenRN.placeHolderList[357]" ""
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polySoftEdge2.manipMatrix" "livingroomKitchenRN.placeHolderList[358]" 
+		"livingroomKitchenRN.placeHolderList[359]" "livingroomKitchen:FridgeForWorkDay:polyAutoProj2.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyRemesh2.manipMatrix" "livingroomKitchenRN.placeHolderList[360]" 
+		"livingroomKitchenRN.placeHolderList[361]" "livingroomKitchen:FridgeForWorkDay:polyAutoProj2.mp"
+		
+		5 0 "livingroomKitchenRN" "|Props|livingroomKitchen:Fridge_Reference|livingroomKitchen:FridgeForWorkDay:typeMesh2|livingroomKitchen:FridgeForWorkDay:transform6|livingroomKitchen:FridgeForWorkDay:typeMeshShape2.worldMatrix" 
+		"livingroomKitchen:FridgeForWorkDay:polyAutoProj2.manipMatrix" "livingroomKitchenRN.placeHolderList[362]" 
+		"livingroomKitchenRN.placeHolderList[363]" "livingroomKitchen:FridgeForWorkDay:polyAutoProj2.mp";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "TallTableRN";
+	rename -uid "C8BC3614-45A6-4FD0-7683-90B96DB6776C";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"TallTableRN"
+		"TallTableRN" 0
+		"TallTableRN" 3
+		2 "|TallTable:TallTable" "translate" " -type \"double3\" -56.6015677692402619 -11.53747605104957508 91.17339333724940786"
+		
+		2 "|TallTable:TallTable" "rotate" " -type \"double3\" 0 -90 0"
+		2 "|TallTable:TallTable" "scale" " -type \"double3\" 3 3.59191878063538361 3.37204939112641755";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode polyAutoProj -n "polyAutoProj1";
+	rename -uid "4E2424DD-4584-B46D-5616-929FC46D3568";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:5]";
+	setAttr ".ix" -type "matrix" 0 0 1 0 0 1 0 0 -1 0 0 0 159.23452398832745 269.69152448158229 -178.82493499403574 1;
+	setAttr ".s" -type "double3" 1469.7058715820312 1469.7058715820312 1469.7058715820312 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode polyTweakUV -n "polyTweakUV1";
+	rename -uid "C7DFE1DC-4BEF-9A2D-F6FD-079637396511";
+	setAttr ".uopa" yes;
+	setAttr -s 24 ".uvtk[0:23]" -type "float2" 0.63683796 0.79500586 0.63683796
+		 -0.79500586 0.65738106 -0.79500586 0.65738106 0.79500586 0.66918355 0.79500586 0.66918355
+		 -0.79500586 0.68972665 -0.79500586 0.68972665 0.79500586 -0.75137675 -0.79500586
+		 -0.067970902 -0.79500586 -0.067970902 0.79500586 -0.75137675 0.79500586 -0.05712235
+		 -0.79500586 0.62628359 -0.79500586 0.62628359 0.79500586 -0.05712235 0.79500586 0.70152915
+		 -0.11160004 0.70152915 -0.79500586 0.72207242 -0.79500586 0.72207242 -0.11160004
+		 0.73083317 -0.11160016 0.73083317 -0.79500586 0.75137669 -0.79500586 0.75137669 -0.11160016;
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "4C12097D-4173-5F9B-DFD1-69B7912167D6";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -164.28570775758681 -200.79364281482827 ;
+	setAttr ".tgi[0].vh" -type "double2" 165.07935851970075 200.79364281482827 ;
 select -ne :time1;
-	setAttr ".o" 34;
-	setAttr ".unw" 34;
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -av -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".o" 1;
+	setAttr -av -k on ".unw" 1;
+	setAttr -av -k on ".etw";
+	setAttr -av -k on ".tps";
+	setAttr -av -k on ".tms";
 select -ne :hardwareRenderingGlobals;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
+	setAttr -k on ".hwi";
+	setAttr -av ".ta";
+	setAttr -av ".tq";
+	setAttr -av ".etmr";
+	setAttr -av ".tmr";
+	setAttr -av ".aoon";
+	setAttr -av ".aoam";
+	setAttr -av ".aora";
+	setAttr -k on ".hff";
+	setAttr -av -k on ".hfd";
+	setAttr -av -k on ".hfs";
+	setAttr -av -k on ".hfe";
+	setAttr -av ".hfc";
+	setAttr -av -k on ".hfcr";
+	setAttr -av -k on ".hfcg";
+	setAttr -av -k on ".hfcb";
+	setAttr -av -k on ".hfa";
+	setAttr -av ".mbe";
+	setAttr -av -k on ".mbsof";
+	setAttr -k on ".blen";
+	setAttr -k on ".blat";
+	setAttr -av ".msaa";
 	setAttr ".fprt" yes;
-	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 36 ".st";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 223 ".st";
+	setAttr -cb on ".an";
+	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 select -ne :defaultShaderList1;
-	setAttr -s 36 ".s";
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 228 ".s";
 select -ne :postProcessList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 4 ".u";
+	setAttr -s 371 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 4 ".r";
+	setAttr -k on ".ihi";
+	setAttr -s 25 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 5 ".tx";
+	setAttr -s 280 ".tx";
 select -ne :standardSurface1;
-	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 78 ".dsm";
-	setAttr ".ro" yes;
-	setAttr -s 6 ".gn";
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".bbx";
+	setAttr -k on ".vwm";
+	setAttr -k on ".tpv";
+	setAttr -k on ".uit";
+	setAttr -s 204 ".dsm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+	setAttr -s 30 ".gn";
 select -ne :initialParticleSE;
-	setAttr ".ro" yes;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+select -ne :initialMaterialInfo;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k on ".macc";
+	setAttr -av -k on ".macd";
+	setAttr -av -k on ".macq";
+	setAttr -av -k on ".mcfr";
+	setAttr -cb on ".ifg";
+	setAttr -av -k on ".clip";
+	setAttr -av -k on ".edm";
+	setAttr -av -k on ".edl";
+	setAttr -av -cb on ".ren";
+	setAttr -av -k on ".esr";
+	setAttr -av -k on ".ors";
+	setAttr -cb on ".sdf";
+	setAttr -av -k on ".outf";
+	setAttr -av -cb on ".imfkey";
+	setAttr -av -k on ".gama";
+	setAttr -k on ".exrc";
+	setAttr -k on ".expt";
+	setAttr -av -k on ".an";
+	setAttr -cb on ".ar";
+	setAttr -av -k on ".fs";
+	setAttr -av -k on ".ef";
+	setAttr -av -k on ".bfs";
+	setAttr -av -cb on ".me";
+	setAttr -cb on ".se";
+	setAttr -av -k on ".be";
+	setAttr -av -cb on ".ep";
+	setAttr -av -k on ".fec";
+	setAttr -av -k on ".ofc";
+	setAttr -cb on ".ofe";
+	setAttr -cb on ".efe";
+	setAttr -cb on ".oft";
+	setAttr -cb on ".umfn";
+	setAttr -cb on ".ufe";
+	setAttr -av -cb on ".pff";
+	setAttr -av -cb on ".peie";
+	setAttr -av -cb on ".ifp";
+	setAttr -k on ".rv";
+	setAttr -av -k on ".comp";
+	setAttr -av -k on ".cth";
+	setAttr -av -k on ".soll";
+	setAttr -cb on ".sosl";
+	setAttr -av -k on ".rd";
+	setAttr -av -k on ".lp";
+	setAttr -av -k on ".sp";
+	setAttr -av -k on ".shs";
+	setAttr -av -k on ".lpr";
+	setAttr -cb on ".gv";
+	setAttr -cb on ".sv";
+	setAttr -av -k on ".mm";
+	setAttr -av -k on ".npu";
+	setAttr -av -k on ".itf";
+	setAttr -av -k on ".shp";
+	setAttr -cb on ".isp";
+	setAttr -av -k on ".uf";
+	setAttr -av -k on ".oi";
+	setAttr -av -k on ".rut";
+	setAttr -av -k on ".mot";
+	setAttr -av -cb on ".mb";
+	setAttr -av -k on ".mbf";
+	setAttr -av -k on ".mbso";
+	setAttr -av -k on ".mbsc";
+	setAttr -av -k on ".afp";
+	setAttr -av -k on ".pfb";
+	setAttr -av -k on ".pram";
+	setAttr -av -k on ".poam";
+	setAttr -av -k on ".prlm";
+	setAttr -av -k on ".polm";
+	setAttr -av -cb on ".prm";
+	setAttr -av -cb on ".pom";
+	setAttr -cb on ".pfrm";
+	setAttr -cb on ".pfom";
+	setAttr -av -k on ".bll";
+	setAttr -av -k on ".bls";
+	setAttr -av -k on ".smv";
+	setAttr -av -k on ".ubc";
+	setAttr -av -k on ".mbc";
+	setAttr -cb on ".mbt";
+	setAttr -av -k on ".udbx";
+	setAttr -av -k on ".smc";
+	setAttr -av -k on ".kmv";
+	setAttr -cb on ".isl";
+	setAttr -cb on ".ism";
+	setAttr -cb on ".imb";
+	setAttr -av -k on ".rlen";
+	setAttr -av -k on ".frts";
+	setAttr -av -k on ".tlwd";
+	setAttr -av -k on ".tlht";
+	setAttr -av -k on ".jfc";
+	setAttr -cb on ".rsb";
+	setAttr -av -k on ".ope";
+	setAttr -av -k on ".oppf";
+	setAttr -av -k on ".rcp";
+	setAttr -av -k on ".icp";
+	setAttr -av -k on ".ocp";
+	setAttr -cb on ".hbl";
 	setAttr ".dss" -type "string" "standardSurface1";
 select -ne :defaultResolution;
-	setAttr ".pa" 1;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".w";
+	setAttr -av -k on ".h";
+	setAttr -av -k on ".pa" 1;
+	setAttr -av -k on ".al";
+	setAttr -av -k on ".dar";
+	setAttr -av -k on ".ldar";
+	setAttr -av -k on ".dpi";
+	setAttr -av -k on ".off";
+	setAttr -av -k on ".fld";
+	setAttr -av -k on ".zsl";
+	setAttr -av -k on ".isu";
+	setAttr -av -k on ".pdu";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -29777,8 +32043,43 @@ select -ne :defaultColorMgtGlobals;
 	setAttr ".otn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 	setAttr ".potn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 select -ne :hardwareRenderGlobals;
-	setAttr ".ctrs" 256;
-	setAttr ".btrs" 512;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k off -cb on ".ctrs" 256;
+	setAttr -av -k off -cb on ".btrs" 512;
+	setAttr -av -k off -cb on ".fbfm";
+	setAttr -av -k off -cb on ".ehql";
+	setAttr -av -k off -cb on ".eams";
+	setAttr -av -k off -cb on ".eeaa";
+	setAttr -av -k off -cb on ".engm";
+	setAttr -av -k off -cb on ".mes";
+	setAttr -av -k off -cb on ".emb";
+	setAttr -av -k off -cb on ".mbbf";
+	setAttr -av -k off -cb on ".mbs";
+	setAttr -av -k off -cb on ".trm";
+	setAttr -av -k off -cb on ".tshc";
+	setAttr -av -k off -cb on ".enpt";
+	setAttr -av -k off -cb on ".clmt";
+	setAttr -av -k off -cb on ".tcov";
+	setAttr -av -k off -cb on ".lith";
+	setAttr -av -k off -cb on ".sobc";
+	setAttr -av -k off -cb on ".cuth";
+	setAttr -av -k off -cb on ".hgcd";
+	setAttr -av -k off -cb on ".hgci";
+	setAttr -av -k off -cb on ".mgcs";
+	setAttr -av -k off -cb on ".twa";
+	setAttr -av -k off -cb on ".twz";
+	setAttr -k on ".hwcc";
+	setAttr -k on ".hwdp";
+	setAttr -k on ".hwql";
+	setAttr -k on ".hwfr";
+	setAttr -k on ".soll";
+	setAttr -k on ".sosl";
+	setAttr -k on ".bswa";
+	setAttr -k on ".shml";
+	setAttr -k on ".hwel";
 select -ne :ikSystem;
 	setAttr -s 2 ".sol";
 connectAttr "Transform_Ctrl_Master_Scale.o" "SkeletonRN.phl[126]";
@@ -31320,224 +33621,362 @@ connectAttr "Neck_02_Redundancy_Ctrl_scaleY.o" "SkeletonRN.phl[1660]";
 connectAttr "Neck_02_Redundancy_Ctrl_scaleZ.o" "SkeletonRN.phl[1661]";
 connectAttr "Neck_02_Redundancy_Ctrl_Operating_Space.o" "SkeletonRN.phl[1662]";
 connectAttr "Neck_02_Redundancy_Ctrl_visibility.o" "SkeletonRN.phl[1663]";
-connectAttr "CastleBase_translateX.o" "FishBowlRN.phl[1]";
-connectAttr "CastleBase_translateY.o" "FishBowlRN.phl[2]";
-connectAttr "CastleBase_translateZ.o" "FishBowlRN.phl[3]";
-connectAttr "CastleBase_scaleX.o" "FishBowlRN.phl[4]";
-connectAttr "CastleBase_scaleY.o" "FishBowlRN.phl[5]";
-connectAttr "CastleBase_scaleZ.o" "FishBowlRN.phl[6]";
-connectAttr "CastleBase_rotateX.o" "FishBowlRN.phl[7]";
-connectAttr "CastleBase_rotateY.o" "FishBowlRN.phl[8]";
-connectAttr "CastleBase_rotateZ.o" "FishBowlRN.phl[9]";
-connectAttr "CastleBase_visibility.o" "FishBowlRN.phl[10]";
-connectAttr "transformGeometry1.og" "FishBowlRN.phl[11]";
-connectAttr "Door_translateX.o" "FishBowlRN.phl[12]";
-connectAttr "Door_translateY.o" "FishBowlRN.phl[13]";
-connectAttr "Door_translateZ.o" "FishBowlRN.phl[14]";
-connectAttr "Door_rotateX.o" "FishBowlRN.phl[15]";
-connectAttr "Door_rotateY.o" "FishBowlRN.phl[16]";
-connectAttr "Door_rotateZ.o" "FishBowlRN.phl[17]";
-connectAttr "Door_visibility.o" "FishBowlRN.phl[18]";
-connectAttr "Door_scaleX.o" "FishBowlRN.phl[19]";
-connectAttr "Door_scaleY.o" "FishBowlRN.phl[20]";
-connectAttr "Door_scaleZ.o" "FishBowlRN.phl[21]";
-connectAttr "transformGeometry2.og" "FishBowlRN.phl[22]";
-connectAttr "CastleCrown_translateX.o" "FishBowlRN.phl[23]";
-connectAttr "CastleCrown_translateY.o" "FishBowlRN.phl[24]";
-connectAttr "CastleCrown_translateZ.o" "FishBowlRN.phl[25]";
-connectAttr "CastleCrown_scaleX.o" "FishBowlRN.phl[26]";
-connectAttr "CastleCrown_scaleY.o" "FishBowlRN.phl[27]";
-connectAttr "CastleCrown_scaleZ.o" "FishBowlRN.phl[28]";
-connectAttr "CastleCrown_rotateX.o" "FishBowlRN.phl[29]";
-connectAttr "CastleCrown_rotateY.o" "FishBowlRN.phl[30]";
-connectAttr "CastleCrown_rotateZ.o" "FishBowlRN.phl[31]";
-connectAttr "CastleCrown_visibility.o" "FishBowlRN.phl[32]";
-connectAttr "transformGeometry3.og" "FishBowlRN.phl[33]";
-connectAttr "Seaweed1_translateX.o" "FishBowlRN.phl[34]";
-connectAttr "Seaweed1_translateY.o" "FishBowlRN.phl[35]";
-connectAttr "Seaweed1_translateZ.o" "FishBowlRN.phl[36]";
-connectAttr "Seaweed1_scaleX.o" "FishBowlRN.phl[37]";
-connectAttr "Seaweed1_scaleY.o" "FishBowlRN.phl[38]";
-connectAttr "Seaweed1_scaleZ.o" "FishBowlRN.phl[39]";
-connectAttr "Seaweed1_rotateX.o" "FishBowlRN.phl[40]";
-connectAttr "Seaweed1_rotateY.o" "FishBowlRN.phl[41]";
-connectAttr "Seaweed1_rotateZ.o" "FishBowlRN.phl[42]";
-connectAttr "Seaweed1_visibility.o" "FishBowlRN.phl[43]";
-connectAttr "transformGeometry4.og" "FishBowlRN.phl[44]";
-connectAttr "Seaweed4_translateX.o" "FishBowlRN.phl[45]";
-connectAttr "Seaweed4_translateY.o" "FishBowlRN.phl[46]";
-connectAttr "Seaweed4_translateZ.o" "FishBowlRN.phl[47]";
-connectAttr "Seaweed4_scaleX.o" "FishBowlRN.phl[48]";
-connectAttr "Seaweed4_scaleY.o" "FishBowlRN.phl[49]";
-connectAttr "Seaweed4_scaleZ.o" "FishBowlRN.phl[50]";
-connectAttr "Seaweed4_rotateX.o" "FishBowlRN.phl[51]";
-connectAttr "Seaweed4_rotateY.o" "FishBowlRN.phl[52]";
-connectAttr "Seaweed4_rotateZ.o" "FishBowlRN.phl[53]";
-connectAttr "Seaweed4_visibility.o" "FishBowlRN.phl[54]";
-connectAttr "transformGeometry5.og" "FishBowlRN.phl[55]";
-connectAttr "Seaweed8_translateX.o" "FishBowlRN.phl[56]";
-connectAttr "Seaweed8_translateY.o" "FishBowlRN.phl[57]";
-connectAttr "Seaweed8_translateZ.o" "FishBowlRN.phl[58]";
-connectAttr "Seaweed8_rotateX.o" "FishBowlRN.phl[59]";
-connectAttr "Seaweed8_rotateY.o" "FishBowlRN.phl[60]";
-connectAttr "Seaweed8_rotateZ.o" "FishBowlRN.phl[61]";
-connectAttr "Seaweed8_scaleX.o" "FishBowlRN.phl[62]";
-connectAttr "Seaweed8_scaleY.o" "FishBowlRN.phl[63]";
-connectAttr "Seaweed8_scaleZ.o" "FishBowlRN.phl[64]";
-connectAttr "Seaweed8_visibility.o" "FishBowlRN.phl[65]";
-connectAttr "Seaweed9_translateX.o" "FishBowlRN.phl[66]";
-connectAttr "Seaweed9_translateY.o" "FishBowlRN.phl[67]";
-connectAttr "Seaweed9_translateZ.o" "FishBowlRN.phl[68]";
-connectAttr "Seaweed9_rotateX.o" "FishBowlRN.phl[69]";
-connectAttr "Seaweed9_rotateY.o" "FishBowlRN.phl[70]";
-connectAttr "Seaweed9_rotateZ.o" "FishBowlRN.phl[71]";
-connectAttr "Seaweed9_scaleX.o" "FishBowlRN.phl[72]";
-connectAttr "Seaweed9_scaleY.o" "FishBowlRN.phl[73]";
-connectAttr "Seaweed9_scaleZ.o" "FishBowlRN.phl[74]";
-connectAttr "Seaweed9_visibility.o" "FishBowlRN.phl[75]";
-connectAttr "Seaweed10_translateX.o" "FishBowlRN.phl[76]";
-connectAttr "Seaweed10_translateY.o" "FishBowlRN.phl[77]";
-connectAttr "Seaweed10_translateZ.o" "FishBowlRN.phl[78]";
-connectAttr "Seaweed10_rotateX.o" "FishBowlRN.phl[79]";
-connectAttr "Seaweed10_rotateY.o" "FishBowlRN.phl[80]";
-connectAttr "Seaweed10_rotateZ.o" "FishBowlRN.phl[81]";
-connectAttr "Seaweed10_scaleX.o" "FishBowlRN.phl[82]";
-connectAttr "Seaweed10_scaleY.o" "FishBowlRN.phl[83]";
-connectAttr "Seaweed10_scaleZ.o" "FishBowlRN.phl[84]";
-connectAttr "Seaweed10_visibility.o" "FishBowlRN.phl[85]";
-connectAttr "Seaweed11_translateX.o" "FishBowlRN.phl[86]";
-connectAttr "Seaweed11_translateY.o" "FishBowlRN.phl[87]";
-connectAttr "Seaweed11_translateZ.o" "FishBowlRN.phl[88]";
-connectAttr "Seaweed11_rotateX.o" "FishBowlRN.phl[89]";
-connectAttr "Seaweed11_rotateY.o" "FishBowlRN.phl[90]";
-connectAttr "Seaweed11_rotateZ.o" "FishBowlRN.phl[91]";
-connectAttr "Seaweed11_scaleX.o" "FishBowlRN.phl[92]";
-connectAttr "Seaweed11_scaleY.o" "FishBowlRN.phl[93]";
-connectAttr "Seaweed11_scaleZ.o" "FishBowlRN.phl[94]";
-connectAttr "Seaweed11_visibility.o" "FishBowlRN.phl[95]";
-connectAttr "Seaweed12_translateX.o" "FishBowlRN.phl[96]";
-connectAttr "Seaweed12_translateY.o" "FishBowlRN.phl[97]";
-connectAttr "Seaweed12_translateZ.o" "FishBowlRN.phl[98]";
-connectAttr "Seaweed12_rotateX.o" "FishBowlRN.phl[99]";
-connectAttr "Seaweed12_rotateY.o" "FishBowlRN.phl[100]";
-connectAttr "Seaweed12_rotateZ.o" "FishBowlRN.phl[101]";
-connectAttr "Seaweed12_scaleX.o" "FishBowlRN.phl[102]";
-connectAttr "Seaweed12_scaleY.o" "FishBowlRN.phl[103]";
-connectAttr "Seaweed12_scaleZ.o" "FishBowlRN.phl[104]";
-connectAttr "Seaweed12_visibility.o" "FishBowlRN.phl[105]";
-connectAttr "Tail_translateX.o" "FishBowlRN.phl[106]";
-connectAttr "Tail_translateY.o" "FishBowlRN.phl[107]";
-connectAttr "Tail_translateZ.o" "FishBowlRN.phl[108]";
-connectAttr "Tail_rotateX.o" "FishBowlRN.phl[109]";
-connectAttr "Tail_rotateY.o" "FishBowlRN.phl[110]";
-connectAttr "Tail_rotateZ.o" "FishBowlRN.phl[111]";
-connectAttr "Tail_scaleX.o" "FishBowlRN.phl[112]";
-connectAttr "Tail_scaleY.o" "FishBowlRN.phl[113]";
-connectAttr "Tail_scaleZ.o" "FishBowlRN.phl[114]";
-connectAttr "Tail_visibility.o" "FishBowlRN.phl[115]";
-connectAttr "transformGeometry6.og" "FishBowlRN.phl[116]";
-connectAttr "Head_eyes_translateX.o" "FishBowlRN.phl[117]";
-connectAttr "Head_eyes_translateY.o" "FishBowlRN.phl[118]";
-connectAttr "Head_eyes_translateZ.o" "FishBowlRN.phl[119]";
-connectAttr "Head_eyes_rotateX.o" "FishBowlRN.phl[120]";
-connectAttr "Head_eyes_rotateY.o" "FishBowlRN.phl[121]";
-connectAttr "Head_eyes_rotateZ.o" "FishBowlRN.phl[122]";
-connectAttr "Head_eyes_scaleX.o" "FishBowlRN.phl[123]";
-connectAttr "Head_eyes_scaleY.o" "FishBowlRN.phl[124]";
-connectAttr "Head_eyes_scaleZ.o" "FishBowlRN.phl[125]";
-connectAttr "Head_eyes_visibility.o" "FishBowlRN.phl[126]";
-connectAttr "transformGeometry7.og" "FishBowlRN.phl[127]";
-connectAttr "Spine_translateX.o" "FishBowlRN.phl[128]";
-connectAttr "Spine_translateY.o" "FishBowlRN.phl[129]";
-connectAttr "Spine_translateZ.o" "FishBowlRN.phl[130]";
-connectAttr "Spine_rotateX.o" "FishBowlRN.phl[131]";
-connectAttr "Spine_rotateY.o" "FishBowlRN.phl[132]";
-connectAttr "Spine_rotateZ.o" "FishBowlRN.phl[133]";
-connectAttr "Spine_scaleX.o" "FishBowlRN.phl[134]";
-connectAttr "Spine_scaleY.o" "FishBowlRN.phl[135]";
-connectAttr "Spine_scaleZ.o" "FishBowlRN.phl[136]";
-connectAttr "Spine_visibility.o" "FishBowlRN.phl[137]";
-connectAttr "transformGeometry8.og" "FishBowlRN.phl[138]";
-connectAttr "Rib4_translateX.o" "FishBowlRN.phl[139]";
-connectAttr "Rib4_translateY.o" "FishBowlRN.phl[140]";
-connectAttr "Rib4_translateZ.o" "FishBowlRN.phl[141]";
-connectAttr "Rib4_rotateX.o" "FishBowlRN.phl[142]";
-connectAttr "Rib4_rotateY.o" "FishBowlRN.phl[143]";
-connectAttr "Rib4_rotateZ.o" "FishBowlRN.phl[144]";
-connectAttr "Rib4_scaleX.o" "FishBowlRN.phl[145]";
-connectAttr "Rib4_scaleY.o" "FishBowlRN.phl[146]";
-connectAttr "Rib4_scaleZ.o" "FishBowlRN.phl[147]";
-connectAttr "Rib4_visibility.o" "FishBowlRN.phl[148]";
-connectAttr "transformGeometry9.og" "FishBowlRN.phl[149]";
-connectAttr "Rib1_translateX.o" "FishBowlRN.phl[150]";
-connectAttr "Rib1_translateY.o" "FishBowlRN.phl[151]";
-connectAttr "Rib1_translateZ.o" "FishBowlRN.phl[152]";
-connectAttr "Rib1_rotateX.o" "FishBowlRN.phl[153]";
-connectAttr "Rib1_rotateY.o" "FishBowlRN.phl[154]";
-connectAttr "Rib1_rotateZ.o" "FishBowlRN.phl[155]";
-connectAttr "Rib1_scaleX.o" "FishBowlRN.phl[156]";
-connectAttr "Rib1_scaleY.o" "FishBowlRN.phl[157]";
-connectAttr "Rib1_scaleZ.o" "FishBowlRN.phl[158]";
-connectAttr "Rib1_visibility.o" "FishBowlRN.phl[159]";
-connectAttr "transformGeometry10.og" "FishBowlRN.phl[160]";
-connectAttr "Rib2_translateX.o" "FishBowlRN.phl[161]";
-connectAttr "Rib2_translateY.o" "FishBowlRN.phl[162]";
-connectAttr "Rib2_translateZ.o" "FishBowlRN.phl[163]";
-connectAttr "Rib2_rotateX.o" "FishBowlRN.phl[164]";
-connectAttr "Rib2_rotateY.o" "FishBowlRN.phl[165]";
-connectAttr "Rib2_rotateZ.o" "FishBowlRN.phl[166]";
-connectAttr "Rib2_scaleX.o" "FishBowlRN.phl[167]";
-connectAttr "Rib2_scaleY.o" "FishBowlRN.phl[168]";
-connectAttr "Rib2_scaleZ.o" "FishBowlRN.phl[169]";
-connectAttr "Rib2_visibility.o" "FishBowlRN.phl[170]";
-connectAttr "transformGeometry11.og" "FishBowlRN.phl[171]";
-connectAttr "Rib3_translateX.o" "FishBowlRN.phl[172]";
-connectAttr "Rib3_translateY.o" "FishBowlRN.phl[173]";
-connectAttr "Rib3_translateZ.o" "FishBowlRN.phl[174]";
-connectAttr "Rib3_rotateX.o" "FishBowlRN.phl[175]";
-connectAttr "Rib3_rotateY.o" "FishBowlRN.phl[176]";
-connectAttr "Rib3_rotateZ.o" "FishBowlRN.phl[177]";
-connectAttr "Rib3_scaleX.o" "FishBowlRN.phl[178]";
-connectAttr "Rib3_scaleY.o" "FishBowlRN.phl[179]";
-connectAttr "Rib3_scaleZ.o" "FishBowlRN.phl[180]";
-connectAttr "Rib3_visibility.o" "FishBowlRN.phl[181]";
-connectAttr "transformGeometry12.og" "FishBowlRN.phl[182]";
-connectAttr "Sand_translateX.o" "FishBowlRN.phl[183]";
-connectAttr "Sand_translateZ.o" "FishBowlRN.phl[184]";
-connectAttr "Sand_translateY.o" "FishBowlRN.phl[185]";
-connectAttr "Sand_scaleX.o" "FishBowlRN.phl[186]";
-connectAttr "Sand_scaleY.o" "FishBowlRN.phl[187]";
-connectAttr "Sand_scaleZ.o" "FishBowlRN.phl[188]";
-connectAttr "Sand_rotateX.o" "FishBowlRN.phl[189]";
-connectAttr "Sand_rotateY.o" "FishBowlRN.phl[190]";
-connectAttr "Sand_rotateZ.o" "FishBowlRN.phl[191]";
-connectAttr "Sand_visibility.o" "FishBowlRN.phl[192]";
-connectAttr "transformGeometry13.og" "FishBowlRN.phl[193]";
-connectAttr "Fishbowl_translateX.o" "FishBowlRN.phl[194]";
-connectAttr "Fishbowl_translateZ.o" "FishBowlRN.phl[195]";
-connectAttr "Fishbowl_translateY.o" "FishBowlRN.phl[196]";
-connectAttr "Fishbowl_scaleX.o" "FishBowlRN.phl[197]";
-connectAttr "Fishbowl_scaleY.o" "FishBowlRN.phl[198]";
-connectAttr "Fishbowl_scaleZ.o" "FishBowlRN.phl[199]";
-connectAttr "Fishbowl_rotateX.o" "FishBowlRN.phl[200]";
-connectAttr "Fishbowl_rotateY.o" "FishBowlRN.phl[201]";
-connectAttr "Fishbowl_rotateZ.o" "FishBowlRN.phl[202]";
-connectAttr "Fishbowl_visibility.o" "FishBowlRN.phl[203]";
-connectAttr "transformGeometry14.og" "FishBowlRN.phl[204]";
-connectAttr "FishBowlRN.phl[205]" "transformGeometry3.ig";
-connectAttr "FishBowlRN.phl[206]" "transformGeometry1.ig";
-connectAttr "FishBowlRN.phl[207]" "transformGeometry2.ig";
-connectAttr "FishBowlRN.phl[208]" "transformGeometry13.ig";
-connectAttr "FishBowlRN.phl[209]" "transformGeometry5.ig";
-connectAttr "FishBowlRN.phl[210]" "transformGeometry4.ig";
-connectAttr "FishBowlRN.phl[211]" "transformGeometry6.ig";
-connectAttr "FishBowlRN.phl[212]" "transformGeometry7.ig";
-connectAttr "FishBowlRN.phl[213]" "transformGeometry8.ig";
-connectAttr "FishBowlRN.phl[214]" "transformGeometry9.ig";
-connectAttr "FishBowlRN.phl[215]" "transformGeometry10.ig";
-connectAttr "FishBowlRN.phl[216]" "transformGeometry11.ig";
-connectAttr "FishBowlRN.phl[217]" "transformGeometry12.ig";
-connectAttr "FishBowlRN.phl[218]" "transformGeometry14.ig";
+connectAttr "livingroomKitchenRN.phl[407]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[408]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[409]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[410]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[411]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[412]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[413]" "livingroomKitchenRN.phl[414]";
+connectAttr "livingroomKitchenRN.phl[415]" "livingroomKitchenRN.phl[416]";
+connectAttr "livingroomKitchenRN.phl[417]" "livingroomKitchenRN.phl[418]";
+connectAttr "livingroomKitchenRN.phl[419]" "livingroomKitchenRN.phl[420]";
+connectAttr "livingroomKitchenRN.phl[421]" "livingroomKitchenRN.phl[422]";
+connectAttr "livingroomKitchenRN.phl[423]" "livingroomKitchenRN.phl[424]";
+connectAttr "livingroomKitchenRN.phl[425]" "livingroomKitchenRN.phl[426]";
+connectAttr "livingroomKitchenRN.phl[427]" "livingroomKitchenRN.phl[428]";
+connectAttr "livingroomKitchenRN.phl[429]" "livingroomKitchenRN.phl[430]";
+connectAttr "livingroomKitchenRN.phl[431]" "livingroomKitchenRN.phl[432]";
+connectAttr "livingroomKitchenRN.phl[433]" "livingroomKitchenRN.phl[434]";
+connectAttr "livingroomKitchenRN.phl[435]" "livingroomKitchenRN.phl[436]";
+connectAttr "livingroomKitchenRN.phl[437]" "livingroomKitchenRN.phl[438]";
+connectAttr "livingroomKitchenRN.phl[439]" "livingroomKitchenRN.phl[440]";
+connectAttr "livingroomKitchenRN.phl[441]" "livingroomKitchenRN.phl[442]";
+connectAttr "livingroomKitchenRN.phl[443]" "livingroomKitchenRN.phl[444]";
+connectAttr "livingroomKitchenRN.phl[445]" "livingroomKitchenRN.phl[446]";
+connectAttr "livingroomKitchenRN.phl[447]" "livingroomKitchenRN.phl[448]";
+connectAttr "livingroomKitchenRN.phl[449]" "livingroomKitchenRN.phl[450]";
+connectAttr "livingroomKitchenRN.phl[451]" "livingroomKitchenRN.phl[452]";
+connectAttr "livingroomKitchenRN.phl[453]" "livingroomKitchenRN.phl[454]";
+connectAttr "livingroomKitchenRN.phl[455]" "livingroomKitchenRN.phl[456]";
+connectAttr "livingroomKitchenRN.phl[457]" "livingroomKitchenRN.phl[458]";
+connectAttr "livingroomKitchenRN.phl[459]" "livingroomKitchenRN.phl[460]";
+connectAttr "livingroomKitchenRN.phl[461]" "livingroomKitchenRN.phl[462]";
+connectAttr "livingroomKitchenRN.phl[463]" "livingroomKitchenRN.phl[464]";
+connectAttr "livingroomKitchenRN.phl[465]" "livingroomKitchenRN.phl[466]";
+connectAttr "livingroomKitchenRN.phl[467]" "livingroomKitchenRN.phl[468]";
+connectAttr "livingroomKitchenRN.phl[469]" "livingroomKitchenRN.phl[470]";
+connectAttr "livingroomKitchenRN.phl[471]" "livingroomKitchenRN.phl[472]";
+connectAttr "livingroomKitchenRN.phl[473]" "livingroomKitchenRN.phl[474]";
+connectAttr "livingroomKitchenRN.phl[475]" "livingroomKitchenRN.phl[476]";
+connectAttr "livingroomKitchenRN.phl[477]" "livingroomKitchenRN.phl[478]";
+connectAttr "livingroomKitchenRN.phl[479]" "livingroomKitchenRN.phl[480]";
+connectAttr "livingroomKitchenRN.phl[481]" "livingroomKitchenRN.phl[482]";
+connectAttr "livingroomKitchenRN.phl[483]" "livingroomKitchenRN.phl[484]";
+connectAttr "livingroomKitchenRN.phl[485]" "livingroomKitchenRN.phl[486]";
+connectAttr "livingroomKitchenRN.phl[487]" "livingroomKitchenRN.phl[488]";
+connectAttr "livingroomKitchenRN.phl[489]" "livingroomKitchenRN.phl[490]";
+connectAttr "livingroomKitchenRN.phl[491]" "livingroomKitchenRN.phl[492]";
+connectAttr "livingroomKitchenRN.phl[493]" "livingroomKitchenRN.phl[494]";
+connectAttr "livingroomKitchenRN.phl[495]" "livingroomKitchenRN.phl[496]";
+connectAttr "livingroomKitchenRN.phl[497]" "livingroomKitchenRN.phl[498]";
+connectAttr "livingroomKitchenRN.phl[499]" "livingroomKitchenRN.phl[500]";
+connectAttr "livingroomKitchenRN.phl[501]" "livingroomKitchenRN.phl[502]";
+connectAttr "livingroomKitchenRN.phl[503]" "livingroomKitchenRN.phl[504]";
+connectAttr "livingroomKitchenRN.phl[505]" "livingroomKitchenRN.phl[506]";
+connectAttr "livingroomKitchenRN.phl[507]" "livingroomKitchenRN.phl[508]";
+connectAttr "livingroomKitchenRN.phl[509]" "livingroomKitchenRN.phl[510]";
+connectAttr "livingroomKitchenRN.phl[511]" "livingroomKitchenRN.phl[512]";
+connectAttr "livingroomKitchenRN.phl[513]" "livingroomKitchenRN.phl[514]";
+connectAttr "livingroomKitchenRN.phl[515]" "livingroomKitchenRN.phl[516]";
+connectAttr "livingroomKitchenRN.phl[517]" "livingroomKitchenRN.phl[518]";
+connectAttr "livingroomKitchenRN.phl[519]" "livingroomKitchenRN.phl[520]";
+connectAttr "livingroomKitchenRN.phl[521]" "livingroomKitchenRN.phl[522]";
+connectAttr "livingroomKitchenRN.phl[523]" "livingroomKitchenRN.phl[524]";
+connectAttr "livingroomKitchenRN.phl[525]" "livingroomKitchenRN.phl[526]";
+connectAttr "livingroomKitchenRN.phl[527]" "livingroomKitchenRN.phl[528]";
+connectAttr "livingroomKitchenRN.phl[529]" "livingroomKitchenRN.phl[530]";
+connectAttr "livingroomKitchenRN.phl[531]" "livingroomKitchenRN.phl[532]";
+connectAttr "livingroomKitchenRN.phl[533]" "livingroomKitchenRN.phl[534]";
+connectAttr "livingroomKitchenRN.phl[535]" "livingroomKitchenRN.phl[536]";
+connectAttr "livingroomKitchenRN.phl[537]" "livingroomKitchenRN.phl[538]";
+connectAttr "livingroomKitchenRN.phl[539]" "livingroomKitchenRN.phl[540]";
+connectAttr "livingroomKitchenRN.phl[541]" "livingroomKitchenRN.phl[542]";
+connectAttr "livingroomKitchenRN.phl[286]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[287]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[288]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[289]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[290]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[291]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[292]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[293]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[294]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[295]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[296]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[297]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[298]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[299]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[300]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[301]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[302]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[303]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[304]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[305]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[306]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[307]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[308]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[309]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[310]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[311]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[312]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[313]" "livingroomKitchenRN.phl[314]";
+connectAttr "livingroomKitchenRN.phl[315]" "livingroomKitchenRN.phl[316]";
+connectAttr "livingroomKitchenRN.phl[317]" "livingroomKitchenRN.phl[318]";
+connectAttr "livingroomKitchenRN.phl[543]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[544]" "livingroomKitchenRN.phl[545]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[546]";
+connectAttr "livingroomKitchenRN.phl[547]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[548]" "livingroomKitchenRN.phl[549]";
+connectAttr "livingroomKitchenRN.phl[550]" "livingroomKitchenRN.phl[551]";
+connectAttr "livingroomKitchenRN.phl[552]" "livingroomKitchenRN.phl[553]";
+connectAttr "livingroomKitchenRN.phl[554]" "livingroomKitchenRN.phl[555]";
+connectAttr "livingroomKitchenRN.phl[556]" "livingroomKitchenRN.phl[557]";
+connectAttr "livingroomKitchenRN.phl[558]" "livingroomKitchenRN.phl[559]";
+connectAttr "livingroomKitchenRN.phl[560]" "livingroomKitchenRN.phl[561]";
+connectAttr "livingroomKitchenRN.phl[562]" "livingroomKitchenRN.phl[563]";
+connectAttr "livingroomKitchenRN.phl[564]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[565]" "livingroomKitchenRN.phl[566]";
+connectAttr "livingroomKitchenRN.phl[567]" "livingroomKitchenRN.phl[568]";
+connectAttr "livingroomKitchenRN.phl[569]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[570]" "livingroomKitchenRN.phl[571]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[572]";
+connectAttr "livingroomKitchenRN.phl[573]" "livingroomKitchenRN.phl[574]";
+connectAttr "livingroomKitchenRN.phl[575]" "livingroomKitchenRN.phl[576]";
+connectAttr "livingroomKitchenRN.phl[577]" "livingroomKitchenRN.phl[578]";
+connectAttr "livingroomKitchenRN.phl[579]" "livingroomKitchenRN.phl[580]";
+connectAttr "livingroomKitchenRN.phl[581]" "livingroomKitchenRN.phl[582]";
+connectAttr "livingroomKitchenRN.phl[583]" "livingroomKitchenRN.phl[584]";
+connectAttr "livingroomKitchenRN.phl[585]" "livingroomKitchenRN.phl[586]";
+connectAttr "livingroomKitchenRN.phl[587]" "livingroomKitchenRN.phl[588]";
+connectAttr "livingroomKitchenRN.phl[589]" "livingroomKitchenRN.phl[590]";
+connectAttr "livingroomKitchenRN.phl[591]" "livingroomKitchenRN.phl[592]";
+connectAttr "livingroomKitchenRN.phl[593]" "livingroomKitchenRN.phl[594]";
+connectAttr "livingroomKitchenRN.phl[595]" "livingroomKitchenRN.phl[596]";
+connectAttr "livingroomKitchenRN.phl[597]" "livingroomKitchenRN.phl[598]";
+connectAttr "livingroomKitchenRN.phl[599]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[600]" "livingroomKitchenRN.phl[601]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[602]";
+connectAttr "livingroomKitchenRN.phl[603]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[604]" "livingroomKitchenRN.phl[605]";
+connectAttr "livingroomKitchenRN.phl[606]" "livingroomKitchenRN.phl[607]";
+connectAttr "livingroomKitchenRN.phl[608]" "livingroomKitchenRN.phl[609]";
+connectAttr "livingroomKitchenRN.phl[610]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[611]" "livingroomKitchenRN.phl[612]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[613]";
+connectAttr "livingroomKitchenRN.phl[614]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[615]" "livingroomKitchenRN.phl[616]";
+connectAttr "livingroomKitchenRN.phl[617]" "livingroomKitchenRN.phl[618]";
+connectAttr "livingroomKitchenRN.phl[619]" "livingroomKitchenRN.phl[620]";
+connectAttr "livingroomKitchenRN.phl[621]" "livingroomKitchenRN.phl[622]";
+connectAttr "livingroomKitchenRN.phl[623]" "livingroomKitchenRN.phl[624]";
+connectAttr "livingroomKitchenRN.phl[625]" "livingroomKitchenRN.phl[626]";
+connectAttr "livingroomKitchenRN.phl[627]" "livingroomKitchenRN.phl[628]";
+connectAttr "livingroomKitchenRN.phl[629]" "livingroomKitchenRN.phl[630]";
+connectAttr "livingroomKitchenRN.phl[631]" "livingroomKitchenRN.phl[632]";
+connectAttr "livingroomKitchenRN.phl[633]" "livingroomKitchenRN.phl[634]";
+connectAttr "livingroomKitchenRN.phl[635]" "livingroomKitchenRN.phl[636]";
+connectAttr "livingroomKitchenRN.phl[637]" "livingroomKitchenRN.phl[638]";
+connectAttr "livingroomKitchenRN.phl[639]" "livingroomKitchenRN.phl[640]";
+connectAttr "livingroomKitchenRN.phl[641]" "livingroomKitchenRN.phl[642]";
+connectAttr "livingroomKitchenRN.phl[643]" "livingroomKitchenRN.phl[644]";
+connectAttr "livingroomKitchenRN.phl[645]" "livingroomKitchenRN.phl[646]";
+connectAttr "livingroomKitchenRN.phl[647]" "livingroomKitchenRN.phl[648]";
+connectAttr "livingroomKitchenRN.phl[649]" "livingroomKitchenRN.phl[650]";
+connectAttr "livingroomKitchenRN.phl[651]" "livingroomKitchenRN.phl[652]";
+connectAttr "livingroomKitchenRN.phl[653]" "livingroomKitchenRN.phl[654]";
+connectAttr "livingroomKitchenRN.phl[655]" "livingroomKitchenRN.phl[656]";
+connectAttr "livingroomKitchenRN.phl[657]" "livingroomKitchenRN.phl[658]";
+connectAttr "livingroomKitchenRN.phl[659]" "livingroomKitchenRN.phl[660]";
+connectAttr "livingroomKitchenRN.phl[661]" "livingroomKitchenRN.phl[662]";
+connectAttr "livingroomKitchenRN.phl[663]" "livingroomKitchenRN.phl[664]";
+connectAttr "livingroomKitchenRN.phl[665]" "livingroomKitchenRN.phl[666]";
+connectAttr "livingroomKitchenRN.phl[667]" "livingroomKitchenRN.phl[668]";
+connectAttr "livingroomKitchenRN.phl[669]" "livingroomKitchenRN.phl[670]";
+connectAttr "livingroomKitchenRN.phl[671]" "livingroomKitchenRN.phl[672]";
+connectAttr "livingroomKitchenRN.phl[673]" "livingroomKitchenRN.phl[674]";
+connectAttr "livingroomKitchenRN.phl[675]" "livingroomKitchenRN.phl[676]";
+connectAttr "livingroomKitchenRN.phl[677]" "livingroomKitchenRN.phl[678]";
+connectAttr "livingroomKitchenRN.phl[679]" "livingroomKitchenRN.phl[680]";
+connectAttr "livingroomKitchenRN.phl[681]" "livingroomKitchenRN.phl[682]";
+connectAttr "livingroomKitchenRN.phl[683]" "livingroomKitchenRN.phl[684]";
+connectAttr "livingroomKitchenRN.phl[685]" "livingroomKitchenRN.phl[686]";
+connectAttr "livingroomKitchenRN.phl[687]" "livingroomKitchenRN.phl[688]";
+connectAttr "livingroomKitchenRN.phl[689]" "livingroomKitchenRN.phl[690]";
+connectAttr "livingroomKitchenRN.phl[691]" "livingroomKitchenRN.phl[692]";
+connectAttr "livingroomKitchenRN.phl[693]" "livingroomKitchenRN.phl[694]";
+connectAttr "livingroomKitchenRN.phl[695]" "livingroomKitchenRN.phl[696]";
+connectAttr "livingroomKitchenRN.phl[697]" "livingroomKitchenRN.phl[698]";
+connectAttr "livingroomKitchenRN.phl[699]" "livingroomKitchenRN.phl[700]";
+connectAttr "livingroomKitchenRN.phl[701]" "livingroomKitchenRN.phl[702]";
+connectAttr "livingroomKitchenRN.phl[703]" "livingroomKitchenRN.phl[704]";
+connectAttr "livingroomKitchenRN.phl[705]" "livingroomKitchenRN.phl[706]";
+connectAttr "livingroomKitchenRN.phl[707]" "livingroomKitchenRN.phl[708]";
+connectAttr "livingroomKitchenRN.phl[709]" "livingroomKitchenRN.phl[710]";
+connectAttr "livingroomKitchenRN.phl[711]" "livingroomKitchenRN.phl[712]";
+connectAttr "livingroomKitchenRN.phl[713]" "livingroomKitchenRN.phl[714]";
+connectAttr "livingroomKitchenRN.phl[715]" "livingroomKitchenRN.phl[716]";
+connectAttr "livingroomKitchenRN.phl[717]" "livingroomKitchenRN.phl[718]";
+connectAttr "livingroomKitchenRN.phl[719]" "livingroomKitchenRN.phl[720]";
+connectAttr "livingroomKitchenRN.phl[721]" "livingroomKitchenRN.phl[722]";
+connectAttr "livingroomKitchenRN.phl[723]" "livingroomKitchenRN.phl[724]";
+connectAttr "livingroomKitchenRN.phl[725]" "livingroomKitchenRN.phl[726]";
+connectAttr "livingroomKitchenRN.phl[727]" "livingroomKitchenRN.phl[728]";
+connectAttr "livingroomKitchenRN.phl[729]" "livingroomKitchenRN.phl[730]";
+connectAttr "livingroomKitchenRN.phl[731]" "livingroomKitchenRN.phl[732]";
+connectAttr "livingroomKitchenRN.phl[733]" "livingroomKitchenRN.phl[734]";
+connectAttr "livingroomKitchenRN.phl[735]" "livingroomKitchenRN.phl[736]";
+connectAttr "livingroomKitchenRN.phl[737]" "livingroomKitchenRN.phl[738]";
+connectAttr "livingroomKitchenRN.phl[739]" "livingroomKitchenRN.phl[740]";
+connectAttr "livingroomKitchenRN.phl[741]" "livingroomKitchenRN.phl[742]";
+connectAttr "livingroomKitchenRN.phl[743]" "livingroomKitchenRN.phl[744]";
+connectAttr "livingroomKitchenRN.phl[745]" "livingroomKitchenRN.phl[746]";
+connectAttr "livingroomKitchenRN.phl[747]" "livingroomKitchenRN.phl[748]";
+connectAttr "livingroomKitchenRN.phl[749]" "livingroomKitchenRN.phl[750]";
+connectAttr "livingroomKitchenRN.phl[751]" "livingroomKitchenRN.phl[752]";
+connectAttr "livingroomKitchenRN.phl[753]" "livingroomKitchenRN.phl[754]";
+connectAttr "livingroomKitchenRN.phl[755]" "livingroomKitchenRN.phl[756]";
+connectAttr "livingroomKitchenRN.phl[757]" "livingroomKitchenRN.phl[758]";
+connectAttr "livingroomKitchenRN.phl[759]" "livingroomKitchenRN.phl[760]";
+connectAttr "livingroomKitchenRN.phl[761]" "livingroomKitchenRN.phl[762]";
+connectAttr "livingroomKitchenRN.phl[763]" "livingroomKitchenRN.phl[764]";
+connectAttr "livingroomKitchenRN.phl[765]" ":initialMaterialInfo.t" -na;
+connectAttr "livingroomKitchenRN.phl[766]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[767]" "livingroomKitchenRN.phl[768]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[769]";
+connectAttr "livingroomKitchenRN.phl[770]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[771]" "livingroomKitchenRN.phl[772]";
+connectAttr "livingroomKitchenRN.phl[773]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[774]" "livingroomKitchenRN.phl[775]";
+connectAttr "livingroomKitchenRN.phl[776]" "livingroomKitchenRN.phl[777]";
+connectAttr "livingroomKitchenRN.phl[778]" "livingroomKitchenRN.phl[779]";
+connectAttr "livingroomKitchenRN.phl[780]" "livingroomKitchenRN.phl[781]";
+connectAttr "livingroomKitchenRN.phl[782]" "livingroomKitchenRN.phl[783]";
+connectAttr "livingroomKitchenRN.phl[784]" "livingroomKitchenRN.phl[785]";
+connectAttr "livingroomKitchenRN.phl[786]" "livingroomKitchenRN.phl[787]";
+connectAttr "livingroomKitchenRN.phl[282]" "livingroomKitchenRN.phl[283]";
+connectAttr "livingroomKitchenRN.phl[284]" "livingroomKitchenRN.phl[285]";
+connectAttr "livingroomKitchenRN.phl[364]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[365]";
+connectAttr "livingroomKitchenRN.phl[366]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[367]";
+connectAttr "livingroomKitchenRN.phl[368]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[369]";
+connectAttr "livingroomKitchenRN.phl[370]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[371]";
+connectAttr "livingroomKitchenRN.phl[372]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[373]";
+connectAttr "livingroomKitchenRN.phl[374]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[375]";
+connectAttr "livingroomKitchenRN.phl[376]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[377]";
+connectAttr "livingroomKitchenRN.phl[378]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[379]";
+connectAttr "livingroomKitchenRN.phl[380]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[381]";
+connectAttr "livingroomKitchenRN.phl[382]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[383]";
+connectAttr "livingroomKitchenRN.phl[384]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[385]";
+connectAttr "livingroomKitchenRN.phl[386]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[387]";
+connectAttr "livingroomKitchenRN.phl[388]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[389]";
+connectAttr "livingroomKitchenRN.phl[390]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[391]";
+connectAttr "livingroomKitchenRN.phl[392]" ":initialShadingGroup.dsm" -na;
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[393]";
+connectAttr "livingroomKitchenRN.phl[394]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[395]" "livingroomKitchenRN.phl[396]";
+connectAttr ":initialShadingGroup.mwc" "livingroomKitchenRN.phl[397]";
+connectAttr "livingroomKitchenRN.phl[398]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[399]" "livingroomKitchenRN.phl[400]";
+connectAttr "livingroomKitchenRN.phl[794]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[795]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[796]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[797]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[798]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[799]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[800]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[801]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[319]" "livingroomKitchenRN.phl[320]";
+connectAttr "CeilingShape.iog" "livingroomKitchenRN.phl[896]";
+connectAttr "livingroomKitchenRN.phl[802]" "livingroomKitchenRN.phl[803]";
+connectAttr "livingroomKitchenRN.phl[804]" "livingroomKitchenRN.phl[805]";
+connectAttr "livingroomKitchenRN.phl[806]" "livingroomKitchenRN.phl[807]";
+connectAttr "livingroomKitchenRN.phl[808]" "livingroomKitchenRN.phl[809]";
+connectAttr "livingroomKitchenRN.phl[810]" "livingroomKitchenRN.phl[811]";
+connectAttr "livingroomKitchenRN.phl[812]" "livingroomKitchenRN.phl[813]";
+connectAttr "livingroomKitchenRN.phl[814]" "livingroomKitchenRN.phl[815]";
+connectAttr "livingroomKitchenRN.phl[816]" "livingroomKitchenRN.phl[817]";
+connectAttr "livingroomKitchenRN.phl[818]" "livingroomKitchenRN.phl[819]";
+connectAttr "livingroomKitchenRN.phl[820]" "livingroomKitchenRN.phl[821]";
+connectAttr "livingroomKitchenRN.phl[822]" "livingroomKitchenRN.phl[823]";
+connectAttr "livingroomKitchenRN.phl[824]" "livingroomKitchenRN.phl[825]";
+connectAttr "livingroomKitchenRN.phl[826]" "livingroomKitchenRN.phl[827]";
+connectAttr "livingroomKitchenRN.phl[828]" "livingroomKitchenRN.phl[829]";
+connectAttr "livingroomKitchenRN.phl[830]" "livingroomKitchenRN.phl[831]";
+connectAttr "livingroomKitchenRN.phl[832]" "livingroomKitchenRN.phl[833]";
+connectAttr "livingroomKitchenRN.phl[834]" "livingroomKitchenRN.phl[835]";
+connectAttr "livingroomKitchenRN.phl[836]" "livingroomKitchenRN.phl[837]";
+connectAttr "livingroomKitchenRN.phl[838]" "livingroomKitchenRN.phl[839]";
+connectAttr "livingroomKitchenRN.phl[840]" "livingroomKitchenRN.phl[841]";
+connectAttr "livingroomKitchenRN.phl[842]" "livingroomKitchenRN.phl[843]";
+connectAttr "livingroomKitchenRN.phl[844]" "livingroomKitchenRN.phl[845]";
+connectAttr "livingroomKitchenRN.phl[846]" "livingroomKitchenRN.phl[847]";
+connectAttr "livingroomKitchenRN.phl[848]" "livingroomKitchenRN.phl[849]";
+connectAttr "livingroomKitchenRN.phl[850]" "livingroomKitchenRN.phl[851]";
+connectAttr "livingroomKitchenRN.phl[852]" "livingroomKitchenRN.phl[853]";
+connectAttr "livingroomKitchenRN.phl[854]" "livingroomKitchenRN.phl[855]";
+connectAttr "livingroomKitchenRN.phl[856]" "livingroomKitchenRN.phl[857]";
+connectAttr "livingroomKitchenRN.phl[858]" "livingroomKitchenRN.phl[859]";
+connectAttr "livingroomKitchenRN.phl[860]" "livingroomKitchenRN.phl[861]";
+connectAttr "livingroomKitchenRN.phl[862]" "livingroomKitchenRN.phl[863]";
+connectAttr "livingroomKitchenRN.phl[864]" "livingroomKitchenRN.phl[865]";
+connectAttr "livingroomKitchenRN.phl[866]" "livingroomKitchenRN.phl[867]";
+connectAttr "livingroomKitchenRN.phl[868]" "livingroomKitchenRN.phl[869]";
+connectAttr "livingroomKitchenRN.phl[870]" "livingroomKitchenRN.phl[871]";
+connectAttr "livingroomKitchenRN.phl[872]" "livingroomKitchenRN.phl[873]";
+connectAttr "livingroomKitchenRN.phl[874]" "livingroomKitchenRN.phl[875]";
+connectAttr "livingroomKitchenRN.phl[876]" "livingroomKitchenRN.phl[877]";
+connectAttr "livingroomKitchenRN.phl[878]" "livingroomKitchenRN.phl[879]";
+connectAttr "livingroomKitchenRN.phl[880]" "livingroomKitchenRN.phl[881]";
+connectAttr "livingroomKitchenRN.phl[882]" "livingroomKitchenRN.phl[883]";
+connectAttr "livingroomKitchenRN.phl[884]" "livingroomKitchenRN.phl[885]";
+connectAttr "livingroomKitchenRN.phl[886]" "livingroomKitchenRN.phl[887]";
+connectAttr "livingroomKitchenRN.phl[888]" "livingroomKitchenRN.phl[889]";
+connectAttr "livingroomKitchenRN.phl[890]" "livingroomKitchenRN.phl[891]";
+connectAttr "livingroomKitchenRN.phl[892]" "livingroomKitchenRN.phl[893]";
+connectAttr "livingroomKitchenRN.phl[894]" "livingroomKitchenRN.phl[895]";
+connectAttr "livingroomKitchenRN.phl[788]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[789]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[790]" "livingroomKitchenRN.phl[791]";
+connectAttr "livingroomKitchenRN.phl[792]" "livingroomKitchenRN.phl[793]";
+connectAttr "livingroomKitchenRN.phl[401]" "livingroomKitchenRN.phl[402]";
+connectAttr "livingroomKitchenRN.phl[403]" "livingroomKitchenRN.phl[404]";
+connectAttr "livingroomKitchenRN.phl[405]" "livingroomKitchenRN.phl[406]";
+connectAttr "livingroomKitchenRN.phl[321]" "livingroomKitchenRN.phl[322]";
+connectAttr "livingroomKitchenRN.phl[323]" "livingroomKitchenRN.phl[324]";
+connectAttr "livingroomKitchenRN.phl[325]" "livingroomKitchenRN.phl[326]";
+connectAttr "livingroomKitchenRN.phl[327]" "livingroomKitchenRN.phl[328]";
+connectAttr "livingroomKitchenRN.phl[329]" "livingroomKitchenRN.phl[330]";
+connectAttr "livingroomKitchenRN.phl[331]" "livingroomKitchenRN.phl[332]";
+connectAttr "livingroomKitchenRN.phl[333]" "livingroomKitchenRN.phl[334]";
+connectAttr "livingroomKitchenRN.phl[335]" "livingroomKitchenRN.phl[336]";
+connectAttr "livingroomKitchenRN.phl[337]" "livingroomKitchenRN.phl[338]";
+connectAttr "livingroomKitchenRN.phl[339]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[340]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[341]" ":initialShadingGroup.dsm" -na;
+connectAttr "livingroomKitchenRN.phl[342]" "livingroomKitchenRN.phl[343]";
+connectAttr "livingroomKitchenRN.phl[344]" "livingroomKitchenRN.phl[345]";
+connectAttr "livingroomKitchenRN.phl[346]" "livingroomKitchenRN.phl[347]";
+connectAttr "livingroomKitchenRN.phl[348]" "livingroomKitchenRN.phl[349]";
+connectAttr "livingroomKitchenRN.phl[350]" "livingroomKitchenRN.phl[351]";
+connectAttr "livingroomKitchenRN.phl[352]" "livingroomKitchenRN.phl[353]";
+connectAttr "livingroomKitchenRN.phl[354]" "livingroomKitchenRN.phl[355]";
+connectAttr "livingroomKitchenRN.phl[356]" "livingroomKitchenRN.phl[357]";
+connectAttr "livingroomKitchenRN.phl[358]" "livingroomKitchenRN.phl[359]";
+connectAttr "livingroomKitchenRN.phl[360]" "livingroomKitchenRN.phl[361]";
+connectAttr "livingroomKitchenRN.phl[362]" "livingroomKitchenRN.phl[363]";
 connectAttr "pCube1_rotateX.o" "pCube1.rx";
 connectAttr "pCube1_rotateY.o" "pCube1.ry";
 connectAttr "pCube1_rotateZ.o" "pCube1.rz";
@@ -31549,6 +33988,8 @@ connectAttr "pCube1_scaleX.o" "pCube1.sx";
 connectAttr "pCube1_scaleY.o" "pCube1.sy";
 connectAttr "pCube1_scaleZ.o" "pCube1.sz";
 connectAttr "polyCube1.out" "pCubeShape1.i";
+connectAttr "polyTweakUV1.out" "CeilingShape.i";
+connectAttr "polyTweakUV1.uvtk[0]" "CeilingShape.uvst[0].uvtw";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -31558,10 +33999,46 @@ connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "Head_COG_Ctrl_visibility.o" "SkeletonRN.phl[123]";
 connectAttr "sharedReferenceNode.sr" "SkeletonRN.sr";
 connectAttr "_UNKNOWN_REF_NODE_.ur" "SkeletonRN.ur";
-connectAttr "sharedReferenceNode.sr" "SkeletonFishRN.sr";
-connectAttr "_UNKNOWN_REF_NODE_.ur" "SkeletonFishRN.ur";
-connectAttr "_UNKNOWN_REF_NODE_.ur" "FishBowlRN.ur";
 connectAttr ":timeEditor.cmp[0]" "Composition1.cmp";
+connectAttr "livingroomKitchenRN.phl[40]" "livingroomKitchenRN.phl[41]";
+connectAttr "livingroomKitchenRN.phl[44]" "livingroomKitchenRN.phl[45]";
+connectAttr "livingroomKitchenRN.phl[48]" "livingroomKitchenRN.phl[49]";
+connectAttr "livingroomKitchenRN.phl[52]" "livingroomKitchenRN.phl[53]";
+connectAttr "livingroomKitchenRN.phl[56]" "livingroomKitchenRN.phl[57]";
+connectAttr "livingroomKitchenRN.phl[60]" "livingroomKitchenRN.phl[61]";
+connectAttr "livingroomKitchenRN.phl[73]" "livingroomKitchenRN.phl[74]";
+connectAttr "livingroomKitchenRN.phl[75]" "livingroomKitchenRN.phl[76]";
+connectAttr "livingroomKitchenRN.phl[77]" "livingroomKitchenRN.phl[78]";
+connectAttr "livingroomKitchenRN.phl[79]" "livingroomKitchenRN.phl[80]";
+connectAttr "livingroomKitchenRN.phl[81]" "livingroomKitchenRN.phl[82]";
+connectAttr "livingroomKitchenRN.phl[83]" "livingroomKitchenRN.phl[84]";
+connectAttr "livingroomKitchenRN.phl[85]" "livingroomKitchenRN.phl[86]";
+connectAttr "livingroomKitchenRN.phl[87]" "livingroomKitchenRN.phl[88]";
+connectAttr "livingroomKitchenRN.phl[112]" "livingroomKitchenRN.phl[113]";
+connectAttr "livingroomKitchenRN.phl[116]" "livingroomKitchenRN.phl[117]";
+connectAttr "livingroomKitchenRN.phl[120]" "livingroomKitchenRN.phl[121]";
+connectAttr "livingroomKitchenRN.phl[124]" "livingroomKitchenRN.phl[125]";
+connectAttr "livingroomKitchenRN.phl[128]" "livingroomKitchenRN.phl[129]";
+connectAttr "livingroomKitchenRN.phl[132]" "livingroomKitchenRN.phl[133]";
+connectAttr "livingroomKitchenRN.phl[136]" "livingroomKitchenRN.phl[137]";
+connectAttr "livingroomKitchenRN.phl[140]" "livingroomKitchenRN.phl[141]";
+connectAttr "livingroomKitchenRN.phl[144]" "livingroomKitchenRN.phl[145]";
+connectAttr "livingroomKitchenRN.phl[148]" "livingroomKitchenRN.phl[149]";
+connectAttr "livingroomKitchenRN.phl[152]" "livingroomKitchenRN.phl[153]";
+connectAttr "livingroomKitchenRN.phl[156]" "livingroomKitchenRN.phl[157]";
+connectAttr "livingroomKitchenRN.phl[160]" "livingroomKitchenRN.phl[161]";
+connectAttr "livingroomKitchenRN.phl[164]" "livingroomKitchenRN.phl[165]";
+connectAttr "livingroomKitchenRN.phl[168]" "livingroomKitchenRN.phl[169]";
+connectAttr "livingroomKitchenRN.phl[184]" "livingroomKitchenRN.phl[185]";
+connectAttr "livingroomKitchenRN.phl[186]" "livingroomKitchenRN.phl[187]";
+connectAttr "livingroomKitchenRN.phl[256]" "livingroomKitchenRN.phl[257]";
+connectAttr "livingroomKitchenRN.phl[264]" "livingroomKitchenRN.phl[265]";
+connectAttr "livingroomKitchenRN.phl[272]" "livingroomKitchenRN.phl[273]";
+connectAttr "livingroomKitchenRN.phl[280]" "livingroomKitchenRN.phl[281]";
+connectAttr "livingroomKitchenRNfosterParent1.msg" "livingroomKitchenRN.fp";
+connectAttr "polySurfaceShape1.o" "polyAutoProj1.ip";
+connectAttr "CeilingShape.wm" "polyAutoProj1.mp";
+connectAttr "polyAutoProj1.out" "polyTweakUV1.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of Shot07.ma

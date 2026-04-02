@@ -34,4 +34,8 @@ Maya/scenes/Shot_2_Blockout.ma
 
 Maya/scenes/Shot_3_Blockout.ma
 
-*.DS_Store
+# Ignore Texture Files
+Maya/Textures/
+*.mayaSwatches
+*.swatch
+*.swatches
