@@ -1,8 +1,10 @@
-//Maya ASCII 2023 scene
+//Maya ASCII 2026 scene
 //Name: Shot09.ma
-//Last modified: Wed, Mar 25, 2026 04:09:16 AM
+//Last modified: Thu, Apr 02, 2026 02:42:57 AM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
+file -rdi 1 -ns "groundfern" -rfn "groundfernRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/plants/groundfern.ma";
 file -rdi 1 -ns "DragonGateCaveSet" -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/environment/caveInterior/DragonGateCaveSet.ma";
 file -rdi 2 -ns "DragonGate" -rfn "DragonGateCaveSet:DragonGateRN" -op "v=0;"
@@ -21,46 +23,33 @@ file -rdi 2 -ns "roundedRocks" -rfn "DragonGateCaveSet:roundedRocksRN" -op "v=0;
 		 -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/rocks/roundedRocks.ma";
 file -rdi 2 -ns "Bones" -rfn "DragonGateCaveSet:BonesRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/bones/Bones.ma";
-file -rdi 1 -ns "Cannon_Rig" -rfn "Cannon_RigRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/dungeonProps/cannon/Cannon_Rig.ma";
-file -rdi 2 -ns "Skeleton" -dr 1 -rfn "Cannon_Rig:SkeletonRN" -op "v=0;" -typ
-		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
-file -rdi 1 -ns "Mimic_Rig" -rfn "Mimic_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic_Rig.ma";
-file -rdi 1 -ns "Dragon_Rig" -rfn "Dragon_RigRN" -op "v=0;" -typ "mayaAscii"
-		 "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/dragon/Dragon_Rig.ma";
-file -rdi 1 -ns "Clock_Rig" -rfn "Clock_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/apartmentProps/alarmClock/Clock_Rig.ma";
-file -rdi 1 -ns "WD_Bed" -rfn "WD_BedRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/apartmentProps/bed/WD_Bed.ma";
-file -rdi 1 -ns "groundfern" -rfn "groundfernRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/plants/groundfern.ma";
+file -rdi 2 -ns "Material_Ref" -rfn "DragonGateCaveSet:Material_RefRN" -op "v=0;"
+		 -typ "mayaAscii" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya//assets/Material_Ref.ma";
+file -rdi 2 -ns "DragonGateLighting" -rfn "DragonGateCaveSet:DragonGateLightingRN"
+		 -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//scenes/LightingScenes/DragonGateLighting.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
+file -r -ns "groundfern" -dr 1 -rfn "groundfernRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/plants/groundfern.ma";
 file -r -ns "DragonGateCaveSet" -dr 1 -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/environment/caveInterior/DragonGateCaveSet.ma";
-file -r -ns "Cannon_Rig" -dr 1 -rfn "Cannon_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/dungeonProps/cannon/Cannon_Rig.ma";
-file -r -ns "Mimic_Rig" -dr 1 -rfn "Mimic_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic_Rig.ma";
-file -r -ns "Dragon_Rig" -dr 1 -rfn "Dragon_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/dragon/Dragon_Rig.ma";
-file -r -ns "Clock_Rig" -dr 1 -rfn "Clock_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/apartmentProps/alarmClock/Clock_Rig.ma";
-file -r -ns "WD_Bed" -dr 1 -rfn "WD_BedRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/apartmentProps/bed/WD_Bed.ma";
-file -r -ns "groundfern" -dr 1 -rfn "groundfernRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/plants/groundfern.ma";
-requires maya "2023";
+requires maya "2026";
 requires -nodeType "ikSpringSolver" "ikSpringSolver" "1.0";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOV" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter"
-		 -nodeType "aiAreaLight" -nodeType "aiUtility" -nodeType "aiNoise" -nodeType "aiUserDataColor"
-		 -nodeType "aiImagerDenoiserOidn" -nodeType "cryptomatte" "mtoa" "5.2.1.1";
+		 -nodeType "aiUtility" -nodeType "aiNoise" -nodeType "aiUserDataColor" -nodeType "cryptomatte"
+		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.5.4.2";
 requires -nodeType "renderSetup" -nodeType "lightItem" -nodeType "lightEditor" "renderSetup.py" "1.0";
-requires "stereoCamera" "10.0";
 currentUnit -l meter -a degree -t 12fps;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2023";
-fileInfo "version" "2023";
-fileInfo "cutIdentifier" "202405151550-05a853e76d";
-fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "045D2285-4ECE-3A3A-C328-EFA8F77A1C69";
+fileInfo "product" "Maya 2026";
+fileInfo "version" "2026";
+fileInfo "cutIdentifier" "202510291147-60ec9eda33";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
+fileInfo "UUID" "0147A051-4CF3-6B6B-3E48-5ABD72051D3B";
 createNode transform -s -n "persp";
 	rename -uid "913CC8DD-4015-E66B-8046-32B9361BA6E8";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.97094770947820286 2.1601479845124243 7.911527091060834 ;
-	setAttr ".r" -type "double3" -20.738352559341894 983.8000000005411 0 ;
+	setAttr ".t" -type "double3" -9.4960277057174984 2.5032729154680045 6.4074573358021132 ;
+	setAttr ".r" -type "double3" 0.2616474402347293 993.40000000019324 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "16DFFEAE-4556-CFCE-025E-718677808DDA";
 	setAttr -k off ".v" no;
@@ -69,12 +58,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 4.5484638154618189;
+	setAttr ".coi" 9.5637607160568212;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.069423993362579761 0.90007844188805686 -0.22356258249364469 ;
+	setAttr ".tp" -type "double3" 1.7417192459106445 91.188477903604507 468.16246032714844 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C3FF5175-43F9-3FEA-5FF4-5EA30A907A6C";
@@ -152,160 +141,29 @@ createNode camera -n "cameraShape1" -p "camera1";
 	setAttr ".tp" -type "double3" 0 -1.9721522630525295e-30 504.42178051512019 ;
 	setAttr ".dgo" 0.5;
 	setAttr ".dr" yes;
-createNode transform -n "TempEnvironment";
-	rename -uid "26554966-4E70-E6EB-F84C-EDB8A62D9689";
-	setAttr ".v" no;
-createNode transform -n "pPlane1" -p "TempEnvironment";
-	rename -uid "10DB1FED-4748-F457-2207-178FE0F334FB";
-	setAttr ".t" -type "double3" 10.689117697221246 0 16.368848153357636 ;
-	setAttr ".s" -type "double3" 52.251629012917455 18.831662281759474 52.251629012917455 ;
-createNode mesh -n "pPlaneShape1" -p "pPlane1";
-	rename -uid "1809ED6E-42FE-19E3-ADA4-E2867F143A03";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "pCylinder1" -p "TempEnvironment";
-	rename -uid "C4CA1B2B-4A9C-CAF9-4105-68917DADA687";
-	setAttr ".t" -type "double3" 17.021591708899582 3.6517360054862458 2.032722969545107 ;
-	setAttr ".r" -type "double3" 0 0 90.000000000000028 ;
-	setAttr ".s" -type "double3" 6.4033656844347107 3.7512849389166187 6.4033656844347107 ;
-createNode mesh -n "pCylinderShape1" -p "pCylinder1";
-	rename -uid "8A8FD760-47C6-2BBF-2A19-3A92773B9685";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.49999988079071045 0.21344348043203354 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 8 ".pt[44:51]" -type "float3"  0.67879206 0 0 0.67879206 
-		0 0 0.67879206 0 0 0.67879206 0 0 0.67879206 0 0 0.67879206 0 0 0.67879206 0 0 0.67879206 
-		0 0;
-createNode transform -n "pPlane2" -p "TempEnvironment";
-	rename -uid "9DAB1AEA-4FB2-1343-07CA-BE82E52F3316";
-	setAttr ".t" -type "double3" 18.533677938790273 3.6517360054862458 2.4929829753742547 ;
-	setAttr ".r" -type "double3" 0 0 90.000000000000028 ;
-	setAttr ".s" -type "double3" 10.485098599326431 1 8.1826034091549467 ;
-createNode mesh -n "pPlaneShape2" -p "pPlane2";
-	rename -uid "63449AEA-464D-88A6-FF0D-8A9B15B4F6DB";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 1 0.5 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "pPlane3" -p "TempEnvironment";
-	rename -uid "F629CEF3-4840-D30A-B918-0D9E5569C270";
-	setAttr ".t" -type "double3" 19.004680970558837 -6.3108872417680948e-31 0 ;
-	setAttr ".r" -type "double3" 0 0 104.56389601169091 ;
-	setAttr ".s" -type "double3" 34.370986923498414 1 63.855939202868363 ;
-createNode mesh -n "pPlaneShape3" -p "pPlane3";
-	rename -uid "AB1EEE1C-4AA7-8336-E9FB-3AB1CF97461B";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-createNode transform -n "pointLight1";
-	rename -uid "2E4A2FB1-4F91-4E0A-DE27-34869694420B";
-	setAttr ".t" -type "double3" 8.7721081824124347 3.9734420274482081 -4.0856963923816414 ;
-createNode pointLight -n "pointLightShape1" -p "pointLight1";
-	rename -uid "60853428-45A0-E6EB-19DB-03871EEF5CE4";
-	setAttr -k off ".v";
-	setAttr ".us" no;
-	setAttr ".ai_exposure" 20;
-	setAttr ".ai_samples" 3;
-	setAttr ".ai_use_color_temperature" yes;
-	setAttr ".ai_color_temperature" 2478.260986328125;
-	setAttr ".ai_radius" 10;
-createNode transform -n "pointLight3";
-	rename -uid "AF3319B3-425C-7EBB-234A-B8B0DFD33AD1";
-	setAttr ".t" -type "double3" 8.7721081824124347 3.9734420274482081 11.802649951858269 ;
-createNode pointLight -n "pointLightShape3" -p "pointLight3";
-	rename -uid "9E12E6CB-4D05-C9E1-7E9D-E8BC7FFD2053";
-	setAttr -k off ".v";
-	setAttr ".us" no;
-	setAttr ".ai_exposure" 20;
-	setAttr ".ai_samples" 3;
-	setAttr ".ai_use_color_temperature" yes;
-	setAttr ".ai_color_temperature" 2478.260986328125;
-	setAttr ".ai_radius" 10;
-createNode transform -n "aiAreaLight1";
-	rename -uid "4D72F078-41D0-0024-D0A0-658AAFD61E4A";
-	setAttr ".t" -type "double3" -6.4186429537122009 11.787845234973977 5.0052220511814305 ;
-	setAttr ".r" -type "double3" -83.296533243264349 275.19999999999976 0 ;
-	setAttr ".s" -type "double3" 675.42265796556728 675.42265796556728 2.5578334416838637 ;
-createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
-	rename -uid "7BEC4EC7-4EA1-A9CA-48FD-2E9198DC9C9B";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".ai_exposure" 23.5;
-	setAttr ".ai_use_color_temperature" yes;
-	setAttr ".ai_color_temperature" 9417.177734375;
-	setAttr ".ai_translator" -type "string" "quad";
-	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure","normalize","aiNormalize"
-		} ;
-createNode transform -n "Skelly_Light_01";
-	rename -uid "AE151CBF-4475-8C9B-79F8-F99453FF2DE8";
-	setAttr ".t" -type "double3" 0 1.641748406314107 5.4282660952498416 ;
-	setAttr ".r" -type "double3" -206.85546852325038 29.354086493194529 184.35062389780506 ;
-	setAttr ".s" -type "double3" 16.708199584914176 16.708199584914176 16.708199584914176 ;
-createNode directionalLight -n "Skelly_Light_Shape1" -p "Skelly_Light_01";
-	rename -uid "43333C2A-4B8B-3E6C-7737-549737B04ECF";
-	setAttr -k off ".v";
-	setAttr ".ai_exposure" 4;
-	setAttr ".ai_use_color_temperature" yes;
-	setAttr ".ai_color_temperature" 4500;
-createNode transform -n "aiAreaLight2";
-	rename -uid "C964C3E1-44D1-7162-4990-5F9FFFABEFEA";
-	setAttr ".t" -type "double3" 2.4523069048091557 12.290587574559918 5.0052220511814305 ;
-	setAttr ".r" -type "double3" -107.02586317940039 275.19999999999976 1.0527852151587161e-13 ;
-	setAttr ".s" -type "double3" 629.51380079823502 629.51380079823502 2.3839760669760115 ;
-createNode aiAreaLight -n "aiAreaLightShape2" -p "aiAreaLight2";
-	rename -uid "D55F733F-4BD5-8C58-BF5E-ACB452C21F99";
-	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -k off ".v";
-	setAttr ".csh" no;
-	setAttr ".rcsh" no;
-	setAttr ".ai_exposure" 18;
-	setAttr ".ai_use_color_temperature" yes;
-	setAttr ".ai_color_temperature" 4435.5830078125;
-	setAttr ".ai_translator" -type "string" "quad";
-	setAttr ".aal" -type "attributeAlias" {"exposure","aiExposure","normalize","aiNormalize"
-		} ;
-createNode transform -n "Bed";
-	rename -uid "936E3CEC-4BAA-106F-B473-748CB2A6CEC5";
-	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.5498711617794347 -1.1368683772161603e-15 8.8726051172762492 ;
-	setAttr ".r" -type "double3" 0 -203.30069508677039 0 ;
-	setAttr ".s" -type "double3" 1.915990256713757 1.915990256713757 1.915990256713757 ;
+createNode transform -n "Lighting_Set";
+	rename -uid "2C5B32A1-423E-CF3C-3EEF-9B9218D68F5F";
+	setAttr ".t" -type "double3" -11.775355592568895 -0.015540686283050036 14.370720096872805 ;
+	setAttr ".r" -type "double3" 0 -179.99999999999994 0 ;
+createNode transform -n "null1";
+	rename -uid "95FBDE5D-4777-256F-48B0-428F72343EE3";
+	setAttr ".t" -type "double3" -11.775355592568895 3.8783423796628838 14.370720096872805 ;
+	setAttr ".r" -type "double3" 0 -179.99999999999994 0 ;
+createNode transform -n "Lighting_Stuff";
+	rename -uid "0AA45B06-4F34-FDB0-3311-E1B2AF5FDA6A";
+	setAttr ".t" -type "double3" -11.775355592568895 3.8783423796628838 14.370720096872805 ;
+	setAttr ".r" -type "double3" 0 -179.99999999999994 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "DAC9EE56-421B-D396-9D17-79A765EBB5E4";
-	setAttr -s 379 ".lnk";
-	setAttr -s 726 ".ign";
-	setAttr -s 378 ".slnk";
+	rename -uid "355BAD07-4BEF-F962-D657-0382A3E9451D";
+	setAttr -s 85 ".lnk";
+	setAttr -s 85 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D47F9F4D-4D23-4789-9F13-308BED92962B";
-	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
+	rename -uid "D61174DA-4F07-206F-EBEA-A4B0D672A219";
+	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "794C183D-4358-8EA1-DA77-BA91AF25E1AA";
+	rename -uid "5424FC18-4E8D-47D9-6CAE-86AB4518BB38";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C761E461-42A6-6072-8FE1-17A9190DF860";
+	rename -uid "650A84CC-4FF5-6A39-1843-35B3B8D0E1A5";
 	setAttr ".cdl" 1;
 	setAttr -s 5 ".dli[1:4]"  2 3 4 1;
 	setAttr -s 2 ".dli";
@@ -313,7 +171,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "2780EDA6-4886-B13B-2F6D-FF960FF0EBAB";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9360B5DD-46EA-E72B-56F8-7CA9D62BD116";
+	rename -uid "CAEC5336-4312-FD51-8E89-028EF871F194";
 	setAttr -s 2 ".rlmi[1]"  1;
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "88A19A9D-4D39-F6D0-E308-3BB69EA25F18";
@@ -328,7 +186,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	setAttr ".GI_diffuse_depth" 4;
 	setAttr ".GI_specular_depth" 4;
 	setAttr ".version" -type "string" "5.3.4.1";
-	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=cameraShape1;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1   1;Background.Offset=0   0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1   1;Foreground.Offset=0   0;Foreground.Apply Color Management=1;";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=cameraShape1;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1    1;Background.Offset=0    0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1    1;Foreground.Offset=0    0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "53123174-4529-0368-EC6A-49A34D8F738B";
 	setAttr ".ai_translator" -type "string" "gaussian";
@@ -337,53 +195,54 @@ createNode aiAOVDriver -s -n "defaultArnoldDriver";
 	setAttr ".ai_translator" -type "string" "exr";
 createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	rename -uid "A351ECD0-43A8-D631-E9BB-25938D7BFE9B";
-	setAttr ".output_mode" 0;
 	setAttr ".ai_translator" -type "string" "maya";
+	setAttr ".output_mode" 0;
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "EB051D3D-4E77-76C4-46C8-9DAC95058A5D";
 	setAttr ".b" -type "string" (
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
-		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2351\n            -height 1480\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
-		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
-		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n"
-		+ "            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
-		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
-		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1171\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
+		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -editorChanged \"updateModelPanelBar\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n"
+		+ "            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n"
+		+ "            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1038\n            -height 706\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n"
+		+ "            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -editorChanged \"updateModelPanelBar\" \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
+		+ "            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n"
+		+ "            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
+		+ "            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -editorChanged \"updateModelPanelBar\" \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
 		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
-		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
-		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n"
-		+ "            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n"
-		+ "            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n"
-		+ "            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
-		+ "                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n"
-		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n"
-		+ "                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 0.5\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n"
-		+ "            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n"
-		+ "                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
-		+ "                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
-		+ "                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n"
-		+ "                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n"
-		+ "                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n"
-		+ "                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
-		+ "                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n"
-		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
-		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
-		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
+		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n"
+		+ "            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1146\n            -height 706\n            -sceneRenderFilter 0\n"
+		+ "            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n"
+		+ "            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n"
+		+ "            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n"
+		+ "            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n"
+		+ "            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
+		+ "                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
+		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 0.5\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -tangentScale 1\n                -tangentLineThickness 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -limitToSelectedCurves 0\n"
+		+ "                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n"
+		+ "                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
+		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -hierarchyBelow 0\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n"
+		+ "                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n"
+		+ "\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n"
+		+ "                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n"
+		+ "                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"motionMakerEditorPanel\" (localizedPanelLabel(\"MotionMaker Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"MotionMaker Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -editorChanged \"updateModelPanelBar\" \n                -camera \"|camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n"
+		+ "                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererOverrideName \"stereoOverrideVP2\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n"
+		+ "                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n"
+		+ "                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
 		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2351\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2351\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -editorChanged \\\"updateModelPanelBar\\\" \\n    -camera \\\"|persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1038\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -docTag \\\"RADRENDER\\\" \\n    -editorChanged \\\"updateModelPanelBar\\\" \\n    -camera \\\"|persp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1038\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.0005 -size 0.0012 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -392,7 +251,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".st" 6;
 createNode reference -n "SkeletonRN";
 	rename -uid "B6D306B7-459B-D4F4-C6D5-43918FB4DF1D";
-	setAttr -s 2260 ".phl";
+	setAttr -s 1940 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -2333,326 +2192,6 @@ createNode reference -n "SkeletonRN";
 	setAttr ".phl[1938]" 0;
 	setAttr ".phl[1939]" 0;
 	setAttr ".phl[1940]" 0;
-	setAttr ".phl[1941]" 0;
-	setAttr ".phl[1942]" 0;
-	setAttr ".phl[1943]" 0;
-	setAttr ".phl[1944]" 0;
-	setAttr ".phl[1945]" 0;
-	setAttr ".phl[1946]" 0;
-	setAttr ".phl[1947]" 0;
-	setAttr ".phl[1948]" 0;
-	setAttr ".phl[1949]" 0;
-	setAttr ".phl[1950]" 0;
-	setAttr ".phl[1951]" 0;
-	setAttr ".phl[1952]" 0;
-	setAttr ".phl[1953]" 0;
-	setAttr ".phl[1954]" 0;
-	setAttr ".phl[1955]" 0;
-	setAttr ".phl[1956]" 0;
-	setAttr ".phl[1957]" 0;
-	setAttr ".phl[1958]" 0;
-	setAttr ".phl[1959]" 0;
-	setAttr ".phl[1960]" 0;
-	setAttr ".phl[1961]" 0;
-	setAttr ".phl[1962]" 0;
-	setAttr ".phl[1963]" 0;
-	setAttr ".phl[1964]" 0;
-	setAttr ".phl[1965]" 0;
-	setAttr ".phl[1966]" 0;
-	setAttr ".phl[1967]" 0;
-	setAttr ".phl[1968]" 0;
-	setAttr ".phl[1969]" 0;
-	setAttr ".phl[1970]" 0;
-	setAttr ".phl[1971]" 0;
-	setAttr ".phl[1972]" 0;
-	setAttr ".phl[1973]" 0;
-	setAttr ".phl[1974]" 0;
-	setAttr ".phl[1975]" 0;
-	setAttr ".phl[1976]" 0;
-	setAttr ".phl[1977]" 0;
-	setAttr ".phl[1978]" 0;
-	setAttr ".phl[1979]" 0;
-	setAttr ".phl[1980]" 0;
-	setAttr ".phl[1981]" 0;
-	setAttr ".phl[1982]" 0;
-	setAttr ".phl[1983]" 0;
-	setAttr ".phl[1984]" 0;
-	setAttr ".phl[1985]" 0;
-	setAttr ".phl[1986]" 0;
-	setAttr ".phl[1987]" 0;
-	setAttr ".phl[1988]" 0;
-	setAttr ".phl[1989]" 0;
-	setAttr ".phl[1990]" 0;
-	setAttr ".phl[1991]" 0;
-	setAttr ".phl[1992]" 0;
-	setAttr ".phl[1993]" 0;
-	setAttr ".phl[1994]" 0;
-	setAttr ".phl[1995]" 0;
-	setAttr ".phl[1996]" 0;
-	setAttr ".phl[1997]" 0;
-	setAttr ".phl[1998]" 0;
-	setAttr ".phl[1999]" 0;
-	setAttr ".phl[2000]" 0;
-	setAttr ".phl[2001]" 0;
-	setAttr ".phl[2002]" 0;
-	setAttr ".phl[2003]" 0;
-	setAttr ".phl[2004]" 0;
-	setAttr ".phl[2005]" 0;
-	setAttr ".phl[2006]" 0;
-	setAttr ".phl[2007]" 0;
-	setAttr ".phl[2008]" 0;
-	setAttr ".phl[2009]" 0;
-	setAttr ".phl[2010]" 0;
-	setAttr ".phl[2011]" 0;
-	setAttr ".phl[2012]" 0;
-	setAttr ".phl[2013]" 0;
-	setAttr ".phl[2014]" 0;
-	setAttr ".phl[2015]" 0;
-	setAttr ".phl[2016]" 0;
-	setAttr ".phl[2017]" 0;
-	setAttr ".phl[2018]" 0;
-	setAttr ".phl[2019]" 0;
-	setAttr ".phl[2020]" 0;
-	setAttr ".phl[2021]" 0;
-	setAttr ".phl[2022]" 0;
-	setAttr ".phl[2023]" 0;
-	setAttr ".phl[2024]" 0;
-	setAttr ".phl[2025]" 0;
-	setAttr ".phl[2026]" 0;
-	setAttr ".phl[2027]" 0;
-	setAttr ".phl[2028]" 0;
-	setAttr ".phl[2029]" 0;
-	setAttr ".phl[2030]" 0;
-	setAttr ".phl[2031]" 0;
-	setAttr ".phl[2032]" 0;
-	setAttr ".phl[2033]" 0;
-	setAttr ".phl[2034]" 0;
-	setAttr ".phl[2035]" 0;
-	setAttr ".phl[2036]" 0;
-	setAttr ".phl[2037]" 0;
-	setAttr ".phl[2038]" 0;
-	setAttr ".phl[2039]" 0;
-	setAttr ".phl[2040]" 0;
-	setAttr ".phl[2041]" 0;
-	setAttr ".phl[2042]" 0;
-	setAttr ".phl[2043]" 0;
-	setAttr ".phl[2044]" 0;
-	setAttr ".phl[2045]" 0;
-	setAttr ".phl[2046]" 0;
-	setAttr ".phl[2047]" 0;
-	setAttr ".phl[2048]" 0;
-	setAttr ".phl[2049]" 0;
-	setAttr ".phl[2050]" 0;
-	setAttr ".phl[2051]" 0;
-	setAttr ".phl[2052]" 0;
-	setAttr ".phl[2053]" 0;
-	setAttr ".phl[2054]" 0;
-	setAttr ".phl[2055]" 0;
-	setAttr ".phl[2056]" 0;
-	setAttr ".phl[2057]" 0;
-	setAttr ".phl[2058]" 0;
-	setAttr ".phl[2059]" 0;
-	setAttr ".phl[2060]" 0;
-	setAttr ".phl[2061]" 0;
-	setAttr ".phl[2062]" 0;
-	setAttr ".phl[2063]" 0;
-	setAttr ".phl[2064]" 0;
-	setAttr ".phl[2065]" 0;
-	setAttr ".phl[2066]" 0;
-	setAttr ".phl[2067]" 0;
-	setAttr ".phl[2068]" 0;
-	setAttr ".phl[2069]" 0;
-	setAttr ".phl[2070]" 0;
-	setAttr ".phl[2071]" 0;
-	setAttr ".phl[2072]" 0;
-	setAttr ".phl[2073]" 0;
-	setAttr ".phl[2074]" 0;
-	setAttr ".phl[2075]" 0;
-	setAttr ".phl[2076]" 0;
-	setAttr ".phl[2077]" 0;
-	setAttr ".phl[2078]" 0;
-	setAttr ".phl[2079]" 0;
-	setAttr ".phl[2080]" 0;
-	setAttr ".phl[2081]" 0;
-	setAttr ".phl[2082]" 0;
-	setAttr ".phl[2083]" 0;
-	setAttr ".phl[2084]" 0;
-	setAttr ".phl[2085]" 0;
-	setAttr ".phl[2086]" 0;
-	setAttr ".phl[2087]" 0;
-	setAttr ".phl[2088]" 0;
-	setAttr ".phl[2089]" 0;
-	setAttr ".phl[2090]" 0;
-	setAttr ".phl[2091]" 0;
-	setAttr ".phl[2092]" 0;
-	setAttr ".phl[2093]" 0;
-	setAttr ".phl[2094]" 0;
-	setAttr ".phl[2095]" 0;
-	setAttr ".phl[2096]" 0;
-	setAttr ".phl[2097]" 0;
-	setAttr ".phl[2098]" 0;
-	setAttr ".phl[2099]" 0;
-	setAttr ".phl[2100]" 0;
-	setAttr ".phl[2101]" 0;
-	setAttr ".phl[2102]" 0;
-	setAttr ".phl[2103]" 0;
-	setAttr ".phl[2104]" 0;
-	setAttr ".phl[2105]" 0;
-	setAttr ".phl[2106]" 0;
-	setAttr ".phl[2107]" 0;
-	setAttr ".phl[2108]" 0;
-	setAttr ".phl[2109]" 0;
-	setAttr ".phl[2110]" 0;
-	setAttr ".phl[2111]" 0;
-	setAttr ".phl[2112]" 0;
-	setAttr ".phl[2113]" 0;
-	setAttr ".phl[2114]" 0;
-	setAttr ".phl[2115]" 0;
-	setAttr ".phl[2116]" 0;
-	setAttr ".phl[2117]" 0;
-	setAttr ".phl[2118]" 0;
-	setAttr ".phl[2119]" 0;
-	setAttr ".phl[2120]" 0;
-	setAttr ".phl[2121]" 0;
-	setAttr ".phl[2122]" 0;
-	setAttr ".phl[2123]" 0;
-	setAttr ".phl[2124]" 0;
-	setAttr ".phl[2125]" 0;
-	setAttr ".phl[2126]" 0;
-	setAttr ".phl[2127]" 0;
-	setAttr ".phl[2128]" 0;
-	setAttr ".phl[2129]" 0;
-	setAttr ".phl[2130]" 0;
-	setAttr ".phl[2131]" 0;
-	setAttr ".phl[2132]" 0;
-	setAttr ".phl[2133]" 0;
-	setAttr ".phl[2134]" 0;
-	setAttr ".phl[2135]" 0;
-	setAttr ".phl[2136]" 0;
-	setAttr ".phl[2137]" 0;
-	setAttr ".phl[2138]" 0;
-	setAttr ".phl[2139]" 0;
-	setAttr ".phl[2140]" 0;
-	setAttr ".phl[2141]" 0;
-	setAttr ".phl[2142]" 0;
-	setAttr ".phl[2143]" 0;
-	setAttr ".phl[2144]" 0;
-	setAttr ".phl[2145]" 0;
-	setAttr ".phl[2146]" 0;
-	setAttr ".phl[2147]" 0;
-	setAttr ".phl[2148]" 0;
-	setAttr ".phl[2149]" 0;
-	setAttr ".phl[2150]" 0;
-	setAttr ".phl[2151]" 0;
-	setAttr ".phl[2152]" 0;
-	setAttr ".phl[2153]" 0;
-	setAttr ".phl[2154]" 0;
-	setAttr ".phl[2155]" 0;
-	setAttr ".phl[2156]" 0;
-	setAttr ".phl[2157]" 0;
-	setAttr ".phl[2158]" 0;
-	setAttr ".phl[2159]" 0;
-	setAttr ".phl[2160]" 0;
-	setAttr ".phl[2161]" 0;
-	setAttr ".phl[2162]" 0;
-	setAttr ".phl[2163]" 0;
-	setAttr ".phl[2164]" 0;
-	setAttr ".phl[2165]" 0;
-	setAttr ".phl[2166]" 0;
-	setAttr ".phl[2167]" 0;
-	setAttr ".phl[2168]" 0;
-	setAttr ".phl[2169]" 0;
-	setAttr ".phl[2170]" 0;
-	setAttr ".phl[2171]" 0;
-	setAttr ".phl[2172]" 0;
-	setAttr ".phl[2173]" 0;
-	setAttr ".phl[2174]" 0;
-	setAttr ".phl[2175]" 0;
-	setAttr ".phl[2176]" 0;
-	setAttr ".phl[2177]" 0;
-	setAttr ".phl[2178]" 0;
-	setAttr ".phl[2179]" 0;
-	setAttr ".phl[2180]" 0;
-	setAttr ".phl[2181]" 0;
-	setAttr ".phl[2182]" 0;
-	setAttr ".phl[2183]" 0;
-	setAttr ".phl[2184]" 0;
-	setAttr ".phl[2185]" 0;
-	setAttr ".phl[2186]" 0;
-	setAttr ".phl[2187]" 0;
-	setAttr ".phl[2188]" 0;
-	setAttr ".phl[2189]" 0;
-	setAttr ".phl[2190]" 0;
-	setAttr ".phl[2191]" 0;
-	setAttr ".phl[2192]" 0;
-	setAttr ".phl[2193]" 0;
-	setAttr ".phl[2194]" 0;
-	setAttr ".phl[2195]" 0;
-	setAttr ".phl[2196]" 0;
-	setAttr ".phl[2197]" 0;
-	setAttr ".phl[2198]" 0;
-	setAttr ".phl[2199]" 0;
-	setAttr ".phl[2200]" 0;
-	setAttr ".phl[2201]" 0;
-	setAttr ".phl[2202]" 0;
-	setAttr ".phl[2203]" 0;
-	setAttr ".phl[2204]" 0;
-	setAttr ".phl[2205]" 0;
-	setAttr ".phl[2206]" 0;
-	setAttr ".phl[2207]" 0;
-	setAttr ".phl[2208]" 0;
-	setAttr ".phl[2209]" 0;
-	setAttr ".phl[2210]" 0;
-	setAttr ".phl[2211]" 0;
-	setAttr ".phl[2212]" 0;
-	setAttr ".phl[2213]" 0;
-	setAttr ".phl[2214]" 0;
-	setAttr ".phl[2215]" 0;
-	setAttr ".phl[2216]" 0;
-	setAttr ".phl[2217]" 0;
-	setAttr ".phl[2218]" 0;
-	setAttr ".phl[2219]" 0;
-	setAttr ".phl[2220]" 0;
-	setAttr ".phl[2221]" 0;
-	setAttr ".phl[2222]" 0;
-	setAttr ".phl[2223]" 0;
-	setAttr ".phl[2224]" 0;
-	setAttr ".phl[2225]" 0;
-	setAttr ".phl[2226]" 0;
-	setAttr ".phl[2227]" 0;
-	setAttr ".phl[2228]" 0;
-	setAttr ".phl[2229]" 0;
-	setAttr ".phl[2230]" 0;
-	setAttr ".phl[2231]" 0;
-	setAttr ".phl[2232]" 0;
-	setAttr ".phl[2233]" 0;
-	setAttr ".phl[2234]" 0;
-	setAttr ".phl[2235]" 0;
-	setAttr ".phl[2236]" 0;
-	setAttr ".phl[2237]" 0;
-	setAttr ".phl[2238]" 0;
-	setAttr ".phl[2239]" 0;
-	setAttr ".phl[2240]" 0;
-	setAttr ".phl[2241]" 0;
-	setAttr ".phl[2242]" 0;
-	setAttr ".phl[2243]" 0;
-	setAttr ".phl[2244]" 0;
-	setAttr ".phl[2245]" 0;
-	setAttr ".phl[2246]" 0;
-	setAttr ".phl[2247]" 0;
-	setAttr ".phl[2248]" 0;
-	setAttr ".phl[2249]" 0;
-	setAttr ".phl[2250]" 0;
-	setAttr ".phl[2251]" 0;
-	setAttr ".phl[2252]" 0;
-	setAttr ".phl[2253]" 0;
-	setAttr ".phl[2254]" 0;
-	setAttr ".phl[2255]" 0;
-	setAttr ".phl[2256]" 0;
-	setAttr ".phl[2257]" 0;
-	setAttr ".phl[2258]" 0;
-	setAttr ".phl[2259]" 0;
-	setAttr ".phl[2260]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SkeletonRN"
 		"SkeletonRN" 6
@@ -2668,16 +2207,16 @@ createNode reference -n "SkeletonRN";
 		
 		2 "Skeleton:NightCapBallSG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
 		
-		"SkeletonRN" 2382
-		1 Skeleton:lambert1SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
+		"SkeletonRN" 2069
+		1 "Skeleton:lambert1SG" "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
 		
-		1 Skeleton:set1 "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
+		1 "Skeleton:set1" "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
 		
-		1 Skeleton:NIghtCapSG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
+		1 "Skeleton:NIghtCapSG" "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
 		
-		1 Skeleton:NIghtCapSG1 "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
+		1 "Skeleton:NIghtCapSG1" "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
 		
-		1 Skeleton:NightCapBallSG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
+		1 "Skeleton:NightCapBallSG" "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
 		
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Head_Controls|Skeleton:Head_COG_Ctrl_Grp|Skeleton:Head_COG_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
@@ -2751,6 +2290,20 @@ createNode reference -n "SkeletonRN";
 		
 		2 "Skeleton:lambert1SG" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
 		
+		2 "Skeleton:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
+		
+		2 "Skeleton:file1" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
+		
+		2 "Skeleton:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Normal.1001.png\""
+		
+		2 "Skeleton:file2" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
+		
+		2 "Skeleton:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
+		
+		2 "Skeleton:file3" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
+		
+		2 "Skeleton:file3" "viewNameUsed" " 0"
+		2 "Skeleton:file3" "viewNameStr" " -type \"string\" \"<N/A>\""
 		2 "Skeleton:set1" "aiCustomAOVs" " -s 18"
 		2 "Skeleton:set1" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
 		2 "Skeleton:set1" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
@@ -6775,649 +6328,7 @@ createNode reference -n "SkeletonRN";
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Redundancy_Controls|Skeleton:Chest_Redundancy_Ctrl_Grp|Skeleton:Chest_Redundancy_Ctrl.Operating_Space" 
 		"SkeletonRN.placeHolderList[1939]" ""
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Redundancy_Controls|Skeleton:Chest_Redundancy_Ctrl_Grp|Skeleton:Chest_Redundancy_Ctrl.visibility" 
-		"SkeletonRN.placeHolderList[1940]" ""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1941]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1942]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1943]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1944]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1945]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1946]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1947]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1948]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1949]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1950]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1951]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1952]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1953]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1954]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1955]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1956]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1957]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1958]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1959]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1960]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1961]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1962]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1963]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1964]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1965]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1966]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1967]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1968]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1969]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1970]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1971]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1972]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1973]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1974]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1975]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1976]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1977]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1978]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1979]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1980]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1981]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1982]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1983]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1984]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1985]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1986]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1987]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1988]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1989]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1990]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1991]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1992]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1993]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1994]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1995]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1996]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1997]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1998]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[1999]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2000]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2001]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2002]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2003]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2004]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2005]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2006]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2007]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2008]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2009]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2010]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2011]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2012]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2013]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2014]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2015]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2016]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2017]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2018]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2019]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2020]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2021]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2022]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2023]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2024]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2025]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2026]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2027]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2028]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2029]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2030]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2031]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2032]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2033]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2034]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2035]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2036]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2037]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2038]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2039]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2040]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2041]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2042]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2043]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2044]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2045]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2046]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2047]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2048]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2049]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2050]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2051]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2052]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2053]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2054]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2055]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2056]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2057]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2058]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2059]" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2060]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2061]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2062]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2063]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2064]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2065]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2066]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2067]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2068]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2069]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2070]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2071]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2072]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2073]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2074]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2075]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2076]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2077]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2078]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2079]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2080]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2081]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2082]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2083]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2084]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2085]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2086]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2087]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2088]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2089]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2090]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2091]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2092]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2093]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2094]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2095]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2096]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2097]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2098]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2099]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2100]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2101]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2102]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2103]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2104]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2105]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2106]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2107]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2108]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2109]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2110]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2111]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2112]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2113]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2114]" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2115]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2116]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2117]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2118]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2119]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2120]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2121]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2122]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2123]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2124]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2125]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2126]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2127]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2128]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2129]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2130]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2131]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2132]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2133]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2134]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2135]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2136]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2137]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2138]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2139]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2140]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2141]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2142]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2143]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2144]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2145]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2146]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2147]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2148]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2149]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2150]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2151]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2152]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2153]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2154]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2155]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2156]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2157]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2158]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2159]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2160]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2161]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2162]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2163]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2164]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2165]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2166]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2167]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2168]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2169]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2170]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2171]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2172]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2173]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2174]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2175]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2176]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2177]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2178]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2179]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2180]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2181]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2182]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2183]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2184]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2185]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2186]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2187]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2188]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2189]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2190]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2191]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2192]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2193]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2194]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2195]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2196]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2197]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2198]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2199]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2200]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2201]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2202]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2203]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2204]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2205]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2206]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2207]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2208]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2209]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2210]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2211]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2212]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2213]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2214]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2215]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2216]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2217]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2218]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2219]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2220]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2221]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2222]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2223]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2224]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2225]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2226]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2227]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2228]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2229]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2230]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2231]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2232]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2233]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2234]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2235]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2236]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2237]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2238]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2239]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2240]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2241]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2242]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2243]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2244]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2245]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2246]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2247]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2248]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2249]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2250]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2251]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2252]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2253]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2254]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2255]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2256]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2257]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2258]" 
-		""
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2259]" 
-		":initialShadingGroup.dsm"
-		5 2 "SkeletonRN" "Skeleton:lambert1SG.dagSetMembers" "SkeletonRN.placeHolderList[2260]" 
-		":initialShadingGroup.dsm"
-		7 "link" ":lightLinker1" 2 "|Skeleton:Skeleton_Asset|Skeleton:Head_Squash_Stuff_All|Skeleton:Head_Squash_Stuff_Moving|Skeleton:Head_Squash_Skin_Geo|Skeleton:Head_Squash_Skin_GeoShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0;
+		"SkeletonRN.placeHolderList[1940]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "Hip_Ctrl_translateX";
@@ -27398,5108 +26309,11 @@ createNode animCurveTL -n "L_Brow_Ctrl_translateY";
 		0 0.99505159981319258 0 0 -0.98862573661094322 -0.16943044828578702 0 0.99505159981319258 
 		0 0 -0.98862573661094322 -0.16943044828578702 0 0.99505159981319258 0 0 -0.98862573661094322 
 		-0.16943044828578702 0 0;
-createNode polyPlane -n "polyPlane1";
-	rename -uid "B628695F-41F2-7BEB-19AD-ADB8FE8BC865";
-	setAttr ".ax" -type "double3" 0 1 0 ;
-	setAttr ".w" 1;
-	setAttr ".h" 1;
-	setAttr ".sw" 1;
-	setAttr ".sh" 1;
-	setAttr ".cuv" 2;
-createNode polyCylinder -n "polyCylinder1";
-	rename -uid "925B8723-4900-C865-E196-D2B210AB26DD";
-	setAttr ".ax" -type "double3" 0 1 0 ;
-	setAttr ".r" 1;
-	setAttr ".h" 2;
-	setAttr ".sc" 4;
-	setAttr ".cuv" 3;
-createNode deleteComponent -n "deleteComponent1";
-	rename -uid "F4A1DDF0-4520-8C34-185B-B2B929FF7E5C";
-	setAttr ".dc" -type "componentList" 2 "f[100:139]" "f[160:179]";
-createNode deleteComponent -n "deleteComponent2";
-	rename -uid "56FD7AA4-4AE3-FED8-4812-C5B2E48EAAA0";
-	setAttr ".dc" -type "componentList" 2 "f[0:39]" "f[100:119]";
-createNode deleteComponent -n "deleteComponent3";
-	rename -uid "0A3DF9E4-45DE-7A60-3E3C-B68AD529C6DC";
-	setAttr ".dc" -type "componentList" 3 "f[4:12]" "f[24:32]" "f[44:52]";
-createNode deleteComponent -n "deleteComponent4";
-	rename -uid "453D94AD-43D8-A301-92A8-EB998908C035";
-	setAttr ".dc" -type "componentList" 3 "f[4]" "f[15]" "f[26]";
-createNode polyBridgeEdge -n "polyBridgeEdge1";
-	rename -uid "A26D6340-452B-5BCE-D011-D0916D2CA6DC";
-	setAttr ".ics" -type "componentList" 2 "e[0:9]" "e[30:39]";
-	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".dv" 0;
-	setAttr ".sv1" 4;
-	setAttr ".sv2" 38;
-	setAttr ".d" 1;
-	setAttr ".sd" 1;
-createNode polyCloseBorder -n "polyCloseBorder1";
-	rename -uid "D00E0CEB-40E2-0B12-1855-ADA332CDC85D";
-	setAttr ".ics" -type "componentList" 1 "e[66:67]";
-createNode polyExtrudeFace -n "polyExtrudeFace1";
-	rename -uid "625B08C9-4158-8A6B-08E0-53BBC6E7DBC5";
-	setAttr ".ics" -type "componentList" 1 "f[40:41]";
-	setAttr ".ix" -type "matrix" -1.7798027290663513e-15 4.0077594537081058 0 0 -1 -4.4408920985006262e-16 0 0
-		 0 0 4.0077594537081058 0 0 0 0 1;
-	setAttr ".ws" yes;
-	setAttr ".pvt" -type "float3" 0 -5.9720271e-08 -6.115356e-07 ;
-	setAttr ".rs" 45072;
-	setAttr ".c[0]"  0 1 1;
-	setAttr ".cbn" -type "double3" -1 -1.1944053973583183e-07 -4.0077612883147893 ;
-	setAttr ".cbx" -type "double3" 1 4.4408920985006262e-16 4.0077600652436676 ;
-	setAttr ".raf" no;
-createNode polySoftEdge -n "polySoftEdge1";
-	rename -uid "FCC67B03-4840-17C2-2E47-4185ECC59573";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 2 "e[51:61]" "e[73:83]";
-	setAttr ".ix" -type "matrix" -1.7798027290663513e-15 4.0077594537081058 0 0 -1 -4.4408920985006262e-16 0 0
-		 0 0 4.0077594537081058 0 0 0 0 1;
-	setAttr ".a" 180;
-createNode polyTweak -n "polyTweak1";
-	rename -uid "673CED7D-4AA5-9ECF-223A-389729DAB10A";
-	setAttr ".uopa" yes;
-	setAttr -s 8 ".tk[44:51]" -type "float3"  -164.75 0 0 -164.75 0 0 -164.75
-		 0 0 -164.75 0 0 -164.75 0 0 -164.75 0 0 -164.75 0 0 -164.75 0 0;
-createNode polyPlane -n "polyPlane2";
-	rename -uid "FF1104AC-496E-7CEF-83B9-1FA3C9187C84";
-	setAttr ".ax" -type "double3" 0 1 0 ;
-	setAttr ".w" 1;
-	setAttr ".h" 1;
-	setAttr ".cuv" 2;
-createNode polyTweak -n "polyTweak2";
-	rename -uid "FCF372B3-4F6A-8DCD-ABFF-AA9D34CA3807";
-	setAttr ".uopa" yes;
-	setAttr -s 2 ".tk";
-	setAttr ".tk[10]" -type "float3" -6.330442 0 0 ;
-	setAttr ".tk[120]" -type "float3" -6.330442 0 0 ;
-createNode deleteComponent -n "deleteComponent5";
-	rename -uid "7D100E2D-4D0D-8520-4ADC-5AB6B32C1647";
-	setAttr ".dc" -type "componentList" 5 "f[0:9]" "f[20:29]" "f[40:49]" "f[60:69]" "f[80:89]";
-createNode polyPlane -n "polyPlane3";
-	rename -uid "82E794D7-4366-BA55-C2A0-EBA49E2D6434";
-	setAttr ".ax" -type "double3" 0 1 0 ;
-	setAttr ".w" 1;
-	setAttr ".h" 1;
-	setAttr ".sw" 1;
-	setAttr ".sh" 1;
-	setAttr ".cuv" 2;
-createNode polySplit -n "polySplit1";
-	rename -uid "365FD82E-4669-F7DB-FDEE-39A7374C7343";
-	setAttr -s 7 ".v[0:6]" -type "float3"  -0.030821409 0 -0.05613089 
-		0.15210746 0 -0.048151329 0.24621148 0 -0.00628572 0.2751337 0 0.031480502 0.22862439 
-		0 0.095413253 0.1227216 0 0.12284422 -0.034086138 0 0.12713216;
-	setAttr -s 9 ".e[0:8]"  1 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".d[0:8]"  -2147483647 0 1 2 3 4 
-		5 6 -2147483648;
-	setAttr ".s" 2;
-	setAttr ".sma" 180;
-	setAttr ".m2015" yes;
-createNode polySplit -n "polySplit2";
-	rename -uid "B8D52EDD-4788-AF31-1FDA-F3A2A64EC139";
-	setAttr -s 2 ".e[0:1]"  1 1;
-	setAttr -s 2 ".d[0:1]"  -2147483644 -2147483638;
-	setAttr ".s" 2;
-	setAttr ".sma" 180;
-	setAttr ".m2015" yes;
-createNode deleteComponent -n "deleteComponent6";
-	rename -uid "211A8EBA-42F3-4C64-2B3E-BA95C4780314";
-	setAttr ".dc" -type "componentList" 1 "f[1]";
 createNode displayLayer -n "TempEnvLayer";
 	rename -uid "2F0E92E1-4705-BF5F-2CAF-3DBD20F5DC4F";
 	setAttr ".dt" 2;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
-createNode reference -n "DragonGateCaveSetRN";
-	rename -uid "E98B6F95-49FD-114A-970F-749A9118640F";
-	setAttr -s 369 ".phl";
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[310]" 0;
-	setAttr ".phl[311]" 0;
-	setAttr ".phl[312]" 0;
-	setAttr ".phl[313]" 0;
-	setAttr ".phl[314]" 0;
-	setAttr ".phl[315]" 0;
-	setAttr ".phl[316]" 0;
-	setAttr ".phl[317]" 0;
-	setAttr ".phl[318]" 0;
-	setAttr ".phl[319]" 0;
-	setAttr ".phl[320]" 0;
-	setAttr ".phl[321]" 0;
-	setAttr ".phl[322]" 0;
-	setAttr ".phl[323]" 0;
-	setAttr ".phl[324]" 0;
-	setAttr ".phl[325]" 0;
-	setAttr ".phl[326]" 0;
-	setAttr ".phl[327]" 0;
-	setAttr ".phl[328]" 0;
-	setAttr ".phl[329]" 0;
-	setAttr ".phl[330]" 0;
-	setAttr ".phl[331]" 0;
-	setAttr ".phl[332]" 0;
-	setAttr ".phl[333]" 0;
-	setAttr ".phl[334]" 0;
-	setAttr ".phl[335]" 0;
-	setAttr ".phl[336]" 0;
-	setAttr ".phl[337]" 0;
-	setAttr ".phl[338]" 0;
-	setAttr ".phl[339]" 0;
-	setAttr ".phl[340]" 0;
-	setAttr ".phl[341]" 0;
-	setAttr ".phl[342]" 0;
-	setAttr ".phl[343]" 0;
-	setAttr ".phl[344]" 0;
-	setAttr ".phl[345]" 0;
-	setAttr ".phl[346]" 0;
-	setAttr ".phl[347]" 0;
-	setAttr ".phl[348]" 0;
-	setAttr ".phl[349]" 0;
-	setAttr ".phl[350]" 0;
-	setAttr ".phl[351]" 0;
-	setAttr ".phl[352]" 0;
-	setAttr ".phl[353]" 0;
-	setAttr ".phl[354]" 0;
-	setAttr ".phl[355]" 0;
-	setAttr ".phl[356]" 0;
-	setAttr ".phl[357]" 0;
-	setAttr ".phl[358]" 0;
-	setAttr ".phl[359]" 0;
-	setAttr ".phl[360]" 0;
-	setAttr ".phl[361]" 0;
-	setAttr ".phl[362]" 0;
-	setAttr ".phl[363]" 0;
-	setAttr ".phl[364]" 0;
-	setAttr ".phl[365]" 0;
-	setAttr ".phl[366]" 0;
-	setAttr ".phl[367]" 0;
-	setAttr ".phl[368]" 0;
-	setAttr ".phl[369]" 0;
-	setAttr ".phl[370]" 0;
-	setAttr ".phl[371]" 0;
-	setAttr ".phl[372]" 0;
-	setAttr ".phl[373]" 0;
-	setAttr ".phl[374]" 0;
-	setAttr ".phl[375]" 0;
-	setAttr ".phl[376]" 0;
-	setAttr ".phl[377]" 0;
-	setAttr ".phl[378]" 0;
-	setAttr ".phl[379]" 0;
-	setAttr ".phl[380]" 0;
-	setAttr ".phl[381]" 0;
-	setAttr ".phl[382]" 0;
-	setAttr ".phl[383]" 0;
-	setAttr ".phl[384]" 0;
-	setAttr ".phl[385]" 0;
-	setAttr ".phl[386]" 0;
-	setAttr ".phl[387]" 0;
-	setAttr ".phl[388]" 0;
-	setAttr ".phl[389]" 0;
-	setAttr ".phl[390]" 0;
-	setAttr ".phl[391]" 0;
-	setAttr ".phl[392]" 0;
-	setAttr ".phl[393]" 0;
-	setAttr ".phl[394]" 0;
-	setAttr ".phl[395]" 0;
-	setAttr ".phl[396]" 0;
-	setAttr ".phl[397]" 0;
-	setAttr ".phl[398]" 0;
-	setAttr ".phl[399]" 0;
-	setAttr ".phl[400]" 0;
-	setAttr ".phl[401]" 0;
-	setAttr ".phl[402]" 0;
-	setAttr ".phl[403]" 0;
-	setAttr ".phl[404]" 0;
-	setAttr ".phl[405]" 0;
-	setAttr ".phl[406]" 0;
-	setAttr ".phl[407]" 0;
-	setAttr ".phl[408]" 0;
-	setAttr ".phl[409]" 0;
-	setAttr ".phl[410]" 0;
-	setAttr ".phl[411]" 0;
-	setAttr ".phl[412]" 0;
-	setAttr ".phl[413]" 0;
-	setAttr ".phl[414]" 0;
-	setAttr ".phl[415]" 0;
-	setAttr ".phl[416]" 0;
-	setAttr ".phl[417]" 0;
-	setAttr ".phl[418]" 0;
-	setAttr ".phl[419]" 0;
-	setAttr ".phl[420]" 0;
-	setAttr ".phl[421]" 0;
-	setAttr ".phl[422]" 0;
-	setAttr ".phl[423]" 0;
-	setAttr ".phl[424]" 0;
-	setAttr ".phl[425]" 0;
-	setAttr ".phl[426]" 0;
-	setAttr ".phl[427]" 0;
-	setAttr ".phl[428]" 0;
-	setAttr ".phl[429]" 0;
-	setAttr ".phl[430]" 0;
-	setAttr ".phl[431]" 0;
-	setAttr ".phl[432]" 0;
-	setAttr ".phl[433]" 0;
-	setAttr ".phl[434]" 0;
-	setAttr ".phl[435]" 0;
-	setAttr ".phl[436]" 0;
-	setAttr ".phl[437]" 0;
-	setAttr ".phl[438]" 0;
-	setAttr ".phl[439]" 0;
-	setAttr ".phl[440]" 0;
-	setAttr ".phl[441]" 0;
-	setAttr ".phl[442]" 0;
-	setAttr ".phl[443]" 0;
-	setAttr ".phl[444]" 0;
-	setAttr ".phl[445]" 0;
-	setAttr ".phl[446]" 0;
-	setAttr ".phl[447]" 0;
-	setAttr ".phl[448]" 0;
-	setAttr ".phl[449]" 0;
-	setAttr ".phl[450]" 0;
-	setAttr ".phl[451]" 0;
-	setAttr ".phl[452]" 0;
-	setAttr ".phl[453]" 0;
-	setAttr ".phl[454]" 0;
-	setAttr ".phl[455]" 0;
-	setAttr ".phl[456]" 0;
-	setAttr ".phl[457]" 0;
-	setAttr ".phl[458]" 0;
-	setAttr ".phl[459]" 0;
-	setAttr ".phl[460]" 0;
-	setAttr ".phl[461]" 0;
-	setAttr ".phl[462]" 0;
-	setAttr ".phl[463]" 0;
-	setAttr ".phl[464]" 0;
-	setAttr ".phl[465]" 0;
-	setAttr ".phl[466]" 0;
-	setAttr ".phl[467]" 0;
-	setAttr ".phl[468]" 0;
-	setAttr ".phl[469]" 0;
-	setAttr ".phl[470]" 0;
-	setAttr ".phl[471]" 0;
-	setAttr ".phl[472]" 0;
-	setAttr ".phl[473]" 0;
-	setAttr ".phl[474]" 0;
-	setAttr ".phl[475]" 0;
-	setAttr ".phl[476]" 0;
-	setAttr ".phl[477]" 0;
-	setAttr ".phl[478]" 0;
-	setAttr ".phl[479]" 0;
-	setAttr ".phl[480]" 0;
-	setAttr ".phl[481]" 0;
-	setAttr ".phl[482]" 0;
-	setAttr ".phl[483]" 0;
-	setAttr ".phl[484]" 0;
-	setAttr ".phl[485]" 0;
-	setAttr ".phl[486]" 0;
-	setAttr ".phl[487]" 0;
-	setAttr ".phl[488]" 0;
-	setAttr ".phl[489]" 0;
-	setAttr ".phl[490]" 0;
-	setAttr ".phl[491]" 0;
-	setAttr ".phl[492]" 0;
-	setAttr ".phl[493]" 0;
-	setAttr ".phl[494]" 0;
-	setAttr ".phl[495]" 0;
-	setAttr ".phl[496]" 0;
-	setAttr ".phl[497]" 0;
-	setAttr ".phl[498]" 0;
-	setAttr ".phl[499]" 0;
-	setAttr ".phl[500]" 0;
-	setAttr ".phl[501]" 0;
-	setAttr ".phl[502]" 0;
-	setAttr ".phl[503]" 0;
-	setAttr ".phl[504]" 0;
-	setAttr ".phl[505]" 0;
-	setAttr ".phl[506]" 0;
-	setAttr ".phl[507]" 0;
-	setAttr ".phl[508]" 0;
-	setAttr ".phl[509]" 0;
-	setAttr ".phl[510]" 0;
-	setAttr ".phl[511]" 0;
-	setAttr ".phl[512]" 0;
-	setAttr ".phl[513]" 0;
-	setAttr ".phl[514]" 0;
-	setAttr ".phl[515]" 0;
-	setAttr ".phl[516]" 0;
-	setAttr ".phl[517]" 0;
-	setAttr ".phl[518]" 0;
-	setAttr ".phl[519]" 0;
-	setAttr ".phl[520]" 0;
-	setAttr ".phl[521]" 0;
-	setAttr ".phl[522]" 0;
-	setAttr ".phl[523]" 0;
-	setAttr ".phl[524]" 0;
-	setAttr ".phl[525]" 0;
-	setAttr ".phl[526]" 0;
-	setAttr ".phl[527]" 0;
-	setAttr ".phl[528]" 0;
-	setAttr ".phl[529]" 0;
-	setAttr ".phl[530]" 0;
-	setAttr ".phl[531]" 0;
-	setAttr ".phl[532]" 0;
-	setAttr ".phl[533]" 0;
-	setAttr ".phl[534]" 0;
-	setAttr ".phl[535]" 0;
-	setAttr ".phl[536]" 0;
-	setAttr ".phl[537]" 0;
-	setAttr ".phl[538]" 0;
-	setAttr ".phl[539]" 0;
-	setAttr ".phl[540]" 0;
-	setAttr ".phl[541]" 0;
-	setAttr ".phl[542]" 0;
-	setAttr ".phl[543]" 0;
-	setAttr ".phl[544]" 0;
-	setAttr ".phl[545]" 0;
-	setAttr ".phl[546]" 0;
-	setAttr ".phl[547]" 0;
-	setAttr ".phl[548]" 0;
-	setAttr ".phl[549]" 0;
-	setAttr ".phl[550]" 0;
-	setAttr ".phl[551]" 0;
-	setAttr ".phl[552]" 0;
-	setAttr ".phl[553]" 0;
-	setAttr ".phl[554]" 0;
-	setAttr ".phl[555]" 0;
-	setAttr ".phl[556]" 0;
-	setAttr ".phl[557]" 0;
-	setAttr ".phl[558]" 0;
-	setAttr ".phl[559]" 0;
-	setAttr ".phl[560]" 0;
-	setAttr ".phl[561]" 0;
-	setAttr ".phl[562]" 0;
-	setAttr ".phl[563]" 0;
-	setAttr ".phl[564]" 0;
-	setAttr ".phl[565]" 0;
-	setAttr ".phl[566]" 0;
-	setAttr ".phl[567]" 0;
-	setAttr ".phl[568]" 0;
-	setAttr ".phl[569]" 0;
-	setAttr ".phl[570]" 0;
-	setAttr ".phl[571]" 0;
-	setAttr ".phl[572]" 0;
-	setAttr ".phl[573]" 0;
-	setAttr ".phl[574]" 0;
-	setAttr ".phl[575]" 0;
-	setAttr ".phl[576]" 0;
-	setAttr ".phl[577]" 0;
-	setAttr ".phl[578]" 0;
-	setAttr ".phl[579]" 0;
-	setAttr ".phl[580]" 0;
-	setAttr ".phl[581]" 0;
-	setAttr ".phl[582]" 0;
-	setAttr ".phl[583]" 0;
-	setAttr ".phl[584]" 0;
-	setAttr ".phl[585]" 0;
-	setAttr ".phl[586]" 0;
-	setAttr ".phl[587]" 0;
-	setAttr ".phl[588]" 0;
-	setAttr ".phl[589]" 0;
-	setAttr ".phl[590]" 0;
-	setAttr ".phl[591]" 0;
-	setAttr ".phl[592]" 0;
-	setAttr ".phl[593]" 0;
-	setAttr ".phl[594]" 0;
-	setAttr ".phl[595]" 0;
-	setAttr ".phl[596]" 0;
-	setAttr ".phl[597]" 0;
-	setAttr ".phl[598]" 0;
-	setAttr ".phl[599]" 0;
-	setAttr ".phl[600]" 0;
-	setAttr ".phl[601]" 0;
-	setAttr ".phl[602]" 0;
-	setAttr ".phl[603]" 0;
-	setAttr ".phl[604]" 0;
-	setAttr ".phl[605]" 0;
-	setAttr ".phl[606]" 0;
-	setAttr ".phl[607]" 0;
-	setAttr ".phl[608]" 0;
-	setAttr ".phl[609]" 0;
-	setAttr ".phl[610]" 0;
-	setAttr ".phl[611]" 0;
-	setAttr ".phl[612]" 0;
-	setAttr ".phl[613]" 0;
-	setAttr ".phl[614]" 0;
-	setAttr ".phl[615]" 0;
-	setAttr ".phl[616]" 0;
-	setAttr ".phl[617]" 0;
-	setAttr ".phl[618]" 0;
-	setAttr ".phl[619]" 0;
-	setAttr ".phl[620]" 0;
-	setAttr ".phl[621]" 0;
-	setAttr ".phl[622]" 0;
-	setAttr ".phl[623]" 0;
-	setAttr ".phl[624]" 0;
-	setAttr ".phl[625]" 0;
-	setAttr ".phl[626]" 0;
-	setAttr ".phl[627]" 0;
-	setAttr ".phl[628]" 0;
-	setAttr ".phl[629]" 0;
-	setAttr ".phl[630]" 0;
-	setAttr ".phl[631]" 0;
-	setAttr ".phl[632]" 0;
-	setAttr ".phl[633]" 0;
-	setAttr ".phl[634]" 0;
-	setAttr ".phl[635]" 0;
-	setAttr ".phl[636]" 0;
-	setAttr ".phl[637]" 0;
-	setAttr ".phl[638]" 0;
-	setAttr ".phl[639]" 0;
-	setAttr ".phl[640]" 0;
-	setAttr ".phl[641]" 0;
-	setAttr ".phl[642]" 0;
-	setAttr ".phl[643]" 0;
-	setAttr ".phl[644]" 0;
-	setAttr ".phl[645]" 0;
-	setAttr ".phl[646]" 0;
-	setAttr ".phl[647]" 0;
-	setAttr ".phl[648]" 0;
-	setAttr ".phl[649]" 0;
-	setAttr ".phl[650]" 0;
-	setAttr ".phl[651]" 0;
-	setAttr ".phl[652]" 0;
-	setAttr ".phl[653]" 0;
-	setAttr ".phl[654]" 0;
-	setAttr ".phl[655]" 0;
-	setAttr ".phl[656]" 0;
-	setAttr ".phl[657]" 0;
-	setAttr ".phl[658]" 0;
-	setAttr ".phl[659]" 0;
-	setAttr ".phl[660]" 0;
-	setAttr ".phl[661]" 0;
-	setAttr ".phl[662]" 0;
-	setAttr ".phl[663]" 0;
-	setAttr ".phl[664]" 0;
-	setAttr ".phl[665]" 0;
-	setAttr ".phl[666]" 0;
-	setAttr ".phl[667]" 0;
-	setAttr ".phl[668]" 0;
-	setAttr ".phl[669]" 0;
-	setAttr ".phl[670]" 0;
-	setAttr ".phl[671]" 0;
-	setAttr ".phl[672]" 0;
-	setAttr ".phl[673]" 0;
-	setAttr ".phl[674]" 0;
-	setAttr ".phl[675]" 0;
-	setAttr ".phl[676]" 0;
-	setAttr ".phl[677]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"DragonGateCaveSetRN"
-		"DragonGateCaveSet:roundedRocksRN" 1
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		"DragonGateCaveSet:Stalagmite_2RN" 23
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"translate" " -type \"double3\" -0.059906495170206221 0.10637920445397449 0.0034621740668891524"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"translateY" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translate" " -type \"double3\" -0.0024747098652441934 -0.00584415260432662 0.0024089645667960458"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translateY" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"translateZ" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scale" " -type \"double3\" 1 1.05770059949990314 1"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scaleX" " -av"
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"scaleY" " -av"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3|DragonGateCaveSet:Stalagmite_2:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2|DragonGateCaveSet:Stalagmite_2:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5|DragonGateCaveSet:Stalagmite_2:pCubeShape5.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4|DragonGateCaveSet:Stalagmite_2:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1|DragonGateCaveSet:Stalagmite_2:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5|DragonGateCaveSet:Stalagmite_2:pCubeShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[310]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4|DragonGateCaveSet:Stalagmite_2:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[311]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3|DragonGateCaveSet:Stalagmite_2:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[312]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2|DragonGateCaveSet:Stalagmite_2:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[313]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1|DragonGateCaveSet:Stalagmite_2:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[314]" ":initialShadingGroup.dsm"
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1|DragonGateCaveSet:Stalagmite_2:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2|DragonGateCaveSet:Stalagmite_2:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3|DragonGateCaveSet:Stalagmite_2:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4|DragonGateCaveSet:Stalagmite_2:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5|DragonGateCaveSet:Stalagmite_2:pCubeShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:BonesRN" 1
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		"DragonGateCaveSet:Stalagmite_1RN" 12
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3|DragonGateCaveSet:Stalagmite_1:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1|DragonGateCaveSet:Stalagmite_1:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4|DragonGateCaveSet:Stalagmite_1:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2|DragonGateCaveSet:Stalagmite_1:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4|DragonGateCaveSet:Stalagmite_1:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[315]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3|DragonGateCaveSet:Stalagmite_1:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[316]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2|DragonGateCaveSet:Stalagmite_1:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[317]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1|DragonGateCaveSet:Stalagmite_1:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[318]" ":initialShadingGroup.dsm"
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1|DragonGateCaveSet:Stalagmite_1:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2|DragonGateCaveSet:Stalagmite_1:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3|DragonGateCaveSet:Stalagmite_1:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4|DragonGateCaveSet:Stalagmite_1:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:DragonGateRN" 42
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		"DragonGateCaveSet:Emergency_ButtonRN" 0
-		"DragonGateCaveSet:DragonGateTorchRN" 98
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "attributeAliasList" 
-		" -type \"attributeAlias\" ai_aov_Noise"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood10|DragonGateCaveSet:Wood10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood09|DragonGateCaveSet:Wood09Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood08|DragonGateCaveSet:Wood08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood07|DragonGateCaveSet:Wood07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood06|DragonGateCaveSet:Wood06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood05|DragonGateCaveSet:Wood05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood04|DragonGateCaveSet:Wood04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood03|DragonGateCaveSet:Wood03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood02|DragonGateCaveSet:Wood02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain03|DragonGateCaveSet:ChainShape3.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain02|DragonGateCaveSet:ChainShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain01|DragonGateCaveSet:ChainShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop06|DragonGateCaveSet:LoopShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop05|DragonGateCaveSet:LoopShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop04|DragonGateCaveSet:LoopShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop02|DragonGateCaveSet:MiddleLoopShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop01|DragonGateCaveSet:MiddleLoopShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:TopLoop|DragonGateCaveSet:TopLoopShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail02|DragonGateCaveSet:BaseSphereDetail02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail01|DragonGateCaveSet:BaseSphereDetail01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:Hook|DragonGateCaveSet:HookShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing02|DragonGateCaveSet:TorchHolderRing02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing01|DragonGateCaveSet:TorchHolderRing01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame02|DragonGateCaveSet:HookFrameShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame01|DragonGateCaveSet:HookFrameShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		"DragonGateCaveSet:Large_BoulderRN" 5
-		3 "DragonGateCaveSet:Large_Boulder:groupId1.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Large_Boulder:polySurface3|DragonGateCaveSet:Large_Boulder:polySurfaceShape4.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Large_Boulder:polySurface3|DragonGateCaveSet:Large_Boulder:polySurfaceShape4.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Large_Boulder:polySurface3|DragonGateCaveSet:Large_Boulder:polySurfaceShape4.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Large_Boulder:polySurface3|DragonGateCaveSet:Large_Boulder:polySurfaceShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[26]" ""
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Large_Boulder:polySurface3|DragonGateCaveSet:Large_Boulder:polySurfaceShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSetRN" 2
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "attributeAliasList" " -type \"attributeAlias\" ai_aov_Noise"
-		
-		"DragonGateCaveSet:roundedRocksRN" 119
-		1 DragonGateCaveSet:roundedRocks:lambert2SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"translate" " -type \"double3\" -2.19986670773267301 0.03617330575542186 -5.63873285556201242"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"translate" " -type \"double3\" -2.30150513294392445 0.061622886514563276 -4.31087629067027844"
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:roundedRocks:lambert2SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:roundedRocks:groupParts1" "groupId" " 117"
-		2 "DragonGateCaveSet:roundedRocks:groupParts2" "groupId" " 119"
-		2 "DragonGateCaveSet:roundedRocks:groupParts3" "groupId" " 121"
-		2 "DragonGateCaveSet:roundedRocks:groupParts4" "groupId" " 123"
-		2 "DragonGateCaveSet:roundedRocks:groupParts5" "groupId" " 124"
-		2 "DragonGateCaveSet:roundedRocks:groupParts6" "groupId" " 125"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14|DragonGateCaveSet:roundedRocks:rock14Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7|DragonGateCaveSet:roundedRocks:rock7Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8|DragonGateCaveSet:roundedRocks:rock8Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3|DragonGateCaveSet:roundedRocks:rock3Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId9.groupId" "DragonGateCaveSet:roundedRocks:groupParts6.groupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:polyTweakUV224.output" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.inMesh" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId3.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId8.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[1].objectGroupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:lambert2SG.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[1].objectGrpColor" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId4.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.compInstObjGroups.compObjectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9|DragonGateCaveSet:roundedRocks:rock9Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId3.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId8.groupId" "DragonGateCaveSet:roundedRocks:groupParts5.groupId" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5|DragonGateCaveSet:roundedRocks:rock5Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId1.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15|DragonGateCaveSet:roundedRocks:rock15Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[1]" 
-		"DragonGateCaveSet:roundedRocks:lambert2SG.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId7.message" "DragonGateCaveSet:roundedRocks:lambert2SG.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups.objectGroups[1]" 
-		"DragonGateCaveSet:roundedRocks:lambert2SG.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId8.message" "DragonGateCaveSet:roundedRocks:lambert2SG.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[1]" 
-		"DragonGateCaveSet:roundedRocks:lambert2SG.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId9.message" "DragonGateCaveSet:roundedRocks:lambert2SG.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13|DragonGateCaveSet:roundedRocks:rock13Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId3.groupId" "DragonGateCaveSet:roundedRocks:groupParts2.groupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId1.groupId" "DragonGateCaveSet:roundedRocks:groupParts1.groupId" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1|DragonGateCaveSet:roundedRocks:rock1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12|DragonGateCaveSet:roundedRocks:rock12Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId5.groupId" "DragonGateCaveSet:roundedRocks:groupParts3.groupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:polyTweakUV191.output" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.inMesh" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId5.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId9.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[1].objectGroupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:lambert2SG.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups.objectGroups[1].objectGrpColor" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId6.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.compInstObjGroups.compObjectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11|DragonGateCaveSet:roundedRocks:rock11Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId7.groupId" "DragonGateCaveSet:roundedRocks:groupParts4.groupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId2.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId4.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId5.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId6.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10|DragonGateCaveSet:roundedRocks:rock10Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:polyTweakUV199.output" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.inMesh" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId1.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:roundedRocks:groupId7.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[1].objectGroupId" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:lambert2SG.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups.objectGroups[1].objectGrpColor" 
-		""
-		3 "DragonGateCaveSet:roundedRocks:groupId2.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.compInstObjGroups.compObjectGroups[0].compObjectGroupId" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.compInstObjGroups.compObjectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7|DragonGateCaveSet:roundedRocks:rock7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[329]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12|DragonGateCaveSet:roundedRocks:rock12Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[330]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1|DragonGateCaveSet:roundedRocks:rock1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[331]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[332]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14|DragonGateCaveSet:roundedRocks:rock14Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[333]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11|DragonGateCaveSet:roundedRocks:rock11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[334]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8|DragonGateCaveSet:roundedRocks:rock8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[335]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5|DragonGateCaveSet:roundedRocks:rock5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[336]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15|DragonGateCaveSet:roundedRocks:rock15Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[337]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9|DragonGateCaveSet:roundedRocks:rock9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[338]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13|DragonGateCaveSet:roundedRocks:rock13Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[339]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10|DragonGateCaveSet:roundedRocks:rock10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[340]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[341]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3|DragonGateCaveSet:roundedRocks:rock3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[342]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[343]" ""
-		5 0 "DragonGateCaveSetRN" "DragonGateCaveSet:roundedRocks:polyTweakUV191.output" 
-		"|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.inMesh" 
-		"DragonGateCaveSetRN.placeHolderList[671]" "DragonGateCaveSetRN.placeHolderList[672]" 
-		"DragonGateCaveSet:roundedRocks:rock6Shape.i"
-		5 0 "DragonGateCaveSetRN" "DragonGateCaveSet:roundedRocks:polyTweakUV224.output" 
-		"|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.inMesh" 
-		"DragonGateCaveSetRN.placeHolderList[673]" "DragonGateCaveSetRN.placeHolderList[674]" 
-		"DragonGateCaveSet:roundedRocks:rock4Shape.i"
-		5 0 "DragonGateCaveSetRN" "DragonGateCaveSet:roundedRocks:polyTweakUV199.output" 
-		"|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.inMesh" 
-		"DragonGateCaveSetRN.placeHolderList[675]" "DragonGateCaveSetRN.placeHolderList[676]" 
-		"DragonGateCaveSet:roundedRocks:rock2Shape.i"
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6|DragonGateCaveSet:roundedRocks:rock6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3|DragonGateCaveSet:roundedRocks:rock3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4|DragonGateCaveSet:roundedRocks:rock4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10|DragonGateCaveSet:roundedRocks:rock10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13|DragonGateCaveSet:roundedRocks:rock13Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9|DragonGateCaveSet:roundedRocks:rock9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15|DragonGateCaveSet:roundedRocks:rock15Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5|DragonGateCaveSet:roundedRocks:rock5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8|DragonGateCaveSet:roundedRocks:rock8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11|DragonGateCaveSet:roundedRocks:rock11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14|DragonGateCaveSet:roundedRocks:rock14Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2|DragonGateCaveSet:roundedRocks:rock2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1|DragonGateCaveSet:roundedRocks:rock1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12|DragonGateCaveSet:roundedRocks:rock12Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7|DragonGateCaveSet:roundedRocks:rock7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:roundedRocks:lambert2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:Stalagmite_2RN" 1
-		2 "|DragonGateCaveSet:Stalagmite_2:Stalagmite2" "visibility" " 0"
-		"DragonGateCaveSet:BonesRN" 49
-		1 DragonGateCaveSet:Bones:Skeleton1:set1 "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"translate" " -type \"double3\" -0.04304635717554036 -0.035329327055518583 0.0011664977006970449"
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[10].aovName" " -type \"string\" \"coat_albedo\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[11].aovName" " -type \"string\" \"denoise_albedo\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[12].aovName" " -type \"string\" \"specular_albedo\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[13].aovName" " -type \"string\" \"Base_Color\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[14].aovName" " -type \"string\" \"diffuse_albedo\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[15].aovName" " -type \"string\" \"rim_light\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[16].aovName" " -type \"string\" \"indirect\""
-		
-		2 "DragonGateCaveSet:Bones:Skeleton1:set1" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
-		
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1|DragonGateCaveSet:Bones:Forearm_bones1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2|DragonGateCaveSet:Bones:Forearm_bones2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1|DragonGateCaveSet:Bones:Broken_ribs1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs|DragonGateCaveSet:Bones:Broken_ribsShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1|DragonGateCaveSet:Bones:Femur1Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur|DragonGateCaveSet:Bones:FemurShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2|DragonGateCaveSet:Bones:Broken_ribs2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2|DragonGateCaveSet:Bones:Femur2Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones|DragonGateCaveSet:Bones:Forearm_bonesShape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2|DragonGateCaveSet:Bones:Broken_ribs2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[320]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1|DragonGateCaveSet:Bones:Broken_ribs1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[321]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs|DragonGateCaveSet:Bones:Broken_ribsShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[322]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2|DragonGateCaveSet:Bones:Femur2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[323]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1|DragonGateCaveSet:Bones:Femur1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[324]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur|DragonGateCaveSet:Bones:FemurShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[325]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2|DragonGateCaveSet:Bones:Forearm_bones2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[326]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1|DragonGateCaveSet:Bones:Forearm_bones1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[327]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones|DragonGateCaveSet:Bones:Forearm_bonesShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[328]" ":initialShadingGroup.dsm"
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones|DragonGateCaveSet:Bones:Forearm_bonesShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1|DragonGateCaveSet:Bones:Forearm_bones1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2|DragonGateCaveSet:Bones:Forearm_bones2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur|DragonGateCaveSet:Bones:FemurShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1|DragonGateCaveSet:Bones:Femur1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2|DragonGateCaveSet:Bones:Femur2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs|DragonGateCaveSet:Bones:Broken_ribsShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1|DragonGateCaveSet:Bones:Broken_ribs1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2|DragonGateCaveSet:Bones:Broken_ribs2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:Bones:Skeleton1:set1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:Stalagmite_1RN" 1
-		2 "|DragonGateCaveSet:Stalagmite_1:Staligmite1" "visibility" " 0"
-		"DragonGateCaveSet:DragonGateRN" 1068
-		1 DragonGateCaveSet:DragonGate:Extract10SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		1 DragonGateCaveSet:DragonGate:Extract7SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		1 DragonGateCaveSet:DragonGate:standardSurface1SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:aiStandardSurface1SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG "attributeAliasList" "aal" 
-		" -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:aiStandardSurface2SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:aiStandardSurface3SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:aiStandardSurface4SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGate:aiStandardSurface5SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[10].aovName" " -type \"string\" \"coat_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[11].aovName" " -type \"string\" \"denoise_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[12].aovName" " -type \"string\" \"specular_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[13].aovName" " -type \"string\" \"Base_Color\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[14].aovName" " -type \"string\" \"diffuse_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[15].aovName" " -type \"string\" \"rim_light\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[16].aovName" " -type \"string\" \"indirect\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract10SG" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[10].aovName" " -type \"string\" \"coat_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[11].aovName" " -type \"string\" \"denoise_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[12].aovName" " -type \"string\" \"specular_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[13].aovName" " -type \"string\" \"Base_Color\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[14].aovName" " -type \"string\" \"diffuse_albedo\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[15].aovName" " -type \"string\" \"rim_light\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[16].aovName" " -type \"string\" \"indirect\""
-		
-		2 "DragonGateCaveSet:DragonGate:Extract7SG" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
-		
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:standardSurface1SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:StoneMat" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:Gate01Mat" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGate:Gate02Mat" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs" " -s 18"
-		
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:BottomJawShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:TopJawShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07|DragonGateCaveSet:DragonGate:Gate_V_Shape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06|DragonGateCaveSet:DragonGate:Gate_V_Shape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05|DragonGateCaveSet:DragonGate:Gate_V_Shape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04|DragonGateCaveSet:DragonGate:Gate_V_Shape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03|DragonGateCaveSet:DragonGate:Gate_V_Shape3.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02|DragonGateCaveSet:DragonGate:Gate_V_Shape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01|DragonGateCaveSet:DragonGate:Gate_V_Shape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02|DragonGateCaveSet:DragonGate:SkullMount02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01|DragonGateCaveSet:DragonGate:SkullMount01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09|DragonGateCaveSet:DragonGate:Gate_H_Shape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08|DragonGateCaveSet:DragonGate:Gate_H_Shape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07|DragonGateCaveSet:DragonGate:Gate_H_Shape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06|DragonGateCaveSet:DragonGate:Gate_H_Shape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05|DragonGateCaveSet:DragonGate:Gate_H_Shape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04|DragonGateCaveSet:DragonGate:Gate_H_Shape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03|DragonGateCaveSet:DragonGate:Gate_H_Shape3.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02|DragonGateCaveSet:DragonGate:Gate_H_Shape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01|DragonGateCaveSet:DragonGate:Gate_H_Shape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2|DragonGateCaveSet:DragonGate:ARCH2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1|DragonGateCaveSet:DragonGate:ARCH1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2|DragonGateCaveSet:DragonGate:ARCH2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[319]" "DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[437]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[438]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[439]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[440]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[441]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[442]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[443]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[444]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[445]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[446]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[447]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[448]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[449]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[450]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[451]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[452]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:BottomJawShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[453]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[454]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[455]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[456]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[457]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[458]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[459]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[460]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[461]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[462]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[463]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[464]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[465]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[466]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[467]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[468]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[469]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[470]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[471]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:TopJawShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[472]" "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02|DragonGateCaveSet:DragonGate:SkullMount02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[473]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01|DragonGateCaveSet:DragonGate:SkullMount01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[474]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09|DragonGateCaveSet:DragonGate:Gate_H_Shape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[475]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08|DragonGateCaveSet:DragonGate:Gate_H_Shape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[476]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07|DragonGateCaveSet:DragonGate:Gate_H_Shape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[477]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06|DragonGateCaveSet:DragonGate:Gate_H_Shape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[478]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05|DragonGateCaveSet:DragonGate:Gate_H_Shape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[479]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04|DragonGateCaveSet:DragonGate:Gate_H_Shape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[480]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03|DragonGateCaveSet:DragonGate:Gate_H_Shape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[481]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02|DragonGateCaveSet:DragonGate:Gate_H_Shape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[482]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01|DragonGateCaveSet:DragonGate:Gate_H_Shape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[483]" "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07|DragonGateCaveSet:DragonGate:Gate_V_Shape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[484]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06|DragonGateCaveSet:DragonGate:Gate_V_Shape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[485]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05|DragonGateCaveSet:DragonGate:Gate_V_Shape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[486]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04|DragonGateCaveSet:DragonGate:Gate_V_Shape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[487]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03|DragonGateCaveSet:DragonGate:Gate_V_Shape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[488]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02|DragonGateCaveSet:DragonGate:Gate_V_Shape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[489]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01|DragonGateCaveSet:DragonGate:Gate_V_Shape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[490]" "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1|DragonGateCaveSet:DragonGate:ARCH1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[491]" "DragonGateCaveSet:DragonGate:aiStandardSurface3SG.dsm"
-		
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:DragonSkullMat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[629]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:DragonSkullMat.diffuseRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[630]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:DragonSkullMat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[631]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:DragonSkullMat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[632]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:StoneMat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[633]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:StoneMat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[634]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:StoneMat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[635]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate01Mat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[636]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate01Mat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[637]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate01Mat.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[638]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate01Mat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[639]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate02Mat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[640]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate02Mat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[641]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate02Mat.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[642]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:Gate02Mat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[643]" ""
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1|DragonGateCaveSet:DragonGate:ARCH1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2|DragonGateCaveSet:DragonGate:ARCH2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01|DragonGateCaveSet:DragonGate:Gate_V_Shape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02|DragonGateCaveSet:DragonGate:Gate_V_Shape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03|DragonGateCaveSet:DragonGate:Gate_V_Shape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04|DragonGateCaveSet:DragonGate:Gate_V_Shape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05|DragonGateCaveSet:DragonGate:Gate_V_Shape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06|DragonGateCaveSet:DragonGate:Gate_V_Shape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07|DragonGateCaveSet:DragonGate:Gate_V_Shape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01|DragonGateCaveSet:DragonGate:Gate_H_Shape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02|DragonGateCaveSet:DragonGate:Gate_H_Shape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03|DragonGateCaveSet:DragonGate:Gate_H_Shape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04|DragonGateCaveSet:DragonGate:Gate_H_Shape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05|DragonGateCaveSet:DragonGate:Gate_H_Shape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06|DragonGateCaveSet:DragonGate:Gate_H_Shape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07|DragonGateCaveSet:DragonGate:Gate_H_Shape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08|DragonGateCaveSet:DragonGate:Gate_H_Shape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09|DragonGateCaveSet:DragonGate:Gate_H_Shape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01|DragonGateCaveSet:DragonGate:SkullMount01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02|DragonGateCaveSet:DragonGate:SkullMount02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:TopJawShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:BottomJawShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:Extract10SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:Extract7SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:standardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Upper_Teeth_09SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Upper_Teeth_09SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:L_Lower_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_01SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_02SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_03SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_04SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_05SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_06SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_07SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:R_Lower_Teeth_08SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface3SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface4SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGate:aiStandardSurface5SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:Emergency_ButtonRN" 36
-		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1" 
-		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "DragonGateCaveSet:Emergency_Button:groupParts7" "groupId" " 112"
-		2 "DragonGateCaveSet:Emergency_Button:groupParts8" "groupId" " 113"
-		2 "DragonGateCaveSet:Emergency_Button:groupParts9" "inputRemoveComponent" 
-		" -type \"componentList\" 3 \"f[0:10]\" \"f[14:31]\" \"f[67:69]\""
-		2 "DragonGateCaveSet:Emergency_Button:groupParts9" "groupId" " 114"
-		2 "DragonGateCaveSet:Emergency_Button:groupParts10" "inputRemoveComponent" 
-		" -type \"componentList\" 3 \"f[11:13]\" \"f[32:66]\" \"f[70:72]\""
-		2 "DragonGateCaveSet:Emergency_Button:groupParts10" "groupId" " 115"
-		3 "DragonGateCaveSet:Emergency_Button:groupId5.groupId" "DragonGateCaveSet:Emergency_Button:groupParts7.groupId" 
-		""
-		3 "DragonGateCaveSet:Emergency_Button:groupId8.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId7.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId8.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[1].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[1].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups.objectGroups[1]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId5.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId6.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1|DragonGateCaveSet:Emergency_Button:Button.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId7.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId6.groupId" "DragonGateCaveSet:Emergency_Button:groupParts8.groupId" 
-		""
-		3 "DragonGateCaveSet:Emergency_Button:polyAutoProj2.output" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.inMesh" 
-		""
-		3 "DragonGateCaveSet:Emergency_Button:groupId5.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId6.groupId" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[1].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[1].objectGrpColor" 
-		""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups.objectGroups[1]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "DragonGateCaveSet:Emergency_Button:groupId7.groupId" "DragonGateCaveSet:Emergency_Button:groupParts9.groupId" 
-		""
-		3 "DragonGateCaveSet:Emergency_Button:groupId8.groupId" "DragonGateCaveSet:Emergency_Button:groupParts10.groupId" 
-		""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1|DragonGateCaveSet:Emergency_Button:Button.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[620]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[621]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[622]" ""
-		5 0 "DragonGateCaveSetRN" "DragonGateCaveSet:Emergency_Button:polyAutoProj2.output" 
-		"|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.inMesh" 
-		"DragonGateCaveSetRN.placeHolderList[644]" "DragonGateCaveSetRN.placeHolderList[645]" 
-		"DragonGateCaveSet:Emergency_Button:polySurfaceShape1.i"
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1|DragonGateCaveSet:Emergency_Button:Box.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1|DragonGateCaveSet:Emergency_Button:polySurfaceShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1|DragonGateCaveSet:Emergency_Button:Button.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:DragonGateTorchRN" 414
-		1 DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		1 DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG "attributeAliasList" 
-		"aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		2 "DragonGateCaveSet:DragonGateTorch:ChainMat" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs" 
-		" -s 18"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:MetalMat02" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs" 
-		" -s 18"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:MetalMat01" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs" 
-		" -s 18"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:MetalMat03" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs" 
-		" -s 18"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:WoodMat" "diffuseRoughness" " 1"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs" 
-		" -s 18"
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[0].aovName" 
-		" -type \"string\" \"ID\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[1].aovName" 
-		" -type \"string\" \"Z\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[2].aovName" 
-		" -type \"string\" \"Alpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[3].aovName" 
-		" -type \"string\" \"N\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[4].aovName" 
-		" -type \"string\" \"CameraSpaceNormals\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[5].aovName" 
-		" -type \"string\" \"crypto_object\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[6].aovName" 
-		" -type \"string\" \"crypto_material\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[7].aovName" 
-		" -type \"string\" \"crypto_asset\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[8].aovName" 
-		" -type \"string\" \"LightsPosAlpha\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[9].aovName" 
-		" -type \"string\" \"albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[10].aovName" 
-		" -type \"string\" \"coat_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[11].aovName" 
-		" -type \"string\" \"denoise_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[12].aovName" 
-		" -type \"string\" \"specular_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[13].aovName" 
-		" -type \"string\" \"Base_Color\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[14].aovName" 
-		" -type \"string\" \"diffuse_albedo\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[15].aovName" 
-		" -type \"string\" \"rim_light\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[16].aovName" 
-		" -type \"string\" \"indirect\""
-		2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG" "aiCustomAOVs[17].aovName" 
-		" -type \"string\" \"CNormals\""
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop06|DragonGateCaveSet:DragonGateTorch:LoopShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop05|DragonGateCaveSet:DragonGateTorch:LoopShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop04|DragonGateCaveSet:DragonGateTorch:LoopShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop02|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop01|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:TopLoop|DragonGateCaveSet:DragonGateTorch:TopLoopShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:Hook|DragonGateCaveSet:DragonGateTorch:HookShape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood10|DragonGateCaveSet:DragonGateTorch:Wood10Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood09|DragonGateCaveSet:DragonGateTorch:Wood09Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood08|DragonGateCaveSet:DragonGateTorch:Wood08Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood07|DragonGateCaveSet:DragonGateTorch:Wood07Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood06|DragonGateCaveSet:DragonGateTorch:Wood06Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood05|DragonGateCaveSet:DragonGateTorch:Wood05Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood04|DragonGateCaveSet:DragonGateTorch:Wood04Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood03|DragonGateCaveSet:DragonGateTorch:Wood03Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood02|DragonGateCaveSet:DragonGateTorch:Wood02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:ChainShape3.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:ChainShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain01|DragonGateCaveSet:DragonGateTorch:ChainShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01Shape.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame02|DragonGateCaveSet:DragonGateTorch:HookFrameShape2.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame01|DragonGateCaveSet:DragonGateTorch:HookFrameShape1.instObjGroups" 
-		"DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop06|DragonGateCaveSet:DragonGateTorch:LoopShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[344]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop05|DragonGateCaveSet:DragonGateTorch:LoopShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[345]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop04|DragonGateCaveSet:DragonGateTorch:LoopShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[346]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[347]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[348]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[349]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[350]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[351]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[352]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[353]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[354]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[355]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[356]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[357]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[358]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[359]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[360]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[361]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[362]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[363]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[364]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[365]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[366]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[367]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[368]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[369]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[370]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[371]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[372]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[373]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[374]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[375]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[376]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[377]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[378]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[379]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[380]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[381]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[382]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[383]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[384]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[385]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[386]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[387]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[388]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[389]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[390]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[391]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[392]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[393]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[394]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[395]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[396]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood10|DragonGateCaveSet:DragonGateTorch:Wood10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[397]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood09|DragonGateCaveSet:DragonGateTorch:Wood09Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[398]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood08|DragonGateCaveSet:DragonGateTorch:Wood08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[399]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood07|DragonGateCaveSet:DragonGateTorch:Wood07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[400]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood06|DragonGateCaveSet:DragonGateTorch:Wood06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[401]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood05|DragonGateCaveSet:DragonGateTorch:Wood05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[402]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood04|DragonGateCaveSet:DragonGateTorch:Wood04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[403]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood03|DragonGateCaveSet:DragonGateTorch:Wood03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[404]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood02|DragonGateCaveSet:DragonGateTorch:Wood02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[405]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[406]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[407]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[408]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[409]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[410]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[411]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[412]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[413]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[414]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[415]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[416]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[417]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[418]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[419]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[420]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[421]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[422]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[423]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[424]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop02|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[425]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop01|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[426]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:ChainShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[427]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:ChainShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[428]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain01|DragonGateCaveSet:DragonGateTorch:ChainShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[429]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:TopLoop|DragonGateCaveSet:DragonGateTorch:TopLoopShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[430]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[431]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[432]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:Hook|DragonGateCaveSet:DragonGateTorch:HookShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[433]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame02|DragonGateCaveSet:DragonGateTorch:HookFrameShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[434]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame01|DragonGateCaveSet:DragonGateTorch:HookFrameShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[435]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.dsm"
-		
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[436]" "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.dsm"
-		
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:ChainMat.message" 
-		"DragonGateCaveSetRN.placeHolderList[646]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:ChainMat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[647]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:ChainMat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[648]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:ChainMat.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[649]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:ChainMat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[650]" ""
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat02.message" 
-		"DragonGateCaveSetRN.placeHolderList[651]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat02.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[652]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat02.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[653]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat02.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[654]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat02.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[655]" ""
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat01.message" 
-		"DragonGateCaveSetRN.placeHolderList[656]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat01.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[657]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat01.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[658]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat01.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[659]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat01.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[660]" ""
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat03.message" 
-		"DragonGateCaveSetRN.placeHolderList[661]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat03.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[662]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat03.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[663]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat03.metalness" 
-		"DragonGateCaveSetRN.placeHolderList[664]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:MetalMat03.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[665]" ""
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:WoodMat.message" 
-		"DragonGateCaveSetRN.placeHolderList[666]" ""
-		5 3 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:WoodMat.message" 
-		"DragonGateCaveSetRN.placeHolderList[667]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:WoodMat.baseColor" 
-		"DragonGateCaveSetRN.placeHolderList[668]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:WoodMat.specularRoughness" 
-		"DragonGateCaveSetRN.placeHolderList[669]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGateTorch:WoodMat.normalCamera" 
-		"DragonGateCaveSetRN.placeHolderList[670]" ""
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame01|DragonGateCaveSet:DragonGateTorch:HookFrameShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame02|DragonGateCaveSet:DragonGateTorch:HookFrameShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:Hook|DragonGateCaveSet:DragonGateTorch:HookShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:TopLoop|DragonGateCaveSet:DragonGateTorch:TopLoopShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain01|DragonGateCaveSet:DragonGateTorch:ChainShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:ChainShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:ChainShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop01|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop02|DragonGateCaveSet:DragonGateTorch:MiddleLoopShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain05|DragonGateCaveSet:DragonGateTorch:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain06|DragonGateCaveSet:DragonGateTorch:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain07|DragonGateCaveSet:DragonGateTorch:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain08|DragonGateCaveSet:DragonGateTorch:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain09|DragonGateCaveSet:DragonGateTorch:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood02|DragonGateCaveSet:DragonGateTorch:Wood02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood03|DragonGateCaveSet:DragonGateTorch:Wood03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood04|DragonGateCaveSet:DragonGateTorch:Wood04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood05|DragonGateCaveSet:DragonGateTorch:Wood05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood06|DragonGateCaveSet:DragonGateTorch:Wood06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood07|DragonGateCaveSet:DragonGateTorch:Wood07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood08|DragonGateCaveSet:DragonGateTorch:Wood08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood09|DragonGateCaveSet:DragonGateTorch:Wood09Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood10|DragonGateCaveSet:DragonGateTorch:Wood10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchBase|DragonGateCaveSet:DragonGateTorch:TorchBaseShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail|DragonGateCaveSet:DragonGateTorch:SquareDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail1|DragonGateCaveSet:DragonGateTorch:SquareDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail2|DragonGateCaveSet:DragonGateTorch:SquareDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail3|DragonGateCaveSet:DragonGateTorch:SquareDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail4|DragonGateCaveSet:DragonGateTorch:SquareDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail5|DragonGateCaveSet:DragonGateTorch:SquareDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail6|DragonGateCaveSet:DragonGateTorch:SquareDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail7|DragonGateCaveSet:DragonGateTorch:SquareDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail8|DragonGateCaveSet:DragonGateTorch:SquareDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail9|DragonGateCaveSet:DragonGateTorch:SquareDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail10|DragonGateCaveSet:DragonGateTorch:SquareDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail11|DragonGateCaveSet:DragonGateTorch:SquareDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail11|DragonGateCaveSet:DragonGateTorch:SphereDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail10|DragonGateCaveSet:DragonGateTorch:SphereDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail9|DragonGateCaveSet:DragonGateTorch:SphereDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail8|DragonGateCaveSet:DragonGateTorch:SphereDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail7|DragonGateCaveSet:DragonGateTorch:SphereDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail6|DragonGateCaveSet:DragonGateTorch:SphereDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail5|DragonGateCaveSet:DragonGateTorch:SphereDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail4|DragonGateCaveSet:DragonGateTorch:SphereDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail3|DragonGateCaveSet:DragonGateTorch:SphereDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail2|DragonGateCaveSet:DragonGateTorch:SphereDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail1|DragonGateCaveSet:DragonGateTorch:SphereDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail|DragonGateCaveSet:DragonGateTorch:SphereDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop04|DragonGateCaveSet:DragonGateTorch:LoopShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop05|DragonGateCaveSet:DragonGateTorch:LoopShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop06|DragonGateCaveSet:DragonGateTorch:LoopShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface3SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface4SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:DragonGateTorch:aiStandardSurface5SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		"DragonGateCaveSet:Large_BoulderRN" 2
-		2 "|DragonGateCaveSet:Large_Boulder:LargeBoulder" "visibility" " 0"
-		3 "DragonGateCaveSet:Large_Boulder:groupId1.message" ":initialShadingGroup.groupNodes" 
-		"-na"
-		"DragonGateCaveSetRN" 356
-		1 DragonGateCaveSet:aiStandardSurface1SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		1 DragonGateCaveSet:aiStandardSurface2SG "attributeAliasList" "aal" " -ci 1 -h 1 -dt \"attributeAlias\""
-		
-		2 "|DragonGateCaveSet:CaveSet" "translate" " -type \"double3\" -11.77535559256889464 4.0673008054161679 14.37072009687280527"
-		
-		2 "|DragonGateCaveSet:CaveSet" "rotate" " -type \"double3\" 0 -179.99999999999994316 0"
-		
-		2 "|DragonGateCaveSet:CaveSet" "rotatePivot" " -type \"double3\" 0 -4.08284149169921839 0"
-		
-		2 "|DragonGateCaveSet:CaveSet" "scalePivot" " -type \"double3\" 0 -4.08284149169921839 0"
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[10].aovName" " -type \"string\" \"coat_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[11].aovName" " -type \"string\" \"denoise_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[12].aovName" " -type \"string\" \"specular_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[13].aovName" " -type \"string\" \"Base_Color\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[14].aovName" " -type \"string\" \"diffuse_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[15].aovName" " -type \"string\" \"rim_light\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[16].aovName" " -type \"string\" \"indirect\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface1SG" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs" " -s 18"
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[0].aovName" " -type \"string\" \"ID\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[1].aovName" " -type \"string\" \"Z\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[2].aovName" " -type \"string\" \"Alpha\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[3].aovName" " -type \"string\" \"N\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[4].aovName" " -type \"string\" \"CameraSpaceNormals\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[5].aovName" " -type \"string\" \"crypto_object\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[6].aovName" " -type \"string\" \"crypto_material\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[7].aovName" " -type \"string\" \"crypto_asset\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[8].aovName" " -type \"string\" \"LightsPosAlpha\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[9].aovName" " -type \"string\" \"albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[10].aovName" " -type \"string\" \"coat_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[11].aovName" " -type \"string\" \"denoise_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[12].aovName" " -type \"string\" \"specular_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[13].aovName" " -type \"string\" \"Base_Color\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[14].aovName" " -type \"string\" \"diffuse_albedo\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[15].aovName" " -type \"string\" \"rim_light\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[16].aovName" " -type \"string\" \"indirect\""
-		
-		2 "DragonGateCaveSet:aiStandardSurface2SG" "aiCustomAOVs[17].aovName" " -type \"string\" \"CNormals\""
-		
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Ground03|DragonGateCaveSet:Ground03Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Walls_03|DragonGateCaveSet:Walls_03Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[492]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[493]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[494]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[495]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[496]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[497]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[498]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[499]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[500]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[501]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[502]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[503]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[504]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[505]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[506]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[507]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[508]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[509]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[510]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[511]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[512]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[513]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[514]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[515]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[516]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[517]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[518]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[519]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[520]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[521]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[522]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[523]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[524]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[525]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[526]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop06|DragonGateCaveSet:LoopShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[527]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop05|DragonGateCaveSet:LoopShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[528]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop04|DragonGateCaveSet:LoopShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[529]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[530]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[531]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[532]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[533]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[534]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[535]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[536]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[537]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[538]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[539]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[540]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[541]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[542]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[543]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[544]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[545]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[546]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[547]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[548]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[549]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[550]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[551]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[552]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[553]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[554]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[555]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[556]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[557]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[558]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[559]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[560]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[561]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[562]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[563]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[564]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[565]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[566]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[567]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[568]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[569]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[570]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[571]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[572]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[573]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[574]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[575]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[576]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[577]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing02|DragonGateCaveSet:TorchHolderRing02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[578]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[579]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood10|DragonGateCaveSet:Wood10Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[580]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood09|DragonGateCaveSet:Wood09Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[581]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood08|DragonGateCaveSet:Wood08Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[582]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood07|DragonGateCaveSet:Wood07Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[583]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood06|DragonGateCaveSet:Wood06Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[584]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood05|DragonGateCaveSet:Wood05Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[585]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood04|DragonGateCaveSet:Wood04Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[586]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood03|DragonGateCaveSet:Wood03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[587]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood02|DragonGateCaveSet:Wood02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[588]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing01|DragonGateCaveSet:TorchHolderRing01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[589]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[590]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[591]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[592]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[593]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[594]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[595]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[596]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[597]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[598]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[599]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[600]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[601]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[602]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[603]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[604]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[605]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[606]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[607]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop02|DragonGateCaveSet:MiddleLoopShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[608]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop01|DragonGateCaveSet:MiddleLoopShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[609]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain03|DragonGateCaveSet:ChainShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[610]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain02|DragonGateCaveSet:ChainShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[611]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain01|DragonGateCaveSet:ChainShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[612]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:TopLoop|DragonGateCaveSet:TopLoopShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[613]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail02|DragonGateCaveSet:BaseSphereDetail02Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[614]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail01|DragonGateCaveSet:BaseSphereDetail01Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[615]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:Hook|DragonGateCaveSet:HookShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[616]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame02|DragonGateCaveSet:HookFrameShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[617]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame01|DragonGateCaveSet:HookFrameShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[618]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[619]" ""
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[623]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[624]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[625]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[626]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Ground03|DragonGateCaveSet:Ground03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[627]" ":initialShadingGroup.dsm"
-		5 1 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Walls_03|DragonGateCaveSet:Walls_03Shape.instObjGroups" 
-		"DragonGateCaveSetRN.placeHolderList[628]" ":initialShadingGroup.dsm"
-		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[677]" ""
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Walls_03|DragonGateCaveSet:Walls_03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Ground03|DragonGateCaveSet:Ground03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame01|DragonGateCaveSet:HookFrameShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame02|DragonGateCaveSet:HookFrameShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:Hook|DragonGateCaveSet:HookShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail01|DragonGateCaveSet:BaseSphereDetail01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail02|DragonGateCaveSet:BaseSphereDetail02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:TopLoop|DragonGateCaveSet:TopLoopShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain01|DragonGateCaveSet:ChainShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain02|DragonGateCaveSet:ChainShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain03|DragonGateCaveSet:ChainShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop01|DragonGateCaveSet:MiddleLoopShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop02|DragonGateCaveSet:MiddleLoopShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain04|DragonGateCaveSet:ChainShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain05|DragonGateCaveSet:ChainShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain06|DragonGateCaveSet:ChainShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain07|DragonGateCaveSet:ChainShape7.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain08|DragonGateCaveSet:ChainShape8.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain09|DragonGateCaveSet:ChainShape9.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing01|DragonGateCaveSet:TorchHolderRing01Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood02|DragonGateCaveSet:Wood02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood03|DragonGateCaveSet:Wood03Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood04|DragonGateCaveSet:Wood04Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood05|DragonGateCaveSet:Wood05Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood06|DragonGateCaveSet:Wood06Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood07|DragonGateCaveSet:Wood07Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood08|DragonGateCaveSet:Wood08Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood09|DragonGateCaveSet:Wood09Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood10|DragonGateCaveSet:Wood10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchBase|DragonGateCaveSet:TorchBaseShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing02|DragonGateCaveSet:TorchHolderRing02Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail|DragonGateCaveSet:SquareDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail1|DragonGateCaveSet:SquareDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail2|DragonGateCaveSet:SquareDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail3|DragonGateCaveSet:SquareDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail4|DragonGateCaveSet:SquareDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail5|DragonGateCaveSet:SquareDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail6|DragonGateCaveSet:SquareDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail7|DragonGateCaveSet:SquareDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail8|DragonGateCaveSet:SquareDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail9|DragonGateCaveSet:SquareDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail10|DragonGateCaveSet:SquareDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail11|DragonGateCaveSet:SquareDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail11|DragonGateCaveSet:SphereDetail11Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail10|DragonGateCaveSet:SphereDetail10Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail9|DragonGateCaveSet:SphereDetail9Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail8|DragonGateCaveSet:SphereDetail8Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail7|DragonGateCaveSet:SphereDetail7Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail6|DragonGateCaveSet:SphereDetail6Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail5|DragonGateCaveSet:SphereDetail5Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail4|DragonGateCaveSet:SphereDetail4Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail3|DragonGateCaveSet:SphereDetail3Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail2|DragonGateCaveSet:SphereDetail2Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail1|DragonGateCaveSet:SphereDetail1Shape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail|DragonGateCaveSet:SphereDetailShape.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop04|DragonGateCaveSet:LoopShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop05|DragonGateCaveSet:LoopShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop06|DragonGateCaveSet:LoopShape6.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_02|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube5|DragonGateCaveSet:pCubeShape5.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_03|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_05|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube1|DragonGateCaveSet:pCubeShape1.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube2|DragonGateCaveSet:pCubeShape2.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube3|DragonGateCaveSet:pCubeShape3.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube4|DragonGateCaveSet:pCubeShape4.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:aiStandardSurface1SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0
-		7 "ignore" ":lightLinker1" 2 "DragonGateCaveSet:aiStandardSurface2SG.message" "|Skelly_Light_01|Skelly_Light_Shape1.message" 
-		0;
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
 	rename -uid "B699CCAD-416A-0662-0AB9-2C89B878D6D0";
 createNode lightEditor -n "lightEditor";
@@ -32543,11 +26357,7 @@ createNode shadingEngine -n "aiUtility1SG";
 	setAttr ".aovs[8].aov_name" -type "string" "rim_light";
 	setAttr ".aovs[9].aov_name" -type "string" "indirect";
 	setAttr ".aovs[10].aov_name" -type "string" "CNormals";
-	setAttr ".aal" -type "attributeAlias" {"ai_aov_Base_Color","aiCustomAOVs[0]","ai_aov_CNormals"
-		,"aiCustomAOVs[10]","ai_aov_ID","aiCustomAOVs[1]","ai_aov_N","aiCustomAOVs[2]","ai_aov_Noise"
-		,"aiCustomAOVs[3]","ai_aov_Z","aiCustomAOVs[4]","ai_aov_crypto_material","aiCustomAOVs[5]"
-		,"ai_aov_diffuse_albedo","aiCustomAOVs[6]","ai_aov_albedo","aiCustomAOVs[7]","ai_aov_rim_light"
-		,"aiCustomAOVs[8]","ai_aov_indirect","aiCustomAOVs[9]"} ;
+	setAttr ".aal" -type "attributeAlias" 22 "ai_aov_Base_Color" "aiCustomAOVs[0]" "ai_aov_CNormals" "aiCustomAOVs[10]" "ai_aov_ID" "aiCustomAOVs[1]" "ai_aov_N" "aiCustomAOVs[2]" "ai_aov_Noise" "aiCustomAOVs[3]" "ai_aov_Z" "aiCustomAOVs[4]" "ai_aov_crypto_material" "aiCustomAOVs[5]" "ai_aov_diffuse_albedo" "aiCustomAOVs[6]" "ai_aov_albedo" "aiCustomAOVs[7]" "ai_aov_rim_light" "aiCustomAOVs[8]" "ai_aov_indirect" "aiCustomAOVs[9]" ;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "53CE3425-460E-102D-C671-088763F7DD18";
 createNode file -n "file1";
@@ -32769,9 +26579,7 @@ createNode shadingEngine -n "aiUtility2SG";
 	setAttr -s 2 ".aovs";
 	setAttr ".aovs[3].aov_name" -type "string" "Z";
 	setAttr ".aovs[4].aov_name" -type "string" "albedo";
-	setAttr ".aal" -type "attributeAlias" {"ai_aov_CNormals","aiCustomAOVs[0]","ai_aov_ID"
-		,"aiCustomAOVs[1]","ai_aov_Noise","aiCustomAOVs[2]","ai_aov_Z","aiCustomAOVs[3]","ai_aov_albedo"
-		,"aiCustomAOVs[4]","ai_aov_crypto_material","aiCustomAOVs[5]"} ;
+	setAttr ".aal" -type "attributeAlias" 12 "ai_aov_CNormals" "aiCustomAOVs[0]" "ai_aov_ID" "aiCustomAOVs[1]" "ai_aov_Noise" "aiCustomAOVs[2]" "ai_aov_Z" "aiCustomAOVs[3]" "ai_aov_albedo" "aiCustomAOVs[4]" "ai_aov_crypto_material" "aiCustomAOVs[5]" ;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "C28A4382-4D7C-2EB7-D797-FDBE5152C79D";
 createNode aiAOV -n "aiAOV_Z";
@@ -32961,126 +26769,6 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[2].ni[6].x" 351.42855834960938;
 	setAttr ".tgi[2].ni[6].y" 665.71429443359375;
 	setAttr ".tgi[2].ni[6].nvs" 1923;
-createNode reference -n "Cannon_RigRN";
-	rename -uid "4167F155-4204-25AD-FFBB-AF90C8FC58EE";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Cannon_RigRN"
-		"Cannon_RigRN" 0
-		"Cannon_RigRN" 3
-		2 "|Cannon_Rig:Cannon" "visibility" " 0"
-		2 "|Cannon_Rig:Cannon|Cannon_Rig:Controls|Cannon_Rig:Transform_Ctrl_Grp|Cannon_Rig:Transform_Ctrl" 
-		"translate" " -type \"double3\" 2.34325017671925506 0 4.03223124742794692"
-		2 "|Cannon_Rig:Cannon|Cannon_Rig:Controls|Cannon_Rig:Transform_Ctrl_Grp|Cannon_Rig:Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 -37.12385648146657502 0";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Mimic_RigRN";
-	rename -uid "251EE633-4C54-4D53-6FA3-0BB671752FCA";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Mimic_RigRN"
-		"Mimic_RigRN" 0
-		"Mimic_RigRN" 17
-		2 "|Mimic_Rig:ChestAndMimic" "visibility" " 0"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl" 
-		"translate" " -type \"double3\" 1.95899447571223795 0 2.34763221926074062"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 -54.64495216915382514 0"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Tongue_Stuff_Ctrl_Grp|Mimic_Rig:Tongue_Stuff_Ctrl" 
-		"Tw_Envelope" " -k 1 1"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Tongue_Stuff_Ctrl_Grp|Mimic_Rig:Tongue_Stuff_Ctrl" 
-		"Tw_Start_Angle" " -k 1 0"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Tongue_Stuff_Ctrl_Grp|Mimic_Rig:Tongue_Stuff_Ctrl" 
-		"Tw_End_Angle" " -k 1 100"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_02_Ctrl_Grp|Mimic_Rig:Ribbon_02_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_02_Ctrl" 
-		"translate" " -type \"double3\" 0.24461992898536153 -0.020242995215829264 0.11796771234738535"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_02_Ctrl_Grp|Mimic_Rig:Ribbon_02_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_02_Ctrl" 
-		"rotate" " -type \"double3\" 9.31240416524643422 25.18492336533905984 30.40648857624015378"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_03_Ctrl_Grp|Mimic_Rig:Ribbon_03_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_03_Ctrl" 
-		"rotate" " -type \"double3\" -25.90453476172716663 -23.27294149891795527 -36.2023131697072813"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_04_Ctrl_Grp|Mimic_Rig:Ribbon_04_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_04_Ctrl" 
-		"translate" " -type \"double3\" -0.39020453784933007 0.13781291875799823 -0.050655190115084431"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_04_Ctrl_Grp|Mimic_Rig:Ribbon_04_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_04_Ctrl" 
-		"rotate" " -type \"double3\" -60.14786540973311446 -31.34168929164359696 57.68283331912007128"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_05_Ctrl_Grp|Mimic_Rig:Ribbon_05_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_05_Ctrl" 
-		"translate" " -type \"double3\" -0.18883660598418661 0.20517322275960886 0.061177466515841744"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_05_Ctrl_Grp|Mimic_Rig:Ribbon_05_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_05_Ctrl" 
-		"rotate" " -type \"double3\" -29.02479065459883856 -66.06562114309691935 -5.86237788818700167"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_06_Ctrl_Grp|Mimic_Rig:Ribbon_06_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_06_Ctrl" 
-		"translate" " -type \"double3\" -0.32952873532944504 0.087216176147375604 -0.10631817498256187"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_06_Ctrl_Grp|Mimic_Rig:Ribbon_06_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_06_Ctrl" 
-		"rotate" " -type \"double3\" 8.31424345558181521 -7.99239398306819915 68.06647261484599198"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_07_Ctrl_Grp|Mimic_Rig:Ribbon_07_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_07_Ctrl" 
-		"rotate" " -type \"double3\" 73.48638764281548674 -32.24810527905648172 7.92940863635706972"
-		
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Ribbon_08_Ctrl_Grp|Mimic_Rig:Ribbon_08_Ctrl_Offset_Grp|Mimic_Rig:Ribbon_08_Ctrl" 
-		"rotate" " -type \"double3\" -29.07314976730054212 -55.1457121378218531 97.64166539869162875";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Dragon_RigRN";
-	rename -uid "099CC9B0-4855-182E-4827-ABBD489CEC02";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Dragon_RigRN"
-		"Dragon_RigRN" 0
-		"Dragon_RigRN" 10
-		2 "|Dragon_Rig:Dragon" "visibility" " 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl" 
-		"translate" " -type \"double3\" 3.04677041837724261 0 6.69581780208345467"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 -126.14116822635348569 0"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl" 
-		"scale" " -type \"double3\" 0.2647168700903047 0.2647168700903047 0.2647168700903047"
-		
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl" 
-		"Wing_Flap_Effect" " -k 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Left_Arm_Controls|Dragon_Rig:L_Arm_IKFK_Ctrl_Grp|Dragon_Rig:L_Arm_IKFK_Ctrl" 
-		"Wing_Flap_Animation" " -k 1 38.6"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl" 
-		"Wing_Flap_Effect" " -k 1 1"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Arm_Controls|Dragon_Rig:Right_Arm_Controls|Dragon_Rig:R_Arm_IKFK_Ctrl_Grp|Dragon_Rig:R_Arm_IKFK_Ctrl" 
-		"Wing_Flap_Animation" " -k 1 38.6"
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Left_Leg_Controls|Dragon_Rig:Left_Leg_IK|Dragon_Rig:L_Leg_03_IK_Ctrl_Grp|Dragon_Rig:L_Leg_03_IK_Ctrl" 
-		"rotate" " -type \"double3\" -61.30976958506408181 9.17552063779239369 -36.88918133305039504"
-		
-		2 "|Dragon_Rig:Dragon|Dragon_Rig:Controls|Dragon_Rig:Transform_Ctrl_Grp|Dragon_Rig:Transform_Ctrl|Dragon_Rig:COG_Ctrl_Grp|Dragon_Rig:COG_Ctrl|Dragon_Rig:Leg_Controls|Dragon_Rig:Right_Leg_Controls|Dragon_Rig:Right_Leg_IK|Dragon_Rig:R_Leg_03_IK_Ctrl_Grp|Dragon_Rig:R_Leg_03_IK_Ctrl" 
-		"rotate" " -type \"double3\" 92.46244080239353025 -16.95571714735460489 -49.00636607491164654";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "Clock_RigRN";
-	rename -uid "19E55BD6-4465-2684-1D0F-E1B497169FFA";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Clock_RigRN"
-		"Clock_RigRN" 0
-		"Clock_RigRN" 3
-		2 "|Clock_Rig:Clock" "visibility" " 0"
-		2 "|Clock_Rig:Clock|Clock_Rig:Controls|Clock_Rig:Transform_Ctrl_Grp|Clock_Rig:Transform_Ctrl" 
-		"translate" " -type \"double3\" -2.45395910629459646 0 7.64206498736610484"
-		2 "|Clock_Rig:Clock|Clock_Rig:Controls|Clock_Rig:Transform_Ctrl_Grp|Clock_Rig:Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 -83.88629228497424606 0";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "WD_BedRN";
-	rename -uid "A5FE3FB8-4D5E-1950-58FA-8A8FB166AC89";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"WD_BedRN"
-		"WD_BedRN" 0
-		"WD_BedRN" 2
-		0 "|WD_Bed:Bed_Frame" "|Bed" "-s -r "
-		0 "|WD_Bed:Mattress_Pillow" "|Bed" "-s -r ";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "sharedReferenceNode";
-	rename -uid "B46168A8-46C5-4F9D-818A-C0AD534A565E";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"sharedReferenceNode";
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "3AB1248E-4BB2-72E0-B75D-2E86F5C5C123";
 createNode reference -n "groundfernRN";
@@ -33099,37 +26787,271 @@ createNode reference -n "groundfernRN";
 		2 "|groundfern:Fern2" "scale" " -type \"double3\" 15 15 15";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "DragonGateCaveSetRN";
+	rename -uid "04887DF7-4389-3A90-9660-A4BF12364F9A";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"DragonGateCaveSetRN"
+		"DragonGateCaveSet:roundedRocksRN" 0
+		"DragonGateCaveSet:DragonGateLightingRN" 0
+		"DragonGateCaveSet:Stalagmite_2RN" 0
+		"DragonGateCaveSet:BonesRN" 0
+		"DragonGateCaveSet:Stalagmite_1RN" 0
+		"DragonGateCaveSet:DragonGateRN" 0
+		"DragonGateCaveSet:Emergency_ButtonRN" 0
+		"DragonGateCaveSet:Material_RefRN" 0
+		"DragonGateCaveSet:DragonGateTorchRN" 0
+		"DragonGateCaveSet:Large_BoulderRN" 0
+		"DragonGateCaveSetRN" 0
+		"DragonGateCaveSet:DragonGateLightingRN" 13
+		0 "|DragonGateCaveSet:DragonGateLighting:TestCam_01" "|Lighting_Stuff" "-s -r "
+		
+		0 "|DragonGateCaveSet:DragonGateLighting:TestCam_02" "|Lighting_Stuff" "-s -r "
+		
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight3" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight8" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight9" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight1" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight10" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight11" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight12" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight13" "|Lighting_Stuff" 
+		"-s -r "
+		0 "|DragonGateCaveSet:DragonGateLighting:pSphere1" "|Lighting_Stuff" "-s -r "
+		
+		0 "|DragonGateCaveSet:DragonGateLighting:pSphere2" "|Lighting_Stuff" "-s -r "
+		
+		0 "|DragonGateCaveSet:DragonGateLighting:aiAreaLight14" "|Lighting_Stuff" 
+		"-s -r "
+		"DragonGateCaveSet:Emergency_ButtonRN" 5
+		2 "DragonGateCaveSet:Emergency_Button:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_Cover_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_ButtonBase_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_ButtonBase_Mat_Metallic.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_Button_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/EmergencyButton/Emergency_Button_Button_Mat_Metallic.1001.png\""
+		
+		"DragonGateCaveSetRN" 7
+		2 "|DragonGateCaveSet:CaveSet" "visibility" " -av 1"
+		2 "|DragonGateCaveSet:CaveSet" "translate" " -type \"double3\" -11.77535559256889464 4.06730080541616879 14.37072009687280527"
+		
+		2 "|DragonGateCaveSet:CaveSet" "rotate" " -type \"double3\" 0 -179.99999999999994316 0"
+		
+		2 "|DragonGateCaveSet:CaveSet" "scale" " -type \"double3\" 1 1 1"
+		2 "|DragonGateCaveSet:CaveSet" "rotatePivot" " -type \"double3\" 0 -4.08284149169921839 0"
+		
+		2 "|DragonGateCaveSet:CaveSet" "scalePivot" " -type \"double3\" 0 -4.08284149169921839 0"
+		
+		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1]" ""
+		"DragonGateCaveSet:Material_RefRN" 38
+		2 "DragonGateCaveSet:Material_Ref:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_Painted_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file1" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file3" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file2" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file4" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file1" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file3" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file2" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file4" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file9" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file1" 
+		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file3" 
+		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file2" 
+		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file4" 
+		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file10" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file11" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file12" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file13" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file14" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Metallic.png\"";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -av -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".o" 24;
+	setAttr -av -k on ".unw" 24;
+	setAttr -av -k on ".etw";
+	setAttr -av -k on ".tps";
+	setAttr -av -k on ".tms";
 select -ne :hardwareRenderingGlobals;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
+	setAttr -k on ".hwi";
+	setAttr -av ".ta";
+	setAttr -av ".tq";
+	setAttr -av ".etmr";
+	setAttr -av ".tmr";
+	setAttr -av ".aoon";
+	setAttr -av ".aoam";
+	setAttr -av ".aora";
+	setAttr -k on ".hff";
+	setAttr -av -k on ".hfd";
+	setAttr -av -k on ".hfs";
+	setAttr -av -k on ".hfe";
+	setAttr -av ".hfc";
+	setAttr -av -k on ".hfcr";
+	setAttr -av -k on ".hfcg";
+	setAttr -av -k on ".hfcb";
+	setAttr -av -k on ".hfa";
+	setAttr -av ".mbe";
+	setAttr -av -k on ".mbsof";
+	setAttr -k on ".blen";
+	setAttr -k on ".blat";
+	setAttr -av ".msaa";
+	setAttr ".dli" 1;
 	setAttr ".fprt" yes;
+	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 276 ".st";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 85 ".st";
+	setAttr -cb on ".an";
+	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 select -ne :defaultShaderList1;
-	setAttr -s 82 ".s";
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 55 ".s";
 select -ne :postProcessList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 131 ".u";
+	setAttr -s 143 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 18 ".r";
+	setAttr -k on ".ihi";
+	setAttr -s 14 ".r";
 select -ne :lightList1;
-	setAttr -s 5 ".l";
+	setAttr -s 11 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 57 ".tx";
+	setAttr -s 122 ".tx";
 select -ne :standardSurface1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
+	setAttr ".sr" 0.5;
+select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
 	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr -s 94 ".dsm";
-	setAttr ".ro" yes;
-	setAttr -s 114 ".gn";
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".bbx";
+	setAttr -k on ".vwm";
+	setAttr -k on ".tpv";
+	setAttr -k on ".uit";
+	setAttr -s 42 ".dsm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
+	setAttr -s 3 ".gn";
 	setAttr -s 17 ".aovs";
 	setAttr ".aovs[0].aov_name" -type "string" "ID";
 	setAttr ".aovs[1].aov_name" -type "string" "Z";
@@ -33148,19 +27070,21 @@ select -ne :initialShadingGroup;
 	setAttr ".aovs[15].aov_name" -type "string" "rim_light";
 	setAttr ".aovs[16].aov_name" -type "string" "indirect";
 	setAttr ".aovs[17].aov_name" -type "string" "CNormals";
-	setAttr ".aal" -type "attributeAlias" {"ai_aov_ID","aiCustomAOVs[0].aovName","ai_aov_coat_albedo"
-		,"aiCustomAOVs[10].aovName","ai_aov_denoise_albedo","aiCustomAOVs[11].aovName","ai_aov_specular_albedo"
-		,"aiCustomAOVs[12].aovName","ai_aov_Base_Color","aiCustomAOVs[13].aovName","ai_aov_diffuse_albedo"
-		,"aiCustomAOVs[14].aovName","ai_aov_rim_light","aiCustomAOVs[15].aovName","ai_aov_indirect"
-		,"aiCustomAOVs[16].aovName","ai_aov_CNormals","aiCustomAOVs[17].aovName","ai_aov_Z"
-		,"aiCustomAOVs[1].aovName","ai_aov_Alpha","aiCustomAOVs[2].aovName","ai_aov_N","aiCustomAOVs[3].aovName"
-		,"ai_aov_Noise","aiCustomAOVs[4]","ai_aov_crypto_object","aiCustomAOVs[5].aovName"
-		,"ai_aov_crypto_material","aiCustomAOVs[6].aovName","ai_aov_crypto_asset","aiCustomAOVs[7].aovName"
-		,"ai_aov_LightsPosAlpha","aiCustomAOVs[8].aovName","ai_aov_albedo","aiCustomAOVs[9]"
-		} ;
+	setAttr ".aal" -type "attributeAlias" 36 "ai_aov_ID" "aiCustomAOVs[0].aovName" "ai_aov_coat_albedo" "aiCustomAOVs[10].aovName" "ai_aov_denoise_albedo" "aiCustomAOVs[11].aovName" "ai_aov_specular_albedo" "aiCustomAOVs[12].aovName" "ai_aov_Base_Color" "aiCustomAOVs[13].aovName" "ai_aov_diffuse_albedo" "aiCustomAOVs[14].aovName" "ai_aov_rim_light" "aiCustomAOVs[15].aovName" "ai_aov_indirect" "aiCustomAOVs[16].aovName" "ai_aov_CNormals" "aiCustomAOVs[17].aovName" "ai_aov_Z" "aiCustomAOVs[1].aovName" "ai_aov_Alpha" "aiCustomAOVs[2].aovName" "ai_aov_N" "aiCustomAOVs[3].aovName" "ai_aov_Noise" "aiCustomAOVs[4]" "ai_aov_crypto_object" "aiCustomAOVs[5].aovName" "ai_aov_crypto_material" "aiCustomAOVs[6].aovName" "ai_aov_crypto_asset" "aiCustomAOVs[7].aovName" "ai_aov_LightsPosAlpha" "aiCustomAOVs[8].aovName" "ai_aov_albedo" "aiCustomAOVs[9]" ;
 select -ne :initialParticleSE;
 	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
-	setAttr ".ro" yes;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
 	setAttr -s 17 ".aovs";
 	setAttr ".aovs[0].aov_name" -type "string" "ID";
 	setAttr ".aovs[1].aov_name" -type "string" "Z";
@@ -33179,36 +27103,128 @@ select -ne :initialParticleSE;
 	setAttr ".aovs[15].aov_name" -type "string" "rim_light";
 	setAttr ".aovs[16].aov_name" -type "string" "indirect";
 	setAttr ".aovs[17].aov_name" -type "string" "CNormals";
-	setAttr ".aal" -type "attributeAlias" {"ai_aov_ID","aiCustomAOVs[0].aovName","ai_aov_coat_albedo"
-		,"aiCustomAOVs[10].aovName","ai_aov_denoise_albedo","aiCustomAOVs[11].aovName","ai_aov_specular_albedo"
-		,"aiCustomAOVs[12].aovName","ai_aov_Base_Color","aiCustomAOVs[13].aovName","ai_aov_diffuse_albedo"
-		,"aiCustomAOVs[14].aovName","ai_aov_rim_light","aiCustomAOVs[15].aovName","ai_aov_indirect"
-		,"aiCustomAOVs[16].aovName","ai_aov_CNormals","aiCustomAOVs[17].aovName","ai_aov_Z"
-		,"aiCustomAOVs[1].aovName","ai_aov_Alpha","aiCustomAOVs[2].aovName","ai_aov_N","aiCustomAOVs[3].aovName"
-		,"ai_aov_Noise","aiCustomAOVs[4]","ai_aov_crypto_object","aiCustomAOVs[5].aovName"
-		,"ai_aov_crypto_material","aiCustomAOVs[6].aovName","ai_aov_crypto_asset","aiCustomAOVs[7].aovName"
-		,"ai_aov_LightsPosAlpha","aiCustomAOVs[8].aovName","ai_aov_albedo","aiCustomAOVs[9]"
-		} ;
-select -ne :initialMaterialInfo;
+	setAttr ".aal" -type "attributeAlias" 36 "ai_aov_ID" "aiCustomAOVs[0].aovName" "ai_aov_coat_albedo" "aiCustomAOVs[10].aovName" "ai_aov_denoise_albedo" "aiCustomAOVs[11].aovName" "ai_aov_specular_albedo" "aiCustomAOVs[12].aovName" "ai_aov_Base_Color" "aiCustomAOVs[13].aovName" "ai_aov_diffuse_albedo" "aiCustomAOVs[14].aovName" "ai_aov_rim_light" "aiCustomAOVs[15].aovName" "ai_aov_indirect" "aiCustomAOVs[16].aovName" "ai_aov_CNormals" "aiCustomAOVs[17].aovName" "ai_aov_Z" "aiCustomAOVs[1].aovName" "ai_aov_Alpha" "aiCustomAOVs[2].aovName" "ai_aov_N" "aiCustomAOVs[3].aovName" "ai_aov_Noise" "aiCustomAOVs[4]" "ai_aov_crypto_object" "aiCustomAOVs[5].aovName" "ai_aov_crypto_material" "aiCustomAOVs[6].aovName" "ai_aov_crypto_asset" "aiCustomAOVs[7].aovName" "ai_aov_LightsPosAlpha" "aiCustomAOVs[8].aovName" "ai_aov_albedo" "aiCustomAOVs[9]" ;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
-	setAttr ".ren" -type "string" "arnold";
-	setAttr ".outf" 51;
-	setAttr ".imfkey" -type "string" "exr";
-	setAttr ".an" yes;
-	setAttr ".fs" 0;
-	setAttr ".ef" 48;
-	setAttr ".pff" yes;
-	setAttr ".ifp" -type "string" "<Version>/HD/<RenderPass>/<Scene>_<RenderPass>";
-	setAttr ".rv" -type "string" "ExtraAssetsTest_01";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k on ".macc";
+	setAttr -av -k on ".macd";
+	setAttr -av -k on ".macq";
+	setAttr -av -k on ".mcfr";
+	setAttr -cb on ".ifg";
+	setAttr -av -k on ".clip";
+	setAttr -av -k on ".edm";
+	setAttr -av -k on ".edl";
+	setAttr -av -cb on ".ren" -type "string" "arnold";
+	setAttr -av -k on ".esr";
+	setAttr -av -k on ".ors";
+	setAttr -cb on ".sdf";
+	setAttr -av -k on ".outf" 51;
+	setAttr -av -cb on ".imfkey" -type "string" "exr";
+	setAttr -av -k on ".gama";
+	setAttr -k on ".exrc";
+	setAttr -k on ".expt";
+	setAttr -av -k on ".an" yes;
+	setAttr -cb on ".ar";
+	setAttr -av -k on ".fs" 0;
+	setAttr -av -k on ".ef" 48;
+	setAttr -av -k on ".bfs";
+	setAttr -av -cb on ".me";
+	setAttr -cb on ".se";
+	setAttr -av -k on ".be";
+	setAttr -av -cb on ".ep";
+	setAttr -av -k on ".fec";
+	setAttr -av -k on ".ofc";
+	setAttr -cb on ".ofe";
+	setAttr -cb on ".efe";
+	setAttr -cb on ".oft";
+	setAttr -cb on ".umfn";
+	setAttr -cb on ".ufe";
+	setAttr -av -cb on ".pff" yes;
+	setAttr -av -cb on ".peie";
+	setAttr -av -cb on ".ifp" -type "string" "<Version>/HD/<RenderPass>/<Scene>_<RenderPass>";
+	setAttr -k on ".rv" -type "string" "ExtraAssetsTest_01";
+	setAttr -av -k on ".comp";
+	setAttr -av -k on ".cth";
+	setAttr -av -k on ".soll";
+	setAttr -cb on ".sosl";
+	setAttr -av -k on ".rd";
+	setAttr -av -k on ".lp";
+	setAttr -av -k on ".sp";
+	setAttr -av -k on ".shs";
+	setAttr -av -k on ".lpr";
+	setAttr -cb on ".gv";
+	setAttr -cb on ".sv";
+	setAttr -av -k on ".mm";
+	setAttr -av -k on ".npu";
+	setAttr -av -k on ".itf";
+	setAttr -av -k on ".shp";
+	setAttr -cb on ".isp";
+	setAttr -av -k on ".uf";
+	setAttr -av -k on ".oi";
+	setAttr -av -k on ".rut";
+	setAttr -av -k on ".mot";
+	setAttr -av -cb on ".mb";
+	setAttr -av -k on ".mbf";
+	setAttr -av -k on ".mbso";
+	setAttr -av -k on ".mbsc";
+	setAttr -av -k on ".afp";
+	setAttr -av -k on ".pfb";
+	setAttr -av -k on ".pram";
+	setAttr -av -k on ".poam";
+	setAttr -av -k on ".prlm";
+	setAttr -av -k on ".polm";
+	setAttr -av -cb on ".prm";
+	setAttr -av -cb on ".pom";
+	setAttr -cb on ".pfrm";
+	setAttr -cb on ".pfom";
+	setAttr -av -k on ".bll";
+	setAttr -av -k on ".bls";
+	setAttr -av -k on ".smv";
+	setAttr -av -k on ".ubc";
+	setAttr -av -k on ".mbc";
+	setAttr -cb on ".mbt";
+	setAttr -av -k on ".udbx";
+	setAttr -av -k on ".smc";
+	setAttr -av -k on ".kmv";
+	setAttr -cb on ".isl";
+	setAttr -cb on ".ism";
+	setAttr -cb on ".imb";
+	setAttr -av -k on ".rlen";
+	setAttr -av -k on ".frts";
+	setAttr -av -k on ".tlwd";
+	setAttr -av -k on ".tlht";
+	setAttr -av -k on ".jfc";
+	setAttr -cb on ".rsb";
+	setAttr -av -k on ".ope";
+	setAttr -av -k on ".oppf";
+	setAttr -av -k on ".rcp";
+	setAttr -av -k on ".icp";
+	setAttr -av -k on ".ocp";
+	setAttr -cb on ".hbl";
 	setAttr ".dss" -type "string" "standardSurface1";
 select -ne :defaultResolution;
-	setAttr ".w" 1920;
-	setAttr ".h" 1080;
-	setAttr ".pa" 1;
-	setAttr ".dar" 1.7769999504089355;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".w" 1920;
+	setAttr -av -k on ".h" 1080;
+	setAttr -av -k on ".pa" 1;
+	setAttr -av -k on ".al";
+	setAttr -av -k on ".dar" 1.7769999504089355;
+	setAttr -av -k on ".ldar";
+	setAttr -av -k on ".dpi";
+	setAttr -av -k on ".off";
+	setAttr -av -k on ".fld";
+	setAttr -av -k on ".zsl";
+	setAttr -av -k on ".isu";
+	setAttr -av -k on ".pdu";
 select -ne :defaultLightSet;
-	setAttr -s 5 ".dsm";
+	setAttr -s 11 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -33219,10 +27235,45 @@ select -ne :defaultColorMgtGlobals;
 	setAttr ".otn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 	setAttr ".potn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 select -ne :hardwareRenderGlobals;
-	setAttr ".ctrs" 256;
-	setAttr ".btrs" 512;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k off -cb on ".ctrs" 256;
+	setAttr -av -k off -cb on ".btrs" 512;
+	setAttr -av -k off -cb on ".fbfm";
+	setAttr -av -k off -cb on ".ehql";
+	setAttr -av -k off -cb on ".eams";
+	setAttr -av -k off -cb on ".eeaa";
+	setAttr -av -k off -cb on ".engm";
+	setAttr -av -k off -cb on ".mes";
+	setAttr -av -k off -cb on ".emb";
+	setAttr -av -k off -cb on ".mbbf";
+	setAttr -av -k off -cb on ".mbs";
+	setAttr -av -k off -cb on ".trm";
+	setAttr -av -k off -cb on ".tshc";
+	setAttr -av -k off -cb on ".enpt";
+	setAttr -av -k off -cb on ".clmt";
+	setAttr -av -k off -cb on ".tcov";
+	setAttr -av -k off -cb on ".lith";
+	setAttr -av -k off -cb on ".sobc";
+	setAttr -av -k off -cb on ".cuth";
+	setAttr -av -k off -cb on ".hgcd";
+	setAttr -av -k off -cb on ".hgci";
+	setAttr -av -k off -cb on ".mgcs";
+	setAttr -av -k off -cb on ".twa";
+	setAttr -av -k off -cb on ".twz";
+	setAttr -k on ".hwcc";
+	setAttr -k on ".hwdp";
+	setAttr -k on ".hwql";
+	setAttr -k on ".hwfr";
+	setAttr -k on ".soll";
+	setAttr -k on ".sosl";
+	setAttr -k on ".bswa";
+	setAttr -k on ".shml";
+	setAttr -k on ".hwel";
 select -ne :ikSystem;
-	setAttr -s 7 ".sol";
+	setAttr -s 2 ".sol";
 connectAttr "Transform_Ctrl_Master_Scale.o" "SkeletonRN.phl[1]";
 connectAttr "Transform_Ctrl_Body_Poly.o" "SkeletonRN.phl[2]";
 connectAttr "Transform_Ctrl_translateX.o" "SkeletonRN.phl[3]";
@@ -35163,377 +29214,7 @@ connectAttr "Chest_Redundancy_Ctrl_scaleY.o" "SkeletonRN.phl[1937]";
 connectAttr "Chest_Redundancy_Ctrl_scaleZ.o" "SkeletonRN.phl[1938]";
 connectAttr "Chest_Redundancy_Ctrl_Operating_Space.o" "SkeletonRN.phl[1939]";
 connectAttr "Chest_Redundancy_Ctrl_visibility.o" "SkeletonRN.phl[1940]";
-connectAttr "DragonGateCaveSetRN.phl[319]" "SkeletonRN.phl[1941]";
-connectAttr "DragonGateCaveSetRN.phl[320]" "SkeletonRN.phl[1942]";
-connectAttr "DragonGateCaveSetRN.phl[321]" "SkeletonRN.phl[1943]";
-connectAttr "DragonGateCaveSetRN.phl[322]" "SkeletonRN.phl[1944]";
-connectAttr "DragonGateCaveSetRN.phl[323]" "SkeletonRN.phl[1945]";
-connectAttr "DragonGateCaveSetRN.phl[324]" "SkeletonRN.phl[1946]";
-connectAttr "DragonGateCaveSetRN.phl[325]" "SkeletonRN.phl[1947]";
-connectAttr "DragonGateCaveSetRN.phl[326]" "SkeletonRN.phl[1948]";
-connectAttr "DragonGateCaveSetRN.phl[327]" "SkeletonRN.phl[1949]";
-connectAttr "DragonGateCaveSetRN.phl[328]" "SkeletonRN.phl[1950]";
-connectAttr "DragonGateCaveSetRN.phl[329]" "SkeletonRN.phl[1951]";
-connectAttr "DragonGateCaveSetRN.phl[330]" "SkeletonRN.phl[1952]";
-connectAttr "DragonGateCaveSetRN.phl[331]" "SkeletonRN.phl[1953]";
-connectAttr "DragonGateCaveSetRN.phl[332]" "SkeletonRN.phl[1954]";
-connectAttr "DragonGateCaveSetRN.phl[333]" "SkeletonRN.phl[1955]";
-connectAttr "DragonGateCaveSetRN.phl[334]" "SkeletonRN.phl[1956]";
-connectAttr "DragonGateCaveSetRN.phl[335]" "SkeletonRN.phl[1957]";
-connectAttr "DragonGateCaveSetRN.phl[336]" "SkeletonRN.phl[1958]";
-connectAttr "DragonGateCaveSetRN.phl[337]" "SkeletonRN.phl[1959]";
-connectAttr "DragonGateCaveSetRN.phl[338]" "SkeletonRN.phl[1960]";
-connectAttr "DragonGateCaveSetRN.phl[339]" "SkeletonRN.phl[1961]";
-connectAttr "DragonGateCaveSetRN.phl[340]" "SkeletonRN.phl[1962]";
-connectAttr "DragonGateCaveSetRN.phl[341]" "SkeletonRN.phl[1963]";
-connectAttr "DragonGateCaveSetRN.phl[342]" "SkeletonRN.phl[1964]";
-connectAttr "DragonGateCaveSetRN.phl[343]" "SkeletonRN.phl[1965]";
-connectAttr "DragonGateCaveSetRN.phl[26]" "SkeletonRN.phl[1966]";
-connectAttr "DragonGateCaveSetRN.phl[344]" "SkeletonRN.phl[1967]";
-connectAttr "DragonGateCaveSetRN.phl[345]" "SkeletonRN.phl[1968]";
-connectAttr "DragonGateCaveSetRN.phl[346]" "SkeletonRN.phl[1969]";
-connectAttr "DragonGateCaveSetRN.phl[347]" "SkeletonRN.phl[1970]";
-connectAttr "DragonGateCaveSetRN.phl[348]" "SkeletonRN.phl[1971]";
-connectAttr "DragonGateCaveSetRN.phl[349]" "SkeletonRN.phl[1972]";
-connectAttr "DragonGateCaveSetRN.phl[350]" "SkeletonRN.phl[1973]";
-connectAttr "DragonGateCaveSetRN.phl[351]" "SkeletonRN.phl[1974]";
-connectAttr "DragonGateCaveSetRN.phl[352]" "SkeletonRN.phl[1975]";
-connectAttr "DragonGateCaveSetRN.phl[353]" "SkeletonRN.phl[1976]";
-connectAttr "DragonGateCaveSetRN.phl[354]" "SkeletonRN.phl[1977]";
-connectAttr "DragonGateCaveSetRN.phl[355]" "SkeletonRN.phl[1978]";
-connectAttr "DragonGateCaveSetRN.phl[356]" "SkeletonRN.phl[1979]";
-connectAttr "DragonGateCaveSetRN.phl[357]" "SkeletonRN.phl[1980]";
-connectAttr "DragonGateCaveSetRN.phl[358]" "SkeletonRN.phl[1981]";
-connectAttr "DragonGateCaveSetRN.phl[359]" "SkeletonRN.phl[1982]";
-connectAttr "DragonGateCaveSetRN.phl[360]" "SkeletonRN.phl[1983]";
-connectAttr "DragonGateCaveSetRN.phl[361]" "SkeletonRN.phl[1984]";
-connectAttr "DragonGateCaveSetRN.phl[362]" "SkeletonRN.phl[1985]";
-connectAttr "DragonGateCaveSetRN.phl[363]" "SkeletonRN.phl[1986]";
-connectAttr "DragonGateCaveSetRN.phl[364]" "SkeletonRN.phl[1987]";
-connectAttr "DragonGateCaveSetRN.phl[365]" "SkeletonRN.phl[1988]";
-connectAttr "DragonGateCaveSetRN.phl[366]" "SkeletonRN.phl[1989]";
-connectAttr "DragonGateCaveSetRN.phl[367]" "SkeletonRN.phl[1990]";
-connectAttr "DragonGateCaveSetRN.phl[368]" "SkeletonRN.phl[1991]";
-connectAttr "DragonGateCaveSetRN.phl[369]" "SkeletonRN.phl[1992]";
-connectAttr "DragonGateCaveSetRN.phl[370]" "SkeletonRN.phl[1993]";
-connectAttr "DragonGateCaveSetRN.phl[371]" "SkeletonRN.phl[1994]";
-connectAttr "DragonGateCaveSetRN.phl[372]" "SkeletonRN.phl[1995]";
-connectAttr "DragonGateCaveSetRN.phl[373]" "SkeletonRN.phl[1996]";
-connectAttr "DragonGateCaveSetRN.phl[374]" "SkeletonRN.phl[1997]";
-connectAttr "DragonGateCaveSetRN.phl[375]" "SkeletonRN.phl[1998]";
-connectAttr "DragonGateCaveSetRN.phl[376]" "SkeletonRN.phl[1999]";
-connectAttr "DragonGateCaveSetRN.phl[377]" "SkeletonRN.phl[2000]";
-connectAttr "DragonGateCaveSetRN.phl[378]" "SkeletonRN.phl[2001]";
-connectAttr "DragonGateCaveSetRN.phl[379]" "SkeletonRN.phl[2002]";
-connectAttr "DragonGateCaveSetRN.phl[380]" "SkeletonRN.phl[2003]";
-connectAttr "DragonGateCaveSetRN.phl[381]" "SkeletonRN.phl[2004]";
-connectAttr "DragonGateCaveSetRN.phl[382]" "SkeletonRN.phl[2005]";
-connectAttr "DragonGateCaveSetRN.phl[383]" "SkeletonRN.phl[2006]";
-connectAttr "DragonGateCaveSetRN.phl[384]" "SkeletonRN.phl[2007]";
-connectAttr "DragonGateCaveSetRN.phl[385]" "SkeletonRN.phl[2008]";
-connectAttr "DragonGateCaveSetRN.phl[386]" "SkeletonRN.phl[2009]";
-connectAttr "DragonGateCaveSetRN.phl[387]" "SkeletonRN.phl[2010]";
-connectAttr "DragonGateCaveSetRN.phl[388]" "SkeletonRN.phl[2011]";
-connectAttr "DragonGateCaveSetRN.phl[389]" "SkeletonRN.phl[2012]";
-connectAttr "DragonGateCaveSetRN.phl[390]" "SkeletonRN.phl[2013]";
-connectAttr "DragonGateCaveSetRN.phl[391]" "SkeletonRN.phl[2014]";
-connectAttr "DragonGateCaveSetRN.phl[392]" "SkeletonRN.phl[2015]";
-connectAttr "DragonGateCaveSetRN.phl[393]" "SkeletonRN.phl[2016]";
-connectAttr "DragonGateCaveSetRN.phl[394]" "SkeletonRN.phl[2017]";
-connectAttr "DragonGateCaveSetRN.phl[395]" "SkeletonRN.phl[2018]";
-connectAttr "DragonGateCaveSetRN.phl[396]" "SkeletonRN.phl[2019]";
-connectAttr "DragonGateCaveSetRN.phl[397]" "SkeletonRN.phl[2020]";
-connectAttr "DragonGateCaveSetRN.phl[398]" "SkeletonRN.phl[2021]";
-connectAttr "DragonGateCaveSetRN.phl[399]" "SkeletonRN.phl[2022]";
-connectAttr "DragonGateCaveSetRN.phl[400]" "SkeletonRN.phl[2023]";
-connectAttr "DragonGateCaveSetRN.phl[401]" "SkeletonRN.phl[2024]";
-connectAttr "DragonGateCaveSetRN.phl[402]" "SkeletonRN.phl[2025]";
-connectAttr "DragonGateCaveSetRN.phl[403]" "SkeletonRN.phl[2026]";
-connectAttr "DragonGateCaveSetRN.phl[404]" "SkeletonRN.phl[2027]";
-connectAttr "DragonGateCaveSetRN.phl[405]" "SkeletonRN.phl[2028]";
-connectAttr "DragonGateCaveSetRN.phl[406]" "SkeletonRN.phl[2029]";
-connectAttr "DragonGateCaveSetRN.phl[407]" "SkeletonRN.phl[2030]";
-connectAttr "DragonGateCaveSetRN.phl[408]" "SkeletonRN.phl[2031]";
-connectAttr "DragonGateCaveSetRN.phl[409]" "SkeletonRN.phl[2032]";
-connectAttr "DragonGateCaveSetRN.phl[410]" "SkeletonRN.phl[2033]";
-connectAttr "DragonGateCaveSetRN.phl[411]" "SkeletonRN.phl[2034]";
-connectAttr "DragonGateCaveSetRN.phl[412]" "SkeletonRN.phl[2035]";
-connectAttr "DragonGateCaveSetRN.phl[413]" "SkeletonRN.phl[2036]";
-connectAttr "DragonGateCaveSetRN.phl[414]" "SkeletonRN.phl[2037]";
-connectAttr "DragonGateCaveSetRN.phl[415]" "SkeletonRN.phl[2038]";
-connectAttr "DragonGateCaveSetRN.phl[416]" "SkeletonRN.phl[2039]";
-connectAttr "DragonGateCaveSetRN.phl[417]" "SkeletonRN.phl[2040]";
-connectAttr "DragonGateCaveSetRN.phl[418]" "SkeletonRN.phl[2041]";
-connectAttr "DragonGateCaveSetRN.phl[419]" "SkeletonRN.phl[2042]";
-connectAttr "DragonGateCaveSetRN.phl[420]" "SkeletonRN.phl[2043]";
-connectAttr "DragonGateCaveSetRN.phl[421]" "SkeletonRN.phl[2044]";
-connectAttr "DragonGateCaveSetRN.phl[422]" "SkeletonRN.phl[2045]";
-connectAttr "DragonGateCaveSetRN.phl[423]" "SkeletonRN.phl[2046]";
-connectAttr "DragonGateCaveSetRN.phl[424]" "SkeletonRN.phl[2047]";
-connectAttr "DragonGateCaveSetRN.phl[425]" "SkeletonRN.phl[2048]";
-connectAttr "DragonGateCaveSetRN.phl[426]" "SkeletonRN.phl[2049]";
-connectAttr "DragonGateCaveSetRN.phl[427]" "SkeletonRN.phl[2050]";
-connectAttr "DragonGateCaveSetRN.phl[428]" "SkeletonRN.phl[2051]";
-connectAttr "DragonGateCaveSetRN.phl[429]" "SkeletonRN.phl[2052]";
-connectAttr "DragonGateCaveSetRN.phl[430]" "SkeletonRN.phl[2053]";
-connectAttr "DragonGateCaveSetRN.phl[431]" "SkeletonRN.phl[2054]";
-connectAttr "DragonGateCaveSetRN.phl[432]" "SkeletonRN.phl[2055]";
-connectAttr "DragonGateCaveSetRN.phl[433]" "SkeletonRN.phl[2056]";
-connectAttr "DragonGateCaveSetRN.phl[434]" "SkeletonRN.phl[2057]";
-connectAttr "DragonGateCaveSetRN.phl[435]" "SkeletonRN.phl[2058]";
-connectAttr "DragonGateCaveSetRN.phl[436]" "SkeletonRN.phl[2059]";
-connectAttr "DragonGateCaveSetRN.phl[437]" "SkeletonRN.phl[2060]";
-connectAttr "DragonGateCaveSetRN.phl[438]" "SkeletonRN.phl[2061]";
-connectAttr "DragonGateCaveSetRN.phl[439]" "SkeletonRN.phl[2062]";
-connectAttr "DragonGateCaveSetRN.phl[440]" "SkeletonRN.phl[2063]";
-connectAttr "DragonGateCaveSetRN.phl[441]" "SkeletonRN.phl[2064]";
-connectAttr "DragonGateCaveSetRN.phl[442]" "SkeletonRN.phl[2065]";
-connectAttr "DragonGateCaveSetRN.phl[443]" "SkeletonRN.phl[2066]";
-connectAttr "DragonGateCaveSetRN.phl[444]" "SkeletonRN.phl[2067]";
-connectAttr "DragonGateCaveSetRN.phl[445]" "SkeletonRN.phl[2068]";
-connectAttr "DragonGateCaveSetRN.phl[446]" "SkeletonRN.phl[2069]";
-connectAttr "DragonGateCaveSetRN.phl[447]" "SkeletonRN.phl[2070]";
-connectAttr "DragonGateCaveSetRN.phl[448]" "SkeletonRN.phl[2071]";
-connectAttr "DragonGateCaveSetRN.phl[449]" "SkeletonRN.phl[2072]";
-connectAttr "DragonGateCaveSetRN.phl[450]" "SkeletonRN.phl[2073]";
-connectAttr "DragonGateCaveSetRN.phl[451]" "SkeletonRN.phl[2074]";
-connectAttr "DragonGateCaveSetRN.phl[452]" "SkeletonRN.phl[2075]";
-connectAttr "DragonGateCaveSetRN.phl[453]" "SkeletonRN.phl[2076]";
-connectAttr "DragonGateCaveSetRN.phl[454]" "SkeletonRN.phl[2077]";
-connectAttr "DragonGateCaveSetRN.phl[455]" "SkeletonRN.phl[2078]";
-connectAttr "DragonGateCaveSetRN.phl[456]" "SkeletonRN.phl[2079]";
-connectAttr "DragonGateCaveSetRN.phl[457]" "SkeletonRN.phl[2080]";
-connectAttr "DragonGateCaveSetRN.phl[458]" "SkeletonRN.phl[2081]";
-connectAttr "DragonGateCaveSetRN.phl[459]" "SkeletonRN.phl[2082]";
-connectAttr "DragonGateCaveSetRN.phl[460]" "SkeletonRN.phl[2083]";
-connectAttr "DragonGateCaveSetRN.phl[461]" "SkeletonRN.phl[2084]";
-connectAttr "DragonGateCaveSetRN.phl[462]" "SkeletonRN.phl[2085]";
-connectAttr "DragonGateCaveSetRN.phl[463]" "SkeletonRN.phl[2086]";
-connectAttr "DragonGateCaveSetRN.phl[464]" "SkeletonRN.phl[2087]";
-connectAttr "DragonGateCaveSetRN.phl[465]" "SkeletonRN.phl[2088]";
-connectAttr "DragonGateCaveSetRN.phl[466]" "SkeletonRN.phl[2089]";
-connectAttr "DragonGateCaveSetRN.phl[467]" "SkeletonRN.phl[2090]";
-connectAttr "DragonGateCaveSetRN.phl[468]" "SkeletonRN.phl[2091]";
-connectAttr "DragonGateCaveSetRN.phl[469]" "SkeletonRN.phl[2092]";
-connectAttr "DragonGateCaveSetRN.phl[470]" "SkeletonRN.phl[2093]";
-connectAttr "DragonGateCaveSetRN.phl[471]" "SkeletonRN.phl[2094]";
-connectAttr "DragonGateCaveSetRN.phl[472]" "SkeletonRN.phl[2095]";
-connectAttr "DragonGateCaveSetRN.phl[473]" "SkeletonRN.phl[2096]";
-connectAttr "DragonGateCaveSetRN.phl[474]" "SkeletonRN.phl[2097]";
-connectAttr "DragonGateCaveSetRN.phl[475]" "SkeletonRN.phl[2098]";
-connectAttr "DragonGateCaveSetRN.phl[476]" "SkeletonRN.phl[2099]";
-connectAttr "DragonGateCaveSetRN.phl[477]" "SkeletonRN.phl[2100]";
-connectAttr "DragonGateCaveSetRN.phl[478]" "SkeletonRN.phl[2101]";
-connectAttr "DragonGateCaveSetRN.phl[479]" "SkeletonRN.phl[2102]";
-connectAttr "DragonGateCaveSetRN.phl[480]" "SkeletonRN.phl[2103]";
-connectAttr "DragonGateCaveSetRN.phl[481]" "SkeletonRN.phl[2104]";
-connectAttr "DragonGateCaveSetRN.phl[482]" "SkeletonRN.phl[2105]";
-connectAttr "DragonGateCaveSetRN.phl[483]" "SkeletonRN.phl[2106]";
-connectAttr "DragonGateCaveSetRN.phl[484]" "SkeletonRN.phl[2107]";
-connectAttr "DragonGateCaveSetRN.phl[485]" "SkeletonRN.phl[2108]";
-connectAttr "DragonGateCaveSetRN.phl[486]" "SkeletonRN.phl[2109]";
-connectAttr "DragonGateCaveSetRN.phl[487]" "SkeletonRN.phl[2110]";
-connectAttr "DragonGateCaveSetRN.phl[488]" "SkeletonRN.phl[2111]";
-connectAttr "DragonGateCaveSetRN.phl[489]" "SkeletonRN.phl[2112]";
-connectAttr "DragonGateCaveSetRN.phl[490]" "SkeletonRN.phl[2113]";
-connectAttr "DragonGateCaveSetRN.phl[491]" "SkeletonRN.phl[2114]";
-connectAttr "DragonGateCaveSetRN.phl[492]" "SkeletonRN.phl[2115]";
-connectAttr "DragonGateCaveSetRN.phl[493]" "SkeletonRN.phl[2116]";
-connectAttr "DragonGateCaveSetRN.phl[494]" "SkeletonRN.phl[2117]";
-connectAttr "DragonGateCaveSetRN.phl[495]" "SkeletonRN.phl[2118]";
-connectAttr "DragonGateCaveSetRN.phl[496]" "SkeletonRN.phl[2119]";
-connectAttr "DragonGateCaveSetRN.phl[497]" "SkeletonRN.phl[2120]";
-connectAttr "DragonGateCaveSetRN.phl[498]" "SkeletonRN.phl[2121]";
-connectAttr "DragonGateCaveSetRN.phl[499]" "SkeletonRN.phl[2122]";
-connectAttr "DragonGateCaveSetRN.phl[500]" "SkeletonRN.phl[2123]";
-connectAttr "DragonGateCaveSetRN.phl[501]" "SkeletonRN.phl[2124]";
-connectAttr "DragonGateCaveSetRN.phl[502]" "SkeletonRN.phl[2125]";
-connectAttr "DragonGateCaveSetRN.phl[503]" "SkeletonRN.phl[2126]";
-connectAttr "DragonGateCaveSetRN.phl[504]" "SkeletonRN.phl[2127]";
-connectAttr "DragonGateCaveSetRN.phl[505]" "SkeletonRN.phl[2128]";
-connectAttr "DragonGateCaveSetRN.phl[506]" "SkeletonRN.phl[2129]";
-connectAttr "DragonGateCaveSetRN.phl[507]" "SkeletonRN.phl[2130]";
-connectAttr "DragonGateCaveSetRN.phl[508]" "SkeletonRN.phl[2131]";
-connectAttr "DragonGateCaveSetRN.phl[509]" "SkeletonRN.phl[2132]";
-connectAttr "DragonGateCaveSetRN.phl[510]" "SkeletonRN.phl[2133]";
-connectAttr "DragonGateCaveSetRN.phl[511]" "SkeletonRN.phl[2134]";
-connectAttr "DragonGateCaveSetRN.phl[512]" "SkeletonRN.phl[2135]";
-connectAttr "DragonGateCaveSetRN.phl[513]" "SkeletonRN.phl[2136]";
-connectAttr "DragonGateCaveSetRN.phl[514]" "SkeletonRN.phl[2137]";
-connectAttr "DragonGateCaveSetRN.phl[515]" "SkeletonRN.phl[2138]";
-connectAttr "DragonGateCaveSetRN.phl[516]" "SkeletonRN.phl[2139]";
-connectAttr "DragonGateCaveSetRN.phl[517]" "SkeletonRN.phl[2140]";
-connectAttr "DragonGateCaveSetRN.phl[518]" "SkeletonRN.phl[2141]";
-connectAttr "DragonGateCaveSetRN.phl[519]" "SkeletonRN.phl[2142]";
-connectAttr "DragonGateCaveSetRN.phl[520]" "SkeletonRN.phl[2143]";
-connectAttr "DragonGateCaveSetRN.phl[521]" "SkeletonRN.phl[2144]";
-connectAttr "DragonGateCaveSetRN.phl[522]" "SkeletonRN.phl[2145]";
-connectAttr "DragonGateCaveSetRN.phl[523]" "SkeletonRN.phl[2146]";
-connectAttr "DragonGateCaveSetRN.phl[524]" "SkeletonRN.phl[2147]";
-connectAttr "DragonGateCaveSetRN.phl[525]" "SkeletonRN.phl[2148]";
-connectAttr "DragonGateCaveSetRN.phl[526]" "SkeletonRN.phl[2149]";
-connectAttr "DragonGateCaveSetRN.phl[527]" "SkeletonRN.phl[2150]";
-connectAttr "DragonGateCaveSetRN.phl[528]" "SkeletonRN.phl[2151]";
-connectAttr "DragonGateCaveSetRN.phl[529]" "SkeletonRN.phl[2152]";
-connectAttr "DragonGateCaveSetRN.phl[530]" "SkeletonRN.phl[2153]";
-connectAttr "DragonGateCaveSetRN.phl[531]" "SkeletonRN.phl[2154]";
-connectAttr "DragonGateCaveSetRN.phl[532]" "SkeletonRN.phl[2155]";
-connectAttr "DragonGateCaveSetRN.phl[533]" "SkeletonRN.phl[2156]";
-connectAttr "DragonGateCaveSetRN.phl[534]" "SkeletonRN.phl[2157]";
-connectAttr "DragonGateCaveSetRN.phl[535]" "SkeletonRN.phl[2158]";
-connectAttr "DragonGateCaveSetRN.phl[536]" "SkeletonRN.phl[2159]";
-connectAttr "DragonGateCaveSetRN.phl[537]" "SkeletonRN.phl[2160]";
-connectAttr "DragonGateCaveSetRN.phl[538]" "SkeletonRN.phl[2161]";
-connectAttr "DragonGateCaveSetRN.phl[539]" "SkeletonRN.phl[2162]";
-connectAttr "DragonGateCaveSetRN.phl[540]" "SkeletonRN.phl[2163]";
-connectAttr "DragonGateCaveSetRN.phl[541]" "SkeletonRN.phl[2164]";
-connectAttr "DragonGateCaveSetRN.phl[542]" "SkeletonRN.phl[2165]";
-connectAttr "DragonGateCaveSetRN.phl[543]" "SkeletonRN.phl[2166]";
-connectAttr "DragonGateCaveSetRN.phl[544]" "SkeletonRN.phl[2167]";
-connectAttr "DragonGateCaveSetRN.phl[545]" "SkeletonRN.phl[2168]";
-connectAttr "DragonGateCaveSetRN.phl[546]" "SkeletonRN.phl[2169]";
-connectAttr "DragonGateCaveSetRN.phl[547]" "SkeletonRN.phl[2170]";
-connectAttr "DragonGateCaveSetRN.phl[548]" "SkeletonRN.phl[2171]";
-connectAttr "DragonGateCaveSetRN.phl[549]" "SkeletonRN.phl[2172]";
-connectAttr "DragonGateCaveSetRN.phl[550]" "SkeletonRN.phl[2173]";
-connectAttr "DragonGateCaveSetRN.phl[551]" "SkeletonRN.phl[2174]";
-connectAttr "DragonGateCaveSetRN.phl[552]" "SkeletonRN.phl[2175]";
-connectAttr "DragonGateCaveSetRN.phl[553]" "SkeletonRN.phl[2176]";
-connectAttr "DragonGateCaveSetRN.phl[554]" "SkeletonRN.phl[2177]";
-connectAttr "DragonGateCaveSetRN.phl[555]" "SkeletonRN.phl[2178]";
-connectAttr "DragonGateCaveSetRN.phl[556]" "SkeletonRN.phl[2179]";
-connectAttr "DragonGateCaveSetRN.phl[557]" "SkeletonRN.phl[2180]";
-connectAttr "DragonGateCaveSetRN.phl[558]" "SkeletonRN.phl[2181]";
-connectAttr "DragonGateCaveSetRN.phl[559]" "SkeletonRN.phl[2182]";
-connectAttr "DragonGateCaveSetRN.phl[560]" "SkeletonRN.phl[2183]";
-connectAttr "DragonGateCaveSetRN.phl[561]" "SkeletonRN.phl[2184]";
-connectAttr "DragonGateCaveSetRN.phl[562]" "SkeletonRN.phl[2185]";
-connectAttr "DragonGateCaveSetRN.phl[563]" "SkeletonRN.phl[2186]";
-connectAttr "DragonGateCaveSetRN.phl[564]" "SkeletonRN.phl[2187]";
-connectAttr "DragonGateCaveSetRN.phl[565]" "SkeletonRN.phl[2188]";
-connectAttr "DragonGateCaveSetRN.phl[566]" "SkeletonRN.phl[2189]";
-connectAttr "DragonGateCaveSetRN.phl[567]" "SkeletonRN.phl[2190]";
-connectAttr "DragonGateCaveSetRN.phl[568]" "SkeletonRN.phl[2191]";
-connectAttr "DragonGateCaveSetRN.phl[569]" "SkeletonRN.phl[2192]";
-connectAttr "DragonGateCaveSetRN.phl[570]" "SkeletonRN.phl[2193]";
-connectAttr "DragonGateCaveSetRN.phl[571]" "SkeletonRN.phl[2194]";
-connectAttr "DragonGateCaveSetRN.phl[572]" "SkeletonRN.phl[2195]";
-connectAttr "DragonGateCaveSetRN.phl[573]" "SkeletonRN.phl[2196]";
-connectAttr "DragonGateCaveSetRN.phl[574]" "SkeletonRN.phl[2197]";
-connectAttr "DragonGateCaveSetRN.phl[575]" "SkeletonRN.phl[2198]";
-connectAttr "DragonGateCaveSetRN.phl[576]" "SkeletonRN.phl[2199]";
-connectAttr "DragonGateCaveSetRN.phl[577]" "SkeletonRN.phl[2200]";
-connectAttr "DragonGateCaveSetRN.phl[578]" "SkeletonRN.phl[2201]";
-connectAttr "DragonGateCaveSetRN.phl[579]" "SkeletonRN.phl[2202]";
-connectAttr "DragonGateCaveSetRN.phl[580]" "SkeletonRN.phl[2203]";
-connectAttr "DragonGateCaveSetRN.phl[581]" "SkeletonRN.phl[2204]";
-connectAttr "DragonGateCaveSetRN.phl[582]" "SkeletonRN.phl[2205]";
-connectAttr "DragonGateCaveSetRN.phl[583]" "SkeletonRN.phl[2206]";
-connectAttr "DragonGateCaveSetRN.phl[584]" "SkeletonRN.phl[2207]";
-connectAttr "DragonGateCaveSetRN.phl[585]" "SkeletonRN.phl[2208]";
-connectAttr "DragonGateCaveSetRN.phl[586]" "SkeletonRN.phl[2209]";
-connectAttr "DragonGateCaveSetRN.phl[587]" "SkeletonRN.phl[2210]";
-connectAttr "DragonGateCaveSetRN.phl[588]" "SkeletonRN.phl[2211]";
-connectAttr "DragonGateCaveSetRN.phl[589]" "SkeletonRN.phl[2212]";
-connectAttr "DragonGateCaveSetRN.phl[590]" "SkeletonRN.phl[2213]";
-connectAttr "DragonGateCaveSetRN.phl[591]" "SkeletonRN.phl[2214]";
-connectAttr "DragonGateCaveSetRN.phl[592]" "SkeletonRN.phl[2215]";
-connectAttr "DragonGateCaveSetRN.phl[593]" "SkeletonRN.phl[2216]";
-connectAttr "DragonGateCaveSetRN.phl[594]" "SkeletonRN.phl[2217]";
-connectAttr "DragonGateCaveSetRN.phl[595]" "SkeletonRN.phl[2218]";
-connectAttr "DragonGateCaveSetRN.phl[596]" "SkeletonRN.phl[2219]";
-connectAttr "DragonGateCaveSetRN.phl[597]" "SkeletonRN.phl[2220]";
-connectAttr "DragonGateCaveSetRN.phl[598]" "SkeletonRN.phl[2221]";
-connectAttr "DragonGateCaveSetRN.phl[599]" "SkeletonRN.phl[2222]";
-connectAttr "DragonGateCaveSetRN.phl[600]" "SkeletonRN.phl[2223]";
-connectAttr "DragonGateCaveSetRN.phl[601]" "SkeletonRN.phl[2224]";
-connectAttr "DragonGateCaveSetRN.phl[602]" "SkeletonRN.phl[2225]";
-connectAttr "DragonGateCaveSetRN.phl[603]" "SkeletonRN.phl[2226]";
-connectAttr "DragonGateCaveSetRN.phl[604]" "SkeletonRN.phl[2227]";
-connectAttr "DragonGateCaveSetRN.phl[605]" "SkeletonRN.phl[2228]";
-connectAttr "DragonGateCaveSetRN.phl[606]" "SkeletonRN.phl[2229]";
-connectAttr "DragonGateCaveSetRN.phl[607]" "SkeletonRN.phl[2230]";
-connectAttr "DragonGateCaveSetRN.phl[608]" "SkeletonRN.phl[2231]";
-connectAttr "DragonGateCaveSetRN.phl[609]" "SkeletonRN.phl[2232]";
-connectAttr "DragonGateCaveSetRN.phl[610]" "SkeletonRN.phl[2233]";
-connectAttr "DragonGateCaveSetRN.phl[611]" "SkeletonRN.phl[2234]";
-connectAttr "DragonGateCaveSetRN.phl[612]" "SkeletonRN.phl[2235]";
-connectAttr "DragonGateCaveSetRN.phl[613]" "SkeletonRN.phl[2236]";
-connectAttr "DragonGateCaveSetRN.phl[614]" "SkeletonRN.phl[2237]";
-connectAttr "DragonGateCaveSetRN.phl[615]" "SkeletonRN.phl[2238]";
-connectAttr "DragonGateCaveSetRN.phl[616]" "SkeletonRN.phl[2239]";
-connectAttr "DragonGateCaveSetRN.phl[617]" "SkeletonRN.phl[2240]";
-connectAttr "DragonGateCaveSetRN.phl[618]" "SkeletonRN.phl[2241]";
-connectAttr "DragonGateCaveSetRN.phl[619]" "SkeletonRN.phl[2242]";
-connectAttr "DragonGateCaveSetRN.phl[620]" "SkeletonRN.phl[2243]";
-connectAttr "DragonGateCaveSetRN.phl[621]" "SkeletonRN.phl[2244]";
-connectAttr "DragonGateCaveSetRN.phl[622]" "SkeletonRN.phl[2245]";
-connectAttr "DragonGateCaveSetRN.phl[623]" "SkeletonRN.phl[2246]";
-connectAttr "DragonGateCaveSetRN.phl[624]" "SkeletonRN.phl[2247]";
-connectAttr "DragonGateCaveSetRN.phl[625]" "SkeletonRN.phl[2248]";
-connectAttr "DragonGateCaveSetRN.phl[626]" "SkeletonRN.phl[2249]";
-connectAttr "DragonGateCaveSetRN.phl[310]" "SkeletonRN.phl[2250]";
-connectAttr "DragonGateCaveSetRN.phl[311]" "SkeletonRN.phl[2251]";
-connectAttr "DragonGateCaveSetRN.phl[312]" "SkeletonRN.phl[2252]";
-connectAttr "DragonGateCaveSetRN.phl[313]" "SkeletonRN.phl[2253]";
-connectAttr "DragonGateCaveSetRN.phl[314]" "SkeletonRN.phl[2254]";
-connectAttr "DragonGateCaveSetRN.phl[315]" "SkeletonRN.phl[2255]";
-connectAttr "DragonGateCaveSetRN.phl[316]" "SkeletonRN.phl[2256]";
-connectAttr "DragonGateCaveSetRN.phl[317]" "SkeletonRN.phl[2257]";
-connectAttr "DragonGateCaveSetRN.phl[318]" "SkeletonRN.phl[2258]";
-connectAttr "DragonGateCaveSetRN.phl[627]" "SkeletonRN.phl[2259]";
-connectAttr "DragonGateCaveSetRN.phl[628]" "SkeletonRN.phl[2260]";
-connectAttr "DragonGateCaveSetRN.phl[671]" "DragonGateCaveSetRN.phl[672]";
-connectAttr "DragonGateCaveSetRN.phl[673]" "DragonGateCaveSetRN.phl[674]";
-connectAttr "DragonGateCaveSetRN.phl[675]" "DragonGateCaveSetRN.phl[676]";
-connectAttr "file1.oc" "DragonGateCaveSetRN.phl[629]";
-connectAttr "file2.oa" "DragonGateCaveSetRN.phl[630]";
-connectAttr "file3.oa" "DragonGateCaveSetRN.phl[631]";
-connectAttr "file4.oc" "DragonGateCaveSetRN.phl[632]";
-connectAttr "file15.oc" "DragonGateCaveSetRN.phl[633]";
-connectAttr "file17.oa" "DragonGateCaveSetRN.phl[634]";
-connectAttr "file18.oc" "DragonGateCaveSetRN.phl[635]";
-connectAttr "file5.oc" "DragonGateCaveSetRN.phl[636]";
-connectAttr "file7.oa" "DragonGateCaveSetRN.phl[637]";
-connectAttr "file8.oa" "DragonGateCaveSetRN.phl[638]";
-connectAttr "file9.oc" "DragonGateCaveSetRN.phl[639]";
-connectAttr "file10.oc" "DragonGateCaveSetRN.phl[640]";
-connectAttr "file12.oa" "DragonGateCaveSetRN.phl[641]";
-connectAttr "file13.oa" "DragonGateCaveSetRN.phl[642]";
-connectAttr "file14.oc" "DragonGateCaveSetRN.phl[643]";
-connectAttr "DragonGateCaveSetRN.phl[644]" "DragonGateCaveSetRN.phl[645]";
-connectAttr "DragonGateCaveSetRN.phl[646]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[1].ni[34].dn"
-		;
-connectAttr "file19.oc" "DragonGateCaveSetRN.phl[647]";
-connectAttr "file21.oa" "DragonGateCaveSetRN.phl[648]";
-connectAttr "file22.oa" "DragonGateCaveSetRN.phl[649]";
-connectAttr "file23.oc" "DragonGateCaveSetRN.phl[650]";
-connectAttr "DragonGateCaveSetRN.phl[651]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[1].ni[26].dn"
-		;
-connectAttr "file29.oc" "DragonGateCaveSetRN.phl[652]";
-connectAttr "file31.oa" "DragonGateCaveSetRN.phl[653]";
-connectAttr "file32.oa" "DragonGateCaveSetRN.phl[654]";
-connectAttr "file33.oc" "DragonGateCaveSetRN.phl[655]";
-connectAttr "DragonGateCaveSetRN.phl[656]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[1].ni[41].dn"
-		;
-connectAttr "file24.oc" "DragonGateCaveSetRN.phl[657]";
-connectAttr "file26.oa" "DragonGateCaveSetRN.phl[658]";
-connectAttr "file27.oa" "DragonGateCaveSetRN.phl[659]";
-connectAttr "file28.oc" "DragonGateCaveSetRN.phl[660]";
-connectAttr "DragonGateCaveSetRN.phl[661]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[1].ni[24].dn"
-		;
-connectAttr "file34.oc" "DragonGateCaveSetRN.phl[662]";
-connectAttr "file36.oa" "DragonGateCaveSetRN.phl[663]";
-connectAttr "file37.oa" "DragonGateCaveSetRN.phl[664]";
-connectAttr "file38.oc" "DragonGateCaveSetRN.phl[665]";
-connectAttr "DragonGateCaveSetRN.phl[666]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[1].ni[42].dn"
-		;
-connectAttr "DragonGateCaveSetRN.phl[667]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[2].ni[4].dn"
-		;
-connectAttr "file39.oc" "DragonGateCaveSetRN.phl[668]";
-connectAttr "file41.oa" "DragonGateCaveSetRN.phl[669]";
-connectAttr "file42.oc" "DragonGateCaveSetRN.phl[670]";
-connectAttr "TempEnvLayer.di" "DragonGateCaveSetRN.phl[677]";
+connectAttr "TempEnvLayer.di" "DragonGateCaveSetRN.phl[1]";
 connectAttr "camera1_visibility.o" "camera1.v";
 connectAttr "camera1_translateX.o" "camera1.tx";
 connectAttr "camera1_translateY.o" "camera1.ty";
@@ -35544,15 +29225,6 @@ connectAttr "camera1_rotateZ.o" "camera1.rz";
 connectAttr "camera1_scaleX.o" "camera1.sx";
 connectAttr "camera1_scaleY.o" "camera1.sy";
 connectAttr "camera1_scaleZ.o" "camera1.sz";
-connectAttr "TempEnvLayer.di" "TempEnvironment.do";
-connectAttr "polyPlane1.out" "pPlaneShape1.i";
-connectAttr "polySoftEdge1.out" "pCylinderShape1.i";
-connectAttr "deleteComponent5.og" "pPlaneShape2.i";
-connectAttr "deleteComponent6.og" "pPlaneShape3.i";
-connectAttr "pointLightShape1__LEItem.en" "pointLightShape1.v";
-connectAttr "pointLightShape3__LEItem.en" "pointLightShape3.v";
-connectAttr "aiAreaLightShape1__LEItem.en" "aiAreaLightShape1.v";
-connectAttr "Skelly_Light_Shape1__LEItem.en" "Skelly_Light_Shape1.v";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "aiUtility1SG.message" ":defaultLightSet.message";
@@ -35561,10 +29233,6 @@ relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defau
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "aiUtility1SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "aiUtility2SG.message" ":defaultLightSet.message";
-relationship "ignore" ":lightLinker1" ":initialParticleSE.message" "Skelly_Light_Shape1.message";
-relationship "ignore" ":lightLinker1" ":initialShadingGroup.message" "Skelly_Light_Shape1.message";
-relationship "ignore" ":lightLinker1" "aiUtility2SG.message" "Skelly_Light_Shape1.message";
-relationship "ignore" ":lightLinker1" "aiUtility1SG.message" "Skelly_Light_Shape1.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
@@ -35573,42 +29241,20 @@ connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "aiAOV_Z.msg" ":defaultArnoldRenderOptions.aovs" -na;
 connectAttr "aiAOV_albedo.msg" ":defaultArnoldRenderOptions.aovs" -na;
-connectAttr "polyCylinder1.out" "deleteComponent1.ig";
-connectAttr "deleteComponent1.og" "deleteComponent2.ig";
-connectAttr "deleteComponent2.og" "deleteComponent3.ig";
-connectAttr "deleteComponent3.og" "deleteComponent4.ig";
-connectAttr "deleteComponent4.og" "polyBridgeEdge1.ip";
-connectAttr "pCylinderShape1.wm" "polyBridgeEdge1.mp";
-connectAttr "polyBridgeEdge1.out" "polyCloseBorder1.ip";
-connectAttr "polyCloseBorder1.out" "polyExtrudeFace1.ip";
-connectAttr "pCylinderShape1.wm" "polyExtrudeFace1.mp";
-connectAttr "polyTweak1.out" "polySoftEdge1.ip";
-connectAttr "pCylinderShape1.wm" "polySoftEdge1.mp";
-connectAttr "polyExtrudeFace1.out" "polyTweak1.ip";
-connectAttr "polyPlane2.out" "polyTweak2.ip";
-connectAttr "polyTweak2.out" "deleteComponent5.ig";
-connectAttr "polyPlane3.out" "polySplit1.ip";
-connectAttr "polySplit1.out" "polySplit2.ip";
-connectAttr "polySplit2.out" "deleteComponent6.ig";
 connectAttr "layerManager.dli[4]" "TempEnvLayer.id";
-connectAttr "sharedReferenceNode.sr" "DragonGateCaveSetRN.sr";
 connectAttr "pointLightShape1__LEItem.msg" "lightEditor.fi";
 connectAttr "aiAreaLightShape1__LEItem.msg" "lightEditor.li";
-connectAttr "pointLightShape1.msg" "pointLightShape1__LEItem.lgt";
 connectAttr "lightEditor.lit" "pointLightShape1__LEItem.pls";
 connectAttr "lightEditor.en" "pointLightShape1__LEItem.pen";
 connectAttr "lightEditor.nic" "pointLightShape1__LEItem.pic";
-connectAttr "pointLightShape3.msg" "pointLightShape3__LEItem.lgt";
 connectAttr "pointLightShape1__LEItem.nxt" "pointLightShape3__LEItem.prv";
 connectAttr "lightEditor.lit" "pointLightShape3__LEItem.pls";
 connectAttr "lightEditor.en" "pointLightShape3__LEItem.pen";
 connectAttr "lightEditor.nic" "pointLightShape3__LEItem.pic";
-connectAttr "Skelly_Light_Shape1.msg" "Skelly_Light_Shape1__LEItem.lgt";
 connectAttr "pointLightShape3__LEItem.nxt" "Skelly_Light_Shape1__LEItem.prv";
 connectAttr "lightEditor.lit" "Skelly_Light_Shape1__LEItem.pls";
 connectAttr "lightEditor.en" "Skelly_Light_Shape1__LEItem.pen";
 connectAttr "lightEditor.nic" "Skelly_Light_Shape1__LEItem.pic";
-connectAttr "aiAreaLightShape1.msg" "aiAreaLightShape1__LEItem.lgt";
 connectAttr "Skelly_Light_Shape1__LEItem.nxt" "aiAreaLightShape1__LEItem.prv";
 connectAttr "lightEditor.lit" "aiAreaLightShape1__LEItem.pls";
 connectAttr "lightEditor.en" "aiAreaLightShape1__LEItem.pen";
@@ -36510,11 +30156,6 @@ connectAttr "place2dTexture40.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture42.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture43.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-connectAttr "pointLightShape1.ltd" ":lightList1.l" -na;
-connectAttr "pointLightShape3.ltd" ":lightList1.l" -na;
-connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
-connectAttr "Skelly_Light_Shape1.ltd" ":lightList1.l" -na;
-connectAttr "aiAreaLightShape2.ltd" ":lightList1.l" -na;
 connectAttr "aiNoise1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
@@ -36550,13 +30191,4 @@ connectAttr "file38.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file39.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file41.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file42.msg" ":defaultTextureList1.tx" -na;
-connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pPlaneShape2.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pPlaneShape3.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
-connectAttr "pointLight3.iog" ":defaultLightSet.dsm" -na;
-connectAttr "aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
-connectAttr "Skelly_Light_01.iog" ":defaultLightSet.dsm" -na;
-connectAttr "aiAreaLight2.iog" ":defaultLightSet.dsm" -na;
 // End of Shot09.ma
