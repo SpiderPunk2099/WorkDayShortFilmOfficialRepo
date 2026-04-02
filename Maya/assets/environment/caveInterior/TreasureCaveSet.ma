@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: TreasureCaveSet.ma
-//Last modified: Tue, Mar 31, 2026 08:53:56 PM
+//Last modified: Thu, Apr 02, 2026 12:40:14 AM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
@@ -17,17 +17,17 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "1E412EEC-4529-C3B5-C651-2C98DB1FC921";
+fileInfo "UUID" "4D67BC0A-44FA-7FCF-3D51-20B92259565F";
 createNode transform -s -n "persp";
 	rename -uid "B5982084-4183-A072-6261-4CAEBBEF777C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 122.19647909695233 82.321580223061133 170.73875514660375 ;
-	setAttr ".r" -type "double3" -17.138352725646453 1099.3999999995508 -8.430020882808951e-16 ;
+	setAttr ".t" -type "double3" 556.51297991676438 934.02607125909458 639.52408965420057 ;
+	setAttr ".r" -type "double3" -35.738352629279312 1120.5999999993981 -2.0944783838855604e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CC4D8D65-47D7-DD94-6B8F-84BFCD4D2CCF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 420.0754087052976;
+	setAttr ".coi" 835.55433518048801;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2139,7 +2139,6 @@ createNode transform -n "polySurface140" -p "Little_Bag";
 createNode mesh -n "polySurfaceShape151" -p "polySurface140";
 	rename -uid "34CDFA9F-479F-EBB9-436F-708EC7A8F7B9";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.49693673849105835 0.5 ;
@@ -3971,12 +3970,49 @@ createNode transform -n "polySurface136" -p "Top_Chest";
 createNode mesh -n "polySurfaceShape147" -p "polySurface136";
 	rename -uid "C488F515-48D7-4E32-3E07-F3AC90099820";
 	setAttr -k off ".v";
+	setAttr -s 8 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.43151557445526123 0.47453168034553528 ;
+	setAttr -s 2 ".uvst";
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape310" -p "polySurface136";
+	rename -uid "D9E76422-4B47-DF5E-C990-8FBEFDB1E5AB";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:327]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 2 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr -s 404 ".uvst[1].uvsp";
+	setAttr ".uvst[1].uvsp[0:249]" -type "float2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr ".uvst[1].uvsp[250:403]" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -5259,12 +5295,29 @@ createNode transform -n "polySurface137" -p "Top_Chest";
 createNode mesh -n "polySurfaceShape148" -p "polySurface137";
 	rename -uid "9E058C61-42DF-2FEF-4985-4FB43ED6696D";
 	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr -s 2 ".uvst";
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape312" -p "polySurface137";
+	rename -uid "AD32525A-4DE4-03F5-0554-C09CC8402988";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:43]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 2 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr -s 52 ".uvst[1].uvsp[0:51]" -type "float2" 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -5452,12 +5505,37 @@ createNode transform -n "polySurface133" -p "Bottom_Chest";
 createNode mesh -n "polySurfaceShape144" -p "polySurface133";
 	rename -uid "20CE0D10-424C-CBA3-5C17-9AB825555117";
 	setAttr -k off ".v";
+	setAttr -s 4 ".iog[0].og";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.45428715803427622 0.4999999925494194 ;
+	setAttr -s 2 ".uvst";
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape311" -p "polySurface133";
+	rename -uid "3C52486F-485A-B9CE-87AA-088887CB6F6A";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:115]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 2 ".uvst";
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".uvst[1].uvsn" -type "string" "UVMap";
+	setAttr -s 184 ".uvst[1].uvsp[0:183]" -type "float2" 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
@@ -40416,7 +40494,7 @@ createNode transform -n "polySurface56" -p "Rim";
 createNode mesh -n "polySurfaceShape67" -p "polySurface56";
 	rename -uid "C3F154EE-4E4D-A3EF-4D30-D98FD6D06CF9";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
+	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.47319842252181843 0.50000002235174179 ;
@@ -171467,10 +171545,10 @@ createNode mesh -n "Pillars1:PillarShape1" -p "Pillars1:Pillar";
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Pillars2:Pillar";
-	rename -uid "D5626192-433E-1AC6-6742-679A1CA570AD";
+	rename -uid "D4AE3087-4330-31E5-FAEB-06A2730C9AA0";
 	setAttr ".t" -type "double3" 306.60330200195312 -63.368701934814453 -289.41523874960308 ;
 createNode mesh -n "Pillars2:PillarShape" -p "Pillars2:Pillar";
-	rename -uid "D4378B11-4DA4-AE72-46D5-9B9EA6B49BB3";
+	rename -uid "6BE23A27-4734-CCE4-600A-6BA40F510FE3";
 	setAttr -k off ".v";
 	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -171484,7 +171562,7 @@ createNode mesh -n "Pillars2:PillarShape" -p "Pillars2:Pillar";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Pillars2:PillarShape1" -p "Pillars2:Pillar";
-	rename -uid "ABA33D5F-46D4-F7C1-937D-A380B892503A";
+	rename -uid "1D48D228-480D-B513-452A-64B52665C9DE";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr -s 3 ".iog[0].og";
@@ -176349,10 +176427,10 @@ createNode mesh -n "Pillars2:PillarShape1" -p "Pillars2:Pillar";
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Pillars3:Pillar";
-	rename -uid "D5626192-433E-1AC6-6742-679A1CA570AD";
+	rename -uid "3124ED5D-42AE-68F8-9A71-EFA00D03558B";
 	setAttr ".t" -type "double3" -298.6787109375 -63.368694305419922 236.24700667196851 ;
 createNode mesh -n "Pillars3:PillarShape" -p "Pillars3:Pillar";
-	rename -uid "D4378B11-4DA4-AE72-46D5-9B9EA6B49BB3";
+	rename -uid "D251D300-4261-34C1-EE7B-978E7B97E413";
 	setAttr -k off ".v";
 	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -176366,7 +176444,7 @@ createNode mesh -n "Pillars3:PillarShape" -p "Pillars3:Pillar";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Pillars3:PillarShape1" -p "Pillars3:Pillar";
-	rename -uid "ABA33D5F-46D4-F7C1-937D-A380B892503A";
+	rename -uid "FC1B6374-43C8-830F-E093-AA8973FEC27A";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr -s 3 ".iog[0].og";
@@ -181231,10 +181309,10 @@ createNode mesh -n "Pillars3:PillarShape1" -p "Pillars3:Pillar";
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Pillars4:Pillar";
-	rename -uid "D5626192-433E-1AC6-6742-679A1CA570AD";
+	rename -uid "33F68A32-4503-521E-79BA-7794329A97E3";
 	setAttr ".t" -type "double3" 295.06118774414062 -63.368701934814453 233.02679443359375 ;
 createNode mesh -n "Pillars4:PillarShape" -p "Pillars4:Pillar";
-	rename -uid "D4378B11-4DA4-AE72-46D5-9B9EA6B49BB3";
+	rename -uid "3D849530-4408-A45B-40C7-2F9088586403";
 	setAttr -k off ".v";
 	setAttr -s 6 ".iog[0].og";
 	setAttr ".vir" yes;
@@ -181248,7 +181326,7 @@ createNode mesh -n "Pillars4:PillarShape" -p "Pillars4:Pillar";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Pillars4:PillarShape1" -p "Pillars4:Pillar";
-	rename -uid "ABA33D5F-46D4-F7C1-937D-A380B892503A";
+	rename -uid "E264B662-4094-1A99-DBE0-5F822A5E4D48";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr -s 3 ".iog[0].og";
@@ -186112,10 +186190,6 @@ createNode mesh -n "Pillars4:PillarShape1" -p "Pillars4:Pillar";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "Material_Ref:fluidTexture2D1";
-	rename -uid "699A9D8D-4215-DBD0-9DF7-FFAEB31BBD93";
-createNode transform -n "Material_Ref:fluidTexture2D2";
-	rename -uid "134B5AD3-41FD-7C8C-B87F-CF83E0FB827F";
 createNode transform -n "DiamondGem:Diamond";
 	rename -uid "D433ABF0-4252-4CE4-2967-868CE01D1FEE";
 	setAttr ".t" -type "double3" -220.3522812015658 -63.607125803022008 -344.8829143709379 ;
@@ -186264,11 +186338,11 @@ createNode mesh -n "DiamondGem:DiamondShape" -p "DiamondGem:Diamond";
 		24 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "DiamondGem1:Diamond";
-	rename -uid "D433ABF0-4252-4CE4-2967-868CE01D1FEE";
+	rename -uid "CDB0F6D9-4178-3518-4539-3C8C784EF083";
 	setAttr ".rp" -type "double3" 0 10.068255300923589 0 ;
 	setAttr ".sp" -type "double3" 0 10.068255300923589 0 ;
 createNode mesh -n "DiamondGem1:DiamondShape" -p "DiamondGem1:Diamond";
-	rename -uid "95095105-488D-9794-05BB-A88F704991DA";
+	rename -uid "18674F35-4D77-341A-5E7A-86935E0FA779";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -186408,14 +186482,14 @@ createNode mesh -n "DiamondGem1:DiamondShape" -p "DiamondGem1:Diamond";
 		24 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "DiamondGem2:Diamond";
-	rename -uid "D433ABF0-4252-4CE4-2967-868CE01D1FEE";
+	rename -uid "F32EFFC8-4C93-106D-667E-02A561CC765E";
 	setAttr ".t" -type "double3" -44.721194766977241 -62.729071977593073 -538.77099609375 ;
 	setAttr ".r" -type "double3" 0 0 54.00000000000005 ;
 	setAttr ".s" -type "double3" 3.2619680527211599 3.2619680527211599 3.2619680527211599 ;
 	setAttr ".rp" -type "double3" 0 10.068255300923589 0 ;
 	setAttr ".sp" -type "double3" 0 10.068255300923589 0 ;
 createNode mesh -n "DiamondGem2:DiamondShape" -p "DiamondGem2:Diamond";
-	rename -uid "95095105-488D-9794-05BB-A88F704991DA";
+	rename -uid "8B32A5AA-4147-0D92-3716-A78864A2ECEB";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -186916,12 +186990,12 @@ createNode mesh -n "Coin_WithLip:DoubloonShape" -p "Coin_WithLip:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip1:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "BB8E20A1-4BC5-3AB1-0101-DAB11FB67EA5";
 	setAttr ".t" -type "double3" 211.40740966796875 -55.209376261333666 -385.07675170898438 ;
 	setAttr ".r" -type "double3" 0 89.999999999999957 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip1:DoubloonShape" -p "Coin_WithLip1:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "2FA89AB9-4A90-EC81-0D9C-85AD805110FF";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -187278,12 +187352,12 @@ createNode mesh -n "Coin_WithLip1:DoubloonShape" -p "Coin_WithLip1:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip2:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "EB53DE61-49AF-0B8B-4098-C584276E57C4";
 	setAttr ".t" -type "double3" 205.29524230957031 -55.389049530029297 -500.50119018554688 ;
 	setAttr ".r" -type "double3" 0 143.99999999999994 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip2:DoubloonShape" -p "Coin_WithLip2:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "1ED6558E-462B-1384-3106-D6907B12B109";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -187640,12 +187714,12 @@ createNode mesh -n "Coin_WithLip2:DoubloonShape" -p "Coin_WithLip2:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip3:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "ACCD9F38-45A6-35EA-F295-189BF3EC4FFD";
 	setAttr ".t" -type "double3" 176.80950927734375 -55.522958663253206 -446.24267578125 ;
 	setAttr ".r" -type "double3" 179.99999999999977 -53.999999999999794 180 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip3:DoubloonShape" -p "Coin_WithLip3:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "69B4ADCF-4B60-CC8A-0DB4-4C8FE8FA99E1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -188002,12 +188076,12 @@ createNode mesh -n "Coin_WithLip3:DoubloonShape" -p "Coin_WithLip3:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip4:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "AD864190-4E64-1C54-1039-0DA604906009";
 	setAttr ".t" -type "double3" 183.51234436035156 -55.447204345138843 -487.88790893554688 ;
 	setAttr ".r" -type "double3" 180 107.99999999999994 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip4:DoubloonShape" -p "Coin_WithLip4:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "C99F7811-4E31-81A3-F308-6CBF725A1885";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -188364,12 +188438,12 @@ createNode mesh -n "Coin_WithLip4:DoubloonShape" -p "Coin_WithLip4:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip5:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "030CB479-421C-3545-6A57-78939A0429CD";
 	setAttr ".t" -type "double3" 183.51234436035156 -55.305952460677062 -514.390869140625 ;
 	setAttr ".r" -type "double3" 180 71.999999999999957 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip5:DoubloonShape" -p "Coin_WithLip5:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "3EDB61C2-4B12-1C57-890D-CAB8190D95FE";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -188726,12 +188800,12 @@ createNode mesh -n "Coin_WithLip5:DoubloonShape" -p "Coin_WithLip5:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip6:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "CB952309-4E25-E3B7-BD26-989C2DDC6C5B";
 	setAttr ".t" -type "double3" 176.80950927734375 -55.5156263965563 -421.79428100585938 ;
 	setAttr ".r" -type "double3" 0 143.99999999999994 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip6:DoubloonShape" -p "Coin_WithLip6:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "67193C9C-4DCC-A04B-D269-9595BF361913";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -189088,12 +189162,12 @@ createNode mesh -n "Coin_WithLip6:DoubloonShape" -p "Coin_WithLip6:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip7:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "A94FE562-47D9-38A3-4C34-47A910A51D95";
 	setAttr ".t" -type "double3" 182.95048030905102 -54.616083692246214 -425.6497010595337 ;
 	setAttr ".r" -type "double3" -172 4.9999999999999778 175 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip7:DoubloonShape" -p "Coin_WithLip7:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "421B152F-4E08-21EA-9686-999210F67AD6";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -189450,12 +189524,12 @@ createNode mesh -n "Coin_WithLip7:DoubloonShape" -p "Coin_WithLip7:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip8:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "D42A8553-4729-52A1-CDA2-63B062F43A39";
 	setAttr ".t" -type "double3" 237.76248168945312 -55.320023997239552 -380.23248291015625 ;
 	setAttr ".r" -type "double3" 2 0 -180 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip8:DoubloonShape" -p "Coin_WithLip8:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "DD657E5B-456D-3487-3E46-3DBEFCE5E82D";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -189812,12 +189886,12 @@ createNode mesh -n "Coin_WithLip8:DoubloonShape" -p "Coin_WithLip8:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip9:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "7E88B116-4376-6430-439C-E0932618E2F1";
 	setAttr ".t" -type "double3" 269.43388412607777 -55.345216692502376 -392.8951001207501 ;
 	setAttr ".r" -type "double3" -174.99999999999997 -71.999999999999943 -1.9999999999996354 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip9:DoubloonShape" -p "Coin_WithLip9:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "8BE1B9CB-49FE-E763-F73B-F7B99DF9B72E";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -190174,12 +190248,12 @@ createNode mesh -n "Coin_WithLip9:DoubloonShape" -p "Coin_WithLip9:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip10:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "E084C1CC-4ECE-6487-2E15-7CA7C2512F19";
 	setAttr ".t" -type "double3" 221.55732257548692 -50.969883378940835 -472.06133021910028 ;
 	setAttr ".r" -type "double3" -74.192160583743657 -71.340641485130917 119.98457310681688 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip10:DoubloonShape" -p "Coin_WithLip10:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "6CD57507-4BD1-E9D7-9CB5-9FB3D39FD7FC";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -190536,12 +190610,12 @@ createNode mesh -n "Coin_WithLip10:DoubloonShape" -p "Coin_WithLip10:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip11:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "9B31FDC0-400F-060A-52E7-C4BC61E1E340";
 	setAttr ".t" -type "double3" 236.75954192248699 -50.373838059656954 -430.00469697186639 ;
 	setAttr ".r" -type "double3" 149.401118656796 -25 -110 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip11:DoubloonShape" -p "Coin_WithLip11:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "6AC5FF16-45B4-41BC-C21F-D281701CF7D0";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -190898,12 +190972,12 @@ createNode mesh -n "Coin_WithLip11:DoubloonShape" -p "Coin_WithLip11:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip12:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "E69B97A0-49ED-0848-1C0F-2EB4C73DCE89";
 	setAttr ".t" -type "double3" -223.35643916015258 -55.555572982744941 -372.46097976432787 ;
 	setAttr ".r" -type "double3" 1 54.00000000000005 -1 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip12:DoubloonShape" -p "Coin_WithLip12:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "0DBF6796-442D-5196-FFCF-6095E206D23F";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -191260,12 +191334,12 @@ createNode mesh -n "Coin_WithLip12:DoubloonShape" -p "Coin_WithLip12:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip13:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "84CF267A-4B1E-7936-E7DF-38BD22D6BD0B";
 	setAttr ".t" -type "double3" -235.39234924316406 -55.296482022646266 -398.87520749786415 ;
 	setAttr ".r" -type "double3" -177 0 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip13:DoubloonShape" -p "Coin_WithLip13:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "63B72770-410F-2D0D-F9B1-95A9B3B74156";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -191622,12 +191696,12 @@ createNode mesh -n "Coin_WithLip13:DoubloonShape" -p "Coin_WithLip13:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip14:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "DB330583-480F-8451-6596-BCBFD86BEB03";
 	setAttr ".t" -type "double3" -266.51503817593618 -55.38742223609114 -422.58414992015884 ;
 	setAttr ".r" -type "double3" 2 -72.000000000000085 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip14:DoubloonShape" -p "Coin_WithLip14:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "BF622CB0-48C9-CAE7-C599-789D88C0F44A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -191984,12 +192058,12 @@ createNode mesh -n "Coin_WithLip14:DoubloonShape" -p "Coin_WithLip14:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip15:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "516F59B4-43D6-78D5-FE66-7C89E4480EFD";
 	setAttr ".t" -type "double3" -38.981941280933235 -53.432803158945269 -559.51324462890625 ;
 	setAttr ".r" -type "double3" 4 -89.999999999999957 0 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip15:DoubloonShape" -p "Coin_WithLip15:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "5CA41457-4426-464A-B82B-AA9A7FDB4EDD";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -192346,12 +192420,12 @@ createNode mesh -n "Coin_WithLip15:DoubloonShape" -p "Coin_WithLip15:Doubloon";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Coin_WithLip16:Doubloon";
-	rename -uid "19658779-4DB6-D148-DE89-BF9B65C6204A";
+	rename -uid "D861DFAA-4293-D872-291F-7D97E71E8BFF";
 	setAttr ".t" -type "double3" -33.779544007613396 -52.130053903763404 -560.51727269761705 ;
 	setAttr ".r" -type "double3" -5 0 -9.9999999999999734 ;
 	setAttr ".s" -type "double3" 5.25 5.25 5.25 ;
 createNode mesh -n "Coin_WithLip16:DoubloonShape" -p "Coin_WithLip16:Doubloon";
-	rename -uid "3EA04394-44FE-2F27-2BEB-B0BEB4BD0945";
+	rename -uid "B172821A-47A0-4AC2-F91B-6E86A895955C";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -229629,14 +229703,14 @@ createNode mesh -n "Stalagmite_2:TopRightShape" -p "Stalagmite_2:TopRight";
 		267 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_3:Stalagmite2";
-	rename -uid "EE07CC11-CF4A-6F85-8B1A-B9AF5FC67C2A";
+	rename -uid "0A166946-46A8-8F08-3E45-CD9A5B40EE05";
 	setAttr ".t" -type "double3" -258.86679146058361 -57.146426607885729 -517.43909342699988 ;
 	setAttr ".r" -type "double3" 0 140 0 ;
 	setAttr ".s" -type "double3" 5 5 5 ;
 createNode transform -n "Stalagmite_3:Base" -p "Stalagmite_3:Stalagmite2";
-	rename -uid "6A1BD4EA-4FEE-F868-C49A-C6A0A4F17F9F";
+	rename -uid "845B59BF-4BE0-87D7-DA47-92A9D1177404";
 createNode mesh -n "Stalagmite_3:BaseShape" -p "Stalagmite_3:Base";
-	rename -uid "8DC5915F-428E-5819-1C90-FE8100F3E201";
+	rename -uid "716988BD-45CC-38AE-5A74-50BA2C23618E";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -231898,11 +231972,11 @@ createNode mesh -n "Stalagmite_3:BaseShape" -p "Stalagmite_3:Base";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_3:MiddleRight" -p "Stalagmite_3:Stalagmite2";
-	rename -uid "EE7EF87A-491B-5DB6-EFD6-35B71DB748B8";
+	rename -uid "225D36C8-4CA4-24F5-FFCD-608D464C09E2";
 	setAttr ".rp" -type "double3" 9.581003293683521 8.4119094799445726 -0.27660481800808334 ;
 	setAttr ".sp" -type "double3" 9.581003293683521 8.4119094799445726 -0.27660481800808334 ;
 createNode mesh -n "Stalagmite_3:MiddleRightShape" -p "Stalagmite_3:MiddleRight";
-	rename -uid "A989BA99-4E81-319D-00BB-4E84EE8A9D0C";
+	rename -uid "90606C9F-48BD-F925-8C8F-9EBC6F6C49AA";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -232900,12 +232974,12 @@ createNode mesh -n "Stalagmite_3:MiddleRightShape" -p "Stalagmite_3:MiddleRight"
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_3:TopLeft" -p "Stalagmite_3:Stalagmite2";
-	rename -uid "2EE5F4EB-469C-A7B3-0CAD-B3A19D609A84";
+	rename -uid "C1D0720B-4D9F-03AF-DE0B-2F997BA2A35B";
 	setAttr -av ".v";
 	setAttr ".rp" -type "double3" -5.9906495170206222 10.009741766914297 0.34621740668891521 ;
 	setAttr ".sp" -type "double3" -5.9906495170206222 10.009741766914297 0.34621740668891521 ;
 createNode mesh -n "Stalagmite_3:TopLeftShape" -p "Stalagmite_3:TopLeft";
-	rename -uid "9E1B4BD7-43E3-79F6-5437-CBB7E84042A9";
+	rename -uid "1FF95347-4C11-4DBA-1C84-6F9FEB6B68E3";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -233892,12 +233966,12 @@ createNode mesh -n "Stalagmite_3:TopLeftShape" -p "Stalagmite_3:TopLeft";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_3:MidHighRight" -p "Stalagmite_3:Stalagmite2";
-	rename -uid "C4BF6EE9-4B3E-A1B7-9BFE-6593F438095D";
+	rename -uid "C18168FF-4ED6-0528-9105-FBBCCD154A85";
 	setAttr -av ".v";
 	setAttr ".rp" -type "double3" 8.9614270968160152 13.893521840299432 0.10153017509201434 ;
 	setAttr ".sp" -type "double3" 8.9614270968160152 13.893521840299432 0.10153017509201434 ;
 createNode mesh -n "Stalagmite_3:MidHighRightShape" -p "Stalagmite_3:MidHighRight";
-	rename -uid "E4CED406-4D84-9831-9A34-8CB5FE08D90C";
+	rename -uid "A0978626-4131-2E31-A282-76B2EFDDD7C6";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -234447,11 +234521,11 @@ createNode mesh -n "Stalagmite_3:MidHighRightShape" -p "Stalagmite_3:MidHighRigh
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".dr" 1;
 createNode transform -n "Stalagmite_3:TopRight" -p "Stalagmite_3:Stalagmite2";
-	rename -uid "A0BFB3D4-40F1-E01D-47DC-22A638F87569";
+	rename -uid "7E8AB3BD-4140-7B51-2AFA-D6A62B1D2885";
 	setAttr ".rp" -type "double3" 8.8303854141257947 17.764895049593143 -0.88608156650813752 ;
 	setAttr ".sp" -type "double3" 8.8303854141257947 17.764895049593143 -0.88608156650813752 ;
 createNode mesh -n "Stalagmite_3:TopRightShape" -p "Stalagmite_3:TopRight";
-	rename -uid "5668AA62-4D34-C125-E39F-B2B05DC0FCCB";
+	rename -uid "039BD1BC-4219-466C-030F-EF8ACE815C0E";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -235349,18 +235423,18 @@ createNode mesh -n "Stalagmite_3:TopRightShape" -p "Stalagmite_3:TopRight";
 		267 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_4:Staligmite1";
-	rename -uid "3E7D2933-0C43-5988-170E-9195E41D2D38";
+	rename -uid "FBCE0032-487D-B345-4381-318E8D263669";
 	setAttr ".t" -type "double3" -250.05259919938473 -58.060351064588374 -652.50875322546972 ;
 	setAttr ".r" -type "double3" 0 89.999999999999957 0 ;
 	setAttr ".s" -type "double3" 6 6 6 ;
 createNode transform -n "Stalagmite_4:Bottom" -p "Stalagmite_4:Staligmite1";
-	rename -uid "53DCE1E9-4EB6-E426-400B-8896EEBBF39A";
+	rename -uid "B64C214E-486A-17AE-CE19-97A4011BA8E7";
 	setAttr ".t" -type "double3" 0 0.5 0 ;
 	setAttr ".s" -type "double3" 10 5 10 ;
 	setAttr ".rp" -type "double3" 0 -0.5 0 ;
 	setAttr ".sp" -type "double3" 0 -0.5 0 ;
 createNode mesh -n "Stalagmite_4:BottomShape" -p "Stalagmite_4:Bottom";
-	rename -uid "57FDB547-449E-CC11-229E-49B9267CB95E";
+	rename -uid "FD200D50-4A9A-9508-3049-E08AB251D364";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -235374,7 +235448,7 @@ createNode mesh -n "Stalagmite_4:BottomShape" -p "Stalagmite_4:Bottom";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Stalagmite_4:polySurfaceShape5" -p "Stalagmite_4:Bottom";
-	rename -uid "C89F3780-4978-04D6-A74F-3DABFFEA1A2B";
+	rename -uid "AA587F17-43AC-56AA-A461-E9A1108E5DF1";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr ".vir" yes;
@@ -237386,13 +237460,13 @@ createNode mesh -n "Stalagmite_4:polySurfaceShape5" -p "Stalagmite_4:Bottom";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_4:LowMid" -p "Stalagmite_4:Staligmite1";
-	rename -uid "9168C565-431F-01CA-488F-DCBB35B6573C";
+	rename -uid "5CA2CD59-4D48-5E4B-B914-D6B1F994E7D2";
 	setAttr ".t" -type "double3" -0.35553767402026137 5.5 0 ;
 	setAttr ".s" -type "double3" 7.5 7.5 7.5 ;
 	setAttr ".rp" -type "double3" 0 -0.5 0 ;
 	setAttr ".sp" -type "double3" 0 -0.5 0 ;
 createNode mesh -n "Stalagmite_4:LowMidShape" -p "Stalagmite_4:LowMid";
-	rename -uid "3131D61C-4F40-A371-E18D-F0B5C72DAA1B";
+	rename -uid "809E55B4-44BD-80AC-349C-BDB6833667C7";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -237406,7 +237480,7 @@ createNode mesh -n "Stalagmite_4:LowMidShape" -p "Stalagmite_4:LowMid";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Stalagmite_4:polySurfaceShape4" -p "Stalagmite_4:LowMid";
-	rename -uid "781D40F8-434E-1301-AE87-4CB2F6277B4E";
+	rename -uid "0B50BD6A-44A5-3FBD-4E77-D09184032E5A";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr ".vir" yes;
@@ -238772,13 +238846,13 @@ createNode mesh -n "Stalagmite_4:polySurfaceShape4" -p "Stalagmite_4:LowMid";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_4:HighMid" -p "Stalagmite_4:Staligmite1";
-	rename -uid "EE2D3CE8-4ADD-930A-4C7D-90A9199AA85A";
+	rename -uid "74467FB8-47BE-9349-D451-A6B6CD5F5249";
 	setAttr ".t" -type "double3" 0 13 0 ;
 	setAttr ".s" -type "double3" 5 10 5 ;
 	setAttr ".rp" -type "double3" 0 -0.5 0 ;
 	setAttr ".sp" -type "double3" 0 -0.5 0 ;
 createNode mesh -n "Stalagmite_4:HighMidShape" -p "Stalagmite_4:HighMid";
-	rename -uid "9C038CB9-4E8F-D312-710B-0692B9113D26";
+	rename -uid "50770480-4D8D-C59B-E3A2-69BA130BE191";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -238792,7 +238866,7 @@ createNode mesh -n "Stalagmite_4:HighMidShape" -p "Stalagmite_4:HighMid";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Stalagmite_4:polySurfaceShape6" -p "Stalagmite_4:HighMid";
-	rename -uid "D7C921DD-43BA-5F17-D65A-B196075308D7";
+	rename -uid "86032AF2-4067-BB19-518A-1DACDA535C2E";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr ".vir" yes;
@@ -240029,13 +240103,13 @@ createNode mesh -n "Stalagmite_4:polySurfaceShape6" -p "Stalagmite_4:HighMid";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Stalagmite_4:Top" -p "Stalagmite_4:Staligmite1";
-	rename -uid "ED1BE88D-48BD-3C60-0242-0887620E3609";
+	rename -uid "8D1468EF-417A-408C-B923-99875529F159";
 	setAttr ".t" -type "double3" 0 23 0 ;
 	setAttr ".s" -type "double3" 2 16.388388363686964 2 ;
 	setAttr ".rp" -type "double3" 0 -0.5 0 ;
 	setAttr ".sp" -type "double3" 0 -0.5 0 ;
 createNode mesh -n "Stalagmite_4:TopShape" -p "Stalagmite_4:Top";
-	rename -uid "EE339A89-4604-38F6-971D-A1B7169818C4";
+	rename -uid "1D542714-4C17-9251-3373-ED872F0495CD";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
@@ -240049,7 +240123,7 @@ createNode mesh -n "Stalagmite_4:TopShape" -p "Stalagmite_4:Top";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode mesh -n "Stalagmite_4:polySurfaceShape3" -p "Stalagmite_4:Top";
-	rename -uid "974AFFFF-4D75-ABE5-D842-57AD1C611EB9";
+	rename -uid "D2F18BA6-4D3D-F7C2-943A-FFBE80569D36";
 	setAttr -k off ".v";
 	setAttr ".io" yes;
 	setAttr ".vir" yes;
@@ -240097,15 +240171,15 @@ createNode mesh -n "Stalagmite_4:polySurfaceShape3" -p "Stalagmite_4:Top";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2D6558F8-4551-7975-6E06-47A9C10727A7";
-	setAttr -s 79 ".lnk";
-	setAttr -s 79 ".slnk";
+	rename -uid "F6CF8249-43D0-9A08-5371-6190A65DFE31";
+	setAttr -s 128 ".lnk";
+	setAttr -s 128 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "7BADFA04-45F8-59EE-8F6A-42A470FEA01E";
+	rename -uid "1C8A4D63-46C7-1666-DF59-BEB6D32655AB";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "056BFDCF-4FF0-92D1-7FF0-1D9D3DAD171C";
+	rename -uid "65614C0F-4A17-1300-EF62-0A9D67DA9A49";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "9DAF4172-47E7-AC18-347B-58991A079BE1";
+	rename -uid "94490383-4B20-058F-8C14-E4B77F87906D";
 	setAttr ".cdl" 2;
 	setAttr -s 14 ".dli[1:13]"  1 11 2 3 4 5 6 7 
 		8 9 10 12 13;
@@ -240114,7 +240188,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "2528202E-485C-6AEC-D48F-0481B5BE070C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CD84B8C0-49C7-73CF-F95E-B1BD283DA294";
+	rename -uid "5D66BE56-421F-41FF-B123-948F95332AC1";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4F3627E4-46B7-9264-C29C-17BA14FE5D8B";
 	setAttr ".g" yes;
@@ -240306,17 +240380,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1603\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1302\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1603\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n"
 		+ "        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n"
 		+ "            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n"
 		+ "            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n"
-		+ "            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 827\n            -height 499\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
-		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
-		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1603\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
+		+ "            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n"
+		+ "            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n"
+		+ "            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n"
+		+ "            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1602\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n"
 		+ "            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
 		+ "            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
@@ -240348,7 +240422,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "6E0A14B4-4311-783A-AB7B-F9B3AA32276B";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 25 -ast 0 -aet 25 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 399 -ast 0 -aet 400 ";
 	setAttr ".st" 6;
 createNode phong -n "crystals4";
 	rename -uid "31794B8E-4573-5C7F-2435-DCA9F8FAB35A";
@@ -241246,20 +241320,11 @@ createNode groupId -n "groupId155";
 createNode groupId -n "groupId156";
 	rename -uid "10EE16D4-4FF5-1E43-AA5D-F89FA62CFD4D";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId159";
-	rename -uid "D22F43A5-42DC-F341-1514-B1B14A7B43D3";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId160";
 	rename -uid "7149ABD7-4BCC-C106-671D-BA8B5DF9F1B8";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId161";
 	rename -uid "FEF86DD5-4315-8392-6FA4-10B89B161BD2";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId164";
-	rename -uid "7CD47C3E-4016-8642-EF4A-BDA69F20E488";
-	setAttr ".ihi" 0;
-createNode groupId -n "groupId165";
-	rename -uid "DF15AECD-4DA6-F260-2005-C7B3A520F2FB";
 	setAttr ".ihi" 0;
 createNode reference -n "SkeletonRN";
 	rename -uid "4C4B7A2C-425D-AC07-8962-58A69C9FBF28";
@@ -246405,13 +246470,6 @@ createNode polyAutoProj -n "polyAutoProj139";
 	setAttr ".s" -type "double3" 78.41591488758263 78.41591488758263 78.41591488758263 ;
 	setAttr ".ps" 0.20000000298023224;
 	setAttr ".dl" yes;
-createNode groupId -n "groupId429";
-	rename -uid "EE36CBA3-4AD0-88C2-F382-4CB07139F7EE";
-	setAttr ".ihi" 0;
-createNode groupParts -n "groupParts116";
-	rename -uid "F716E902-48AA-FDA0-36EF-34A0209D02F8";
-	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 1 "f[0:439]";
 createNode polyMapSew -n "polyMapSew3";
 	rename -uid "B5105185-4DA9-88EA-B180-94BCABA5C940";
 	setAttr ".uopa" yes;
@@ -247308,11 +247366,6 @@ createNode animCurveTU -n "Diamond_scaleZ";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  0 3.0198347892007984;
 	setAttr ".kot[0]"  5;
-createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "C45F6811-4519-67CE-ECF3-3C80324724A9";
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -6821.6545892230251 -6116.6664236121796 ;
-	setAttr ".tgi[0].vh" -type "double2" 6971.6545832625607 6137.3013434271425 ;
 createNode shapeEditorManager -n "Pillars1:shapeEditorManager";
 	rename -uid "0E90E3B7-41BF-6091-3DF9-1ABF0619451D";
 createNode poseInterpolatorManager -n "Pillars1:poseInterpolatorManager";
@@ -252635,8 +252688,6 @@ createNode file -n "Pillars1:file1";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Pillars1:place2dTexture1";
 	rename -uid "7B475FD9-4239-3D8E-3A7B-6D9D395948EE";
-createNode mayaUsdLayerManager -n "Pillars1:mayaUsdLayerManager1";
-	rename -uid "39175FF9-4C27-21E7-6269-2597F8AE1E28";
 createNode nodeGraphEditorInfo -n "Pillars1:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "D87B1A81-4883-4C34-DFD0-C5B1E525D1F1";
 	setAttr ".def" no;
@@ -252661,43 +252712,43 @@ createNode nodeGraphEditorInfo -n "Pillars1:hyperShadePrimaryNodeEditorSavedTabs
 	setAttr ".tgi[0].ni[5].y" -175.71427917480469;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "Pillars2:shapeEditorManager";
-	rename -uid "0E90E3B7-41BF-6091-3DF9-1ABF0619451D";
+	rename -uid "07C4FCB7-4E00-CEE0-527C-8299B940B2DA";
 createNode poseInterpolatorManager -n "Pillars2:poseInterpolatorManager";
-	rename -uid "4E0A8D57-4D20-9DE8-E716-FA890E5E8E25";
+	rename -uid "CBF77695-44BE-FE98-9AD1-67858B584F28";
 createNode renderLayerManager -n "Pillars2:renderLayerManager";
-	rename -uid "140EB6F6-4AC4-7265-0DBF-0B93C6BA0EA7";
+	rename -uid "BF862A12-49CB-16A4-3875-7F8C9509B18C";
 createNode renderLayer -n "Pillars2:defaultRenderLayer";
-	rename -uid "970CCF33-4C59-FFC2-E16F-5188C3B70C2D";
+	rename -uid "2EB9AE1C-4C7D-CA31-9497-F6AE444F9A31";
 	setAttr ".g" yes;
 createNode standardSurface -n "Pillars2:standardSurface2";
-	rename -uid "B2235F1E-4F49-F93C-6BDB-F68AEC3D60B7";
+	rename -uid "9E00C241-4591-52FD-D205-6082B2F7F886";
 	setAttr ".sr" 0.60000002384185791;
 createNode shadingEngine -n "Pillars2:polySurface130SG";
-	rename -uid "D81A6DDB-406F-9E38-630F-FFAC0D1A6E7B";
+	rename -uid "761F7EEB-4891-860A-D836-36ACCF9CDA73";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars2:materialInfo1";
-	rename -uid "1301C8A2-4B33-31AE-F926-03AC8856B165";
+	rename -uid "37239B50-453F-B6C7-0587-F493668341A9";
 createNode shadingEngine -n "Pillars2:polySurface131SG";
-	rename -uid "F0D170FA-4BC0-0C51-A400-D0AC1167955F";
+	rename -uid "CE1E1790-4595-5475-70F8-A78BEA701499";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars2:materialInfo2";
-	rename -uid "327C97DB-4CFA-F73C-6C86-D49B69D664C1";
+	rename -uid "2D5451B0-4CF9-432B-A84C-0F88831A725F";
 createNode shadingEngine -n "Pillars2:polySurface132SG";
-	rename -uid "83ECD7DE-4CAC-228F-F13A-DDA72F8F1C4E";
+	rename -uid "B1B64A5A-4483-8914-CC93-F68EF6DF445B";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars2:materialInfo3";
-	rename -uid "0F45E867-45B6-90EA-2EE9-DAA2A81EE4A1";
+	rename -uid "D1C19017-4D9D-4675-9267-6DA631A05859";
 createNode displayLayer -n "Pillars2:Pillars";
-	rename -uid "33988D7B-4593-A667-34FE-7A9D3B54032A";
+	rename -uid "A8489126-4B29-D374-F213-449CBEED5A87";
 	setAttr ".dt" 2;
 	setAttr ".c" 7;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 createNode polyCylProj -n "Pillars2:polyCylProj1";
-	rename -uid "1A517D18-4B29-0BD6-E559-8FA516703E3E";
+	rename -uid "91FA245F-4853-65C8-3CC7-67919DE217A6";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -252706,28 +252757,28 @@ createNode polyCylProj -n "Pillars2:polyCylProj1";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode groupId -n "Pillars2:groupId1";
-	rename -uid "4F9BF9D9-4FBE-72F5-1445-D3A0D6058C53";
+	rename -uid "2009D27B-4B59-A61A-0E04-1EAE127550F4";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars2:groupParts1";
-	rename -uid "F58865D3-45BD-1A87-9BF3-31B8F59A3459";
+	rename -uid "E8FD8057-4A54-B82B-1490-F0A7150707C6";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:415]";
 createNode groupId -n "Pillars2:groupId2";
-	rename -uid "57871EEC-4466-0ACE-7F19-E2BA020BEEBF";
+	rename -uid "C6228FAA-4434-EEB8-809C-8D96A67EBFE0";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars2:groupParts2";
-	rename -uid "94F31E3E-4855-E12F-BF78-AC89DA13C996";
+	rename -uid "136858C4-4864-E066-092F-77BD27122762";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[416:703]";
 createNode groupId -n "Pillars2:groupId3";
-	rename -uid "1B8D035F-4769-FD04-C416-7E8D9FAA7D77";
+	rename -uid "8AB3518B-4A1A-87C0-B75F-30B148EE8D43";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars2:groupParts3";
-	rename -uid "F785FD15-4C0B-DBCC-22B3-CBBC12B07451";
+	rename -uid "EC74AD81-4AAD-CBE5-5967-A9AA99DB1021";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[704:991]";
 createNode polyTweakUV -n "Pillars2:polyTweakUV1";
-	rename -uid "B9B92C98-4529-5402-355D-D384C1E2C79B";
+	rename -uid "D922D04C-4117-6D8D-D206-3897E14FC61A";
 	setAttr ".uopa" yes;
 	setAttr -s 1073 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.48330694 0.43065727 0.48242092 0.4355787
@@ -253028,17 +253079,17 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV1";
 		 -0.83497155 -0.27776384 -0.9771412 -0.07627809 -0.95806634 -0.076421954 -0.97032899
 		 -0.067790419;
 createNode polyMergeVert -n "Pillars2:polyMergeVert1";
-	rename -uid "63B9D490-4067-F495-08FA-2ABE1AE4DE0B";
+	rename -uid "3CEDCB94-401A-2696-3936-3D82B041873D";
 	setAttr ".ics" -type "componentList" 1 "vtx[*]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr ".d" 1;
 	setAttr ".am" yes;
 createNode polyMapSew -n "Pillars2:polyMapSew1";
-	rename -uid "0AD5C8A4-4E61-587F-5840-0DB8CC5B56FB";
+	rename -uid "32DE4D07-4BAE-13F8-1307-E0B2184952CC";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[0:1935]";
 createNode polyCylProj -n "Pillars2:polyCylProj2";
-	rename -uid "8F20E30B-4251-D653-57DC-2E982034E85F";
+	rename -uid "156E32C2-4BED-CC5A-B892-128A2C61CD0C";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -253047,7 +253098,7 @@ createNode polyCylProj -n "Pillars2:polyCylProj2";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyAutoProj -n "Pillars2:polyAutoProj1";
-	rename -uid "DAF97252-47C3-FCA2-9F24-198EC948478A";
+	rename -uid "0AD3936E-482F-2766-C00E-E19B783309DB";
 	setAttr ".cch" yes;
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
@@ -253056,7 +253107,7 @@ createNode polyAutoProj -n "Pillars2:polyAutoProj1";
 	setAttr ".ps" 0.20000000298023224;
 	setAttr ".dl" yes;
 createNode polyCylProj -n "Pillars2:polyCylProj3";
-	rename -uid "97459D2E-4967-9F0F-E1BB-0693FB198E88";
+	rename -uid "041B7DA8-48C8-AC6F-C114-6EB6B5DCC916";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -253065,23 +253116,23 @@ createNode polyCylProj -n "Pillars2:polyCylProj3";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyMapCut -n "Pillars2:polyMapCut1";
-	rename -uid "ED27273F-4D12-9666-04F0-18B2A97C16C9";
+	rename -uid "5B8C888D-4C4E-BCAA-31A4-7880211FA3AE";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 6 "e[849]" "e[906]" "e[924:925]" "e[1272]" "e[1340:1341]" "e[1388]";
 createNode polyMapCut -n "Pillars2:polyMapCut2";
-	rename -uid "F97032D0-43C3-A79A-7671-468EDDECB6DA";
+	rename -uid "56099174-4859-7CF9-7F7F-9F917C7ECC63";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1932]";
 createNode polyMapSew -n "Pillars2:polyMapSew2";
-	rename -uid "18BD5D05-4671-306E-589C-9585407A5F71";
+	rename -uid "7A633425-4176-224B-CCE4-B48DBC6E7C98";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1814]";
 createNode polyMapSew -n "Pillars2:polyMapSew3";
-	rename -uid "14E0B94C-4DAA-78A3-7B18-43A2967488A5";
+	rename -uid "25C4CFB4-48DB-F2AA-C9C1-02BB3A592DA4";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1818]";
 createNode polyTweakUV -n "Pillars2:polyTweakUV2";
-	rename -uid "C6C213AF-4565-B322-88B0-B0B591FC6C64";
+	rename -uid "4FC9E342-4208-FA4F-1DDD-49BC1348A907";
 	setAttr ".uopa" yes;
 	setAttr -s 984 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" -0.012087911 1.4779607 ;
@@ -254069,7 +254120,7 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV2";
 	setAttr ".uvtk[1008]" -type "float2" -0.11801028 1.7401671 ;
 	setAttr ".uvtk[1012]" -type "float2" -0.075638533 1.5406055 ;
 createNode polyPlanarProj -n "Pillars2:polyPlanarProj1";
-	rename -uid "BD587418-4483-A55E-7DDE-3B978EF6DBA3";
+	rename -uid "00F7C8F5-48E8-4E3F-E291-05BDE56A2B35";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -254079,7 +254130,7 @@ createNode polyPlanarProj -n "Pillars2:polyPlanarProj1";
 	setAttr ".ps" -type "double2" 110.44864085903419 110.44864085903419 ;
 	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 createNode polyLayoutUV -n "Pillars2:polyLayoutUV1";
-	rename -uid "8547476F-4913-6AAF-AE06-0BBCEEB20C1C";
+	rename -uid "3C04DF49-44E9-67DB-1055-F48655DF25C8";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".fr" no;
@@ -254090,7 +254141,7 @@ createNode polyLayoutUV -n "Pillars2:polyLayoutUV1";
 	setAttr ".rbf" 3;
 	setAttr ".lm" 1;
 createNode polyTweakUV -n "Pillars2:polyTweakUV3";
-	rename -uid "449A699D-4B58-1778-42A7-5E911C64A45F";
+	rename -uid "16E0EA89-47C0-6F15-692B-0C9774B49130";
 	setAttr ".uopa" yes;
 	setAttr ".uvtk[687]" -type "float2" 0.095588841 -0.37215713;
 	setAttr -s 3798 ".nuv";
@@ -255752,11 +255803,11 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV3";
 		 0.05774124 0 220 0.84669536 0.14886063 0 222 0.84833735 0.15126522 
 		0 149 0.84828675 0.1552757 0 146 0.84664667 0.15271963;
 createNode polyMapSew -n "Pillars2:polyMapSew4";
-	rename -uid "80A8CAB9-460D-F8CB-43EB-DE83F859294C";
+	rename -uid "D1778649-4A03-0B1F-ABD7-AFA3A9F851E8";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 29 "e[0:924]" "e[926:1052]" "e[1054:1062]" "e[1064:1072]" "e[1074:1077]" "e[1079:1080]" "e[1082:1085]" "e[1087:1088]" "e[1090:1269]" "e[1271:1273]" "e[1275:1278]" "e[1281:1301]" "e[1303]" "e[1306]" "e[1309]" "e[1312]" "e[1315]" "e[1318:1339]" "e[1345:1352]" "e[1355]" "e[1360:1361]" "e[1367]" "e[1370:1372]" "e[1374]" "e[1377]" "e[1381]" "e[1384]" "e[1386:1387]" "e[1389:1935]";
 createNode polySphProj -n "Pillars2:polySphProj1";
-	rename -uid "94C6B1B5-43E4-14F0-9425-77A264679AFC";
+	rename -uid "0121AE4F-4343-1A9A-0394-81934D92C6A9";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -255764,7 +255815,7 @@ createNode polySphProj -n "Pillars2:polySphProj1";
 	setAttr ".pc" -type "double3" -7.62939453125e-06 260.41863059997559 0 ;
 	setAttr ".r" 520.83729934692383;
 createNode polyCylProj -n "Pillars2:polyCylProj4";
-	rename -uid "2ADF6F26-4C19-A59D-9BB8-3BA7300A9C2C";
+	rename -uid "667099A7-4379-0823-3B54-5F9B22F6E212";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -255773,7 +255824,7 @@ createNode polyCylProj -n "Pillars2:polyCylProj4";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars2:polyTweakUV4";
-	rename -uid "D62D9D26-40AA-6CD9-4EC5-95994C5C5549";
+	rename -uid "4F45C9FD-47A8-E601-F028-10961798D6CE";
 	setAttr ".uopa" yes;
 	setAttr -s 985 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.6947757 0 ;
@@ -256762,32 +256813,32 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV4";
 	setAttr ".uvtk[1012]" -type "float2" -0.96529198 0 ;
 	setAttr ".uvtk[1013]" -type "float2" -0.97302186 0 ;
 createNode polyMapCut -n "Pillars2:polyMapCut3";
-	rename -uid "324E99B1-4423-942E-E56E-219BE5153933";
+	rename -uid "FFCF0A05-446C-6417-036E-30A971D00136";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 34 "e[1472]" "e[1484]" "e[1496]" "e[1507]" "e[1518]" "e[1530]" "e[1540]" "e[1551]" "e[1563]" "e[1572]" "e[1583]" "e[1594]" "e[1605]" "e[1612]" "e[1620]" "e[1814]" "e[1816]" "e[1818]" "e[1820:1822]" "e[1824]" "e[1826:1827]" "e[1829:1830]" "e[1832:1833]" "e[1835:1836]" "e[1838:1839]" "e[1841:1842]" "e[1844:1845]" "e[1847:1848]" "e[1850:1851]" "e[1853:1854]" "e[1856:1857]" "e[1859:1860]" "e[1862]" "e[1922]";
 createNode deleteComponent -n "Pillars2:deleteComponent1";
-	rename -uid "08D976F5-4C61-991C-D5FB-F29303A90DD4";
+	rename -uid "B8FE6126-468C-3975-9788-3C8B3C064F96";
 	setAttr ".dc" -type "componentList" 14 "f[656:657]" "f[659:660]" "f[662:665]" "f[667]" "f[669:670]" "f[672]" "f[676:678]" "f[680:681]" "f[683:684]" "f[686]" "f[688:691]" "f[693]" "f[696:699]" "f[701:702]";
 createNode deleteComponent -n "Pillars2:deleteComponent2";
-	rename -uid "D85E8974-4825-C124-3753-8FA497B3208F";
+	rename -uid "83B84F3C-46EF-DE19-293D-FAB21A6D710C";
 	setAttr ".dc" -type "componentList" 2 "e[1343]" "e[1366]";
 createNode deleteComponent -n "Pillars2:deleteComponent3";
-	rename -uid "C34A79A9-416F-DF93-ABAB-AFA3DE813357";
+	rename -uid "C1B93A9D-4622-6DAF-EC70-C09F37787EE9";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars2:deleteComponent4";
-	rename -uid "1E989AE8-4B50-F46A-A9C3-13AF53BE8D72";
+	rename -uid "1BA6B23F-4212-C3BC-1063-52947BC0D112";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars2:deleteComponent5";
-	rename -uid "FE774056-4AEA-C204-F450-37A7AC3B5724";
+	rename -uid "F3A92CAB-4765-28B8-850B-9FBC916DD746";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars2:deleteComponent6";
-	rename -uid "5EBC043A-4E2A-E6C7-3684-F3A54CF9E527";
+	rename -uid "0A098315-402B-1E69-6E55-20ADF3C06080";
 	setAttr ".dc" -type "componentList" 1 "f[655:669]";
 createNode deleteComponent -n "Pillars2:deleteComponent7";
-	rename -uid "A267E3BF-44C2-7990-B3DF-62A95FAAAF07";
+	rename -uid "DCA50399-49D4-DCAD-31E2-61B06B59801B";
 	setAttr ".dc" -type "componentList" 1 "f[895:942]";
 createNode polyCylProj -n "Pillars2:polyCylProj5";
-	rename -uid "53DD2097-413D-E175-D4B0-C182FD584083";
+	rename -uid "1934B8B3-4EC8-3F1E-2B66-A6A6A9F6C9D9";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "f[0:652]" "f[654:895]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -256796,7 +256847,7 @@ createNode polyCylProj -n "Pillars2:polyCylProj5";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars2:polyTweakUV5";
-	rename -uid "D944631A-46A8-F755-4A23-049130DA6421";
+	rename -uid "675A15E0-4F47-47A3-B44A-96A4326939FF";
 	setAttr ".uopa" yes;
 	setAttr -s 982 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.68565023 0 ;
@@ -257782,11 +257833,11 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV5";
 	setAttr ".uvtk[984]" -type "float2" -0.76692635 0 ;
 	setAttr ".uvtk[985]" -type "float2" -0.76335186 0 ;
 createNode polyMapSew -n "Pillars2:polyMapSew5";
-	rename -uid "E1CB7F9C-4329-0BF6-99E6-8F8239E96F88";
+	rename -uid "68986FDB-4F24-F3E9-C580-EDA01F86B189";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "e[925]" "e[1341]";
 createNode polyTweak -n "Pillars2:polyTweak1";
-	rename -uid "0EE7B507-45CB-D7D0-74AA-798B4EFCA2AA";
+	rename -uid "E82DEC0F-432E-5FC7-4289-7D92567F4FF8";
 	setAttr ".uopa" yes;
 	setAttr -s 4 ".tk";
 	setAttr ".tk[270]" -type "float3" 0 6.1035156e-05 0 ;
@@ -257794,7 +257845,7 @@ createNode polyTweak -n "Pillars2:polyTweak1";
 	setAttr ".tk[451]" -type "float3" 0 6.1035156e-05 0 ;
 	setAttr ".tk[452]" -type "float3" 0 6.1035156e-05 0 ;
 createNode polyTweakUV -n "Pillars2:polyTweakUV6";
-	rename -uid "D52D0F4B-47D4-26FD-E556-0CBF5A4C75A9";
+	rename -uid "D7FBA7C5-4F13-3664-FD9C-1BA47E920129";
 	setAttr ".uopa" yes;
 	setAttr -s 983 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.0032089055 0 0.0032103658 0 0.0031866431
@@ -257977,15 +258028,13 @@ createNode polyTweakUV -n "Pillars2:polyTweakUV6";
 		 0 -0.00061136484 0 -0.00061380863 0 -0.00063657761 0 -0.00063765049 0 -0.00048333406
 		 0 -0.00051188469 0 -0.00049692392 0 -0.0005183816 0;
 createNode file -n "Pillars2:file1";
-	rename -uid "AD4589FC-47CE-71C4-13A3-9F87DCE3715D";
+	rename -uid "2DA53A82-4C1E-C47D-4476-44A6C871DCDE";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Pillars-20260303T024543Z-3-001/Pillars/Pillar_standardSurface2_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Pillars2:place2dTexture1";
-	rename -uid "7B475FD9-4239-3D8E-3A7B-6D9D395948EE";
-createNode mayaUsdLayerManager -n "Pillars2:mayaUsdLayerManager1";
-	rename -uid "39175FF9-4C27-21E7-6269-2597F8AE1E28";
+	rename -uid "E5FE4F89-4774-3E7B-AF22-FCA4706DD602";
 createNode nodeGraphEditorInfo -n "Pillars2:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "D87B1A81-4883-4C34-DFD0-C5B1E525D1F1";
+	rename -uid "A30C87AB-4CCB-278C-B811-0CA72BF88458";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -778.95704745917328 -1327.3197224851801 ;
@@ -258008,43 +258057,43 @@ createNode nodeGraphEditorInfo -n "Pillars2:hyperShadePrimaryNodeEditorSavedTabs
 	setAttr ".tgi[0].ni[5].y" -175.71427917480469;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "Pillars3:shapeEditorManager";
-	rename -uid "0E90E3B7-41BF-6091-3DF9-1ABF0619451D";
+	rename -uid "E7E6E6B6-4CF8-9BEE-3C6B-528D665D0389";
 createNode poseInterpolatorManager -n "Pillars3:poseInterpolatorManager";
-	rename -uid "4E0A8D57-4D20-9DE8-E716-FA890E5E8E25";
+	rename -uid "67DDFC34-4368-9B44-29C9-7CA00AD55A9B";
 createNode renderLayerManager -n "Pillars3:renderLayerManager";
-	rename -uid "140EB6F6-4AC4-7265-0DBF-0B93C6BA0EA7";
+	rename -uid "EB650EDB-442F-8035-6853-BE8E07CF254F";
 createNode renderLayer -n "Pillars3:defaultRenderLayer";
-	rename -uid "970CCF33-4C59-FFC2-E16F-5188C3B70C2D";
+	rename -uid "83D3B0E2-4076-F8D0-92DC-7199AA914C36";
 	setAttr ".g" yes;
 createNode standardSurface -n "Pillars3:standardSurface2";
-	rename -uid "B2235F1E-4F49-F93C-6BDB-F68AEC3D60B7";
+	rename -uid "43A5CBCC-4DA8-3773-BEE5-B6A26A055464";
 	setAttr ".sr" 0.60000002384185791;
 createNode shadingEngine -n "Pillars3:polySurface130SG";
-	rename -uid "D81A6DDB-406F-9E38-630F-FFAC0D1A6E7B";
+	rename -uid "EA95D532-4A14-8636-72D3-2CB50665AFDD";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars3:materialInfo1";
-	rename -uid "1301C8A2-4B33-31AE-F926-03AC8856B165";
+	rename -uid "532ACD8B-4405-3B8E-D30E-1BBC57CA1208";
 createNode shadingEngine -n "Pillars3:polySurface131SG";
-	rename -uid "F0D170FA-4BC0-0C51-A400-D0AC1167955F";
+	rename -uid "ED509CFA-4F5F-5077-4D23-4784103EC3EB";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars3:materialInfo2";
-	rename -uid "327C97DB-4CFA-F73C-6C86-D49B69D664C1";
+	rename -uid "161411BC-4E0B-DEB4-D847-14BDE338C528";
 createNode shadingEngine -n "Pillars3:polySurface132SG";
-	rename -uid "83ECD7DE-4CAC-228F-F13A-DDA72F8F1C4E";
+	rename -uid "EA184BC7-4650-578B-27C7-3D9F877D14F5";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars3:materialInfo3";
-	rename -uid "0F45E867-45B6-90EA-2EE9-DAA2A81EE4A1";
+	rename -uid "C9A50881-4E84-B856-FF85-149CF76501BC";
 createNode displayLayer -n "Pillars3:Pillars";
-	rename -uid "33988D7B-4593-A667-34FE-7A9D3B54032A";
+	rename -uid "463DC7DF-43D4-12F0-E477-369C775312BD";
 	setAttr ".dt" 2;
 	setAttr ".c" 7;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 createNode polyCylProj -n "Pillars3:polyCylProj1";
-	rename -uid "1A517D18-4B29-0BD6-E559-8FA516703E3E";
+	rename -uid "4DAFBEE8-47B5-E1E9-72AA-21ACCA753FF0";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -258053,28 +258102,28 @@ createNode polyCylProj -n "Pillars3:polyCylProj1";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode groupId -n "Pillars3:groupId1";
-	rename -uid "4F9BF9D9-4FBE-72F5-1445-D3A0D6058C53";
+	rename -uid "14F12E7B-452C-4BDB-E0FA-09BDD489ABA5";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars3:groupParts1";
-	rename -uid "F58865D3-45BD-1A87-9BF3-31B8F59A3459";
+	rename -uid "1C3C9466-4EF1-E264-1EDF-E7A68E03DD2B";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:415]";
 createNode groupId -n "Pillars3:groupId2";
-	rename -uid "57871EEC-4466-0ACE-7F19-E2BA020BEEBF";
+	rename -uid "35C27C0B-48CF-8EEF-3B18-6FBF33B1B07C";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars3:groupParts2";
-	rename -uid "94F31E3E-4855-E12F-BF78-AC89DA13C996";
+	rename -uid "7DC71807-46B6-EDE7-43F5-92B3EDD86F42";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[416:703]";
 createNode groupId -n "Pillars3:groupId3";
-	rename -uid "1B8D035F-4769-FD04-C416-7E8D9FAA7D77";
+	rename -uid "578A64B9-468C-D5CF-CFB0-A28F24B0A993";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars3:groupParts3";
-	rename -uid "F785FD15-4C0B-DBCC-22B3-CBBC12B07451";
+	rename -uid "43A5016A-4320-50F9-207D-1EA346A24C65";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[704:991]";
 createNode polyTweakUV -n "Pillars3:polyTweakUV1";
-	rename -uid "B9B92C98-4529-5402-355D-D384C1E2C79B";
+	rename -uid "3015E529-4C73-909E-5898-C9AC3CB792D1";
 	setAttr ".uopa" yes;
 	setAttr -s 1073 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.48330694 0.43065727 0.48242092 0.4355787
@@ -258375,17 +258424,17 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV1";
 		 -0.83497155 -0.27776384 -0.9771412 -0.07627809 -0.95806634 -0.076421954 -0.97032899
 		 -0.067790419;
 createNode polyMergeVert -n "Pillars3:polyMergeVert1";
-	rename -uid "63B9D490-4067-F495-08FA-2ABE1AE4DE0B";
+	rename -uid "C9AA50D9-4BCC-BBBF-824D-558044193405";
 	setAttr ".ics" -type "componentList" 1 "vtx[*]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr ".d" 1;
 	setAttr ".am" yes;
 createNode polyMapSew -n "Pillars3:polyMapSew1";
-	rename -uid "0AD5C8A4-4E61-587F-5840-0DB8CC5B56FB";
+	rename -uid "88D78001-42D4-D19B-60F2-32BF9C0A14CA";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[0:1935]";
 createNode polyCylProj -n "Pillars3:polyCylProj2";
-	rename -uid "8F20E30B-4251-D653-57DC-2E982034E85F";
+	rename -uid "D9F2BE76-4B5F-F58F-D68A-299095A68505";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -258394,7 +258443,7 @@ createNode polyCylProj -n "Pillars3:polyCylProj2";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyAutoProj -n "Pillars3:polyAutoProj1";
-	rename -uid "DAF97252-47C3-FCA2-9F24-198EC948478A";
+	rename -uid "D9ADF649-47AA-6CBA-AAA0-0192FFFE6F4E";
 	setAttr ".cch" yes;
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
@@ -258403,7 +258452,7 @@ createNode polyAutoProj -n "Pillars3:polyAutoProj1";
 	setAttr ".ps" 0.20000000298023224;
 	setAttr ".dl" yes;
 createNode polyCylProj -n "Pillars3:polyCylProj3";
-	rename -uid "97459D2E-4967-9F0F-E1BB-0693FB198E88";
+	rename -uid "61EEEC42-42BE-1A88-E3A2-6285DEC725AE";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -258412,23 +258461,23 @@ createNode polyCylProj -n "Pillars3:polyCylProj3";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyMapCut -n "Pillars3:polyMapCut1";
-	rename -uid "ED27273F-4D12-9666-04F0-18B2A97C16C9";
+	rename -uid "E3F3CD9B-4521-DFE0-7F57-DA96D6216E32";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 6 "e[849]" "e[906]" "e[924:925]" "e[1272]" "e[1340:1341]" "e[1388]";
 createNode polyMapCut -n "Pillars3:polyMapCut2";
-	rename -uid "F97032D0-43C3-A79A-7671-468EDDECB6DA";
+	rename -uid "B9D4E2E6-4F9A-EA36-540B-F98D3996DBF4";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1932]";
 createNode polyMapSew -n "Pillars3:polyMapSew2";
-	rename -uid "18BD5D05-4671-306E-589C-9585407A5F71";
+	rename -uid "775601EB-4E8F-E67E-EA67-A9B16C1C758A";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1814]";
 createNode polyMapSew -n "Pillars3:polyMapSew3";
-	rename -uid "14E0B94C-4DAA-78A3-7B18-43A2967488A5";
+	rename -uid "432F72B8-4A2E-52DF-DBE7-FEB4B7D6ECDB";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1818]";
 createNode polyTweakUV -n "Pillars3:polyTweakUV2";
-	rename -uid "C6C213AF-4565-B322-88B0-B0B591FC6C64";
+	rename -uid "C24AB6BC-4D4E-3C31-6217-E4BFDBAC70B5";
 	setAttr ".uopa" yes;
 	setAttr -s 984 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" -0.012087911 1.4779607 ;
@@ -259416,7 +259465,7 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV2";
 	setAttr ".uvtk[1008]" -type "float2" -0.11801028 1.7401671 ;
 	setAttr ".uvtk[1012]" -type "float2" -0.075638533 1.5406055 ;
 createNode polyPlanarProj -n "Pillars3:polyPlanarProj1";
-	rename -uid "BD587418-4483-A55E-7DDE-3B978EF6DBA3";
+	rename -uid "B8847E3A-4244-7A4F-355C-8582718A987E";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -259426,7 +259475,7 @@ createNode polyPlanarProj -n "Pillars3:polyPlanarProj1";
 	setAttr ".ps" -type "double2" 110.44864085903419 110.44864085903419 ;
 	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 createNode polyLayoutUV -n "Pillars3:polyLayoutUV1";
-	rename -uid "8547476F-4913-6AAF-AE06-0BBCEEB20C1C";
+	rename -uid "632CDD2E-4386-CC39-E6A5-7DA1349FF3C1";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".fr" no;
@@ -259437,7 +259486,7 @@ createNode polyLayoutUV -n "Pillars3:polyLayoutUV1";
 	setAttr ".rbf" 3;
 	setAttr ".lm" 1;
 createNode polyTweakUV -n "Pillars3:polyTweakUV3";
-	rename -uid "449A699D-4B58-1778-42A7-5E911C64A45F";
+	rename -uid "A4A01A02-484C-E67A-1E14-32B44328F210";
 	setAttr ".uopa" yes;
 	setAttr ".uvtk[687]" -type "float2" 0.095588841 -0.37215713;
 	setAttr -s 3798 ".nuv";
@@ -261099,11 +261148,11 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV3";
 		 0.05774124 0 220 0.84669536 0.14886063 0 222 0.84833735 0.15126522 
 		0 149 0.84828675 0.1552757 0 146 0.84664667 0.15271963;
 createNode polyMapSew -n "Pillars3:polyMapSew4";
-	rename -uid "80A8CAB9-460D-F8CB-43EB-DE83F859294C";
+	rename -uid "6C63BACA-44CE-37B8-BCA9-1B994AD7310F";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 29 "e[0:924]" "e[926:1052]" "e[1054:1062]" "e[1064:1072]" "e[1074:1077]" "e[1079:1080]" "e[1082:1085]" "e[1087:1088]" "e[1090:1269]" "e[1271:1273]" "e[1275:1278]" "e[1281:1301]" "e[1303]" "e[1306]" "e[1309]" "e[1312]" "e[1315]" "e[1318:1339]" "e[1345:1352]" "e[1355]" "e[1360:1361]" "e[1367]" "e[1370:1372]" "e[1374]" "e[1377]" "e[1381]" "e[1384]" "e[1386:1387]" "e[1389:1935]";
 createNode polySphProj -n "Pillars3:polySphProj1";
-	rename -uid "94C6B1B5-43E4-14F0-9425-77A264679AFC";
+	rename -uid "2F363895-4B06-F7B0-C898-41B267EB86C5";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -261111,7 +261160,7 @@ createNode polySphProj -n "Pillars3:polySphProj1";
 	setAttr ".pc" -type "double3" -7.62939453125e-06 260.41863059997559 0 ;
 	setAttr ".r" 520.83729934692383;
 createNode polyCylProj -n "Pillars3:polyCylProj4";
-	rename -uid "2ADF6F26-4C19-A59D-9BB8-3BA7300A9C2C";
+	rename -uid "1BCD0825-4E90-300B-F18B-77A6C13043C7";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -261120,7 +261169,7 @@ createNode polyCylProj -n "Pillars3:polyCylProj4";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars3:polyTweakUV4";
-	rename -uid "D62D9D26-40AA-6CD9-4EC5-95994C5C5549";
+	rename -uid "9FEACC1A-467F-D662-7D41-07B16F54243E";
 	setAttr ".uopa" yes;
 	setAttr -s 985 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.6947757 0 ;
@@ -262109,32 +262158,32 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV4";
 	setAttr ".uvtk[1012]" -type "float2" -0.96529198 0 ;
 	setAttr ".uvtk[1013]" -type "float2" -0.97302186 0 ;
 createNode polyMapCut -n "Pillars3:polyMapCut3";
-	rename -uid "324E99B1-4423-942E-E56E-219BE5153933";
+	rename -uid "A5B70E24-4A96-3E9A-3DB3-1E98FD38C646";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 34 "e[1472]" "e[1484]" "e[1496]" "e[1507]" "e[1518]" "e[1530]" "e[1540]" "e[1551]" "e[1563]" "e[1572]" "e[1583]" "e[1594]" "e[1605]" "e[1612]" "e[1620]" "e[1814]" "e[1816]" "e[1818]" "e[1820:1822]" "e[1824]" "e[1826:1827]" "e[1829:1830]" "e[1832:1833]" "e[1835:1836]" "e[1838:1839]" "e[1841:1842]" "e[1844:1845]" "e[1847:1848]" "e[1850:1851]" "e[1853:1854]" "e[1856:1857]" "e[1859:1860]" "e[1862]" "e[1922]";
 createNode deleteComponent -n "Pillars3:deleteComponent1";
-	rename -uid "08D976F5-4C61-991C-D5FB-F29303A90DD4";
+	rename -uid "75DFF944-4F76-54C5-DC0E-05B91FB255B7";
 	setAttr ".dc" -type "componentList" 14 "f[656:657]" "f[659:660]" "f[662:665]" "f[667]" "f[669:670]" "f[672]" "f[676:678]" "f[680:681]" "f[683:684]" "f[686]" "f[688:691]" "f[693]" "f[696:699]" "f[701:702]";
 createNode deleteComponent -n "Pillars3:deleteComponent2";
-	rename -uid "D85E8974-4825-C124-3753-8FA497B3208F";
+	rename -uid "82B06076-4280-376D-ABD8-FCA897294F59";
 	setAttr ".dc" -type "componentList" 2 "e[1343]" "e[1366]";
 createNode deleteComponent -n "Pillars3:deleteComponent3";
-	rename -uid "C34A79A9-416F-DF93-ABAB-AFA3DE813357";
+	rename -uid "BB95A241-40A5-2258-9B2E-058A650C45D7";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars3:deleteComponent4";
-	rename -uid "1E989AE8-4B50-F46A-A9C3-13AF53BE8D72";
+	rename -uid "0D2A7DA7-4FE3-C199-E581-FB804A4E05F6";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars3:deleteComponent5";
-	rename -uid "FE774056-4AEA-C204-F450-37A7AC3B5724";
+	rename -uid "A4ACC36C-46A3-690B-CA79-3A869624D338";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars3:deleteComponent6";
-	rename -uid "5EBC043A-4E2A-E6C7-3684-F3A54CF9E527";
+	rename -uid "B91B906C-416E-1DA6-2C1D-FCBFFF0C06C0";
 	setAttr ".dc" -type "componentList" 1 "f[655:669]";
 createNode deleteComponent -n "Pillars3:deleteComponent7";
-	rename -uid "A267E3BF-44C2-7990-B3DF-62A95FAAAF07";
+	rename -uid "7949203B-46F3-16AA-9DB7-7AAAA712F014";
 	setAttr ".dc" -type "componentList" 1 "f[895:942]";
 createNode polyCylProj -n "Pillars3:polyCylProj5";
-	rename -uid "53DD2097-413D-E175-D4B0-C182FD584083";
+	rename -uid "4ACDC89F-462A-0B54-CB98-A7A9D7A8D8B3";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "f[0:652]" "f[654:895]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -262143,7 +262192,7 @@ createNode polyCylProj -n "Pillars3:polyCylProj5";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars3:polyTweakUV5";
-	rename -uid "D944631A-46A8-F755-4A23-049130DA6421";
+	rename -uid "447A5373-4FA5-EB59-EB0E-42B3A9307CE3";
 	setAttr ".uopa" yes;
 	setAttr -s 982 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.68565023 0 ;
@@ -263129,11 +263178,11 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV5";
 	setAttr ".uvtk[984]" -type "float2" -0.76692635 0 ;
 	setAttr ".uvtk[985]" -type "float2" -0.76335186 0 ;
 createNode polyMapSew -n "Pillars3:polyMapSew5";
-	rename -uid "E1CB7F9C-4329-0BF6-99E6-8F8239E96F88";
+	rename -uid "5704F077-4110-0D03-BEF6-B282E971200D";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "e[925]" "e[1341]";
 createNode polyTweak -n "Pillars3:polyTweak1";
-	rename -uid "0EE7B507-45CB-D7D0-74AA-798B4EFCA2AA";
+	rename -uid "EB75BA4A-4192-F04F-F4BF-6A9D69BF3A23";
 	setAttr ".uopa" yes;
 	setAttr -s 4 ".tk";
 	setAttr ".tk[270]" -type "float3" 0 6.1035156e-05 0 ;
@@ -263141,7 +263190,7 @@ createNode polyTweak -n "Pillars3:polyTweak1";
 	setAttr ".tk[451]" -type "float3" 0 6.1035156e-05 0 ;
 	setAttr ".tk[452]" -type "float3" 0 6.1035156e-05 0 ;
 createNode polyTweakUV -n "Pillars3:polyTweakUV6";
-	rename -uid "D52D0F4B-47D4-26FD-E556-0CBF5A4C75A9";
+	rename -uid "F76C41A4-413D-9E69-8AE9-29A6D3484528";
 	setAttr ".uopa" yes;
 	setAttr -s 983 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.0032089055 0 0.0032103658 0 0.0031866431
@@ -263324,15 +263373,13 @@ createNode polyTweakUV -n "Pillars3:polyTweakUV6";
 		 0 -0.00061136484 0 -0.00061380863 0 -0.00063657761 0 -0.00063765049 0 -0.00048333406
 		 0 -0.00051188469 0 -0.00049692392 0 -0.0005183816 0;
 createNode file -n "Pillars3:file1";
-	rename -uid "AD4589FC-47CE-71C4-13A3-9F87DCE3715D";
+	rename -uid "262D42F6-447F-B2AC-EF42-B4A41DD33EA5";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Pillars-20260303T024543Z-3-001/Pillars/Pillar_standardSurface2_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Pillars3:place2dTexture1";
-	rename -uid "7B475FD9-4239-3D8E-3A7B-6D9D395948EE";
-createNode mayaUsdLayerManager -n "Pillars3:mayaUsdLayerManager1";
-	rename -uid "39175FF9-4C27-21E7-6269-2597F8AE1E28";
+	rename -uid "4B228757-4BA7-DA5A-73B7-DDBBEF542AA3";
 createNode nodeGraphEditorInfo -n "Pillars3:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "D87B1A81-4883-4C34-DFD0-C5B1E525D1F1";
+	rename -uid "574F018C-4E10-AE33-506A-77AB24493835";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -778.95704745917328 -1327.3197224851801 ;
@@ -263355,43 +263402,43 @@ createNode nodeGraphEditorInfo -n "Pillars3:hyperShadePrimaryNodeEditorSavedTabs
 	setAttr ".tgi[0].ni[5].y" -175.71427917480469;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "Pillars4:shapeEditorManager";
-	rename -uid "0E90E3B7-41BF-6091-3DF9-1ABF0619451D";
+	rename -uid "DA07FD2A-4C1D-1494-A4C9-978F651A396D";
 createNode poseInterpolatorManager -n "Pillars4:poseInterpolatorManager";
-	rename -uid "4E0A8D57-4D20-9DE8-E716-FA890E5E8E25";
+	rename -uid "949FFD61-4E2E-F4F5-C16F-DB9ACCFB0191";
 createNode renderLayerManager -n "Pillars4:renderLayerManager";
-	rename -uid "140EB6F6-4AC4-7265-0DBF-0B93C6BA0EA7";
+	rename -uid "362FAC4C-4C3B-013C-9AEA-FFA97992EC26";
 createNode renderLayer -n "Pillars4:defaultRenderLayer";
-	rename -uid "970CCF33-4C59-FFC2-E16F-5188C3B70C2D";
+	rename -uid "83A8BF06-44CF-04EB-E4EB-93AB25778E6C";
 	setAttr ".g" yes;
 createNode standardSurface -n "Pillars4:standardSurface2";
-	rename -uid "B2235F1E-4F49-F93C-6BDB-F68AEC3D60B7";
+	rename -uid "79886F13-4AC2-7652-756A-B6BEBCECD836";
 	setAttr ".sr" 0.60000002384185791;
 createNode shadingEngine -n "Pillars4:polySurface130SG";
-	rename -uid "D81A6DDB-406F-9E38-630F-FFAC0D1A6E7B";
+	rename -uid "85137337-4E97-3BF8-284C-2A86143A618B";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars4:materialInfo1";
-	rename -uid "1301C8A2-4B33-31AE-F926-03AC8856B165";
+	rename -uid "63B6422B-4D93-2601-5E2F-88B46D031D4B";
 createNode shadingEngine -n "Pillars4:polySurface131SG";
-	rename -uid "F0D170FA-4BC0-0C51-A400-D0AC1167955F";
+	rename -uid "5A61C870-4698-181A-8A59-B091A9D61039";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars4:materialInfo2";
-	rename -uid "327C97DB-4CFA-F73C-6C86-D49B69D664C1";
+	rename -uid "27C4D489-4D04-8247-44A3-83B97C125D94";
 createNode shadingEngine -n "Pillars4:polySurface132SG";
-	rename -uid "83ECD7DE-4CAC-228F-F13A-DDA72F8F1C4E";
+	rename -uid "A665766A-433F-BDB2-F35C-5196E0863A4D";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Pillars4:materialInfo3";
-	rename -uid "0F45E867-45B6-90EA-2EE9-DAA2A81EE4A1";
+	rename -uid "BC115342-41A0-87D3-9697-E79BF82F4770";
 createNode displayLayer -n "Pillars4:Pillars";
-	rename -uid "33988D7B-4593-A667-34FE-7A9D3B54032A";
+	rename -uid "14126BA7-4DEC-8100-EDED-AA86ED4DFB17";
 	setAttr ".dt" 2;
 	setAttr ".c" 7;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 createNode polyCylProj -n "Pillars4:polyCylProj1";
-	rename -uid "1A517D18-4B29-0BD6-E559-8FA516703E3E";
+	rename -uid "D010E887-4A45-49D2-9638-7A82F6A2D828";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -263400,28 +263447,28 @@ createNode polyCylProj -n "Pillars4:polyCylProj1";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode groupId -n "Pillars4:groupId1";
-	rename -uid "4F9BF9D9-4FBE-72F5-1445-D3A0D6058C53";
+	rename -uid "A880F2D3-4509-8D83-3F72-9DBD1DED995E";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars4:groupParts1";
-	rename -uid "F58865D3-45BD-1A87-9BF3-31B8F59A3459";
+	rename -uid "78506F74-473D-F62F-2955-9588E82A5086";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:415]";
 createNode groupId -n "Pillars4:groupId2";
-	rename -uid "57871EEC-4466-0ACE-7F19-E2BA020BEEBF";
+	rename -uid "F6547745-4DF7-3100-8CD5-FA919C53569D";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars4:groupParts2";
-	rename -uid "94F31E3E-4855-E12F-BF78-AC89DA13C996";
+	rename -uid "31DAEB9D-41A2-4213-1B54-4B94CA86B7FA";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[416:703]";
 createNode groupId -n "Pillars4:groupId3";
-	rename -uid "1B8D035F-4769-FD04-C416-7E8D9FAA7D77";
+	rename -uid "7D2D5A32-4D80-2E0E-CE3E-67B1F28B5126";
 	setAttr ".ihi" 0;
 createNode groupParts -n "Pillars4:groupParts3";
-	rename -uid "F785FD15-4C0B-DBCC-22B3-CBBC12B07451";
+	rename -uid "3546DC3D-4D73-D95A-3978-AB880AB12500";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[704:991]";
 createNode polyTweakUV -n "Pillars4:polyTweakUV1";
-	rename -uid "B9B92C98-4529-5402-355D-D384C1E2C79B";
+	rename -uid "815C76D6-4593-1FB3-B5A9-15A8F8DF3D75";
 	setAttr ".uopa" yes;
 	setAttr -s 1073 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.48330694 0.43065727 0.48242092 0.4355787
@@ -263722,17 +263769,17 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV1";
 		 -0.83497155 -0.27776384 -0.9771412 -0.07627809 -0.95806634 -0.076421954 -0.97032899
 		 -0.067790419;
 createNode polyMergeVert -n "Pillars4:polyMergeVert1";
-	rename -uid "63B9D490-4067-F495-08FA-2ABE1AE4DE0B";
+	rename -uid "9A05E245-4ADB-9A5A-88FC-A98806E74772";
 	setAttr ".ics" -type "componentList" 1 "vtx[*]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr ".d" 1;
 	setAttr ".am" yes;
 createNode polyMapSew -n "Pillars4:polyMapSew1";
-	rename -uid "0AD5C8A4-4E61-587F-5840-0DB8CC5B56FB";
+	rename -uid "A6062C38-43C2-5EC3-8AB9-D4850C310B11";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[0:1935]";
 createNode polyCylProj -n "Pillars4:polyCylProj2";
-	rename -uid "8F20E30B-4251-D653-57DC-2E982034E85F";
+	rename -uid "FE4A1E45-4697-6167-82F8-5D85EE8486B2";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -263741,7 +263788,7 @@ createNode polyCylProj -n "Pillars4:polyCylProj2";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyAutoProj -n "Pillars4:polyAutoProj1";
-	rename -uid "DAF97252-47C3-FCA2-9F24-198EC948478A";
+	rename -uid "89853C13-4B87-0ECA-6191-2989129E963C";
 	setAttr ".cch" yes;
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
@@ -263750,7 +263797,7 @@ createNode polyAutoProj -n "Pillars4:polyAutoProj1";
 	setAttr ".ps" 0.20000000298023224;
 	setAttr ".dl" yes;
 createNode polyCylProj -n "Pillars4:polyCylProj3";
-	rename -uid "97459D2E-4967-9F0F-E1BB-0693FB198E88";
+	rename -uid "61070C18-45BE-2BFB-5B83-7683B2E98A47";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -263759,23 +263806,23 @@ createNode polyCylProj -n "Pillars4:polyCylProj3";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyMapCut -n "Pillars4:polyMapCut1";
-	rename -uid "ED27273F-4D12-9666-04F0-18B2A97C16C9";
+	rename -uid "D0F70CF9-49AB-0D2F-6A6A-6EBA281CEB01";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 6 "e[849]" "e[906]" "e[924:925]" "e[1272]" "e[1340:1341]" "e[1388]";
 createNode polyMapCut -n "Pillars4:polyMapCut2";
-	rename -uid "F97032D0-43C3-A79A-7671-468EDDECB6DA";
+	rename -uid "FE67C38B-4E79-DD1C-78D0-BDA4550F70C2";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1932]";
 createNode polyMapSew -n "Pillars4:polyMapSew2";
-	rename -uid "18BD5D05-4671-306E-589C-9585407A5F71";
+	rename -uid "08476EF4-4F93-2E5C-72C8-80B6F868BB40";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1814]";
 createNode polyMapSew -n "Pillars4:polyMapSew3";
-	rename -uid "14E0B94C-4DAA-78A3-7B18-43A2967488A5";
+	rename -uid "A3E54593-49CB-2D1C-5A3A-5296DBF5C30E";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[1818]";
 createNode polyTweakUV -n "Pillars4:polyTweakUV2";
-	rename -uid "C6C213AF-4565-B322-88B0-B0B591FC6C64";
+	rename -uid "38344446-4378-1F43-4B7E-21A1C52A8D14";
 	setAttr ".uopa" yes;
 	setAttr -s 984 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" -0.012087911 1.4779607 ;
@@ -264763,7 +264810,7 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV2";
 	setAttr ".uvtk[1008]" -type "float2" -0.11801028 1.7401671 ;
 	setAttr ".uvtk[1012]" -type "float2" -0.075638533 1.5406055 ;
 createNode polyPlanarProj -n "Pillars4:polyPlanarProj1";
-	rename -uid "BD587418-4483-A55E-7DDE-3B978EF6DBA3";
+	rename -uid "15F97793-44D4-F90C-44C9-45915C60B97C";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -264773,7 +264820,7 @@ createNode polyPlanarProj -n "Pillars4:polyPlanarProj1";
 	setAttr ".ps" -type "double2" 110.44864085903419 110.44864085903419 ;
 	setAttr ".cam" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 createNode polyLayoutUV -n "Pillars4:polyLayoutUV1";
-	rename -uid "8547476F-4913-6AAF-AE06-0BBCEEB20C1C";
+	rename -uid "D6E81D46-45EA-C671-F10D-8A87A05A431E";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".fr" no;
@@ -264784,7 +264831,7 @@ createNode polyLayoutUV -n "Pillars4:polyLayoutUV1";
 	setAttr ".rbf" 3;
 	setAttr ".lm" 1;
 createNode polyTweakUV -n "Pillars4:polyTweakUV3";
-	rename -uid "449A699D-4B58-1778-42A7-5E911C64A45F";
+	rename -uid "C5CDBD25-4AE1-3733-664B-648F9CD55F8A";
 	setAttr ".uopa" yes;
 	setAttr ".uvtk[687]" -type "float2" 0.095588841 -0.37215713;
 	setAttr -s 3798 ".nuv";
@@ -266446,11 +266493,11 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV3";
 		 0.05774124 0 220 0.84669536 0.14886063 0 222 0.84833735 0.15126522 
 		0 149 0.84828675 0.1552757 0 146 0.84664667 0.15271963;
 createNode polyMapSew -n "Pillars4:polyMapSew4";
-	rename -uid "80A8CAB9-460D-F8CB-43EB-DE83F859294C";
+	rename -uid "44C220B0-41B6-7AC9-6FF5-EEBABC343E4D";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 29 "e[0:924]" "e[926:1052]" "e[1054:1062]" "e[1064:1072]" "e[1074:1077]" "e[1079:1080]" "e[1082:1085]" "e[1087:1088]" "e[1090:1269]" "e[1271:1273]" "e[1275:1278]" "e[1281:1301]" "e[1303]" "e[1306]" "e[1309]" "e[1312]" "e[1315]" "e[1318:1339]" "e[1345:1352]" "e[1355]" "e[1360:1361]" "e[1367]" "e[1370:1372]" "e[1374]" "e[1377]" "e[1381]" "e[1384]" "e[1386:1387]" "e[1389:1935]";
 createNode polySphProj -n "Pillars4:polySphProj1";
-	rename -uid "94C6B1B5-43E4-14F0-9425-77A264679AFC";
+	rename -uid "38234FC6-43D7-FE96-F1EF-F5AB6C9B2485";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -266458,7 +266505,7 @@ createNode polySphProj -n "Pillars4:polySphProj1";
 	setAttr ".pc" -type "double3" -7.62939453125e-06 260.41863059997559 0 ;
 	setAttr ".r" 520.83729934692383;
 createNode polyCylProj -n "Pillars4:polyCylProj4";
-	rename -uid "2ADF6F26-4C19-A59D-9BB8-3BA7300A9C2C";
+	rename -uid "5058FF33-4128-38EA-83AA-8388A00C0A43";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 18 "f[0:652]" "f[654]" "f[656:659]" "f[661]" "f[664:666]" "f[669]" "f[671:672]" "f[674]" "f[677]" "f[680:681]" "f[683]" "f[687:688]" "f[690]" "f[692:693]" "f[695]" "f[697:698]" "f[701]" "f[703:991]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -266467,7 +266514,7 @@ createNode polyCylProj -n "Pillars4:polyCylProj4";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars4:polyTweakUV4";
-	rename -uid "D62D9D26-40AA-6CD9-4EC5-95994C5C5549";
+	rename -uid "6FB95048-4388-5121-AA60-F0BBB4A8B2B8";
 	setAttr ".uopa" yes;
 	setAttr -s 985 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.6947757 0 ;
@@ -267456,32 +267503,32 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV4";
 	setAttr ".uvtk[1012]" -type "float2" -0.96529198 0 ;
 	setAttr ".uvtk[1013]" -type "float2" -0.97302186 0 ;
 createNode polyMapCut -n "Pillars4:polyMapCut3";
-	rename -uid "324E99B1-4423-942E-E56E-219BE5153933";
+	rename -uid "9CAC4DD4-45E6-FB7C-BCC9-FAB5713FDDE3";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 34 "e[1472]" "e[1484]" "e[1496]" "e[1507]" "e[1518]" "e[1530]" "e[1540]" "e[1551]" "e[1563]" "e[1572]" "e[1583]" "e[1594]" "e[1605]" "e[1612]" "e[1620]" "e[1814]" "e[1816]" "e[1818]" "e[1820:1822]" "e[1824]" "e[1826:1827]" "e[1829:1830]" "e[1832:1833]" "e[1835:1836]" "e[1838:1839]" "e[1841:1842]" "e[1844:1845]" "e[1847:1848]" "e[1850:1851]" "e[1853:1854]" "e[1856:1857]" "e[1859:1860]" "e[1862]" "e[1922]";
 createNode deleteComponent -n "Pillars4:deleteComponent1";
-	rename -uid "08D976F5-4C61-991C-D5FB-F29303A90DD4";
+	rename -uid "BD8B8DCC-41DC-E517-E725-32ACDD3FF5C6";
 	setAttr ".dc" -type "componentList" 14 "f[656:657]" "f[659:660]" "f[662:665]" "f[667]" "f[669:670]" "f[672]" "f[676:678]" "f[680:681]" "f[683:684]" "f[686]" "f[688:691]" "f[693]" "f[696:699]" "f[701:702]";
 createNode deleteComponent -n "Pillars4:deleteComponent2";
-	rename -uid "D85E8974-4825-C124-3753-8FA497B3208F";
+	rename -uid "ED2B0DEB-4336-A284-3717-6BABEAD1FDF0";
 	setAttr ".dc" -type "componentList" 2 "e[1343]" "e[1366]";
 createNode deleteComponent -n "Pillars4:deleteComponent3";
-	rename -uid "C34A79A9-416F-DF93-ABAB-AFA3DE813357";
+	rename -uid "F2017BF0-4155-0098-D375-F8895A01A6E7";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars4:deleteComponent4";
-	rename -uid "1E989AE8-4B50-F46A-A9C3-13AF53BE8D72";
+	rename -uid "35C83D0D-457A-47C5-1066-3BB6D4E6C4B5";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars4:deleteComponent5";
-	rename -uid "FE774056-4AEA-C204-F450-37A7AC3B5724";
+	rename -uid "14977584-4C2B-3537-05FD-7E9CCBA0BD97";
 	setAttr ".dc" -type "componentList" 1 "vtx[688]";
 createNode deleteComponent -n "Pillars4:deleteComponent6";
-	rename -uid "5EBC043A-4E2A-E6C7-3684-F3A54CF9E527";
+	rename -uid "DD711F02-4745-EF7F-BE5C-64B6AD021728";
 	setAttr ".dc" -type "componentList" 1 "f[655:669]";
 createNode deleteComponent -n "Pillars4:deleteComponent7";
-	rename -uid "A267E3BF-44C2-7990-B3DF-62A95FAAAF07";
+	rename -uid "C3BE3778-4DDA-A5F7-9D45-1A932B93D9E3";
 	setAttr ".dc" -type "componentList" 1 "f[895:942]";
 createNode polyCylProj -n "Pillars4:polyCylProj5";
-	rename -uid "53DD2097-413D-E175-D4B0-C182FD584083";
+	rename -uid "F2E01FB6-4EA0-AE28-98A5-43B8E670BC99";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "f[0:652]" "f[654:895]";
 	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
@@ -267490,7 +267537,7 @@ createNode polyCylProj -n "Pillars4:polyCylProj5";
 	setAttr ".ps" -type "double2" 180 520.83729934692383 ;
 	setAttr ".r" 90.97314453125;
 createNode polyTweakUV -n "Pillars4:polyTweakUV5";
-	rename -uid "D944631A-46A8-F755-4A23-049130DA6421";
+	rename -uid "57877B80-4E1C-78D7-D58A-2B9B4AA25048";
 	setAttr ".uopa" yes;
 	setAttr -s 982 ".uvtk";
 	setAttr ".uvtk[0]" -type "float2" 0.68565023 0 ;
@@ -268476,11 +268523,11 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV5";
 	setAttr ".uvtk[984]" -type "float2" -0.76692635 0 ;
 	setAttr ".uvtk[985]" -type "float2" -0.76335186 0 ;
 createNode polyMapSew -n "Pillars4:polyMapSew5";
-	rename -uid "E1CB7F9C-4329-0BF6-99E6-8F8239E96F88";
+	rename -uid "2438CBBF-423E-AEB4-B6CA-C0A54E307B28";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "e[925]" "e[1341]";
 createNode polyTweak -n "Pillars4:polyTweak1";
-	rename -uid "0EE7B507-45CB-D7D0-74AA-798B4EFCA2AA";
+	rename -uid "B91CC86F-44DE-9C9C-73C1-009A60F35565";
 	setAttr ".uopa" yes;
 	setAttr -s 4 ".tk";
 	setAttr ".tk[270]" -type "float3" 0 6.1035156e-05 0 ;
@@ -268488,7 +268535,7 @@ createNode polyTweak -n "Pillars4:polyTweak1";
 	setAttr ".tk[451]" -type "float3" 0 6.1035156e-05 0 ;
 	setAttr ".tk[452]" -type "float3" 0 6.1035156e-05 0 ;
 createNode polyTweakUV -n "Pillars4:polyTweakUV6";
-	rename -uid "D52D0F4B-47D4-26FD-E556-0CBF5A4C75A9";
+	rename -uid "72279B2B-4DB9-0EE9-E4B6-5AB51F6D0583";
 	setAttr ".uopa" yes;
 	setAttr -s 983 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" 0.0032089055 0 0.0032103658 0 0.0031866431
@@ -268671,15 +268718,13 @@ createNode polyTweakUV -n "Pillars4:polyTweakUV6";
 		 0 -0.00061136484 0 -0.00061380863 0 -0.00063657761 0 -0.00063765049 0 -0.00048333406
 		 0 -0.00051188469 0 -0.00049692392 0 -0.0005183816 0;
 createNode file -n "Pillars4:file1";
-	rename -uid "AD4589FC-47CE-71C4-13A3-9F87DCE3715D";
+	rename -uid "8914AAAD-4072-3102-D675-39BF217DEF57";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Pillars-20260303T024543Z-3-001/Pillars/Pillar_standardSurface2_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Pillars4:place2dTexture1";
-	rename -uid "7B475FD9-4239-3D8E-3A7B-6D9D395948EE";
-createNode mayaUsdLayerManager -n "Pillars4:mayaUsdLayerManager1";
-	rename -uid "39175FF9-4C27-21E7-6269-2597F8AE1E28";
+	rename -uid "3CBAB5D2-4313-F351-9653-B48E4DD145BC";
 createNode nodeGraphEditorInfo -n "Pillars4:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "D87B1A81-4883-4C34-DFD0-C5B1E525D1F1";
+	rename -uid "9D524761-445B-5F2F-8250-4BB99A482D51";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -778.95704745917328 -1327.3197224851801 ;
@@ -269051,9 +269096,9 @@ createNode standardSurface -n "Material_Ref:Marble_Mat";
 createNode shadingEngine -n "Material_Ref:standardSurface5SG";
 	rename -uid "DE983DF6-48D6-EE46-DD9B-9D851D6FBEAF";
 	setAttr ".ihi" 0;
-	setAttr -s 128 ".dsm";
+	setAttr -s 127 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 107 ".gn";
+	setAttr -s 106 ".gn";
 createNode materialInfo -n "Material_Ref:materialInfo11";
 	rename -uid "A8698D15-45E2-8143-A5B2-239012DC24BE";
 createNode file -n "Material_Ref:file13";
@@ -269062,9 +269107,6 @@ createNode file -n "Material_Ref:file13";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Material_Ref:place2dTexture13";
 	rename -uid "5B154568-4902-FF96-6E77-C189DCFCA9B3";
-createNode standardSurface -n "Material_Ref:Brown_Paint_Mat";
-	rename -uid "22281C28-40D7-5274-9423-26808495CBFB";
-	setAttr ".sr" 0.60000002384185791;
 createNode aiMultiply -n "Material_Ref:pasted__aiMultiply3";
 	rename -uid "A9D1317A-4946-FEF8-3F61-2297C96EA7D2";
 createNode file -n "Material_Ref:pasted__pasted__file12";
@@ -269079,12 +269121,9 @@ createNode colorConstant -n "Material_Ref:pasted__colorConstant1";
 createNode shadingEngine -n "Material_Ref:Brown_Paint_MatSG";
 	rename -uid "E1DA9BA0-43F0-4087-3981-59899BA153DA";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Material_Ref:materialInfo12";
 	rename -uid "E88D4DE3-48E3-7841-02F7-CA9A6BC5C241";
-createNode mayaUsdLayerManager -n "Material_Ref:mayaUsdLayerManager1";
-	rename -uid "073A8471-4706-BF05-D971-90A2B99B3E34";
 createNode nodeGraphEditorInfo -n "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "F1629136-4072-A509-080F-30A8604CCC8E";
 	setAttr ".def" no;
@@ -269152,8 +269191,6 @@ createNode file -n "DiamondGem:file1";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "DiamondGem:place2dTexture1";
 	rename -uid "A1C0E2A7-4CC7-64AD-B3CE-59A197E91679";
-createNode mayaUsdLayerManager -n "DiamondGem:mayaUsdLayerManager1";
-	rename -uid "F58A170C-4310-C75D-3784-0C9D110A26ED";
 createNode nodeGraphEditorInfo -n "DiamondGem:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "6239B57D-43B4-AB66-F498-D88C667E1BDC";
 	setAttr ".def" no;
@@ -269180,51 +269217,51 @@ createNode nodeGraphEditorInfo -n "DiamondGem:hyperShadePrimaryNodeEditorSavedTa
 	setAttr ".tgi[0].ni[5].y" 182.85714721679688;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "DiamondGem1:shapeEditorManager";
-	rename -uid "BDA9C82F-4F73-8EF2-BD43-5889E612DB2A";
+	rename -uid "A4ED7438-4FCE-4FCD-5167-D68274FCDB12";
 createNode poseInterpolatorManager -n "DiamondGem1:poseInterpolatorManager";
-	rename -uid "4603A2CE-4AA2-B8D6-248F-E08B29EFF579";
+	rename -uid "76D7E111-480A-C563-1BA1-8E859A9683F5";
 createNode renderLayerManager -n "DiamondGem1:renderLayerManager";
-	rename -uid "EE65EAAD-4B32-630B-22A0-9D864EB65BC5";
+	rename -uid "8407689B-4AAC-7CFB-46D5-29B97DDEE4E3";
 createNode renderLayer -n "DiamondGem1:defaultRenderLayer";
-	rename -uid "2DF5F705-4FBA-B1B6-913C-12A16FD10513";
+	rename -uid "3F805854-4B69-21BE-2E70-0FB4B5D32B88";
 	setAttr ".g" yes;
 createNode shadingEngine -n "DiamondGem1:lambert1SG";
-	rename -uid "C0E70CDC-4323-9C79-E7A7-BD968F798FE9";
+	rename -uid "89B6D402-4AB1-674E-96A7-8A870FECC4EB";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem1:materialInfo1";
-	rename -uid "4C958AE3-4164-5008-0A28-57BCBDB1F8A2";
+	rename -uid "2825BCC8-4035-3031-CCAD-DA8DCBBAC33E";
 createNode shadingEngine -n "DiamondGem1:Lambert1SG";
-	rename -uid "56E0DFC5-4762-E7A7-5D34-2EB42392EF31";
+	rename -uid "61F9491A-4C5C-3128-9660-598A01EDAEEB";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem1:materialInfo2";
-	rename -uid "4460643E-4C45-8298-B53F-53BC5D94A692";
+	rename -uid "90020640-487B-6CE1-3CCA-71BCF7B94841";
 createNode shadingEngine -n "DiamondGem1:Standard_Surface1SG";
-	rename -uid "911B67C1-44A1-1249-0B96-5DA5CE620BCD";
+	rename -uid "F48742B3-4E87-8E1B-1DD0-F4882401CC0A";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem1:materialInfo3";
-	rename -uid "75796672-40AC-49A9-EFC0-BBAB385DB4B9";
+	rename -uid "349068AE-4904-E7FA-078F-3596D1A62196";
 createNode standardSurface -n "DiamondGem1:DiamondMat";
-	rename -uid "B7C8C1B7-482F-8EF3-068E-B7B5581B4089";
+	rename -uid "DC13F3D4-459F-7BCC-371F-6993640398AD";
 	setAttr ".sr" 0.25;
 createNode shadingEngine -n "DiamondGem1:standardSurface2SG";
-	rename -uid "42F5A334-4E4C-8D29-0326-4B86E22580E1";
+	rename -uid "EA1B855D-4611-48C8-5CA4-ABB98E97F874";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem1:materialInfo4";
-	rename -uid "EF966647-4CA0-D70D-683C-53B31105BFBF";
+	rename -uid "2B3DE4F3-4585-54BA-67B3-0A8323A95128";
 createNode file -n "DiamondGem1:file1";
-	rename -uid "213D0FE9-4C5E-2957-02CA-619905CC710A";
+	rename -uid "3D57C445-4A6F-950C-490D-65B87EF342FC";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Diamond/DiamondMayaExport_DiamondMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "DiamondGem1:place2dTexture1";
-	rename -uid "A1C0E2A7-4CC7-64AD-B3CE-59A197E91679";
+	rename -uid "9C925D80-4BC7-F01A-216E-8D9CC4167B45";
 createNode mayaUsdLayerManager -n "DiamondGem1:mayaUsdLayerManager1";
-	rename -uid "F58A170C-4310-C75D-3784-0C9D110A26ED";
+	rename -uid "2DEC5E5C-48AA-F42C-4083-998A43DA47FD";
 createNode nodeGraphEditorInfo -n "DiamondGem1:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "6239B57D-43B4-AB66-F498-D88C667E1BDC";
+	rename -uid "2CFBF859-4436-77B2-F6D9-B3A2DA89977E";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -132.60053064976324 -472.22220345779778 ;
@@ -269249,51 +269286,51 @@ createNode nodeGraphEditorInfo -n "DiamondGem1:hyperShadePrimaryNodeEditorSavedT
 	setAttr ".tgi[0].ni[5].y" 182.85714721679688;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "DiamondGem2:shapeEditorManager";
-	rename -uid "BDA9C82F-4F73-8EF2-BD43-5889E612DB2A";
+	rename -uid "184CADF1-44E5-F88F-42CA-BEA79E0D8523";
 createNode poseInterpolatorManager -n "DiamondGem2:poseInterpolatorManager";
-	rename -uid "4603A2CE-4AA2-B8D6-248F-E08B29EFF579";
+	rename -uid "737287EC-40F1-A484-35FD-FFA9F420E7DE";
 createNode renderLayerManager -n "DiamondGem2:renderLayerManager";
-	rename -uid "EE65EAAD-4B32-630B-22A0-9D864EB65BC5";
+	rename -uid "022D7B8B-4BFF-072A-5FCC-C09F0DFF4548";
 createNode renderLayer -n "DiamondGem2:defaultRenderLayer";
-	rename -uid "2DF5F705-4FBA-B1B6-913C-12A16FD10513";
+	rename -uid "E13325E0-4D0A-707D-C2B9-6D826766CF13";
 	setAttr ".g" yes;
 createNode shadingEngine -n "DiamondGem2:lambert1SG";
-	rename -uid "C0E70CDC-4323-9C79-E7A7-BD968F798FE9";
+	rename -uid "F34D2A80-4706-EB7D-05E9-2F803C785175";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem2:materialInfo1";
-	rename -uid "4C958AE3-4164-5008-0A28-57BCBDB1F8A2";
+	rename -uid "001B2927-4642-0F57-E3BC-C5B2A13EDCF2";
 createNode shadingEngine -n "DiamondGem2:Lambert1SG";
-	rename -uid "56E0DFC5-4762-E7A7-5D34-2EB42392EF31";
+	rename -uid "B66CC1CC-4939-DA50-FFAC-1DB6F65090DA";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem2:materialInfo2";
-	rename -uid "4460643E-4C45-8298-B53F-53BC5D94A692";
+	rename -uid "2CAB342B-4731-111E-01EA-198F6D7E4301";
 createNode shadingEngine -n "DiamondGem2:Standard_Surface1SG";
-	rename -uid "911B67C1-44A1-1249-0B96-5DA5CE620BCD";
+	rename -uid "DCE0BD58-42C4-31DA-2344-45AEDEBA8591";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem2:materialInfo3";
-	rename -uid "75796672-40AC-49A9-EFC0-BBAB385DB4B9";
+	rename -uid "50B058E7-4267-9A6A-6B06-A18328DCE71B";
 createNode standardSurface -n "DiamondGem2:DiamondMat";
-	rename -uid "B7C8C1B7-482F-8EF3-068E-B7B5581B4089";
+	rename -uid "6D262094-46E4-01C2-D37A-A88CFD6C82A9";
 	setAttr ".sr" 0.25;
 createNode shadingEngine -n "DiamondGem2:standardSurface2SG";
-	rename -uid "42F5A334-4E4C-8D29-0326-4B86E22580E1";
+	rename -uid "415153F2-48E8-9D56-DED1-8E99ACCFE3A6";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "DiamondGem2:materialInfo4";
-	rename -uid "EF966647-4CA0-D70D-683C-53B31105BFBF";
+	rename -uid "0CEC18C8-4CC1-3E4E-28AF-6A9845B1B7FA";
 createNode file -n "DiamondGem2:file1";
-	rename -uid "213D0FE9-4C5E-2957-02CA-619905CC710A";
+	rename -uid "6D0FDF14-4E2F-98D6-AE09-A7B5204F09F2";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Diamond/DiamondMayaExport_DiamondMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "DiamondGem2:place2dTexture1";
-	rename -uid "A1C0E2A7-4CC7-64AD-B3CE-59A197E91679";
+	rename -uid "B53F7C15-4767-9EF3-57FF-75B472906491";
 createNode mayaUsdLayerManager -n "DiamondGem2:mayaUsdLayerManager1";
-	rename -uid "F58A170C-4310-C75D-3784-0C9D110A26ED";
+	rename -uid "23DFEE75-4C69-21FA-BEE3-419518BF74B4";
 createNode nodeGraphEditorInfo -n "DiamondGem2:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "6239B57D-43B4-AB66-F498-D88C667E1BDC";
+	rename -uid "63AD8899-43EB-C1D3-2222-EA967F8E17FF";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -132.60053064976324 -472.22220345779778 ;
@@ -269386,44 +269423,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip:hyperShadePrimaryNodeEditorSaved
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip1:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "3C0D3AB4-4F5F-BF57-9042-D4BB68ED08A9";
 createNode poseInterpolatorManager -n "Coin_WithLip1:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "4B4D522C-4049-AE1B-6791-999EAF1FB458";
 createNode renderLayerManager -n "Coin_WithLip1:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "E6A53E17-4C6F-051F-D5C8-2A85469B125A";
 createNode renderLayer -n "Coin_WithLip1:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "ABDC40B7-4419-299D-BCD6-BEAFCE6C5F11";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip1:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "F0DBB2CD-4BA2-A529-3975-D3A4F36CA322";
 createNode shadingEngine -n "Coin_WithLip1:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "49572448-45BB-B15C-8B8D-A898804F7621";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip1:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "30436620-4B26-FC65-32C3-5DB2943E4BCC";
 createNode file -n "Coin_WithLip1:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "7E3EFA16-4125-86BF-24DA-898E6B8E4AEF";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip1:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "64C9D2A1-48C8-DA1A-F71B-68B72BA6CF55";
 createNode file -n "Coin_WithLip1:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "835DC7DA-42AE-7302-3EC4-26BF4C6ADA47";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip1:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "0E331FF1-487D-1482-D366-96970C5626D4";
 createNode file -n "Coin_WithLip1:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "226F5C4F-4CD5-DAA1-5D89-AAACA2718EE1";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip1:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "617D828F-45D5-317F-8DA6-CBBBD7CC5C03";
 createNode mayaUsdLayerManager -n "Coin_WithLip1:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "B6CC6AAA-4342-E2E9-C1E5-52B632F7AF26";
 createNode nodeGraphEditorInfo -n "Coin_WithLip1:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "3F267C8C-4F84-1934-E58D-68A4EB6FFD2F";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269454,44 +269491,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip1:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip2:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "BAEF2862-40FF-6F1A-9E25-9D856A55BC37";
 createNode poseInterpolatorManager -n "Coin_WithLip2:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "4EB8F917-4786-1494-DD7B-26A20BCFF73A";
 createNode renderLayerManager -n "Coin_WithLip2:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "65A90F34-411A-7173-95F7-88829D8FE2D4";
 createNode renderLayer -n "Coin_WithLip2:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "E7435827-4175-BC0F-DFD4-28A3A340F23F";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip2:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "489479FD-4DDE-35B7-787B-34ADBE563D6C";
 createNode shadingEngine -n "Coin_WithLip2:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "AABDBF23-4346-3E0A-69CA-8AA60CC43133";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip2:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "8DC3D87C-433B-C124-789E-B7A41E20EB9B";
 createNode file -n "Coin_WithLip2:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "A75B4635-4ACA-7A64-0A8A-E2A8DA59DF23";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip2:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "DC1288F4-4CC9-1651-05D4-DDA3520A380E";
 createNode file -n "Coin_WithLip2:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "6802045A-4D2D-E210-4A9D-CE8A38DCE056";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip2:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "112AF0B2-44DA-0E83-7F95-48ACAB35F0A7";
 createNode file -n "Coin_WithLip2:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "AB18D04E-42D7-4B2A-AD32-8D8A67B65BF1";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip2:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "A82E5FFF-44AD-B344-D884-18949D0D26A7";
 createNode mayaUsdLayerManager -n "Coin_WithLip2:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "FB64C22D-4262-719F-3CE5-AC9B43355DFA";
 createNode nodeGraphEditorInfo -n "Coin_WithLip2:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "16E7EA44-4312-3F85-7B38-76B28B7F17E0";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269522,44 +269559,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip2:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip3:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "2787F0C9-456C-6F6B-56CD-C9A4CD0CA900";
 createNode poseInterpolatorManager -n "Coin_WithLip3:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "78229B51-4EE3-9F42-E8DA-53A8205D2721";
 createNode renderLayerManager -n "Coin_WithLip3:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "ECC1DAE1-4915-1CAB-7868-35A4FD69C37F";
 createNode renderLayer -n "Coin_WithLip3:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "36430CB4-41E2-89AC-689F-BEB79815FD8F";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip3:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "78B4CCCF-4E77-3F2D-8052-1B9C6928FD11";
 createNode shadingEngine -n "Coin_WithLip3:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "167950C1-467C-51DE-DE1A-8EABED2ED849";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip3:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "6ED0BB68-47D4-F319-51F3-4B8B0EF66D0B";
 createNode file -n "Coin_WithLip3:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "17B9238A-47AE-A861-5FA2-E4A88EB26F14";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip3:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "110D82BA-4B28-6651-75DB-7FA8B362EF67";
 createNode file -n "Coin_WithLip3:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "EC1D51E8-4F02-BDE9-6444-C6B5E691E1AC";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip3:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "3E888609-4442-DC07-B292-7BB6A8F265FD";
 createNode file -n "Coin_WithLip3:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "FD8B2CF7-4D3D-FCAD-5271-38A544C59C9B";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip3:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "875611FC-424A-9611-1878-B88666F79B41";
 createNode mayaUsdLayerManager -n "Coin_WithLip3:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "8160E496-4EA1-E926-A2DA-A9A06F2DACB5";
 createNode nodeGraphEditorInfo -n "Coin_WithLip3:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "10CBC3BE-4372-5CB0-B1DF-E5BF9BCA0C1A";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269590,44 +269627,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip3:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip4:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "8AC5FFF2-43DA-553B-67C4-CD82B1BE00C5";
 createNode poseInterpolatorManager -n "Coin_WithLip4:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "8105B939-49D7-A41C-4A05-58ACF24839F8";
 createNode renderLayerManager -n "Coin_WithLip4:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "E231165F-4226-A911-1FD0-6085DC798FCA";
 createNode renderLayer -n "Coin_WithLip4:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "E7E88A88-4CD4-2C63-5ED5-82918B8E1151";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip4:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "F5B95FB1-4FF1-313D-8B09-DD85FDD5DCDA";
 createNode shadingEngine -n "Coin_WithLip4:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "B81394D3-4FEA-FE6F-3D02-4EA7BDF41B2F";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip4:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "E6B77D1C-41FD-786B-5628-64B86F2DD7CB";
 createNode file -n "Coin_WithLip4:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "A32168E7-41C7-0938-A303-F486073E0527";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip4:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "94D55642-453B-7228-1485-3AA175D47572";
 createNode file -n "Coin_WithLip4:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "E5F80D0C-486C-334A-6356-5BB6A5C62A57";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip4:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "2E5FB966-465D-ECF5-2503-32A7EA0928D7";
 createNode file -n "Coin_WithLip4:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "A3259B00-4CCA-2CF5-AD5B-8B86477D8B25";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip4:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "DB152E2A-42C0-6FD6-4DEC-86B81305B8AB";
 createNode mayaUsdLayerManager -n "Coin_WithLip4:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "C1ED6BBE-4EB9-F608-F5B2-FC929DDD4519";
 createNode nodeGraphEditorInfo -n "Coin_WithLip4:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "75B446F1-4562-5A9D-79CD-7C9FE97FB478";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269658,44 +269695,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip4:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip5:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "E339848D-47B2-E274-2D43-C89C9B44AA9D";
 createNode poseInterpolatorManager -n "Coin_WithLip5:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "7AB9B349-4EC0-916E-9751-F2B96C58B8FA";
 createNode renderLayerManager -n "Coin_WithLip5:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "1BA2413F-4B55-10BA-6E55-5EB8655AEF08";
 createNode renderLayer -n "Coin_WithLip5:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "EF61D0C8-45D5-D350-0565-958A531D0148";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip5:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "4B67CD9A-40DA-7972-73FA-89924949477C";
 createNode shadingEngine -n "Coin_WithLip5:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "2D2F950C-48D3-6E3F-0BF2-608A7F2656D8";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip5:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "A095C573-4382-5CC9-303C-8191CA78B506";
 createNode file -n "Coin_WithLip5:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "CF4C3F83-46DE-F883-876F-17A2EF826E81";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip5:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "0F12D78A-421E-01FE-81CF-26B6E400A5F2";
 createNode file -n "Coin_WithLip5:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "7823FED4-4DBB-AA6B-B3B5-D8B9E53CB14D";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip5:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "B6352396-4087-D978-577F-909422D2C2CF";
 createNode file -n "Coin_WithLip5:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "9B6B7D52-4039-6031-92C6-31939F454261";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip5:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "D783804D-4710-3A63-DB18-18AE9340BA83";
 createNode mayaUsdLayerManager -n "Coin_WithLip5:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "44FBE7DB-4E5F-CD30-8F51-D4B445666096";
 createNode nodeGraphEditorInfo -n "Coin_WithLip5:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "B25A6CD0-4EDF-488B-A171-41A81676A5CA";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269726,44 +269763,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip5:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip6:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "2AA8B4D1-413D-CDEA-E387-25B8110ABC71";
 createNode poseInterpolatorManager -n "Coin_WithLip6:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "5ADDB543-4B92-8540-98DB-CDB95676E04E";
 createNode renderLayerManager -n "Coin_WithLip6:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "45CE154E-4CE5-1B32-0921-709F3D418A56";
 createNode renderLayer -n "Coin_WithLip6:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "30E88B39-4213-1654-56A1-EE8626FA7EB3";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip6:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "EB8BE700-4B21-42B0-DA18-05B44E836B18";
 createNode shadingEngine -n "Coin_WithLip6:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "CA6A5E09-4B33-A588-75F2-74BCE608673B";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip6:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "3BB6A5B7-4DEA-86A9-D856-9B8FC4110A60";
 createNode file -n "Coin_WithLip6:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "737985F7-4FC7-2DF1-1C08-17A2BD2638F0";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip6:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "732BD0EB-4590-93C0-6C72-6BBEAE55AA1B";
 createNode file -n "Coin_WithLip6:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "58380D6B-4D90-CD9E-BB5E-E384F89CBAB6";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip6:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "F6F4CFB1-4522-6CE8-3438-D28381B1DD30";
 createNode file -n "Coin_WithLip6:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "D2553940-42F4-041A-CBCA-ADA90DE1DB5B";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip6:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "B22BBA0F-43C1-F370-88DE-74869C630159";
 createNode mayaUsdLayerManager -n "Coin_WithLip6:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "22D51029-474E-8640-38F4-6184CCED90EF";
 createNode nodeGraphEditorInfo -n "Coin_WithLip6:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "318249C5-48E7-8B2D-CA85-95BFDEA0B7C7";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269794,44 +269831,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip6:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip7:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "39BCC27B-4553-6EE6-21E1-349A60E49929";
 createNode poseInterpolatorManager -n "Coin_WithLip7:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "1A4AE21E-4BCF-5EAC-69C4-8BB74711E30C";
 createNode renderLayerManager -n "Coin_WithLip7:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "B0B91CCB-4A18-7CDB-9132-77A2DE1CA577";
 createNode renderLayer -n "Coin_WithLip7:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "6FBA11E8-45B7-0035-FE3B-668127B8169B";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip7:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "D17E7E9C-4C4B-5C39-F1E3-139D9F3B4A75";
 createNode shadingEngine -n "Coin_WithLip7:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "13CB2F59-4C0D-BF21-C433-F6BBD69F4422";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip7:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "4914B775-44C8-546A-775B-8D8846037C69";
 createNode file -n "Coin_WithLip7:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "A44FBD5A-4822-8174-AA9C-C4B235E5D1B0";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip7:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "662FB872-4BAC-05B2-BA81-3EA1B2AAFFA0";
 createNode file -n "Coin_WithLip7:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "48A046F4-43E0-3459-E40A-B3BBFC024AF2";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip7:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "D5F8F48A-4B90-4D44-FD06-2F878DAA7C4A";
 createNode file -n "Coin_WithLip7:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "C4CB143B-4B84-8FF2-2105-E68B473B9526";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip7:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "F8A5E99C-4786-4572-DA8A-26B1D6870FA6";
 createNode mayaUsdLayerManager -n "Coin_WithLip7:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "6788CBC2-4147-BB9F-470F-3DB91BA0B536";
 createNode nodeGraphEditorInfo -n "Coin_WithLip7:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "FDC39874-4E03-F344-CD78-C994025F7A8B";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269862,44 +269899,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip7:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip8:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "A968E8E8-4466-3C58-F505-43AF8652DDCB";
 createNode poseInterpolatorManager -n "Coin_WithLip8:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "C8A57BDC-4628-4D7E-4747-C69979BDC3AE";
 createNode renderLayerManager -n "Coin_WithLip8:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "54870428-4737-2CCC-3D26-FCB989617D25";
 createNode renderLayer -n "Coin_WithLip8:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "31896ED7-4526-E8D8-FE5F-70A370D55F3C";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip8:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "093E147E-4DB1-0A59-A820-8BBEAAA28BEA";
 createNode shadingEngine -n "Coin_WithLip8:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "71931C7D-48D8-6DC0-F386-0C93379A57CD";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip8:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "71C1365A-4A14-3C32-6E64-78B47A344B11";
 createNode file -n "Coin_WithLip8:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "088D95BF-4452-8831-85C0-3992DA401758";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip8:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "02C291F0-4E04-F471-1E56-95B3847103F2";
 createNode file -n "Coin_WithLip8:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "44D22015-481F-3361-B038-81BAD06D9227";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip8:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "F994A5D9-471E-062A-76B7-B786929C2A18";
 createNode file -n "Coin_WithLip8:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "4EC105C3-4671-4868-27AF-8DB4D26D2D18";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip8:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "29F39FD6-47C1-9C85-B07F-A0B0791512B4";
 createNode mayaUsdLayerManager -n "Coin_WithLip8:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "12B027E8-44B8-2930-B0A4-3F93DF5EA1FA";
 createNode nodeGraphEditorInfo -n "Coin_WithLip8:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "B0338FD9-48DF-97B5-ECF3-2D9A5D511F61";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269930,44 +269967,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip8:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip9:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "BB728B51-4ACE-FA58-2BC1-9E9E5A16029F";
 createNode poseInterpolatorManager -n "Coin_WithLip9:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "9D904C1B-4436-84BE-4F54-0A8F7AE074A4";
 createNode renderLayerManager -n "Coin_WithLip9:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "8383A286-4AFC-8C87-8103-8192A9FBDA50";
 createNode renderLayer -n "Coin_WithLip9:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "ED042951-469A-AD33-66C5-019B96D0054A";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip9:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "8BE8A58B-473F-F941-1A9C-03BA6C612CDC";
 createNode shadingEngine -n "Coin_WithLip9:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "A6B52D0A-4F20-3132-FE4C-79AF31C8EB3C";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip9:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "18091727-458E-45D2-9C14-2FB292F70935";
 createNode file -n "Coin_WithLip9:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "92AE3DD9-4223-1B4D-F812-4FBAC9EF60D2";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip9:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "CB8BE2A0-4BB8-D031-FECF-8D8754E953DF";
 createNode file -n "Coin_WithLip9:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "40473CA9-49AA-1803-84F0-A1BB480CD181";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip9:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "53565F67-43B6-B358-C223-2C86F119287E";
 createNode file -n "Coin_WithLip9:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "11E3FE57-408F-9811-B86E-0E85A604F8AC";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip9:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "57336A36-4F02-B942-B34B-85BD4D67DC91";
 createNode mayaUsdLayerManager -n "Coin_WithLip9:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "F4A9ED9F-401B-E73A-4BA7-08A7DAEDD347";
 createNode nodeGraphEditorInfo -n "Coin_WithLip9:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "374C4EE5-4A43-265C-579C-8B8307C63275";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -269998,44 +270035,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip9:hyperShadePrimaryNodeEditorSave
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip10:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "A9A20581-4461-300A-C075-2EAC51CF12C2";
 createNode poseInterpolatorManager -n "Coin_WithLip10:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "2E09E33B-4979-9071-1583-608C9234A615";
 createNode renderLayerManager -n "Coin_WithLip10:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "9091F2AF-4FE9-E30C-6110-E99E9A12E5F8";
 createNode renderLayer -n "Coin_WithLip10:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "B6AF05DA-4098-1C78-E5F7-03AE5281390A";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip10:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "C80231E8-40F8-EF89-FEB7-6A90DCC5B9B0";
 createNode shadingEngine -n "Coin_WithLip10:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "22C875FF-4FD0-A674-EBBA-D1A40DE14BBE";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip10:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "8BA28163-472F-CD9D-901D-D5BF182D9152";
 createNode file -n "Coin_WithLip10:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "CC0A7A95-4272-B2D5-9247-DB929B01C72F";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip10:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "6B485520-46D3-5DD7-2D21-15840764F655";
 createNode file -n "Coin_WithLip10:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "F637BE3C-4E98-6940-C55E-B686EE693E86";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip10:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "C756C62E-4DC3-423D-09CE-7A979F48DCD6";
 createNode file -n "Coin_WithLip10:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "C0C7C6FB-473E-C98A-69FC-E0A0237FE680";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip10:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "DAB5BF4F-41B4-4928-7E23-988E63E146B6";
 createNode mayaUsdLayerManager -n "Coin_WithLip10:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "4853B381-41EA-9DFA-A4AC-32BF999CBAA8";
 createNode nodeGraphEditorInfo -n "Coin_WithLip10:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "F337FA9F-4AEC-862C-F1CC-608C2F8C79A7";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270066,44 +270103,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip10:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip11:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "5DEAD8B2-4D14-FEC7-307A-31B32B287F58";
 createNode poseInterpolatorManager -n "Coin_WithLip11:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "2589C0BF-482F-A115-5A79-5080C6C1957D";
 createNode renderLayerManager -n "Coin_WithLip11:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "23A3B39E-4ED9-E8A4-98F8-B3981AEBF35C";
 createNode renderLayer -n "Coin_WithLip11:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "03A3EFBA-4EC4-278B-5DEE-38874CD97D76";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip11:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "7691D391-45D6-5D8D-E622-E28AA7BA4505";
 createNode shadingEngine -n "Coin_WithLip11:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "D9B471F6-4BD6-A463-48E3-BDBF5E588096";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip11:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "23D2CDBB-4E31-AEF0-8831-8CAB7E3B0096";
 createNode file -n "Coin_WithLip11:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "73A6E57F-41B4-98EB-5359-EFBA148A203F";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip11:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "E5251138-4136-19EB-63C9-B29475E69FE7";
 createNode file -n "Coin_WithLip11:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "246C99C5-4E4C-57FF-F833-E6B2F5BBD3F8";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip11:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "4B465B75-4805-CB57-7EF9-5A91922C5EEE";
 createNode file -n "Coin_WithLip11:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "7BC62F52-4567-00D9-413F-DF92C83BB695";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip11:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "D85EA48B-4987-515D-093F-AD9C812EC95D";
 createNode mayaUsdLayerManager -n "Coin_WithLip11:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "81A644CB-4FB8-CCE6-098B-D2927949009B";
 createNode nodeGraphEditorInfo -n "Coin_WithLip11:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "D51AFF0F-44F6-C886-3C99-A88C6A7A8B87";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270134,44 +270171,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip11:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip12:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "1CC82416-40D8-546B-A6E8-8AA6D87C6B4F";
 createNode poseInterpolatorManager -n "Coin_WithLip12:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "9D40DCDD-4378-9D39-A87B-6E9260F0158B";
 createNode renderLayerManager -n "Coin_WithLip12:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "AF60CA69-429E-2728-912B-BB8C3F431866";
 createNode renderLayer -n "Coin_WithLip12:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "46B61B79-44DD-43C1-29F9-8C814F2A378B";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip12:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "F6126741-4F31-F377-0CF2-368794E42B93";
 createNode shadingEngine -n "Coin_WithLip12:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "67797E24-4E0E-788D-2DB5-08BF57B32AEF";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip12:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "523CD717-4A18-F060-86BA-66850A1B7A29";
 createNode file -n "Coin_WithLip12:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "7AA458F5-42FB-4831-7B9D-238F3308EE0C";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip12:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "F2055776-4D77-53A2-4DB8-719F6EF5F564";
 createNode file -n "Coin_WithLip12:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "0D248475-4418-2DA4-3A56-7B9B095953D6";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip12:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "5917EBED-4945-4CC0-E922-0D82EE910045";
 createNode file -n "Coin_WithLip12:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "05650AA6-40D6-BA45-2C32-CFAE0EED88B7";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip12:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "7427B447-4642-3D71-D84E-718F4A9DAE5A";
 createNode mayaUsdLayerManager -n "Coin_WithLip12:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "A736F790-4783-0B23-FD71-07931603D0E3";
 createNode nodeGraphEditorInfo -n "Coin_WithLip12:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "591C8F81-4168-310C-2830-9C90F9C610C5";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270202,44 +270239,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip12:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip13:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "9009A6A6-4F94-7A25-9004-7BA6830F4683";
 createNode poseInterpolatorManager -n "Coin_WithLip13:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "61D48335-47FD-7CF5-4031-9EB12C94C7D1";
 createNode renderLayerManager -n "Coin_WithLip13:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "D3ECAA53-4292-49CA-27C6-6CA92236E71D";
 createNode renderLayer -n "Coin_WithLip13:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "0EA215F3-4FAE-A0A3-F981-EBAD6BFE52CD";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip13:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "7D713B82-432D-DFC7-8B28-EE8067ACBD38";
 createNode shadingEngine -n "Coin_WithLip13:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "4A0EC1D6-4C59-F8E2-C8C5-8AB6C0388247";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip13:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "5B3C5064-43CD-1777-0305-1D8273083F86";
 createNode file -n "Coin_WithLip13:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "E2B9776C-4641-AFE8-3D64-26AD4CE36D52";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip13:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "2E817469-40AF-8C1D-1979-02989CE69500";
 createNode file -n "Coin_WithLip13:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "E5311406-43D7-0D1F-4518-6B9B96A1E09D";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip13:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "038E18CC-48C9-2FC5-3357-D89ED9463CA4";
 createNode file -n "Coin_WithLip13:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "55C66064-4B9C-972C-DA06-EF9608DEA85F";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip13:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "7F8059CF-4895-C696-ABE1-8BBF9F5EFC5E";
 createNode mayaUsdLayerManager -n "Coin_WithLip13:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "84E3BFAF-4368-F67C-76BD-63857795CB67";
 createNode nodeGraphEditorInfo -n "Coin_WithLip13:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "3AAE9818-40AD-ACD5-B89F-2C9ADDEA26E3";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270270,44 +270307,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip13:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip14:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "A6F326FB-4ACF-FC0D-FBE8-E1BDFD8844BD";
 createNode poseInterpolatorManager -n "Coin_WithLip14:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "2DB6019D-4A8F-D156-3C89-A0AE5ACB251B";
 createNode renderLayerManager -n "Coin_WithLip14:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "D82C7215-4731-974C-9291-9183CE1E82EF";
 createNode renderLayer -n "Coin_WithLip14:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "3EF59A56-423D-D7DE-8D2E-618E91954921";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip14:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "C5075C0B-439C-5655-B6E8-D1A10768B484";
 createNode shadingEngine -n "Coin_WithLip14:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "A9CE5590-4527-76EC-12F1-ABA56685F101";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip14:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "5B882A40-43BB-46D4-8269-2190BEB803B0";
 createNode file -n "Coin_WithLip14:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "E2333ECC-4B8E-EE2E-B7EB-4EA99DFEF8FC";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip14:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "0352AE58-4A45-BB2D-A3EE-D78EEF63C13C";
 createNode file -n "Coin_WithLip14:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "CDE8B25F-4487-5F0F-09A3-FBA1C89934D1";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip14:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "5BF2D723-4C37-E038-F56D-64A2F7A8741B";
 createNode file -n "Coin_WithLip14:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "34A5D840-4671-6274-6E8C-3D875A1F62E9";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip14:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "A0AB21D4-48DA-8E95-CE24-8380A79112B8";
 createNode mayaUsdLayerManager -n "Coin_WithLip14:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "23528A5C-4F57-89DC-369A-B4B52E1D1FB2";
 createNode nodeGraphEditorInfo -n "Coin_WithLip14:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "FF7CB283-481C-DCE2-A53C-108223916F55";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270338,44 +270375,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip14:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip15:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "3271EFA2-4533-81AE-5EDD-C89A71834B4B";
 createNode poseInterpolatorManager -n "Coin_WithLip15:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "14012FDE-4D51-D2DC-DD54-2DBA7E0C999F";
 createNode renderLayerManager -n "Coin_WithLip15:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "BEC6B869-4E5C-618B-78BA-8690AB49176C";
 createNode renderLayer -n "Coin_WithLip15:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "B8B5CDD6-4F21-1944-F250-C5AAF33B3DF2";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip15:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "B3383B99-4660-755D-DB8F-D6BDF8D9ABBE";
 createNode shadingEngine -n "Coin_WithLip15:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "695FBDCF-4101-D5D6-EDC7-9195D91B5F75";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip15:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "2ED7D4C2-440F-E223-4C71-DEB768A76F93";
 createNode file -n "Coin_WithLip15:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "D17971F4-4709-6206-3465-BCB75EEADE8F";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip15:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "D0EC0630-434E-7ACE-6A0F-EFADC0CE42D3";
 createNode file -n "Coin_WithLip15:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "8DAB3C74-4009-D163-FCD3-5F9D88E2ABB3";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip15:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "41FC7BCA-489B-2A0F-2725-14BBF97486E3";
 createNode file -n "Coin_WithLip15:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "A2F468D8-465F-AC8B-480B-7D8B0745519F";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip15:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "1213BE67-4BC0-5A89-6326-B386B5870A82";
 createNode mayaUsdLayerManager -n "Coin_WithLip15:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "21E98125-4233-07EC-01AA-56823C30EBF5";
 createNode nodeGraphEditorInfo -n "Coin_WithLip15:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "139C3099-490C-9586-D01F-D1A38C7014AF";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -270406,44 +270443,44 @@ createNode nodeGraphEditorInfo -n "Coin_WithLip15:hyperShadePrimaryNodeEditorSav
 	setAttr ".tgi[0].ni[7].y" -120;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
 createNode shapeEditorManager -n "Coin_WithLip16:shapeEditorManager";
-	rename -uid "01CFCF30-4B1A-DD3A-AC9B-7FB7BB613676";
+	rename -uid "DF93DBD7-4E50-3A01-A6BE-619B3C544EB7";
 createNode poseInterpolatorManager -n "Coin_WithLip16:poseInterpolatorManager";
-	rename -uid "C1851944-4F01-5302-50A3-6E8F31D2D8A9";
+	rename -uid "802D61A1-4B22-69F1-FAC0-549B9BAFE135";
 createNode renderLayerManager -n "Coin_WithLip16:renderLayerManager";
-	rename -uid "1FEAEB42-472F-33D6-7F3F-819E99D11356";
+	rename -uid "69F872D0-4A43-1130-4BCD-B69EAAC3AD3C";
 createNode renderLayer -n "Coin_WithLip16:defaultRenderLayer";
-	rename -uid "BC307B3C-4CF6-7506-740C-1F93ADD7897B";
+	rename -uid "8A3CE93A-4462-F43D-CEC3-B78AF9357097";
 	setAttr ".g" yes;
 createNode standardSurface -n "Coin_WithLip16:DoubloonMat";
-	rename -uid "D4E97CD0-48AC-A33E-BF82-74A4689E4248";
+	rename -uid "38267025-4AF0-6ABF-5DA3-E7A0B2254590";
 createNode shadingEngine -n "Coin_WithLip16:standardSurface2SG";
-	rename -uid "8E68FE24-4C6E-9019-F4BA-F6BA083C284F";
+	rename -uid "DE1759F1-488C-35E3-6938-6CAE782EBF9B";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coin_WithLip16:materialInfo1";
-	rename -uid "CA9BC60C-45F0-CEA5-CF79-958C97E6B297";
+	rename -uid "065ECC7F-4E87-FDF8-E29C-608E00852A73";
 createNode file -n "Coin_WithLip16:file1";
-	rename -uid "DD8B4EBD-4D9F-9FD3-0F84-40B26C7F76E6";
+	rename -uid "F61CF4AD-4F1C-8141-387D-9A8E9DA806A5";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip16:place2dTexture1";
-	rename -uid "C135760E-4E4E-32EB-7FA0-5EAEE42B22A2";
+	rename -uid "EBBE40EE-4E39-F173-D486-7ABC7BC1A1EA";
 createNode file -n "Coin_WithLip16:file2";
-	rename -uid "065A3F58-4D59-5AB7-C76F-BE82FE620477";
+	rename -uid "EDB98642-4CD7-42CD-323E-5F872646E2E0";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Metallic.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip16:place2dTexture2";
-	rename -uid "DD4D88A1-4E76-CC01-6AAB-859945129EB4";
+	rename -uid "9AEC072D-4567-1D2F-D394-249D84950E3E";
 createNode file -n "Coin_WithLip16:file3";
-	rename -uid "CD33D7AB-4000-6273-110C-34B3DDA94A14";
+	rename -uid "DE07F868-4891-DC8B-4FF1-60981001B4AB";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/TreasureTextures-20260324T023950Z-3-001/TreasureTextures/Doubloon/DoubloonMayaExport_DoubloonMat_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip16:place2dTexture3";
-	rename -uid "67B8E53C-4463-84FF-8F20-419131ED77C7";
+	rename -uid "40C92DED-4CC0-C6E3-FC31-FD8637BB5FF5";
 createNode mayaUsdLayerManager -n "Coin_WithLip16:mayaUsdLayerManager1";
-	rename -uid "1169BA51-481E-2EF4-DD29-1F942138F3A0";
+	rename -uid "F39B01F0-4212-C3DA-6E09-358C46D0EFCA";
 createNode nodeGraphEditorInfo -n "Coin_WithLip16:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "02385EB6-4D1F-433A-D181-A6B5DC90B7FF";
+	rename -uid "7A835114-468B-7E68-0B45-9A9DDC67EEDC";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -96.870114552397297 -562.85792217909659 ;
@@ -277757,39 +277794,39 @@ createNode nodeGraphEditorInfo -n "Stalagmite_2:hyperShadePrimaryNodeEditorSaved
 	setAttr ".tgi[0].ni[5].y" 37.142856597900391;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "Stalagmite_3:shapeEditorManager";
-	rename -uid "B382EFAF-4ECB-9CD5-DBCC-B39FBEFA52F6";
+	rename -uid "608410C8-43D2-E475-A26A-02AAD62433BD";
 createNode poseInterpolatorManager -n "Stalagmite_3:poseInterpolatorManager";
-	rename -uid "7E2454BD-4275-E76B-E12E-7F91682BCE3B";
+	rename -uid "7B4541AC-47DE-664E-370B-C7A8A8A63AF0";
 createNode renderLayerManager -n "Stalagmite_3:renderLayerManager";
-	rename -uid "710519F2-4EBB-BC77-0168-7A9A797017F4";
+	rename -uid "0D6935C1-4075-E1A7-D3C9-F98F71809FE5";
 createNode renderLayer -n "Stalagmite_3:defaultRenderLayer";
-	rename -uid "AD951280-4759-B137-30EB-35ABB76B314C";
+	rename -uid "C709D250-4F62-A105-C3EC-B38F4BCB5A4D";
 	setAttr ".g" yes;
 createNode standardSurface -n "Stalagmite_3:Stalagmite_2_Mat";
-	rename -uid "55E93513-4290-FD32-541A-97A90816CAF2";
+	rename -uid "D83BBD3D-4EB1-F2AD-2203-2180564AE939";
 createNode shadingEngine -n "Stalagmite_3:standardSurface2SG";
-	rename -uid "8412EEFE-4638-B4B7-E1D9-EBA045D37958";
+	rename -uid "FDEA5FE0-41A9-E6E1-EF7B-269EEFF7ED7C";
 	setAttr ".ihi" 0;
 	setAttr -s 5 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Stalagmite_3:materialInfo1";
-	rename -uid "832EAF18-4385-1348-6831-B8A0E6663295";
+	rename -uid "4510F612-474A-307E-EB29-D0B62DAF8D85";
 createNode file -n "Stalagmite_3:file1";
-	rename -uid "0F61B969-4743-F215-1CE9-23B585732DCF";
+	rename -uid "5CB381F4-41CE-000E-8065-1D84BD7CACA4";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Stalagmite2Files-20260324T022654Z-3-001/Stalagmite2Files/Stalagmite2Export_standardSurface1_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Stalagmite_3:place2dTexture1";
-	rename -uid "EB84A76A-40AC-DAF1-75FE-479A0542949D";
+	rename -uid "8FCD5394-4152-453E-56B4-77BDC208AD06";
 createNode file -n "Stalagmite_3:file2";
-	rename -uid "C05551B9-4055-FBFD-6DE2-4C95234083F2";
+	rename -uid "A65B8EE3-4827-49EA-C672-B0857D365E72";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Stalagmite2Files-20260324T022654Z-3-001/Stalagmite2Files/Stalagmite2Export_standardSurface1_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Stalagmite_3:place2dTexture2";
-	rename -uid "97C62A66-482B-42BB-C692-0BA092E7B012";
+	rename -uid "88ADC61B-4F11-4EA5-DB78-CE8A6AD68DDD";
 createNode mayaUsdLayerManager -n "Stalagmite_3:mayaUsdLayerManager1";
-	rename -uid "556EBB46-4E2F-93C5-EFCD-589F8681A1CA";
+	rename -uid "FAD817FF-451B-621A-80A0-C0BFBDAA5ABC";
 createNode nodeGraphEditorInfo -n "Stalagmite_3:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "BCBADCAC-47DF-5B79-2FA1-1D83C6B12620";
+	rename -uid "8E9A8C87-4688-7EA4-D82A-F79213D29D47";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -450.40614085876263 -553.17721415389417 ;
@@ -277814,22 +277851,22 @@ createNode nodeGraphEditorInfo -n "Stalagmite_3:hyperShadePrimaryNodeEditorSaved
 	setAttr ".tgi[0].ni[5].y" 37.142856597900391;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode shapeEditorManager -n "Stalagmite_4:shapeEditorManager";
-	rename -uid "9DED3149-4730-0748-21BD-F09E49551628";
+	rename -uid "36FA0CDD-4DA8-66E8-FB62-159DA294BE0E";
 createNode poseInterpolatorManager -n "Stalagmite_4:poseInterpolatorManager";
-	rename -uid "140A42D0-452E-9103-D850-72857A0A9A21";
+	rename -uid "E29BC2A0-47FD-88FD-5332-6A96A4F74619";
 createNode renderLayerManager -n "Stalagmite_4:renderLayerManager";
-	rename -uid "FAFA624F-4C6A-9361-6126-8783A2FF8FAA";
+	rename -uid "7BF71FFC-4337-D01C-9D40-7BB4F9505A13";
 createNode renderLayer -n "Stalagmite_4:defaultRenderLayer";
-	rename -uid "8B243F81-4B1A-4D43-C591-CE9854C8CA26";
+	rename -uid "C073704C-4E77-FFC5-3901-388F8AD5D532";
 	setAttr ".g" yes;
 createNode groupId -n "Stalagmite_4:groupId3";
-	rename -uid "93BFAC1C-4296-A159-8033-7A951923F892";
+	rename -uid "15D71A2A-4FD2-C6D9-49E3-14A8242A33DA";
 	setAttr ".ihi" 0;
 createNode groupId -n "Stalagmite_4:groupId5";
-	rename -uid "3B057BA6-4BBB-BA31-9483-C2A592471E6E";
+	rename -uid "340573F7-4F99-3EB0-2BA2-EB8AE60C4286";
 	setAttr ".ihi" 0;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel4";
-	rename -uid "AFE33BFE-47E9-C039-5187-1B88F9D8DB65";
+	rename -uid "7283FC84-43A4-521A-EDE3-A7A7FC99C2C9";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "e[1:2]" "e[4:9]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
@@ -277841,7 +277878,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel4";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel16";
-	rename -uid "3F020FC7-406A-D1AB-24DE-80A81CD0E491";
+	rename -uid "EE7D728A-486D-38AA-A921-BCA56157E4D9";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 10 "e[200:201]" "e[212:213]" "e[248]" "e[294:295]" "e[302:303]" "e[306:307]" "e[313]" "e[433]" "e[499]" "e[520]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
@@ -277854,13 +277891,13 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel16";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge11";
-	rename -uid "B5B4594B-4042-A72E-B5D1-C9BBA4A3641B";
+	rename -uid "D8BAE139-4612-E616-5408-779A65C3C577";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
 	setAttr ".a" 180;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel17";
-	rename -uid "BC3BCDA4-491E-C0AF-C8EF-9DB9DE43BB36";
+	rename -uid "EDA399DB-43A3-665B-2390-A2A73F149783";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 12 "e[33:34]" "e[43:44]" "e[59]" "e[79:81]" "e[95:96]" "e[155:156]" "e[505]" "e[566]" "e[574]" "e[620]" "e[660]" "e[664]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
@@ -277873,7 +277910,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel17";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak2";
-	rename -uid "CA7D6B70-42DF-EE72-4012-859D7E0E2402";
+	rename -uid "1DACBBE5-440D-FAF7-EC1B-AD91796D55A9";
 	setAttr ".uopa" yes;
 	setAttr -s 332 ".tk";
 	setAttr ".tk[0:165]" -type "float3"  -0.0069824159 -0.022755034 0.0134525
@@ -277949,13 +277986,13 @@ createNode polyTweak -n "Stalagmite_4:polyTweak2";
 		 0.0005402267 -0.00082784891 -0.00058601797 0.0024218857 -0.003788352 -0.00030323863
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge12";
-	rename -uid "62F24D04-42AD-4836-1C50-93AC614191B0";
+	rename -uid "12DFF90C-4094-4885-BE43-B9A4CC319693";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
 	setAttr ".a" 180;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel18";
-	rename -uid "AB995522-44EB-3EBA-5735-0FA1116655CD";
+	rename -uid "967ECA6B-4AA6-2EE0-F3D8-7492B75E3027";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 12 "e[564:565]" "e[568]" "e[571]" "e[575]" "e[578]" "e[582]" "e[587]" "e[590:591]" "e[596:597]" "e[601]" "e[640]" "e[715:716]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
@@ -277968,7 +278005,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel18";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak3";
-	rename -uid "EF4B429D-47C1-5CA0-7D8B-3C8EE2F97B31";
+	rename -uid "48394EF4-41B3-10AF-6AF0-3599D01D3D92";
 	setAttr ".uopa" yes;
 	setAttr -s 19 ".tk";
 	setAttr ".tk[334]" -type "float3" 0.012137599 0.0036929958 0.0034638047 ;
@@ -277991,13 +278028,13 @@ createNode polyTweak -n "Stalagmite_4:polyTweak3";
 	setAttr ".tk[368]" -type "float3" 0.010496631 0.0032876544 0.0029574931 ;
 	setAttr ".tk[369]" -type "float3" 0.010768419 0.0045007244 0.0033209473 ;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge13";
-	rename -uid "525ABEC8-4FCF-1EB6-6DDF-1E8DB4BB4D3C";
+	rename -uid "FF789BEB-4265-39CC-A257-918D4B4DE956";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
 	setAttr ".a" 180;
 createNode polyTweak -n "Stalagmite_4:polyTweak4";
-	rename -uid "6F7229A0-4542-F8E3-4080-39A36BD98111";
+	rename -uid "D367BADC-4B30-5404-7BD7-09A5E786BF52";
 	setAttr ".uopa" yes;
 	setAttr -s 17 ".tk";
 	setAttr ".tk[355]" -type "float3" 0.012812287 -0.0026513264 -0.0101778 ;
@@ -278018,7 +278055,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak4";
 	setAttr ".tk[385]" -type "float3" 0.0050580949 -0.01091665 -0.012000004 ;
 	setAttr ".tk[386]" -type "float3" 0.0056858286 -0.012700319 -0.009704778 ;
 createNode polyTweak -n "Stalagmite_4:polyTweak6";
-	rename -uid "D7A31AF0-49E2-0DCA-4E07-318D81CD41C9";
+	rename -uid "4647A404-4259-F46D-E16E-EEB418558347";
 	setAttr ".uopa" yes;
 	setAttr -s 20 ".tk[0:19]" -type "float3"  0.17703833 0 -0.088528015
 		 0.088528015 0 -0.17703833 0.088528015 0 -0.088528015 -0.088528015 0 -0.088528015
@@ -278028,10 +278065,10 @@ createNode polyTweak -n "Stalagmite_4:polyTweak6";
 		 0.059194297 0.13607901 -0.030148197 0.051832065 0 -0.030148197 0 0 -0.030148197 0
 		 0 -0.030148197 -0.2115549 0.17497064 -0.030148197 0 0 -0.030148197 -0.2115549;
 createNode deleteComponent -n "Stalagmite_4:deleteComponent4";
-	rename -uid "E81E339B-45D2-9332-EAFD-43905B9CA957";
+	rename -uid "D26DD01D-4D25-851A-DB54-2EA26CF568B7";
 	setAttr ".dc" -type "componentList" 1 "f[0]";
 createNode polySmoothFace -n "Stalagmite_4:polySmoothFace2";
-	rename -uid "E72EB9DD-4001-15B8-1056-538AB4BBF8C3";
+	rename -uid "E0C52272-4773-4EBE-3014-ADBE2EB9D112";
 	setAttr ".ics" -type "componentList" 1 "f[*]";
 	setAttr ".sdt" 2;
 	setAttr ".suv" yes;
@@ -278040,15 +278077,15 @@ createNode polySmoothFace -n "Stalagmite_4:polySmoothFace2";
 	setAttr ".ma" yes;
 	setAttr ".m08" yes;
 createNode createColorSet -n "Stalagmite_4:createColorSet3";
-	rename -uid "7A1E769C-431D-36B9-00EE-47BD8E4A2D57";
+	rename -uid "2F40391F-47FD-B24A-4894-09BAD25A7453";
 	setAttr ".colos" -type "string" "SculptFreezeColorTemp";
 	setAttr ".clam" no;
 createNode createColorSet -n "Stalagmite_4:createColorSet4";
-	rename -uid "BB9719D9-469F-491C-5228-0C96DC4C9C24";
+	rename -uid "AB26CB57-4B1A-B23E-F7A4-818130B0DE83";
 	setAttr ".colos" -type "string" "SculptMaskColorTemp";
 	setAttr ".clam" no;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel23";
-	rename -uid "2A276AFC-4BB9-F4D5-9D9F-8FB46BC428C5";
+	rename -uid "61576654-4DE7-932A-3BB6-44A5A0D3FC73";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 4 "e[18:19]" "e[28:31]" "e[54:55]" "e[58:59]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
@@ -278061,7 +278098,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel23";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak7";
-	rename -uid "CAF64829-4E0B-FB20-50A7-3B87AFFE7692";
+	rename -uid "FE90ACF8-4957-E49D-CBEB-E293B603530A";
 	setAttr ".uopa" yes;
 	setAttr -s 73 ".tk[0:72]" -type "float3"  0.004273653 -0.085445508 -0.0066237152
 		 0.0037304908 -0.097780883 -0.0085865259 0.0075326115 -0.0093935728 -0.0075545013
@@ -278094,13 +278131,13 @@ createNode polyTweak -n "Stalagmite_4:polyTweak7";
 		 -0.012645096 -0.0010025147 0.0041051656 -0.054973096 -0.0068153143 -0.017342031 -0.088848442
 		 -0.017643124 0.0063278824 -0.035829037 0.002791211 -0.037033871 -0.11899269 0.033453017;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge14";
-	rename -uid "C7269F69-4D8A-9D25-0A71-A58758ABBB6C";
+	rename -uid "E4AB4D51-4AD2-C5CC-D296-D4ADBEBA101F";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
 	setAttr ".a" 180;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel24";
-	rename -uid "F1E50AEE-4C8C-996A-9E6E-B29BBEE65210";
+	rename -uid "60C368DE-4728-6ED4-045F-6EA2BC85E1C4";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 7 "e[12]" "e[17:18]" "e[22:24]" "e[35:36]" "e[108]" "e[139]" "e[145]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
@@ -278113,21 +278150,21 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel24";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge15";
-	rename -uid "515ECACE-44EC-19D5-7515-E49F4FAB0F73";
+	rename -uid "A84BF267-4D18-AC01-A32C-E1B5DEDE8941";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
 	setAttr ".a" 180;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge1";
-	rename -uid "C731AA80-45B9-45A4-BCAA-8F9E2F56737F";
+	rename -uid "33021647-4AD6-6567-5F77-BCB4ECBB4239";
 	setAttr ".ics" -type "componentList" 3 "e[685]" "e[688]" "e[983]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge2";
-	rename -uid "3EF5D12F-43B2-5E9A-E914-D888A383B52A";
+	rename -uid "49B81D7F-4390-184E-7B08-B487E1FBA4EB";
 	setAttr ".ics" -type "componentList" 2 "e[10:11]" "e[353:354]";
 	setAttr ".cv" yes;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel25";
-	rename -uid "4AD5C42D-4D30-9BF2-F5C7-45A797058A2F";
+	rename -uid "4035B828-4E0B-FB5C-E720-A3ADCFB2E7A5";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 12 "e[19:20]" "e[25:26]" "e[32:33]" "e[42]" "e[69:70]" "e[72]" "e[353]" "e[410]" "e[416]" "e[595]" "e[639]" "e[656]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
@@ -278140,7 +278177,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel25";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak8";
-	rename -uid "8E1CE82E-4D36-B944-B46B-CEB16F575981";
+	rename -uid "9AEF0223-41FE-3B3D-8329-10AD3937E624";
 	setAttr ".uopa" yes;
 	setAttr -s 88 ".tk";
 	setAttr ".tk[1]" -type "float3" -0.00071272254 -0.0033392608 0.00074365735 ;
@@ -278232,13 +278269,13 @@ createNode polyTweak -n "Stalagmite_4:polyTweak8";
 	setAttr ".tk[386]" -type "float3" -0.013584167 -0.0074862242 0.0078602731 ;
 	setAttr ".tk[387]" -type "float3" -0.0041124374 -0.0024645329 -0.0013529509 ;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge16";
-	rename -uid "6A0A83C7-4251-D8AD-FFEE-13867EB9A3C1";
+	rename -uid "4C979F46-4AED-7EE8-A595-98BFC087D98A";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
 	setAttr ".a" 180;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel26";
-	rename -uid "54EEA088-4E6B-1EC1-E183-9288361C7838";
+	rename -uid "4924D09A-400F-6CB6-C915-0B9B942AD2A3";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 17 "e[45]" "e[48]" "e[54:55]" "e[59]" "e[63]" "e[67:68]" "e[93]" "e[102]" "e[112]" "e[116]" "e[120]" "e[122]" "e[128]" "e[153]" "e[163]" "e[170]" "e[172:173]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
@@ -278251,7 +278288,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel26";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak9";
-	rename -uid "05A2852C-43E0-4AE1-A6EF-A8990F91428F";
+	rename -uid "5DD9BB48-4936-3A5C-CC3C-65A4B3F02BA2";
 	setAttr ".uopa" yes;
 	setAttr -s 93 ".tk[3:95]" -type "float3"  0 0.046478707 0 0 0 0 -6.0945749e-05
 		 -0.0027204468 -8.7022781e-05 0.029987365 -0.0027195825 0.010332391 0 -0.027814714
@@ -278281,17 +278318,17 @@ createNode polyTweak -n "Stalagmite_4:polyTweak9";
 		 1.9192696e-05 -3.323704e-05 -3.2275915e-05 -0.0026888102 0.052088045 -0.012453334
 		 0 0.046478707 0 0 0.046478707 0 -0.001323767 0.051636927 -0.010147633;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge17";
-	rename -uid "18E4844B-4B49-5C49-5B95-D4B1091C2693";
+	rename -uid "9C9DD08D-4B1E-F11D-6E5A-33825F26486D";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 10 0 0 0 0 2 0 0 27.5 0 1;
 	setAttr ".a" 180;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge3";
-	rename -uid "06B47FCD-45B3-B459-D7B1-79BE464CF544";
+	rename -uid "8FF26277-48D5-83F4-6E64-03AB911FD22D";
 	setAttr ".ics" -type "componentList" 16 "e[121]" "e[126]" "e[129]" "e[133:134]" "e[137]" "e[143:144]" "e[147]" "e[150]" "e[153]" "e[158:159]" "e[164]" "e[166]" "e[170:171]" "e[173]" "e[176]" "e[179]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak10";
-	rename -uid "4B6B81CC-48CD-F7B2-845A-21A19811355D";
+	rename -uid "AE6263A8-4BD1-A5FA-9351-BE92B3554D00";
 	setAttr ".uopa" yes;
 	setAttr -s 40 ".tk[76:115]" -type "float3"  2.8312206e-07 -8.9406967e-06
 		 1.1920929e-06 0.00056983531 -0.0063834535 0.0015666783 0.0013536513 -0.0062706517
@@ -278311,21 +278348,21 @@ createNode polyTweak -n "Stalagmite_4:polyTweak10";
 		 -0.015767954 0 0 0 0.0022296309 -0.0061957436 0.00079919398 0.0023372173 -0.0063002305
 		 0.00084212422 0 0 0;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge4";
-	rename -uid "983D2A44-4A40-EE97-6FDC-D9A8B00FA0C9";
+	rename -uid "E5F04DE8-4F9A-EF45-6DC9-FCBBBE939CE4";
 	setAttr ".ics" -type "componentList" 13 "e[65:66]" "e[68:69]" "e[83:84]" "e[341:342]" "e[365:366]" "e[404:409]" "e[467]" "e[502]" "e[542:545]" "e[580]" "e[588]" "e[625:628]" "e[652:655]";
 	setAttr ".cv" yes;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge18";
-	rename -uid "52555994-48A6-3217-68B9-C4B59D98C57B";
+	rename -uid "F90B96D5-4B37-6350-13F8-DC91BA0D60AD";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 10 0 0 0 0 5 0 0 0 0 10 0 0 2.5 0 1;
 	setAttr ".a" 180;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge5";
-	rename -uid "BE397E43-4C34-A0AC-787C-278D812B2863";
+	rename -uid "6755B0FE-49CD-791B-A133-198E7C5D1266";
 	setAttr ".ics" -type "componentList" 17 "e[563:564]" "e[569]" "e[571]" "e[576]" "e[579]" "e[582]" "e[584]" "e[589:590]" "e[596:597]" "e[600]" "e[603]" "e[606]" "e[661]" "e[702]" "e[732]" "e[767]" "e[782]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak11";
-	rename -uid "90E31FF3-4FC7-2F3D-5AE5-11B6DB143071";
+	rename -uid "14BA4569-47EB-8E7B-0521-AF88C0AFC995";
 	setAttr ".uopa" yes;
 	setAttr -s 76 ".tk";
 	setAttr ".tk[4]" -type "float3" 0.00038760155 -0.01143676 -0.0027936697 ;
@@ -278405,11 +278442,11 @@ createNode polyTweak -n "Stalagmite_4:polyTweak11";
 	setAttr ".tk[403]" -type "float3" -0.034593776 -0.0018849075 0.0024104416 ;
 	setAttr ".tk[404]" -type "float3" -0.033839457 -0.01065588 0.0072738919 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge6";
-	rename -uid "F37FA0E7-4414-61C1-AF45-B0BB43794F9B";
+	rename -uid "4131ED15-4945-A373-2E0D-F8BBAA6A5076";
 	setAttr ".ics" -type "componentList" 34 "e[16:17]" "e[19]" "e[24:25]" "e[28]" "e[32:33]" "e[77:78]" "e[126:127]" "e[131]" "e[133]" "e[138:139]" "e[146:147]" "e[152:153]" "e[176]" "e[184:185]" "e[196]" "e[199]" "e[223:224]" "e[233:234]" "e[264:265]" "e[268:269]" "e[290]" "e[330:331]" "e[337:338]" "e[372:373]" "e[376:377]" "e[382:383]" "e[403:404]" "e[456]" "e[464]" "e[506:507]" "e[514:515]" "e[541:543]" "e[591:594]" "e[614:617]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak12";
-	rename -uid "1602613E-4AB2-463D-9F0E-7D94DCB611EB";
+	rename -uid "B4C5EDD9-494A-4E89-32CA-C6BA36D224DD";
 	setAttr ".uopa" yes;
 	setAttr -s 95 ".tk";
 	setAttr ".tk[2]" -type "float3" 0.0020901561 -5.4016709e-07 -0.0031535029 ;
@@ -278508,38 +278545,38 @@ createNode polyTweak -n "Stalagmite_4:polyTweak12";
 	setAttr ".tk[554]" -type "float3" 1.4901161e-07 2.9802322e-08 -2.3841858e-07 ;
 	setAttr ".tk[555]" -type "float3" 0.0006826669 -0.0067833066 -0.013862371 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge7";
-	rename -uid "7A3F53E7-47D6-7876-C28B-E2B3AD136E6E";
+	rename -uid "BDA777E3-464B-E17C-4688-1082B0D80C7B";
 	setAttr ".ics" -type "componentList" 10 "e[63:72]" "e[96:98]" "e[121]" "e[131]" "e[149:150]" "e[152]" "e[265:266]" "e[304:305]" "e[319:320]" "e[357]";
 	setAttr ".cv" yes;
 createNode deleteComponent -n "Stalagmite_4:deleteComponent5";
-	rename -uid "8D0FBDF6-4916-1731-F256-FEBB16D09B05";
+	rename -uid "518F75D7-4852-1A9C-F736-F2A0EA23C464";
 	setAttr ".dc" -type "componentList" 5 "f[204:207]" "f[268]" "f[271]" "f[276]" "f[279]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent6";
-	rename -uid "728B72D7-4F8A-BD45-DD3C-EBB7D51DC497";
+	rename -uid "0292EBF3-4EBE-A632-B10E-D8A7F71396C7";
 	setAttr ".dc" -type "componentList" 24 "f[42:43]" "f[78]" "f[139:144]" "f[146]" "f[167]" "f[236:241]" "f[270]" "f[338:340]" "f[342:344]" "f[346:347]" "f[353:354]" "f[363:369]" "f[375:376]" "f[397:403]" "f[405:406]" "f[419:424]" "f[427]" "f[437:441]" "f[447]" "f[454:459]" "f[469:474]" "f[485:488]" "f[499]" "f[502:503]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent7";
-	rename -uid "8ADE1BF1-4ABB-E529-F900-B294FC75BF0B";
+	rename -uid "580E37C7-4202-8224-F23D-5DB8AA48D441";
 	setAttr ".dc" -type "componentList" 1 "f[247:248]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent8";
-	rename -uid "C24F35A1-4A8D-497D-C426-5E8AB2A90224";
+	rename -uid "BEA15303-4971-241A-9830-A887D3B2C7A0";
 	setAttr ".dc" -type "componentList" 1 "f[196]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent9";
-	rename -uid "B47DF9EB-4988-EAB2-2762-43A7D958FE0E";
+	rename -uid "4DFA846D-4B2C-C956-351B-B1AEA284F101";
 	setAttr ".dc" -type "componentList" 6 "f[187:192]" "f[319:320]" "f[335:336]" "f[360:361]" "f[407:410]" "f[421:422]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent10";
-	rename -uid "0F02A1A6-4AAA-1A0D-4713-DBADA4FF636A";
+	rename -uid "DE29269C-4960-6705-F66D-5BBD968BB49A";
 	setAttr ".dc" -type "componentList" 8 "f[147]" "f[305]" "f[311]" "f[348]" "f[358]" "f[374]" "f[389:390]" "f[393:394]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent11";
-	rename -uid "13B8D2DD-49AB-406B-C8AA-F3872A89C62E";
+	rename -uid "04D981BE-4FD6-F2FF-70F6-EAABAC5C54B9";
 	setAttr ".dc" -type "componentList" 1 "f[323]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent12";
-	rename -uid "C5F41155-4ED9-3A75-65B6-A8BFCDD6C0FD";
+	rename -uid "98677E98-419E-DA44-449B-958D1D2E9FF4";
 	setAttr ".dc" -type "componentList" 2 "f[40:41]" "f[60:62]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent13";
-	rename -uid "8BF6FE06-4363-A2B5-65E5-33B23326D9DF";
+	rename -uid "5098AB5B-49DE-5A1C-2A86-17B9AE836972";
 	setAttr ".dc" -type "componentList" 1 "f[58:59]";
 createNode polyTweak -n "Stalagmite_4:polyTweak13";
-	rename -uid "8BAF8B43-44E2-3F59-42C5-DA9C933A7A99";
+	rename -uid "047888A1-4302-5707-1CD0-56868E4C2E9D";
 	setAttr ".uopa" yes;
 	setAttr -s 21 ".tk";
 	setAttr ".tk[303]" -type "float3" 0.027508093 0.0021785945 0.0037158728 ;
@@ -278564,46 +278601,46 @@ createNode polyTweak -n "Stalagmite_4:polyTweak13";
 	setAttr ".tk[382]" -type "float3" 0.028620465 0.0021471083 -0.00084486604 ;
 	setAttr ".tk[383]" -type "float3" 0.028247928 0.0025286376 -0.00024852157 ;
 createNode deleteComponent -n "Stalagmite_4:deleteComponent14";
-	rename -uid "868D4AB5-4730-378B-1FE3-AC86FD33DAC3";
+	rename -uid "9DE6999D-4B65-2DB8-245F-F3BED90CA75D";
 	setAttr ".dc" -type "componentList" 17 "f[26:27]" "f[34:39]" "f[60:61]" "f[78:83]" "f[97]" "f[100:103]" "f[107]" "f[130:133]" "f[137]" "f[146:149]" "f[154:155]" "f[163:164]" "f[173]" "f[251]" "f[254]" "f[266:267]" "f[272:273]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent15";
-	rename -uid "2F6DFA96-41D6-6C58-2E7E-A5906560B1C6";
+	rename -uid "D6DE40F2-4E19-036B-B6CB-E98C4A2AD91D";
 	setAttr ".dc" -type "componentList" 8 "f[32:33]" "f[48]" "f[51]" "f[81]" "f[83:85]" "f[111]" "f[139:140]" "f[178:179]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent16";
-	rename -uid "78AEEA28-4CEE-A959-B4B4-86B5371C2F5D";
+	rename -uid "F0962BBE-4358-EAB3-B311-93AEDDED7C7A";
 	setAttr ".dc" -type "componentList" 6 "f[195]" "f[214]" "f[229]" "f[235:238]" "f[249:250]" "f[258:259]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent17";
-	rename -uid "1D7798F8-45E9-2CDD-3F15-85B765D402EB";
+	rename -uid "0D622C61-4D1F-DE7F-EF3E-E796F4979C37";
 	setAttr ".dc" -type "componentList" 5 "f[99]" "f[201]" "f[232]" "f[237]" "f[247:248]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent18";
-	rename -uid "42202D98-487A-D9C0-6B24-EC9C8C81F337";
+	rename -uid "EDBA8F44-40FB-0D26-01B8-D8B8B4A71AB5";
 	setAttr ".dc" -type "componentList" 4 "f[25]" "f[65]" "f[127]" "f[129]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent19";
-	rename -uid "53D2DC37-4EC7-5F44-489C-30A5E9B7D529";
+	rename -uid "81BDAF7C-4897-40AA-04DD-3AB0C49C1087";
 	setAttr ".dc" -type "componentList" 8 "f[46]" "f[74:75]" "f[101]" "f[117]" "f[168]" "f[186]" "f[205]" "f[207]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent20";
-	rename -uid "715EB16C-410C-2242-B9C4-968046D1712A";
+	rename -uid "AA4CDECF-40B1-97FD-FC95-ADB02F282D46";
 	setAttr ".dc" -type "componentList" 4 "f[127]" "f[129:130]" "f[138:139]" "f[164]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent21";
-	rename -uid "D64B7C4A-4AB3-580C-0B31-C3B7B1C0BE33";
+	rename -uid "D1EC76F1-4F3D-9CEF-9BC7-E28B4A7153E3";
 	setAttr ".dc" -type "componentList" 1 "f[159]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent22";
-	rename -uid "A16F804A-4EA0-AC19-0EB2-8EAC4948EA97";
+	rename -uid "1D02B67A-41CD-941D-34AB-2DB360D3EB1E";
 	setAttr ".dc" -type "componentList" 5 "f[12]" "f[62]" "f[144]" "f[152]" "f[166:167]";
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge8";
-	rename -uid "94B9F32C-4AE3-3FEA-CCFA-C8AB12798C82";
+	rename -uid "3E1749DB-47A5-D18D-2037-97B277B40AC6";
 	setAttr ".ics" -type "componentList" 3 "e[301:302]" "e[313:314]" "e[317]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge9";
-	rename -uid "A5C3172E-472B-6FC5-34C0-A891D936875D";
+	rename -uid "BCEC2233-43CF-A076-1213-3DB2B9C87989";
 	setAttr ".ics" -type "componentList" 3 "e[749:750]" "e[765:766]" "e[769]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge10";
-	rename -uid "7346E5BC-4994-0571-A60A-258658B8E35A";
+	rename -uid "E094252B-47EF-6676-DC28-C7BFF6DD7189";
 	setAttr ".ics" -type "componentList" 4 "e[792:793]" "e[803:804]" "e[807:808]" "e[842]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak14";
-	rename -uid "1FDC18F4-4070-5A3E-ECBD-5E8370BE1CDA";
+	rename -uid "C5365407-46B8-98F3-5E4A-1C97934AFAEE";
 	setAttr ".uopa" yes;
 	setAttr -s 124 ".tk";
 	setAttr ".tk[0]" -type "float3" 0.021261424 0.056587595 -0.025949091 ;
@@ -278731,36 +278768,36 @@ createNode polyTweak -n "Stalagmite_4:polyTweak14";
 	setAttr ".tk[442]" -type "float3" -0.0022819755 -0.079114161 0.01057338 ;
 	setAttr ".tk[444]" -type "float3" -0.0014076692 -0.015345775 -0.0021753144 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge11";
-	rename -uid "3CBE3D7B-4226-B930-CBE6-3D83A35FBA5B";
+	rename -uid "7CE9FE00-4360-4A58-2EB8-C19B85525FD9";
 	setAttr ".ics" -type "componentList" 5 "e[784:785]" "e[789:790]" "e[793]" "e[797]" "e[800]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge12";
-	rename -uid "43EF4812-4D33-35D0-71E8-A49F689E6BDD";
+	rename -uid "9F66F029-43CB-D107-DF80-F4A98E7BEDD4";
 	setAttr ".ics" -type "componentList" 4 "e[756]" "e[759:760]" "e[763:764]" "e[767]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge13";
-	rename -uid "74834C8F-4D5B-9917-C18D-62BF6D024442";
+	rename -uid "3FF6201C-4F1A-F8D4-0139-66A644719C7E";
 	setAttr ".ics" -type "componentList" 2 "e[392:395]" "e[400]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak15";
-	rename -uid "D1192B97-4511-89FE-A752-379CEECAEB27";
+	rename -uid "F208371D-49A7-1781-3791-8C8E8FFEF267";
 	setAttr ".uopa" yes;
 	setAttr -s 3 ".tk[220:222]" -type "float3"  -9.3787909e-05 0.0033158064
 		 0.011661152 -0.00871066 0.0063559394 0.020700281 -0.011479085 -0.00035464764 -2.6851892e-05;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge14";
-	rename -uid "FED4B186-43D9-7C12-42D9-3A9803AFF64A";
+	rename -uid "9EB1F966-4DAA-5019-27DA-80A6A043DE0B";
 	setAttr ".ics" -type "componentList" 2 "e[103:109]" "e[293]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge15";
-	rename -uid "BC5C1DC9-4FFB-47A5-B9DB-4B8353C5617C";
+	rename -uid "3B5997B9-40C1-6CB2-45DF-F182E66D1F20";
 	setAttr ".ics" -type "componentList" 9 "e[231]" "e[236]" "e[239]" "e[242]" "e[248]" "e[251]" "e[255]" "e[334]" "e[374]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge16";
-	rename -uid "959205A9-41B8-D1DD-7863-55BF039651EB";
+	rename -uid "9DCD800C-405E-87E0-D127-45B22B6B3973";
 	setAttr ".ics" -type "componentList" 1 "e[357:360]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak16";
-	rename -uid "16EA9F77-4C8D-9890-15EC-3CB934E9912D";
+	rename -uid "665692EC-454B-A1E4-4EFE-2D9DC42CCEE9";
 	setAttr ".uopa" yes;
 	setAttr -s 12 ".tk";
 	setAttr ".tk[8]" -type "float3" -0.0015361905 -0.002738677 0.00097899139 ;
@@ -278776,7 +278813,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak16";
 	setAttr ".tk[233]" -type "float3" 0.017340139 0.032928944 0.00058057904 ;
 	setAttr ".tk[249]" -type "float3" -0.021971494 -0.057153106 0.01133126 ;
 createNode polyTweak -n "Stalagmite_4:polyTweak17";
-	rename -uid "8B54B4A6-4E9E-0CE9-AAB3-D9BC9EBFEBF8";
+	rename -uid "2F93687A-427F-E203-1E23-D5A7771268EC";
 	setAttr ".uopa" yes;
 	setAttr -s 61 ".tk";
 	setAttr ".tk[131]" -type "float3" -0.017219365 0.08298742 -0.0044544861 ;
@@ -278841,51 +278878,51 @@ createNode polyTweak -n "Stalagmite_4:polyTweak17";
 	setAttr ".tk[441]" -type "float3" -0.0071884617 0.10622187 -0.0098623009 ;
 	setAttr ".tk[442]" -type "float3" -0.00081723277 -0.086070873 0.00011387712 ;
 createNode polySplit -n "Stalagmite_4:polySplit1";
-	rename -uid "1D8827B2-49A0-96D4-4B6D-6DBDC09361D9";
+	rename -uid "5C2078CC-4EBE-1CF1-4F31-FF9085D752AB";
 	setAttr -s 4 ".e[0:3]"  0.5 0.5 0.5 0.5;
 	setAttr -s 4 ".d[0:3]"  -2147483158 -2147483516 -2147483185 -2147483513;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polySplit -n "Stalagmite_4:polySplit2";
-	rename -uid "BD197FAA-4636-94BD-E09A-58BD5CCD77B5";
+	rename -uid "769E2E70-4334-2043-3AD1-49B472E1A89D";
 	setAttr -s 2 ".e[0:1]"  1 0;
 	setAttr -s 2 ".d[0:1]"  -2147483155 -2147482809;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge17";
-	rename -uid "A52E459D-4CB4-6757-90D6-47B727B20DD3";
+	rename -uid "A753EF5F-43D4-9F3C-F66F-AC882CF6D4F6";
 	setAttr ".ics" -type "componentList" 5 "e[301:302]" "e[306:307]" "e[310]" "e[322]" "e[326:328]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge18";
-	rename -uid "C3D76A84-47DE-EDAC-59C7-B681AF59D90F";
+	rename -uid "FE046759-4390-756E-DEC5-3C88AEF71D26";
 	setAttr ".ics" -type "componentList" 2 "e[307:309]" "e[311]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge19";
-	rename -uid "93FB46AA-495C-FF4E-D42F-8F812CA37009";
+	rename -uid "43BE732E-46F7-877D-D5EF-0F98FA4B27A7";
 	setAttr ".ics" -type "componentList" 8 "e[440]" "e[443]" "e[453]" "e[521]" "e[562]" "e[565]" "e[657]" "e[660]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge20";
-	rename -uid "701762C6-492F-9379-A7E3-16B6CC34251C";
+	rename -uid "D1D5DAF7-44B7-5A68-CAB1-F984F1C0F38E";
 	setAttr ".ics" -type "componentList" 5 "e[632]" "e[634]" "e[638]" "e[640:641]" "e[643:644]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge21";
-	rename -uid "6452D419-442E-AF9F-B14C-D7A6201F7F46";
+	rename -uid "F3434AF9-47A7-4B59-4B19-999729ACD990";
 	setAttr ".ics" -type "componentList" 4 "e[767]" "e[770:771]" "e[774]" "e[781:782]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge22";
-	rename -uid "E2751440-403A-AA77-2529-58BCC28386A4";
+	rename -uid "FF155427-4E82-BFA3-42E1-738AEF92E22B";
 	setAttr ".ics" -type "componentList" 2 "e[345:346]" "e[353:356]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge23";
-	rename -uid "E941E318-405A-C56A-16D1-B6AFB5D454CC";
+	rename -uid "B4659D5C-4B56-6E74-CB04-498B0F0DDB80";
 	setAttr ".ics" -type "componentList" 4 "e[342:343]" "e[354:355]" "e[362:363]" "e[365]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge24";
-	rename -uid "4E889F6C-42C9-2A46-B4AE-53B45ED374A3";
+	rename -uid "6FE66075-47DF-82CB-C6D9-A2B432545041";
 	setAttr ".ics" -type "componentList" 6 "e[186:187]" "e[200:201]" "e[206:207]" "e[221]" "e[226:227]" "e[232]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak18";
-	rename -uid "9A771A5A-43D9-13BB-BF07-9091160E9D24";
+	rename -uid "6EEB6169-475E-2F16-0322-4691F51CFE59";
 	setAttr ".uopa" yes;
 	setAttr -s 126 ".tk";
 	setAttr ".tk[0]" -type "float3" 0 -0.060587708 0 ;
@@ -279015,11 +279052,11 @@ createNode polyTweak -n "Stalagmite_4:polyTweak18";
 	setAttr ".tk[391]" -type "float3" 0 -0.0032447686 0 ;
 	setAttr ".tk[395]" -type "float3" 9.3132257e-10 -0.030549206 0 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge25";
-	rename -uid "C277357A-46E3-9481-4E77-EB827C28319C";
+	rename -uid "5770CB13-4BFE-F506-60C0-68BFFA637F85";
 	setAttr ".ics" -type "componentList" 5 "e[593]" "e[596:597]" "e[600]" "e[606:607]" "e[614]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak19";
-	rename -uid "A2F8B3D1-4CF0-576C-77CA-37B1D501DEF9";
+	rename -uid "276949F1-4388-2771-2BF4-0F87753B25F0";
 	setAttr ".uopa" yes;
 	setAttr -s 8 ".tk";
 	setAttr ".tk[11]" -type "float3" -0.018594401 -0.016964197 -0.081529692 ;
@@ -279031,7 +279068,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak19";
 	setAttr ".tk[142]" -type "float3" -0.0033103824 0.019725585 -0.00081732124 ;
 	setAttr ".tk[234]" -type "float3" 0.0014480948 -0.0084609706 -0.00057139993 ;
 createNode polySplit -n "Stalagmite_4:polySplit3";
-	rename -uid "826AC0B0-4435-D803-AFF2-B3A32B408151";
+	rename -uid "30E0742D-459B-8122-0506-E292605D7EC6";
 	setAttr -s 8 ".e[0:7]"  0.89999998 0.89999998 0.1 0.89999998 0.89999998
 		 0.89999998 0.1 0.1;
 	setAttr -s 8 ".d[0:7]"  -2147483638 -2147483427 -2147483570 -2147483431 -2147483558 -2147483436 
@@ -279039,14 +279076,14 @@ createNode polySplit -n "Stalagmite_4:polySplit3";
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polySplit -n "Stalagmite_4:polySplit4";
-	rename -uid "D65D8563-4813-72AD-4D96-5082835FD53E";
+	rename -uid "C8BCCDA2-4D14-8665-E37F-88989AAA8DAF";
 	setAttr -s 6 ".e[0:5]"  0.89999998 0.89999998 0.1 0.1 0.89999998
 		 0.1;
 	setAttr -s 6 ".d[0:5]"  -2147483576 -2147483509 -2147483581 -2147483455 -2147483584 -2147483511;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak20";
-	rename -uid "0F75A569-4B76-CCE3-CA38-6187D67D5DC6";
+	rename -uid "BFF6DA86-485C-04AA-311D-0E93381660E1";
 	setAttr ".uopa" yes;
 	setAttr -s 60 ".tk";
 	setAttr ".tk[7]" -type "float3" 0.017705021 0 0 ;
@@ -279110,7 +279147,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak20";
 	setAttr ".tk[419]" -type "float3" -0.00030040741 0.026603526 -0.00014438294 ;
 	setAttr ".tk[424]" -type "float3" -0.021480262 0.065267183 -0.011855061 ;
 createNode polySplit -n "Stalagmite_4:polySplit5";
-	rename -uid "1491912A-41F2-3B27-D094-F9B9598C77AE";
+	rename -uid "45B82C07-4875-2AC7-0B3E-8A81D0A7FDC2";
 	setAttr -s 10 ".e[0:9]"  0.69999999 0.69999999 0.69999999 0.30000001
 		 0.30000001 0.69999999 0.30000001 0.30000001 0.30000001 0.30000001;
 	setAttr -s 10 ".d[0:9]"  -2147482965 -2147483151 -2147483438 -2147483155 -2147483142 -2147483148 
@@ -279118,7 +279155,7 @@ createNode polySplit -n "Stalagmite_4:polySplit5";
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak21";
-	rename -uid "E754944C-4C50-5158-9682-B7B849910309";
+	rename -uid "25D08DBB-422E-B8F0-6B74-00BECCC0E826";
 	setAttr ".uopa" yes;
 	setAttr -s 19 ".tk";
 	setAttr ".tk[65]" -type "float3" 0.012818104 0.0050553381 -0.0031962362 ;
@@ -279141,10 +279178,10 @@ createNode polyTweak -n "Stalagmite_4:polyTweak21";
 	setAttr ".tk[438]" -type "float3" -0.01757263 0.00072981417 -0.026779469 ;
 	setAttr ".tk[439]" -type "float3" -0.0073043397 0 -0.00036907196 ;
 createNode deleteComponent -n "Stalagmite_4:deleteComponent23";
-	rename -uid "C2973360-4192-22C4-DFF4-55BFAF727A8A";
+	rename -uid "9D52E554-435C-7AE2-31D5-06A35E35D719";
 	setAttr ".dc" -type "componentList" 1 "vtx[3]";
 createNode polyTweak -n "Stalagmite_4:polyTweak22";
-	rename -uid "E92BC2AE-4F76-6BAA-0B83-7B8F0C158EB8";
+	rename -uid "492F482B-451E-C776-3DAB-04A7126A078F";
 	setAttr ".uopa" yes;
 	setAttr -s 15 ".tk";
 	setAttr ".tk[0]" -type "float3" -0.0044108629 0.004701674 -0.037089221 ;
@@ -279163,7 +279200,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak22";
 	setAttr ".tk[346]" -type "float3" 0 0.034754485 0 ;
 	setAttr ".tk[380]" -type "float3" 0.00068932772 0.0021196753 -0.068587534 ;
 createNode polySplit -n "Stalagmite_4:polySplit6";
-	rename -uid "D7AA0760-439F-C189-BFF4-988568CB87DB";
+	rename -uid "D50F0576-4C77-5817-68CD-419928596571";
 	setAttr -s 16 ".e[0:15]"  0.80000001 0.2 0.80000001 0.80000001 0.2
 		 0.80000001 0.2 0.80000001 0.80000001 0.80000001 0.2 0.2 0.80000001 0.2 0.80000001
 		 0.2;
@@ -279172,7 +279209,7 @@ createNode polySplit -n "Stalagmite_4:polySplit6";
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
 createNode polyBevel3 -n "Stalagmite_4:polyBevel27";
-	rename -uid "3D350D16-4FD2-4832-B0BE-548987DA7315";
+	rename -uid "35D2A57B-4434-FC6F-3C7C-6191089BC81B";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 36 "e[574:575]" "e[578:579]" "e[582:583]" "e[586:587]" "e[589]" "e[591:592]" "e[594]" "e[596:597]" "e[600]" "e[603:604]" "e[607:608]" "e[612:614]" "e[616:617]" "e[619:620]" "e[623]" "e[625]" "e[628:629]" "e[631]" "e[634]" "e[636:637]" "e[639]" "e[642:643]" "e[645:646]" "e[649]" "e[653:654]" "e[657]" "e[691:692]" "e[695:696]" "e[724]" "e[727:728]" "e[754:755]" "e[758:759]" "e[785:786]" "e[789:790]" "e[807]" "e[832]";
 	setAttr ".ix" -type "matrix" 10 0 0 0 0 5 0 0 0 0 10 0 0 2.5 0 1;
@@ -279185,7 +279222,7 @@ createNode polyBevel3 -n "Stalagmite_4:polyBevel27";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode polyTweak -n "Stalagmite_4:polyTweak23";
-	rename -uid "B3AEC906-4A42-6681-6D0B-17A913E95D7F";
+	rename -uid "45B7EB08-432A-2EFC-99E3-D69851D36DC6";
 	setAttr ".uopa" yes;
 	setAttr -s 9 ".tk";
 	setAttr ".tk[212]" -type "float3" -0.00066048279 0.0022374392 -0.014418364 ;
@@ -279198,19 +279235,19 @@ createNode polyTweak -n "Stalagmite_4:polyTweak23";
 	setAttr ".tk[353]" -type "float3" -0.00070950389 0.00048059225 -0.019611657 ;
 	setAttr ".tk[430]" -type "float3" -0.0010604858 0.0023026466 -0.016470343 ;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge19";
-	rename -uid "9B77DDE3-4F1B-B9F5-1358-099AE787C614";
+	rename -uid "FECE8FD9-49C6-568A-A7D6-8D94246361B7";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 10 0 0 0 0 5 0 0 0 0 10 0 0 2.5 0 1;
 	setAttr ".a" 180;
 createNode polySoftEdge -n "Stalagmite_4:polySoftEdge20";
-	rename -uid "7904B026-4DC0-D1DF-38BD-8DAF9850D0F3";
+	rename -uid "C08E5D1B-431A-D5AC-A4F0-22A2202C12C1";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[*]";
 	setAttr ".ix" -type "matrix" 10 0 0 0 0 5 0 0 0 0 10 0 0 2.5 0 1;
 	setAttr ".a" 180;
 createNode polyTweak -n "Stalagmite_4:polyTweak24";
-	rename -uid "F89BD73A-4710-12D0-1A0F-87B8BD9248FC";
+	rename -uid "436D3FEE-4AD9-B954-C9A2-D59C5911D68E";
 	setAttr ".uopa" yes;
 	setAttr -s 44 ".tk";
 	setAttr ".tk[46]" -type "float3" 0.019184053 0.021543685 0.02136308 ;
@@ -279258,7 +279295,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak24";
 	setAttr ".tk[511]" -type "float3" -0.029935539 0.082706638 0.002932691 ;
 	setAttr ".tk[512]" -type "float3" 0.0050587654 -0.076975539 0.0063027255 ;
 createNode polyTweak -n "Stalagmite_4:polyTweak25";
-	rename -uid "DF28596C-49FD-BD00-7501-C3B891AF617E";
+	rename -uid "14E2687F-4F5D-ED0D-1828-F5AEA0170036";
 	setAttr ".uopa" yes;
 	setAttr -s 121 ".tk";
 	setAttr ".tk[0]" -type "float3" -0.013059855 -0.050670899 -0.0016684234 ;
@@ -279383,23 +279420,23 @@ createNode polyTweak -n "Stalagmite_4:polyTweak25";
 	setAttr ".tk[350]" -type "float3" 0.0019280314 -0.01872468 0.014900278 ;
 	setAttr ".tk[351]" -type "float3" 5.8114529e-07 1.1920929e-07 -4.991889e-07 ;
 createNode deleteComponent -n "Stalagmite_4:deleteComponent24";
-	rename -uid "BA4BE9B9-4112-D124-0651-9A9C33951F86";
+	rename -uid "FC93BFFD-4846-29E0-9856-1FB54D91EBCE";
 	setAttr ".dc" -type "componentList" 2 "f[42]" "f[78]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent25";
-	rename -uid "FB609941-4CC2-AF28-7B41-F29CCD646FCD";
+	rename -uid "BD7E83E2-41A0-E49B-5474-679F4489660C";
 	setAttr ".dc" -type "componentList" 1 "f[76]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent26";
-	rename -uid "D1AB9985-4923-1B6A-8EC3-468365965F7D";
+	rename -uid "9C9240E6-45AF-BF65-85CB-359DA8F76E5D";
 	setAttr ".dc" -type "componentList" 2 "f[42]" "f[194]";
 createNode deleteComponent -n "Stalagmite_4:deleteComponent27";
-	rename -uid "DA1EEFFB-4178-CD75-82DD-E892689B617A";
+	rename -uid "1BF8961D-4196-615B-F65D-F79EEAA38D61";
 	setAttr ".dc" -type "componentList" 1 "f[256]";
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge26";
-	rename -uid "32101220-42FC-CA9B-6A6C-C9AABD64DD7A";
+	rename -uid "E479E940-4C8A-C636-F617-0B82CBC4338D";
 	setAttr ".ics" -type "componentList" 3 "e[21:22]" "e[43:44]" "e[78:81]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak26";
-	rename -uid "5D3954A2-441B-0526-3DFC-03B69F9E5338";
+	rename -uid "C2C0920C-4BCF-AA4C-4092-B3B3A2F5FEDB";
 	setAttr ".uopa" yes;
 	setAttr -s 102 ".tk";
 	setAttr ".tk[0]" -type "float3" -0.0054097176 -0.022763919 -3.0517578e-05 ;
@@ -279505,15 +279542,15 @@ createNode polyTweak -n "Stalagmite_4:polyTweak26";
 	setAttr ".tk[365]" -type "float3" -0.0083121657 -0.0042132586 0.0016834587 ;
 	setAttr ".tk[367]" -type "float3" 0.010493904 -0.01394777 -0.014743626 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge27";
-	rename -uid "6C0BA9E8-45C2-BDE0-4AF9-DDBF237ACA5B";
+	rename -uid "D6871544-45DA-F54B-01FD-4B81BA5D508C";
 	setAttr ".ics" -type "componentList" 2 "e[300:303]" "e[305:306]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge28";
-	rename -uid "EA51121D-4E13-59B6-E18B-908F9F88AF0E";
+	rename -uid "8D17984C-4252-2411-4E65-F2BF495A110B";
 	setAttr ".ics" -type "componentList" 3 "e[175:176]" "e[187:190]" "e[284]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak27";
-	rename -uid "80DFBF8E-49F7-79F4-AC23-C0822C37891C";
+	rename -uid "7CA77845-4B16-227B-2773-01936D3BCD92";
 	setAttr ".uopa" yes;
 	setAttr -s 24 ".tk";
 	setAttr ".tk[0]" -type "float3" 0.0003709197 -0.00023799762 0.00049528328 ;
@@ -279541,15 +279578,15 @@ createNode polyTweak -n "Stalagmite_4:polyTweak27";
 	setAttr ".tk[251]" -type "float3" 5.9306622e-06 -0.0002207756 0.00020879356 ;
 	setAttr ".tk[262]" -type "float3" -1.9729137e-05 -0.00021952391 0.00021201221 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge29";
-	rename -uid "7D052D8C-4807-618E-41BB-2EB40A7DED17";
+	rename -uid "2E0CB5E1-4B2B-E0BC-1FE1-13BB287CBBDD";
 	setAttr ".ics" -type "componentList" 3 "e[218:219]" "e[228:229]" "e[231]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge30";
-	rename -uid "B721F90D-473E-4D89-6072-DC96E7AF4CE7";
+	rename -uid "F317D4E5-4656-1150-054F-F38CBC134E92";
 	setAttr ".ics" -type "componentList" 6 "e[109:110]" "e[125]" "e[164:165]" "e[170]" "e[381]" "e[387]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak28";
-	rename -uid "065BF734-44A3-F3A9-9B1C-0C95074B3956";
+	rename -uid "9E391D8A-4831-CA99-09DE-1BA1B77C0497";
 	setAttr ".uopa" yes;
 	setAttr -s 87 ".tk";
 	setAttr ".tk[2]" -type "float3" -0.00036942959 -0.0086470619 -0.0011466742 ;
@@ -279640,27 +279677,27 @@ createNode polyTweak -n "Stalagmite_4:polyTweak28";
 	setAttr ".tk[291]" -type "float3" 0 0 -0.033367246 ;
 	setAttr ".tk[292]" -type "float3" -0.013803672 0 -0.048305526 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge31";
-	rename -uid "7BE3952D-44D7-4378-0472-5988D540F94A";
+	rename -uid "18C7DD46-4EB2-B5A3-67E3-DFAA6DCC30F4";
 	setAttr ".ics" -type "componentList" 4 "e[346:348]" "e[441]" "e[483]" "e[497]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge32";
-	rename -uid "452C55FB-4FBB-A0D0-3713-059B5DE94959";
+	rename -uid "91F50A7C-4C19-BE62-0773-098F1FB9FDDB";
 	setAttr ".ics" -type "componentList" 4 "e[25:27]" "e[433]" "e[463]" "e[475]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge33";
-	rename -uid "B647DC29-44B3-4331-1677-7BBE8E9C348C";
+	rename -uid "F1DD7C79-4EB8-082D-508F-149B6046E334";
 	setAttr ".ics" -type "componentList" 6 "e[127:128]" "e[136]" "e[149:150]" "e[152:153]" "e[222]" "e[243]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge34";
-	rename -uid "054E9F26-4EFA-C620-3271-4FBDD4A06E09";
+	rename -uid "47C72B1D-47DF-C306-CEB0-BEAD659605FE";
 	setAttr ".ics" -type "componentList" 5 "e[105:106]" "e[130]" "e[142:143]" "e[145]" "e[147]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge35";
-	rename -uid "69A335BE-4908-D760-A2B8-CD92F976DD33";
+	rename -uid "D0C9A9E8-4558-6518-4249-B2952F4EC368";
 	setAttr ".ics" -type "componentList" 8 "e[524:525]" "e[528]" "e[530]" "e[532]" "e[546:547]" "e[806]" "e[862]" "e[943]";
 	setAttr ".cv" yes;
 createNode polyTweak -n "Stalagmite_4:polyTweak29";
-	rename -uid "28970912-4CD4-F1F3-D097-6AB56EC7DD9D";
+	rename -uid "5009E9D4-42B8-D40D-185F-A18F624C5ABD";
 	setAttr ".uopa" yes;
 	setAttr -s 116 ".tk";
 	setAttr ".tk[0]" -type "float3" 3.6358833e-06 -2.2053719e-06 8.1658363e-06 ;
@@ -279780,15 +279817,15 @@ createNode polyTweak -n "Stalagmite_4:polyTweak29";
 	setAttr ".tk[501]" -type "float3" 0.0083635449 -0.00078165531 -0.0068613291 ;
 	setAttr ".tk[502]" -type "float3" 0.0023798347 -0.043464899 -0.0047667101 ;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge36";
-	rename -uid "73064762-4CF2-92FD-E47C-7785460256CC";
+	rename -uid "4BC0B6C6-42B9-5BA2-B41D-97A65BBBE45B";
 	setAttr ".ics" -type "componentList" 6 "e[392]" "e[395]" "e[397]" "e[781]" "e[867]" "e[921]";
 	setAttr ".cv" yes;
 createNode polyDelEdge -n "Stalagmite_4:polyDelEdge37";
-	rename -uid "A0E132E8-40DC-C30D-5C0D-D489053F619F";
+	rename -uid "E73931DF-4F1B-160C-9876-CA92C4CCBE32";
 	setAttr ".ics" -type "componentList" 6 "e[178:181]" "e[199]" "e[211]" "e[754]" "e[863]" "e[902]";
 	setAttr ".cv" yes;
 createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj1";
-	rename -uid "7D21A540-CF43-3049-9B06-508A439A425F";
+	rename -uid "C01ECF44-4773-6578-9769-A19CC3DDD8DF";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:429]";
 	setAttr ".ix" -type "matrix" 10 0 0 0 0 5 0 0 0 0 10 0 0 2.5 0 1;
@@ -279803,14 +279840,14 @@ createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj1";
 	setAttr ".prgt" 886;
 	setAttr ".ptop" 1092;
 createNode polyTweak -n "Stalagmite_4:polyTweak30";
-	rename -uid "7713D7C8-4145-EC66-A213-2B8E74C80329";
+	rename -uid "C6FFD5D6-4982-EA70-50F8-80AFAF5E5424";
 	setAttr ".uopa" yes;
 	setAttr -s 3 ".tk";
 	setAttr ".tk[66]" -type "float3" 0.028656881 0 0.018801928 ;
 	setAttr ".tk[421]" -type "float3" 0 0 0.023355657 ;
 	setAttr ".tk[422]" -type "float3" 0 0 0.023355657 ;
 createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj2";
-	rename -uid "8CD027CB-2442-F25A-CFFC-C0892B66C9AA";
+	rename -uid "7B332A9F-447D-40CF-E568-A1A880F05507";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:84]";
 	setAttr ".ix" -type "matrix" 2 0 0 0 0 16.388388363686964 0 0 0 0 2 0 0 30.694194181843482 0 1;
@@ -279825,7 +279862,7 @@ createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj2";
 	setAttr ".prgt" 886;
 	setAttr ".ptop" 1092;
 createNode polyTweak -n "Stalagmite_4:polyTweak31";
-	rename -uid "73524023-1146-6222-5EDC-4B991B8662DC";
+	rename -uid "A114EC55-4652-7CC1-E456-31A74A972D63";
 	setAttr ".uopa" yes;
 	setAttr -s 96 ".tk[0:95]" -type "float3"  0.0075613111 -0.084490031
 		 0.020485014 -0.021493522 -0.13076851 -0.012628955 0.030624669 -0.090132356 -0.074931771
@@ -279854,7 +279891,7 @@ createNode polyTweak -n "Stalagmite_4:polyTweak31";
 		 0.081893593 -0.014165017 0.023102228 0.091392636 -0.0018521859 0.022226077 -0.076049812
 		 0.0072487923 0.022904951 -0.076244906 0.0076903035;
 createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj3";
-	rename -uid "E44CCDC1-E44E-0F4B-A93E-288485CBE135";
+	rename -uid "4B61F5E2-49C2-F8D6-D363-9F96C9B20A81";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:300]";
 	setAttr ".ix" -type "matrix" 5 0 0 0 0 10 0 0 0 0 5 0 0 17.5 0 1;
@@ -279869,7 +279906,7 @@ createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj3";
 	setAttr ".prgt" 886;
 	setAttr ".ptop" 1092;
 createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj4";
-	rename -uid "AE0946C0-A94F-03E3-DE34-B090D5FF3BF0";
+	rename -uid "53F94BF2-48A3-266A-9790-F4B6599BB7FF";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "f[0:211]";
 	setAttr ".ix" -type "matrix" 7.5 0 0 0 0 7.5 0 0 0 0 7.5 0 -0.35553767402026137 8.75 0 1;
@@ -279884,11 +279921,11 @@ createNode polyPlanarProj -n "Stalagmite_4:polyPlanarProj4";
 	setAttr ".prgt" 886;
 	setAttr ".ptop" 1092;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut1";
-	rename -uid "D997E61F-BB46-8B5E-F2B1-9EB4E7A84090";
+	rename -uid "C62E9601-48BB-23F2-238F-4CA2E247DA5F";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 4 "e[566]" "e[575]" "e[787]" "e[905:906]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV1";
-	rename -uid "471BC74D-A94A-67BF-D783-3F9CC697C2EF";
+	rename -uid "88800CCA-4DEB-3ED2-D2C6-C49773279300";
 	setAttr ".uopa" yes;
 	setAttr -s 495 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" -0.29633567 0.015924938 -0.26076326
@@ -280034,11 +280071,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV1";
 		 -0.43123931 -0.57788807 0.22727919 -0.61587864 0.1366272 -0.49998733 -0.49212468
 		 -0.55100983;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut2";
-	rename -uid "A4BFA354-6245-DE97-8280-7DACDF8EC693";
+	rename -uid "F285EADA-4099-1B89-BA77-87848DA8AE92";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 4 "e[114]" "e[117]" "e[147]" "e[149]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV2";
-	rename -uid "749B15A7-F446-C6DD-325F-AFBBCA46D9E6";
+	rename -uid "37EDF20D-4796-5256-48ED-CF94AFB59351";
 	setAttr ".uopa" yes;
 	setAttr -s 258 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" -0.24626404 0.15312892 -0.24932373
@@ -280115,11 +280152,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV2";
 		 -0.16962212 0.16291666 -0.38330364 0.1028263 -0.29560417 0.11576509 -0.25503385 -0.37649068
 		 -0.4253974 -0.31517163 -0.37779224;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut3";
-	rename -uid "1D5AD9E8-0746-B912-5C0C-9AB574088E83";
+	rename -uid "3291154B-430E-8E90-70AC-CB96CFD69EEE";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 4 "e[68:69]" "e[76:78]" "e[107:108]" "e[209]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV3";
-	rename -uid "A07D3198-0849-F726-2FA1-9CB1FC1EA91C";
+	rename -uid "CB3DF023-46B0-485D-3113-54849A2A015A";
 	setAttr ".uopa" yes;
 	setAttr -s 358 ".uvtk";
 	setAttr ".uvtk[0:249]" -type "float2" -0.16604042 0.70667118 -0.16815215
@@ -280217,11 +280254,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV3";
 		 0.25838572 -0.013805866 0.20258951 -0.1866118 0.11566782 0.15256888 -0.18680173 -0.27179328
 		 -0.3355763 0.10986763 -0.084400177 0.066827595 0.087557077 0.092184424 0.010985553;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut4";
-	rename -uid "DDCECB25-D54B-1E5D-DD3A-E88C20845C63";
+	rename -uid "8B3EED89-405B-CC61-5E0B-1F99DAAAA1DC";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 7 "e[53]" "e[89]" "e[94:95]" "e[100]" "e[103]" "e[116]" "e[177:178]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV4";
-	rename -uid "1A616175-7A4A-AD95-8D34-269C3C927C4E";
+	rename -uid "908479D8-497D-1F35-346D-3781157F0961";
 	setAttr ".uopa" yes;
 	setAttr -s 105 ".uvtk[0:104]" -type "float2" 0.026387393 0.47600791 0.06549859
 		 0.79481989 0.21869338 0.78791201 0.1651949 0.44936413 -0.17039758 0.44617209 -0.23385149
@@ -280254,19 +280291,19 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV4";
 		 -0.059652328 0.74006933 0.037105501 0.77258003 0.051230371 0.074648857 -0.036440969
 		 0.5836494 0.0019737482 0.35444325;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut5";
-	rename -uid "10AFA9A5-FA42-9D45-5E9D-5B8E7BCD7647";
+	rename -uid "DBCAB058-40F2-7EA1-2F0E-D0AA13F3A041";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[103]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew1";
-	rename -uid "BAF88601-244C-3925-4A02-81AB86372934";
+	rename -uid "8C13BB30-4E95-1A7B-6170-BA978C8B8EBB";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 2 "e[53]" "e[116]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew2";
-	rename -uid "7243F9F8-C94C-DA73-411E-7CA47DACAEE3";
+	rename -uid "F76B8175-48BA-AD8A-A9D5-8E98AB47FCDE";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 4 "e[53]" "e[95]" "e[103]" "e[116]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV5";
-	rename -uid "A8D7E96B-8A46-E51C-8CB7-FAAAE4AC024D";
+	rename -uid "DC4C2A5C-4834-88B8-E944-3999049E411F";
 	setAttr ".uopa" yes;
 	setAttr -s 101 ".uvtk[0:100]" -type "float2" 0.0037952662 0.013693094
 		 0.0014541745 0.0084034801 0.0016616583 0.0069951415 0.0032742023 0.013641298 0.0023680329
@@ -280299,11 +280336,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV5";
 		 0.010361433 0.0010900646 0.010560095 0.0013806522 0.013343215 0.0011079609 0.015864968
 		 0.0026684403 0.023307681 -0.036617815 0.02483809;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut6";
-	rename -uid "7C096CCA-7E4E-31C9-70BF-30AF5EA08427";
+	rename -uid "7A3B2FC2-444D-9E6D-B36D-FAA5134ABB44";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 5 "e[38]" "e[53]" "e[95]" "e[113]" "e[116]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV6";
-	rename -uid "4A9E5DDD-6A43-9353-C684-FEBDAD5A2757";
+	rename -uid "E1883961-4C32-3471-BD73-76A3FD4272E6";
 	setAttr ".uopa" yes;
 	setAttr -s 106 ".uvtk[0:105]" -type "float2" 0.00011503696 -0.0018322468
 		 0.0077343583 0.0033461452 0.0075929165 0.0052373409 0.00064718723 -0.0014252067 0.0064958334
@@ -280340,11 +280377,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV6";
 		 0.0030715466 0.036039114 -0.019162536 0.028069139 0.060836732 -0.0053035021 -0.017114222
 		 0.037091255;
 createNode polyMapCut -n "Stalagmite_4:polyMapCut7";
-	rename -uid "7BD0AC39-0E40-84AB-B124-60803081C291";
+	rename -uid "0931C2F5-41F7-AEA9-7E4D-92AD047223A7";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 11 "e[18]" "e[21]" "e[54:55]" "e[75]" "e[85]" "e[88]" "e[91]" "e[97]" "e[102]" "e[110]" "e[117]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV7";
-	rename -uid "23E1B141-E440-EBE6-70AD-F0B338780BD7";
+	rename -uid "B717A2BA-434A-49DD-BC8E-A0A1901FC4DA";
 	setAttr ".uopa" yes;
 	setAttr -s 17 ".uvtk";
 	setAttr ".uvtk[12]" -type "float2" -0.00059115887 -0.0020086765 ;
@@ -280365,11 +280402,11 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV7";
 	setAttr ".uvtk[119]" -type "float2" 0.0032385588 0.0078293085 ;
 	setAttr ".uvtk[120]" -type "float2" 0.0049786568 -0.0023598671 ;
 createNode polyMapSewMove -n "Stalagmite_4:polyMapSewMove1";
-	rename -uid "991773BD-2845-D9A9-6EE6-F3BE2D79D73E";
+	rename -uid "FF7A5600-49E0-98D6-ECB1-22AB06C71702";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[53]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV8";
-	rename -uid "DB19B613-C94E-3A8D-57AB-E7B00E3B97C7";
+	rename -uid "460AE6FC-46C7-4B85-8EB7-2FB86FDAF626";
 	setAttr ".uopa" yes;
 	setAttr -s 16 ".uvtk";
 	setAttr ".uvtk[19]" -type "float2" -0.017613262 -0.0013813972 ;
@@ -280389,27 +280426,27 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV8";
 	setAttr ".uvtk[116]" -type "float2" -0.00083109736 0.0012671947 ;
 	setAttr ".uvtk[117]" -type "float2" -0.0030896366 0.016673088 ;
 createNode polyMapSewMove -n "Stalagmite_4:polyMapSewMove2";
-	rename -uid "B3C4A9DF-7E44-19F2-1A90-A18D498259EE";
+	rename -uid "BCFF2364-4A92-A961-A224-659AE71001FC";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[38]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew3";
-	rename -uid "272F803D-2B42-58EF-F0DE-9AA9A21DFDA4";
+	rename -uid "12A72EA1-46D2-A040-FDE9-BF9757C60FBA";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[113]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew4";
-	rename -uid "16218C6E-1349-BE15-336E-AA824FF76AF7";
+	rename -uid "3CF6B8A6-4B56-7189-FA64-96A565498E60";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[116]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew5";
-	rename -uid "4124B525-B249-226B-6B2E-E491079D37DE";
+	rename -uid "B158A007-45EF-3179-D0D1-ECACEC0606F0";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[95]";
 createNode polyMapSew -n "Stalagmite_4:polyMapSew6";
-	rename -uid "4E5332FF-E442-22A0-AAD7-75BFD8D34703";
+	rename -uid "9ABF15E9-499D-B739-C832-73975F42EB9B";
 	setAttr ".uopa" yes;
 	setAttr ".ics" -type "componentList" 1 "e[89]";
 createNode polyTweakUV -n "Stalagmite_4:polyTweakUV9";
-	rename -uid "9DFD1DAD-DC49-3CEB-CB8F-F288793975AA";
+	rename -uid "58F94633-4D8D-02B5-EAA0-FDB9B936D5CF";
 	setAttr ".uopa" yes;
 	setAttr -s 113 ".uvtk[0:112]" -type "float2" 0.22233404 -0.27157995 0.20245059
 		 -0.58728361 0.21853997 -0.59009016 0.24292828 -0.27312911 0.15064232 -0.56030023
@@ -280442,30 +280479,30 @@ createNode polyTweakUV -n "Stalagmite_4:polyTweakUV9";
 		 0.23651248 -0.72747117 0.21270618 -0.74973625 0.21830602 -0.67963111 0.2464152 -0.67280895
 		 0.22998101 -0.68586236 0.26135844 -0.62731928;
 createNode standardSurface -n "Stalagmite_4:Stalagmite_1_Mat";
-	rename -uid "3F334389-46AB-4FDD-52CD-78AA49B34478";
+	rename -uid "D5986550-46FF-72DC-2041-78B8E0957EFA";
 createNode shadingEngine -n "Stalagmite_4:standardSurface2SG";
-	rename -uid "A06A4A70-4281-0826-1CDA-08A23289A462";
+	rename -uid "B8E0E856-4F9A-034E-C229-AEB47DACAA58";
 	setAttr ".ihi" 0;
 	setAttr -s 4 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Stalagmite_4:materialInfo1";
-	rename -uid "D97511A5-458E-935B-FF0E-35912CFCE0D9";
+	rename -uid "153DEA68-44BE-4CF6-22DC-51879DEEFE0B";
 createNode file -n "Stalagmite_4:file1";
-	rename -uid "DA55D6E4-4215-C4F6-84F7-53A269B11605";
+	rename -uid "97879E45-43C0-0869-4C0E-90A0221E632E";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Stalagmite1Files-20260324T022612Z-3-001/Stalagmite1Files/Stalagmite1Export_standardSurface1_BaseColor.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Stalagmite_4:place2dTexture1";
-	rename -uid "619974D7-4CD7-08AF-03CE-598833C5D54E";
+	rename -uid "B5E86D00-472E-7A76-6AF3-BF9EF10EF524";
 createNode file -n "Stalagmite_4:file2";
-	rename -uid "CD2DC868-4EAC-C63F-DA66-9488FF7C7EE8";
+	rename -uid "2E415701-4A84-8B05-AB62-15BCF8924A44";
 	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Stalagmite1Files-20260324T022612Z-3-001/Stalagmite1Files/Stalagmite1Export_standardSurface1_Roughness.png";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Stalagmite_4:place2dTexture2";
-	rename -uid "43360F35-4754-FD32-E908-F3A57C55B050";
+	rename -uid "13DD8E16-45A7-43F8-1103-5FB76380080B";
 createNode mayaUsdLayerManager -n "Stalagmite_4:mayaUsdLayerManager1";
-	rename -uid "42433ED9-4FFF-094B-1991-238410F41E3E";
+	rename -uid "20A5B642-4209-9623-279E-63827F47D7B6";
 createNode nodeGraphEditorInfo -n "Stalagmite_4:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "09A13767-433C-3E79-6A55-EE9584BF43C4";
+	rename -uid "16E94157-4016-89DC-B7F7-6FB3E39A3B9E";
 	setAttr ".def" no;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -895.10189072132766 -694.77315775915804 ;
@@ -280489,6 +280526,1803 @@ createNode nodeGraphEditorInfo -n "Stalagmite_4:hyperShadePrimaryNodeEditorSaved
 	setAttr ".tgi[0].ni[5].x" -410;
 	setAttr ".tgi[0].ni[5].y" 250;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
+createNode standardSurface -n "Material_Ref1:Appartment_Floor_Mat";
+	rename -uid "13CA804B-4634-E2F1-3559-8EB528DBA376";
+createNode shadingEngine -n "Material_Ref1:standardSurface2SG";
+	rename -uid "2BAC6CA6-442B-FAD9-F2EC-9B8D58BF42BD";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo1";
+	rename -uid "D0411E2D-4E66-EB49-04B1-FC9FED3726AB";
+createNode file -n "Material_Ref1:file1";
+	rename -uid "C289C519-440D-8196-541C-179E5EFDF2F0";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture1";
+	rename -uid "04B2625D-4549-B0AE-A071-93AD45888FD4";
+createNode file -n "Material_Ref1:file2";
+	rename -uid "A2AE39C1-451E-2F24-A943-7884E6F04286";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture2";
+	rename -uid "FECBB722-4DBC-3477-4C38-CFA727AD608D";
+createNode aiMultiply -n "Material_Ref1:aiMultiply1";
+	rename -uid "CA092105-4520-1585-7C9B-AF83828E1CA9";
+createNode file -n "Material_Ref1:file3";
+	rename -uid "3E5D332F-4B86-60AC-80F4-10932734A05C";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture3";
+	rename -uid "5B229DD2-45E3-D4D1-2D97-728701691EA4";
+createNode aiNormalMap -n "Material_Ref1:aiNormalMap1";
+	rename -uid "47107DE3-4190-185E-11F4-5F98F0FE93D0";
+createNode file -n "Material_Ref1:file4";
+	rename -uid "BFC56834-4583-D728-B612-C3B799583E59";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture4";
+	rename -uid "9366B36C-4838-76E3-72A5-2281AD3659ED";
+createNode file -n "Material_Ref1:file5";
+	rename -uid "20249F58-4916-787E-01D0-FE9EE3D9966B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture5";
+	rename -uid "63740D4E-44B3-D055-3D31-23AE29F9F979";
+createNode displacementShader -n "Material_Ref1:AppermentFloorDisplacement";
+	rename -uid "F5DE5DB7-45F2-9053-DE13-32932C12A7D6";
+createNode standardSurface -n "Material_Ref1:Appartment_Wall_Mat";
+	rename -uid "FD80B9B5-4B6D-B51F-7818-4BA151AC556F";
+createNode aiMultiply -n "Material_Ref1:pasted__aiMultiply1";
+	rename -uid "F8380C68-4E1E-0FA8-84A3-A8B0135BD947";
+createNode file -n "Material_Ref1:pasted__file1";
+	rename -uid "4198CBFF-48BB-977B-9698-D88D5BB98196";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture1";
+	rename -uid "51DCFD3C-4298-DA20-5CF3-D489F6352C00";
+createNode file -n "Material_Ref1:pasted__file3";
+	rename -uid "6B459CB9-43F0-AC32-C60F-8A99F5A2A047";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture3";
+	rename -uid "7F6BBD12-4D86-4A47-B8CF-3BAFB25EB85B";
+createNode file -n "Material_Ref1:pasted__file2";
+	rename -uid "D1CEF14D-4013-22F1-18CC-F9859D68B5D3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture2";
+	rename -uid "5696A342-4752-0519-FA80-17AA125C5DC6";
+createNode aiNormalMap -n "Material_Ref1:pasted__aiNormalMap1";
+	rename -uid "19385873-4876-72F0-065C-38ADA96787AF";
+createNode file -n "Material_Ref1:pasted__file4";
+	rename -uid "514D6456-41E5-A8B0-D6F3-61AFE8B56247";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture4";
+	rename -uid "96A68FCB-46F1-DF17-50E2-3D8078CBB646";
+createNode displacementShader -n "Material_Ref1:AppartmentWallDisplacemnt";
+	rename -uid "8F0EFF2A-4FA5-8109-1A46-8E808E5B04AC";
+createNode shadingEngine -n "Material_Ref1:displacementShader1SG";
+	rename -uid "5018EF1C-4ACF-7C29-FB27-5AA94DB4C9D2";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo2";
+	rename -uid "C77C250F-4916-6C3D-F727-8AAE75B67697";
+createNode file -n "Material_Ref1:file6";
+	rename -uid "4BE1360F-4443-04C0-7751-E394E9BB1C15";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture6";
+	rename -uid "C9B18B77-462B-6278-EA72-3091C9C59B95";
+createNode standardSurface -n "Material_Ref1:Cave_Floor_Mat";
+	rename -uid "4D6FF395-4ACF-53F4-571E-FABE1D46701E";
+createNode aiMultiply -n "Material_Ref1:pasted__aiMultiply2";
+	rename -uid "34F51512-40B1-8E0C-540D-6D90BE77DEBB";
+createNode file -n "Material_Ref1:pasted__file5";
+	rename -uid "FD801677-4074-1DF5-4EEB-628CAFA225D2";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture5";
+	rename -uid "1F454280-4CFC-03B0-7F92-A491EEE7421A";
+createNode file -n "Material_Ref1:pasted__file7";
+	rename -uid "DEDD8848-40F2-92AB-630D-AB9BB887267B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture7";
+	rename -uid "2E07E9F5-4849-792D-8551-318194DB9FA3";
+createNode file -n "Material_Ref1:pasted__file6";
+	rename -uid "A66D9ADB-41CB-9088-7CB3-B08771517C5B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture6";
+	rename -uid "7314763C-4D68-20E5-297F-9E83A63A094F";
+createNode aiNormalMap -n "Material_Ref1:pasted__aiNormalMap2";
+	rename -uid "A4AC9614-4473-69ED-B5C1-D69F5292AEBC";
+createNode file -n "Material_Ref1:pasted__file8";
+	rename -uid "32949A33-4171-D3F4-201D-5FA00B23C1D3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture8";
+	rename -uid "464CD982-4777-8714-515E-568E7BC4E0AE";
+createNode displacementShader -n "Material_Ref1:CaveFloorDisplacement";
+	rename -uid "BBA0939C-4F7A-9A84-91B2-56A001E609E1";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref1:displacementShader2SG";
+	rename -uid "977B4683-40D5-86F3-147E-C59EF2FA170D";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo3";
+	rename -uid "F06FCAE2-4230-0C6B-77A7-7D8FECAC04AF";
+createNode file -n "Material_Ref1:file7";
+	rename -uid "B476FED5-4A1E-7DEE-F95B-27BC683E75BF";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture7";
+	rename -uid "37358746-4462-E483-2822-FF8F2E21C718";
+createNode standardSurface -n "Material_Ref1:Cave_Wall_2_Mat";
+	rename -uid "19F837B3-473F-77BF-249E-93AA5104BD58";
+createNode aiMultiply -n "Material_Ref1:pasted__pasted__aiMultiply1";
+	rename -uid "33027690-41C5-2CA3-8A69-DFB451ED9F5B";
+createNode file -n "Material_Ref1:pasted__pasted__file1";
+	rename -uid "71222510-4BB8-3B54-FC8D-C980A6A653F8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture1";
+	rename -uid "18CE11DA-47DA-4E95-FAE6-88A0F6531E1D";
+createNode file -n "Material_Ref1:pasted__pasted__file3";
+	rename -uid "ACD1BADC-4706-ED1F-5000-15B882506D10";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture3";
+	rename -uid "A45835D2-42BF-51C6-F2F0-15A3B83CBF4D";
+createNode file -n "Material_Ref1:pasted__pasted__file2";
+	rename -uid "A66231E4-4BFC-C550-81FC-D78603F5CE0B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture2";
+	rename -uid "E18F4070-4837-206B-CF35-668F8F8956FD";
+createNode aiNormalMap -n "Material_Ref1:pasted__pasted__aiNormalMap1";
+	rename -uid "53083C0F-4FDD-9E81-AF0A-8CAF3855A8A5";
+createNode file -n "Material_Ref1:pasted__pasted__file4";
+	rename -uid "8C34BBB8-4B5C-0758-95F0-33AB45452AE9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture4";
+	rename -uid "7B5EED6B-4FF5-C86D-6249-7EAAB5021333";
+createNode displacementShader -n "Material_Ref1:Cave2Displacement";
+	rename -uid "1CCF8742-4495-2377-B039-EB8BB0DAAB4A";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref1:Cave2Displacement5";
+	rename -uid "E8F32544-4B97-47AF-E683-A3B086C431AB";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo4";
+	rename -uid "3AE9E9FE-424D-B244-86A7-23B560E57A79";
+createNode file -n "Material_Ref1:file8";
+	rename -uid "2C80F108-4835-94A2-806B-5B9E120DB20F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture8";
+	rename -uid "6F8D9ED1-458D-1711-5382-168E56D0649A";
+createNode standardSurface -n "Material_Ref1:Cave_Wall_3_Mat";
+	rename -uid "35659775-406A-010F-6937-95B82FE34463";
+createNode aiMultiply -n "Material_Ref1:pasted__pasted__pasted__aiMultiply1";
+	rename -uid "5022FABA-48C9-D454-354F-43A8523B65B0";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__file1";
+	rename -uid "4D992CB1-4CC2-3667-7ABC-CC91FC73827A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__place2dTexture1";
+	rename -uid "39C5FA91-43DB-F4BB-3C38-3AACBD8FB39A";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__file3";
+	rename -uid "18561C68-467F-EE5D-83C6-5A8048E699A5";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__place2dTexture3";
+	rename -uid "51477B3F-40ED-A09C-0F4D-048B75EB3073";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__file2";
+	rename -uid "D385DC30-4B5F-6CA9-422E-32ACB4DB219E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__place2dTexture2";
+	rename -uid "7B42C9CF-4387-468D-59EE-7ABD5C0FFCDD";
+createNode aiNormalMap -n "Material_Ref1:pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "892E5CCD-4607-C0F9-C317-F388E5FC4BE9";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__file4";
+	rename -uid "3229E907-46F6-9577-2032-998F0E9F577E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__place2dTexture4";
+	rename -uid "B4343006-4684-9167-C77B-B7B720F349E9";
+createNode shadingEngine -n "Material_Ref1:displacementShader4SG";
+	rename -uid "ACBB0C64-433D-A75B-3F26-5BA205FDD80E";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo5";
+	rename -uid "DEF2BB15-433F-F352-8A4C-928B0B8D5E47";
+createNode shadingEngine -n "Material_Ref1:pasted__displacementShader4SG";
+	rename -uid "96EB851C-4DD0-167F-8D9B-8E8A244CC61E";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:pasted__materialInfo5";
+	rename -uid "A09AC8A0-4CB1-4108-435B-F79E0F0DB20A";
+createNode shadingEngine -n "Material_Ref1:pasted__displacementShader4SG1";
+	rename -uid "88CDAD8A-4374-72AF-796B-0382CBFA900C";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:pasted__materialInfo6";
+	rename -uid "AF688ACB-43D8-5BBC-49A8-02A568A288A0";
+createNode displacementShader -n "Material_Ref1:Cave3Displacemnt";
+	rename -uid "FC3506AB-4CF9-3DCD-E32A-5A92B3E32907";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref1:displacementShader5SG";
+	rename -uid "D3D28CBE-40B1-95AF-E14E-FAB554264E15";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo6";
+	rename -uid "44476CDC-471C-B40C-3DE0-4A8DD568C61C";
+createNode file -n "Material_Ref1:file9";
+	rename -uid "0B900E33-4F6C-137B-DEAA-F2B4E1FE62CD";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture9";
+	rename -uid "994D6C15-41B0-6B04-C82A-379B0515AF70";
+createNode standardSurface -n "Material_Ref1:Cave_Wall_4_Mat";
+	rename -uid "1DD13C9C-43CC-0238-21D1-BDAAE3C14FAF";
+createNode aiMultiply -n "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1";
+	rename -uid "650AA5DD-47F1-8851-CA0A-DABF5CBC2440";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__pasted__file1";
+	rename -uid "49640C50-49F1-CD10-90C3-239282225EA2";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1";
+	rename -uid "A2DF7ECB-45A8-2636-B5C2-69BAE51A9C1F";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__pasted__file3";
+	rename -uid "6AC7CA17-41C3-9496-DB1B-4C9DDFD8A39A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3";
+	rename -uid "C33B36E1-4BF5-0E1F-5852-8DB0F9F31D86";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__pasted__file2";
+	rename -uid "3B281D83-4681-507D-3FC9-8F84CA203DFC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2";
+	rename -uid "1DED070F-48EA-F91F-480C-64BC17D044E3";
+createNode aiNormalMap -n "Material_Ref1:pasted__pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "24E78150-4DFC-BB5C-AD9D-37B551C68D5C";
+createNode file -n "Material_Ref1:pasted__pasted__pasted__pasted__file4";
+	rename -uid "2AD2062E-4162-BEAA-9C5B-5E8B54662F56";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4";
+	rename -uid "E1B17DB5-4247-EF6D-D01E-B6A60E352665";
+createNode displacementShader -n "Material_Ref1:cave4Displacement";
+	rename -uid "44A2F9ED-48B5-BFAC-803D-F8A7E1787B14";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref1:displacementShader6SG";
+	rename -uid "4B38AD74-4D51-7635-E0A2-A8805D30962B";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo7";
+	rename -uid "A76CEA19-43FB-9C7E-C926-6DA8D37CA846";
+createNode file -n "Material_Ref1:file10";
+	rename -uid "9EE5DC6F-47C6-FBCD-9891-37AA4BF16C3A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture10";
+	rename -uid "BB447BE8-4A7F-581E-BFFE-379430D2B1E9";
+createNode standardSurface -n "Material_Ref1:Generic_Wood_Mat";
+	rename -uid "87F9A309-4890-D076-F34E-E394BD57A4E8";
+	setAttr ".sr" 0.75;
+createNode shadingEngine -n "Material_Ref1:standardSurface3SG";
+	rename -uid "D0A7591F-4871-7CA5-0364-17B991F2A705";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo8";
+	rename -uid "D96404EC-47FA-BE7E-E5FC-53AE03EDF536";
+createNode file -n "Material_Ref1:file11";
+	rename -uid "4BBA571B-4D04-0AC5-5783-05AA8CD1EBC7";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture11";
+	rename -uid "68AE24A4-4DAA-A7C1-9510-B3A37C28A05E";
+createNode standardSurface -n "Material_Ref1:White_Paint_Mat";
+	rename -uid "4DEE96DA-40DA-C6A6-10C2-D49BB16281DA";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref1:standardSurface4SG";
+	rename -uid "D5B1B62A-42B0-4D2C-F3C2-ABA2A5B7CFB8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo9";
+	rename -uid "30C0B546-449B-5015-7ACC-4D8750EF9700";
+createNode file -n "Material_Ref1:file12";
+	rename -uid "F95F2889-401C-5E97-CA3A-5BAA5968C44D";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture12";
+	rename -uid "4CFFEF1D-4B1A-621F-F942-968F3EEB6D36";
+createNode standardSurface -n "Material_Ref1:Blue_Paint_Mat";
+	rename -uid "98E3E2D3-4003-4AC8-71F5-0298622187CC";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref1:pasted__file12";
+	rename -uid "71CA7141-4184-0D4E-F8B5-DE9DB21A2E0F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture12";
+	rename -uid "B5495876-4CE9-2715-689D-41915AE5E6C5";
+createNode aiMultiply -n "Material_Ref1:aiMultiply2";
+	rename -uid "3DF94F99-4D0E-97B8-699C-3F8EABE53017";
+createNode colorConstant -n "Material_Ref1:colorConstant1";
+	rename -uid "6233491D-4108-E420-4360-E19F116517E7";
+	setAttr "._c" -type "float3" 0 0.58700001 1 ;
+createNode shadingEngine -n "Material_Ref1:Blue_Paint_MatSG";
+	rename -uid "4C7876B4-4167-D13C-CCD0-99AFB32BB9D1";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo10";
+	rename -uid "AA00DDB1-44E7-CFDC-0B0D-AFA30A16079F";
+createNode standardSurface -n "Material_Ref1:Marble_Mat";
+	rename -uid "86F64EEA-4840-3F17-723E-8C8A10880565";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref1:standardSurface5SG";
+	rename -uid "BB00F499-42A0-743F-40F7-898FEBB4F291";
+	setAttr ".ihi" 0;
+	setAttr -s 3 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 2 ".gn";
+createNode materialInfo -n "Material_Ref1:materialInfo11";
+	rename -uid "8C2CCE9E-4815-818B-F26B-38AB0534DCAB";
+createNode file -n "Material_Ref1:file13";
+	rename -uid "116639A2-4029-9774-4555-7EBECA24B280";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Marble/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture13";
+	rename -uid "93CF141C-4B39-FC5F-DBDB-0093CF3ED14A";
+createNode standardSurface -n "Material_Ref1:Brown_Paint_Mat";
+	rename -uid "2A2AF3D8-47C1-A035-548D-C2950FE69E30";
+	setAttr ".sr" 0.60000002384185791;
+createNode aiMultiply -n "Material_Ref1:pasted__aiMultiply3";
+	rename -uid "18C20EB3-469C-8D95-B924-1ABD2B8246C9";
+createNode file -n "Material_Ref1:pasted__pasted__file12";
+	rename -uid "42E728CA-4991-9B6B-9EBD-6C8039349902";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture12";
+	rename -uid "915A3130-41FA-3210-9F35-49BA3C4D5551";
+createNode colorConstant -n "Material_Ref1:pasted__colorConstant1";
+	rename -uid "D36E0220-4602-1D3E-467E-5F9A15C5DA0D";
+	setAttr "._c" -type "float3" 0.2614108 0.1866589 0.10691696 ;
+createNode shadingEngine -n "Material_Ref1:Brown_Paint_MatSG";
+	rename -uid "14123D53-46B7-2A0E-A4C0-11A70C81CF76";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo12";
+	rename -uid "455A3118-43A6-29AE-3465-5891B9DAB22C";
+createNode standardSurface -n "Material_Ref1:Stone_Mat";
+	rename -uid "875B3F5D-4D26-6045-5F28-D7B0AD3C3F2E";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref1:pasted__file13";
+	rename -uid "99094678-49E6-D6C6-B94F-7684B94D2124";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Wall Stone/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__place2dTexture13";
+	rename -uid "C38CEFE7-4990-4736-CCB7-A58E8C85C9EF";
+createNode shadingEngine -n "Material_Ref1:Stone_MatSG";
+	rename -uid "744D064E-4E21-3590-8136-4ABFE170BF79";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo13";
+	rename -uid "3B0C2B13-4C35-4D2B-1D1C-EB9530B27900";
+createNode standardSurface -n "Material_Ref1:Generic_Metal_Mat";
+	rename -uid "1DC9D3B2-4838-7FAD-CF56-0B881B93C645";
+	setAttr ".sr" 0.5;
+createNode file -n "Material_Ref1:pasted__pasted__file13";
+	rename -uid "E4DDBEC9-46C0-57BB-25EB-CAA7ECDDD8EE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic Metal/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:pasted__pasted__place2dTexture13";
+	rename -uid "EC1ED98B-4C3D-0B45-C047-FB96F8BE6AA9";
+createNode file -n "Material_Ref1:file14";
+	rename -uid "418E3DD8-415B-F1CD-B330-878717F816E2";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//Textures/Generic Metal/DefaultMaterial_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref1:place2dTexture14";
+	rename -uid "26615047-432F-AD02-E137-9994C4379EA1";
+createNode shadingEngine -n "Material_Ref1:Generic_Metal_MatSG";
+	rename -uid "44B51B32-4F12-FA84-3A6C-0795E3A65A8B";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref1:materialInfo14";
+	rename -uid "85235621-466A-A051-6AC2-A3A57CE6B5DD";
+createNode nodeGraphEditorInfo -n "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "2D7A173C-43F3-D3E5-7DBC-E9B9B94249AC";
+	setAttr ".def" no;
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" 53121.471050535954 -32370.702648716102 ;
+	setAttr ".tgi[0].vh" -type "double2" 54073.424125283098 -31457.857866618899 ;
+	setAttr -s 6 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 53250;
+	setAttr ".tgi[0].ni[0].y" -31790;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 54335.71484375;
+	setAttr ".tgi[0].ni[1].y" -31635.71484375;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 53987.14453125;
+	setAttr ".tgi[0].ni[2].y" -31635.71484375;
+	setAttr ".tgi[0].ni[2].nvs" 2387;
+	setAttr ".tgi[0].ni[3].x" 52895.71484375;
+	setAttr ".tgi[0].ni[3].y" -31635.71484375;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" 53680;
+	setAttr ".tgi[0].ni[4].y" -31680;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" 53250;
+	setAttr ".tgi[0].ni[5].y" -31614.28515625;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+createNode standardSurface -n "Material_Ref2:Appartment_Floor_Mat";
+	rename -uid "DCD5143D-4C9B-DF60-7371-0385674D20AB";
+createNode shadingEngine -n "Material_Ref2:standardSurface2SG";
+	rename -uid "101EF41B-4A73-C7A2-1D00-FE9D99C9548F";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo1";
+	rename -uid "6514B9E1-4C0A-6F27-42F7-63A7AF3402A4";
+createNode file -n "Material_Ref2:file1";
+	rename -uid "56BD7FEF-4E42-3D73-0ED1-F093BA4171C0";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture1";
+	rename -uid "0E92FBD0-40D6-6DE4-60BF-44B00507E8EE";
+createNode file -n "Material_Ref2:file2";
+	rename -uid "9762AEEF-4452-929F-E947-C5B38957E828";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture2";
+	rename -uid "9213C231-4C93-24B8-6265-D8A490A2F0D1";
+createNode aiMultiply -n "Material_Ref2:aiMultiply1";
+	rename -uid "214F90F8-4357-2982-CE45-F3A67682A2B2";
+createNode file -n "Material_Ref2:file3";
+	rename -uid "EE4572A5-42D0-5EE9-EE59-128051F65D8A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture3";
+	rename -uid "728AF983-4CD8-3833-DC19-359339DA603A";
+createNode aiNormalMap -n "Material_Ref2:aiNormalMap1";
+	rename -uid "823516D1-46DA-F2C4-2E4F-EC96F421E07C";
+createNode file -n "Material_Ref2:file4";
+	rename -uid "F16B369F-435E-AF35-F5ED-7DBA98AD2C02";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture4";
+	rename -uid "67BF82A1-494E-628F-FD58-999A6FFCB7D6";
+createNode file -n "Material_Ref2:file5";
+	rename -uid "10D8A106-402C-1F24-3F31-5C9184929E4B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture5";
+	rename -uid "3A703AF5-4053-055A-3E49-0DB658B1CA25";
+createNode displacementShader -n "Material_Ref2:AppermentFloorDisplacement";
+	rename -uid "7781A986-4727-72DE-7D80-30846EED8424";
+createNode standardSurface -n "Material_Ref2:Appartment_Wall_Mat";
+	rename -uid "F4DF5ECA-4699-A10F-29B7-319C20979324";
+createNode aiMultiply -n "Material_Ref2:pasted__aiMultiply1";
+	rename -uid "66E7F662-4EAB-EC29-3131-8183A1424D41";
+createNode file -n "Material_Ref2:pasted__file1";
+	rename -uid "BC0C1BCA-4A2F-8A25-A086-7E9BD76FB046";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture1";
+	rename -uid "1C42C2A6-4111-2CCC-31DA-74A0F037EBAB";
+createNode file -n "Material_Ref2:pasted__file3";
+	rename -uid "FD78763C-42EC-1CC9-532C-86BAB2E96BAF";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture3";
+	rename -uid "661A34B2-4844-B831-EED0-E2AD46EE7C5F";
+createNode file -n "Material_Ref2:pasted__file2";
+	rename -uid "3826392F-45B8-8C72-EF21-3A9CA3A97B39";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture2";
+	rename -uid "083BC79C-4435-56A1-0F10-55826FC0DB04";
+createNode aiNormalMap -n "Material_Ref2:pasted__aiNormalMap1";
+	rename -uid "F08C4552-4FE6-A193-A700-7B98FECE901B";
+createNode file -n "Material_Ref2:pasted__file4";
+	rename -uid "C8BD40B3-4D0A-5671-FB3C-FA9CDF857B04";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture4";
+	rename -uid "65D630C7-4E16-38C6-21C9-9FB85C2DBEB8";
+createNode displacementShader -n "Material_Ref2:AppartmentWallDisplacemnt";
+	rename -uid "8C56EF8D-42A1-CC90-8637-D0AE41AEC2C9";
+createNode shadingEngine -n "Material_Ref2:displacementShader1SG";
+	rename -uid "8413B4BC-48DA-D3AD-BB9B-899FAAC3BD58";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo2";
+	rename -uid "7FDDA29C-46D2-EEE4-04E2-6F8E7A1B2085";
+createNode file -n "Material_Ref2:file6";
+	rename -uid "CDD5D03F-4533-5218-EBC2-34BA263B733D";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture6";
+	rename -uid "0BB167C0-4FE6-6843-8B01-E0B343EDCCDE";
+createNode standardSurface -n "Material_Ref2:Cave_Floor_Mat";
+	rename -uid "3B8B8DE5-4BAE-B121-FC1D-5ABBA6B56C78";
+createNode aiMultiply -n "Material_Ref2:pasted__aiMultiply2";
+	rename -uid "5F6DBB41-4F7E-57B0-247C-14B638635C82";
+createNode file -n "Material_Ref2:pasted__file5";
+	rename -uid "6E8CB7C5-4D32-1382-73DD-C38E42BE6159";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture5";
+	rename -uid "2E17DBF4-45E1-2C54-48FF-9D9DD1132740";
+createNode file -n "Material_Ref2:pasted__file7";
+	rename -uid "CD2999EE-48A9-B828-FDFE-1985CEDA406F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture7";
+	rename -uid "3B134D3D-4F31-64FD-3674-F3A96F0C0511";
+createNode file -n "Material_Ref2:pasted__file6";
+	rename -uid "65F7A6F0-4888-A448-41E7-ECBB64C56CDC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture6";
+	rename -uid "CE40AC92-442B-116F-5E33-2289422D0510";
+createNode aiNormalMap -n "Material_Ref2:pasted__aiNormalMap2";
+	rename -uid "F0565513-478F-C001-AA51-2C8CBFBAFE1E";
+createNode file -n "Material_Ref2:pasted__file8";
+	rename -uid "2066EF9A-410A-418E-275C-18BA9B2958C9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture8";
+	rename -uid "4621FF04-4130-0F78-2AA0-3EBD0E65D377";
+createNode displacementShader -n "Material_Ref2:CaveFloorDisplacement";
+	rename -uid "3C866E85-4CE5-ACBB-9D8C-CBABEE502577";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref2:displacementShader2SG";
+	rename -uid "0C32AE8E-4346-9AFE-4B7F-AE9172CB034E";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo3";
+	rename -uid "8D90B24D-4481-CF95-3418-17B10E3BAAFC";
+createNode file -n "Material_Ref2:file7";
+	rename -uid "AEE5D70C-4E31-3195-CA1E-138EA5D9FD4E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture7";
+	rename -uid "F8466937-45AA-8EB5-EC2F-AAA24D814DC1";
+createNode standardSurface -n "Material_Ref2:Cave_Wall_2_Mat";
+	rename -uid "ABBADBC8-4F3B-52A0-1943-12928AE8C1F1";
+createNode aiMultiply -n "Material_Ref2:pasted__pasted__aiMultiply1";
+	rename -uid "7C98D63B-4316-F228-88F2-2686D3DF7390";
+createNode file -n "Material_Ref2:pasted__pasted__file1";
+	rename -uid "034B2B05-4451-E5D5-5C1A-C5BC3F81EAAE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture1";
+	rename -uid "41E4B7AE-4D8B-99A4-ADC1-01BFE3ADCD7D";
+createNode file -n "Material_Ref2:pasted__pasted__file3";
+	rename -uid "EB222102-457A-31F1-7954-969B9B265F9D";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture3";
+	rename -uid "32F15489-4ADD-6E7F-1E22-458FBBAD40CA";
+createNode file -n "Material_Ref2:pasted__pasted__file2";
+	rename -uid "87316A83-49A6-32D8-6181-D48E07BCE35B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture2";
+	rename -uid "9FB52734-49FD-274D-A451-FA854E98E07F";
+createNode aiNormalMap -n "Material_Ref2:pasted__pasted__aiNormalMap1";
+	rename -uid "700D4531-4FA6-CBBB-BB62-55A2268DC810";
+createNode file -n "Material_Ref2:pasted__pasted__file4";
+	rename -uid "010D325D-4B65-4448-AA82-F0822D2D7DD9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture4";
+	rename -uid "85C593B5-4617-4FE4-CFBB-A8B7383BD8F7";
+createNode displacementShader -n "Material_Ref2:Cave2Displacement";
+	rename -uid "082E2990-42E2-AC79-6061-448FCB2C6F05";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref2:Cave2Displacement5";
+	rename -uid "78A21B6F-4CD0-F4AE-C636-52A209A3C435";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo4";
+	rename -uid "52A25151-44B5-E314-A5F3-6ABB9FAFCF7C";
+createNode file -n "Material_Ref2:file8";
+	rename -uid "54846FFC-43EE-651D-2813-59897A76CA93";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture8";
+	rename -uid "F28D644C-481A-C59D-06CC-0689F57475A1";
+createNode standardSurface -n "Material_Ref2:Cave_Wall_3_Mat";
+	rename -uid "5B9C977C-4014-8EA5-2855-60859D2DC86A";
+createNode aiMultiply -n "Material_Ref2:pasted__pasted__pasted__aiMultiply1";
+	rename -uid "7AFBC1DA-4481-BBBC-22A2-9CB4716FA56F";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__file1";
+	rename -uid "324E00CF-4D79-24A8-729D-61BD7A95A6D0";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__place2dTexture1";
+	rename -uid "4A04975F-4114-9541-8B65-2393D6488191";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__file3";
+	rename -uid "C1E0CC3D-4446-F94D-D53F-86AF166C89BD";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__place2dTexture3";
+	rename -uid "A71AC2B9-4A73-2349-6E8C-1995EC482328";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__file2";
+	rename -uid "AEA86801-4E13-A6B8-1AEC-F5ABBDCA1AA9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__place2dTexture2";
+	rename -uid "98430101-4153-6106-EFE9-CA9E0A11F83C";
+createNode aiNormalMap -n "Material_Ref2:pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "3169E958-4DCD-BBC2-94ED-E8ABE9102734";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__file4";
+	rename -uid "42FFC4F0-47AC-EB0F-3388-D887DDD91A9E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__place2dTexture4";
+	rename -uid "CC71C9D8-4D4D-512B-1A3E-38A35D504B2A";
+createNode shadingEngine -n "Material_Ref2:displacementShader4SG";
+	rename -uid "503B7214-4041-FE50-DBF4-E99D3638E292";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo5";
+	rename -uid "BB2915B1-4F24-4B76-6999-8CAF4E8D6080";
+createNode shadingEngine -n "Material_Ref2:pasted__displacementShader4SG";
+	rename -uid "35F9F7DE-4E3B-A595-3221-26A6123F7B1F";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:pasted__materialInfo5";
+	rename -uid "D99F69E2-4B1F-C2F2-7BF3-EB966B150ED2";
+createNode shadingEngine -n "Material_Ref2:pasted__displacementShader4SG1";
+	rename -uid "A3815FF2-474E-B171-C669-A4BFCA6B0A1E";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:pasted__materialInfo6";
+	rename -uid "DBEEFFD8-4C1A-B7A9-2E4A-8483F08EB586";
+createNode displacementShader -n "Material_Ref2:Cave3Displacemnt";
+	rename -uid "D8D6F6E6-4427-E814-F3EB-909F07152EC5";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref2:displacementShader5SG";
+	rename -uid "647AB6B2-4BC3-2A10-B7E0-3BAB0AEC6F05";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo6";
+	rename -uid "19085FF8-40F7-3551-24AF-D9A9D26C0E21";
+createNode file -n "Material_Ref2:file9";
+	rename -uid "16D86907-4380-2B72-D89E-3BACA50FA771";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture9";
+	rename -uid "4DDA1F10-49ED-E6CA-94A3-BBB2491FD751";
+createNode standardSurface -n "Material_Ref2:Cave_Wall_4_Mat";
+	rename -uid "4421F63D-4AB7-DE17-DB06-94A5D36F8081";
+createNode aiMultiply -n "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1";
+	rename -uid "620D6A1C-4BB9-405E-764E-36A879D5BC5E";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__pasted__file1";
+	rename -uid "ED6AFF68-4A75-4D10-0AAD-CDA9F7B487F9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1";
+	rename -uid "2FB00C52-4A0F-DDB2-B430-7CBA27AAFDEC";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__pasted__file3";
+	rename -uid "F9821CCB-4097-41B5-2478-2B879256E59A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3";
+	rename -uid "170ADF49-4F64-1538-403A-77A975AEADA7";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__pasted__file2";
+	rename -uid "9A8E1B2C-4F5D-82B1-4AE7-BF8F6663D77E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2";
+	rename -uid "2B7DC78F-4C27-1038-56F6-A997551B0D8A";
+createNode aiNormalMap -n "Material_Ref2:pasted__pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "8CBAB534-4A26-67F3-D95F-BB888A13A13F";
+createNode file -n "Material_Ref2:pasted__pasted__pasted__pasted__file4";
+	rename -uid "34DDBF1B-47D7-15D2-8177-A39E7D327324";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4";
+	rename -uid "CA19960B-42F4-A260-3CD3-60982E1F0C2B";
+createNode displacementShader -n "Material_Ref2:cave4Displacement";
+	rename -uid "6AC9C525-4444-7865-2701-D2AF51970EB7";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref2:displacementShader6SG";
+	rename -uid "4E059E67-479B-C810-A74A-E09515A4A7AA";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo7";
+	rename -uid "FDB886FC-4BBE-3968-86FE-00843FAD807B";
+createNode file -n "Material_Ref2:file10";
+	rename -uid "2DA8813D-4438-97DC-3766-57920BD01321";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture10";
+	rename -uid "030D3D48-4D5E-BBC8-8A2F-40B397EA0763";
+createNode standardSurface -n "Material_Ref2:Generic_Wood_Mat";
+	rename -uid "C356232E-4AEC-20C0-305B-D0A7C9A3B939";
+	setAttr ".sr" 0.75;
+createNode shadingEngine -n "Material_Ref2:standardSurface3SG";
+	rename -uid "3B9A557A-4269-57A8-C1A0-A88DCD39C4D2";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo8";
+	rename -uid "263662EF-4C21-EA9D-5C3D-E885D288BE99";
+createNode file -n "Material_Ref2:file11";
+	rename -uid "73FE0575-4742-CE01-168E-AE9ADB4A39F9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture11";
+	rename -uid "8C8CCB1E-43A8-E54C-D1CF-ECB6923B9650";
+createNode standardSurface -n "Material_Ref2:White_Paint_Mat";
+	rename -uid "FB1153B5-4D6C-7E0F-6962-E5AA4F54107B";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref2:standardSurface4SG";
+	rename -uid "E754A531-45EB-0844-5F30-E1AFF4D208E8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo9";
+	rename -uid "933FA84A-474B-5547-8191-CCB90A0C6CFA";
+createNode file -n "Material_Ref2:file12";
+	rename -uid "37BABE8B-4D06-23D9-D97B-8889E97796A3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture12";
+	rename -uid "4F8F68D2-476A-C400-EAB8-EBA745B13317";
+createNode standardSurface -n "Material_Ref2:Blue_Paint_Mat";
+	rename -uid "95C1A2B8-4D72-4F99-0870-97A9B7280C6F";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref2:pasted__file12";
+	rename -uid "8030CC61-4DF5-FACA-116E-F3BCF9F632E3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture12";
+	rename -uid "FAE5D68D-463C-8847-11E9-B4ABC162C1BD";
+createNode aiMultiply -n "Material_Ref2:aiMultiply2";
+	rename -uid "788ECF62-42AE-05DE-52F4-26B270D6C1AF";
+createNode colorConstant -n "Material_Ref2:colorConstant1";
+	rename -uid "EDA0CE2F-49C8-1206-0B94-759AEADB63EE";
+	setAttr "._c" -type "float3" 0 0.58700001 1 ;
+createNode shadingEngine -n "Material_Ref2:Blue_Paint_MatSG";
+	rename -uid "0655A870-40D1-C518-1094-60A3B741F2DE";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo10";
+	rename -uid "B695C871-4F82-4DCE-75D1-48A9C7E4E58B";
+createNode standardSurface -n "Material_Ref2:Marble_Mat";
+	rename -uid "2DF1B9DC-4A11-E11C-5057-90B5811FE17F";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref2:standardSurface5SG";
+	rename -uid "7890394C-406C-3231-164E-DAB9DA33B72A";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo11";
+	rename -uid "19FDB9E6-4D4B-1AB5-F3DD-EFB621296CBE";
+createNode file -n "Material_Ref2:file13";
+	rename -uid "E43877B2-448B-43D5-9DC7-32BB034C0C53";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Marble/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture13";
+	rename -uid "68AF442B-4F23-3212-9D31-48BBFCEAC1AA";
+createNode standardSurface -n "Material_Ref2:Brown_Paint_Mat";
+	rename -uid "728D743C-4F03-183E-68E1-1182F995BA67";
+	setAttr ".sr" 0.60000002384185791;
+createNode aiMultiply -n "Material_Ref2:pasted__aiMultiply3";
+	rename -uid "03242FAB-43B1-6019-08FC-3E87765E0E40";
+createNode file -n "Material_Ref2:pasted__pasted__file12";
+	rename -uid "F575CCE5-45D0-00CE-1BE7-888DD6C7BDDE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture12";
+	rename -uid "1CD76D6B-4694-3942-C541-ECB188096D58";
+createNode colorConstant -n "Material_Ref2:pasted__colorConstant1";
+	rename -uid "B2C8A695-49BB-7451-41F0-5191680C5282";
+	setAttr "._c" -type "float3" 0.2614108 0.1866589 0.10691696 ;
+createNode shadingEngine -n "Material_Ref2:Brown_Paint_MatSG";
+	rename -uid "9ED705E3-44EB-CF1E-442C-8780F122B94A";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo12";
+	rename -uid "BDD63107-4B52-69F0-932F-18A1204C6847";
+createNode standardSurface -n "Material_Ref2:Stone_Mat";
+	rename -uid "2C9F8DE5-4D7C-0305-489B-D28D98471C87";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref2:pasted__file13";
+	rename -uid "6DB0989C-4A4F-0B3E-2E94-6EB23549BC1C";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Wall Stone/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__place2dTexture13";
+	rename -uid "F46A9275-4223-7F18-9365-41B5967DEB49";
+createNode shadingEngine -n "Material_Ref2:Stone_MatSG";
+	rename -uid "84C8E994-42D6-CEF3-B1F8-7B9D2947DD04";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo13";
+	rename -uid "5FE09D57-4D1A-3C90-46D2-DBB0323BC24D";
+createNode standardSurface -n "Material_Ref2:Generic_Metal_Mat";
+	rename -uid "4882AB00-4AC9-E1CB-6B69-B18157BCE53E";
+	setAttr ".sr" 0.5;
+createNode file -n "Material_Ref2:pasted__pasted__file13";
+	rename -uid "44C103D9-4978-7A6C-7393-6FAC6AEAE488";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic Metal/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:pasted__pasted__place2dTexture13";
+	rename -uid "15F97131-416B-9805-483A-2C9C5EE44432";
+createNode file -n "Material_Ref2:file14";
+	rename -uid "D0BC96F8-4BF8-2979-2D94-03804D5185D8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//Textures/Generic Metal/DefaultMaterial_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref2:place2dTexture14";
+	rename -uid "6BC049C8-4E7C-ED16-6A0E-AEBDDC511CFF";
+createNode shadingEngine -n "Material_Ref2:Generic_Metal_MatSG";
+	rename -uid "86649E67-47F2-FF77-113C-68A70D65DBFA";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref2:materialInfo14";
+	rename -uid "59582976-410A-CFE6-EFA6-939B1CE8CE4E";
+createNode nodeGraphEditorInfo -n "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "097A79DE-4D7D-A0C5-9050-86A8E5BDD18D";
+	setAttr ".def" no;
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" 53121.471050535954 -32370.702648716102 ;
+	setAttr ".tgi[0].vh" -type "double2" 54073.424125283098 -31457.857866618899 ;
+	setAttr -s 6 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 53250;
+	setAttr ".tgi[0].ni[0].y" -31790;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 54335.71484375;
+	setAttr ".tgi[0].ni[1].y" -31635.71484375;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 53987.14453125;
+	setAttr ".tgi[0].ni[2].y" -31635.71484375;
+	setAttr ".tgi[0].ni[2].nvs" 2387;
+	setAttr ".tgi[0].ni[3].x" 52895.71484375;
+	setAttr ".tgi[0].ni[3].y" -31635.71484375;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" 53680;
+	setAttr ".tgi[0].ni[4].y" -31680;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" 53250;
+	setAttr ".tgi[0].ni[5].y" -31614.28515625;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+createNode polyAutoProj -n "polyAutoProj144";
+	rename -uid "51481418-4BA3-11FF-EA1D-79A011DF903F";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:327]";
+	setAttr ".ix" -type "matrix" 83.657790060735664 0 0 0 0 -1.3629584011690016e-05 -83.657790060734555 0
+		 0 83.657790060734555 -1.3629584011690016e-05 0 1.2292779834081671 -53.142813048831115 -638.47974114895453 1;
+	setAttr ".s" -type "double3" 107.92404099198711 107.92404099198711 107.92404099198711 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode groupId -n "groupId432";
+	rename -uid "41A3F2AF-450F-438B-7172-E2A336242943";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts119";
+	rename -uid "BBB7B4C4-4935-5D83-5B1C-90B7FC250F22";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 4 "f[69]" "f[98]" "f[137]" "f[154]";
+	setAttr ".irc" -type "componentList" 5 "f[0:68]" "f[70:97]" "f[99:136]" "f[138:153]" "f[155:327]";
+createNode polyAutoProj -n "polyAutoProj145";
+	rename -uid "7E3D72E7-4B1F-329C-FD18-79AE934F9F98";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:115]";
+	setAttr ".ix" -type "matrix" 83.657790060735664 0 0 0 0 -1.3629584011690016e-05 -83.657790060734555 0
+		 0 83.657790060734555 -1.3629584011690016e-05 0 1.2292779834081671 -53.142813048831087 -638.47974114895464 1;
+	setAttr ".s" -type "double3" 103.42306350478646 103.42306350478646 103.42306350478646 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode groupId -n "groupId433";
+	rename -uid "42DD536A-4F80-DB1A-7223-D9B8992AC89A";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts120";
+	rename -uid "6BC735B9-413B-8A0B-0AF9-A0803E32D5AB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 25 "f[0]" "f[2:3]" "f[5:6]" "f[8:11]" "f[13]" "f[15:19]" "f[21]" "f[24:26]" "f[28:29]" "f[31]" "f[33]" "f[35:43]" "f[45]" "f[49]" "f[52:54]" "f[58]" "f[61:62]" "f[64]" "f[66:67]" "f[69:70]" "f[72:74]" "f[76]" "f[79:96]" "f[98:103]" "f[105:115]";
+	setAttr ".irc" -type "componentList" 24 "f[1]" "f[4]" "f[7]" "f[12]" "f[14]" "f[20]" "f[22:23]" "f[27]" "f[30]" "f[32]" "f[34]" "f[44]" "f[46:48]" "f[50:51]" "f[55:57]" "f[59:60]" "f[63]" "f[65]" "f[68]" "f[71]" "f[75]" "f[77:78]" "f[97]" "f[104]";
+createNode polyAutoProj -n "polyAutoProj146";
+	rename -uid "1DF278E9-43B5-5303-A031-26AEFD3127FB";
+	setAttr ".cch" yes;
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:43]";
+	setAttr ".ix" -type "matrix" 83.657790060735664 0 0 0 0 -1.3629584011690016e-05 -83.657790060734555 0
+		 0 83.657790060734555 -1.3629584011690016e-05 0 1.2292779834081671 -53.142813048831115 -638.47974114895453 1;
+	setAttr ".s" -type "double3" 17.436669116516772 17.436669116516772 17.436669116516772 ;
+	setAttr ".ps" 0.20000000298023224;
+	setAttr ".dl" yes;
+createNode standardSurface -n "Material_Ref3:Appartment_Floor_Mat";
+	rename -uid "3ECD898A-431E-C8CB-2D39-FDAB33206775";
+createNode shadingEngine -n "Material_Ref3:standardSurface2SG";
+	rename -uid "90FC115A-4B3C-AA3B-D1CD-09BE4B276799";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo1";
+	rename -uid "357F5B61-4B8E-8A9A-6CB5-15B0DB62EEB4";
+createNode file -n "Material_Ref3:file1";
+	rename -uid "874A5BA7-4F6B-E745-7374-4994C93FAB95";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture1";
+	rename -uid "10561B3D-4570-D445-621D-C2B7B4A3C91C";
+createNode file -n "Material_Ref3:file2";
+	rename -uid "E71331E6-4260-C462-4C5D-E2AACECF498A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture2";
+	rename -uid "67A3A704-43B0-CE3A-3082-7E89DF72C647";
+createNode aiMultiply -n "Material_Ref3:aiMultiply1";
+	rename -uid "5CBB2132-45AE-3A07-AA7A-BEB5750AF5A5";
+createNode file -n "Material_Ref3:file3";
+	rename -uid "7078635C-400C-BA51-5F63-A79ABF31DCCA";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture3";
+	rename -uid "DB9F5A38-478F-A880-E62E-EEBA29A467A8";
+createNode aiNormalMap -n "Material_Ref3:aiNormalMap1";
+	rename -uid "C5DF0AA2-4BAB-6856-8843-ABB384EBC22F";
+createNode file -n "Material_Ref3:file4";
+	rename -uid "98FEC074-4D09-6B1A-237A-B8BFBF283EB3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture4";
+	rename -uid "045E280C-4E76-2A53-D11D-3CA6E2B0115F";
+createNode file -n "Material_Ref3:file5";
+	rename -uid "40BC70F0-4DE5-8102-A5B2-E89BF15580FA";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture5";
+	rename -uid "2AD705B2-4B3E-2745-C7D8-28AD29D87070";
+createNode displacementShader -n "Material_Ref3:AppermentFloorDisplacement";
+	rename -uid "F20E6D5C-42FB-573E-8493-B5BDA2020317";
+createNode standardSurface -n "Material_Ref3:Appartment_Wall_Mat";
+	rename -uid "34DFDD46-4619-75CA-EB1E-A69E669E2B08";
+createNode aiMultiply -n "Material_Ref3:pasted__aiMultiply1";
+	rename -uid "E901744F-42A3-9C20-04C0-6D960C515F42";
+createNode file -n "Material_Ref3:pasted__file1";
+	rename -uid "7B865A29-4858-044B-51CC-B4AE8C78B1EB";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture1";
+	rename -uid "ED598E0F-48B2-005E-2B33-98878F9E3EE8";
+createNode file -n "Material_Ref3:pasted__file3";
+	rename -uid "3CF546EE-4154-DFBB-21CF-0B95D24E1D9C";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture3";
+	rename -uid "BC3E7DDE-4BFD-0F60-8CE2-C19A3CE3AE8E";
+createNode file -n "Material_Ref3:pasted__file2";
+	rename -uid "6A7A029F-430D-877F-BE8C-259F6F479C6B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture2";
+	rename -uid "D252D395-4E84-85D2-67DC-589C7CB24744";
+createNode aiNormalMap -n "Material_Ref3:pasted__aiNormalMap1";
+	rename -uid "10F60385-4DF6-2E62-BCB0-A09D8AF4E4D5";
+createNode file -n "Material_Ref3:pasted__file4";
+	rename -uid "08D07F9D-408D-32DF-A4F8-078CA99BC3E1";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture4";
+	rename -uid "8223F9F3-490D-14A4-44F4-B5BD1DA3B9B8";
+createNode displacementShader -n "Material_Ref3:AppartmentWallDisplacemnt";
+	rename -uid "55092A59-424D-64AD-8CD6-319A5FAB6F67";
+createNode shadingEngine -n "Material_Ref3:displacementShader1SG";
+	rename -uid "4DB7FF48-4B0E-2794-69A9-659A778C4DBC";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo2";
+	rename -uid "D74DD592-4E8B-97F1-8E15-839B69879053";
+createNode file -n "Material_Ref3:file6";
+	rename -uid "9375A7FF-4A2A-4295-F34F-CA8D441F22BD";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture6";
+	rename -uid "EE0C3B3B-4084-2A77-D0DE-19B08E2541B4";
+createNode standardSurface -n "Material_Ref3:Cave_Floor_Mat";
+	rename -uid "32613A73-46F5-FC0E-1952-88B1578A042F";
+createNode aiMultiply -n "Material_Ref3:pasted__aiMultiply2";
+	rename -uid "33947E58-499A-6AB9-965A-E9A5B3F55E97";
+createNode file -n "Material_Ref3:pasted__file5";
+	rename -uid "1E3B0682-41DA-6A87-E04E-D5BA8D812834";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture5";
+	rename -uid "D5BAAD58-4203-0B54-43A8-D79F14F5C5DE";
+createNode file -n "Material_Ref3:pasted__file7";
+	rename -uid "E3C1D2CC-4281-9549-5030-97B668ECE8A5";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture7";
+	rename -uid "B8543878-4915-93C9-679C-5BBC6BFD25FD";
+createNode file -n "Material_Ref3:pasted__file6";
+	rename -uid "90706FAD-4109-009E-A08B-E9AF3F1E002B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture6";
+	rename -uid "FB25548A-4CA1-B2F2-B63D-00B3DD3F9A83";
+createNode aiNormalMap -n "Material_Ref3:pasted__aiNormalMap2";
+	rename -uid "616A0C6F-474F-61B3-61F8-6BAB57342C7C";
+createNode file -n "Material_Ref3:pasted__file8";
+	rename -uid "B4BF5B5A-47BC-5037-F04F-05B7ECEB01E4";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture8";
+	rename -uid "9508A5E3-4D18-9924-4F7D-A5A44334CBA4";
+createNode displacementShader -n "Material_Ref3:CaveFloorDisplacement";
+	rename -uid "E80A162F-4A36-8954-A095-9D93CF2E6038";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref3:displacementShader2SG";
+	rename -uid "3AC00D30-413D-335C-09A7-19802C07EEB1";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo3";
+	rename -uid "079F552B-4283-10A5-F1E2-DB986EB36954";
+createNode file -n "Material_Ref3:file7";
+	rename -uid "45C82F81-41AC-1309-68AB-66915ACCEFD3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture7";
+	rename -uid "8D66BCD4-4C05-2CA6-5912-DBA917E0CD32";
+createNode standardSurface -n "Material_Ref3:Cave_Wall_2_Mat";
+	rename -uid "A49C2617-46A1-7384-7742-5380791A65A6";
+createNode aiMultiply -n "Material_Ref3:pasted__pasted__aiMultiply1";
+	rename -uid "2F96E165-4309-FCD1-A372-E1BB2DD707C2";
+createNode file -n "Material_Ref3:pasted__pasted__file1";
+	rename -uid "95921175-4F9F-1F07-EB4F-BAB83C23C715";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture1";
+	rename -uid "5B2189D5-491C-BEC3-3085-00AF85FEB254";
+createNode file -n "Material_Ref3:pasted__pasted__file3";
+	rename -uid "52CC80AA-4A37-A75D-FAFE-DFA208232619";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture3";
+	rename -uid "C51A385C-436C-E7AA-E4CA-86B5A4256699";
+createNode file -n "Material_Ref3:pasted__pasted__file2";
+	rename -uid "31EF8AEA-4F5E-3D36-0777-1595C85E054D";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture2";
+	rename -uid "40C192A0-42EC-9F6A-C506-C69AC9C8D3E0";
+createNode aiNormalMap -n "Material_Ref3:pasted__pasted__aiNormalMap1";
+	rename -uid "21AAE2FB-43DB-9E90-E907-E098D1F40427";
+createNode file -n "Material_Ref3:pasted__pasted__file4";
+	rename -uid "B4A886F9-40EC-FEA4-93A8-9BA82BE610D8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture4";
+	rename -uid "0890312F-490B-1649-E335-5CB0C482710D";
+createNode displacementShader -n "Material_Ref3:Cave2Displacement";
+	rename -uid "80810817-47C3-80B4-920B-E38C69CB3848";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref3:Cave2Displacement5";
+	rename -uid "BD746C14-4F99-5B29-D4D8-ED9D47CFBAB7";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo4";
+	rename -uid "8873CEA6-4B8B-4B06-78AE-5C8C7F95B08C";
+createNode file -n "Material_Ref3:file8";
+	rename -uid "903F95F2-4558-8243-1BE9-F6AD7D148E4A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture8";
+	rename -uid "B3D603BF-4E60-D005-B0D0-598D7168EF9A";
+createNode standardSurface -n "Material_Ref3:Cave_Wall_3_Mat";
+	rename -uid "8FDEB52F-48C6-459A-466B-B1AE0E0149E7";
+createNode aiMultiply -n "Material_Ref3:pasted__pasted__pasted__aiMultiply1";
+	rename -uid "01526FD3-4E66-2096-FCC9-1B943506A3EF";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__file1";
+	rename -uid "04E4998E-4F52-B19B-FF2F-26897A7FAB17";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__place2dTexture1";
+	rename -uid "C35F693C-47F1-1718-8986-C1AAE3DFE04E";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__file3";
+	rename -uid "9529CC60-4CC4-4B88-1A2B-45B95BC25207";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__place2dTexture3";
+	rename -uid "3EE59C58-47E7-ADD4-9670-7B901A6CB189";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__file2";
+	rename -uid "023E2491-418A-4A4D-4C75-05B3FAC03932";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__place2dTexture2";
+	rename -uid "CAB31F2A-4096-1EBC-B29F-A1BC050A30B1";
+createNode aiNormalMap -n "Material_Ref3:pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "8D1E05F7-47AD-2ADF-9032-25951F060404";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__file4";
+	rename -uid "7CFDCF04-428A-3D6C-2E88-13A7F9545DA3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__place2dTexture4";
+	rename -uid "793BFA5A-41C7-8B05-FC76-A09B3C3A80DF";
+createNode shadingEngine -n "Material_Ref3:displacementShader4SG";
+	rename -uid "E0572D8E-4399-90E4-93CD-1DB4D6F1AA16";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo5";
+	rename -uid "1B5CA50C-41A7-9C57-C9F2-4CB4B5184953";
+createNode shadingEngine -n "Material_Ref3:pasted__displacementShader4SG";
+	rename -uid "80BEFB63-481F-010D-E051-D7BDB6D28F8B";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:pasted__materialInfo5";
+	rename -uid "07A3ECD0-48A5-53B7-C691-DE90A5FD29C9";
+createNode shadingEngine -n "Material_Ref3:pasted__displacementShader4SG1";
+	rename -uid "32DD551E-4C47-7B14-21ED-05B658C7C68F";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:pasted__materialInfo6";
+	rename -uid "6F717B7F-426F-39C0-D12C-B4B1E942DC43";
+createNode displacementShader -n "Material_Ref3:Cave3Displacemnt";
+	rename -uid "145597E9-4691-3101-9131-FEAD237AF68A";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref3:displacementShader5SG";
+	rename -uid "D1D67BE2-4ED1-9FCE-193E-DF9180CC0BC8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo6";
+	rename -uid "E7FFF277-4B82-5719-B456-2196E15B9C23";
+createNode file -n "Material_Ref3:file9";
+	rename -uid "AC310CE3-4E62-38D9-A7A5-52AF80C0F59A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture9";
+	rename -uid "B3BCFACA-408E-3B14-28CD-668F0692D039";
+createNode standardSurface -n "Material_Ref3:Cave_Wall_4_Mat";
+	rename -uid "EE3D00AF-47FF-27A9-FDA2-8E8F5E3BE214";
+createNode aiMultiply -n "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1";
+	rename -uid "41C16F69-48D9-7244-4AD8-B89DC298CA54";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__pasted__file1";
+	rename -uid "BD8E2B81-416D-C97E-A9D5-12B535D627DE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1";
+	rename -uid "AD3AFC54-4B1F-E2C4-5E44-F7B967E5D370";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__pasted__file3";
+	rename -uid "0BF2A41D-4B27-A851-EED5-919228DFF80F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3";
+	rename -uid "2E0AA5FD-4C6D-1E43-6F82-D2B51E4F3CBB";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__pasted__file2";
+	rename -uid "F3CA1770-413C-AEFB-4573-A8A593CF7667";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2";
+	rename -uid "8579BF67-4C81-6E31-759C-999ED5F105B6";
+createNode aiNormalMap -n "Material_Ref3:pasted__pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "65E8B112-49A0-7279-8AC3-4B8918CB72F3";
+createNode file -n "Material_Ref3:pasted__pasted__pasted__pasted__file4";
+	rename -uid "96522816-4776-F802-0ADE-77B869D83C34";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4";
+	rename -uid "F0EC668C-4558-5A69-6647-D9A306D1B795";
+createNode displacementShader -n "Material_Ref3:cave4Displacement";
+	rename -uid "B8D81E75-440C-2F3F-4D27-1DBB8DE347A8";
+	setAttr ".scl" 0;
+createNode shadingEngine -n "Material_Ref3:displacementShader6SG";
+	rename -uid "8A690336-46E6-B657-CA9F-E993A40C5D23";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo7";
+	rename -uid "33568226-4351-9EE8-698B-0CBB1FDE6AB3";
+createNode file -n "Material_Ref3:file10";
+	rename -uid "49B4088C-44CF-DF51-D0E1-9E97FD25B9CD";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture10";
+	rename -uid "460F9120-4F97-E5FB-F8EF-148567A9E6F8";
+createNode standardSurface -n "Material_Ref3:Generic_Wood_Mat";
+	rename -uid "25BF4257-45B2-75CD-658B-F4925D9F6B02";
+	setAttr ".sr" 0.75;
+createNode shadingEngine -n "Material_Ref3:standardSurface3SG";
+	rename -uid "CAAF5DD2-4BFA-ED66-DE60-1DAFCE826B3A";
+	setAttr ".ihi" 0;
+	setAttr -s 2 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 2 ".gn";
+createNode materialInfo -n "Material_Ref3:materialInfo8";
+	rename -uid "597DEA42-464D-55B5-BD55-1287893FD870";
+createNode file -n "Material_Ref3:file11";
+	rename -uid "3A637912-4C09-728F-900B-D3917082216A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture11";
+	rename -uid "49E701FA-41A8-6EC4-8C88-8EB6F6413596";
+createNode standardSurface -n "Material_Ref3:White_Paint_Mat";
+	rename -uid "D1BD3B4D-4E2D-FC87-E2C9-C2976DFB1538";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref3:standardSurface4SG";
+	rename -uid "2E789DAC-47CF-DA4D-9DA9-F4A26FE52FCF";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo9";
+	rename -uid "99A50EAC-4657-AA51-99C8-019C0663AAA1";
+createNode file -n "Material_Ref3:file12";
+	rename -uid "0C036C8F-42DC-B308-3D2F-C886EB53CAC7";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture12";
+	rename -uid "270E34E9-4EE9-CD9F-5CAA-02B1378E677D";
+createNode standardSurface -n "Material_Ref3:Blue_Paint_Mat";
+	rename -uid "AC81697B-40E7-8354-6A34-34AD19B42234";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref3:pasted__file12";
+	rename -uid "6FEC5705-4509-C84F-BDD0-129A08B8A9B2";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture12";
+	rename -uid "F23E9D10-4E15-209A-7A88-FC81F83D7EC4";
+createNode aiMultiply -n "Material_Ref3:aiMultiply2";
+	rename -uid "C2B60C27-495E-75C8-BF0B-A58E9A43CED4";
+createNode colorConstant -n "Material_Ref3:colorConstant1";
+	rename -uid "8DAB3E42-48D1-E600-614C-FFAB11458800";
+	setAttr "._c" -type "float3" 0 0.58700001 1 ;
+createNode shadingEngine -n "Material_Ref3:Blue_Paint_MatSG";
+	rename -uid "035F2611-412E-A421-58A5-8FB447394E2F";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo10";
+	rename -uid "4BC80B5F-4B1A-87B9-85D3-CD90D5CE7082";
+createNode standardSurface -n "Material_Ref3:Marble_Mat";
+	rename -uid "0D2BBA7F-44C6-AA2A-0602-A8921CF27161";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref3:standardSurface5SG";
+	rename -uid "BC4141DE-4E15-954F-BE9A-2BA9FAFAE211";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo11";
+	rename -uid "2B35FB4D-4C64-D9E3-D324-F8A36FEEB20A";
+createNode file -n "Material_Ref3:file13";
+	rename -uid "20EF5F5E-4402-0BE7-6463-389002DE75D7";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Marble/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture13";
+	rename -uid "E0F24235-4EEC-13B8-0EA1-2C8590E6FD66";
+createNode standardSurface -n "Material_Ref3:Brown_Paint_Mat";
+	rename -uid "DFCC0C26-4111-DF09-6848-C8AE4F1BB1CF";
+	setAttr ".sr" 0.60000002384185791;
+createNode aiMultiply -n "Material_Ref3:pasted__aiMultiply3";
+	rename -uid "EC6E59A9-440F-7448-EF2A-84818F5C7810";
+createNode file -n "Material_Ref3:pasted__pasted__file12";
+	rename -uid "C3E2A051-47BE-66DE-0E1B-D79FC4E35A28";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture12";
+	rename -uid "029002E3-447B-64A1-91DC-50B46DD13234";
+createNode colorConstant -n "Material_Ref3:pasted__colorConstant1";
+	rename -uid "4379A833-4EA1-852C-D53E-08B9907132D4";
+	setAttr "._c" -type "float3" 0.2614108 0.1866589 0.10691696 ;
+createNode shadingEngine -n "Material_Ref3:Brown_Paint_MatSG";
+	rename -uid "86B99B13-4420-93CE-6A4D-7795E816CA95";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo12";
+	rename -uid "C38F0B79-449E-1829-F2A8-3DA20A820A16";
+createNode standardSurface -n "Material_Ref3:Stone_Mat";
+	rename -uid "AF6CD2CE-471B-E120-81AA-EDB1A1BC8E32";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref3:pasted__file13";
+	rename -uid "AF04132B-4CF6-D62B-AB29-8A94E8EF73D7";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Wall Stone/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture13";
+	rename -uid "AAB9DB8D-46AC-89B9-2109-E7A9CF5C06F7";
+createNode shadingEngine -n "Material_Ref3:Stone_MatSG";
+	rename -uid "1C577D51-4751-48BA-765B-ECA91B81D8E7";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo13";
+	rename -uid "A9DA19ED-4484-DAB4-FC6A-EB907436D4E3";
+createNode standardSurface -n "Material_Ref3:Generic_Metal_Mat";
+	rename -uid "562489E4-43B8-DFB6-E71E-B5B2705B0738";
+	setAttr ".sr" 0.5;
+createNode file -n "Material_Ref3:pasted__pasted__file13";
+	rename -uid "0689B6D0-4EC2-9F5B-F319-648519C4DCB3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic Metal/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__place2dTexture13";
+	rename -uid "10904E96-4678-B0D7-0193-0F886AEED0FE";
+createNode file -n "Material_Ref3:file14";
+	rename -uid "A9851AC7-4D45-E041-36EC-6F90EAE08B4F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//Textures/Generic Metal/DefaultMaterial_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:place2dTexture14";
+	rename -uid "1AF5E114-4067-7B16-5238-34B5FD5FC031";
+createNode shadingEngine -n "Material_Ref3:Generic_Metal_MatSG";
+	rename -uid "DA70B8CC-4FDC-0B11-91E1-E9AA496A88C8";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref3:materialInfo14";
+	rename -uid "F33191E0-4A80-3FF0-02E8-53BFED0084B9";
+createNode standardSurface -n "Material_Ref3:Gold_Metal_Mat";
+	rename -uid "EAE38641-4B1E-6580-C669-66AD1604B2F2";
+	setAttr ".sr" 0.5;
+createNode file -n "Material_Ref3:pasted__pasted__pasted__file13";
+	rename -uid "FECD68E4-4F9F-5B31-9D6A-40A4B5ED6873";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic Metal/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__pasted__pasted__place2dTexture13";
+	rename -uid "F7A15172-4A99-3812-A5AA-FAA91D7FD033";
+createNode file -n "Material_Ref3:pasted__file14";
+	rename -uid "ECFF8286-44B1-B467-75FB-B7BE79AAB28E";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//Textures/Generic Metal/DefaultMaterial_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref3:pasted__place2dTexture14";
+	rename -uid "659CC008-4CB4-9CAA-0E66-E59A7DEE4EE9";
+createNode aiMultiply -n "Material_Ref3:aiMultiply3";
+	rename -uid "BE94166A-4002-BA94-39A0-0792ADA0DC29";
+createNode colorConstant -n "Material_Ref3:colorConstant2";
+	rename -uid "19FBAFDE-4F75-C73B-6E44-92A1AC923D68";
+	setAttr "._c" -type "float3" 0.71784234 0.71784234 0 ;
+createNode nodeGraphEditorInfo -n "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "689544FB-489D-57E2-4173-CEB9B6F20293";
+	setAttr ".def" no;
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" 52997.265445052857 -32486.294700272272 ;
+	setAttr ".tgi[0].vh" -type "double2" 54206.40271926963 -31326.831402250777 ;
+	setAttr -s 7 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 53111.4296875;
+	setAttr ".tgi[0].ni[0].y" -31765.71484375;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 53857.14453125;
+	setAttr ".tgi[0].ni[1].y" -31600;
+	setAttr ".tgi[0].ni[1].nvs" 2387;
+	setAttr ".tgi[0].ni[2].x" 52991.484375;
+	setAttr ".tgi[0].ni[2].y" -31399.78515625;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 53354.8828125;
+	setAttr ".tgi[0].ni[3].y" -31379.568359375;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" 53525.71484375;
+	setAttr ".tgi[0].ni[4].y" -31744.28515625;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" 53250.48046875;
+	setAttr ".tgi[0].ni[5].y" -31599.431640625;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" 53610.31640625;
+	setAttr ".tgi[0].ni[6].y" -31500.083984375;
+	setAttr ".tgi[0].ni[6].nvs" 1923;
+createNode shadingEngine -n "Material_Ref3:Gold_Metal_MatSG";
+	rename -uid "C4AF1DE2-42C6-9E3C-2631-4A8B8E869DAA";
+	setAttr ".ihi" 0;
+	setAttr -s 3 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 2 ".gn";
+createNode materialInfo -n "materialInfo15";
+	rename -uid "9B20DA2D-4E93-809C-0BBB-988005F25591";
+createNode polyMapSew -n "polyMapSew7";
+	rename -uid "72077225-48F0-30F5-112E-918DCCF308E1";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "e[391]" "e[515]";
+createNode polyMapSew -n "polyMapSew8";
+	rename -uid "4A23AD87-4C53-7CF9-8CA2-CBB325BD4521";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 2 "e[161]" "e[285]";
+createNode polyMapSew -n "polyMapSew9";
+	rename -uid "7C2B9A56-48C6-4B18-C8C3-60BAB3AAECC2";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 7 "e[123]" "e[160]" "e[236]" "e[290]" "e[625]" "e[632]" "e[652:653]";
+createNode polyTweakUV -n "polyTweakUV143";
+	rename -uid "DE5A9538-469F-CB1F-1B1B-19A2C968BD93";
+	setAttr ".uopa" yes;
+	setAttr -s 592 ".uvtk";
+	setAttr ".uvtk[0:249]" -type "float2" -0.26141253 0.75320685 -0.2656824 0.76259649
+		 -0.30450302 0.73696625 -0.29671574 0.72998643 -0.19428077 0.76742339 -0.19418836
+		 0.77796155 -0.3375977 0.69434929 -0.34535202 0.70135647 -0.13112891 0.77901989 -0.13086146
+		 0.76851696 -0.36892477 0.65007854 -0.3766557 0.65712023 -0.075956762 0.75334096 -0.071756303
+		 0.76298296 -0.38846254 0.61261106 -0.39823472 0.61591268 -0.033671618 0.7468062 -0.037810564
+		 0.73711288 -0.39582884 0.54438692 -0.40630358 0.54323214 0.0025407672 0.70869392
+		 0.0095658302 0.71646827 -0.40099007 0.4803879 -0.3905139 0.48118123 -0.36987242 0.42809039
+		 -0.37904149 0.42293701 -0.35910136 0.3866806 -0.34987581 0.39177784 -0.31752872 0.35450038
+		 -0.32455379 0.346726 -0.16440547 0.17982009 -0.16867536 0.17043129 -0.097020328 0.15502906
+		 -0.09676367 0.16548651 -0.19979471 0.20309728 -0.20752293 0.19607882 -0.034195483
+		 0.15399298 -0.034089208 0.16446334 -0.24059826 0.2386699 -0.24834692 0.23166794 0.025298417
+		 0.17005238 0.021200836 0.1797123 -0.27186978 0.28285676 -0.27963316 0.27587634 0.063329399
+		 0.18621624 0.059178531 0.19590273 -0.29145557 0.32041585 -0.30122769 0.31711507 0.1065734
+		 0.21655768 0.099547744 0.224332 -0.29888684 0.3891592 -0.30931681 0.38995901 -0.29357648
+		 0.45161548 -0.30400461 0.45256692 -0.27282405 0.50508446 -0.2820214 0.51013619 -0.25288332
+		 0.54123372 -0.26209974 0.54634076 -0.22052181 0.57852542 -0.22754747 0.58630067 0.2123428
+		 -0.8701303 0.23666817 -0.82166576 0.065350711 -0.70863223 0.03570348 -0.75359201
+		 0.24326456 -0.89053094 0.27289885 -0.83101404 0.25063777 -0.76725662 0.094627023
+		 -0.66422737 0.0045019388 -0.66848648 -0.025157273 -0.71343851 0.0064089298 -0.79799807
+		 0.18002284 -0.91254663 0.28675312 -0.77676988 0.25904256 -0.70734614 0.12460566 -0.61870402
+		 0.033792138 -0.62409139 -0.056346714 -0.62834013 -0.086017966 -0.67328477 -0.054455042
+		 -0.75784063 0.29577827 -0.70089924 0.24432975 -0.62157011 0.16104895 -0.56337261
+		 0.064021975 -0.57827252 -0.027042598 -0.58395338 -0.2626572 -0.55673921 -0.2276718
+		 -0.5153079 -0.11531886 -0.71768415 0.28125605 -0.61602736 0.21800554 -0.55024737
+		 0.19003758 -0.51930475 0.10118356 -0.52194697 0.0030122101 -0.53847945 -0.18314466
+		 -0.48105827 -0.28893286 -0.60314047 -0.25051856 -0.48567724 -0.29357892 -0.53633738
+		 0.24883482 -0.52994472 0.21077368 -0.48770499 0.13407272 -0.47209007 0.039545327
+		 -0.48320514 -0.13137135 -0.44976074 -0.20610446 -0.45159534 0.1549398 -0.44046402
+		 0.068649948 -0.43921715 -0.04672581 -0.42953873 -0.13990128 -0.41344926 0.089541703
+		 -0.40772009 0.029200345 -0.42567953 -0.056161582 -0.39340833 0.035738021 -0.38934883
+		 -0.11501992 0.33197644 -0.094381452 0.2788856 -0.08390516 0.27967995 -0.10585093
+		 0.3371298 -0.089064538 0.21567902 -0.078591764 0.21683562 -0.12579107 0.37338629
+		 -0.13501853 0.36828992 -0.096429884 0.14745581 -0.08665961 0.14415509 -0.16736376
+		 0.40556556 -0.1603387 0.41333988 -0.11596775 0.10998827 -0.10823858 0.10294569 -0.14729762
+		 0.065717518 -0.13954049 0.058710396 -0.18817675 0.030080438 -0.18039131 0.023099661
+		 -0.22347999 0.0068600178 -0.21921188 -0.0025287271 -0.29061264 -0.0073575377 -0.29070699
+		 -0.017893791 -0.35403389 -0.0084502101 -0.35376638 -0.018952131 -0.40893567 0.0067259073
+		 -0.41313618 -0.0029160976 -0.44708383 0.022955 -0.45122087 0.013260663 -0.48743331
+		 0.051371932 -0.49445838 0.043597639 -0.16581634 0.33469313 -0.15184776 0.38910228
+		 -0.18807751 0.39844966 -0.20193556 0.34420627 -0.0098065138 0.23166484 0.019470662
+		 0.27606881 -0.12752239 0.43756595 -0.15844412 0.45796651 -0.21095988 0.26833573 -0.17422116
+		 0.27478254 0.051028252 0.19152784 0.080319315 0.23592305 0.049116984 0.32102853 -0.039788187
+		 0.18614143 -0.15950933 0.1890066 -0.19643855 0.18346381 0.020797372 0.14570898 0.11186299
+		 0.15139079 0.14116812 0.1957767 0.10997762 0.28087497 0.078409627 0.36543369 -0.095204398
+		 0.47998399 -0.076231331 0.13081002 -0.16401434 0.097381145 -0.1331851 0.11768383
+		 -0.016365051 0.089383483 0.081805319 0.10591686 0.26796597 0.048494875 0.31249213
+		 0.08274442 0.17083831 0.24072117 0.13927354 0.32527709 -0.10521725 0.086742222 -0.12595421
+		 0.055142522 -0.049255103 0.039526522 0.045272231 0.05064249 0.21619269 0.017197251
+		 0.29092196 0.019031823 0.3353399 0.053112745 0.34747756 0.12417465 0.20013736 0.28511971
+		 -0.070121288 0.0079005361 0.016170532 0.0066545606 0.13154623 -0.0030247569 0.22471979
+		 -0.019114196 0.37839931 0.10377294 0.37375134 0.17057782 -0.0047222078 -0.024842381
+		 0.055620074 -0.0068839788 0.14097911 -0.039155126 0.049082369 -0.043214738 -0.1114049
+		 -0.24007106 -0.080134332 -0.28425798 -0.072370887 -0.27727762 -0.10365915 -0.23306915
+		 -0.060548604 -0.32181713 -0.050778329 -0.31851539 -0.15220934 -0.20449844 -0.14448115
+		 -0.19747999 -0.053120196 -0.39056057 -0.04268831 -0.39136028 -0.18333063 -0.17183146
+		 -0.18759859 -0.18122119 -0.058426797 -0.45301777 -0.048000515 -0.4539682 -0.25498474
+		 -0.15643018 -0.2552433 -0.16688764 -0.079183102 -0.50648582 -0.069982827 -0.51153755
+		 -0.31791392 -0.16586536 -0.31780958 -0.15539405 -0.089906454 -0.54774302 -0.099123776
+		 -0.54263413 -0.37730259 -0.17145342 -0.37320787 -0.18111333 -0.13148248 -0.57992768
+		 -0.12445682 -0.58770204 -0.41533548 -0.18761817 -0.41118556 -0.19730273 -0.4585776
+		 -0.21795869 -0.45155197 -0.22573392 0.049574256 -0.71799129 0.00034409761 -0.71799183
+		 0.0035665035 -0.77375895 0.053368449 -0.77375847 -0.024432182 -0.77550554 0.024796009
+		 -0.77550614 0.02157867 -0.71973509 -0.028225183 -0.71973443 -0.030146539 -0.76495343
+		 -0.026354909 -0.70918232 -0.076158702 -0.70918405 -0.079374731 -0.76495516 -0.041593432
+		 -0.74072516 -0.045385122 -0.79649425 0.0044167638 -0.79649425 0.0076375604 -0.74072516
+		 0.38358054 -0.075119227 0.28099564 -0.075119197 0.28103989 -0.32673728 0.38355845
+		 -0.32673734 0.38355845 0.17649788 0.28103983 0.17649782 0.17655894 -0.32673723 0.1766222
+		 -0.075119227 0.45894352 -0.32673746 0.45892262 -0.075119227 0.45894352 0.17649812
+		 0.17655894 0.17649782 0.15717998 -0.1771346 0.15718003 -0.42875308;
+	setAttr ".uvtk[250:499]" 0.55083418 -0.075119227 0.55083334 -0.3267377 0.55083334
+		 0.17649829 0.15718003 0.07448253 -0.43455452 -0.43330365 -0.33196771 -0.43330368
+		 -0.33201009 -0.18168849 -0.43453246 -0.18168843 -0.4345324 -0.6849227 -0.33201003
+		 -0.68492264 -0.22759429 -0.43330365 -0.22753297 -0.18168849 -0.5099175 -0.18168831
+		 -0.50989372 -0.43330368 -0.5099175 -0.68492281 -0.22753297 -0.68492264 -0.11580995
+		 -0.35622683 -0.11581007 -0.10461056 -0.60180521 -0.43330368 -0.60180449 -0.18168807
+		 -0.60180449 -0.68492305 -0.11581007 -0.60784572 -0.46719688 0.31129628 -0.4204655
+		 0.34043866 -0.47703519 0.42592871 -0.52365273 0.39684719 -0.35669032 0.37806243 -0.41297871
+		 0.46370858 -0.579153 0.3604902 -0.52269292 0.27493918 -0.28481874 0.4126792 -0.34165052
+		 0.4980855 -0.36590385 0.36458582 -0.42235038 0.45013684 0.55197752 0.14006519 0.52937543
+		 0.1604259 0.48814169 0.11975747 0.51066089 0.099318802 0.57968348 0.16904777 0.55711734
+		 0.18944454 0.4458566 0.08556515 0.46853369 0.065244377 0.61510134 0.20795417 0.59253061
+		 0.22834522 0.2097277 0.13706571 0.23229414 0.1166746 0.059408963 0.033488572 0.094826877
+		 0.072376728 0.072261214 0.09276396 0.03684786 0.053879678 0.12253284 0.10134864 0.10000318
+		 0.1217702 0.16384947 0.14207852 0.14123687 0.16242015 0.20597661 0.17614108 0.1835219
+		 0.19660068 0.082633197 0.13056362 0.060067773 0.15095472 -0.25185892 0.079308093
+		 -0.22928923 0.058916986 -0.19387597 0.097817719 -0.21644109 0.11821258 -0.16613398
+		 0.12683636 -0.18873508 0.14719701 -0.12490028 0.16750193 -0.1474185 0.1879425 -0.082615227
+		 0.20169425 -0.10529134 0.22201687 -0.20606941 0.15605056 -0.22863477 0.17644173 -0.14868104
+		 -0.68239939 -0.17466849 -0.71218967 -0.16858941 -0.71768105 -0.14205503 -0.68838519
+		 0.24536428 0.26081181 0.20994642 0.22192186 0.23251116 0.20153648 0.26792443 0.2404207
+		 0.20476913 0.17253023 0.18224046 0.19295168 0.14092383 0.15222096 0.16353548 0.13187742
+		 0.12125039 0.097696841 0.098796636 0.11815834 -0.10820839 0.16607177 -0.085643947
+		 0.14568067 -0.11736476 -0.71768057 -0.091376305 -0.68788838 -0.097456396 -0.68239701
+		 -0.12399077 -0.71169478 0.15708077 0.37691921 0.20381224 0.40604895 0.14737773 0.49159712
+		 0.10076034 0.46253383 0.20287824 0.52793646 0.25930822 0.44238555 0.036703825 0.42477041
+		 0.093305647 0.33931547 0.021434128 0.30471367 -0.034624279 0.39041114 -0.23749775
+		 0.43671453 -0.18105391 0.35116351 -0.2382642 -0.68838996 -0.24488515 -0.68240422
+		 -0.27141953 -0.71170008 -0.2653445 -0.71719146 -0.18370712 -0.71169549 -0.17708617
+		 -0.71768123 -0.1505518 -0.68838346 -0.15662587 -0.68289208 0.35279948 -1.042449236
+		 0.40936822 -1.12793648 0.45598572 -1.098856926 0.39953083 -1.013303161 0.28902435
+		 -1.080072045 0.34531188 -1.16571927 0.51148611 -1.062497854 0.45502692 -0.97694695
+		 0.21715277 -1.11468983 0.27398354 -1.20009422 0.046822548 -1.06070447 0.10326803
+		 -1.14625537 -0.2714771 -1.10805392 -0.21504363 -1.19360483 -0.16842628 -1.16453969
+		 -0.22474587 -1.078927875 -0.27054417 -1.22994244 -0.3269732 -1.14439142 -0.10436979
+		 -1.1267792 -0.1609706 -1.041323185 -0.033041596 -1.092417955 -0.08909905 -1.006722331
+		 -0.081584334 -1.13283205 -0.13802695 -1.047281027 0.4461523 -0.18185514 0.5019815
+		 -0.17949253 0.5019815 -0.0095334798 0.4461523 -0.0095334798 0.44591293 -0.19238126
+		 0.50175488 -0.18938085 0.44615224 0.16278911 0.5019815 0.16042554 0.44601676 -0.25605619
+		 0.50183523 -0.25240007 0.50175488 0.17031293 0.44591293 0.17331427 0.50237334 -0.26363063
+		 0.4465507 -0.26721555 0.44601676 0.2369892 0.50183529 0.23333214 0.44678125 -0.36721298
+		 0.5025934 -0.36714554 0.50237334 0.24456461 0.4465507 0.24814953 0.44678125 0.34814599
+		 0.50259346 0.34807855 0.21409884 -0.19998175 0.21420261 -0.13630681 0.15835792 -0.1333074
+		 0.15827745 -0.19632468 0.21396336 -0.12578166 0.15813124 -0.12342 0.1577394 -0.20755714
+		 0.2135649 -0.21114209 0.2139633 0.046540931 0.15813124 0.046540931 0.21333441 -0.31113854
+		 0.15751934 -0.3110711 0.2139633 0.2188635 0.15813118 0.21650183 0.21420261 0.22938865
+		 0.15835786 0.22638544 0.21409884 0.29306358 0.15827751 0.28940654 0.1577394 0.300639
+		 0.2135649 0.30422392 0.21333441 0.40422037 0.15751934 0.40415293 0.4865689 -0.35564405
+		 0.48648924 -0.36721283 0.53572118 -0.36721286 0.52540696 -0.35564402 0.5397321 -0.2672531
+		 0.52540696 -0.24819314 0.55097747 -0.25872329 0.54020631 -0.24819317 0.55137902 -0.19504876
+		 0.54020786 -0.20523721 0.52540696 -0.20523722 0.5404942 -0.18715347 0.5404942 -0.014831871
+		 0.52540696 -0.014831871 0.52540696 0.17557248 0.5404942 0.15749064 0.55137902 0.16538501
+		 0.54020786 0.17557248 0.54020631 0.21852943 0.55097747 0.22905949 0.52540696 0.2185294
+		 0.5397321 0.23759027 0.52540702 0.32598028 0.53572118 0.33754906 0.4865689 0.32598028
+		 0.48648918 0.33754906 0.43504652 -0.35564595 0.43504658 -0.24819317 0.42072141 -0.26725405
+		 0.42473325 -0.36721286 0.42024723 -0.24819316 0.40947706 -0.25872326 0.47388372 -0.35564595
+		 0.47396335 -0.36721286 0.42024663 -0.20523813 0.40907547 -0.19504876 0.43504658 -0.20523815
+		 0.41996032 -0.18715443 0.43504658 -0.014831856 0.41996032 -0.014831856 0.43504658
+		 0.17557251 0.41996032 0.15749067 0.42024663 0.17557251 0.40907547 0.16538501 0.42024723
+		 0.21852946 0.40947706 0.22905952 0.43504658 0.21852946 0.42072141 0.2375903 0.43504658
+		 0.32598031 0.42473325 0.33754912 0.47388372 0.32598031 0.47396335 0.33754912 0.066856049
+		 -0.53076881 0.16761003 -0.53076881 0.16756962 -0.27914983 0.066856109 -0.27914986
+		 0.066856049 -0.027532756 0.16761003 -0.027532697 -0.033897921 -0.53076887 -0.033858418
+		 -0.27914986 -0.033897892 -0.027532756 0.27431983 0.055177141 0.26738045 0.047492228
+		 0.28406376 0.046178468 0.28493524 0.056200951 0.25205314 0.075273395 0.24512464 0.0676037
+		 0.31053677 0.0085014906 0.33674902 -0.0048026652 0.25170389 0.085971333 0.24291696
+		 0.083998494 0.1323953 -0.057142951;
+	setAttr ".uvtk[500:591]" 0.15465111 -0.077254407 0.1978074 -0.11625277 0.30652246
+		 -0.024938107 0.31310815 -0.030961799 0.14647529 0.15674908 0.15363693 0.16467747
+		 0.033745959 0.032002419 0.086889155 -0.10749815 0.10914496 -0.12760961 0.15230125
+		 -0.16660798 0.20301156 -0.13948134 0.064356893 0.24535644 0.047824979 0.24589443
+		 -0.064904332 0.12114781 -0.011760205 -0.018352777 0.041382991 -0.15785334 0.063638799
+		 -0.17796481 0.10679508 -0.21696316 0.16672379 -0.1796407 0.065435141 0.25429466 0.054753453
+		 0.25356415 0.025569171 0.2660059 -0.08716014 0.14125928 -0.1104105 0.070792586 -0.057266355
+		 -0.068707973 -0.071346343 -0.28260002 -0.04909052 -0.30271149 -0.0059342608 -0.34171745
+		 0.130436 -0.21980007 0.032458305 0.28435418 0.032508552 0.27369082 -0.017586142 0.30501187
+		 -0.13031548 0.18025762 -0.1326663 0.090904057 -0.15591666 0.020437419 -0.16999568
+		 -0.19345465 -0.056029897 -0.3103964 -0.078274816 -0.2902697 -0.046093624 -0.31918204
+		 0.0099454783 -0.36645007 0.026925076 -0.33434334 0.022572279 0.28247645 -0.050445497
+		 0.29763776 -0.15395641 0.18309452 -0.17582166 0.12990242 -0.033465892 0.32974449
+		 -0.17817248 0.040548891 -0.26864597 -0.10430926 -0.17715733 -0.20138304 -0.087877274
+		 -0.28206202 -0.055977736 -0.32105976 -0.088954568 -0.29100025 0.033586372 -0.34029093
+		 -0.19024418 0.14293516 -0.057106793 0.30358535 -0.22132783 0.079547226 -0.29090181
+		 -0.084197819 -0.26643735 -0.12070408 -0.22653195 0.10277578 -0.33405715 -0.045207053
+		 -0.29784119 -0.091882735 -0.27557448 -0.11197898 -0.27522331 -0.12267688 -0.3300429
+		 -0.011767477 -0.36026943 -0.031902879 -0.30758509 -0.082884073 -0.30845466 -0.092906535
+		 -0.33662856 -0.0057437718 -0.47631288 0.3170591 -0.41526553 0.35705167 -0.47171068
+		 0.44260269 -0.53269827 0.40264827 -0.35421827 0.39704388 -0.41072315 0.48255605 -0.0085605383
+		 0.18685949 0.013983965 0.1664446 -0.044893801 0.14693648 -0.0223279 0.12654537 -0.081227005
+		 0.10701346 -0.058639646 0.086647093 -0.34736416 0.11211085 -0.36990765 0.1325267
+		 -0.31103089 0.15203488 -0.33359587 0.17242593 -0.27469772 0.19195688 -0.29728407
+		 0.2123242 -0.21627867 -1.087272286 -0.15977472 -1.1727854 -0.098787248 -1.13283193
+		 -0.15523142 -1.047280908 -0.037799716 -1.092877507 -0.094184101 -1.0072873831;
+createNode groupId -n "groupId434";
+	rename -uid "41F149AA-4E59-DEA8-64EB-849F6633BAFF";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts121";
+	rename -uid "0E1BD02D-4E6B-C9E6-EA8D-DCA9BD5581BB";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 12 "f[28:29]" "f[71]" "f[115]" "f[143]" "f[152]" "f[192]" "f[207]" "f[211:212]" "f[231]" "f[240]" "f[243]" "f[249]";
+	setAttr ".irc" -type "componentList" 44 "f[0]" "f[2:3]" "f[11]" "f[20]" "f[23:25]" "f[31]" "f[38]" "f[42]" "f[44:46]" "f[49]" "f[58:61]" "f[63]" "f[65]" "f[74]" "f[77]" "f[82]" "f[88]" "f[93]" "f[97]" "f[100]" "f[110]" "f[116:117]" "f[121]" "f[123]" "f[125:126]" "f[130]" "f[146:147]" "f[159]" "f[167]" "f[169]" "f[171:175]" "f[177:178]" "f[186:188]" "f[191]" "f[195:196]" "f[200:201]" "f[217:219]" "f[222:223]" "f[225:226]" "f[242]" "f[286:288]" "f[295]" "f[304]" "f[310]";
+createNode groupId -n "groupId435";
+	rename -uid "6F0A9BEE-4586-5597-CC7F-399E03D8F836";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts122";
+	rename -uid "F1E10027-4C4E-C6F4-1F07-06A162A61258";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 58 "f[0:4]" "f[11]" "f[18]" "f[20:21]" "f[23:26]" "f[31]" "f[36:42]" "f[44:47]" "f[49:53]" "f[58:63]" "f[65]" "f[67]" "f[70]" "f[72:78]" "f[81:82]" "f[85]" "f[87:94]" "f[97]" "f[99:108]" "f[110:114]" "f[116:121]" "f[123]" "f[125:126]" "f[130:134]" "f[138]" "f[140:142]" "f[145:148]" "f[150]" "f[159]" "f[167]" "f[169]" "f[171:178]" "f[186:188]" "f[191]" "f[195:196]" "f[199:201]" "f[206]" "f[208]" "f[214]" "f[217:219]" "f[222:226]" "f[232]" "f[234]" "f[241:242]" "f[250]" "f[253:269]" "f[275]" "f[277:278]" "f[284]" "f[286:288]" "f[291]" "f[293:295]" "f[298]" "f[300:302]" "f[304:308]" "f[310:312]" "f[321:323]" "f[325:327]";
+createNode groupId -n "groupId436";
+	rename -uid "07031769-4962-1A45-5209-CABB1817DB71";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts123";
+	rename -uid "189A1F37-4FE7-8819-CB8C-48B1537942C2";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 57 "f[5:10]" "f[12:17]" "f[19]" "f[22]" "f[27]" "f[30]" "f[32:35]" "f[43]" "f[48]" "f[54:57]" "f[64]" "f[66]" "f[68]" "f[79:80]" "f[83:84]" "f[86]" "f[95:96]" "f[109]" "f[122]" "f[124]" "f[127:129]" "f[135:136]" "f[139]" "f[144]" "f[149]" "f[151]" "f[153]" "f[155:158]" "f[160:166]" "f[168]" "f[170]" "f[179:185]" "f[189:190]" "f[193:194]" "f[197:198]" "f[202:205]" "f[209:210]" "f[213]" "f[215:216]" "f[220:221]" "f[227:230]" "f[233]" "f[235:239]" "f[244:248]" "f[251:252]" "f[270:274]" "f[276]" "f[279:283]" "f[285]" "f[289:290]" "f[292]" "f[296:297]" "f[299]" "f[303]" "f[309]" "f[313:320]" "f[324]";
+createNode groupId -n "groupId437";
+	rename -uid "4A0E1C8F-45FB-5710-AEE2-1ABAFFE072A8";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts124";
+	rename -uid "BF27BDA5-4564-4729-1436-58924C43F0B1";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 24 "f[1]" "f[4]" "f[7]" "f[12]" "f[14]" "f[20]" "f[22:23]" "f[27]" "f[30]" "f[32]" "f[34]" "f[44]" "f[46:48]" "f[50:51]" "f[55:57]" "f[59:60]" "f[63]" "f[65]" "f[68]" "f[71]" "f[75]" "f[77:78]" "f[97]" "f[104]";
+createNode polyTweakUV -n "polyTweakUV144";
+	rename -uid "9E2D1EF0-4DBE-FD45-2779-07B341F4D312";
+	setAttr ".uopa" yes;
+	setAttr -s 195 ".uvtk";
+	setAttr ".uvtk[14]" -type "float2" -0.37585187 -0.025272846 ;
+	setAttr ".uvtk[15]" -type "float2" -0.23383451 -0.025272846 ;
+	setAttr ".uvtk[16]" -type "float2" -0.23237064 0.1491847 ;
+	setAttr ".uvtk[17]" -type "float2" -0.37400085 0.19466126 ;
+	setAttr ".uvtk[18]" -type "float2" -0.37400085 -0.24520829 ;
+	setAttr ".uvtk[19]" -type "float2" -0.23237064 -0.19973168 ;
+	setAttr ".uvtk[34]" -type "float2" 0.31117439 0.26426578 ;
+	setAttr ".uvtk[35]" -type "float2" 0.3091749 0.0095287561 ;
+	setAttr ".uvtk[36]" -type "float2" 0.48005497 0.0095287561 ;
+	setAttr ".uvtk[37]" -type "float2" 0.48051655 0.2225548 ;
+	setAttr ".uvtk[38]" -type "float2" 0.31117439 -0.24520829 ;
+	setAttr ".uvtk[39]" -type "float2" 0.48051655 -0.20349732 ;
+	setAttr ".uvtk[40]" -type "float2" 0.530976 0.0095287561 ;
+	setAttr ".uvtk[41]" -type "float2" 0.530976 0.21012557 ;
+	setAttr ".uvtk[42]" -type "float2" 0.530976 -0.19106805 ;
+	setAttr ".uvtk[57]" -type "float2" 0.29805571 0.26426578 ;
+	setAttr ".uvtk[58]" -type "float2" 0.1287176 0.2225548 ;
+	setAttr ".uvtk[59]" -type "float2" 0.12917638 0.0095287561 ;
+	setAttr ".uvtk[60]" -type "float2" 0.30005652 0.0095287561 ;
+	setAttr ".uvtk[61]" -type "float2" 0.078254163 0.21012557 ;
+	setAttr ".uvtk[62]" -type "float2" 0.078254163 0.0095287561 ;
+	setAttr ".uvtk[63]" -type "float2" 0.29805571 -0.24520829 ;
+	setAttr ".uvtk[64]" -type "float2" 0.1287176 -0.20349732 ;
+	setAttr ".uvtk[65]" -type "float2" 0.078254163 -0.19106805 ;
+	setAttr ".uvtk[80]" -type "float2" -0.38681465 -0.24524409 ;
+	setAttr ".uvtk[81]" -type "float2" -0.38496763 -0.025308639 ;
+	setAttr ".uvtk[82]" -type "float2" -0.526981 -0.025308639 ;
+	setAttr ".uvtk[83]" -type "float2" -0.52844745 -0.19976747 ;
+	setAttr ".uvtk[84]" -type "float2" -0.38681465 0.1946255 ;
+	setAttr ".uvtk[85]" -type "float2" -0.52844745 0.14914888 ;
+	setAttr ".uvtk[86]" -type "float2" 0.60936749 0.20824277 ;
+	setAttr ".uvtk[87]" -type "float2" 0.61398685 0.15778327 ;
+	setAttr ".uvtk[88]" -type "float2" 0.68866313 0.15778327 ;
+	setAttr ".uvtk[89]" -type "float2" 0.68192744 0.20824277 ;
+	setAttr ".uvtk[90]" -type "float2" 0.62948966 -0.011558771 ;
+	setAttr ".uvtk[91]" -type "float2" 0.71126223 -0.011558771 ;
+	setAttr ".uvtk[92]" -type "float2" 0.24923772 0.41370833 ;
+	setAttr ".uvtk[93]" -type "float2" 0.079895675 0.41370833 ;
+	setAttr ".uvtk[94]" -type "float2" 0.079895675 0.27019531 ;
+	setAttr ".uvtk[95]" -type "float2" 0.24923772 0.28288716 ;
+	setAttr ".uvtk[96]" -type "float2" 0.24923772 0.54452956 ;
+	setAttr ".uvtk[97]" -type "float2" 0.079895675 0.55722135 ;
+	setAttr ".uvtk[98]" -type "float2" 0.2996971 0.41370833 ;
+	setAttr ".uvtk[99]" -type "float2" 0.2996971 0.28667396 ;
+	setAttr ".uvtk[100]" -type "float2" 0.2996971 0.54074812 ;
+	setAttr ".uvtk[107]" -type "float2" 0.36211509 0.41371363 ;
+	setAttr ".uvtk[108]" -type "float2" 0.36211509 0.28289241 ;
+	setAttr ".uvtk[109]" -type "float2" 0.53145331 0.27020067 ;
+	setAttr ".uvtk[110]" -type "float2" 0.53145331 0.41371363 ;
+	setAttr ".uvtk[111]" -type "float2" 0.31165177 0.41371363 ;
+	setAttr ".uvtk[112]" -type "float2" 0.31165177 0.28667659 ;
+	setAttr ".uvtk[113]" -type "float2" 0.53145331 0.55722535 ;
+	setAttr ".uvtk[114]" -type "float2" 0.36211509 0.54453349 ;
+	setAttr ".uvtk[115]" -type "float2" 0.31165177 0.54075205 ;
+	setAttr ".uvtk[116]" -type "float2" 0.50297111 0.61362225 ;
+	setAttr ".uvtk[117]" -type "float2" 0.57764727 0.61362225 ;
+	setAttr ".uvtk[118]" -type "float2" 0.60024631 0.78296047 ;
+	setAttr ".uvtk[119]" -type "float2" 0.5184738 0.78296047 ;
+	setAttr ".uvtk[120]" -type "float2" 0.49835151 0.56315887 ;
+	setAttr ".uvtk[121]" -type "float2" 0.57091159 0.56315887 ;
+	setAttr ".uvtk[128]" -type "float2" 0.48461217 0.73249829 ;
+	setAttr ".uvtk[129]" -type "float2" 0.40993601 0.73249829 ;
+	setAttr ".uvtk[130]" -type "float2" 0.38733697 0.56315625 ;
+	setAttr ".uvtk[131]" -type "float2" 0.46911079 0.56315625 ;
+	setAttr ".uvtk[132]" -type "float2" 0.48923182 0.78295773 ;
+	setAttr ".uvtk[133]" -type "float2" 0.41667038 0.78295773 ;
+	setAttr ".uvtk[134]" -type "float2" -0.072498351 0.11164635 ;
+	setAttr ".uvtk[135]" -type "float2" 0.069131821 0.083902597 ;
+	setAttr ".uvtk[136]" -type "float2" 0.069131821 0.10791248 ;
+	setAttr ".uvtk[137]" -type "float2" -0.072498351 0.14191461 ;
+	setAttr ".uvtk[138]" -type "float2" -0.072498351 -0.022532165 ;
+	setAttr ".uvtk[139]" -type "float2" 0.069131821 -0.022532165 ;
+	setAttr ".uvtk[140]" -type "float2" 0.069131821 0.15410244 ;
+	setAttr ".uvtk[141]" -type "float2" -0.072498351 0.20014399 ;
+	setAttr ".uvtk[142]" -type "float2" -0.072498351 -0.15671062 ;
+	setAttr ".uvtk[143]" -type "float2" 0.069131821 -0.12896696 ;
+	setAttr ".uvtk[144]" -type "float2" -0.072498351 -0.18697891 ;
+	setAttr ".uvtk[145]" -type "float2" 0.069131821 -0.15297684 ;
+	setAttr ".uvtk[146]" -type "float2" -0.072498351 -0.24520829 ;
+	setAttr ".uvtk[147]" -type "float2" 0.069131821 -0.1991668 ;
+	setAttr ".uvtk[154]" -type "float2" 0.37821728 0.56315887 ;
+	setAttr ".uvtk[155]" -type "float2" 0.37359774 0.61362225 ;
+	setAttr ".uvtk[156]" -type "float2" 0.29892147 0.61362225 ;
+	setAttr ".uvtk[157]" -type "float2" 0.30565596 0.56315887 ;
+	setAttr ".uvtk[158]" -type "float2" 0.35809642 0.78296047 ;
+	setAttr ".uvtk[159]" -type "float2" 0.27632242 0.78296047 ;
+	setAttr ".uvtk[166]" -type "float2" -0.0816181 -0.15670931 ;
+	setAttr ".uvtk[167]" -type "float2" -0.0816181 -0.022530824 ;
+	setAttr ".uvtk[168]" -type "float2" -0.22325096 -0.022530824 ;
+	setAttr ".uvtk[169]" -type "float2" -0.22325096 -0.12896565 ;
+	setAttr ".uvtk[170]" -type "float2" -0.0816181 0.11164767 ;
+	setAttr ".uvtk[171]" -type "float2" -0.22325096 0.083902597 ;
+	setAttr ".uvtk[172]" -type "float2" -0.0816181 -0.18697891 ;
+	setAttr ".uvtk[173]" -type "float2" -0.22325096 -0.15297553 ;
+	setAttr ".uvtk[174]" -type "float2" -0.0816181 0.14191854 ;
+	setAttr ".uvtk[175]" -type "float2" -0.22325096 0.10791379 ;
+	setAttr ".uvtk[176]" -type "float2" -0.0816181 -0.24520829 ;
+	setAttr ".uvtk[177]" -type "float2" -0.22325096 -0.1991615 ;
+	setAttr ".uvtk[178]" -type "float2" -0.0816181 0.2001453 ;
+	setAttr ".uvtk[179]" -type "float2" -0.22325096 0.15410244 ;
+	setAttr ".uvtk[180]" -type "float2" -0.19498086 -0.73698658 ;
+	setAttr ".uvtk[181]" -type "float2" -0.22996676 -0.77178818 ;
+	setAttr ".uvtk[182]" -type "float2" -0.14819287 -0.77178818 ;
+	setAttr ".uvtk[183]" -type "float2" -0.13675413 -0.73698658 ;
+	setAttr ".uvtk[184]" -type "float2" -0.19507766 -0.5170511 ;
+	setAttr ".uvtk[185]" -type "float2" -0.23007816 -0.5170511 ;
+	setAttr ".uvtk[186]" -type "float2" -0.11581641 -0.77178818 ;
+	setAttr ".uvtk[187]" -type "float2" -0.10648319 -0.73698658 ;
+	setAttr ".uvtk[188]" -type "float2" -0.19498086 -0.29711699 ;
+	setAttr ".uvtk[189]" -type "float2" -0.22996676 -0.26231408 ;
+	setAttr ".uvtk[190]" -type "float2" -0.14819287 -0.78296047 ;
+	setAttr ".uvtk[191]" -type "float2" -0.11581641 -0.78294331 ;
+	setAttr ".uvtk[192]" -type "float2" 0.027695239 -0.77178818 ;
+	setAttr ".uvtk[193]" -type "float2" 0.027695239 -0.73698658 ;
+	setAttr ".uvtk[194]" -type "float2" -0.13675413 -0.29711699 ;
+	setAttr ".uvtk[195]" -type "float2" -0.14819287 -0.26231408 ;
+	setAttr ".uvtk[196]" -type "float2" 0.1618737 -0.73698658 ;
+	setAttr ".uvtk[197]" -type "float2" 0.17120832 -0.77178818 ;
+	setAttr ".uvtk[198]" -type "float2" -0.10648319 -0.29711699 ;
+	setAttr ".uvtk[199]" -type "float2" -0.11581641 -0.26231408 ;
+	setAttr ".uvtk[200]" -type "float2" 0.19214457 -0.73698658 ;
+	setAttr ".uvtk[201]" -type "float2" 0.20358473 -0.77178818 ;
+	setAttr ".uvtk[202]" -type "float2" 0.027695239 -0.29711699 ;
+	setAttr ".uvtk[203]" -type "float2" 0.027695239 -0.26231408 ;
+	setAttr ".uvtk[204]" -type "float2" -0.14819287 -0.25114185 ;
+	setAttr ".uvtk[205]" -type "float2" -0.11581641 -0.25116038 ;
+	setAttr ".uvtk[206]" -type "float2" 0.20358473 -0.78296047 ;
+	setAttr ".uvtk[207]" -type "float2" 0.17120832 -0.78294331 ;
+	setAttr ".uvtk[208]" -type "float2" 0.25037134 -0.73698658 ;
+	setAttr ".uvtk[209]" -type "float2" 0.28535724 -0.77178818 ;
+	setAttr ".uvtk[210]" -type "float2" 0.1618737 -0.29711699 ;
+	setAttr ".uvtk[211]" -type "float2" 0.17120832 -0.26231408 ;
+	setAttr ".uvtk[212]" -type "float2" 0.25046688 -0.5170511 ;
+	setAttr ".uvtk[213]" -type "float2" 0.28546864 -0.5170511 ;
+	setAttr ".uvtk[214]" -type "float2" 0.19214457 -0.29711699 ;
+	setAttr ".uvtk[215]" -type "float2" 0.20358473 -0.26231408 ;
+	setAttr ".uvtk[216]" -type "float2" 0.25037134 -0.29711699 ;
+	setAttr ".uvtk[217]" -type "float2" 0.28535724 -0.26231408 ;
+	setAttr ".uvtk[218]" -type "float2" 0.20358473 -0.25114185 ;
+	setAttr ".uvtk[219]" -type "float2" 0.17120832 -0.25116038 ;
+	setAttr ".uvtk[220]" -type "float2" -0.56629741 0.1709047 ;
+	setAttr ".uvtk[221]" -type "float2" -0.56629741 -0.036936998 ;
+	setAttr ".uvtk[222]" -type "float2" -0.53756726 -0.036936998 ;
+	setAttr ".uvtk[223]" -type "float2" -0.53756726 0.17137134 ;
+	setAttr ".uvtk[224]" -type "float2" -0.56629741 -0.24477869 ;
+	setAttr ".uvtk[225]" -type "float2" -0.53756726 -0.2452454 ;
+	setAttr ".uvtk[226]" -type "float2" -0.27932703 0.48922247 ;
+	setAttr ".uvtk[227]" -type "float2" -0.27932703 0.38278782 ;
+	setAttr ".uvtk[228]" -type "float2" -0.10486823 0.38278782 ;
+	setAttr ".uvtk[229]" -type "float2" -0.10486823 0.48926771 ;
+	setAttr ".uvtk[230]" -type "float2" -0.27932703 0.27635294 ;
+	setAttr ".uvtk[231]" -type "float2" -0.10486823 0.27630794 ;
+	setAttr ".uvtk[232]" -type "float2" 0.069589257 0.38278782 ;
+	setAttr ".uvtk[233]" -type "float2" 0.069589257 0.48922247 ;
+	setAttr ".uvtk[234]" -type "float2" -0.27932703 0.51323241 ;
+	setAttr ".uvtk[235]" -type "float2" -0.10486823 0.51329088 ;
+	setAttr ".uvtk[236]" -type "float2" -0.27932703 0.25234312 ;
+	setAttr ".uvtk[237]" -type "float2" -0.10486823 0.25228477 ;
+	setAttr ".uvtk[238]" -type "float2" 0.069589257 0.27635294 ;
+	setAttr ".uvtk[239]" -type "float2" 0.069589257 0.51323241 ;
+	setAttr ".uvtk[240]" -type "float2" -0.27932703 0.55942231 ;
+	setAttr ".uvtk[241]" -type "float2" -0.10486823 0.55949664 ;
+	setAttr ".uvtk[242]" -type "float2" -0.27932703 0.20615572 ;
+	setAttr ".uvtk[243]" -type "float2" -0.10486823 0.20607883 ;
+	setAttr ".uvtk[244]" -type "float2" 0.069589257 0.25234312 ;
+	setAttr ".uvtk[245]" -type "float2" 0.069589257 0.55942231 ;
+	setAttr ".uvtk[246]" -type "float2" 0.069589257 0.20615572 ;
+	setAttr ".uvtk[247]" -type "float2" -0.5754171 0.1709047 ;
+	setAttr ".uvtk[248]" -type "float2" -0.60414594 0.17137134 ;
+	setAttr ".uvtk[249]" -type "float2" -0.60414594 -0.036936998 ;
+	setAttr ".uvtk[250]" -type "float2" -0.5754171 -0.036936998 ;
+	setAttr ".uvtk[251]" -type "float2" -0.5754171 -0.24477869 ;
+	setAttr ".uvtk[252]" -type "float2" -0.60414594 -0.2452454 ;
+	setAttr ".uvtk[253]" -type "float2" -0.71126235 0.20056301 ;
+	setAttr ".uvtk[254]" -type "float2" -0.58422393 0.20056301 ;
+	setAttr ".uvtk[255]" -type "float2" -0.58422393 0.40115982 ;
+	setAttr ".uvtk[256]" -type "float2" -0.71126235 0.40115982 ;
+	setAttr ".uvtk[257]" -type "float2" -0.45718685 0.20056301 ;
+	setAttr ".uvtk[258]" -type "float2" -0.45718685 0.40115982 ;
+	setAttr ".uvtk[259]" -type "float2" -0.71126235 0.60175663 ;
+	setAttr ".uvtk[260]" -type "float2" -0.58422393 0.60175663 ;
+	setAttr ".uvtk[261]" -type "float2" -0.45718685 0.60175663 ;
+	setAttr ".uvtk[262]" -type "float2" -0.37478849 0.20059484 ;
+	setAttr ".uvtk[263]" -type "float2" -0.37478849 0.40119165 ;
+	setAttr ".uvtk[264]" -type "float2" -0.44734985 0.40119165 ;
+	setAttr ".uvtk[265]" -type "float2" -0.44734985 0.20059484 ;
+	setAttr ".uvtk[266]" -type "float2" -0.37478849 0.60178846 ;
+	setAttr ".uvtk[267]" -type "float2" -0.44734985 0.60178846 ;
+	setAttr ".uvtk[268]" -type "float2" -0.36333641 0.20059484 ;
+	setAttr ".uvtk[269]" -type "float2" -0.2907764 0.20059484 ;
+	setAttr ".uvtk[270]" -type "float2" -0.2907764 0.40119165 ;
+	setAttr ".uvtk[271]" -type "float2" -0.36333641 0.40119165 ;
+	setAttr ".uvtk[272]" -type "float2" -0.36333641 0.60178846 ;
+	setAttr ".uvtk[273]" -type "float2" -0.2907764 0.60178846 ;
+createNode groupId -n "groupId438";
+	rename -uid "6335890E-4492-9229-FBE9-83B5D882D42C";
+	setAttr ".ihi" 0;
+createNode groupParts -n "groupParts125";
+	rename -uid "036812AD-4FE8-96CF-100E-8BACFE285C54";
+	setAttr ".ihi" 0;
+	setAttr ".ic" -type "componentList" 2 "f[70:73]" "f[78:81]";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "5099F576-465B-14DA-E47A-22BD3FC64DA2";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -6821.4283003693636 -8400.9816895063996 ;
+	setAttr ".tgi[0].vh" -type "double2" 6973.8092466952421 8419.2356570350239 ;
+	setAttr ".tgi[0].ni[0].x" 112.85713958740234;
+	setAttr ".tgi[0].ni[0].y" -38.571430206298828;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -280537,7 +282371,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 79 ".st";
+	setAttr -s 128 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -280550,7 +282384,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 81 ".s";
+	setAttr -s 138 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -280558,12 +282392,12 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 151 ".u";
+	setAttr -s 317 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 	setAttr -s 32 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 135 ".tx";
+	setAttr -s 251 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -280577,7 +282411,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".vwm";
 	setAttr -k on ".tpv";
 	setAttr -k on ".uit";
-	setAttr -s 117 ".dsm";
+	setAttr -s 115 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -280586,7 +282420,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 69 ".gn";
+	setAttr -s 67 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -280775,19 +282609,31 @@ connectAttr "Material_Ref:standardSurface4SG.mwc" "polySurfaceShape150.iog.og[0]
 connectAttr "groupId430.id" "polySurfaceShape150.iog.og[0].gid";
 connectAttr "polyTweakUV141.out" "polySurfaceShape150.i";
 connectAttr "polyTweakUV141.uvtk[0]" "polySurfaceShape150.uvst[0].uvtw";
-connectAttr "Material_Ref:Brown_Paint_MatSG.mwc" "polySurfaceShape151.iog.og[0].gco"
-		;
-connectAttr "groupId429.id" "polySurfaceShape151.iog.og[0].gid";
 connectAttr "polyTweakUV134.out" "polySurfaceShape151.i";
 connectAttr "polyTweakUV134.uvtk[0]" "polySurfaceShape151.uvst[0].uvtw";
 connectAttr "polyTweakUV136.out" "polySurfaceShape152.i";
 connectAttr "polyTweakUV136.uvtk[0]" "polySurfaceShape152.uvst[0].uvtw";
-connectAttr "groupId164.id" "polySurfaceShape147.iog.og[0].gid";
+connectAttr "groupId432.id" "polySurfaceShape147.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "polySurfaceShape147.iog.og[0].gco";
-connectAttr "groupId165.id" "polySurfaceShape148.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "polySurfaceShape148.iog.og[0].gco";
-connectAttr "groupId159.id" "polySurfaceShape144.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "polySurfaceShape144.iog.og[0].gco";
+connectAttr "groupId434.id" "polySurfaceShape147.iog.og[1].gid";
+connectAttr "Material_Ref3:Stone_MatSG.mwc" "polySurfaceShape147.iog.og[1].gco";
+connectAttr "groupId435.id" "polySurfaceShape147.iog.og[2].gid";
+connectAttr "Material_Ref3:Gold_Metal_MatSG.mwc" "polySurfaceShape147.iog.og[2].gco"
+		;
+connectAttr "groupId436.id" "polySurfaceShape147.iog.og[3].gid";
+connectAttr "Material_Ref3:standardSurface3SG.mwc" "polySurfaceShape147.iog.og[3].gco"
+		;
+connectAttr "groupParts123.og" "polySurfaceShape147.i";
+connectAttr "polyTweakUV143.uvtk[0]" "polySurfaceShape147.uvst[0].uvtw";
+connectAttr "polyAutoProj146.out" "polySurfaceShape148.i";
+connectAttr "groupId433.id" "polySurfaceShape144.iog.og[0].gid";
+connectAttr "Material_Ref3:standardSurface3SG.mwc" "polySurfaceShape144.iog.og[0].gco"
+		;
+connectAttr "groupId437.id" "polySurfaceShape144.iog.og[1].gid";
+connectAttr "Material_Ref3:Gold_Metal_MatSG.mwc" "polySurfaceShape144.iog.og[1].gco"
+		;
+connectAttr "polyTweakUV144.out" "polySurfaceShape144.i";
+connectAttr "polyTweakUV144.uvtk[0]" "polySurfaceShape144.uvst[0].uvtw";
 connectAttr "groupId160.id" "|Treasure_Set|Treasure_Chest|Bottom_Chest|polySurface134|polySurfaceShape145.iog.og[0].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|Treasure_Set|Treasure_Chest|Bottom_Chest|polySurface134|polySurfaceShape145.iog.og[0].gco"
@@ -280920,10 +282766,13 @@ connectAttr "polyTweakUV11.out" "|Treasure_Set|Back_Wall|Rim|polySurface55|polyS
 		;
 connectAttr "polyTweakUV11.uvtk[0]" "|Treasure_Set|Back_Wall|Rim|polySurface55|polySurfaceShape66.uvst[0].uvtw"
 		;
-connectAttr "Material_Ref:standardSurface5SG.mwc" "polySurfaceShape67.iog.og[0].gco"
+connectAttr "Material_Ref1:standardSurface5SG.mwc" "polySurfaceShape67.iog.og[0].gco"
 		;
 connectAttr "groupId431.id" "polySurfaceShape67.iog.og[0].gid";
-connectAttr "polyTweakUV142.out" "polySurfaceShape67.i";
+connectAttr "groupId438.id" "polySurfaceShape67.iog.og[1].gid";
+connectAttr "Material_Ref1:standardSurface5SG.mwc" "polySurfaceShape67.iog.og[1].gco"
+		;
+connectAttr "groupParts125.og" "polySurfaceShape67.i";
 connectAttr "polyTweakUV142.uvtk[0]" "polySurfaceShape67.uvst[0].uvtw";
 connectAttr "FrontWall.di" "|Treasure_Set|Front_Wall.do";
 connectAttr "Material_Ref:standardSurface5SG.mwc" "polySurfaceShape52.iog.og[0].gco"
@@ -282152,6 +284001,118 @@ relationship "link" ":lightLinker1" "PlaneFBXASC046020SG.message" ":defaultLight
 relationship "link" ":lightLinker1" "PlaneFBXASC046022SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "PlaneFBXASC046029SG.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "crystals3SG1.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars1:polySurface130SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars1:polySurface131SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars1:polySurface132SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars2:polySurface130SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars2:polySurface131SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars2:polySurface132SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars3:polySurface130SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars3:polySurface131SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars3:polySurface132SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars4:polySurface130SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars4:polySurface131SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Pillars4:polySurface132SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem:lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem:Lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem1:lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem1:Lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem1:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem2:lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem2:Lambert1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem2:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "DiamondGem2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip4:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip5:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip6:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip7:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip8:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip9:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip10:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip11:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip12:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip13:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip14:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip15:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Coin_WithLip16:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "crystalFormations:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "crystalFormations:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "crystalFormations:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Spiky_rock:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Stalagmite_1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Stalagmite_2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Stalagmite_3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Stalagmite_4:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref1:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref2:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "Material_Ref3:Gold_Metal_MatSG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "bag_of_gold1SG.message" ":defaultLightSet.message";
@@ -282168,6 +284129,118 @@ relationship "shadowLink" ":lightLinker1" "PlaneFBXASC046020SG.message" ":defaul
 relationship "shadowLink" ":lightLinker1" "PlaneFBXASC046022SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "PlaneFBXASC046029SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "crystals3SG1.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars1:polySurface130SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars1:polySurface131SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars1:polySurface132SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars2:polySurface130SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars2:polySurface131SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars2:polySurface132SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars3:polySurface130SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars3:polySurface131SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars3:polySurface132SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars4:polySurface130SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars4:polySurface131SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Pillars4:polySurface132SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem:lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem:Lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem1:lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem1:Lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem1:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem2:lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem2:Lambert1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem2:Standard_Surface1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "DiamondGem2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip4:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip5:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip6:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip7:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip8:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip9:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip10:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip11:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip12:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip13:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip14:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip15:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Coin_WithLip16:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "crystalFormations:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "crystalFormations:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "crystalFormations:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Spiky_rock:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Stalagmite_1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Stalagmite_2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Stalagmite_3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Stalagmite_4:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref1:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref2:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:standardSurface2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:displacementShader1SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:displacementShader2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Cave2Displacement5.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:pasted__displacementShader4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:pasted__displacementShader4SG1.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:displacementShader5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:displacementShader6SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:standardSurface3SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:standardSurface4SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Blue_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:standardSurface5SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Brown_Paint_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Stone_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Generic_Metal_MatSG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "Material_Ref3:Gold_Metal_MatSG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "bag_of_gold.oc" "bag_of_gold1SG.ss";
@@ -282280,6 +284353,10 @@ connectAttr "polySeparate1.out[3]" "groupParts5.ig";
 connectAttr "groupId6.id" "groupParts5.gi";
 connectAttr "sharedReferenceNode.sr" "SkeletonRN.sr";
 connectAttr "_UNKNOWN_REF_NODE_.ur" "SkeletonRN.ur";
+connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
+		 -na;
+connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
+connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[3]" "BackWall.id";
 connectAttr "layerManager.dli[4]" "GoldBags.id";
 connectAttr "layerManager.dli[5]" "GoldCoins.id";
@@ -283044,10 +285121,8 @@ connectAttr "polyAutoProj130.out" "polyTweakUV129.ip";
 connectAttr "polyAutoProj128.out" "polyTweakUV130.ip";
 connectAttr "polyAutoProj135.out" "polyTweakUV131.ip";
 connectAttr "polyAutoProj132.out" "polyTweakUV132.ip";
-connectAttr "groupParts116.og" "polyAutoProj139.ip";
+connectAttr "polySurfaceShape305.o" "polyAutoProj139.ip";
 connectAttr "polySurfaceShape151.wm" "polyAutoProj139.mp";
-connectAttr "polySurfaceShape305.o" "groupParts116.ig";
-connectAttr "groupId429.id" "groupParts116.gi";
 connectAttr "polyAutoProj139.out" "polyMapSew3.ip";
 connectAttr "polyMapSew3.out" "polyTweakUV133.ip";
 connectAttr "polyTweakUV133.out" "polyMapCut1.ip";
@@ -285076,8 +287151,6 @@ connectAttr "|Treasure_Set|CobbleStone_Path_Group|CobbleStone_13|floor1|polySurf
 		 -na;
 connectAttr "|Treasure_Set|CobbleStone_Path_Group|CobbleStone_13|floor1|polySurface127|polySurfaceShape127.iog.og[0]" "Material_Ref:standardSurface5SG.dsm"
 		 -na;
-connectAttr "polySurfaceShape67.iog.og[0]" "Material_Ref:standardSurface5SG.dsm"
-		 -na;
 connectAttr "groupId321.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "groupId322.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "groupId323.msg" "Material_Ref:standardSurface5SG.gn" -na;
@@ -285184,7 +287257,6 @@ connectAttr "groupId425.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "groupId426.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "groupId427.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "groupId428.msg" "Material_Ref:standardSurface5SG.gn" -na;
-connectAttr "groupId431.msg" "Material_Ref:standardSurface5SG.gn" -na;
 connectAttr "Material_Ref:standardSurface5SG.msg" "Material_Ref:materialInfo11.sg"
 		;
 connectAttr "Material_Ref:Marble_Mat.msg" "Material_Ref:materialInfo11.m";
@@ -285211,8 +287283,6 @@ connectAttr "Material_Ref:place2dTexture13.vt3" "Material_Ref:file13.vt3";
 connectAttr "Material_Ref:place2dTexture13.vc1" "Material_Ref:file13.vc1";
 connectAttr "Material_Ref:place2dTexture13.o" "Material_Ref:file13.uv";
 connectAttr "Material_Ref:place2dTexture13.ofs" "Material_Ref:file13.fs";
-connectAttr "Material_Ref:pasted__aiMultiply3.out" "Material_Ref:Brown_Paint_Mat.bc"
-		;
 connectAttr "Material_Ref:pasted__pasted__file12.oc" "Material_Ref:pasted__aiMultiply3.input1"
 		;
 connectAttr "Material_Ref:pasted__colorConstant1.oc" "Material_Ref:pasted__aiMultiply3.input2"
@@ -285261,24 +287331,13 @@ connectAttr "Material_Ref:pasted__pasted__place2dTexture12.o" "Material_Ref:past
 		;
 connectAttr "Material_Ref:pasted__pasted__place2dTexture12.ofs" "Material_Ref:pasted__pasted__file12.fs"
 		;
-connectAttr "Material_Ref:Brown_Paint_Mat.oc" "Material_Ref:Brown_Paint_MatSG.ss"
-		;
-connectAttr "polySurfaceShape151.iog.og[0]" "Material_Ref:Brown_Paint_MatSG.dsm"
-		 -na;
-connectAttr "polySurfaceShape149.iog" "Material_Ref:Brown_Paint_MatSG.dsm" -na;
-connectAttr "groupId429.msg" "Material_Ref:Brown_Paint_MatSG.gn" -na;
 connectAttr "Material_Ref:Brown_Paint_MatSG.msg" "Material_Ref:materialInfo12.sg"
 		;
-connectAttr "Material_Ref:Brown_Paint_Mat.msg" "Material_Ref:materialInfo12.m";
-connectAttr "Material_Ref:pasted__pasted__file12.msg" "Material_Ref:materialInfo12.t"
-		 -na;
 connectAttr "Material_Ref:pasted__aiMultiply3.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
 connectAttr "Material_Ref:pasted__colorConstant1.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
 connectAttr "Material_Ref:pasted__pasted__place2dTexture12.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "Material_Ref:Brown_Paint_Mat.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
 connectAttr "Material_Ref:pasted__pasted__file12.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
 		;
@@ -286721,8 +288780,7 @@ connectAttr "Coin_WithLip13:DoubloonShape.iog" "Coin_WithLip13:standardSurface2S
 connectAttr "Coin_WithLip13:standardSurface2SG.msg" "Coin_WithLip13:materialInfo1.sg"
 		;
 connectAttr "Coin_WithLip13:DoubloonMat.msg" "Coin_WithLip13:materialInfo1.m";
-connectAttr "Coin_WithLip13:DoubloonMat.msg" "Coin_WithLip13:materialInfo1.t" -na
-		;
+connectAttr "Coin_WithLip13:file1.msg" "Coin_WithLip13:materialInfo1.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "Coin_WithLip13:file1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "Coin_WithLip13:file1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "Coin_WithLip13:file1.cmcp";
@@ -288279,8 +290337,8 @@ connectAttr "crystalFormations:standardSurface3SG.msg" "crystalFormations:materi
 		;
 connectAttr "crystalFormations:ShortCrystal_Mat_01.msg" "crystalFormations:materialInfo2.m"
 		;
-connectAttr "crystalFormations:ShortCrystal_Mat_01.msg" "crystalFormations:materialInfo2.t"
-		 -na;
+connectAttr "crystalFormations:file3.msg" "crystalFormations:materialInfo2.t" -na
+		;
 connectAttr ":defaultColorMgtGlobals.cme" "crystalFormations:file3.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "crystalFormations:file3.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "crystalFormations:file3.cmcp";
@@ -289182,7 +291240,7 @@ connectAttr "Rock_Shape2.iog" "Spiky_rock:standardSurface2SG.dsm" -na;
 connectAttr "Rock_Shape4.iog" "Spiky_rock:standardSurface2SG.dsm" -na;
 connectAttr "Spiky_rock:standardSurface2SG.msg" "Spiky_rock:materialInfo1.sg";
 connectAttr "Spiky_rock:Spikey_Rocks_Mat.msg" "Spiky_rock:materialInfo1.m";
-connectAttr "Spiky_rock:Spikey_Rocks_Mat.msg" "Spiky_rock:materialInfo1.t" -na;
+connectAttr "Spiky_rock:file1.msg" "Spiky_rock:materialInfo1.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "Spiky_rock:file1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "Spiky_rock:file1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "Spiky_rock:file1.cmcp";
@@ -289446,8 +291504,7 @@ connectAttr "Stalagmite_1:LowMidShape.iog" "Stalagmite_1:standardSurface2SG.dsm"
 connectAttr "Stalagmite_1:standardSurface2SG.msg" "Stalagmite_1:materialInfo1.sg"
 		;
 connectAttr "Stalagmite_1:Stalagmite_1_Mat.msg" "Stalagmite_1:materialInfo1.m";
-connectAttr "Stalagmite_1:Stalagmite_1_Mat.msg" "Stalagmite_1:materialInfo1.t" -na
-		;
+connectAttr "Stalagmite_1:file1.msg" "Stalagmite_1:materialInfo1.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "Stalagmite_1:file1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "Stalagmite_1:file1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "Stalagmite_1:file1.cmcp";
@@ -289523,8 +291580,7 @@ connectAttr "Stalagmite_2:MidHighRightShape.iog" "Stalagmite_2:standardSurface2S
 connectAttr "Stalagmite_2:standardSurface2SG.msg" "Stalagmite_2:materialInfo1.sg"
 		;
 connectAttr "Stalagmite_2:Stalagmite_2_Mat.msg" "Stalagmite_2:materialInfo1.m";
-connectAttr "Stalagmite_2:Stalagmite_2_Mat.msg" "Stalagmite_2:materialInfo1.t" -na
-		;
+connectAttr "Stalagmite_2:file1.msg" "Stalagmite_2:materialInfo1.t" -na;
 connectAttr ":defaultColorMgtGlobals.cme" "Stalagmite_2:file1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "Stalagmite_2:file1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "Stalagmite_2:file1.cmcp";
@@ -289923,6 +291979,4762 @@ connectAttr "Stalagmite_4:place2dTexture1.msg" "Stalagmite_4:hyperShadePrimaryNo
 		;
 connectAttr "Stalagmite_4:file1.msg" "Stalagmite_4:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
+connectAttr "Material_Ref1:aiMultiply1.out" "Material_Ref1:Appartment_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref1:file2.oa" "Material_Ref1:Appartment_Floor_Mat.sr";
+connectAttr "Material_Ref1:aiNormalMap1.out" "Material_Ref1:Appartment_Floor_Mat.n"
+		;
+connectAttr "Material_Ref1:Appartment_Floor_Mat.oc" "Material_Ref1:standardSurface2SG.ss"
+		;
+connectAttr "Material_Ref1:AppermentFloorDisplacement.d" "Material_Ref1:standardSurface2SG.ds"
+		;
+connectAttr "Material_Ref1:standardSurface2SG.msg" "Material_Ref1:materialInfo1.sg"
+		;
+connectAttr "Material_Ref1:Appartment_Floor_Mat.msg" "Material_Ref1:materialInfo1.m"
+		;
+connectAttr "Material_Ref1:file1.msg" "Material_Ref1:materialInfo1.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file1.ws";
+connectAttr "Material_Ref1:place2dTexture1.c" "Material_Ref1:file1.c";
+connectAttr "Material_Ref1:place2dTexture1.tf" "Material_Ref1:file1.tf";
+connectAttr "Material_Ref1:place2dTexture1.rf" "Material_Ref1:file1.rf";
+connectAttr "Material_Ref1:place2dTexture1.mu" "Material_Ref1:file1.mu";
+connectAttr "Material_Ref1:place2dTexture1.mv" "Material_Ref1:file1.mv";
+connectAttr "Material_Ref1:place2dTexture1.s" "Material_Ref1:file1.s";
+connectAttr "Material_Ref1:place2dTexture1.wu" "Material_Ref1:file1.wu";
+connectAttr "Material_Ref1:place2dTexture1.wv" "Material_Ref1:file1.wv";
+connectAttr "Material_Ref1:place2dTexture1.re" "Material_Ref1:file1.re";
+connectAttr "Material_Ref1:place2dTexture1.of" "Material_Ref1:file1.of";
+connectAttr "Material_Ref1:place2dTexture1.r" "Material_Ref1:file1.ro";
+connectAttr "Material_Ref1:place2dTexture1.n" "Material_Ref1:file1.n";
+connectAttr "Material_Ref1:place2dTexture1.vt1" "Material_Ref1:file1.vt1";
+connectAttr "Material_Ref1:place2dTexture1.vt2" "Material_Ref1:file1.vt2";
+connectAttr "Material_Ref1:place2dTexture1.vt3" "Material_Ref1:file1.vt3";
+connectAttr "Material_Ref1:place2dTexture1.vc1" "Material_Ref1:file1.vc1";
+connectAttr "Material_Ref1:place2dTexture1.o" "Material_Ref1:file1.uv";
+connectAttr "Material_Ref1:place2dTexture1.ofs" "Material_Ref1:file1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file2.ws";
+connectAttr "Material_Ref1:place2dTexture2.c" "Material_Ref1:file2.c";
+connectAttr "Material_Ref1:place2dTexture2.tf" "Material_Ref1:file2.tf";
+connectAttr "Material_Ref1:place2dTexture2.rf" "Material_Ref1:file2.rf";
+connectAttr "Material_Ref1:place2dTexture2.mu" "Material_Ref1:file2.mu";
+connectAttr "Material_Ref1:place2dTexture2.mv" "Material_Ref1:file2.mv";
+connectAttr "Material_Ref1:place2dTexture2.s" "Material_Ref1:file2.s";
+connectAttr "Material_Ref1:place2dTexture2.wu" "Material_Ref1:file2.wu";
+connectAttr "Material_Ref1:place2dTexture2.wv" "Material_Ref1:file2.wv";
+connectAttr "Material_Ref1:place2dTexture2.re" "Material_Ref1:file2.re";
+connectAttr "Material_Ref1:place2dTexture2.of" "Material_Ref1:file2.of";
+connectAttr "Material_Ref1:place2dTexture2.r" "Material_Ref1:file2.ro";
+connectAttr "Material_Ref1:place2dTexture2.n" "Material_Ref1:file2.n";
+connectAttr "Material_Ref1:place2dTexture2.vt1" "Material_Ref1:file2.vt1";
+connectAttr "Material_Ref1:place2dTexture2.vt2" "Material_Ref1:file2.vt2";
+connectAttr "Material_Ref1:place2dTexture2.vt3" "Material_Ref1:file2.vt3";
+connectAttr "Material_Ref1:place2dTexture2.vc1" "Material_Ref1:file2.vc1";
+connectAttr "Material_Ref1:place2dTexture2.o" "Material_Ref1:file2.uv";
+connectAttr "Material_Ref1:place2dTexture2.ofs" "Material_Ref1:file2.fs";
+connectAttr "Material_Ref1:file1.oc" "Material_Ref1:aiMultiply1.input1";
+connectAttr "Material_Ref1:file3.oc" "Material_Ref1:aiMultiply1.input2";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file3.ws";
+connectAttr "Material_Ref1:place2dTexture3.c" "Material_Ref1:file3.c";
+connectAttr "Material_Ref1:place2dTexture3.tf" "Material_Ref1:file3.tf";
+connectAttr "Material_Ref1:place2dTexture3.rf" "Material_Ref1:file3.rf";
+connectAttr "Material_Ref1:place2dTexture3.mu" "Material_Ref1:file3.mu";
+connectAttr "Material_Ref1:place2dTexture3.mv" "Material_Ref1:file3.mv";
+connectAttr "Material_Ref1:place2dTexture3.s" "Material_Ref1:file3.s";
+connectAttr "Material_Ref1:place2dTexture3.wu" "Material_Ref1:file3.wu";
+connectAttr "Material_Ref1:place2dTexture3.wv" "Material_Ref1:file3.wv";
+connectAttr "Material_Ref1:place2dTexture3.re" "Material_Ref1:file3.re";
+connectAttr "Material_Ref1:place2dTexture3.of" "Material_Ref1:file3.of";
+connectAttr "Material_Ref1:place2dTexture3.r" "Material_Ref1:file3.ro";
+connectAttr "Material_Ref1:place2dTexture3.n" "Material_Ref1:file3.n";
+connectAttr "Material_Ref1:place2dTexture3.vt1" "Material_Ref1:file3.vt1";
+connectAttr "Material_Ref1:place2dTexture3.vt2" "Material_Ref1:file3.vt2";
+connectAttr "Material_Ref1:place2dTexture3.vt3" "Material_Ref1:file3.vt3";
+connectAttr "Material_Ref1:place2dTexture3.vc1" "Material_Ref1:file3.vc1";
+connectAttr "Material_Ref1:place2dTexture3.o" "Material_Ref1:file3.uv";
+connectAttr "Material_Ref1:place2dTexture3.ofs" "Material_Ref1:file3.fs";
+connectAttr "Material_Ref1:file4.oc" "Material_Ref1:aiNormalMap1.input";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file4.ws";
+connectAttr "Material_Ref1:place2dTexture4.c" "Material_Ref1:file4.c";
+connectAttr "Material_Ref1:place2dTexture4.tf" "Material_Ref1:file4.tf";
+connectAttr "Material_Ref1:place2dTexture4.rf" "Material_Ref1:file4.rf";
+connectAttr "Material_Ref1:place2dTexture4.mu" "Material_Ref1:file4.mu";
+connectAttr "Material_Ref1:place2dTexture4.mv" "Material_Ref1:file4.mv";
+connectAttr "Material_Ref1:place2dTexture4.s" "Material_Ref1:file4.s";
+connectAttr "Material_Ref1:place2dTexture4.wu" "Material_Ref1:file4.wu";
+connectAttr "Material_Ref1:place2dTexture4.wv" "Material_Ref1:file4.wv";
+connectAttr "Material_Ref1:place2dTexture4.re" "Material_Ref1:file4.re";
+connectAttr "Material_Ref1:place2dTexture4.of" "Material_Ref1:file4.of";
+connectAttr "Material_Ref1:place2dTexture4.r" "Material_Ref1:file4.ro";
+connectAttr "Material_Ref1:place2dTexture4.n" "Material_Ref1:file4.n";
+connectAttr "Material_Ref1:place2dTexture4.vt1" "Material_Ref1:file4.vt1";
+connectAttr "Material_Ref1:place2dTexture4.vt2" "Material_Ref1:file4.vt2";
+connectAttr "Material_Ref1:place2dTexture4.vt3" "Material_Ref1:file4.vt3";
+connectAttr "Material_Ref1:place2dTexture4.vc1" "Material_Ref1:file4.vc1";
+connectAttr "Material_Ref1:place2dTexture4.o" "Material_Ref1:file4.uv";
+connectAttr "Material_Ref1:place2dTexture4.ofs" "Material_Ref1:file4.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file5.ws";
+connectAttr "Material_Ref1:place2dTexture5.c" "Material_Ref1:file5.c";
+connectAttr "Material_Ref1:place2dTexture5.tf" "Material_Ref1:file5.tf";
+connectAttr "Material_Ref1:place2dTexture5.rf" "Material_Ref1:file5.rf";
+connectAttr "Material_Ref1:place2dTexture5.mu" "Material_Ref1:file5.mu";
+connectAttr "Material_Ref1:place2dTexture5.mv" "Material_Ref1:file5.mv";
+connectAttr "Material_Ref1:place2dTexture5.s" "Material_Ref1:file5.s";
+connectAttr "Material_Ref1:place2dTexture5.wu" "Material_Ref1:file5.wu";
+connectAttr "Material_Ref1:place2dTexture5.wv" "Material_Ref1:file5.wv";
+connectAttr "Material_Ref1:place2dTexture5.re" "Material_Ref1:file5.re";
+connectAttr "Material_Ref1:place2dTexture5.of" "Material_Ref1:file5.of";
+connectAttr "Material_Ref1:place2dTexture5.r" "Material_Ref1:file5.ro";
+connectAttr "Material_Ref1:place2dTexture5.n" "Material_Ref1:file5.n";
+connectAttr "Material_Ref1:place2dTexture5.vt1" "Material_Ref1:file5.vt1";
+connectAttr "Material_Ref1:place2dTexture5.vt2" "Material_Ref1:file5.vt2";
+connectAttr "Material_Ref1:place2dTexture5.vt3" "Material_Ref1:file5.vt3";
+connectAttr "Material_Ref1:place2dTexture5.vc1" "Material_Ref1:file5.vc1";
+connectAttr "Material_Ref1:place2dTexture5.o" "Material_Ref1:file5.uv";
+connectAttr "Material_Ref1:place2dTexture5.ofs" "Material_Ref1:file5.fs";
+connectAttr "Material_Ref1:file5.ocr" "Material_Ref1:AppermentFloorDisplacement.d"
+		;
+connectAttr "Material_Ref1:pasted__aiMultiply1.out" "Material_Ref1:Appartment_Wall_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__file2.oa" "Material_Ref1:Appartment_Wall_Mat.sr"
+		;
+connectAttr "Material_Ref1:pasted__aiNormalMap1.out" "Material_Ref1:Appartment_Wall_Mat.n"
+		;
+connectAttr "Material_Ref1:pasted__file1.oc" "Material_Ref1:pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref1:pasted__file3.oc" "Material_Ref1:pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file1.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture1.c" "Material_Ref1:pasted__file1.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.tf" "Material_Ref1:pasted__file1.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.rf" "Material_Ref1:pasted__file1.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.mu" "Material_Ref1:pasted__file1.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.mv" "Material_Ref1:pasted__file1.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.s" "Material_Ref1:pasted__file1.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.wu" "Material_Ref1:pasted__file1.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.wv" "Material_Ref1:pasted__file1.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.re" "Material_Ref1:pasted__file1.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.of" "Material_Ref1:pasted__file1.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.r" "Material_Ref1:pasted__file1.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.n" "Material_Ref1:pasted__file1.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.vt1" "Material_Ref1:pasted__file1.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.vt2" "Material_Ref1:pasted__file1.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.vt3" "Material_Ref1:pasted__file1.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.vc1" "Material_Ref1:pasted__file1.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.o" "Material_Ref1:pasted__file1.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.ofs" "Material_Ref1:pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file3.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture3.c" "Material_Ref1:pasted__file3.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.tf" "Material_Ref1:pasted__file3.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.rf" "Material_Ref1:pasted__file3.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.mu" "Material_Ref1:pasted__file3.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.mv" "Material_Ref1:pasted__file3.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.s" "Material_Ref1:pasted__file3.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.wu" "Material_Ref1:pasted__file3.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.wv" "Material_Ref1:pasted__file3.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.re" "Material_Ref1:pasted__file3.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.of" "Material_Ref1:pasted__file3.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.r" "Material_Ref1:pasted__file3.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.n" "Material_Ref1:pasted__file3.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.vt1" "Material_Ref1:pasted__file3.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.vt2" "Material_Ref1:pasted__file3.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.vt3" "Material_Ref1:pasted__file3.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.vc1" "Material_Ref1:pasted__file3.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.o" "Material_Ref1:pasted__file3.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture3.ofs" "Material_Ref1:pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file2.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture2.c" "Material_Ref1:pasted__file2.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.tf" "Material_Ref1:pasted__file2.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.rf" "Material_Ref1:pasted__file2.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.mu" "Material_Ref1:pasted__file2.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.mv" "Material_Ref1:pasted__file2.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.s" "Material_Ref1:pasted__file2.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.wu" "Material_Ref1:pasted__file2.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.wv" "Material_Ref1:pasted__file2.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.re" "Material_Ref1:pasted__file2.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.of" "Material_Ref1:pasted__file2.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.r" "Material_Ref1:pasted__file2.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.n" "Material_Ref1:pasted__file2.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.vt1" "Material_Ref1:pasted__file2.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.vt2" "Material_Ref1:pasted__file2.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.vt3" "Material_Ref1:pasted__file2.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.vc1" "Material_Ref1:pasted__file2.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.o" "Material_Ref1:pasted__file2.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture2.ofs" "Material_Ref1:pasted__file2.fs"
+		;
+connectAttr "Material_Ref1:pasted__file4.oc" "Material_Ref1:pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file4.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture4.c" "Material_Ref1:pasted__file4.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.tf" "Material_Ref1:pasted__file4.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.rf" "Material_Ref1:pasted__file4.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.mu" "Material_Ref1:pasted__file4.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.mv" "Material_Ref1:pasted__file4.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.s" "Material_Ref1:pasted__file4.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.wu" "Material_Ref1:pasted__file4.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.wv" "Material_Ref1:pasted__file4.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.re" "Material_Ref1:pasted__file4.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.of" "Material_Ref1:pasted__file4.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.r" "Material_Ref1:pasted__file4.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.n" "Material_Ref1:pasted__file4.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.vt1" "Material_Ref1:pasted__file4.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.vt2" "Material_Ref1:pasted__file4.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.vt3" "Material_Ref1:pasted__file4.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.vc1" "Material_Ref1:pasted__file4.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.o" "Material_Ref1:pasted__file4.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture4.ofs" "Material_Ref1:pasted__file4.fs"
+		;
+connectAttr "Material_Ref1:file6.ocr" "Material_Ref1:AppartmentWallDisplacemnt.d"
+		;
+connectAttr "Material_Ref1:AppartmentWallDisplacemnt.d" "Material_Ref1:displacementShader1SG.ds"
+		;
+connectAttr "Material_Ref1:Appartment_Wall_Mat.oc" "Material_Ref1:displacementShader1SG.ss"
+		;
+connectAttr "Material_Ref1:displacementShader1SG.msg" "Material_Ref1:materialInfo2.sg"
+		;
+connectAttr "Material_Ref1:Appartment_Wall_Mat.msg" "Material_Ref1:materialInfo2.m"
+		;
+connectAttr "Material_Ref1:pasted__aiMultiply1.msg" "Material_Ref1:materialInfo2.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file6.ws";
+connectAttr "Material_Ref1:place2dTexture6.c" "Material_Ref1:file6.c";
+connectAttr "Material_Ref1:place2dTexture6.tf" "Material_Ref1:file6.tf";
+connectAttr "Material_Ref1:place2dTexture6.rf" "Material_Ref1:file6.rf";
+connectAttr "Material_Ref1:place2dTexture6.mu" "Material_Ref1:file6.mu";
+connectAttr "Material_Ref1:place2dTexture6.mv" "Material_Ref1:file6.mv";
+connectAttr "Material_Ref1:place2dTexture6.s" "Material_Ref1:file6.s";
+connectAttr "Material_Ref1:place2dTexture6.wu" "Material_Ref1:file6.wu";
+connectAttr "Material_Ref1:place2dTexture6.wv" "Material_Ref1:file6.wv";
+connectAttr "Material_Ref1:place2dTexture6.re" "Material_Ref1:file6.re";
+connectAttr "Material_Ref1:place2dTexture6.of" "Material_Ref1:file6.of";
+connectAttr "Material_Ref1:place2dTexture6.r" "Material_Ref1:file6.ro";
+connectAttr "Material_Ref1:place2dTexture6.n" "Material_Ref1:file6.n";
+connectAttr "Material_Ref1:place2dTexture6.vt1" "Material_Ref1:file6.vt1";
+connectAttr "Material_Ref1:place2dTexture6.vt2" "Material_Ref1:file6.vt2";
+connectAttr "Material_Ref1:place2dTexture6.vt3" "Material_Ref1:file6.vt3";
+connectAttr "Material_Ref1:place2dTexture6.vc1" "Material_Ref1:file6.vc1";
+connectAttr "Material_Ref1:place2dTexture6.o" "Material_Ref1:file6.uv";
+connectAttr "Material_Ref1:place2dTexture6.ofs" "Material_Ref1:file6.fs";
+connectAttr "Material_Ref1:pasted__aiMultiply2.out" "Material_Ref1:Cave_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__file6.oa" "Material_Ref1:Cave_Floor_Mat.sr";
+connectAttr "Material_Ref1:pasted__aiNormalMap2.out" "Material_Ref1:Cave_Floor_Mat.n"
+		;
+connectAttr "Material_Ref1:pasted__file5.oc" "Material_Ref1:pasted__aiMultiply2.input1"
+		;
+connectAttr "Material_Ref1:pasted__file7.oc" "Material_Ref1:pasted__aiMultiply2.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file5.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture5.c" "Material_Ref1:pasted__file5.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.tf" "Material_Ref1:pasted__file5.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.rf" "Material_Ref1:pasted__file5.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.mu" "Material_Ref1:pasted__file5.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.mv" "Material_Ref1:pasted__file5.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.s" "Material_Ref1:pasted__file5.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.wu" "Material_Ref1:pasted__file5.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.wv" "Material_Ref1:pasted__file5.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.re" "Material_Ref1:pasted__file5.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.of" "Material_Ref1:pasted__file5.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.r" "Material_Ref1:pasted__file5.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.n" "Material_Ref1:pasted__file5.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.vt1" "Material_Ref1:pasted__file5.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.vt2" "Material_Ref1:pasted__file5.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.vt3" "Material_Ref1:pasted__file5.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.vc1" "Material_Ref1:pasted__file5.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.o" "Material_Ref1:pasted__file5.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.ofs" "Material_Ref1:pasted__file5.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file7.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture7.c" "Material_Ref1:pasted__file7.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.tf" "Material_Ref1:pasted__file7.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.rf" "Material_Ref1:pasted__file7.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.mu" "Material_Ref1:pasted__file7.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.mv" "Material_Ref1:pasted__file7.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.s" "Material_Ref1:pasted__file7.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.wu" "Material_Ref1:pasted__file7.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.wv" "Material_Ref1:pasted__file7.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.re" "Material_Ref1:pasted__file7.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.of" "Material_Ref1:pasted__file7.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.r" "Material_Ref1:pasted__file7.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.n" "Material_Ref1:pasted__file7.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.vt1" "Material_Ref1:pasted__file7.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.vt2" "Material_Ref1:pasted__file7.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.vt3" "Material_Ref1:pasted__file7.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.vc1" "Material_Ref1:pasted__file7.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.o" "Material_Ref1:pasted__file7.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture7.ofs" "Material_Ref1:pasted__file7.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file6.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture6.c" "Material_Ref1:pasted__file6.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.tf" "Material_Ref1:pasted__file6.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.rf" "Material_Ref1:pasted__file6.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.mu" "Material_Ref1:pasted__file6.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.mv" "Material_Ref1:pasted__file6.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.s" "Material_Ref1:pasted__file6.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.wu" "Material_Ref1:pasted__file6.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.wv" "Material_Ref1:pasted__file6.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.re" "Material_Ref1:pasted__file6.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.of" "Material_Ref1:pasted__file6.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.r" "Material_Ref1:pasted__file6.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.n" "Material_Ref1:pasted__file6.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.vt1" "Material_Ref1:pasted__file6.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.vt2" "Material_Ref1:pasted__file6.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.vt3" "Material_Ref1:pasted__file6.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.vc1" "Material_Ref1:pasted__file6.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.o" "Material_Ref1:pasted__file6.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture6.ofs" "Material_Ref1:pasted__file6.fs"
+		;
+connectAttr "Material_Ref1:pasted__file8.oc" "Material_Ref1:pasted__aiNormalMap2.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file8.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture8.c" "Material_Ref1:pasted__file8.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.tf" "Material_Ref1:pasted__file8.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.rf" "Material_Ref1:pasted__file8.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.mu" "Material_Ref1:pasted__file8.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.mv" "Material_Ref1:pasted__file8.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.s" "Material_Ref1:pasted__file8.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.wu" "Material_Ref1:pasted__file8.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.wv" "Material_Ref1:pasted__file8.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.re" "Material_Ref1:pasted__file8.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.of" "Material_Ref1:pasted__file8.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.r" "Material_Ref1:pasted__file8.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.n" "Material_Ref1:pasted__file8.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.vt1" "Material_Ref1:pasted__file8.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.vt2" "Material_Ref1:pasted__file8.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.vt3" "Material_Ref1:pasted__file8.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.vc1" "Material_Ref1:pasted__file8.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.o" "Material_Ref1:pasted__file8.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture8.ofs" "Material_Ref1:pasted__file8.fs"
+		;
+connectAttr "Material_Ref1:file7.ocr" "Material_Ref1:CaveFloorDisplacement.d";
+connectAttr "Material_Ref1:CaveFloorDisplacement.d" "Material_Ref1:displacementShader2SG.ds"
+		;
+connectAttr "Material_Ref1:Cave_Floor_Mat.oc" "Material_Ref1:displacementShader2SG.ss"
+		;
+connectAttr "Material_Ref1:displacementShader2SG.msg" "Material_Ref1:materialInfo3.sg"
+		;
+connectAttr "Material_Ref1:Cave_Floor_Mat.msg" "Material_Ref1:materialInfo3.m";
+connectAttr "Material_Ref1:pasted__aiMultiply2.msg" "Material_Ref1:materialInfo3.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file7.ws";
+connectAttr "Material_Ref1:place2dTexture7.c" "Material_Ref1:file7.c";
+connectAttr "Material_Ref1:place2dTexture7.tf" "Material_Ref1:file7.tf";
+connectAttr "Material_Ref1:place2dTexture7.rf" "Material_Ref1:file7.rf";
+connectAttr "Material_Ref1:place2dTexture7.mu" "Material_Ref1:file7.mu";
+connectAttr "Material_Ref1:place2dTexture7.mv" "Material_Ref1:file7.mv";
+connectAttr "Material_Ref1:place2dTexture7.s" "Material_Ref1:file7.s";
+connectAttr "Material_Ref1:place2dTexture7.wu" "Material_Ref1:file7.wu";
+connectAttr "Material_Ref1:place2dTexture7.wv" "Material_Ref1:file7.wv";
+connectAttr "Material_Ref1:place2dTexture7.re" "Material_Ref1:file7.re";
+connectAttr "Material_Ref1:place2dTexture7.of" "Material_Ref1:file7.of";
+connectAttr "Material_Ref1:place2dTexture7.r" "Material_Ref1:file7.ro";
+connectAttr "Material_Ref1:place2dTexture7.n" "Material_Ref1:file7.n";
+connectAttr "Material_Ref1:place2dTexture7.vt1" "Material_Ref1:file7.vt1";
+connectAttr "Material_Ref1:place2dTexture7.vt2" "Material_Ref1:file7.vt2";
+connectAttr "Material_Ref1:place2dTexture7.vt3" "Material_Ref1:file7.vt3";
+connectAttr "Material_Ref1:place2dTexture7.vc1" "Material_Ref1:file7.vc1";
+connectAttr "Material_Ref1:place2dTexture7.o" "Material_Ref1:file7.uv";
+connectAttr "Material_Ref1:place2dTexture7.ofs" "Material_Ref1:file7.fs";
+connectAttr "Material_Ref1:pasted__pasted__aiMultiply1.out" "Material_Ref1:Cave_Wall_2_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file2.oa" "Material_Ref1:Cave_Wall_2_Mat.sr"
+		;
+connectAttr "Material_Ref1:pasted__pasted__aiNormalMap1.out" "Material_Ref1:Cave_Wall_2_Mat.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file1.oc" "Material_Ref1:pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file3.oc" "Material_Ref1:pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.c" "Material_Ref1:pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.tf" "Material_Ref1:pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.rf" "Material_Ref1:pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.mu" "Material_Ref1:pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.mv" "Material_Ref1:pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.s" "Material_Ref1:pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.wu" "Material_Ref1:pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.wv" "Material_Ref1:pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.re" "Material_Ref1:pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.of" "Material_Ref1:pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.r" "Material_Ref1:pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.n" "Material_Ref1:pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.vt1" "Material_Ref1:pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.vt2" "Material_Ref1:pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.vt3" "Material_Ref1:pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.vc1" "Material_Ref1:pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.o" "Material_Ref1:pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.ofs" "Material_Ref1:pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.c" "Material_Ref1:pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.tf" "Material_Ref1:pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.rf" "Material_Ref1:pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.mu" "Material_Ref1:pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.mv" "Material_Ref1:pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.s" "Material_Ref1:pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.wu" "Material_Ref1:pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.wv" "Material_Ref1:pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.re" "Material_Ref1:pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.of" "Material_Ref1:pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.r" "Material_Ref1:pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.n" "Material_Ref1:pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.vt1" "Material_Ref1:pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.vt2" "Material_Ref1:pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.vt3" "Material_Ref1:pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.vc1" "Material_Ref1:pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.o" "Material_Ref1:pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.ofs" "Material_Ref1:pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.c" "Material_Ref1:pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.tf" "Material_Ref1:pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.rf" "Material_Ref1:pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.mu" "Material_Ref1:pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.mv" "Material_Ref1:pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.s" "Material_Ref1:pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.wu" "Material_Ref1:pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.wv" "Material_Ref1:pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.re" "Material_Ref1:pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.of" "Material_Ref1:pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.r" "Material_Ref1:pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.n" "Material_Ref1:pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.vt1" "Material_Ref1:pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.vt2" "Material_Ref1:pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.vt3" "Material_Ref1:pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.vc1" "Material_Ref1:pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.o" "Material_Ref1:pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.ofs" "Material_Ref1:pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file4.oc" "Material_Ref1:pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.c" "Material_Ref1:pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.tf" "Material_Ref1:pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.rf" "Material_Ref1:pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.mu" "Material_Ref1:pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.mv" "Material_Ref1:pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.s" "Material_Ref1:pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.wu" "Material_Ref1:pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.wv" "Material_Ref1:pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.re" "Material_Ref1:pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.of" "Material_Ref1:pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.r" "Material_Ref1:pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.n" "Material_Ref1:pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.vt1" "Material_Ref1:pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.vt2" "Material_Ref1:pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.vt3" "Material_Ref1:pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.vc1" "Material_Ref1:pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.o" "Material_Ref1:pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.ofs" "Material_Ref1:pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref1:file8.ocr" "Material_Ref1:Cave2Displacement.d";
+connectAttr "Material_Ref1:Cave2Displacement.d" "Material_Ref1:Cave2Displacement5.ds"
+		;
+connectAttr "Material_Ref1:Cave_Wall_2_Mat.oc" "Material_Ref1:Cave2Displacement5.ss"
+		;
+connectAttr "Material_Ref1:Cave2Displacement5.msg" "Material_Ref1:materialInfo4.sg"
+		;
+connectAttr "Material_Ref1:Cave_Wall_2_Mat.msg" "Material_Ref1:materialInfo4.m";
+connectAttr "Material_Ref1:pasted__pasted__aiMultiply1.msg" "Material_Ref1:materialInfo4.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file8.ws";
+connectAttr "Material_Ref1:place2dTexture8.c" "Material_Ref1:file8.c";
+connectAttr "Material_Ref1:place2dTexture8.tf" "Material_Ref1:file8.tf";
+connectAttr "Material_Ref1:place2dTexture8.rf" "Material_Ref1:file8.rf";
+connectAttr "Material_Ref1:place2dTexture8.mu" "Material_Ref1:file8.mu";
+connectAttr "Material_Ref1:place2dTexture8.mv" "Material_Ref1:file8.mv";
+connectAttr "Material_Ref1:place2dTexture8.s" "Material_Ref1:file8.s";
+connectAttr "Material_Ref1:place2dTexture8.wu" "Material_Ref1:file8.wu";
+connectAttr "Material_Ref1:place2dTexture8.wv" "Material_Ref1:file8.wv";
+connectAttr "Material_Ref1:place2dTexture8.re" "Material_Ref1:file8.re";
+connectAttr "Material_Ref1:place2dTexture8.of" "Material_Ref1:file8.of";
+connectAttr "Material_Ref1:place2dTexture8.r" "Material_Ref1:file8.ro";
+connectAttr "Material_Ref1:place2dTexture8.n" "Material_Ref1:file8.n";
+connectAttr "Material_Ref1:place2dTexture8.vt1" "Material_Ref1:file8.vt1";
+connectAttr "Material_Ref1:place2dTexture8.vt2" "Material_Ref1:file8.vt2";
+connectAttr "Material_Ref1:place2dTexture8.vt3" "Material_Ref1:file8.vt3";
+connectAttr "Material_Ref1:place2dTexture8.vc1" "Material_Ref1:file8.vc1";
+connectAttr "Material_Ref1:place2dTexture8.o" "Material_Ref1:file8.uv";
+connectAttr "Material_Ref1:place2dTexture8.ofs" "Material_Ref1:file8.fs";
+connectAttr "Material_Ref1:pasted__pasted__pasted__aiMultiply1.out" "Material_Ref1:Cave_Wall_3_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file2.oa" "Material_Ref1:Cave_Wall_3_Mat.sr"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref1:Cave_Wall_3_Mat.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file1.oc" "Material_Ref1:pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file3.oc" "Material_Ref1:pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.c" "Material_Ref1:pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref1:pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref1:pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref1:pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref1:pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.s" "Material_Ref1:pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref1:pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref1:pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.re" "Material_Ref1:pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.of" "Material_Ref1:pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.r" "Material_Ref1:pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.n" "Material_Ref1:pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref1:pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref1:pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref1:pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref1:pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.o" "Material_Ref1:pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref1:pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.c" "Material_Ref1:pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref1:pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref1:pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref1:pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref1:pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.s" "Material_Ref1:pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref1:pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref1:pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.re" "Material_Ref1:pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.of" "Material_Ref1:pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.r" "Material_Ref1:pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.n" "Material_Ref1:pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref1:pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref1:pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref1:pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref1:pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.o" "Material_Ref1:pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref1:pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.c" "Material_Ref1:pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref1:pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref1:pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref1:pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref1:pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.s" "Material_Ref1:pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref1:pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref1:pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.re" "Material_Ref1:pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.of" "Material_Ref1:pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.r" "Material_Ref1:pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.n" "Material_Ref1:pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref1:pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref1:pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref1:pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref1:pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.o" "Material_Ref1:pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref1:pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file4.oc" "Material_Ref1:pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.c" "Material_Ref1:pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref1:pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref1:pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref1:pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref1:pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.s" "Material_Ref1:pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref1:pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref1:pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.re" "Material_Ref1:pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.of" "Material_Ref1:pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.r" "Material_Ref1:pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.n" "Material_Ref1:pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref1:pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref1:pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref1:pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref1:pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.o" "Material_Ref1:pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref1:pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref1:displacementShader4SG.msg" "Material_Ref1:materialInfo5.sg"
+		;
+connectAttr "Material_Ref1:pasted__displacementShader4SG.msg" "Material_Ref1:pasted__materialInfo5.sg"
+		;
+connectAttr "Material_Ref1:pasted__displacementShader4SG1.msg" "Material_Ref1:pasted__materialInfo6.sg"
+		;
+connectAttr "Material_Ref1:file9.ocr" "Material_Ref1:Cave3Displacemnt.d";
+connectAttr "Material_Ref1:Cave3Displacemnt.d" "Material_Ref1:displacementShader5SG.ds"
+		;
+connectAttr "Material_Ref1:Cave_Wall_3_Mat.oc" "Material_Ref1:displacementShader5SG.ss"
+		;
+connectAttr "Material_Ref1:displacementShader5SG.msg" "Material_Ref1:materialInfo6.sg"
+		;
+connectAttr "Material_Ref1:Cave_Wall_3_Mat.msg" "Material_Ref1:materialInfo6.m";
+connectAttr "Material_Ref1:pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref1:materialInfo6.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file9.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file9.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file9.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file9.ws";
+connectAttr "Material_Ref1:place2dTexture9.c" "Material_Ref1:file9.c";
+connectAttr "Material_Ref1:place2dTexture9.tf" "Material_Ref1:file9.tf";
+connectAttr "Material_Ref1:place2dTexture9.rf" "Material_Ref1:file9.rf";
+connectAttr "Material_Ref1:place2dTexture9.mu" "Material_Ref1:file9.mu";
+connectAttr "Material_Ref1:place2dTexture9.mv" "Material_Ref1:file9.mv";
+connectAttr "Material_Ref1:place2dTexture9.s" "Material_Ref1:file9.s";
+connectAttr "Material_Ref1:place2dTexture9.wu" "Material_Ref1:file9.wu";
+connectAttr "Material_Ref1:place2dTexture9.wv" "Material_Ref1:file9.wv";
+connectAttr "Material_Ref1:place2dTexture9.re" "Material_Ref1:file9.re";
+connectAttr "Material_Ref1:place2dTexture9.of" "Material_Ref1:file9.of";
+connectAttr "Material_Ref1:place2dTexture9.r" "Material_Ref1:file9.ro";
+connectAttr "Material_Ref1:place2dTexture9.n" "Material_Ref1:file9.n";
+connectAttr "Material_Ref1:place2dTexture9.vt1" "Material_Ref1:file9.vt1";
+connectAttr "Material_Ref1:place2dTexture9.vt2" "Material_Ref1:file9.vt2";
+connectAttr "Material_Ref1:place2dTexture9.vt3" "Material_Ref1:file9.vt3";
+connectAttr "Material_Ref1:place2dTexture9.vc1" "Material_Ref1:file9.vc1";
+connectAttr "Material_Ref1:place2dTexture9.o" "Material_Ref1:file9.uv";
+connectAttr "Material_Ref1:place2dTexture9.ofs" "Material_Ref1:file9.fs";
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1.out" "Material_Ref1:Cave_Wall_4_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file2.oa" "Material_Ref1:Cave_Wall_4_Mat.sr"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref1:Cave_Wall_4_Mat.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file1.oc" "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file3.oc" "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.c" "Material_Ref1:pasted__pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref1:pasted__pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref1:pasted__pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref1:pasted__pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref1:pasted__pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.s" "Material_Ref1:pasted__pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref1:pasted__pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref1:pasted__pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.re" "Material_Ref1:pasted__pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.of" "Material_Ref1:pasted__pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.r" "Material_Ref1:pasted__pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.n" "Material_Ref1:pasted__pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref1:pasted__pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref1:pasted__pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref1:pasted__pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref1:pasted__pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.o" "Material_Ref1:pasted__pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref1:pasted__pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.c" "Material_Ref1:pasted__pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref1:pasted__pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref1:pasted__pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref1:pasted__pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref1:pasted__pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.s" "Material_Ref1:pasted__pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref1:pasted__pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref1:pasted__pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.re" "Material_Ref1:pasted__pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.of" "Material_Ref1:pasted__pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.r" "Material_Ref1:pasted__pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.n" "Material_Ref1:pasted__pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref1:pasted__pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref1:pasted__pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref1:pasted__pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref1:pasted__pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.o" "Material_Ref1:pasted__pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref1:pasted__pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.c" "Material_Ref1:pasted__pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref1:pasted__pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref1:pasted__pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref1:pasted__pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref1:pasted__pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.s" "Material_Ref1:pasted__pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref1:pasted__pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref1:pasted__pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.re" "Material_Ref1:pasted__pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.of" "Material_Ref1:pasted__pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.r" "Material_Ref1:pasted__pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.n" "Material_Ref1:pasted__pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref1:pasted__pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref1:pasted__pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref1:pasted__pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref1:pasted__pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.o" "Material_Ref1:pasted__pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref1:pasted__pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file4.oc" "Material_Ref1:pasted__pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.c" "Material_Ref1:pasted__pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref1:pasted__pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref1:pasted__pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref1:pasted__pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref1:pasted__pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.s" "Material_Ref1:pasted__pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref1:pasted__pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref1:pasted__pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.re" "Material_Ref1:pasted__pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.of" "Material_Ref1:pasted__pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.r" "Material_Ref1:pasted__pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.n" "Material_Ref1:pasted__pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref1:pasted__pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref1:pasted__pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref1:pasted__pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref1:pasted__pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.o" "Material_Ref1:pasted__pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref1:pasted__pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref1:file10.ocr" "Material_Ref1:cave4Displacement.d";
+connectAttr "Material_Ref1:cave4Displacement.d" "Material_Ref1:displacementShader6SG.ds"
+		;
+connectAttr "Material_Ref1:Cave_Wall_4_Mat.oc" "Material_Ref1:displacementShader6SG.ss"
+		;
+connectAttr "Material_Ref1:displacementShader6SG.msg" "Material_Ref1:materialInfo7.sg"
+		;
+connectAttr "Material_Ref1:Cave_Wall_4_Mat.msg" "Material_Ref1:materialInfo7.m";
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref1:materialInfo7.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file10.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file10.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file10.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file10.ws";
+connectAttr "Material_Ref1:place2dTexture10.c" "Material_Ref1:file10.c";
+connectAttr "Material_Ref1:place2dTexture10.tf" "Material_Ref1:file10.tf";
+connectAttr "Material_Ref1:place2dTexture10.rf" "Material_Ref1:file10.rf";
+connectAttr "Material_Ref1:place2dTexture10.mu" "Material_Ref1:file10.mu";
+connectAttr "Material_Ref1:place2dTexture10.mv" "Material_Ref1:file10.mv";
+connectAttr "Material_Ref1:place2dTexture10.s" "Material_Ref1:file10.s";
+connectAttr "Material_Ref1:place2dTexture10.wu" "Material_Ref1:file10.wu";
+connectAttr "Material_Ref1:place2dTexture10.wv" "Material_Ref1:file10.wv";
+connectAttr "Material_Ref1:place2dTexture10.re" "Material_Ref1:file10.re";
+connectAttr "Material_Ref1:place2dTexture10.of" "Material_Ref1:file10.of";
+connectAttr "Material_Ref1:place2dTexture10.r" "Material_Ref1:file10.ro";
+connectAttr "Material_Ref1:place2dTexture10.n" "Material_Ref1:file10.n";
+connectAttr "Material_Ref1:place2dTexture10.vt1" "Material_Ref1:file10.vt1";
+connectAttr "Material_Ref1:place2dTexture10.vt2" "Material_Ref1:file10.vt2";
+connectAttr "Material_Ref1:place2dTexture10.vt3" "Material_Ref1:file10.vt3";
+connectAttr "Material_Ref1:place2dTexture10.vc1" "Material_Ref1:file10.vc1";
+connectAttr "Material_Ref1:place2dTexture10.o" "Material_Ref1:file10.uv";
+connectAttr "Material_Ref1:place2dTexture10.ofs" "Material_Ref1:file10.fs";
+connectAttr "Material_Ref1:file11.oc" "Material_Ref1:Generic_Wood_Mat.bc";
+connectAttr "Material_Ref1:Generic_Wood_Mat.oc" "Material_Ref1:standardSurface3SG.ss"
+		;
+connectAttr "Material_Ref1:standardSurface3SG.msg" "Material_Ref1:materialInfo8.sg"
+		;
+connectAttr "Material_Ref1:Generic_Wood_Mat.msg" "Material_Ref1:materialInfo8.m"
+		;
+connectAttr "Material_Ref1:file11.msg" "Material_Ref1:materialInfo8.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file11.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file11.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file11.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file11.ws";
+connectAttr "Material_Ref1:place2dTexture11.c" "Material_Ref1:file11.c";
+connectAttr "Material_Ref1:place2dTexture11.tf" "Material_Ref1:file11.tf";
+connectAttr "Material_Ref1:place2dTexture11.rf" "Material_Ref1:file11.rf";
+connectAttr "Material_Ref1:place2dTexture11.mu" "Material_Ref1:file11.mu";
+connectAttr "Material_Ref1:place2dTexture11.mv" "Material_Ref1:file11.mv";
+connectAttr "Material_Ref1:place2dTexture11.s" "Material_Ref1:file11.s";
+connectAttr "Material_Ref1:place2dTexture11.wu" "Material_Ref1:file11.wu";
+connectAttr "Material_Ref1:place2dTexture11.wv" "Material_Ref1:file11.wv";
+connectAttr "Material_Ref1:place2dTexture11.re" "Material_Ref1:file11.re";
+connectAttr "Material_Ref1:place2dTexture11.of" "Material_Ref1:file11.of";
+connectAttr "Material_Ref1:place2dTexture11.r" "Material_Ref1:file11.ro";
+connectAttr "Material_Ref1:place2dTexture11.n" "Material_Ref1:file11.n";
+connectAttr "Material_Ref1:place2dTexture11.vt1" "Material_Ref1:file11.vt1";
+connectAttr "Material_Ref1:place2dTexture11.vt2" "Material_Ref1:file11.vt2";
+connectAttr "Material_Ref1:place2dTexture11.vt3" "Material_Ref1:file11.vt3";
+connectAttr "Material_Ref1:place2dTexture11.vc1" "Material_Ref1:file11.vc1";
+connectAttr "Material_Ref1:place2dTexture11.o" "Material_Ref1:file11.uv";
+connectAttr "Material_Ref1:place2dTexture11.ofs" "Material_Ref1:file11.fs";
+connectAttr "Material_Ref1:file12.oc" "Material_Ref1:White_Paint_Mat.bc";
+connectAttr "Material_Ref1:White_Paint_Mat.oc" "Material_Ref1:standardSurface4SG.ss"
+		;
+connectAttr "Material_Ref1:standardSurface4SG.msg" "Material_Ref1:materialInfo9.sg"
+		;
+connectAttr "Material_Ref1:White_Paint_Mat.msg" "Material_Ref1:materialInfo9.m";
+connectAttr "Material_Ref1:file12.msg" "Material_Ref1:materialInfo9.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file12.ws";
+connectAttr "Material_Ref1:place2dTexture12.c" "Material_Ref1:file12.c";
+connectAttr "Material_Ref1:place2dTexture12.tf" "Material_Ref1:file12.tf";
+connectAttr "Material_Ref1:place2dTexture12.rf" "Material_Ref1:file12.rf";
+connectAttr "Material_Ref1:place2dTexture12.mu" "Material_Ref1:file12.mu";
+connectAttr "Material_Ref1:place2dTexture12.mv" "Material_Ref1:file12.mv";
+connectAttr "Material_Ref1:place2dTexture12.s" "Material_Ref1:file12.s";
+connectAttr "Material_Ref1:place2dTexture12.wu" "Material_Ref1:file12.wu";
+connectAttr "Material_Ref1:place2dTexture12.wv" "Material_Ref1:file12.wv";
+connectAttr "Material_Ref1:place2dTexture12.re" "Material_Ref1:file12.re";
+connectAttr "Material_Ref1:place2dTexture12.of" "Material_Ref1:file12.of";
+connectAttr "Material_Ref1:place2dTexture12.r" "Material_Ref1:file12.ro";
+connectAttr "Material_Ref1:place2dTexture12.n" "Material_Ref1:file12.n";
+connectAttr "Material_Ref1:place2dTexture12.vt1" "Material_Ref1:file12.vt1";
+connectAttr "Material_Ref1:place2dTexture12.vt2" "Material_Ref1:file12.vt2";
+connectAttr "Material_Ref1:place2dTexture12.vt3" "Material_Ref1:file12.vt3";
+connectAttr "Material_Ref1:place2dTexture12.vc1" "Material_Ref1:file12.vc1";
+connectAttr "Material_Ref1:place2dTexture12.o" "Material_Ref1:file12.uv";
+connectAttr "Material_Ref1:place2dTexture12.ofs" "Material_Ref1:file12.fs";
+connectAttr "Material_Ref1:aiMultiply2.out" "Material_Ref1:Blue_Paint_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file12.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture12.c" "Material_Ref1:pasted__file12.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.tf" "Material_Ref1:pasted__file12.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.rf" "Material_Ref1:pasted__file12.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.mu" "Material_Ref1:pasted__file12.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.mv" "Material_Ref1:pasted__file12.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.s" "Material_Ref1:pasted__file12.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.wu" "Material_Ref1:pasted__file12.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.wv" "Material_Ref1:pasted__file12.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.re" "Material_Ref1:pasted__file12.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.of" "Material_Ref1:pasted__file12.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.r" "Material_Ref1:pasted__file12.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.n" "Material_Ref1:pasted__file12.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.vt1" "Material_Ref1:pasted__file12.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.vt2" "Material_Ref1:pasted__file12.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.vt3" "Material_Ref1:pasted__file12.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.vc1" "Material_Ref1:pasted__file12.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.o" "Material_Ref1:pasted__file12.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture12.ofs" "Material_Ref1:pasted__file12.fs"
+		;
+connectAttr "Material_Ref1:pasted__file12.oc" "Material_Ref1:aiMultiply2.input1"
+		;
+connectAttr "Material_Ref1:colorConstant1.oc" "Material_Ref1:aiMultiply2.input2"
+		;
+connectAttr "Material_Ref1:Blue_Paint_Mat.oc" "Material_Ref1:Blue_Paint_MatSG.ss"
+		;
+connectAttr "Material_Ref1:Blue_Paint_MatSG.msg" "Material_Ref1:materialInfo10.sg"
+		;
+connectAttr "Material_Ref1:Blue_Paint_Mat.msg" "Material_Ref1:materialInfo10.m";
+connectAttr "Material_Ref1:pasted__file12.msg" "Material_Ref1:materialInfo10.t" 
+		-na;
+connectAttr "Material_Ref1:file13.oc" "Material_Ref1:Marble_Mat.bc";
+connectAttr "Material_Ref1:Marble_Mat.oc" "Material_Ref1:standardSurface5SG.ss";
+connectAttr "polySurfaceShape67.iog.og[0]" "Material_Ref1:standardSurface5SG.dsm"
+		 -na;
+connectAttr "polySurfaceShape67.iog.og[1]" "Material_Ref1:standardSurface5SG.dsm"
+		 -na;
+connectAttr "groupId431.msg" "Material_Ref1:standardSurface5SG.gn" -na;
+connectAttr "groupId438.msg" "Material_Ref1:standardSurface5SG.gn" -na;
+connectAttr "Material_Ref1:standardSurface5SG.msg" "Material_Ref1:materialInfo11.sg"
+		;
+connectAttr "Material_Ref1:Marble_Mat.msg" "Material_Ref1:materialInfo11.m";
+connectAttr "Material_Ref1:file13.msg" "Material_Ref1:materialInfo11.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file13.ws";
+connectAttr "Material_Ref1:place2dTexture13.c" "Material_Ref1:file13.c";
+connectAttr "Material_Ref1:place2dTexture13.tf" "Material_Ref1:file13.tf";
+connectAttr "Material_Ref1:place2dTexture13.rf" "Material_Ref1:file13.rf";
+connectAttr "Material_Ref1:place2dTexture13.mu" "Material_Ref1:file13.mu";
+connectAttr "Material_Ref1:place2dTexture13.mv" "Material_Ref1:file13.mv";
+connectAttr "Material_Ref1:place2dTexture13.s" "Material_Ref1:file13.s";
+connectAttr "Material_Ref1:place2dTexture13.wu" "Material_Ref1:file13.wu";
+connectAttr "Material_Ref1:place2dTexture13.wv" "Material_Ref1:file13.wv";
+connectAttr "Material_Ref1:place2dTexture13.re" "Material_Ref1:file13.re";
+connectAttr "Material_Ref1:place2dTexture13.of" "Material_Ref1:file13.of";
+connectAttr "Material_Ref1:place2dTexture13.r" "Material_Ref1:file13.ro";
+connectAttr "Material_Ref1:place2dTexture13.n" "Material_Ref1:file13.n";
+connectAttr "Material_Ref1:place2dTexture13.vt1" "Material_Ref1:file13.vt1";
+connectAttr "Material_Ref1:place2dTexture13.vt2" "Material_Ref1:file13.vt2";
+connectAttr "Material_Ref1:place2dTexture13.vt3" "Material_Ref1:file13.vt3";
+connectAttr "Material_Ref1:place2dTexture13.vc1" "Material_Ref1:file13.vc1";
+connectAttr "Material_Ref1:place2dTexture13.o" "Material_Ref1:file13.uv";
+connectAttr "Material_Ref1:place2dTexture13.ofs" "Material_Ref1:file13.fs";
+connectAttr "Material_Ref1:pasted__aiMultiply3.out" "Material_Ref1:Brown_Paint_Mat.bc"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file12.oc" "Material_Ref1:pasted__aiMultiply3.input1"
+		;
+connectAttr "Material_Ref1:pasted__colorConstant1.oc" "Material_Ref1:pasted__aiMultiply3.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file12.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file12.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file12.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file12.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.c" "Material_Ref1:pasted__pasted__file12.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.tf" "Material_Ref1:pasted__pasted__file12.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.rf" "Material_Ref1:pasted__pasted__file12.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.mu" "Material_Ref1:pasted__pasted__file12.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.mv" "Material_Ref1:pasted__pasted__file12.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.s" "Material_Ref1:pasted__pasted__file12.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.wu" "Material_Ref1:pasted__pasted__file12.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.wv" "Material_Ref1:pasted__pasted__file12.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.re" "Material_Ref1:pasted__pasted__file12.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.of" "Material_Ref1:pasted__pasted__file12.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.r" "Material_Ref1:pasted__pasted__file12.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.n" "Material_Ref1:pasted__pasted__file12.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.vt1" "Material_Ref1:pasted__pasted__file12.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.vt2" "Material_Ref1:pasted__pasted__file12.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.vt3" "Material_Ref1:pasted__pasted__file12.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.vc1" "Material_Ref1:pasted__pasted__file12.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.o" "Material_Ref1:pasted__pasted__file12.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.ofs" "Material_Ref1:pasted__pasted__file12.fs"
+		;
+connectAttr "Material_Ref1:Brown_Paint_Mat.oc" "Material_Ref1:Brown_Paint_MatSG.ss"
+		;
+connectAttr "polySurfaceShape149.iog" "Material_Ref1:Brown_Paint_MatSG.dsm" -na;
+connectAttr "Material_Ref1:Brown_Paint_MatSG.msg" "Material_Ref1:materialInfo12.sg"
+		;
+connectAttr "Material_Ref1:Brown_Paint_Mat.msg" "Material_Ref1:materialInfo12.m"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file12.msg" "Material_Ref1:materialInfo12.t"
+		 -na;
+connectAttr "Material_Ref1:pasted__file13.oc" "Material_Ref1:Stone_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__file13.ws";
+connectAttr "Material_Ref1:pasted__place2dTexture13.c" "Material_Ref1:pasted__file13.c"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.tf" "Material_Ref1:pasted__file13.tf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.rf" "Material_Ref1:pasted__file13.rf"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.mu" "Material_Ref1:pasted__file13.mu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.mv" "Material_Ref1:pasted__file13.mv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.s" "Material_Ref1:pasted__file13.s"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.wu" "Material_Ref1:pasted__file13.wu"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.wv" "Material_Ref1:pasted__file13.wv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.re" "Material_Ref1:pasted__file13.re"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.of" "Material_Ref1:pasted__file13.of"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.r" "Material_Ref1:pasted__file13.ro"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.n" "Material_Ref1:pasted__file13.n"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.vt1" "Material_Ref1:pasted__file13.vt1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.vt2" "Material_Ref1:pasted__file13.vt2"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.vt3" "Material_Ref1:pasted__file13.vt3"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.vc1" "Material_Ref1:pasted__file13.vc1"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.o" "Material_Ref1:pasted__file13.uv"
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture13.ofs" "Material_Ref1:pasted__file13.fs"
+		;
+connectAttr "Material_Ref1:Stone_Mat.oc" "Material_Ref1:Stone_MatSG.ss";
+connectAttr "Material_Ref1:Stone_MatSG.msg" "Material_Ref1:materialInfo13.sg";
+connectAttr "Material_Ref1:Stone_Mat.msg" "Material_Ref1:materialInfo13.m";
+connectAttr "Material_Ref1:pasted__file13.msg" "Material_Ref1:materialInfo13.t" 
+		-na;
+connectAttr "Material_Ref1:pasted__pasted__file13.oc" "Material_Ref1:Generic_Metal_Mat.bc"
+		;
+connectAttr "Material_Ref1:file14.oa" "Material_Ref1:Generic_Metal_Mat.m";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:pasted__pasted__file13.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:pasted__pasted__file13.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:pasted__pasted__file13.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:pasted__pasted__file13.ws"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.c" "Material_Ref1:pasted__pasted__file13.c"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.tf" "Material_Ref1:pasted__pasted__file13.tf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.rf" "Material_Ref1:pasted__pasted__file13.rf"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.mu" "Material_Ref1:pasted__pasted__file13.mu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.mv" "Material_Ref1:pasted__pasted__file13.mv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.s" "Material_Ref1:pasted__pasted__file13.s"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.wu" "Material_Ref1:pasted__pasted__file13.wu"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.wv" "Material_Ref1:pasted__pasted__file13.wv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.re" "Material_Ref1:pasted__pasted__file13.re"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.of" "Material_Ref1:pasted__pasted__file13.of"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.r" "Material_Ref1:pasted__pasted__file13.ro"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.n" "Material_Ref1:pasted__pasted__file13.n"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.vt1" "Material_Ref1:pasted__pasted__file13.vt1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.vt2" "Material_Ref1:pasted__pasted__file13.vt2"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.vt3" "Material_Ref1:pasted__pasted__file13.vt3"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.vc1" "Material_Ref1:pasted__pasted__file13.vc1"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.o" "Material_Ref1:pasted__pasted__file13.uv"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.ofs" "Material_Ref1:pasted__pasted__file13.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref1:file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref1:file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref1:file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref1:file14.ws";
+connectAttr "Material_Ref1:place2dTexture14.c" "Material_Ref1:file14.c";
+connectAttr "Material_Ref1:place2dTexture14.tf" "Material_Ref1:file14.tf";
+connectAttr "Material_Ref1:place2dTexture14.rf" "Material_Ref1:file14.rf";
+connectAttr "Material_Ref1:place2dTexture14.mu" "Material_Ref1:file14.mu";
+connectAttr "Material_Ref1:place2dTexture14.mv" "Material_Ref1:file14.mv";
+connectAttr "Material_Ref1:place2dTexture14.s" "Material_Ref1:file14.s";
+connectAttr "Material_Ref1:place2dTexture14.wu" "Material_Ref1:file14.wu";
+connectAttr "Material_Ref1:place2dTexture14.wv" "Material_Ref1:file14.wv";
+connectAttr "Material_Ref1:place2dTexture14.re" "Material_Ref1:file14.re";
+connectAttr "Material_Ref1:place2dTexture14.of" "Material_Ref1:file14.of";
+connectAttr "Material_Ref1:place2dTexture14.r" "Material_Ref1:file14.ro";
+connectAttr "Material_Ref1:place2dTexture14.n" "Material_Ref1:file14.n";
+connectAttr "Material_Ref1:place2dTexture14.vt1" "Material_Ref1:file14.vt1";
+connectAttr "Material_Ref1:place2dTexture14.vt2" "Material_Ref1:file14.vt2";
+connectAttr "Material_Ref1:place2dTexture14.vt3" "Material_Ref1:file14.vt3";
+connectAttr "Material_Ref1:place2dTexture14.vc1" "Material_Ref1:file14.vc1";
+connectAttr "Material_Ref1:place2dTexture14.o" "Material_Ref1:file14.uv";
+connectAttr "Material_Ref1:place2dTexture14.ofs" "Material_Ref1:file14.fs";
+connectAttr "Material_Ref1:Generic_Metal_Mat.oc" "Material_Ref1:Generic_Metal_MatSG.ss"
+		;
+connectAttr "Material_Ref1:Generic_Metal_MatSG.msg" "Material_Ref1:materialInfo14.sg"
+		;
+connectAttr "Material_Ref1:Generic_Metal_Mat.msg" "Material_Ref1:materialInfo14.m"
+		;
+connectAttr "Material_Ref1:Generic_Metal_Mat.msg" "Material_Ref1:materialInfo14.t"
+		 -na;
+connectAttr "Material_Ref1:pasted__colorConstant1.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref1:Brown_Paint_MatSG.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref1:Brown_Paint_Mat.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "Material_Ref1:pasted__aiMultiply3.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "Material_Ref1:pasted__pasted__file12.msg" "Material_Ref1:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "Material_Ref2:aiMultiply1.out" "Material_Ref2:Appartment_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref2:file2.oa" "Material_Ref2:Appartment_Floor_Mat.sr";
+connectAttr "Material_Ref2:aiNormalMap1.out" "Material_Ref2:Appartment_Floor_Mat.n"
+		;
+connectAttr "Material_Ref2:Appartment_Floor_Mat.oc" "Material_Ref2:standardSurface2SG.ss"
+		;
+connectAttr "Material_Ref2:AppermentFloorDisplacement.d" "Material_Ref2:standardSurface2SG.ds"
+		;
+connectAttr "Material_Ref2:standardSurface2SG.msg" "Material_Ref2:materialInfo1.sg"
+		;
+connectAttr "Material_Ref2:Appartment_Floor_Mat.msg" "Material_Ref2:materialInfo1.m"
+		;
+connectAttr "Material_Ref2:file1.msg" "Material_Ref2:materialInfo1.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file1.ws";
+connectAttr "Material_Ref2:place2dTexture1.c" "Material_Ref2:file1.c";
+connectAttr "Material_Ref2:place2dTexture1.tf" "Material_Ref2:file1.tf";
+connectAttr "Material_Ref2:place2dTexture1.rf" "Material_Ref2:file1.rf";
+connectAttr "Material_Ref2:place2dTexture1.mu" "Material_Ref2:file1.mu";
+connectAttr "Material_Ref2:place2dTexture1.mv" "Material_Ref2:file1.mv";
+connectAttr "Material_Ref2:place2dTexture1.s" "Material_Ref2:file1.s";
+connectAttr "Material_Ref2:place2dTexture1.wu" "Material_Ref2:file1.wu";
+connectAttr "Material_Ref2:place2dTexture1.wv" "Material_Ref2:file1.wv";
+connectAttr "Material_Ref2:place2dTexture1.re" "Material_Ref2:file1.re";
+connectAttr "Material_Ref2:place2dTexture1.of" "Material_Ref2:file1.of";
+connectAttr "Material_Ref2:place2dTexture1.r" "Material_Ref2:file1.ro";
+connectAttr "Material_Ref2:place2dTexture1.n" "Material_Ref2:file1.n";
+connectAttr "Material_Ref2:place2dTexture1.vt1" "Material_Ref2:file1.vt1";
+connectAttr "Material_Ref2:place2dTexture1.vt2" "Material_Ref2:file1.vt2";
+connectAttr "Material_Ref2:place2dTexture1.vt3" "Material_Ref2:file1.vt3";
+connectAttr "Material_Ref2:place2dTexture1.vc1" "Material_Ref2:file1.vc1";
+connectAttr "Material_Ref2:place2dTexture1.o" "Material_Ref2:file1.uv";
+connectAttr "Material_Ref2:place2dTexture1.ofs" "Material_Ref2:file1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file2.ws";
+connectAttr "Material_Ref2:place2dTexture2.c" "Material_Ref2:file2.c";
+connectAttr "Material_Ref2:place2dTexture2.tf" "Material_Ref2:file2.tf";
+connectAttr "Material_Ref2:place2dTexture2.rf" "Material_Ref2:file2.rf";
+connectAttr "Material_Ref2:place2dTexture2.mu" "Material_Ref2:file2.mu";
+connectAttr "Material_Ref2:place2dTexture2.mv" "Material_Ref2:file2.mv";
+connectAttr "Material_Ref2:place2dTexture2.s" "Material_Ref2:file2.s";
+connectAttr "Material_Ref2:place2dTexture2.wu" "Material_Ref2:file2.wu";
+connectAttr "Material_Ref2:place2dTexture2.wv" "Material_Ref2:file2.wv";
+connectAttr "Material_Ref2:place2dTexture2.re" "Material_Ref2:file2.re";
+connectAttr "Material_Ref2:place2dTexture2.of" "Material_Ref2:file2.of";
+connectAttr "Material_Ref2:place2dTexture2.r" "Material_Ref2:file2.ro";
+connectAttr "Material_Ref2:place2dTexture2.n" "Material_Ref2:file2.n";
+connectAttr "Material_Ref2:place2dTexture2.vt1" "Material_Ref2:file2.vt1";
+connectAttr "Material_Ref2:place2dTexture2.vt2" "Material_Ref2:file2.vt2";
+connectAttr "Material_Ref2:place2dTexture2.vt3" "Material_Ref2:file2.vt3";
+connectAttr "Material_Ref2:place2dTexture2.vc1" "Material_Ref2:file2.vc1";
+connectAttr "Material_Ref2:place2dTexture2.o" "Material_Ref2:file2.uv";
+connectAttr "Material_Ref2:place2dTexture2.ofs" "Material_Ref2:file2.fs";
+connectAttr "Material_Ref2:file1.oc" "Material_Ref2:aiMultiply1.input1";
+connectAttr "Material_Ref2:file3.oc" "Material_Ref2:aiMultiply1.input2";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file3.ws";
+connectAttr "Material_Ref2:place2dTexture3.c" "Material_Ref2:file3.c";
+connectAttr "Material_Ref2:place2dTexture3.tf" "Material_Ref2:file3.tf";
+connectAttr "Material_Ref2:place2dTexture3.rf" "Material_Ref2:file3.rf";
+connectAttr "Material_Ref2:place2dTexture3.mu" "Material_Ref2:file3.mu";
+connectAttr "Material_Ref2:place2dTexture3.mv" "Material_Ref2:file3.mv";
+connectAttr "Material_Ref2:place2dTexture3.s" "Material_Ref2:file3.s";
+connectAttr "Material_Ref2:place2dTexture3.wu" "Material_Ref2:file3.wu";
+connectAttr "Material_Ref2:place2dTexture3.wv" "Material_Ref2:file3.wv";
+connectAttr "Material_Ref2:place2dTexture3.re" "Material_Ref2:file3.re";
+connectAttr "Material_Ref2:place2dTexture3.of" "Material_Ref2:file3.of";
+connectAttr "Material_Ref2:place2dTexture3.r" "Material_Ref2:file3.ro";
+connectAttr "Material_Ref2:place2dTexture3.n" "Material_Ref2:file3.n";
+connectAttr "Material_Ref2:place2dTexture3.vt1" "Material_Ref2:file3.vt1";
+connectAttr "Material_Ref2:place2dTexture3.vt2" "Material_Ref2:file3.vt2";
+connectAttr "Material_Ref2:place2dTexture3.vt3" "Material_Ref2:file3.vt3";
+connectAttr "Material_Ref2:place2dTexture3.vc1" "Material_Ref2:file3.vc1";
+connectAttr "Material_Ref2:place2dTexture3.o" "Material_Ref2:file3.uv";
+connectAttr "Material_Ref2:place2dTexture3.ofs" "Material_Ref2:file3.fs";
+connectAttr "Material_Ref2:file4.oc" "Material_Ref2:aiNormalMap1.input";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file4.ws";
+connectAttr "Material_Ref2:place2dTexture4.c" "Material_Ref2:file4.c";
+connectAttr "Material_Ref2:place2dTexture4.tf" "Material_Ref2:file4.tf";
+connectAttr "Material_Ref2:place2dTexture4.rf" "Material_Ref2:file4.rf";
+connectAttr "Material_Ref2:place2dTexture4.mu" "Material_Ref2:file4.mu";
+connectAttr "Material_Ref2:place2dTexture4.mv" "Material_Ref2:file4.mv";
+connectAttr "Material_Ref2:place2dTexture4.s" "Material_Ref2:file4.s";
+connectAttr "Material_Ref2:place2dTexture4.wu" "Material_Ref2:file4.wu";
+connectAttr "Material_Ref2:place2dTexture4.wv" "Material_Ref2:file4.wv";
+connectAttr "Material_Ref2:place2dTexture4.re" "Material_Ref2:file4.re";
+connectAttr "Material_Ref2:place2dTexture4.of" "Material_Ref2:file4.of";
+connectAttr "Material_Ref2:place2dTexture4.r" "Material_Ref2:file4.ro";
+connectAttr "Material_Ref2:place2dTexture4.n" "Material_Ref2:file4.n";
+connectAttr "Material_Ref2:place2dTexture4.vt1" "Material_Ref2:file4.vt1";
+connectAttr "Material_Ref2:place2dTexture4.vt2" "Material_Ref2:file4.vt2";
+connectAttr "Material_Ref2:place2dTexture4.vt3" "Material_Ref2:file4.vt3";
+connectAttr "Material_Ref2:place2dTexture4.vc1" "Material_Ref2:file4.vc1";
+connectAttr "Material_Ref2:place2dTexture4.o" "Material_Ref2:file4.uv";
+connectAttr "Material_Ref2:place2dTexture4.ofs" "Material_Ref2:file4.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file5.ws";
+connectAttr "Material_Ref2:place2dTexture5.c" "Material_Ref2:file5.c";
+connectAttr "Material_Ref2:place2dTexture5.tf" "Material_Ref2:file5.tf";
+connectAttr "Material_Ref2:place2dTexture5.rf" "Material_Ref2:file5.rf";
+connectAttr "Material_Ref2:place2dTexture5.mu" "Material_Ref2:file5.mu";
+connectAttr "Material_Ref2:place2dTexture5.mv" "Material_Ref2:file5.mv";
+connectAttr "Material_Ref2:place2dTexture5.s" "Material_Ref2:file5.s";
+connectAttr "Material_Ref2:place2dTexture5.wu" "Material_Ref2:file5.wu";
+connectAttr "Material_Ref2:place2dTexture5.wv" "Material_Ref2:file5.wv";
+connectAttr "Material_Ref2:place2dTexture5.re" "Material_Ref2:file5.re";
+connectAttr "Material_Ref2:place2dTexture5.of" "Material_Ref2:file5.of";
+connectAttr "Material_Ref2:place2dTexture5.r" "Material_Ref2:file5.ro";
+connectAttr "Material_Ref2:place2dTexture5.n" "Material_Ref2:file5.n";
+connectAttr "Material_Ref2:place2dTexture5.vt1" "Material_Ref2:file5.vt1";
+connectAttr "Material_Ref2:place2dTexture5.vt2" "Material_Ref2:file5.vt2";
+connectAttr "Material_Ref2:place2dTexture5.vt3" "Material_Ref2:file5.vt3";
+connectAttr "Material_Ref2:place2dTexture5.vc1" "Material_Ref2:file5.vc1";
+connectAttr "Material_Ref2:place2dTexture5.o" "Material_Ref2:file5.uv";
+connectAttr "Material_Ref2:place2dTexture5.ofs" "Material_Ref2:file5.fs";
+connectAttr "Material_Ref2:file5.ocr" "Material_Ref2:AppermentFloorDisplacement.d"
+		;
+connectAttr "Material_Ref2:pasted__aiMultiply1.out" "Material_Ref2:Appartment_Wall_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__file2.oa" "Material_Ref2:Appartment_Wall_Mat.sr"
+		;
+connectAttr "Material_Ref2:pasted__aiNormalMap1.out" "Material_Ref2:Appartment_Wall_Mat.n"
+		;
+connectAttr "Material_Ref2:pasted__file1.oc" "Material_Ref2:pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref2:pasted__file3.oc" "Material_Ref2:pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file1.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture1.c" "Material_Ref2:pasted__file1.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.tf" "Material_Ref2:pasted__file1.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.rf" "Material_Ref2:pasted__file1.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.mu" "Material_Ref2:pasted__file1.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.mv" "Material_Ref2:pasted__file1.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.s" "Material_Ref2:pasted__file1.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.wu" "Material_Ref2:pasted__file1.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.wv" "Material_Ref2:pasted__file1.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.re" "Material_Ref2:pasted__file1.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.of" "Material_Ref2:pasted__file1.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.r" "Material_Ref2:pasted__file1.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.n" "Material_Ref2:pasted__file1.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.vt1" "Material_Ref2:pasted__file1.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.vt2" "Material_Ref2:pasted__file1.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.vt3" "Material_Ref2:pasted__file1.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.vc1" "Material_Ref2:pasted__file1.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.o" "Material_Ref2:pasted__file1.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.ofs" "Material_Ref2:pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file3.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture3.c" "Material_Ref2:pasted__file3.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.tf" "Material_Ref2:pasted__file3.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.rf" "Material_Ref2:pasted__file3.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.mu" "Material_Ref2:pasted__file3.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.mv" "Material_Ref2:pasted__file3.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.s" "Material_Ref2:pasted__file3.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.wu" "Material_Ref2:pasted__file3.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.wv" "Material_Ref2:pasted__file3.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.re" "Material_Ref2:pasted__file3.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.of" "Material_Ref2:pasted__file3.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.r" "Material_Ref2:pasted__file3.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.n" "Material_Ref2:pasted__file3.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.vt1" "Material_Ref2:pasted__file3.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.vt2" "Material_Ref2:pasted__file3.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.vt3" "Material_Ref2:pasted__file3.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.vc1" "Material_Ref2:pasted__file3.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.o" "Material_Ref2:pasted__file3.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture3.ofs" "Material_Ref2:pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file2.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture2.c" "Material_Ref2:pasted__file2.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.tf" "Material_Ref2:pasted__file2.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.rf" "Material_Ref2:pasted__file2.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.mu" "Material_Ref2:pasted__file2.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.mv" "Material_Ref2:pasted__file2.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.s" "Material_Ref2:pasted__file2.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.wu" "Material_Ref2:pasted__file2.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.wv" "Material_Ref2:pasted__file2.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.re" "Material_Ref2:pasted__file2.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.of" "Material_Ref2:pasted__file2.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.r" "Material_Ref2:pasted__file2.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.n" "Material_Ref2:pasted__file2.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.vt1" "Material_Ref2:pasted__file2.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.vt2" "Material_Ref2:pasted__file2.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.vt3" "Material_Ref2:pasted__file2.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.vc1" "Material_Ref2:pasted__file2.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.o" "Material_Ref2:pasted__file2.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture2.ofs" "Material_Ref2:pasted__file2.fs"
+		;
+connectAttr "Material_Ref2:pasted__file4.oc" "Material_Ref2:pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file4.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture4.c" "Material_Ref2:pasted__file4.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.tf" "Material_Ref2:pasted__file4.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.rf" "Material_Ref2:pasted__file4.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.mu" "Material_Ref2:pasted__file4.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.mv" "Material_Ref2:pasted__file4.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.s" "Material_Ref2:pasted__file4.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.wu" "Material_Ref2:pasted__file4.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.wv" "Material_Ref2:pasted__file4.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.re" "Material_Ref2:pasted__file4.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.of" "Material_Ref2:pasted__file4.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.r" "Material_Ref2:pasted__file4.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.n" "Material_Ref2:pasted__file4.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.vt1" "Material_Ref2:pasted__file4.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.vt2" "Material_Ref2:pasted__file4.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.vt3" "Material_Ref2:pasted__file4.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.vc1" "Material_Ref2:pasted__file4.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.o" "Material_Ref2:pasted__file4.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture4.ofs" "Material_Ref2:pasted__file4.fs"
+		;
+connectAttr "Material_Ref2:file6.ocr" "Material_Ref2:AppartmentWallDisplacemnt.d"
+		;
+connectAttr "Material_Ref2:AppartmentWallDisplacemnt.d" "Material_Ref2:displacementShader1SG.ds"
+		;
+connectAttr "Material_Ref2:Appartment_Wall_Mat.oc" "Material_Ref2:displacementShader1SG.ss"
+		;
+connectAttr "Material_Ref2:displacementShader1SG.msg" "Material_Ref2:materialInfo2.sg"
+		;
+connectAttr "Material_Ref2:Appartment_Wall_Mat.msg" "Material_Ref2:materialInfo2.m"
+		;
+connectAttr "Material_Ref2:pasted__aiMultiply1.msg" "Material_Ref2:materialInfo2.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file6.ws";
+connectAttr "Material_Ref2:place2dTexture6.c" "Material_Ref2:file6.c";
+connectAttr "Material_Ref2:place2dTexture6.tf" "Material_Ref2:file6.tf";
+connectAttr "Material_Ref2:place2dTexture6.rf" "Material_Ref2:file6.rf";
+connectAttr "Material_Ref2:place2dTexture6.mu" "Material_Ref2:file6.mu";
+connectAttr "Material_Ref2:place2dTexture6.mv" "Material_Ref2:file6.mv";
+connectAttr "Material_Ref2:place2dTexture6.s" "Material_Ref2:file6.s";
+connectAttr "Material_Ref2:place2dTexture6.wu" "Material_Ref2:file6.wu";
+connectAttr "Material_Ref2:place2dTexture6.wv" "Material_Ref2:file6.wv";
+connectAttr "Material_Ref2:place2dTexture6.re" "Material_Ref2:file6.re";
+connectAttr "Material_Ref2:place2dTexture6.of" "Material_Ref2:file6.of";
+connectAttr "Material_Ref2:place2dTexture6.r" "Material_Ref2:file6.ro";
+connectAttr "Material_Ref2:place2dTexture6.n" "Material_Ref2:file6.n";
+connectAttr "Material_Ref2:place2dTexture6.vt1" "Material_Ref2:file6.vt1";
+connectAttr "Material_Ref2:place2dTexture6.vt2" "Material_Ref2:file6.vt2";
+connectAttr "Material_Ref2:place2dTexture6.vt3" "Material_Ref2:file6.vt3";
+connectAttr "Material_Ref2:place2dTexture6.vc1" "Material_Ref2:file6.vc1";
+connectAttr "Material_Ref2:place2dTexture6.o" "Material_Ref2:file6.uv";
+connectAttr "Material_Ref2:place2dTexture6.ofs" "Material_Ref2:file6.fs";
+connectAttr "Material_Ref2:pasted__aiMultiply2.out" "Material_Ref2:Cave_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__file6.oa" "Material_Ref2:Cave_Floor_Mat.sr";
+connectAttr "Material_Ref2:pasted__aiNormalMap2.out" "Material_Ref2:Cave_Floor_Mat.n"
+		;
+connectAttr "Material_Ref2:pasted__file5.oc" "Material_Ref2:pasted__aiMultiply2.input1"
+		;
+connectAttr "Material_Ref2:pasted__file7.oc" "Material_Ref2:pasted__aiMultiply2.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file5.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture5.c" "Material_Ref2:pasted__file5.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.tf" "Material_Ref2:pasted__file5.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.rf" "Material_Ref2:pasted__file5.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.mu" "Material_Ref2:pasted__file5.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.mv" "Material_Ref2:pasted__file5.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.s" "Material_Ref2:pasted__file5.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.wu" "Material_Ref2:pasted__file5.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.wv" "Material_Ref2:pasted__file5.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.re" "Material_Ref2:pasted__file5.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.of" "Material_Ref2:pasted__file5.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.r" "Material_Ref2:pasted__file5.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.n" "Material_Ref2:pasted__file5.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.vt1" "Material_Ref2:pasted__file5.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.vt2" "Material_Ref2:pasted__file5.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.vt3" "Material_Ref2:pasted__file5.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.vc1" "Material_Ref2:pasted__file5.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.o" "Material_Ref2:pasted__file5.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.ofs" "Material_Ref2:pasted__file5.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file7.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture7.c" "Material_Ref2:pasted__file7.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.tf" "Material_Ref2:pasted__file7.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.rf" "Material_Ref2:pasted__file7.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.mu" "Material_Ref2:pasted__file7.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.mv" "Material_Ref2:pasted__file7.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.s" "Material_Ref2:pasted__file7.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.wu" "Material_Ref2:pasted__file7.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.wv" "Material_Ref2:pasted__file7.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.re" "Material_Ref2:pasted__file7.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.of" "Material_Ref2:pasted__file7.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.r" "Material_Ref2:pasted__file7.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.n" "Material_Ref2:pasted__file7.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.vt1" "Material_Ref2:pasted__file7.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.vt2" "Material_Ref2:pasted__file7.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.vt3" "Material_Ref2:pasted__file7.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.vc1" "Material_Ref2:pasted__file7.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.o" "Material_Ref2:pasted__file7.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture7.ofs" "Material_Ref2:pasted__file7.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file6.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture6.c" "Material_Ref2:pasted__file6.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.tf" "Material_Ref2:pasted__file6.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.rf" "Material_Ref2:pasted__file6.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.mu" "Material_Ref2:pasted__file6.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.mv" "Material_Ref2:pasted__file6.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.s" "Material_Ref2:pasted__file6.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.wu" "Material_Ref2:pasted__file6.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.wv" "Material_Ref2:pasted__file6.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.re" "Material_Ref2:pasted__file6.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.of" "Material_Ref2:pasted__file6.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.r" "Material_Ref2:pasted__file6.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.n" "Material_Ref2:pasted__file6.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.vt1" "Material_Ref2:pasted__file6.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.vt2" "Material_Ref2:pasted__file6.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.vt3" "Material_Ref2:pasted__file6.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.vc1" "Material_Ref2:pasted__file6.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.o" "Material_Ref2:pasted__file6.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture6.ofs" "Material_Ref2:pasted__file6.fs"
+		;
+connectAttr "Material_Ref2:pasted__file8.oc" "Material_Ref2:pasted__aiNormalMap2.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file8.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture8.c" "Material_Ref2:pasted__file8.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.tf" "Material_Ref2:pasted__file8.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.rf" "Material_Ref2:pasted__file8.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.mu" "Material_Ref2:pasted__file8.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.mv" "Material_Ref2:pasted__file8.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.s" "Material_Ref2:pasted__file8.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.wu" "Material_Ref2:pasted__file8.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.wv" "Material_Ref2:pasted__file8.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.re" "Material_Ref2:pasted__file8.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.of" "Material_Ref2:pasted__file8.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.r" "Material_Ref2:pasted__file8.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.n" "Material_Ref2:pasted__file8.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.vt1" "Material_Ref2:pasted__file8.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.vt2" "Material_Ref2:pasted__file8.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.vt3" "Material_Ref2:pasted__file8.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.vc1" "Material_Ref2:pasted__file8.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.o" "Material_Ref2:pasted__file8.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture8.ofs" "Material_Ref2:pasted__file8.fs"
+		;
+connectAttr "Material_Ref2:file7.ocr" "Material_Ref2:CaveFloorDisplacement.d";
+connectAttr "Material_Ref2:CaveFloorDisplacement.d" "Material_Ref2:displacementShader2SG.ds"
+		;
+connectAttr "Material_Ref2:Cave_Floor_Mat.oc" "Material_Ref2:displacementShader2SG.ss"
+		;
+connectAttr "Material_Ref2:displacementShader2SG.msg" "Material_Ref2:materialInfo3.sg"
+		;
+connectAttr "Material_Ref2:Cave_Floor_Mat.msg" "Material_Ref2:materialInfo3.m";
+connectAttr "Material_Ref2:pasted__aiMultiply2.msg" "Material_Ref2:materialInfo3.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file7.ws";
+connectAttr "Material_Ref2:place2dTexture7.c" "Material_Ref2:file7.c";
+connectAttr "Material_Ref2:place2dTexture7.tf" "Material_Ref2:file7.tf";
+connectAttr "Material_Ref2:place2dTexture7.rf" "Material_Ref2:file7.rf";
+connectAttr "Material_Ref2:place2dTexture7.mu" "Material_Ref2:file7.mu";
+connectAttr "Material_Ref2:place2dTexture7.mv" "Material_Ref2:file7.mv";
+connectAttr "Material_Ref2:place2dTexture7.s" "Material_Ref2:file7.s";
+connectAttr "Material_Ref2:place2dTexture7.wu" "Material_Ref2:file7.wu";
+connectAttr "Material_Ref2:place2dTexture7.wv" "Material_Ref2:file7.wv";
+connectAttr "Material_Ref2:place2dTexture7.re" "Material_Ref2:file7.re";
+connectAttr "Material_Ref2:place2dTexture7.of" "Material_Ref2:file7.of";
+connectAttr "Material_Ref2:place2dTexture7.r" "Material_Ref2:file7.ro";
+connectAttr "Material_Ref2:place2dTexture7.n" "Material_Ref2:file7.n";
+connectAttr "Material_Ref2:place2dTexture7.vt1" "Material_Ref2:file7.vt1";
+connectAttr "Material_Ref2:place2dTexture7.vt2" "Material_Ref2:file7.vt2";
+connectAttr "Material_Ref2:place2dTexture7.vt3" "Material_Ref2:file7.vt3";
+connectAttr "Material_Ref2:place2dTexture7.vc1" "Material_Ref2:file7.vc1";
+connectAttr "Material_Ref2:place2dTexture7.o" "Material_Ref2:file7.uv";
+connectAttr "Material_Ref2:place2dTexture7.ofs" "Material_Ref2:file7.fs";
+connectAttr "Material_Ref2:pasted__pasted__aiMultiply1.out" "Material_Ref2:Cave_Wall_2_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file2.oa" "Material_Ref2:Cave_Wall_2_Mat.sr"
+		;
+connectAttr "Material_Ref2:pasted__pasted__aiNormalMap1.out" "Material_Ref2:Cave_Wall_2_Mat.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file1.oc" "Material_Ref2:pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file3.oc" "Material_Ref2:pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.c" "Material_Ref2:pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.tf" "Material_Ref2:pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.rf" "Material_Ref2:pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.mu" "Material_Ref2:pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.mv" "Material_Ref2:pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.s" "Material_Ref2:pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.wu" "Material_Ref2:pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.wv" "Material_Ref2:pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.re" "Material_Ref2:pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.of" "Material_Ref2:pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.r" "Material_Ref2:pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.n" "Material_Ref2:pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.vt1" "Material_Ref2:pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.vt2" "Material_Ref2:pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.vt3" "Material_Ref2:pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.vc1" "Material_Ref2:pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.o" "Material_Ref2:pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.ofs" "Material_Ref2:pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.c" "Material_Ref2:pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.tf" "Material_Ref2:pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.rf" "Material_Ref2:pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.mu" "Material_Ref2:pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.mv" "Material_Ref2:pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.s" "Material_Ref2:pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.wu" "Material_Ref2:pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.wv" "Material_Ref2:pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.re" "Material_Ref2:pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.of" "Material_Ref2:pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.r" "Material_Ref2:pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.n" "Material_Ref2:pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.vt1" "Material_Ref2:pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.vt2" "Material_Ref2:pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.vt3" "Material_Ref2:pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.vc1" "Material_Ref2:pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.o" "Material_Ref2:pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.ofs" "Material_Ref2:pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.c" "Material_Ref2:pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.tf" "Material_Ref2:pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.rf" "Material_Ref2:pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.mu" "Material_Ref2:pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.mv" "Material_Ref2:pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.s" "Material_Ref2:pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.wu" "Material_Ref2:pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.wv" "Material_Ref2:pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.re" "Material_Ref2:pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.of" "Material_Ref2:pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.r" "Material_Ref2:pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.n" "Material_Ref2:pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.vt1" "Material_Ref2:pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.vt2" "Material_Ref2:pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.vt3" "Material_Ref2:pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.vc1" "Material_Ref2:pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.o" "Material_Ref2:pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.ofs" "Material_Ref2:pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file4.oc" "Material_Ref2:pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.c" "Material_Ref2:pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.tf" "Material_Ref2:pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.rf" "Material_Ref2:pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.mu" "Material_Ref2:pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.mv" "Material_Ref2:pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.s" "Material_Ref2:pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.wu" "Material_Ref2:pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.wv" "Material_Ref2:pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.re" "Material_Ref2:pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.of" "Material_Ref2:pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.r" "Material_Ref2:pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.n" "Material_Ref2:pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.vt1" "Material_Ref2:pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.vt2" "Material_Ref2:pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.vt3" "Material_Ref2:pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.vc1" "Material_Ref2:pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.o" "Material_Ref2:pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.ofs" "Material_Ref2:pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref2:file8.ocr" "Material_Ref2:Cave2Displacement.d";
+connectAttr "Material_Ref2:Cave2Displacement.d" "Material_Ref2:Cave2Displacement5.ds"
+		;
+connectAttr "Material_Ref2:Cave_Wall_2_Mat.oc" "Material_Ref2:Cave2Displacement5.ss"
+		;
+connectAttr "Material_Ref2:Cave2Displacement5.msg" "Material_Ref2:materialInfo4.sg"
+		;
+connectAttr "Material_Ref2:Cave_Wall_2_Mat.msg" "Material_Ref2:materialInfo4.m";
+connectAttr "Material_Ref2:pasted__pasted__aiMultiply1.msg" "Material_Ref2:materialInfo4.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file8.ws";
+connectAttr "Material_Ref2:place2dTexture8.c" "Material_Ref2:file8.c";
+connectAttr "Material_Ref2:place2dTexture8.tf" "Material_Ref2:file8.tf";
+connectAttr "Material_Ref2:place2dTexture8.rf" "Material_Ref2:file8.rf";
+connectAttr "Material_Ref2:place2dTexture8.mu" "Material_Ref2:file8.mu";
+connectAttr "Material_Ref2:place2dTexture8.mv" "Material_Ref2:file8.mv";
+connectAttr "Material_Ref2:place2dTexture8.s" "Material_Ref2:file8.s";
+connectAttr "Material_Ref2:place2dTexture8.wu" "Material_Ref2:file8.wu";
+connectAttr "Material_Ref2:place2dTexture8.wv" "Material_Ref2:file8.wv";
+connectAttr "Material_Ref2:place2dTexture8.re" "Material_Ref2:file8.re";
+connectAttr "Material_Ref2:place2dTexture8.of" "Material_Ref2:file8.of";
+connectAttr "Material_Ref2:place2dTexture8.r" "Material_Ref2:file8.ro";
+connectAttr "Material_Ref2:place2dTexture8.n" "Material_Ref2:file8.n";
+connectAttr "Material_Ref2:place2dTexture8.vt1" "Material_Ref2:file8.vt1";
+connectAttr "Material_Ref2:place2dTexture8.vt2" "Material_Ref2:file8.vt2";
+connectAttr "Material_Ref2:place2dTexture8.vt3" "Material_Ref2:file8.vt3";
+connectAttr "Material_Ref2:place2dTexture8.vc1" "Material_Ref2:file8.vc1";
+connectAttr "Material_Ref2:place2dTexture8.o" "Material_Ref2:file8.uv";
+connectAttr "Material_Ref2:place2dTexture8.ofs" "Material_Ref2:file8.fs";
+connectAttr "Material_Ref2:pasted__pasted__pasted__aiMultiply1.out" "Material_Ref2:Cave_Wall_3_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file2.oa" "Material_Ref2:Cave_Wall_3_Mat.sr"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref2:Cave_Wall_3_Mat.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file1.oc" "Material_Ref2:pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file3.oc" "Material_Ref2:pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.c" "Material_Ref2:pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref2:pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref2:pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref2:pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref2:pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.s" "Material_Ref2:pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref2:pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref2:pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.re" "Material_Ref2:pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.of" "Material_Ref2:pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.r" "Material_Ref2:pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.n" "Material_Ref2:pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref2:pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref2:pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref2:pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref2:pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.o" "Material_Ref2:pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref2:pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.c" "Material_Ref2:pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref2:pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref2:pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref2:pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref2:pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.s" "Material_Ref2:pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref2:pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref2:pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.re" "Material_Ref2:pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.of" "Material_Ref2:pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.r" "Material_Ref2:pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.n" "Material_Ref2:pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref2:pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref2:pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref2:pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref2:pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.o" "Material_Ref2:pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref2:pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.c" "Material_Ref2:pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref2:pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref2:pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref2:pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref2:pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.s" "Material_Ref2:pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref2:pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref2:pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.re" "Material_Ref2:pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.of" "Material_Ref2:pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.r" "Material_Ref2:pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.n" "Material_Ref2:pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref2:pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref2:pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref2:pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref2:pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.o" "Material_Ref2:pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref2:pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file4.oc" "Material_Ref2:pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.c" "Material_Ref2:pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref2:pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref2:pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref2:pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref2:pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.s" "Material_Ref2:pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref2:pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref2:pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.re" "Material_Ref2:pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.of" "Material_Ref2:pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.r" "Material_Ref2:pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.n" "Material_Ref2:pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref2:pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref2:pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref2:pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref2:pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.o" "Material_Ref2:pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref2:pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref2:displacementShader4SG.msg" "Material_Ref2:materialInfo5.sg"
+		;
+connectAttr "Material_Ref2:pasted__displacementShader4SG.msg" "Material_Ref2:pasted__materialInfo5.sg"
+		;
+connectAttr "Material_Ref2:pasted__displacementShader4SG1.msg" "Material_Ref2:pasted__materialInfo6.sg"
+		;
+connectAttr "Material_Ref2:file9.ocr" "Material_Ref2:Cave3Displacemnt.d";
+connectAttr "Material_Ref2:Cave3Displacemnt.d" "Material_Ref2:displacementShader5SG.ds"
+		;
+connectAttr "Material_Ref2:Cave_Wall_3_Mat.oc" "Material_Ref2:displacementShader5SG.ss"
+		;
+connectAttr "Material_Ref2:displacementShader5SG.msg" "Material_Ref2:materialInfo6.sg"
+		;
+connectAttr "Material_Ref2:Cave_Wall_3_Mat.msg" "Material_Ref2:materialInfo6.m";
+connectAttr "Material_Ref2:pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref2:materialInfo6.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file9.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file9.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file9.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file9.ws";
+connectAttr "Material_Ref2:place2dTexture9.c" "Material_Ref2:file9.c";
+connectAttr "Material_Ref2:place2dTexture9.tf" "Material_Ref2:file9.tf";
+connectAttr "Material_Ref2:place2dTexture9.rf" "Material_Ref2:file9.rf";
+connectAttr "Material_Ref2:place2dTexture9.mu" "Material_Ref2:file9.mu";
+connectAttr "Material_Ref2:place2dTexture9.mv" "Material_Ref2:file9.mv";
+connectAttr "Material_Ref2:place2dTexture9.s" "Material_Ref2:file9.s";
+connectAttr "Material_Ref2:place2dTexture9.wu" "Material_Ref2:file9.wu";
+connectAttr "Material_Ref2:place2dTexture9.wv" "Material_Ref2:file9.wv";
+connectAttr "Material_Ref2:place2dTexture9.re" "Material_Ref2:file9.re";
+connectAttr "Material_Ref2:place2dTexture9.of" "Material_Ref2:file9.of";
+connectAttr "Material_Ref2:place2dTexture9.r" "Material_Ref2:file9.ro";
+connectAttr "Material_Ref2:place2dTexture9.n" "Material_Ref2:file9.n";
+connectAttr "Material_Ref2:place2dTexture9.vt1" "Material_Ref2:file9.vt1";
+connectAttr "Material_Ref2:place2dTexture9.vt2" "Material_Ref2:file9.vt2";
+connectAttr "Material_Ref2:place2dTexture9.vt3" "Material_Ref2:file9.vt3";
+connectAttr "Material_Ref2:place2dTexture9.vc1" "Material_Ref2:file9.vc1";
+connectAttr "Material_Ref2:place2dTexture9.o" "Material_Ref2:file9.uv";
+connectAttr "Material_Ref2:place2dTexture9.ofs" "Material_Ref2:file9.fs";
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1.out" "Material_Ref2:Cave_Wall_4_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file2.oa" "Material_Ref2:Cave_Wall_4_Mat.sr"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref2:Cave_Wall_4_Mat.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file1.oc" "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file3.oc" "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.c" "Material_Ref2:pasted__pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref2:pasted__pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref2:pasted__pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref2:pasted__pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref2:pasted__pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.s" "Material_Ref2:pasted__pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref2:pasted__pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref2:pasted__pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.re" "Material_Ref2:pasted__pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.of" "Material_Ref2:pasted__pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.r" "Material_Ref2:pasted__pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.n" "Material_Ref2:pasted__pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref2:pasted__pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref2:pasted__pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref2:pasted__pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref2:pasted__pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.o" "Material_Ref2:pasted__pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref2:pasted__pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.c" "Material_Ref2:pasted__pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref2:pasted__pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref2:pasted__pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref2:pasted__pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref2:pasted__pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.s" "Material_Ref2:pasted__pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref2:pasted__pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref2:pasted__pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.re" "Material_Ref2:pasted__pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.of" "Material_Ref2:pasted__pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.r" "Material_Ref2:pasted__pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.n" "Material_Ref2:pasted__pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref2:pasted__pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref2:pasted__pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref2:pasted__pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref2:pasted__pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.o" "Material_Ref2:pasted__pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref2:pasted__pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.c" "Material_Ref2:pasted__pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref2:pasted__pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref2:pasted__pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref2:pasted__pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref2:pasted__pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.s" "Material_Ref2:pasted__pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref2:pasted__pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref2:pasted__pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.re" "Material_Ref2:pasted__pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.of" "Material_Ref2:pasted__pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.r" "Material_Ref2:pasted__pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.n" "Material_Ref2:pasted__pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref2:pasted__pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref2:pasted__pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref2:pasted__pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref2:pasted__pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.o" "Material_Ref2:pasted__pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref2:pasted__pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file4.oc" "Material_Ref2:pasted__pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.c" "Material_Ref2:pasted__pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref2:pasted__pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref2:pasted__pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref2:pasted__pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref2:pasted__pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.s" "Material_Ref2:pasted__pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref2:pasted__pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref2:pasted__pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.re" "Material_Ref2:pasted__pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.of" "Material_Ref2:pasted__pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.r" "Material_Ref2:pasted__pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.n" "Material_Ref2:pasted__pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref2:pasted__pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref2:pasted__pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref2:pasted__pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref2:pasted__pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.o" "Material_Ref2:pasted__pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref2:pasted__pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref2:file10.ocr" "Material_Ref2:cave4Displacement.d";
+connectAttr "Material_Ref2:cave4Displacement.d" "Material_Ref2:displacementShader6SG.ds"
+		;
+connectAttr "Material_Ref2:Cave_Wall_4_Mat.oc" "Material_Ref2:displacementShader6SG.ss"
+		;
+connectAttr "Material_Ref2:displacementShader6SG.msg" "Material_Ref2:materialInfo7.sg"
+		;
+connectAttr "Material_Ref2:Cave_Wall_4_Mat.msg" "Material_Ref2:materialInfo7.m";
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref2:materialInfo7.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file10.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file10.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file10.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file10.ws";
+connectAttr "Material_Ref2:place2dTexture10.c" "Material_Ref2:file10.c";
+connectAttr "Material_Ref2:place2dTexture10.tf" "Material_Ref2:file10.tf";
+connectAttr "Material_Ref2:place2dTexture10.rf" "Material_Ref2:file10.rf";
+connectAttr "Material_Ref2:place2dTexture10.mu" "Material_Ref2:file10.mu";
+connectAttr "Material_Ref2:place2dTexture10.mv" "Material_Ref2:file10.mv";
+connectAttr "Material_Ref2:place2dTexture10.s" "Material_Ref2:file10.s";
+connectAttr "Material_Ref2:place2dTexture10.wu" "Material_Ref2:file10.wu";
+connectAttr "Material_Ref2:place2dTexture10.wv" "Material_Ref2:file10.wv";
+connectAttr "Material_Ref2:place2dTexture10.re" "Material_Ref2:file10.re";
+connectAttr "Material_Ref2:place2dTexture10.of" "Material_Ref2:file10.of";
+connectAttr "Material_Ref2:place2dTexture10.r" "Material_Ref2:file10.ro";
+connectAttr "Material_Ref2:place2dTexture10.n" "Material_Ref2:file10.n";
+connectAttr "Material_Ref2:place2dTexture10.vt1" "Material_Ref2:file10.vt1";
+connectAttr "Material_Ref2:place2dTexture10.vt2" "Material_Ref2:file10.vt2";
+connectAttr "Material_Ref2:place2dTexture10.vt3" "Material_Ref2:file10.vt3";
+connectAttr "Material_Ref2:place2dTexture10.vc1" "Material_Ref2:file10.vc1";
+connectAttr "Material_Ref2:place2dTexture10.o" "Material_Ref2:file10.uv";
+connectAttr "Material_Ref2:place2dTexture10.ofs" "Material_Ref2:file10.fs";
+connectAttr "Material_Ref2:file11.oc" "Material_Ref2:Generic_Wood_Mat.bc";
+connectAttr "Material_Ref2:Generic_Wood_Mat.oc" "Material_Ref2:standardSurface3SG.ss"
+		;
+connectAttr "Material_Ref2:standardSurface3SG.msg" "Material_Ref2:materialInfo8.sg"
+		;
+connectAttr "Material_Ref2:Generic_Wood_Mat.msg" "Material_Ref2:materialInfo8.m"
+		;
+connectAttr "Material_Ref2:file11.msg" "Material_Ref2:materialInfo8.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file11.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file11.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file11.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file11.ws";
+connectAttr "Material_Ref2:place2dTexture11.c" "Material_Ref2:file11.c";
+connectAttr "Material_Ref2:place2dTexture11.tf" "Material_Ref2:file11.tf";
+connectAttr "Material_Ref2:place2dTexture11.rf" "Material_Ref2:file11.rf";
+connectAttr "Material_Ref2:place2dTexture11.mu" "Material_Ref2:file11.mu";
+connectAttr "Material_Ref2:place2dTexture11.mv" "Material_Ref2:file11.mv";
+connectAttr "Material_Ref2:place2dTexture11.s" "Material_Ref2:file11.s";
+connectAttr "Material_Ref2:place2dTexture11.wu" "Material_Ref2:file11.wu";
+connectAttr "Material_Ref2:place2dTexture11.wv" "Material_Ref2:file11.wv";
+connectAttr "Material_Ref2:place2dTexture11.re" "Material_Ref2:file11.re";
+connectAttr "Material_Ref2:place2dTexture11.of" "Material_Ref2:file11.of";
+connectAttr "Material_Ref2:place2dTexture11.r" "Material_Ref2:file11.ro";
+connectAttr "Material_Ref2:place2dTexture11.n" "Material_Ref2:file11.n";
+connectAttr "Material_Ref2:place2dTexture11.vt1" "Material_Ref2:file11.vt1";
+connectAttr "Material_Ref2:place2dTexture11.vt2" "Material_Ref2:file11.vt2";
+connectAttr "Material_Ref2:place2dTexture11.vt3" "Material_Ref2:file11.vt3";
+connectAttr "Material_Ref2:place2dTexture11.vc1" "Material_Ref2:file11.vc1";
+connectAttr "Material_Ref2:place2dTexture11.o" "Material_Ref2:file11.uv";
+connectAttr "Material_Ref2:place2dTexture11.ofs" "Material_Ref2:file11.fs";
+connectAttr "Material_Ref2:file12.oc" "Material_Ref2:White_Paint_Mat.bc";
+connectAttr "Material_Ref2:White_Paint_Mat.oc" "Material_Ref2:standardSurface4SG.ss"
+		;
+connectAttr "Material_Ref2:standardSurface4SG.msg" "Material_Ref2:materialInfo9.sg"
+		;
+connectAttr "Material_Ref2:White_Paint_Mat.msg" "Material_Ref2:materialInfo9.m";
+connectAttr "Material_Ref2:file12.msg" "Material_Ref2:materialInfo9.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file12.ws";
+connectAttr "Material_Ref2:place2dTexture12.c" "Material_Ref2:file12.c";
+connectAttr "Material_Ref2:place2dTexture12.tf" "Material_Ref2:file12.tf";
+connectAttr "Material_Ref2:place2dTexture12.rf" "Material_Ref2:file12.rf";
+connectAttr "Material_Ref2:place2dTexture12.mu" "Material_Ref2:file12.mu";
+connectAttr "Material_Ref2:place2dTexture12.mv" "Material_Ref2:file12.mv";
+connectAttr "Material_Ref2:place2dTexture12.s" "Material_Ref2:file12.s";
+connectAttr "Material_Ref2:place2dTexture12.wu" "Material_Ref2:file12.wu";
+connectAttr "Material_Ref2:place2dTexture12.wv" "Material_Ref2:file12.wv";
+connectAttr "Material_Ref2:place2dTexture12.re" "Material_Ref2:file12.re";
+connectAttr "Material_Ref2:place2dTexture12.of" "Material_Ref2:file12.of";
+connectAttr "Material_Ref2:place2dTexture12.r" "Material_Ref2:file12.ro";
+connectAttr "Material_Ref2:place2dTexture12.n" "Material_Ref2:file12.n";
+connectAttr "Material_Ref2:place2dTexture12.vt1" "Material_Ref2:file12.vt1";
+connectAttr "Material_Ref2:place2dTexture12.vt2" "Material_Ref2:file12.vt2";
+connectAttr "Material_Ref2:place2dTexture12.vt3" "Material_Ref2:file12.vt3";
+connectAttr "Material_Ref2:place2dTexture12.vc1" "Material_Ref2:file12.vc1";
+connectAttr "Material_Ref2:place2dTexture12.o" "Material_Ref2:file12.uv";
+connectAttr "Material_Ref2:place2dTexture12.ofs" "Material_Ref2:file12.fs";
+connectAttr "Material_Ref2:aiMultiply2.out" "Material_Ref2:Blue_Paint_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file12.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture12.c" "Material_Ref2:pasted__file12.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.tf" "Material_Ref2:pasted__file12.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.rf" "Material_Ref2:pasted__file12.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.mu" "Material_Ref2:pasted__file12.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.mv" "Material_Ref2:pasted__file12.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.s" "Material_Ref2:pasted__file12.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.wu" "Material_Ref2:pasted__file12.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.wv" "Material_Ref2:pasted__file12.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.re" "Material_Ref2:pasted__file12.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.of" "Material_Ref2:pasted__file12.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.r" "Material_Ref2:pasted__file12.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.n" "Material_Ref2:pasted__file12.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.vt1" "Material_Ref2:pasted__file12.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.vt2" "Material_Ref2:pasted__file12.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.vt3" "Material_Ref2:pasted__file12.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.vc1" "Material_Ref2:pasted__file12.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.o" "Material_Ref2:pasted__file12.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture12.ofs" "Material_Ref2:pasted__file12.fs"
+		;
+connectAttr "Material_Ref2:pasted__file12.oc" "Material_Ref2:aiMultiply2.input1"
+		;
+connectAttr "Material_Ref2:colorConstant1.oc" "Material_Ref2:aiMultiply2.input2"
+		;
+connectAttr "Material_Ref2:Blue_Paint_Mat.oc" "Material_Ref2:Blue_Paint_MatSG.ss"
+		;
+connectAttr "Material_Ref2:Blue_Paint_MatSG.msg" "Material_Ref2:materialInfo10.sg"
+		;
+connectAttr "Material_Ref2:Blue_Paint_Mat.msg" "Material_Ref2:materialInfo10.m";
+connectAttr "Material_Ref2:pasted__file12.msg" "Material_Ref2:materialInfo10.t" 
+		-na;
+connectAttr "Material_Ref2:file13.oc" "Material_Ref2:Marble_Mat.bc";
+connectAttr "Material_Ref2:Marble_Mat.oc" "Material_Ref2:standardSurface5SG.ss";
+connectAttr "Material_Ref2:standardSurface5SG.msg" "Material_Ref2:materialInfo11.sg"
+		;
+connectAttr "Material_Ref2:Marble_Mat.msg" "Material_Ref2:materialInfo11.m";
+connectAttr "Material_Ref2:file13.msg" "Material_Ref2:materialInfo11.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file13.ws";
+connectAttr "Material_Ref2:place2dTexture13.c" "Material_Ref2:file13.c";
+connectAttr "Material_Ref2:place2dTexture13.tf" "Material_Ref2:file13.tf";
+connectAttr "Material_Ref2:place2dTexture13.rf" "Material_Ref2:file13.rf";
+connectAttr "Material_Ref2:place2dTexture13.mu" "Material_Ref2:file13.mu";
+connectAttr "Material_Ref2:place2dTexture13.mv" "Material_Ref2:file13.mv";
+connectAttr "Material_Ref2:place2dTexture13.s" "Material_Ref2:file13.s";
+connectAttr "Material_Ref2:place2dTexture13.wu" "Material_Ref2:file13.wu";
+connectAttr "Material_Ref2:place2dTexture13.wv" "Material_Ref2:file13.wv";
+connectAttr "Material_Ref2:place2dTexture13.re" "Material_Ref2:file13.re";
+connectAttr "Material_Ref2:place2dTexture13.of" "Material_Ref2:file13.of";
+connectAttr "Material_Ref2:place2dTexture13.r" "Material_Ref2:file13.ro";
+connectAttr "Material_Ref2:place2dTexture13.n" "Material_Ref2:file13.n";
+connectAttr "Material_Ref2:place2dTexture13.vt1" "Material_Ref2:file13.vt1";
+connectAttr "Material_Ref2:place2dTexture13.vt2" "Material_Ref2:file13.vt2";
+connectAttr "Material_Ref2:place2dTexture13.vt3" "Material_Ref2:file13.vt3";
+connectAttr "Material_Ref2:place2dTexture13.vc1" "Material_Ref2:file13.vc1";
+connectAttr "Material_Ref2:place2dTexture13.o" "Material_Ref2:file13.uv";
+connectAttr "Material_Ref2:place2dTexture13.ofs" "Material_Ref2:file13.fs";
+connectAttr "Material_Ref2:pasted__aiMultiply3.out" "Material_Ref2:Brown_Paint_Mat.bc"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file12.oc" "Material_Ref2:pasted__aiMultiply3.input1"
+		;
+connectAttr "Material_Ref2:pasted__colorConstant1.oc" "Material_Ref2:pasted__aiMultiply3.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file12.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file12.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file12.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file12.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.c" "Material_Ref2:pasted__pasted__file12.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.tf" "Material_Ref2:pasted__pasted__file12.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.rf" "Material_Ref2:pasted__pasted__file12.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.mu" "Material_Ref2:pasted__pasted__file12.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.mv" "Material_Ref2:pasted__pasted__file12.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.s" "Material_Ref2:pasted__pasted__file12.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.wu" "Material_Ref2:pasted__pasted__file12.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.wv" "Material_Ref2:pasted__pasted__file12.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.re" "Material_Ref2:pasted__pasted__file12.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.of" "Material_Ref2:pasted__pasted__file12.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.r" "Material_Ref2:pasted__pasted__file12.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.n" "Material_Ref2:pasted__pasted__file12.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.vt1" "Material_Ref2:pasted__pasted__file12.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.vt2" "Material_Ref2:pasted__pasted__file12.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.vt3" "Material_Ref2:pasted__pasted__file12.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.vc1" "Material_Ref2:pasted__pasted__file12.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.o" "Material_Ref2:pasted__pasted__file12.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.ofs" "Material_Ref2:pasted__pasted__file12.fs"
+		;
+connectAttr "Material_Ref2:Brown_Paint_Mat.oc" "Material_Ref2:Brown_Paint_MatSG.ss"
+		;
+connectAttr "polySurfaceShape151.iog" "Material_Ref2:Brown_Paint_MatSG.dsm" -na;
+connectAttr "Material_Ref2:Brown_Paint_MatSG.msg" "Material_Ref2:materialInfo12.sg"
+		;
+connectAttr "Material_Ref2:Brown_Paint_Mat.msg" "Material_Ref2:materialInfo12.m"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file12.msg" "Material_Ref2:materialInfo12.t"
+		 -na;
+connectAttr "Material_Ref2:pasted__file13.oc" "Material_Ref2:Stone_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__file13.ws";
+connectAttr "Material_Ref2:pasted__place2dTexture13.c" "Material_Ref2:pasted__file13.c"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.tf" "Material_Ref2:pasted__file13.tf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.rf" "Material_Ref2:pasted__file13.rf"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.mu" "Material_Ref2:pasted__file13.mu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.mv" "Material_Ref2:pasted__file13.mv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.s" "Material_Ref2:pasted__file13.s"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.wu" "Material_Ref2:pasted__file13.wu"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.wv" "Material_Ref2:pasted__file13.wv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.re" "Material_Ref2:pasted__file13.re"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.of" "Material_Ref2:pasted__file13.of"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.r" "Material_Ref2:pasted__file13.ro"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.n" "Material_Ref2:pasted__file13.n"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.vt1" "Material_Ref2:pasted__file13.vt1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.vt2" "Material_Ref2:pasted__file13.vt2"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.vt3" "Material_Ref2:pasted__file13.vt3"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.vc1" "Material_Ref2:pasted__file13.vc1"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.o" "Material_Ref2:pasted__file13.uv"
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture13.ofs" "Material_Ref2:pasted__file13.fs"
+		;
+connectAttr "Material_Ref2:Stone_Mat.oc" "Material_Ref2:Stone_MatSG.ss";
+connectAttr "Material_Ref2:Stone_MatSG.msg" "Material_Ref2:materialInfo13.sg";
+connectAttr "Material_Ref2:Stone_Mat.msg" "Material_Ref2:materialInfo13.m";
+connectAttr "Material_Ref2:pasted__file13.msg" "Material_Ref2:materialInfo13.t" 
+		-na;
+connectAttr "Material_Ref2:pasted__pasted__file13.oc" "Material_Ref2:Generic_Metal_Mat.bc"
+		;
+connectAttr "Material_Ref2:file14.oa" "Material_Ref2:Generic_Metal_Mat.m";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:pasted__pasted__file13.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:pasted__pasted__file13.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:pasted__pasted__file13.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:pasted__pasted__file13.ws"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.c" "Material_Ref2:pasted__pasted__file13.c"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.tf" "Material_Ref2:pasted__pasted__file13.tf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.rf" "Material_Ref2:pasted__pasted__file13.rf"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.mu" "Material_Ref2:pasted__pasted__file13.mu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.mv" "Material_Ref2:pasted__pasted__file13.mv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.s" "Material_Ref2:pasted__pasted__file13.s"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.wu" "Material_Ref2:pasted__pasted__file13.wu"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.wv" "Material_Ref2:pasted__pasted__file13.wv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.re" "Material_Ref2:pasted__pasted__file13.re"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.of" "Material_Ref2:pasted__pasted__file13.of"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.r" "Material_Ref2:pasted__pasted__file13.ro"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.n" "Material_Ref2:pasted__pasted__file13.n"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.vt1" "Material_Ref2:pasted__pasted__file13.vt1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.vt2" "Material_Ref2:pasted__pasted__file13.vt2"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.vt3" "Material_Ref2:pasted__pasted__file13.vt3"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.vc1" "Material_Ref2:pasted__pasted__file13.vc1"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.o" "Material_Ref2:pasted__pasted__file13.uv"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.ofs" "Material_Ref2:pasted__pasted__file13.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref2:file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref2:file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref2:file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref2:file14.ws";
+connectAttr "Material_Ref2:place2dTexture14.c" "Material_Ref2:file14.c";
+connectAttr "Material_Ref2:place2dTexture14.tf" "Material_Ref2:file14.tf";
+connectAttr "Material_Ref2:place2dTexture14.rf" "Material_Ref2:file14.rf";
+connectAttr "Material_Ref2:place2dTexture14.mu" "Material_Ref2:file14.mu";
+connectAttr "Material_Ref2:place2dTexture14.mv" "Material_Ref2:file14.mv";
+connectAttr "Material_Ref2:place2dTexture14.s" "Material_Ref2:file14.s";
+connectAttr "Material_Ref2:place2dTexture14.wu" "Material_Ref2:file14.wu";
+connectAttr "Material_Ref2:place2dTexture14.wv" "Material_Ref2:file14.wv";
+connectAttr "Material_Ref2:place2dTexture14.re" "Material_Ref2:file14.re";
+connectAttr "Material_Ref2:place2dTexture14.of" "Material_Ref2:file14.of";
+connectAttr "Material_Ref2:place2dTexture14.r" "Material_Ref2:file14.ro";
+connectAttr "Material_Ref2:place2dTexture14.n" "Material_Ref2:file14.n";
+connectAttr "Material_Ref2:place2dTexture14.vt1" "Material_Ref2:file14.vt1";
+connectAttr "Material_Ref2:place2dTexture14.vt2" "Material_Ref2:file14.vt2";
+connectAttr "Material_Ref2:place2dTexture14.vt3" "Material_Ref2:file14.vt3";
+connectAttr "Material_Ref2:place2dTexture14.vc1" "Material_Ref2:file14.vc1";
+connectAttr "Material_Ref2:place2dTexture14.o" "Material_Ref2:file14.uv";
+connectAttr "Material_Ref2:place2dTexture14.ofs" "Material_Ref2:file14.fs";
+connectAttr "Material_Ref2:Generic_Metal_Mat.oc" "Material_Ref2:Generic_Metal_MatSG.ss"
+		;
+connectAttr "Material_Ref2:Generic_Metal_MatSG.msg" "Material_Ref2:materialInfo14.sg"
+		;
+connectAttr "Material_Ref2:Generic_Metal_Mat.msg" "Material_Ref2:materialInfo14.m"
+		;
+connectAttr "Material_Ref2:Generic_Metal_Mat.msg" "Material_Ref2:materialInfo14.t"
+		 -na;
+connectAttr "Material_Ref2:pasted__colorConstant1.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref2:Brown_Paint_MatSG.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref2:Brown_Paint_Mat.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "Material_Ref2:pasted__aiMultiply3.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "Material_Ref2:pasted__pasted__file12.msg" "Material_Ref2:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "groupParts119.og" "polyAutoProj144.ip";
+connectAttr "polySurfaceShape147.wm" "polyAutoProj144.mp";
+connectAttr "polySurfaceShape310.o" "groupParts119.ig";
+connectAttr "groupId432.id" "groupParts119.gi";
+connectAttr "groupParts120.og" "polyAutoProj145.ip";
+connectAttr "polySurfaceShape144.wm" "polyAutoProj145.mp";
+connectAttr "polySurfaceShape311.o" "groupParts120.ig";
+connectAttr "groupId433.id" "groupParts120.gi";
+connectAttr "polySurfaceShape312.o" "polyAutoProj146.ip";
+connectAttr "polySurfaceShape148.wm" "polyAutoProj146.mp";
+connectAttr "Material_Ref3:aiMultiply1.out" "Material_Ref3:Appartment_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref3:file2.oa" "Material_Ref3:Appartment_Floor_Mat.sr";
+connectAttr "Material_Ref3:aiNormalMap1.out" "Material_Ref3:Appartment_Floor_Mat.n"
+		;
+connectAttr "Material_Ref3:Appartment_Floor_Mat.oc" "Material_Ref3:standardSurface2SG.ss"
+		;
+connectAttr "Material_Ref3:AppermentFloorDisplacement.d" "Material_Ref3:standardSurface2SG.ds"
+		;
+connectAttr "Material_Ref3:standardSurface2SG.msg" "Material_Ref3:materialInfo1.sg"
+		;
+connectAttr "Material_Ref3:Appartment_Floor_Mat.msg" "Material_Ref3:materialInfo1.m"
+		;
+connectAttr "Material_Ref3:file1.msg" "Material_Ref3:materialInfo1.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file1.ws";
+connectAttr "Material_Ref3:place2dTexture1.c" "Material_Ref3:file1.c";
+connectAttr "Material_Ref3:place2dTexture1.tf" "Material_Ref3:file1.tf";
+connectAttr "Material_Ref3:place2dTexture1.rf" "Material_Ref3:file1.rf";
+connectAttr "Material_Ref3:place2dTexture1.mu" "Material_Ref3:file1.mu";
+connectAttr "Material_Ref3:place2dTexture1.mv" "Material_Ref3:file1.mv";
+connectAttr "Material_Ref3:place2dTexture1.s" "Material_Ref3:file1.s";
+connectAttr "Material_Ref3:place2dTexture1.wu" "Material_Ref3:file1.wu";
+connectAttr "Material_Ref3:place2dTexture1.wv" "Material_Ref3:file1.wv";
+connectAttr "Material_Ref3:place2dTexture1.re" "Material_Ref3:file1.re";
+connectAttr "Material_Ref3:place2dTexture1.of" "Material_Ref3:file1.of";
+connectAttr "Material_Ref3:place2dTexture1.r" "Material_Ref3:file1.ro";
+connectAttr "Material_Ref3:place2dTexture1.n" "Material_Ref3:file1.n";
+connectAttr "Material_Ref3:place2dTexture1.vt1" "Material_Ref3:file1.vt1";
+connectAttr "Material_Ref3:place2dTexture1.vt2" "Material_Ref3:file1.vt2";
+connectAttr "Material_Ref3:place2dTexture1.vt3" "Material_Ref3:file1.vt3";
+connectAttr "Material_Ref3:place2dTexture1.vc1" "Material_Ref3:file1.vc1";
+connectAttr "Material_Ref3:place2dTexture1.o" "Material_Ref3:file1.uv";
+connectAttr "Material_Ref3:place2dTexture1.ofs" "Material_Ref3:file1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file2.ws";
+connectAttr "Material_Ref3:place2dTexture2.c" "Material_Ref3:file2.c";
+connectAttr "Material_Ref3:place2dTexture2.tf" "Material_Ref3:file2.tf";
+connectAttr "Material_Ref3:place2dTexture2.rf" "Material_Ref3:file2.rf";
+connectAttr "Material_Ref3:place2dTexture2.mu" "Material_Ref3:file2.mu";
+connectAttr "Material_Ref3:place2dTexture2.mv" "Material_Ref3:file2.mv";
+connectAttr "Material_Ref3:place2dTexture2.s" "Material_Ref3:file2.s";
+connectAttr "Material_Ref3:place2dTexture2.wu" "Material_Ref3:file2.wu";
+connectAttr "Material_Ref3:place2dTexture2.wv" "Material_Ref3:file2.wv";
+connectAttr "Material_Ref3:place2dTexture2.re" "Material_Ref3:file2.re";
+connectAttr "Material_Ref3:place2dTexture2.of" "Material_Ref3:file2.of";
+connectAttr "Material_Ref3:place2dTexture2.r" "Material_Ref3:file2.ro";
+connectAttr "Material_Ref3:place2dTexture2.n" "Material_Ref3:file2.n";
+connectAttr "Material_Ref3:place2dTexture2.vt1" "Material_Ref3:file2.vt1";
+connectAttr "Material_Ref3:place2dTexture2.vt2" "Material_Ref3:file2.vt2";
+connectAttr "Material_Ref3:place2dTexture2.vt3" "Material_Ref3:file2.vt3";
+connectAttr "Material_Ref3:place2dTexture2.vc1" "Material_Ref3:file2.vc1";
+connectAttr "Material_Ref3:place2dTexture2.o" "Material_Ref3:file2.uv";
+connectAttr "Material_Ref3:place2dTexture2.ofs" "Material_Ref3:file2.fs";
+connectAttr "Material_Ref3:file1.oc" "Material_Ref3:aiMultiply1.input1";
+connectAttr "Material_Ref3:file3.oc" "Material_Ref3:aiMultiply1.input2";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file3.ws";
+connectAttr "Material_Ref3:place2dTexture3.c" "Material_Ref3:file3.c";
+connectAttr "Material_Ref3:place2dTexture3.tf" "Material_Ref3:file3.tf";
+connectAttr "Material_Ref3:place2dTexture3.rf" "Material_Ref3:file3.rf";
+connectAttr "Material_Ref3:place2dTexture3.mu" "Material_Ref3:file3.mu";
+connectAttr "Material_Ref3:place2dTexture3.mv" "Material_Ref3:file3.mv";
+connectAttr "Material_Ref3:place2dTexture3.s" "Material_Ref3:file3.s";
+connectAttr "Material_Ref3:place2dTexture3.wu" "Material_Ref3:file3.wu";
+connectAttr "Material_Ref3:place2dTexture3.wv" "Material_Ref3:file3.wv";
+connectAttr "Material_Ref3:place2dTexture3.re" "Material_Ref3:file3.re";
+connectAttr "Material_Ref3:place2dTexture3.of" "Material_Ref3:file3.of";
+connectAttr "Material_Ref3:place2dTexture3.r" "Material_Ref3:file3.ro";
+connectAttr "Material_Ref3:place2dTexture3.n" "Material_Ref3:file3.n";
+connectAttr "Material_Ref3:place2dTexture3.vt1" "Material_Ref3:file3.vt1";
+connectAttr "Material_Ref3:place2dTexture3.vt2" "Material_Ref3:file3.vt2";
+connectAttr "Material_Ref3:place2dTexture3.vt3" "Material_Ref3:file3.vt3";
+connectAttr "Material_Ref3:place2dTexture3.vc1" "Material_Ref3:file3.vc1";
+connectAttr "Material_Ref3:place2dTexture3.o" "Material_Ref3:file3.uv";
+connectAttr "Material_Ref3:place2dTexture3.ofs" "Material_Ref3:file3.fs";
+connectAttr "Material_Ref3:file4.oc" "Material_Ref3:aiNormalMap1.input";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file4.ws";
+connectAttr "Material_Ref3:place2dTexture4.c" "Material_Ref3:file4.c";
+connectAttr "Material_Ref3:place2dTexture4.tf" "Material_Ref3:file4.tf";
+connectAttr "Material_Ref3:place2dTexture4.rf" "Material_Ref3:file4.rf";
+connectAttr "Material_Ref3:place2dTexture4.mu" "Material_Ref3:file4.mu";
+connectAttr "Material_Ref3:place2dTexture4.mv" "Material_Ref3:file4.mv";
+connectAttr "Material_Ref3:place2dTexture4.s" "Material_Ref3:file4.s";
+connectAttr "Material_Ref3:place2dTexture4.wu" "Material_Ref3:file4.wu";
+connectAttr "Material_Ref3:place2dTexture4.wv" "Material_Ref3:file4.wv";
+connectAttr "Material_Ref3:place2dTexture4.re" "Material_Ref3:file4.re";
+connectAttr "Material_Ref3:place2dTexture4.of" "Material_Ref3:file4.of";
+connectAttr "Material_Ref3:place2dTexture4.r" "Material_Ref3:file4.ro";
+connectAttr "Material_Ref3:place2dTexture4.n" "Material_Ref3:file4.n";
+connectAttr "Material_Ref3:place2dTexture4.vt1" "Material_Ref3:file4.vt1";
+connectAttr "Material_Ref3:place2dTexture4.vt2" "Material_Ref3:file4.vt2";
+connectAttr "Material_Ref3:place2dTexture4.vt3" "Material_Ref3:file4.vt3";
+connectAttr "Material_Ref3:place2dTexture4.vc1" "Material_Ref3:file4.vc1";
+connectAttr "Material_Ref3:place2dTexture4.o" "Material_Ref3:file4.uv";
+connectAttr "Material_Ref3:place2dTexture4.ofs" "Material_Ref3:file4.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file5.ws";
+connectAttr "Material_Ref3:place2dTexture5.c" "Material_Ref3:file5.c";
+connectAttr "Material_Ref3:place2dTexture5.tf" "Material_Ref3:file5.tf";
+connectAttr "Material_Ref3:place2dTexture5.rf" "Material_Ref3:file5.rf";
+connectAttr "Material_Ref3:place2dTexture5.mu" "Material_Ref3:file5.mu";
+connectAttr "Material_Ref3:place2dTexture5.mv" "Material_Ref3:file5.mv";
+connectAttr "Material_Ref3:place2dTexture5.s" "Material_Ref3:file5.s";
+connectAttr "Material_Ref3:place2dTexture5.wu" "Material_Ref3:file5.wu";
+connectAttr "Material_Ref3:place2dTexture5.wv" "Material_Ref3:file5.wv";
+connectAttr "Material_Ref3:place2dTexture5.re" "Material_Ref3:file5.re";
+connectAttr "Material_Ref3:place2dTexture5.of" "Material_Ref3:file5.of";
+connectAttr "Material_Ref3:place2dTexture5.r" "Material_Ref3:file5.ro";
+connectAttr "Material_Ref3:place2dTexture5.n" "Material_Ref3:file5.n";
+connectAttr "Material_Ref3:place2dTexture5.vt1" "Material_Ref3:file5.vt1";
+connectAttr "Material_Ref3:place2dTexture5.vt2" "Material_Ref3:file5.vt2";
+connectAttr "Material_Ref3:place2dTexture5.vt3" "Material_Ref3:file5.vt3";
+connectAttr "Material_Ref3:place2dTexture5.vc1" "Material_Ref3:file5.vc1";
+connectAttr "Material_Ref3:place2dTexture5.o" "Material_Ref3:file5.uv";
+connectAttr "Material_Ref3:place2dTexture5.ofs" "Material_Ref3:file5.fs";
+connectAttr "Material_Ref3:file5.ocr" "Material_Ref3:AppermentFloorDisplacement.d"
+		;
+connectAttr "Material_Ref3:pasted__aiMultiply1.out" "Material_Ref3:Appartment_Wall_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__file2.oa" "Material_Ref3:Appartment_Wall_Mat.sr"
+		;
+connectAttr "Material_Ref3:pasted__aiNormalMap1.out" "Material_Ref3:Appartment_Wall_Mat.n"
+		;
+connectAttr "Material_Ref3:pasted__file1.oc" "Material_Ref3:pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref3:pasted__file3.oc" "Material_Ref3:pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file1.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture1.c" "Material_Ref3:pasted__file1.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.tf" "Material_Ref3:pasted__file1.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.rf" "Material_Ref3:pasted__file1.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.mu" "Material_Ref3:pasted__file1.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.mv" "Material_Ref3:pasted__file1.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.s" "Material_Ref3:pasted__file1.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.wu" "Material_Ref3:pasted__file1.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.wv" "Material_Ref3:pasted__file1.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.re" "Material_Ref3:pasted__file1.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.of" "Material_Ref3:pasted__file1.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.r" "Material_Ref3:pasted__file1.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.n" "Material_Ref3:pasted__file1.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.vt1" "Material_Ref3:pasted__file1.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.vt2" "Material_Ref3:pasted__file1.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.vt3" "Material_Ref3:pasted__file1.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.vc1" "Material_Ref3:pasted__file1.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.o" "Material_Ref3:pasted__file1.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.ofs" "Material_Ref3:pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file3.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture3.c" "Material_Ref3:pasted__file3.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.tf" "Material_Ref3:pasted__file3.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.rf" "Material_Ref3:pasted__file3.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.mu" "Material_Ref3:pasted__file3.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.mv" "Material_Ref3:pasted__file3.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.s" "Material_Ref3:pasted__file3.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.wu" "Material_Ref3:pasted__file3.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.wv" "Material_Ref3:pasted__file3.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.re" "Material_Ref3:pasted__file3.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.of" "Material_Ref3:pasted__file3.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.r" "Material_Ref3:pasted__file3.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.n" "Material_Ref3:pasted__file3.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.vt1" "Material_Ref3:pasted__file3.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.vt2" "Material_Ref3:pasted__file3.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.vt3" "Material_Ref3:pasted__file3.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.vc1" "Material_Ref3:pasted__file3.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.o" "Material_Ref3:pasted__file3.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture3.ofs" "Material_Ref3:pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file2.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture2.c" "Material_Ref3:pasted__file2.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.tf" "Material_Ref3:pasted__file2.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.rf" "Material_Ref3:pasted__file2.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.mu" "Material_Ref3:pasted__file2.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.mv" "Material_Ref3:pasted__file2.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.s" "Material_Ref3:pasted__file2.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.wu" "Material_Ref3:pasted__file2.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.wv" "Material_Ref3:pasted__file2.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.re" "Material_Ref3:pasted__file2.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.of" "Material_Ref3:pasted__file2.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.r" "Material_Ref3:pasted__file2.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.n" "Material_Ref3:pasted__file2.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.vt1" "Material_Ref3:pasted__file2.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.vt2" "Material_Ref3:pasted__file2.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.vt3" "Material_Ref3:pasted__file2.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.vc1" "Material_Ref3:pasted__file2.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.o" "Material_Ref3:pasted__file2.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture2.ofs" "Material_Ref3:pasted__file2.fs"
+		;
+connectAttr "Material_Ref3:pasted__file4.oc" "Material_Ref3:pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file4.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture4.c" "Material_Ref3:pasted__file4.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.tf" "Material_Ref3:pasted__file4.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.rf" "Material_Ref3:pasted__file4.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.mu" "Material_Ref3:pasted__file4.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.mv" "Material_Ref3:pasted__file4.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.s" "Material_Ref3:pasted__file4.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.wu" "Material_Ref3:pasted__file4.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.wv" "Material_Ref3:pasted__file4.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.re" "Material_Ref3:pasted__file4.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.of" "Material_Ref3:pasted__file4.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.r" "Material_Ref3:pasted__file4.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.n" "Material_Ref3:pasted__file4.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.vt1" "Material_Ref3:pasted__file4.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.vt2" "Material_Ref3:pasted__file4.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.vt3" "Material_Ref3:pasted__file4.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.vc1" "Material_Ref3:pasted__file4.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.o" "Material_Ref3:pasted__file4.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture4.ofs" "Material_Ref3:pasted__file4.fs"
+		;
+connectAttr "Material_Ref3:file6.ocr" "Material_Ref3:AppartmentWallDisplacemnt.d"
+		;
+connectAttr "Material_Ref3:AppartmentWallDisplacemnt.d" "Material_Ref3:displacementShader1SG.ds"
+		;
+connectAttr "Material_Ref3:Appartment_Wall_Mat.oc" "Material_Ref3:displacementShader1SG.ss"
+		;
+connectAttr "Material_Ref3:displacementShader1SG.msg" "Material_Ref3:materialInfo2.sg"
+		;
+connectAttr "Material_Ref3:Appartment_Wall_Mat.msg" "Material_Ref3:materialInfo2.m"
+		;
+connectAttr "Material_Ref3:pasted__aiMultiply1.msg" "Material_Ref3:materialInfo2.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file6.ws";
+connectAttr "Material_Ref3:place2dTexture6.c" "Material_Ref3:file6.c";
+connectAttr "Material_Ref3:place2dTexture6.tf" "Material_Ref3:file6.tf";
+connectAttr "Material_Ref3:place2dTexture6.rf" "Material_Ref3:file6.rf";
+connectAttr "Material_Ref3:place2dTexture6.mu" "Material_Ref3:file6.mu";
+connectAttr "Material_Ref3:place2dTexture6.mv" "Material_Ref3:file6.mv";
+connectAttr "Material_Ref3:place2dTexture6.s" "Material_Ref3:file6.s";
+connectAttr "Material_Ref3:place2dTexture6.wu" "Material_Ref3:file6.wu";
+connectAttr "Material_Ref3:place2dTexture6.wv" "Material_Ref3:file6.wv";
+connectAttr "Material_Ref3:place2dTexture6.re" "Material_Ref3:file6.re";
+connectAttr "Material_Ref3:place2dTexture6.of" "Material_Ref3:file6.of";
+connectAttr "Material_Ref3:place2dTexture6.r" "Material_Ref3:file6.ro";
+connectAttr "Material_Ref3:place2dTexture6.n" "Material_Ref3:file6.n";
+connectAttr "Material_Ref3:place2dTexture6.vt1" "Material_Ref3:file6.vt1";
+connectAttr "Material_Ref3:place2dTexture6.vt2" "Material_Ref3:file6.vt2";
+connectAttr "Material_Ref3:place2dTexture6.vt3" "Material_Ref3:file6.vt3";
+connectAttr "Material_Ref3:place2dTexture6.vc1" "Material_Ref3:file6.vc1";
+connectAttr "Material_Ref3:place2dTexture6.o" "Material_Ref3:file6.uv";
+connectAttr "Material_Ref3:place2dTexture6.ofs" "Material_Ref3:file6.fs";
+connectAttr "Material_Ref3:pasted__aiMultiply2.out" "Material_Ref3:Cave_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__file6.oa" "Material_Ref3:Cave_Floor_Mat.sr";
+connectAttr "Material_Ref3:pasted__aiNormalMap2.out" "Material_Ref3:Cave_Floor_Mat.n"
+		;
+connectAttr "Material_Ref3:pasted__file5.oc" "Material_Ref3:pasted__aiMultiply2.input1"
+		;
+connectAttr "Material_Ref3:pasted__file7.oc" "Material_Ref3:pasted__aiMultiply2.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file5.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture5.c" "Material_Ref3:pasted__file5.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.tf" "Material_Ref3:pasted__file5.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.rf" "Material_Ref3:pasted__file5.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.mu" "Material_Ref3:pasted__file5.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.mv" "Material_Ref3:pasted__file5.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.s" "Material_Ref3:pasted__file5.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.wu" "Material_Ref3:pasted__file5.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.wv" "Material_Ref3:pasted__file5.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.re" "Material_Ref3:pasted__file5.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.of" "Material_Ref3:pasted__file5.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.r" "Material_Ref3:pasted__file5.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.n" "Material_Ref3:pasted__file5.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.vt1" "Material_Ref3:pasted__file5.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.vt2" "Material_Ref3:pasted__file5.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.vt3" "Material_Ref3:pasted__file5.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.vc1" "Material_Ref3:pasted__file5.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.o" "Material_Ref3:pasted__file5.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.ofs" "Material_Ref3:pasted__file5.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file7.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture7.c" "Material_Ref3:pasted__file7.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.tf" "Material_Ref3:pasted__file7.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.rf" "Material_Ref3:pasted__file7.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.mu" "Material_Ref3:pasted__file7.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.mv" "Material_Ref3:pasted__file7.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.s" "Material_Ref3:pasted__file7.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.wu" "Material_Ref3:pasted__file7.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.wv" "Material_Ref3:pasted__file7.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.re" "Material_Ref3:pasted__file7.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.of" "Material_Ref3:pasted__file7.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.r" "Material_Ref3:pasted__file7.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.n" "Material_Ref3:pasted__file7.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.vt1" "Material_Ref3:pasted__file7.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.vt2" "Material_Ref3:pasted__file7.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.vt3" "Material_Ref3:pasted__file7.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.vc1" "Material_Ref3:pasted__file7.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.o" "Material_Ref3:pasted__file7.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture7.ofs" "Material_Ref3:pasted__file7.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file6.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture6.c" "Material_Ref3:pasted__file6.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.tf" "Material_Ref3:pasted__file6.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.rf" "Material_Ref3:pasted__file6.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.mu" "Material_Ref3:pasted__file6.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.mv" "Material_Ref3:pasted__file6.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.s" "Material_Ref3:pasted__file6.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.wu" "Material_Ref3:pasted__file6.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.wv" "Material_Ref3:pasted__file6.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.re" "Material_Ref3:pasted__file6.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.of" "Material_Ref3:pasted__file6.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.r" "Material_Ref3:pasted__file6.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.n" "Material_Ref3:pasted__file6.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.vt1" "Material_Ref3:pasted__file6.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.vt2" "Material_Ref3:pasted__file6.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.vt3" "Material_Ref3:pasted__file6.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.vc1" "Material_Ref3:pasted__file6.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.o" "Material_Ref3:pasted__file6.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture6.ofs" "Material_Ref3:pasted__file6.fs"
+		;
+connectAttr "Material_Ref3:pasted__file8.oc" "Material_Ref3:pasted__aiNormalMap2.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file8.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture8.c" "Material_Ref3:pasted__file8.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.tf" "Material_Ref3:pasted__file8.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.rf" "Material_Ref3:pasted__file8.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.mu" "Material_Ref3:pasted__file8.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.mv" "Material_Ref3:pasted__file8.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.s" "Material_Ref3:pasted__file8.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.wu" "Material_Ref3:pasted__file8.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.wv" "Material_Ref3:pasted__file8.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.re" "Material_Ref3:pasted__file8.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.of" "Material_Ref3:pasted__file8.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.r" "Material_Ref3:pasted__file8.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.n" "Material_Ref3:pasted__file8.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.vt1" "Material_Ref3:pasted__file8.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.vt2" "Material_Ref3:pasted__file8.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.vt3" "Material_Ref3:pasted__file8.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.vc1" "Material_Ref3:pasted__file8.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.o" "Material_Ref3:pasted__file8.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture8.ofs" "Material_Ref3:pasted__file8.fs"
+		;
+connectAttr "Material_Ref3:file7.ocr" "Material_Ref3:CaveFloorDisplacement.d";
+connectAttr "Material_Ref3:CaveFloorDisplacement.d" "Material_Ref3:displacementShader2SG.ds"
+		;
+connectAttr "Material_Ref3:Cave_Floor_Mat.oc" "Material_Ref3:displacementShader2SG.ss"
+		;
+connectAttr "Material_Ref3:displacementShader2SG.msg" "Material_Ref3:materialInfo3.sg"
+		;
+connectAttr "Material_Ref3:Cave_Floor_Mat.msg" "Material_Ref3:materialInfo3.m";
+connectAttr "Material_Ref3:pasted__aiMultiply2.msg" "Material_Ref3:materialInfo3.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file7.ws";
+connectAttr "Material_Ref3:place2dTexture7.c" "Material_Ref3:file7.c";
+connectAttr "Material_Ref3:place2dTexture7.tf" "Material_Ref3:file7.tf";
+connectAttr "Material_Ref3:place2dTexture7.rf" "Material_Ref3:file7.rf";
+connectAttr "Material_Ref3:place2dTexture7.mu" "Material_Ref3:file7.mu";
+connectAttr "Material_Ref3:place2dTexture7.mv" "Material_Ref3:file7.mv";
+connectAttr "Material_Ref3:place2dTexture7.s" "Material_Ref3:file7.s";
+connectAttr "Material_Ref3:place2dTexture7.wu" "Material_Ref3:file7.wu";
+connectAttr "Material_Ref3:place2dTexture7.wv" "Material_Ref3:file7.wv";
+connectAttr "Material_Ref3:place2dTexture7.re" "Material_Ref3:file7.re";
+connectAttr "Material_Ref3:place2dTexture7.of" "Material_Ref3:file7.of";
+connectAttr "Material_Ref3:place2dTexture7.r" "Material_Ref3:file7.ro";
+connectAttr "Material_Ref3:place2dTexture7.n" "Material_Ref3:file7.n";
+connectAttr "Material_Ref3:place2dTexture7.vt1" "Material_Ref3:file7.vt1";
+connectAttr "Material_Ref3:place2dTexture7.vt2" "Material_Ref3:file7.vt2";
+connectAttr "Material_Ref3:place2dTexture7.vt3" "Material_Ref3:file7.vt3";
+connectAttr "Material_Ref3:place2dTexture7.vc1" "Material_Ref3:file7.vc1";
+connectAttr "Material_Ref3:place2dTexture7.o" "Material_Ref3:file7.uv";
+connectAttr "Material_Ref3:place2dTexture7.ofs" "Material_Ref3:file7.fs";
+connectAttr "Material_Ref3:pasted__pasted__aiMultiply1.out" "Material_Ref3:Cave_Wall_2_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file2.oa" "Material_Ref3:Cave_Wall_2_Mat.sr"
+		;
+connectAttr "Material_Ref3:pasted__pasted__aiNormalMap1.out" "Material_Ref3:Cave_Wall_2_Mat.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file1.oc" "Material_Ref3:pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file3.oc" "Material_Ref3:pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.c" "Material_Ref3:pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.tf" "Material_Ref3:pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.rf" "Material_Ref3:pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.mu" "Material_Ref3:pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.mv" "Material_Ref3:pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.s" "Material_Ref3:pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.wu" "Material_Ref3:pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.wv" "Material_Ref3:pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.re" "Material_Ref3:pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.of" "Material_Ref3:pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.r" "Material_Ref3:pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.n" "Material_Ref3:pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.vt1" "Material_Ref3:pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.vt2" "Material_Ref3:pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.vt3" "Material_Ref3:pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.vc1" "Material_Ref3:pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.o" "Material_Ref3:pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.ofs" "Material_Ref3:pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.c" "Material_Ref3:pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.tf" "Material_Ref3:pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.rf" "Material_Ref3:pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.mu" "Material_Ref3:pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.mv" "Material_Ref3:pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.s" "Material_Ref3:pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.wu" "Material_Ref3:pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.wv" "Material_Ref3:pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.re" "Material_Ref3:pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.of" "Material_Ref3:pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.r" "Material_Ref3:pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.n" "Material_Ref3:pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.vt1" "Material_Ref3:pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.vt2" "Material_Ref3:pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.vt3" "Material_Ref3:pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.vc1" "Material_Ref3:pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.o" "Material_Ref3:pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.ofs" "Material_Ref3:pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.c" "Material_Ref3:pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.tf" "Material_Ref3:pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.rf" "Material_Ref3:pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.mu" "Material_Ref3:pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.mv" "Material_Ref3:pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.s" "Material_Ref3:pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.wu" "Material_Ref3:pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.wv" "Material_Ref3:pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.re" "Material_Ref3:pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.of" "Material_Ref3:pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.r" "Material_Ref3:pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.n" "Material_Ref3:pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.vt1" "Material_Ref3:pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.vt2" "Material_Ref3:pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.vt3" "Material_Ref3:pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.vc1" "Material_Ref3:pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.o" "Material_Ref3:pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.ofs" "Material_Ref3:pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file4.oc" "Material_Ref3:pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.c" "Material_Ref3:pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.tf" "Material_Ref3:pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.rf" "Material_Ref3:pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.mu" "Material_Ref3:pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.mv" "Material_Ref3:pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.s" "Material_Ref3:pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.wu" "Material_Ref3:pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.wv" "Material_Ref3:pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.re" "Material_Ref3:pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.of" "Material_Ref3:pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.r" "Material_Ref3:pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.n" "Material_Ref3:pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.vt1" "Material_Ref3:pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.vt2" "Material_Ref3:pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.vt3" "Material_Ref3:pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.vc1" "Material_Ref3:pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.o" "Material_Ref3:pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.ofs" "Material_Ref3:pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref3:file8.ocr" "Material_Ref3:Cave2Displacement.d";
+connectAttr "Material_Ref3:Cave2Displacement.d" "Material_Ref3:Cave2Displacement5.ds"
+		;
+connectAttr "Material_Ref3:Cave_Wall_2_Mat.oc" "Material_Ref3:Cave2Displacement5.ss"
+		;
+connectAttr "Material_Ref3:Cave2Displacement5.msg" "Material_Ref3:materialInfo4.sg"
+		;
+connectAttr "Material_Ref3:Cave_Wall_2_Mat.msg" "Material_Ref3:materialInfo4.m";
+connectAttr "Material_Ref3:pasted__pasted__aiMultiply1.msg" "Material_Ref3:materialInfo4.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file8.ws";
+connectAttr "Material_Ref3:place2dTexture8.c" "Material_Ref3:file8.c";
+connectAttr "Material_Ref3:place2dTexture8.tf" "Material_Ref3:file8.tf";
+connectAttr "Material_Ref3:place2dTexture8.rf" "Material_Ref3:file8.rf";
+connectAttr "Material_Ref3:place2dTexture8.mu" "Material_Ref3:file8.mu";
+connectAttr "Material_Ref3:place2dTexture8.mv" "Material_Ref3:file8.mv";
+connectAttr "Material_Ref3:place2dTexture8.s" "Material_Ref3:file8.s";
+connectAttr "Material_Ref3:place2dTexture8.wu" "Material_Ref3:file8.wu";
+connectAttr "Material_Ref3:place2dTexture8.wv" "Material_Ref3:file8.wv";
+connectAttr "Material_Ref3:place2dTexture8.re" "Material_Ref3:file8.re";
+connectAttr "Material_Ref3:place2dTexture8.of" "Material_Ref3:file8.of";
+connectAttr "Material_Ref3:place2dTexture8.r" "Material_Ref3:file8.ro";
+connectAttr "Material_Ref3:place2dTexture8.n" "Material_Ref3:file8.n";
+connectAttr "Material_Ref3:place2dTexture8.vt1" "Material_Ref3:file8.vt1";
+connectAttr "Material_Ref3:place2dTexture8.vt2" "Material_Ref3:file8.vt2";
+connectAttr "Material_Ref3:place2dTexture8.vt3" "Material_Ref3:file8.vt3";
+connectAttr "Material_Ref3:place2dTexture8.vc1" "Material_Ref3:file8.vc1";
+connectAttr "Material_Ref3:place2dTexture8.o" "Material_Ref3:file8.uv";
+connectAttr "Material_Ref3:place2dTexture8.ofs" "Material_Ref3:file8.fs";
+connectAttr "Material_Ref3:pasted__pasted__pasted__aiMultiply1.out" "Material_Ref3:Cave_Wall_3_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file2.oa" "Material_Ref3:Cave_Wall_3_Mat.sr"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref3:Cave_Wall_3_Mat.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file1.oc" "Material_Ref3:pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file3.oc" "Material_Ref3:pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.c" "Material_Ref3:pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref3:pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref3:pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref3:pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref3:pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.s" "Material_Ref3:pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref3:pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref3:pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.re" "Material_Ref3:pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.of" "Material_Ref3:pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.r" "Material_Ref3:pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.n" "Material_Ref3:pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref3:pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref3:pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref3:pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref3:pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.o" "Material_Ref3:pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref3:pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.c" "Material_Ref3:pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref3:pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref3:pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref3:pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref3:pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.s" "Material_Ref3:pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref3:pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref3:pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.re" "Material_Ref3:pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.of" "Material_Ref3:pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.r" "Material_Ref3:pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.n" "Material_Ref3:pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref3:pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref3:pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref3:pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref3:pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.o" "Material_Ref3:pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref3:pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.c" "Material_Ref3:pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref3:pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref3:pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref3:pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref3:pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.s" "Material_Ref3:pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref3:pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref3:pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.re" "Material_Ref3:pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.of" "Material_Ref3:pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.r" "Material_Ref3:pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.n" "Material_Ref3:pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref3:pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref3:pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref3:pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref3:pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.o" "Material_Ref3:pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref3:pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file4.oc" "Material_Ref3:pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.c" "Material_Ref3:pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref3:pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref3:pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref3:pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref3:pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.s" "Material_Ref3:pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref3:pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref3:pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.re" "Material_Ref3:pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.of" "Material_Ref3:pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.r" "Material_Ref3:pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.n" "Material_Ref3:pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref3:pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref3:pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref3:pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref3:pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.o" "Material_Ref3:pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref3:pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref3:displacementShader4SG.msg" "Material_Ref3:materialInfo5.sg"
+		;
+connectAttr "Material_Ref3:pasted__displacementShader4SG.msg" "Material_Ref3:pasted__materialInfo5.sg"
+		;
+connectAttr "Material_Ref3:pasted__displacementShader4SG1.msg" "Material_Ref3:pasted__materialInfo6.sg"
+		;
+connectAttr "Material_Ref3:file9.ocr" "Material_Ref3:Cave3Displacemnt.d";
+connectAttr "Material_Ref3:Cave3Displacemnt.d" "Material_Ref3:displacementShader5SG.ds"
+		;
+connectAttr "Material_Ref3:Cave_Wall_3_Mat.oc" "Material_Ref3:displacementShader5SG.ss"
+		;
+connectAttr "Material_Ref3:displacementShader5SG.msg" "Material_Ref3:materialInfo6.sg"
+		;
+connectAttr "Material_Ref3:Cave_Wall_3_Mat.msg" "Material_Ref3:materialInfo6.m";
+connectAttr "Material_Ref3:pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref3:materialInfo6.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file9.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file9.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file9.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file9.ws";
+connectAttr "Material_Ref3:place2dTexture9.c" "Material_Ref3:file9.c";
+connectAttr "Material_Ref3:place2dTexture9.tf" "Material_Ref3:file9.tf";
+connectAttr "Material_Ref3:place2dTexture9.rf" "Material_Ref3:file9.rf";
+connectAttr "Material_Ref3:place2dTexture9.mu" "Material_Ref3:file9.mu";
+connectAttr "Material_Ref3:place2dTexture9.mv" "Material_Ref3:file9.mv";
+connectAttr "Material_Ref3:place2dTexture9.s" "Material_Ref3:file9.s";
+connectAttr "Material_Ref3:place2dTexture9.wu" "Material_Ref3:file9.wu";
+connectAttr "Material_Ref3:place2dTexture9.wv" "Material_Ref3:file9.wv";
+connectAttr "Material_Ref3:place2dTexture9.re" "Material_Ref3:file9.re";
+connectAttr "Material_Ref3:place2dTexture9.of" "Material_Ref3:file9.of";
+connectAttr "Material_Ref3:place2dTexture9.r" "Material_Ref3:file9.ro";
+connectAttr "Material_Ref3:place2dTexture9.n" "Material_Ref3:file9.n";
+connectAttr "Material_Ref3:place2dTexture9.vt1" "Material_Ref3:file9.vt1";
+connectAttr "Material_Ref3:place2dTexture9.vt2" "Material_Ref3:file9.vt2";
+connectAttr "Material_Ref3:place2dTexture9.vt3" "Material_Ref3:file9.vt3";
+connectAttr "Material_Ref3:place2dTexture9.vc1" "Material_Ref3:file9.vc1";
+connectAttr "Material_Ref3:place2dTexture9.o" "Material_Ref3:file9.uv";
+connectAttr "Material_Ref3:place2dTexture9.ofs" "Material_Ref3:file9.fs";
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1.out" "Material_Ref3:Cave_Wall_4_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file2.oa" "Material_Ref3:Cave_Wall_4_Mat.sr"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref3:Cave_Wall_4_Mat.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file1.oc" "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file3.oc" "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.c" "Material_Ref3:pasted__pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref3:pasted__pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref3:pasted__pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref3:pasted__pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref3:pasted__pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.s" "Material_Ref3:pasted__pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref3:pasted__pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref3:pasted__pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.re" "Material_Ref3:pasted__pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.of" "Material_Ref3:pasted__pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.r" "Material_Ref3:pasted__pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.n" "Material_Ref3:pasted__pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref3:pasted__pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref3:pasted__pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref3:pasted__pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref3:pasted__pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.o" "Material_Ref3:pasted__pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref3:pasted__pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.c" "Material_Ref3:pasted__pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref3:pasted__pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref3:pasted__pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref3:pasted__pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref3:pasted__pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.s" "Material_Ref3:pasted__pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref3:pasted__pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref3:pasted__pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.re" "Material_Ref3:pasted__pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.of" "Material_Ref3:pasted__pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.r" "Material_Ref3:pasted__pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.n" "Material_Ref3:pasted__pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref3:pasted__pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref3:pasted__pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref3:pasted__pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref3:pasted__pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.o" "Material_Ref3:pasted__pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref3:pasted__pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.c" "Material_Ref3:pasted__pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref3:pasted__pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref3:pasted__pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref3:pasted__pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref3:pasted__pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.s" "Material_Ref3:pasted__pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref3:pasted__pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref3:pasted__pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.re" "Material_Ref3:pasted__pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.of" "Material_Ref3:pasted__pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.r" "Material_Ref3:pasted__pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.n" "Material_Ref3:pasted__pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref3:pasted__pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref3:pasted__pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref3:pasted__pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref3:pasted__pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.o" "Material_Ref3:pasted__pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref3:pasted__pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file4.oc" "Material_Ref3:pasted__pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.c" "Material_Ref3:pasted__pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref3:pasted__pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref3:pasted__pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref3:pasted__pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref3:pasted__pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.s" "Material_Ref3:pasted__pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref3:pasted__pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref3:pasted__pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.re" "Material_Ref3:pasted__pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.of" "Material_Ref3:pasted__pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.r" "Material_Ref3:pasted__pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.n" "Material_Ref3:pasted__pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref3:pasted__pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref3:pasted__pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref3:pasted__pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref3:pasted__pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.o" "Material_Ref3:pasted__pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref3:pasted__pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref3:file10.ocr" "Material_Ref3:cave4Displacement.d";
+connectAttr "Material_Ref3:cave4Displacement.d" "Material_Ref3:displacementShader6SG.ds"
+		;
+connectAttr "Material_Ref3:Cave_Wall_4_Mat.oc" "Material_Ref3:displacementShader6SG.ss"
+		;
+connectAttr "Material_Ref3:displacementShader6SG.msg" "Material_Ref3:materialInfo7.sg"
+		;
+connectAttr "Material_Ref3:Cave_Wall_4_Mat.msg" "Material_Ref3:materialInfo7.m";
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref3:materialInfo7.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file10.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file10.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file10.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file10.ws";
+connectAttr "Material_Ref3:place2dTexture10.c" "Material_Ref3:file10.c";
+connectAttr "Material_Ref3:place2dTexture10.tf" "Material_Ref3:file10.tf";
+connectAttr "Material_Ref3:place2dTexture10.rf" "Material_Ref3:file10.rf";
+connectAttr "Material_Ref3:place2dTexture10.mu" "Material_Ref3:file10.mu";
+connectAttr "Material_Ref3:place2dTexture10.mv" "Material_Ref3:file10.mv";
+connectAttr "Material_Ref3:place2dTexture10.s" "Material_Ref3:file10.s";
+connectAttr "Material_Ref3:place2dTexture10.wu" "Material_Ref3:file10.wu";
+connectAttr "Material_Ref3:place2dTexture10.wv" "Material_Ref3:file10.wv";
+connectAttr "Material_Ref3:place2dTexture10.re" "Material_Ref3:file10.re";
+connectAttr "Material_Ref3:place2dTexture10.of" "Material_Ref3:file10.of";
+connectAttr "Material_Ref3:place2dTexture10.r" "Material_Ref3:file10.ro";
+connectAttr "Material_Ref3:place2dTexture10.n" "Material_Ref3:file10.n";
+connectAttr "Material_Ref3:place2dTexture10.vt1" "Material_Ref3:file10.vt1";
+connectAttr "Material_Ref3:place2dTexture10.vt2" "Material_Ref3:file10.vt2";
+connectAttr "Material_Ref3:place2dTexture10.vt3" "Material_Ref3:file10.vt3";
+connectAttr "Material_Ref3:place2dTexture10.vc1" "Material_Ref3:file10.vc1";
+connectAttr "Material_Ref3:place2dTexture10.o" "Material_Ref3:file10.uv";
+connectAttr "Material_Ref3:place2dTexture10.ofs" "Material_Ref3:file10.fs";
+connectAttr "Material_Ref3:file11.oc" "Material_Ref3:Generic_Wood_Mat.bc";
+connectAttr "Material_Ref3:Generic_Wood_Mat.oc" "Material_Ref3:standardSurface3SG.ss"
+		;
+connectAttr "groupId436.msg" "Material_Ref3:standardSurface3SG.gn" -na;
+connectAttr "groupId433.msg" "Material_Ref3:standardSurface3SG.gn" -na;
+connectAttr "polySurfaceShape147.iog.og[3]" "Material_Ref3:standardSurface3SG.dsm"
+		 -na;
+connectAttr "polySurfaceShape144.iog.og[0]" "Material_Ref3:standardSurface3SG.dsm"
+		 -na;
+connectAttr "Material_Ref3:standardSurface3SG.msg" "Material_Ref3:materialInfo8.sg"
+		;
+connectAttr "Material_Ref3:Generic_Wood_Mat.msg" "Material_Ref3:materialInfo8.m"
+		;
+connectAttr "Material_Ref3:file11.msg" "Material_Ref3:materialInfo8.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file11.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file11.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file11.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file11.ws";
+connectAttr "Material_Ref3:place2dTexture11.c" "Material_Ref3:file11.c";
+connectAttr "Material_Ref3:place2dTexture11.tf" "Material_Ref3:file11.tf";
+connectAttr "Material_Ref3:place2dTexture11.rf" "Material_Ref3:file11.rf";
+connectAttr "Material_Ref3:place2dTexture11.mu" "Material_Ref3:file11.mu";
+connectAttr "Material_Ref3:place2dTexture11.mv" "Material_Ref3:file11.mv";
+connectAttr "Material_Ref3:place2dTexture11.s" "Material_Ref3:file11.s";
+connectAttr "Material_Ref3:place2dTexture11.wu" "Material_Ref3:file11.wu";
+connectAttr "Material_Ref3:place2dTexture11.wv" "Material_Ref3:file11.wv";
+connectAttr "Material_Ref3:place2dTexture11.re" "Material_Ref3:file11.re";
+connectAttr "Material_Ref3:place2dTexture11.of" "Material_Ref3:file11.of";
+connectAttr "Material_Ref3:place2dTexture11.r" "Material_Ref3:file11.ro";
+connectAttr "Material_Ref3:place2dTexture11.n" "Material_Ref3:file11.n";
+connectAttr "Material_Ref3:place2dTexture11.vt1" "Material_Ref3:file11.vt1";
+connectAttr "Material_Ref3:place2dTexture11.vt2" "Material_Ref3:file11.vt2";
+connectAttr "Material_Ref3:place2dTexture11.vt3" "Material_Ref3:file11.vt3";
+connectAttr "Material_Ref3:place2dTexture11.vc1" "Material_Ref3:file11.vc1";
+connectAttr "Material_Ref3:place2dTexture11.o" "Material_Ref3:file11.uv";
+connectAttr "Material_Ref3:place2dTexture11.ofs" "Material_Ref3:file11.fs";
+connectAttr "Material_Ref3:file12.oc" "Material_Ref3:White_Paint_Mat.bc";
+connectAttr "Material_Ref3:White_Paint_Mat.oc" "Material_Ref3:standardSurface4SG.ss"
+		;
+connectAttr "Material_Ref3:standardSurface4SG.msg" "Material_Ref3:materialInfo9.sg"
+		;
+connectAttr "Material_Ref3:White_Paint_Mat.msg" "Material_Ref3:materialInfo9.m";
+connectAttr "Material_Ref3:file12.msg" "Material_Ref3:materialInfo9.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file12.ws";
+connectAttr "Material_Ref3:place2dTexture12.c" "Material_Ref3:file12.c";
+connectAttr "Material_Ref3:place2dTexture12.tf" "Material_Ref3:file12.tf";
+connectAttr "Material_Ref3:place2dTexture12.rf" "Material_Ref3:file12.rf";
+connectAttr "Material_Ref3:place2dTexture12.mu" "Material_Ref3:file12.mu";
+connectAttr "Material_Ref3:place2dTexture12.mv" "Material_Ref3:file12.mv";
+connectAttr "Material_Ref3:place2dTexture12.s" "Material_Ref3:file12.s";
+connectAttr "Material_Ref3:place2dTexture12.wu" "Material_Ref3:file12.wu";
+connectAttr "Material_Ref3:place2dTexture12.wv" "Material_Ref3:file12.wv";
+connectAttr "Material_Ref3:place2dTexture12.re" "Material_Ref3:file12.re";
+connectAttr "Material_Ref3:place2dTexture12.of" "Material_Ref3:file12.of";
+connectAttr "Material_Ref3:place2dTexture12.r" "Material_Ref3:file12.ro";
+connectAttr "Material_Ref3:place2dTexture12.n" "Material_Ref3:file12.n";
+connectAttr "Material_Ref3:place2dTexture12.vt1" "Material_Ref3:file12.vt1";
+connectAttr "Material_Ref3:place2dTexture12.vt2" "Material_Ref3:file12.vt2";
+connectAttr "Material_Ref3:place2dTexture12.vt3" "Material_Ref3:file12.vt3";
+connectAttr "Material_Ref3:place2dTexture12.vc1" "Material_Ref3:file12.vc1";
+connectAttr "Material_Ref3:place2dTexture12.o" "Material_Ref3:file12.uv";
+connectAttr "Material_Ref3:place2dTexture12.ofs" "Material_Ref3:file12.fs";
+connectAttr "Material_Ref3:aiMultiply2.out" "Material_Ref3:Blue_Paint_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file12.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture12.c" "Material_Ref3:pasted__file12.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.tf" "Material_Ref3:pasted__file12.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.rf" "Material_Ref3:pasted__file12.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.mu" "Material_Ref3:pasted__file12.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.mv" "Material_Ref3:pasted__file12.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.s" "Material_Ref3:pasted__file12.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.wu" "Material_Ref3:pasted__file12.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.wv" "Material_Ref3:pasted__file12.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.re" "Material_Ref3:pasted__file12.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.of" "Material_Ref3:pasted__file12.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.r" "Material_Ref3:pasted__file12.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.n" "Material_Ref3:pasted__file12.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.vt1" "Material_Ref3:pasted__file12.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.vt2" "Material_Ref3:pasted__file12.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.vt3" "Material_Ref3:pasted__file12.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.vc1" "Material_Ref3:pasted__file12.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.o" "Material_Ref3:pasted__file12.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture12.ofs" "Material_Ref3:pasted__file12.fs"
+		;
+connectAttr "Material_Ref3:pasted__file12.oc" "Material_Ref3:aiMultiply2.input1"
+		;
+connectAttr "Material_Ref3:colorConstant1.oc" "Material_Ref3:aiMultiply2.input2"
+		;
+connectAttr "Material_Ref3:Blue_Paint_Mat.oc" "Material_Ref3:Blue_Paint_MatSG.ss"
+		;
+connectAttr "Material_Ref3:Blue_Paint_MatSG.msg" "Material_Ref3:materialInfo10.sg"
+		;
+connectAttr "Material_Ref3:Blue_Paint_Mat.msg" "Material_Ref3:materialInfo10.m";
+connectAttr "Material_Ref3:pasted__file12.msg" "Material_Ref3:materialInfo10.t" 
+		-na;
+connectAttr "Material_Ref3:file13.oc" "Material_Ref3:Marble_Mat.bc";
+connectAttr "Material_Ref3:Marble_Mat.oc" "Material_Ref3:standardSurface5SG.ss";
+connectAttr "Material_Ref3:standardSurface5SG.msg" "Material_Ref3:materialInfo11.sg"
+		;
+connectAttr "Material_Ref3:Marble_Mat.msg" "Material_Ref3:materialInfo11.m";
+connectAttr "Material_Ref3:file13.msg" "Material_Ref3:materialInfo11.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file13.ws";
+connectAttr "Material_Ref3:place2dTexture13.c" "Material_Ref3:file13.c";
+connectAttr "Material_Ref3:place2dTexture13.tf" "Material_Ref3:file13.tf";
+connectAttr "Material_Ref3:place2dTexture13.rf" "Material_Ref3:file13.rf";
+connectAttr "Material_Ref3:place2dTexture13.mu" "Material_Ref3:file13.mu";
+connectAttr "Material_Ref3:place2dTexture13.mv" "Material_Ref3:file13.mv";
+connectAttr "Material_Ref3:place2dTexture13.s" "Material_Ref3:file13.s";
+connectAttr "Material_Ref3:place2dTexture13.wu" "Material_Ref3:file13.wu";
+connectAttr "Material_Ref3:place2dTexture13.wv" "Material_Ref3:file13.wv";
+connectAttr "Material_Ref3:place2dTexture13.re" "Material_Ref3:file13.re";
+connectAttr "Material_Ref3:place2dTexture13.of" "Material_Ref3:file13.of";
+connectAttr "Material_Ref3:place2dTexture13.r" "Material_Ref3:file13.ro";
+connectAttr "Material_Ref3:place2dTexture13.n" "Material_Ref3:file13.n";
+connectAttr "Material_Ref3:place2dTexture13.vt1" "Material_Ref3:file13.vt1";
+connectAttr "Material_Ref3:place2dTexture13.vt2" "Material_Ref3:file13.vt2";
+connectAttr "Material_Ref3:place2dTexture13.vt3" "Material_Ref3:file13.vt3";
+connectAttr "Material_Ref3:place2dTexture13.vc1" "Material_Ref3:file13.vc1";
+connectAttr "Material_Ref3:place2dTexture13.o" "Material_Ref3:file13.uv";
+connectAttr "Material_Ref3:place2dTexture13.ofs" "Material_Ref3:file13.fs";
+connectAttr "Material_Ref3:pasted__aiMultiply3.out" "Material_Ref3:Brown_Paint_Mat.bc"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file12.oc" "Material_Ref3:pasted__aiMultiply3.input1"
+		;
+connectAttr "Material_Ref3:pasted__colorConstant1.oc" "Material_Ref3:pasted__aiMultiply3.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file12.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file12.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file12.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file12.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.c" "Material_Ref3:pasted__pasted__file12.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.tf" "Material_Ref3:pasted__pasted__file12.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.rf" "Material_Ref3:pasted__pasted__file12.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.mu" "Material_Ref3:pasted__pasted__file12.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.mv" "Material_Ref3:pasted__pasted__file12.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.s" "Material_Ref3:pasted__pasted__file12.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.wu" "Material_Ref3:pasted__pasted__file12.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.wv" "Material_Ref3:pasted__pasted__file12.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.re" "Material_Ref3:pasted__pasted__file12.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.of" "Material_Ref3:pasted__pasted__file12.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.r" "Material_Ref3:pasted__pasted__file12.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.n" "Material_Ref3:pasted__pasted__file12.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.vt1" "Material_Ref3:pasted__pasted__file12.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.vt2" "Material_Ref3:pasted__pasted__file12.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.vt3" "Material_Ref3:pasted__pasted__file12.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.vc1" "Material_Ref3:pasted__pasted__file12.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.o" "Material_Ref3:pasted__pasted__file12.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.ofs" "Material_Ref3:pasted__pasted__file12.fs"
+		;
+connectAttr "Material_Ref3:Brown_Paint_Mat.oc" "Material_Ref3:Brown_Paint_MatSG.ss"
+		;
+connectAttr "Material_Ref3:Brown_Paint_MatSG.msg" "Material_Ref3:materialInfo12.sg"
+		;
+connectAttr "Material_Ref3:Brown_Paint_Mat.msg" "Material_Ref3:materialInfo12.m"
+		;
+connectAttr "Material_Ref3:pasted__pasted__file12.msg" "Material_Ref3:materialInfo12.t"
+		 -na;
+connectAttr "Material_Ref3:pasted__file13.oc" "Material_Ref3:Stone_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file13.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture13.c" "Material_Ref3:pasted__file13.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.tf" "Material_Ref3:pasted__file13.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.rf" "Material_Ref3:pasted__file13.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.mu" "Material_Ref3:pasted__file13.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.mv" "Material_Ref3:pasted__file13.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.s" "Material_Ref3:pasted__file13.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.wu" "Material_Ref3:pasted__file13.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.wv" "Material_Ref3:pasted__file13.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.re" "Material_Ref3:pasted__file13.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.of" "Material_Ref3:pasted__file13.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.r" "Material_Ref3:pasted__file13.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.n" "Material_Ref3:pasted__file13.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.vt1" "Material_Ref3:pasted__file13.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.vt2" "Material_Ref3:pasted__file13.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.vt3" "Material_Ref3:pasted__file13.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.vc1" "Material_Ref3:pasted__file13.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.o" "Material_Ref3:pasted__file13.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture13.ofs" "Material_Ref3:pasted__file13.fs"
+		;
+connectAttr "Material_Ref3:Stone_Mat.oc" "Material_Ref3:Stone_MatSG.ss";
+connectAttr "groupId434.msg" "Material_Ref3:Stone_MatSG.gn" -na;
+connectAttr "polySurfaceShape147.iog.og[1]" "Material_Ref3:Stone_MatSG.dsm" -na;
+connectAttr "Material_Ref3:Stone_MatSG.msg" "Material_Ref3:materialInfo13.sg";
+connectAttr "Material_Ref3:Stone_Mat.msg" "Material_Ref3:materialInfo13.m";
+connectAttr "Material_Ref3:pasted__file13.msg" "Material_Ref3:materialInfo13.t" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__file13.oc" "Material_Ref3:Generic_Metal_Mat.bc"
+		;
+connectAttr "Material_Ref3:file14.oa" "Material_Ref3:Generic_Metal_Mat.m";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__file13.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__file13.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__file13.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__file13.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.c" "Material_Ref3:pasted__pasted__file13.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.tf" "Material_Ref3:pasted__pasted__file13.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.rf" "Material_Ref3:pasted__pasted__file13.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.mu" "Material_Ref3:pasted__pasted__file13.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.mv" "Material_Ref3:pasted__pasted__file13.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.s" "Material_Ref3:pasted__pasted__file13.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.wu" "Material_Ref3:pasted__pasted__file13.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.wv" "Material_Ref3:pasted__pasted__file13.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.re" "Material_Ref3:pasted__pasted__file13.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.of" "Material_Ref3:pasted__pasted__file13.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.r" "Material_Ref3:pasted__pasted__file13.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.n" "Material_Ref3:pasted__pasted__file13.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.vt1" "Material_Ref3:pasted__pasted__file13.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.vt2" "Material_Ref3:pasted__pasted__file13.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.vt3" "Material_Ref3:pasted__pasted__file13.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.vc1" "Material_Ref3:pasted__pasted__file13.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.o" "Material_Ref3:pasted__pasted__file13.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.ofs" "Material_Ref3:pasted__pasted__file13.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:file14.ws";
+connectAttr "Material_Ref3:place2dTexture14.c" "Material_Ref3:file14.c";
+connectAttr "Material_Ref3:place2dTexture14.tf" "Material_Ref3:file14.tf";
+connectAttr "Material_Ref3:place2dTexture14.rf" "Material_Ref3:file14.rf";
+connectAttr "Material_Ref3:place2dTexture14.mu" "Material_Ref3:file14.mu";
+connectAttr "Material_Ref3:place2dTexture14.mv" "Material_Ref3:file14.mv";
+connectAttr "Material_Ref3:place2dTexture14.s" "Material_Ref3:file14.s";
+connectAttr "Material_Ref3:place2dTexture14.wu" "Material_Ref3:file14.wu";
+connectAttr "Material_Ref3:place2dTexture14.wv" "Material_Ref3:file14.wv";
+connectAttr "Material_Ref3:place2dTexture14.re" "Material_Ref3:file14.re";
+connectAttr "Material_Ref3:place2dTexture14.of" "Material_Ref3:file14.of";
+connectAttr "Material_Ref3:place2dTexture14.r" "Material_Ref3:file14.ro";
+connectAttr "Material_Ref3:place2dTexture14.n" "Material_Ref3:file14.n";
+connectAttr "Material_Ref3:place2dTexture14.vt1" "Material_Ref3:file14.vt1";
+connectAttr "Material_Ref3:place2dTexture14.vt2" "Material_Ref3:file14.vt2";
+connectAttr "Material_Ref3:place2dTexture14.vt3" "Material_Ref3:file14.vt3";
+connectAttr "Material_Ref3:place2dTexture14.vc1" "Material_Ref3:file14.vc1";
+connectAttr "Material_Ref3:place2dTexture14.o" "Material_Ref3:file14.uv";
+connectAttr "Material_Ref3:place2dTexture14.ofs" "Material_Ref3:file14.fs";
+connectAttr "Material_Ref3:Generic_Metal_Mat.oc" "Material_Ref3:Generic_Metal_MatSG.ss"
+		;
+connectAttr "Material_Ref3:Generic_Metal_MatSG.msg" "Material_Ref3:materialInfo14.sg"
+		;
+connectAttr "Material_Ref3:Generic_Metal_Mat.msg" "Material_Ref3:materialInfo14.m"
+		;
+connectAttr "Material_Ref3:Generic_Metal_Mat.msg" "Material_Ref3:materialInfo14.t"
+		 -na;
+connectAttr "Material_Ref3:aiMultiply3.out" "Material_Ref3:Gold_Metal_Mat.bc";
+connectAttr "Material_Ref3:pasted__file14.oa" "Material_Ref3:Gold_Metal_Mat.m";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__pasted__pasted__file13.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__pasted__pasted__file13.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__pasted__pasted__file13.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__pasted__pasted__file13.ws"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.c" "Material_Ref3:pasted__pasted__pasted__file13.c"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.tf" "Material_Ref3:pasted__pasted__pasted__file13.tf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.rf" "Material_Ref3:pasted__pasted__pasted__file13.rf"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.mu" "Material_Ref3:pasted__pasted__pasted__file13.mu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.mv" "Material_Ref3:pasted__pasted__pasted__file13.mv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.s" "Material_Ref3:pasted__pasted__pasted__file13.s"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.wu" "Material_Ref3:pasted__pasted__pasted__file13.wu"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.wv" "Material_Ref3:pasted__pasted__pasted__file13.wv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.re" "Material_Ref3:pasted__pasted__pasted__file13.re"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.of" "Material_Ref3:pasted__pasted__pasted__file13.of"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.r" "Material_Ref3:pasted__pasted__pasted__file13.ro"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.n" "Material_Ref3:pasted__pasted__pasted__file13.n"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.vt1" "Material_Ref3:pasted__pasted__pasted__file13.vt1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.vt2" "Material_Ref3:pasted__pasted__pasted__file13.vt2"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.vt3" "Material_Ref3:pasted__pasted__pasted__file13.vt3"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.vc1" "Material_Ref3:pasted__pasted__pasted__file13.vc1"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.o" "Material_Ref3:pasted__pasted__pasted__file13.uv"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.ofs" "Material_Ref3:pasted__pasted__pasted__file13.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref3:pasted__file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref3:pasted__file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref3:pasted__file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref3:pasted__file14.ws";
+connectAttr "Material_Ref3:pasted__place2dTexture14.c" "Material_Ref3:pasted__file14.c"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.tf" "Material_Ref3:pasted__file14.tf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.rf" "Material_Ref3:pasted__file14.rf"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.mu" "Material_Ref3:pasted__file14.mu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.mv" "Material_Ref3:pasted__file14.mv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.s" "Material_Ref3:pasted__file14.s"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.wu" "Material_Ref3:pasted__file14.wu"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.wv" "Material_Ref3:pasted__file14.wv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.re" "Material_Ref3:pasted__file14.re"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.of" "Material_Ref3:pasted__file14.of"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.r" "Material_Ref3:pasted__file14.ro"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.n" "Material_Ref3:pasted__file14.n"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.vt1" "Material_Ref3:pasted__file14.vt1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.vt2" "Material_Ref3:pasted__file14.vt2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.vt3" "Material_Ref3:pasted__file14.vt3"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.vc1" "Material_Ref3:pasted__file14.vc1"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.o" "Material_Ref3:pasted__file14.uv"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.ofs" "Material_Ref3:pasted__file14.fs"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file13.oc" "Material_Ref3:aiMultiply3.input1"
+		;
+connectAttr "Material_Ref3:colorConstant2.oc" "Material_Ref3:aiMultiply3.input2"
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture14.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref3:Gold_Metal_Mat.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file13.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "Material_Ref3:pasted__file14.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "Material_Ref3:colorConstant2.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "Material_Ref3:aiMultiply3.msg" "Material_Ref3:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+		;
+connectAttr "Material_Ref3:Gold_Metal_Mat.oc" "Material_Ref3:Gold_Metal_MatSG.ss"
+		;
+connectAttr "polySurfaceShape148.iog" "Material_Ref3:Gold_Metal_MatSG.dsm" -na;
+connectAttr "polySurfaceShape147.iog.og[2]" "Material_Ref3:Gold_Metal_MatSG.dsm"
+		 -na;
+connectAttr "polySurfaceShape144.iog.og[1]" "Material_Ref3:Gold_Metal_MatSG.dsm"
+		 -na;
+connectAttr "groupId435.msg" "Material_Ref3:Gold_Metal_MatSG.gn" -na;
+connectAttr "groupId437.msg" "Material_Ref3:Gold_Metal_MatSG.gn" -na;
+connectAttr "Material_Ref3:Gold_Metal_MatSG.msg" "materialInfo15.sg";
+connectAttr "Material_Ref3:Gold_Metal_Mat.msg" "materialInfo15.m";
+connectAttr "Material_Ref3:pasted__pasted__pasted__file13.msg" "materialInfo15.t"
+		 -na;
+connectAttr "polyAutoProj144.out" "polyMapSew7.ip";
+connectAttr "polyMapSew7.out" "polyMapSew8.ip";
+connectAttr "polyMapSew8.out" "polyMapSew9.ip";
+connectAttr "polyMapSew9.out" "polyTweakUV143.ip";
+connectAttr "polyTweakUV143.out" "groupParts121.ig";
+connectAttr "groupId434.id" "groupParts121.gi";
+connectAttr "groupParts121.og" "groupParts122.ig";
+connectAttr "groupId435.id" "groupParts122.gi";
+connectAttr "groupParts122.og" "groupParts123.ig";
+connectAttr "groupId436.id" "groupParts123.gi";
+connectAttr "polyAutoProj145.out" "groupParts124.ig";
+connectAttr "groupId437.id" "groupParts124.gi";
+connectAttr "groupParts124.og" "polyTweakUV144.ip";
+connectAttr "polyTweakUV142.out" "groupParts125.ig";
+connectAttr "groupId438.id" "groupParts125.gi";
+connectAttr "Material_Ref3:Gold_Metal_MatSG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
 connectAttr "bag_of_gold1SG.pa" ":renderPartition.st" -na;
 connectAttr "chest1SG.pa" ":renderPartition.st" -na;
 connectAttr "coins_1SG.pa" ":renderPartition.st" -na;
@@ -290002,6 +296814,61 @@ connectAttr "Stalagmite_1:standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "Stalagmite_2:standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "Stalagmite_3:standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "Stalagmite_4:standardSurface2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:standardSurface2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:displacementShader1SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:displacementShader2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:Cave2Displacement5.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:displacementShader4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:pasted__displacementShader4SG.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref1:pasted__displacementShader4SG1.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref1:displacementShader5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:displacementShader6SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:standardSurface3SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:standardSurface4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:Blue_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:standardSurface5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:Brown_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:Stone_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref1:Generic_Metal_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:standardSurface2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:displacementShader1SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:displacementShader2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:Cave2Displacement5.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:displacementShader4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:pasted__displacementShader4SG.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref2:pasted__displacementShader4SG1.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref2:displacementShader5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:displacementShader6SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:standardSurface3SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:standardSurface4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:Blue_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:standardSurface5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:Brown_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:Stone_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref2:Generic_Metal_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:standardSurface2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:displacementShader1SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:displacementShader2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Cave2Displacement5.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:displacementShader4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:pasted__displacementShader4SG.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref3:pasted__displacementShader4SG1.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref3:displacementShader5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:displacementShader6SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:standardSurface3SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:standardSurface4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Blue_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:standardSurface5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Brown_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Stone_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Generic_Metal_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref3:Gold_Metal_MatSG.pa" ":renderPartition.st" -na;
 connectAttr "bag_of_gold.msg" ":defaultShaderList1.s" -na;
 connectAttr "chest.msg" ":defaultShaderList1.s" -na;
 connectAttr "coins_.msg" ":defaultShaderList1.s" -na;
@@ -290039,7 +296906,6 @@ connectAttr "Material_Ref:Generic_Wood_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Material_Ref:White_Paint_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Material_Ref:Blue_Paint_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Material_Ref:Marble_Mat.msg" ":defaultShaderList1.s" -na;
-connectAttr "Material_Ref:Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "DiamondGem:DiamondMat.msg" ":defaultShaderList1.s" -na;
 connectAttr "DiamondGem1:DiamondMat.msg" ":defaultShaderList1.s" -na;
 connectAttr "DiamondGem2:DiamondMat.msg" ":defaultShaderList1.s" -na;
@@ -290097,6 +296963,76 @@ connectAttr "Stalagmite_1:Stalagmite_1_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Stalagmite_2:Stalagmite_2_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Stalagmite_3:Stalagmite_2_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Stalagmite_4:Stalagmite_1_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Appartment_Floor_Mat.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref1:AppermentFloorDisplacement.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref1:Appartment_Wall_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:AppartmentWallDisplacemnt.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref1:Cave_Floor_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:CaveFloorDisplacement.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref1:Cave_Wall_2_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Cave2Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Cave_Wall_3_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Cave3Displacemnt.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Cave_Wall_4_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:cave4Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Generic_Wood_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:White_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Blue_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Marble_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Stone_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref1:Generic_Metal_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Appartment_Floor_Mat.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref2:AppermentFloorDisplacement.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref2:Appartment_Wall_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:AppartmentWallDisplacemnt.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref2:Cave_Floor_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:CaveFloorDisplacement.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref2:Cave_Wall_2_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Cave2Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Cave_Wall_3_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Cave3Displacemnt.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Cave_Wall_4_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:cave4Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Generic_Wood_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:White_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Blue_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Marble_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Stone_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref2:Generic_Metal_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Appartment_Floor_Mat.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref3:AppermentFloorDisplacement.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref3:Appartment_Wall_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:AppartmentWallDisplacemnt.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref3:Cave_Floor_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:CaveFloorDisplacement.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref3:Cave_Wall_2_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Cave2Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Cave_Wall_3_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Cave3Displacemnt.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Cave_Wall_4_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:cave4Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Generic_Wood_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:White_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Blue_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Marble_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Stone_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Generic_Metal_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref3:Gold_Metal_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Pillars1:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "Pillars2:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "Pillars3:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
@@ -290389,6 +297325,328 @@ connectAttr "Stalagmite_4:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -n
 		;
 connectAttr "Stalagmite_4:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na
 		;
+connectAttr "Material_Ref1:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:aiMultiply1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref1:place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:aiNormalMap1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref1:place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:pasted__place2dTexture5.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture6.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__aiMultiply2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture7.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__aiNormalMap2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture8.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture8.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture9.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture10.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref1:place2dTexture11.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref1:place2dTexture12.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref1:pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:aiMultiply2.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref1:colorConstant1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref1:place2dTexture13.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__aiMultiply3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__colorConstant1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref1:place2dTexture14.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref2:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:aiMultiply1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref2:place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:aiNormalMap1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref2:place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:pasted__place2dTexture5.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture6.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__aiMultiply2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture7.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__aiNormalMap2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture8.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture8.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture9.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture10.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref2:place2dTexture11.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref2:place2dTexture12.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref2:pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:aiMultiply2.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref2:colorConstant1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref2:place2dTexture13.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__aiMultiply3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__colorConstant1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref2:place2dTexture14.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:aiMultiply1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref3:place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:aiNormalMap1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref3:place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:pasted__place2dTexture5.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture6.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__aiMultiply2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture7.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__aiNormalMap2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture8.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture8.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture9.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture10.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:place2dTexture11.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:place2dTexture12.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:aiMultiply2.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref3:colorConstant1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref3:place2dTexture13.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__aiMultiply3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__colorConstant1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:place2dTexture14.msg" ":defaultRenderUtilityList1.u" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:pasted__place2dTexture14.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref3:aiMultiply3.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref3:colorConstant2.msg" ":defaultRenderUtilityList1.u" -na
+		;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "Pillars1:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "Pillars2:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
@@ -290609,6 +297867,165 @@ connectAttr "Stalagmite_3:file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Stalagmite_3:file2.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Stalagmite_4:file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Stalagmite_4:file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__pasted__file1.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref1:pasted__pasted__file2.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref1:pasted__pasted__file3.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref1:pasted__pasted__file4.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref1:file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:file9.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:file10.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file11.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__pasted__file12.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:pasted__file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref1:pasted__pasted__file13.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref1:file14.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__pasted__file1.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref2:pasted__pasted__file2.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref2:pasted__pasted__file3.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref2:pasted__pasted__file4.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref2:file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:file9.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:file10.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file11.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__pasted__file12.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:pasted__file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref2:pasted__pasted__file13.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref2:file14.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__file1.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__file2.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__file3.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref3:pasted__pasted__file4.msg" ":defaultTextureList1.tx" 
+		-na;
+connectAttr "Material_Ref3:file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:file9.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:file10.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file11.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__file12.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__file13.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:file14.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref3:pasted__pasted__pasted__file13.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref3:pasted__file14.msg" ":defaultTextureList1.tx" -na;
 connectAttr "Coins_1Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Coins_3Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Coins_2Shape.iog" ":initialShadingGroup.dsm" -na;
@@ -290673,12 +298090,9 @@ connectAttr "polySurfaceShape77.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "|Treasure_Set|Pillar_Group|Pillar_4|column|polySurface131|polySurfaceShape142.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "polySurfaceShape143.iog.og[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "polySurfaceShape144.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "|Treasure_Set|Treasure_Chest|Bottom_Chest|polySurface134|polySurfaceShape145.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "polySurfaceShape146.iog.og[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "polySurfaceShape147.iog.og[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "polySurfaceShape148.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "|Treasure_Set|Diamond_Group|Diamond_Pillar1|crystals1|polySurface11|polySurfaceShape11.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "|Treasure_Set|Diamond_Group|Diamond_Pillar1|crystals1|polySurface12|polySurfaceShape12.iog.og[0]" ":initialShadingGroup.dsm"
@@ -290802,6 +298216,7 @@ connectAttr "|Treasure_Set|Pillar_Group|Pillar_7|column|polySurface131|polySurfa
 connectAttr "|Treasure_Set|Pillar_Group|Pillar_7|column|polySurface132|polySurfaceShape132.iog.og[0]" ":initialShadingGroup.dsm"
 		 -na;
 connectAttr "polySurfaceShape141.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "polySurfaceShape147.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
@@ -290827,11 +298242,8 @@ connectAttr "groupId81.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId82.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId155.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId156.msg" ":initialShadingGroup.gn" -na;
-connectAttr "groupId159.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId160.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId161.msg" ":initialShadingGroup.gn" -na;
-connectAttr "groupId164.msg" ":initialShadingGroup.gn" -na;
-connectAttr "groupId165.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId174.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId175.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId176.msg" ":initialShadingGroup.gn" -na;
@@ -290871,6 +298283,8 @@ connectAttr "Stalagmite_1:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_1:groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_4:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_4:groupId5.msg" ":initialShadingGroup.gn" -na;
+connectAttr "groupId432.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Material_Ref3:colorConstant2.oc" ":internal_standInShader.ic";
 connectAttr "crystalFormations:LeaningCrystal_Mat_05.oc" ":internal_standInSE.ss"
 		;
 // End of TreasureCaveSet.ma

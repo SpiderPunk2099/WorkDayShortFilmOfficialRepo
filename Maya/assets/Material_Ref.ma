@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: Material_Ref.ma
-//Last modified: Wed, Apr 01, 2026 08:50:36 PM
+//Last modified: Wed, Apr 01, 2026 11:54:28 PM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "019093C3-4687-2CEF-F3A2-D2919DAFB344";
+fileInfo "UUID" "DB597A51-4C90-C3D9-DD64-94BF6CE8BCC2";
 createNode transform -s -n "persp";
 	rename -uid "AE934F74-46A3-B3AD-4E94-53A8EE9E01D7";
 	setAttr ".v" no;
@@ -79,20 +79,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "23BA755A-4E1B-737C-46C6-C8BAC9469E82";
+	rename -uid "1CF81698-450D-1F18-EB84-059CC4A03E7E";
 	setAttr -s 18 ".lnk";
 	setAttr -s 18 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "99997E1B-4320-DAF3-F070-14A4D227E266";
+	rename -uid "660A734D-471E-C738-3C65-55B1B4A6CAD6";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "1F547A89-4256-CF14-1933-789B43C03B31";
+	rename -uid "C6E19065-4286-B3C6-7083-90BD1CFEAA0A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6A6E704A-4D65-ADFE-C359-939E0CEBC4D6";
+	rename -uid "B3D6AD7A-4ABB-BDC5-4C53-9D848CD477EC";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "6EDF9341-46A9-5AB4-1C6D-4B96B8B8EEE5";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B340C315-4840-1E02-7ECB-D68D759BF507";
+	rename -uid "250E28B2-477C-F7F4-A257-51A5C77E96BF";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "528A595B-4CB9-973F-C5C7-A298A71A1958";
 	setAttr ".g" yes;
@@ -293,7 +293,7 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1603\n            -height 1066\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
 		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n"
@@ -523,7 +523,7 @@ createNode place2dTexture -n "pasted__pasted__place2dTexture12";
 	rename -uid "A0AAFC53-4F72-48F5-D547-53B425338BED";
 createNode colorConstant -n "pasted__colorConstant1";
 	rename -uid "BAE37E90-46FC-AE1E-FD85-FF88CF65CD07";
-	setAttr "._c" -type "float3" 0.60995853 0.43553761 0.24947302 ;
+	setAttr "._c" -type "float3" 0.2614108 0.1866589 0.10691696 ;
 createNode shadingEngine -n "Brown_Paint_MatSG";
 	rename -uid "E1DA9BA0-43F0-4087-3981-59899BA153DA";
 	setAttr ".ihi" 0;
@@ -566,60 +566,53 @@ createNode shadingEngine -n "Generic_Metal_MatSG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo14";
 	rename -uid "0ACE8E1E-4C6A-E1B0-8CA6-6896AF3904A7";
+createNode standardSurface -n "Gold_Metal_Mat";
+	rename -uid "5E6C1307-4707-E146-DDCE-28AAFDDE07BF";
+	setAttr ".sr" 0.5;
+createNode file -n "pasted__pasted__pasted__file13";
+	rename -uid "9DACA193-47C4-A054-F204-249D6BDE5194";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic Metal/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "pasted__pasted__pasted__place2dTexture13";
+	rename -uid "7BBCBFF4-48B0-D202-32D8-9BB606BB787F";
+createNode file -n "pasted__file14";
+	rename -uid "9C3BA7D3-45D2-1917-F200-D989EB480046";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//Textures/Generic Metal/DefaultMaterial_Metallic.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "pasted__place2dTexture14";
+	rename -uid "94EAC29A-47A5-F1B8-6C00-8D983F25632C";
+createNode aiMultiply -n "aiMultiply3";
+	rename -uid "72B79A86-4050-1957-7007-699AD7A2A82F";
+createNode colorConstant -n "colorConstant2";
+	rename -uid "4997FAD1-491C-5215-2DD6-DBBFDFE10642";
+	setAttr "._c" -type "float3" 0.71784234 0.71784234 0 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "76C9F083-4915-5F09-0D55-F8AD072C5869";
+	rename -uid "799FEE8E-4D6C-F3E9-02ED-33914F744113";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" 20689.636687717975 -62983.685440515677 ;
-	setAttr ".tgi[0].vh" -type "double2" 86209.357150729775 -406.46739350739415 ;
-	setAttr -s 16 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 5345.71435546875;
-	setAttr ".tgi[0].ni[0].y" -3800;
+	setAttr ".tgi[0].vl" -type "double2" 52997.265445052857 -32486.294700272272 ;
+	setAttr ".tgi[0].vh" -type "double2" 54206.40271926963 -31326.831402250777 ;
+	setAttr -s 7 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 53111.4296875;
+	setAttr ".tgi[0].ni[0].y" -31765.71484375;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" 4414.28564453125;
-	setAttr ".tgi[0].ni[1].y" -3920;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 4880;
-	setAttr ".tgi[0].ni[2].y" -3898.571533203125;
+	setAttr ".tgi[0].ni[1].x" 53857.14453125;
+	setAttr ".tgi[0].ni[1].y" -31600;
+	setAttr ".tgi[0].ni[1].nvs" 2387;
+	setAttr ".tgi[0].ni[2].x" 52991.484375;
+	setAttr ".tgi[0].ni[2].y" -31399.78515625;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 5801.4287109375;
-	setAttr ".tgi[0].ni[3].y" -4334.28564453125;
+	setAttr ".tgi[0].ni[3].x" 53354.8828125;
+	setAttr ".tgi[0].ni[3].y" -31379.568359375;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
-	setAttr ".tgi[0].ni[4].x" 4880;
-	setAttr ".tgi[0].ni[4].y" -4158.5712890625;
+	setAttr ".tgi[0].ni[4].x" 53525.71484375;
+	setAttr ".tgi[0].ni[4].y" -31744.28515625;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
-	setAttr ".tgi[0].ni[5].x" 5801.4287109375;
-	setAttr ".tgi[0].ni[5].y" -3640;
-	setAttr ".tgi[0].ni[5].nvs" 2387;
-	setAttr ".tgi[0].ni[6].x" 4414.28564453125;
-	setAttr ".tgi[0].ni[6].y" -3744.28564453125;
+	setAttr ".tgi[0].ni[5].x" 53250.48046875;
+	setAttr ".tgi[0].ni[5].y" -31599.431640625;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" 53610.31640625;
+	setAttr ".tgi[0].ni[6].y" -31500.083984375;
 	setAttr ".tgi[0].ni[6].nvs" 1923;
-	setAttr ".tgi[0].ni[7].x" 5345.71435546875;
-	setAttr ".tgi[0].ni[7].y" -4158.5712890625;
-	setAttr ".tgi[0].ni[7].nvs" 1923;
-	setAttr ".tgi[0].ni[8].x" 5345.71435546875;
-	setAttr ".tgi[0].ni[8].y" -3624.28564453125;
-	setAttr ".tgi[0].ni[8].nvs" 1923;
-	setAttr ".tgi[0].ni[9].x" 4880;
-	setAttr ".tgi[0].ni[9].y" -3722.857177734375;
-	setAttr ".tgi[0].ni[9].nvs" 1923;
-	setAttr ".tgi[0].ni[10].x" 5350.92822265625;
-	setAttr ".tgi[0].ni[10].y" -4357.14306640625;
-	setAttr ".tgi[0].ni[10].nvs" 1923;
-	setAttr ".tgi[0].ni[11].x" 4880;
-	setAttr ".tgi[0].ni[11].y" -3587.142822265625;
-	setAttr ".tgi[0].ni[11].nvs" 1923;
-	setAttr ".tgi[0].ni[12].x" 4414.28564453125;
-	setAttr ".tgi[0].ni[12].y" -4180;
-	setAttr ".tgi[0].ni[12].nvs" 1923;
-	setAttr ".tgi[0].ni[13].x" 4880;
-	setAttr ".tgi[0].ni[13].y" -4378.5712890625;
-	setAttr ".tgi[0].ni[13].nvs" 1923;
-	setAttr ".tgi[0].ni[14].x" 6150;
-	setAttr ".tgi[0].ni[14].y" -3960;
-	setAttr ".tgi[0].ni[14].nvs" 1923;
-	setAttr ".tgi[0].ni[15].x" 53614.28515625;
-	setAttr ".tgi[0].ni[15].y" -31882.857421875;
-	setAttr ".tgi[0].ni[15].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -681,7 +674,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 24 ".s";
+	setAttr -s 25 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -689,11 +682,11 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 54 ".u";
+	setAttr -s 58 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 select -ne :defaultTextureList1;
-	setAttr -s 38 ".tx";
+	setAttr -s 40 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -2057,37 +2050,85 @@ connectAttr "Generic_Metal_Mat.oc" "Generic_Metal_MatSG.ss";
 connectAttr "Generic_Metal_MatSG.msg" "materialInfo14.sg";
 connectAttr "Generic_Metal_Mat.msg" "materialInfo14.m";
 connectAttr "Generic_Metal_Mat.msg" "materialInfo14.t" -na;
-connectAttr "pasted__pasted__pasted__pasted__aiMultiply1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "aiMultiply3.out" "Gold_Metal_Mat.bc";
+connectAttr "pasted__file14.oa" "Gold_Metal_Mat.m";
+connectAttr ":defaultColorMgtGlobals.cme" "pasted__pasted__pasted__file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "pasted__pasted__pasted__file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "pasted__pasted__pasted__file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "pasted__pasted__pasted__file13.ws";
+connectAttr "pasted__pasted__pasted__place2dTexture13.c" "pasted__pasted__pasted__file13.c"
 		;
-connectAttr "pasted__pasted__pasted__pasted__place2dTexture1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.tf" "pasted__pasted__pasted__file13.tf"
 		;
-connectAttr "pasted__pasted__pasted__pasted__file1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.rf" "pasted__pasted__pasted__file13.rf"
 		;
-connectAttr "cave4Displacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.mu" "pasted__pasted__pasted__file13.mu"
 		;
-connectAttr "pasted__pasted__pasted__pasted__file4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.mv" "pasted__pasted__pasted__file13.mv"
 		;
-connectAttr "Cave_Wall_4_Mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.s" "pasted__pasted__pasted__file13.s"
 		;
-connectAttr "pasted__pasted__pasted__pasted__place2dTexture3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.wu" "pasted__pasted__pasted__file13.wu"
 		;
-connectAttr "pasted__pasted__pasted__pasted__aiNormalMap1.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.wv" "pasted__pasted__pasted__file13.wv"
 		;
-connectAttr "pasted__pasted__pasted__pasted__file2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.re" "pasted__pasted__pasted__file13.re"
 		;
-connectAttr "pasted__pasted__pasted__pasted__file3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.of" "pasted__pasted__pasted__file13.of"
 		;
-connectAttr "file10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[10].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.r" "pasted__pasted__pasted__file13.ro"
 		;
-connectAttr "pasted__pasted__pasted__pasted__place2dTexture2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[11].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.n" "pasted__pasted__pasted__file13.n"
 		;
-connectAttr "pasted__pasted__pasted__pasted__place2dTexture4.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[12].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.vt1" "pasted__pasted__pasted__file13.vt1"
 		;
-connectAttr "place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[13].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.vt2" "pasted__pasted__pasted__file13.vt2"
 		;
-connectAttr "displacementShader6SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[14].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.vt3" "pasted__pasted__pasted__file13.vt3"
 		;
-connectAttr "Generic_Metal_MatSG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[15].dn"
+connectAttr "pasted__pasted__pasted__place2dTexture13.vc1" "pasted__pasted__pasted__file13.vc1"
+		;
+connectAttr "pasted__pasted__pasted__place2dTexture13.o" "pasted__pasted__pasted__file13.uv"
+		;
+connectAttr "pasted__pasted__pasted__place2dTexture13.ofs" "pasted__pasted__pasted__file13.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "pasted__file14.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "pasted__file14.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "pasted__file14.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "pasted__file14.ws";
+connectAttr "pasted__place2dTexture14.c" "pasted__file14.c";
+connectAttr "pasted__place2dTexture14.tf" "pasted__file14.tf";
+connectAttr "pasted__place2dTexture14.rf" "pasted__file14.rf";
+connectAttr "pasted__place2dTexture14.mu" "pasted__file14.mu";
+connectAttr "pasted__place2dTexture14.mv" "pasted__file14.mv";
+connectAttr "pasted__place2dTexture14.s" "pasted__file14.s";
+connectAttr "pasted__place2dTexture14.wu" "pasted__file14.wu";
+connectAttr "pasted__place2dTexture14.wv" "pasted__file14.wv";
+connectAttr "pasted__place2dTexture14.re" "pasted__file14.re";
+connectAttr "pasted__place2dTexture14.of" "pasted__file14.of";
+connectAttr "pasted__place2dTexture14.r" "pasted__file14.ro";
+connectAttr "pasted__place2dTexture14.n" "pasted__file14.n";
+connectAttr "pasted__place2dTexture14.vt1" "pasted__file14.vt1";
+connectAttr "pasted__place2dTexture14.vt2" "pasted__file14.vt2";
+connectAttr "pasted__place2dTexture14.vt3" "pasted__file14.vt3";
+connectAttr "pasted__place2dTexture14.vc1" "pasted__file14.vc1";
+connectAttr "pasted__place2dTexture14.o" "pasted__file14.uv";
+connectAttr "pasted__place2dTexture14.ofs" "pasted__file14.fs";
+connectAttr "pasted__pasted__pasted__file13.oc" "aiMultiply3.input1";
+connectAttr "colorConstant2.oc" "aiMultiply3.input2";
+connectAttr "pasted__place2dTexture14.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Gold_Metal_Mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "pasted__pasted__pasted__place2dTexture13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "pasted__pasted__pasted__file13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "pasted__file14.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "colorConstant2.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "aiMultiply3.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
 connectAttr "standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "displacementShader1SG.pa" ":renderPartition.st" -na;
@@ -2124,6 +2165,7 @@ connectAttr "Marble_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Stone_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "Generic_Metal_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Gold_Metal_Mat.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "aiMultiply1.msg" ":defaultRenderUtilityList1.u" -na;
@@ -2198,6 +2240,11 @@ connectAttr "pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
 		 -na;
 connectAttr "place2dTexture14.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "pasted__pasted__pasted__place2dTexture13.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "pasted__place2dTexture14.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "aiMultiply3.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "colorConstant2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
@@ -2241,5 +2288,8 @@ connectAttr "pasted__pasted__file12.msg" ":defaultTextureList1.tx" -na;
 connectAttr "pasted__file13.msg" ":defaultTextureList1.tx" -na;
 connectAttr "pasted__pasted__file13.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file14.msg" ":defaultTextureList1.tx" -na;
-connectAttr "Generic_Metal_Mat.oc" ":internal_standInSE.ss";
+connectAttr "pasted__pasted__pasted__file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "pasted__file14.msg" ":defaultTextureList1.tx" -na;
+connectAttr "colorConstant2.oc" ":internal_standInShader.ic";
+connectAttr "Gold_Metal_Mat.oc" ":internal_standInSE.ss";
 // End of Material_Ref.ma
