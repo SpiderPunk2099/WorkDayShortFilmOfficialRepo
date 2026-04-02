@@ -1,17 +1,15 @@
 //Maya ASCII 2024 scene
 //Name: LivingRoomSet.ma
-//Last modified: Mon, Mar 30, 2026 07:27:19 PM
+//Last modified: Wed, Apr 01, 2026 08:35:09 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
-file -rdi 1 -ns "Material_Ref" -rfn "Material_RefRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya//assets/Material_Ref.ma";
 file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
-file -r -ns "Material_Ref" -dr 1 -rfn "Material_RefRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya//assets/Material_Ref.ma";
 requires maya "2024";
+requires -nodeType "colorConstant" "lookdevKit" "1.0";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiMultiply"
+		 -nodeType "aiNormalMap" "mtoa" "5.3.4.1";
 requires -nodeType "mayaUsdLayerManager" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.25.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -19,7 +17,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "6479A3EE-45FD-6EFA-5136-1688FDF061F5";
+fileInfo "UUID" "CB142545-4719-5E6A-9401-40B06B3185E5";
 createNode transform -s -n "persp";
 	rename -uid "F6826504-4ED2-CC4A-5B5C-81ABCAE20D99";
 	setAttr ".v" no;
@@ -84008,16 +84006,20 @@ createNode mesh -n "SquareWindowGlassShape" -p "SquareWindowGlass";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "Material_Ref:fluidTexture2D1";
+	rename -uid "699A9D8D-4215-DBD0-9DF7-FFAEB31BBD93";
+createNode transform -n "Material_Ref:fluidTexture2D2";
+	rename -uid "134B5AD3-41FD-7C8C-B87F-CF83E0FB827F";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A4C6FD71-4C29-0A32-2F8F-74A724720527";
-	setAttr -s 41 ".lnk";
-	setAttr -s 41 ".slnk";
+	rename -uid "B16080C9-44EA-964E-3207-3896AD161E79";
+	setAttr -s 43 ".lnk";
+	setAttr -s 43 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C1DFDAC8-441D-295C-FCC8-76B4FF9906B2";
+	rename -uid "5B1E4412-4C9B-E919-C3A8-288A64CFC273";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4ADDE88C-4A14-EFA2-5454-1A8F88645813";
+	rename -uid "1F05C68B-4E3E-6AE1-4852-88BC4312C939";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "04F1B4D9-4E8B-D6C4-E12B-2E94B19A725D";
+	rename -uid "973B5C88-4379-7C93-29C1-9885D2DF60C9";
 	setAttr ".cdl" 2;
 	setAttr -s 21 ".dli[1:20]"  1 2 3 4 5 6 7 8 
 		9 10 11 12 13 14 15 16 17 18 19 20;
@@ -84026,7 +84028,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "932E9FDE-4E54-2276-524B-9583D9721B6C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B01CAFE7-4F10-1F98-3CAE-C9B470B501D8";
+	rename -uid "CACCC8E6-4AA6-A864-4D20-769EF8B29484";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4692D5D3-41F7-673E-E8E8-A48D8BE4DE99";
 	setAttr ".g" yes;
@@ -84414,45 +84416,46 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 874\n            -height 488\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1292\n            -height 1043\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 874\n            -height 488\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 874\n            -height 488\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
-		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
+		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1678\n            -height 1043\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1292\n            -height 1043\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
-		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n"
-		+ "            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n"
-		+ "            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -ufeFilter \"USD\" \"InactivePrims\" -ufeFilterValue 1\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -autoExpandAllAnimatedShapes 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n"
-		+ "                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n"
-		+ "                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -limitToSelectedCurves 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -autoExpandAllAnimatedShapes 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n"
-		+ "                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n"
-		+ "                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n"
-		+ "                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n"
-		+ "                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n"
-		+ "                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n"
-		+ "                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n"
-		+ "                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n"
-		+ "                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n"
-		+ "                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n"
-		+ "                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1678\\n    -height 1043\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1678\\n    -height 1043\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            -ufeFilter \"USD\" \"InactivePrims\" -ufeFilterValue 1\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n"
+		+ "            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n"
+		+ "            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -ufeFilter \"USD\" \"InactivePrims\" -ufeFilterValue 1\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -autoExpandAllAnimatedShapes 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
+		+ "                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
+		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -limitToSelectedCurves 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n"
+		+ "                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n"
+		+ "                -autoExpandAllAnimatedShapes 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n"
+		+ "                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n"
+		+ "                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n"
+		+ "                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n"
+		+ "\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
+		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n"
+		+ "                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
+		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
+		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
+		+ "                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n"
+		+ "\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1292\\n    -height 1043\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1292\\n    -height 1043\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.05 -size 0.12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -84614,69 +84617,6 @@ createNode reference -n "_UNKNOWN_REF_NODE_";
 		2 ":openPBR_shader1" "bc" " -type \"float3\" 0.40000001000000002 0.40000001000000002 0.40000001000000002"
 		
 		2 ":openPBR_shader1" "sr" " 0.5";
-createNode reference -n "Material_RefRN";
-	rename -uid "E3B08D59-4E3F-7ACF-F8A7-AE915C78B5EF";
-	setAttr -s 18 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Material_RefRN"
-		"Material_RefRN" 0
-		"Material_RefRN" 18
-		3 "Material_Ref:pasted__aiMultiply1.message" "Material_Ref:materialInfo2.texture" 
-		"-na"
-		5 4 "Material_RefRN" "Material_Ref:standardSurface2SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[1]" ""
-		5 4 "Material_RefRN" "Material_Ref:displacementShader1SG.groupNodes" 
-		"Material_RefRN.placeHolderList[2]" ""
-		5 4 "Material_RefRN" "Material_Ref:displacementShader1SG.groupNodes" 
-		"Material_RefRN.placeHolderList[3]" ""
-		5 4 "Material_RefRN" "Material_Ref:displacementShader1SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[4]" ""
-		5 4 "Material_RefRN" "Material_Ref:displacementShader1SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[5]" ""
-		5 3 "Material_RefRN" "Material_Ref:displacementShader1SG.memberWireframeColor" 
-		"Material_RefRN.placeHolderList[6]" ""
-		5 3 "Material_RefRN" "Material_Ref:displacementShader1SG.memberWireframeColor" 
-		"Material_RefRN.placeHolderList[7]" ""
-		5 0 "Material_RefRN" "Material_Ref:pasted__file1.message" "Material_Ref:materialInfo2.texture" 
-		"Material_RefRN.placeHolderList[8]" "Material_RefRN.placeHolderList[9]" ""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.groupNodes" "Material_RefRN.placeHolderList[10]" 
-		""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.groupNodes" "Material_RefRN.placeHolderList[11]" 
-		""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[12]" ""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[13]" ""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[14]" ""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[15]" ""
-		5 4 "Material_RefRN" "Material_Ref:standardSurface3SG.dagSetMembers" 
-		"Material_RefRN.placeHolderList[16]" ""
-		5 3 "Material_RefRN" "Material_Ref:standardSurface3SG.memberWireframeColor" 
-		"Material_RefRN.placeHolderList[17]" ""
-		5 3 "Material_RefRN" "Material_Ref:standardSurface3SG.memberWireframeColor" 
-		"Material_RefRN.placeHolderList[18]" "";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode polyTweakUV -n "polyTweakUV1";
 	rename -uid "EABD8522-44E6-BDD8-FB31-F58C3DE95638";
 	setAttr ".uopa" yes;
@@ -84736,50 +84676,650 @@ createNode groupId -n "groupId7";
 createNode groupId -n "groupId8";
 	rename -uid "60AE513B-4D20-D1C7-0DA3-31A4D64C02F3";
 	setAttr ".ihi" 0;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2F0328D0-4057-5954-A3BD-6F8BF664B29A";
-	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "7273729D-4861-EF6E-02E7-F28C6C97D7FF";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -269.84125911874156 -240.47618092052562 ;
 	setAttr ".tgi[0].vh" -type "double2" 270.63490988085545 239.68253015841165 ;
+createNode shapeEditorManager -n "Material_Ref:shapeEditorManager";
+	rename -uid "0BDB3AF4-4168-DBAD-1902-AB8D1527BE4D";
+createNode poseInterpolatorManager -n "Material_Ref:poseInterpolatorManager";
+	rename -uid "9DC90569-46C3-C75F-3E2C-02AE074A205C";
+createNode renderLayerManager -n "Material_Ref:renderLayerManager";
+	rename -uid "A4FC6494-4F71-D912-69DF-5B9E0783DA52";
+createNode renderLayer -n "Material_Ref:defaultRenderLayer";
+	rename -uid "528A595B-4CB9-973F-C5C7-A298A71A1958";
+	setAttr ".g" yes;
+createNode standardSurface -n "Material_Ref:Appartment_Floor_Mat";
+	rename -uid "6995B0DE-4FDB-F627-0428-5EA9262BD096";
+createNode shadingEngine -n "Material_Ref:standardSurface2SG";
+	rename -uid "FB469A32-482C-6CAD-3BCC-6ABBF6960F95";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo1";
+	rename -uid "1159227E-42E9-7106-47A2-6D917BFD9D4C";
+createNode file -n "Material_Ref:file1";
+	rename -uid "AE436188-44C7-D257-DFA8-E0896D355155";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture1";
+	rename -uid "A6229382-46AC-DB0D-04FD-F3ABF1D4A07C";
+createNode file -n "Material_Ref:file2";
+	rename -uid "12CBF3CD-495E-CBEF-C859-C8B20CB1FCD3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture2";
+	rename -uid "ABBFF83C-4F83-9F6F-ACB2-7D98BA7891EE";
+createNode aiMultiply -n "Material_Ref:aiMultiply1";
+	rename -uid "9D5EC216-4DA1-CC25-FC5A-D08B66736C56";
+createNode file -n "Material_Ref:file3";
+	rename -uid "4292478F-4843-D983-E188-58A3B14398D4";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture3";
+	rename -uid "AD24D618-4B56-98C1-0F42-468A54E3665D";
+createNode aiNormalMap -n "Material_Ref:aiNormalMap1";
+	rename -uid "908AB5A9-4CFE-531A-FD94-A786CB7DCEAB";
+createNode file -n "Material_Ref:file4";
+	rename -uid "13C2E5E4-4217-6F4F-986E-8DA04EF3204F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture4";
+	rename -uid "B9DB7AF9-449E-C7F1-18AE-60A7ABD70925";
+createNode file -n "Material_Ref:file5";
+	rename -uid "94E32ECC-4987-B3BC-AD38-6C8371AB421B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Appartment_Floor/Appartemnt_Floor_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture5";
+	rename -uid "25F7A240-49E1-66DC-00DB-2B887969288E";
+createNode displacementShader -n "Material_Ref:AppermentFloorDisplacement";
+	rename -uid "C8944AA0-450F-FD7E-7A37-C6B2E0318785";
+createNode standardSurface -n "Material_Ref:Appartment_Wall_Mat";
+	rename -uid "B91DDD19-4827-918A-264C-E188B4D72545";
+createNode aiMultiply -n "Material_Ref:pasted__aiMultiply1";
+	rename -uid "EE998FF6-4F92-DD42-994A-87AD2D6B1BFA";
+createNode file -n "Material_Ref:pasted__file1";
+	rename -uid "641E40A4-4DFD-A27A-942D-7A8AFFA5DE59";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture1";
+	rename -uid "121102BF-427D-5377-DA22-92B99CAE2FF9";
+createNode file -n "Material_Ref:pasted__file3";
+	rename -uid "88D10EC9-4B6E-7884-7744-CBA062633C71";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture3";
+	rename -uid "E299EA21-4DBB-6C22-DA21-8F9DD90F8D43";
+createNode file -n "Material_Ref:pasted__file2";
+	rename -uid "2E75C296-49C4-B663-68B3-C09AB3564DA8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture2";
+	rename -uid "07C28192-4A70-FA42-AFD0-88B2A9A39A3E";
+createNode aiNormalMap -n "Material_Ref:pasted__aiNormalMap1";
+	rename -uid "F421ADB5-431A-B733-F2AE-0F9D48B02FE4";
+createNode file -n "Material_Ref:pasted__file4";
+	rename -uid "BBC79CEC-4F18-35F1-7A2B-D2866E8CF65C";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture4";
+	rename -uid "A1986A71-47F5-5FB7-DA27-93B6731A58E1";
+createNode displacementShader -n "Material_Ref:AppartmentWallDisplacemnt";
+	rename -uid "E05E0016-40FA-709E-FA2B-EBAD2ED7B37E";
+createNode shadingEngine -n "Material_Ref:displacementShader1SG";
+	rename -uid "BF2B5EAA-4333-AA65-1AE8-DBBC3B4D41C6";
+	setAttr ".ihi" 0;
+	setAttr -s 2 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 2 ".gn";
+createNode materialInfo -n "Material_Ref:materialInfo2";
+	rename -uid "9DC436DA-4C72-B518-8AF3-6592C916B184";
+createNode file -n "Material_Ref:file6";
+	rename -uid "5D9D923C-4857-5A34-309A-A89D79A097D3";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Plastered_Wall/Plastered_Wall_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture6";
+	rename -uid "04A937F9-431C-AF13-4A75-3AB07A13C3A4";
+createNode standardSurface -n "Material_Ref:Cave_Floor_Mat";
+	rename -uid "0508192C-4C85-38D1-98E7-98987851B2DD";
+createNode aiMultiply -n "Material_Ref:pasted__aiMultiply2";
+	rename -uid "F8D70B83-4A53-DDEA-610F-ED9AB974A2D1";
+createNode file -n "Material_Ref:pasted__file5";
+	rename -uid "466063B9-48FF-4239-0C45-3CA01F9A6A1A";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture5";
+	rename -uid "D912CD07-4069-75C2-642F-68BFA19EF90E";
+createNode file -n "Material_Ref:pasted__file7";
+	rename -uid "F59354EF-487D-AF9C-65EF-B5BFC510E39F";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture7";
+	rename -uid "8B682222-4ED0-38A1-D776-BA82C4E2554B";
+createNode file -n "Material_Ref:pasted__file6";
+	rename -uid "DFBD778E-4F39-157D-6E7F-DB92AF3A01B8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture6";
+	rename -uid "00B2532E-4B03-817F-2E4D-33AB9A541BD0";
+createNode aiNormalMap -n "Material_Ref:pasted__aiNormalMap2";
+	rename -uid "6E1850DA-4624-C23C-D892-CA97942DD343";
+createNode file -n "Material_Ref:pasted__file8";
+	rename -uid "6D63E199-49BA-2543-EFEB-9589D0272B87";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture8";
+	rename -uid "0303ACE2-4A97-514E-E1F5-C0B265F934ED";
+createNode displacementShader -n "Material_Ref:CaveFloorDisplacement";
+	rename -uid "8A391E31-4F5A-C667-87A1-9DA5E195B8DB";
+createNode shadingEngine -n "Material_Ref:displacementShader2SG";
+	rename -uid "27601CDA-4F35-9901-416E-538934E22A14";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo3";
+	rename -uid "FB79F740-4E25-3C77-904B-E49E57EE0764";
+createNode file -n "Material_Ref:file7";
+	rename -uid "8290A2F2-45D9-A90D-0F97-869A40442BA4";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Ground/Ground_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture7";
+	rename -uid "CC6B56A2-468E-C463-1C99-07A92C473B5A";
+createNode standardSurface -n "Material_Ref:Cave_Wall_2_Mat";
+	rename -uid "1ADFB538-4ECA-F419-C5FD-65B887149AE7";
+createNode aiMultiply -n "Material_Ref:pasted__pasted__aiMultiply1";
+	rename -uid "BE8D72F3-46A7-046A-FA7A-0186D02F7DCA";
+createNode file -n "Material_Ref:pasted__pasted__file1";
+	rename -uid "9D350B69-475F-6F81-E79B-BD911D014FE9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__place2dTexture1";
+	rename -uid "1FF65F40-49CC-4422-F4F6-55AECD34D239";
+createNode file -n "Material_Ref:pasted__pasted__file3";
+	rename -uid "B92BD735-4E50-B1E6-4017-F2AD944E91D0";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__place2dTexture3";
+	rename -uid "F7620C67-4237-9CF7-72FC-B1B8901D10D7";
+createNode file -n "Material_Ref:pasted__pasted__file2";
+	rename -uid "9137FAFC-4417-5D72-E728-5EAC9304C332";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__place2dTexture2";
+	rename -uid "DDC701DF-43B6-1562-57AF-90BC0B0D6A5C";
+createNode aiNormalMap -n "Material_Ref:pasted__pasted__aiNormalMap1";
+	rename -uid "784B19D4-4579-8C3C-03DE-17BE28754874";
+createNode file -n "Material_Ref:pasted__pasted__file4";
+	rename -uid "6970AB1A-40A1-F5CD-CC5C-F2A48422C0F2";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__place2dTexture4";
+	rename -uid "1AD386AE-402B-4B5C-CE8B-918C4894D63C";
+createNode displacementShader -n "Material_Ref:Cave2Displacement";
+	rename -uid "0E9F750E-45A1-2BFC-E8DD-ADB47AEDEBC3";
+createNode shadingEngine -n "Material_Ref:Cave2Displacement5";
+	rename -uid "DAC66E98-403F-3201-44B6-5EB902D15A54";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo4";
+	rename -uid "2FB9C14C-4639-1819-FEBD-838F9EA5F390";
+createNode file -n "Material_Ref:file8";
+	rename -uid "1AB5397C-49AA-1416-87D5-8BA4B73C15EE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_2/Cave_Test_2_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture8";
+	rename -uid "4C10F4CA-45EB-A9F0-1A7D-3A847FD0F9E0";
+createNode standardSurface -n "Material_Ref:Cave_Wall_3_Mat";
+	rename -uid "6BA30A4B-409A-9033-2B58-F2846C157F72";
+createNode aiMultiply -n "Material_Ref:pasted__pasted__pasted__aiMultiply1";
+	rename -uid "F64F9023-4E05-FC93-44DA-9C9807E87D72";
+createNode file -n "Material_Ref:pasted__pasted__pasted__file1";
+	rename -uid "AAA12228-49BA-0021-8AD3-3E9CDF333AB8";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__place2dTexture1";
+	rename -uid "08BD81BB-4453-63EA-FFAB-B695C2E1629C";
+createNode file -n "Material_Ref:pasted__pasted__pasted__file3";
+	rename -uid "43012BD4-4B90-6590-75A7-7A8414C0FEEC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_ambientocclusion.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__place2dTexture3";
+	rename -uid "ADE5DE46-44B1-904E-3162-119511485464";
+createNode file -n "Material_Ref:pasted__pasted__pasted__file2";
+	rename -uid "B888BA67-48A3-9400-3B5F-6F853ED838B9";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__place2dTexture2";
+	rename -uid "8E6FEC5A-4E04-D192-B565-9FA623675A39";
+createNode aiNormalMap -n "Material_Ref:pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "12992A29-470A-4706-C628-9B9A162C70C7";
+createNode file -n "Material_Ref:pasted__pasted__pasted__file4";
+	rename -uid "66CEFB80-47CF-7E5E-FC99-36A2B66B98BC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__place2dTexture4";
+	rename -uid "7F2C9B17-4E5B-89A6-0696-35A056017E1B";
+createNode shadingEngine -n "Material_Ref:displacementShader4SG";
+	rename -uid "083B95E8-4507-0809-AE49-AA9BB786783A";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo5";
+	rename -uid "5A68D146-4585-3473-2E09-BCA32EF0934B";
+createNode shadingEngine -n "Material_Ref:pasted__displacementShader4SG";
+	rename -uid "5B862215-48DE-3766-4C0A-57ACF3341A57";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:pasted__materialInfo5";
+	rename -uid "1B5D63EE-4E6A-FA59-BC0B-69999AE6E3D1";
+createNode shadingEngine -n "Material_Ref:pasted__displacementShader4SG1";
+	rename -uid "C296EFB4-49A0-0D2A-E1FE-E3A6266FABE4";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:pasted__materialInfo6";
+	rename -uid "A33EFFF4-4224-4198-71C6-369523563F50";
+createNode displacementShader -n "Material_Ref:Cave3Displacemnt";
+	rename -uid "454ADABA-4D6C-DFB1-89C4-528F8EFCE00E";
+createNode shadingEngine -n "Material_Ref:displacementShader5SG";
+	rename -uid "5E5D5C90-46AB-5364-0FCB-409FF069560D";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo6";
+	rename -uid "6EB623EF-43AD-45A3-5406-CE87D58DBF74";
+createNode file -n "Material_Ref:file9";
+	rename -uid "19160306-46D0-FEC4-5C13-B4A7BD03FDD5";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_3/Cave_Test_3_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture9";
+	rename -uid "91494F40-468E-621D-D6E5-36BB5B11C87D";
+createNode standardSurface -n "Material_Ref:Cave_Wall_4_Mat";
+	rename -uid "71FE1F4A-4DE3-F6FB-6460-B88C16B994C9";
+createNode aiMultiply -n "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1";
+	rename -uid "14BAA938-449E-C687-B2B6-6694B9221DD0";
+createNode file -n "Material_Ref:pasted__pasted__pasted__pasted__file1";
+	rename -uid "D807C9B1-4B7A-3916-8770-269D6C9D4BAE";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_basecolor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1";
+	rename -uid "85A78494-48F1-1A75-BFAA-CA94436D0F03";
+createNode file -n "Material_Ref:pasted__pasted__pasted__pasted__file3";
+	rename -uid "107F34CC-49F6-DF93-337B-66AC0F2B6EC4";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3";
+	rename -uid "7C391F31-4B00-F1EF-10CA-58A90B003818";
+createNode file -n "Material_Ref:pasted__pasted__pasted__pasted__file2";
+	rename -uid "7B05DE65-4342-5ACC-5DE8-1EAA843A4C50";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_roughness.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2";
+	rename -uid "875113CB-49B8-A7A9-FCC7-1E8D2CB82FD8";
+createNode aiNormalMap -n "Material_Ref:pasted__pasted__pasted__pasted__aiNormalMap1";
+	rename -uid "92FE9CFF-4BC3-B188-2B88-38A4E3160BE6";
+createNode file -n "Material_Ref:pasted__pasted__pasted__pasted__file4";
+	rename -uid "675E9D56-4D48-0C50-A21A-C1AA8E5051DC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_normal.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4";
+	rename -uid "94DE3CEB-45A0-7B72-DADE-FBBED91F27DA";
+createNode displacementShader -n "Material_Ref:cave4Displacement";
+	rename -uid "F28CCDB5-4245-9321-1C6D-CD8E67004060";
+createNode shadingEngine -n "Material_Ref:displacementShader6SG";
+	rename -uid "B2E58D20-4908-1B85-F991-DA963BE22950";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo7";
+	rename -uid "AAC6B105-49E2-F628-866E-A2B895D7AE61";
+createNode file -n "Material_Ref:file10";
+	rename -uid "9CD77715-4C6B-B851-44E5-C49361331454";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Cave_4/Cave_Test_4_height.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture10";
+	rename -uid "D11C3EC3-40F0-B870-1D5D-71A153833754";
+createNode standardSurface -n "Material_Ref:Generic_Wood_Mat";
+	rename -uid "F216577C-4F14-403F-36EA-F18BF0038BBD";
+	setAttr ".sr" 0.75;
+createNode shadingEngine -n "Material_Ref:standardSurface3SG";
+	rename -uid "2F07E04D-4D01-689F-D043-43A6231BD708";
+	setAttr ".ihi" 0;
+	setAttr -s 5 ".dsm";
+	setAttr ".ro" yes;
+	setAttr -s 2 ".gn";
+createNode materialInfo -n "Material_Ref:materialInfo8";
+	rename -uid "5BC679E6-44A0-39A8-ED6C-6D916A3C2630";
+createNode file -n "Material_Ref:file11";
+	rename -uid "5CE861D7-443D-A3B7-79BF-C3AA63809541";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture11";
+	rename -uid "C1C8CA97-4378-45E0-B96C-7CB3819BF43B";
+createNode standardSurface -n "Material_Ref:White_Paint_Mat";
+	rename -uid "29322076-4B3A-8196-5D23-8FA9ACD54D03";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref:standardSurface4SG";
+	rename -uid "0ADA5D18-40AF-CE7D-9220-DB843555EE7B";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo9";
+	rename -uid "B95FD9FC-4842-A0C0-FDE3-AB92CB7FE273";
+createNode file -n "Material_Ref:file12";
+	rename -uid "C5DDAE0C-4736-E531-920B-F184F48418AA";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture12";
+	rename -uid "B0F0063F-4A8D-8EB1-97EA-DD9E0650BA85";
+createNode standardSurface -n "Material_Ref:Blue_Paint_Mat";
+	rename -uid "8DB79C55-40A6-7380-C274-D79970EEA709";
+	setAttr ".sr" 0.60000002384185791;
+createNode file -n "Material_Ref:pasted__file12";
+	rename -uid "5A40297B-4C25-781A-04B8-F29F643ADB29";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__place2dTexture12";
+	rename -uid "81FF0893-4B91-B62D-21EF-1681919E71B6";
+createNode aiMultiply -n "Material_Ref:aiMultiply2";
+	rename -uid "BB6E6CF8-4404-AABF-92E5-B0A79ABF0452";
+createNode colorConstant -n "Material_Ref:colorConstant1";
+	rename -uid "03F9D4B0-49ED-DA63-F737-36A1B18CCCFD";
+	setAttr "._c" -type "float3" 0 0.58700001 1 ;
+createNode shadingEngine -n "Material_Ref:Blue_Paint_MatSG";
+	rename -uid "6DA49F8E-4954-58AA-05A6-138FB02C2C90";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo10";
+	rename -uid "716546DB-43DF-1EF4-DABD-0EA9C8A556F0";
+createNode standardSurface -n "Material_Ref:Marble_Mat";
+	rename -uid "185262E0-479A-B089-C29B-F4B90417CC1F";
+	setAttr ".sr" 0.60000002384185791;
+createNode shadingEngine -n "Material_Ref:standardSurface5SG";
+	rename -uid "DE983DF6-48D6-EE46-DD9B-9D851D6FBEAF";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo11";
+	rename -uid "A8698D15-45E2-8143-A5B2-239012DC24BE";
+createNode file -n "Material_Ref:file13";
+	rename -uid "89AEE4F6-4BDB-4C66-C856-3C95B8AA42EC";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/Marble/DefaultMaterial_Base_color.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:place2dTexture13";
+	rename -uid "5B154568-4902-FF96-6E77-C189DCFCA9B3";
+createNode standardSurface -n "Material_Ref:Brown_Paint_Mat";
+	rename -uid "22281C28-40D7-5274-9423-26808495CBFB";
+	setAttr ".sr" 0.60000002384185791;
+createNode aiMultiply -n "Material_Ref:pasted__aiMultiply3";
+	rename -uid "A9D1317A-4946-FEF8-3F61-2297C96EA7D2";
+createNode file -n "Material_Ref:pasted__pasted__file12";
+	rename -uid "2F5F6170-41F9-27F5-C5C3-ACB81525490B";
+	setAttr ".ftn" -type "string" "C:/Users/Brick/OneDrive/Documents/DGM/DAGV Repos/WorkDayShortFilmOfficialRepo/Maya/Textures/White_Paint/plane_divided_DefaultMaterial_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "Material_Ref:pasted__pasted__place2dTexture12";
+	rename -uid "A0AAFC53-4F72-48F5-D547-53B425338BED";
+createNode colorConstant -n "Material_Ref:pasted__colorConstant1";
+	rename -uid "BAE37E90-46FC-AE1E-FD85-FF88CF65CD07";
+	setAttr "._c" -type "float3" 0.60995853 0.43553761 0.24947302 ;
+createNode shadingEngine -n "Material_Ref:Brown_Paint_MatSG";
+	rename -uid "E1DA9BA0-43F0-4087-3981-59899BA153DA";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "Material_Ref:materialInfo12";
+	rename -uid "E88D4DE3-48E3-7841-02F7-CA9A6BC5C241";
+createNode mayaUsdLayerManager -n "Material_Ref:mayaUsdLayerManager1";
+	rename -uid "073A8471-4706-BF05-D971-90A2B99B3E34";
+	setAttr ".sst" -type "string" "";
+createNode nodeGraphEditorInfo -n "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "F1629136-4072-A509-080F-30A8604CCC8E";
+	setAttr ".def" no;
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" 3639.5820408672798 -5694.7992338789145 ;
+	setAttr ".tgi[0].vh" -type "double2" 5195.4051457766818 -4312.6069013235719 ;
+	setAttr -s 6 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 4394.28564453125;
+	setAttr ".tgi[0].ni[0].y" -4728.5712890625;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 3964.28564453125;
+	setAttr ".tgi[0].ni[1].y" -4674.28564453125;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 3610;
+	setAttr ".tgi[0].ni[2].y" -4848.5712890625;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 4701.4287109375;
+	setAttr ".tgi[0].ni[3].y" -4684.28564453125;
+	setAttr ".tgi[0].ni[3].nvs" 2387;
+	setAttr ".tgi[0].ni[4].x" 3964.28564453125;
+	setAttr ".tgi[0].ni[4].y" -4827.14306640625;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" 5050;
+	setAttr ".tgi[0].ni[5].y" -4684.28564453125;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -av -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".o" 0;
+	setAttr -av -k on ".unw";
+	setAttr -av -k on ".etw";
+	setAttr -av -k on ".tps";
+	setAttr -av -k on ".tms";
 select -ne :hardwareRenderingGlobals;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
 		 1 1 1 0 0 0 0 0 0 0 0 0
 		 0 0 0 0 ;
+	setAttr -k on ".hwi";
+	setAttr -av ".ta";
+	setAttr -av ".tq";
+	setAttr -av ".etmr";
+	setAttr -av ".tmr";
+	setAttr -av ".aoon";
+	setAttr -av ".aoam";
+	setAttr -av ".aora";
+	setAttr -k on ".hff";
+	setAttr -av -k on ".hfd";
+	setAttr -av -k on ".hfs";
+	setAttr -av -k on ".hfe";
+	setAttr -av ".hfc";
+	setAttr -av -k on ".hfcr";
+	setAttr -av -k on ".hfcg";
+	setAttr -av -k on ".hfcb";
+	setAttr -av -k on ".hfa";
+	setAttr -av ".mbe";
+	setAttr -av -k on ".mbsof";
+	setAttr -k on ".blen";
+	setAttr -k on ".blat";
+	setAttr -av ".msaa";
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 41 ".st";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 43 ".st";
+	setAttr -cb on ".an";
+	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 select -ne :defaultShaderList1;
-	setAttr -s 47 ".s";
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -s 49 ".s";
 select -ne :postProcessList1;
+	setAttr -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -k on ".nds";
+	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 47 ".u";
+	setAttr -s 51 ".u";
 select -ne :defaultRenderingList1;
+	setAttr -k on ".ihi";
 	setAttr -s 2 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 33 ".tx";
+	setAttr -s 35 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
+	setAttr -av -k on ".cch";
+	setAttr -k on ".fzn";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".bbx";
+	setAttr -k on ".vwm";
+	setAttr -k on ".tpv";
+	setAttr -k on ".uit";
 	setAttr -s 50 ".dsm";
-	setAttr ".ro" yes;
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
 	setAttr -s 4 ".gn";
 select -ne :initialParticleSE;
-	setAttr ".ro" yes;
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -k on ".mwc";
+	setAttr -cb on ".an";
+	setAttr -cb on ".il";
+	setAttr -cb on ".vo";
+	setAttr -cb on ".eo";
+	setAttr -cb on ".fo";
+	setAttr -cb on ".epo";
+	setAttr -k on ".ro" yes;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k on ".macc";
+	setAttr -av -k on ".macd";
+	setAttr -av -k on ".macq";
+	setAttr -av -k on ".mcfr";
+	setAttr -cb on ".ifg";
+	setAttr -av -k on ".clip";
+	setAttr -av -k on ".edm";
+	setAttr -av -k on ".edl";
+	setAttr -av -cb on ".ren";
+	setAttr -av -k on ".esr";
+	setAttr -av -k on ".ors";
+	setAttr -cb on ".sdf";
+	setAttr -av -k on ".outf";
+	setAttr -av -cb on ".imfkey";
+	setAttr -av -k on ".gama";
+	setAttr -k on ".exrc";
+	setAttr -k on ".expt";
+	setAttr -av -k on ".an";
+	setAttr -cb on ".ar";
+	setAttr -av -k on ".fs";
+	setAttr -av -k on ".ef";
+	setAttr -av -k on ".bfs";
+	setAttr -av -cb on ".me";
+	setAttr -cb on ".se";
+	setAttr -av -k on ".be";
+	setAttr -av -cb on ".ep";
+	setAttr -av -k on ".fec";
+	setAttr -av -k on ".ofc";
+	setAttr -cb on ".ofe";
+	setAttr -cb on ".efe";
+	setAttr -cb on ".oft";
+	setAttr -cb on ".umfn";
+	setAttr -cb on ".ufe";
+	setAttr -av -cb on ".pff";
+	setAttr -av -cb on ".peie";
+	setAttr -av -cb on ".ifp";
+	setAttr -k on ".rv";
+	setAttr -av -k on ".comp";
+	setAttr -av -k on ".cth";
+	setAttr -av -k on ".soll";
+	setAttr -cb on ".sosl";
+	setAttr -av -k on ".rd";
+	setAttr -av -k on ".lp";
+	setAttr -av -k on ".sp";
+	setAttr -av -k on ".shs";
+	setAttr -av -k on ".lpr";
+	setAttr -cb on ".gv";
+	setAttr -cb on ".sv";
+	setAttr -av -k on ".mm";
+	setAttr -av -k on ".npu";
+	setAttr -av -k on ".itf";
+	setAttr -av -k on ".shp";
+	setAttr -cb on ".isp";
+	setAttr -av -k on ".uf";
+	setAttr -av -k on ".oi";
+	setAttr -av -k on ".rut";
+	setAttr -av -k on ".mot";
+	setAttr -av -cb on ".mb";
+	setAttr -av -k on ".mbf";
+	setAttr -av -k on ".mbso";
+	setAttr -av -k on ".mbsc";
+	setAttr -av -k on ".afp";
+	setAttr -av -k on ".pfb";
+	setAttr -av -k on ".pram";
+	setAttr -av -k on ".poam";
+	setAttr -av -k on ".prlm";
+	setAttr -av -k on ".polm";
+	setAttr -av -cb on ".prm";
+	setAttr -av -cb on ".pom";
+	setAttr -cb on ".pfrm";
+	setAttr -cb on ".pfom";
+	setAttr -av -k on ".bll";
+	setAttr -av -k on ".bls";
+	setAttr -av -k on ".smv";
+	setAttr -av -k on ".ubc";
+	setAttr -av -k on ".mbc";
+	setAttr -cb on ".mbt";
+	setAttr -av -k on ".udbx";
+	setAttr -av -k on ".smc";
+	setAttr -av -k on ".kmv";
+	setAttr -cb on ".isl";
+	setAttr -cb on ".ism";
+	setAttr -cb on ".imb";
+	setAttr -av -k on ".rlen";
+	setAttr -av -k on ".frts";
+	setAttr -av -k on ".tlwd";
+	setAttr -av -k on ".tlht";
+	setAttr -av -k on ".jfc";
+	setAttr -cb on ".rsb";
+	setAttr -av -k on ".ope";
+	setAttr -av -k on ".oppf";
+	setAttr -av -k on ".rcp";
+	setAttr -av -k on ".icp";
+	setAttr -av -k on ".ocp";
+	setAttr -cb on ".hbl";
 	setAttr ".dss" -type "string" "standardSurface1";
 select -ne :defaultResolution;
-	setAttr ".pa" 1;
+	setAttr -av -k on ".cch";
+	setAttr -av -k on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -k on ".bnm";
+	setAttr -av -k on ".w";
+	setAttr -av -k on ".h";
+	setAttr -av -k on ".pa" 1;
+	setAttr -av -k on ".al";
+	setAttr -av -k on ".dar";
+	setAttr -av -k on ".ldar";
+	setAttr -av -k on ".dpi";
+	setAttr -av -k on ".off";
+	setAttr -av -k on ".fld";
+	setAttr -av -k on ".zsl";
+	setAttr -av -k on ".isu";
+	setAttr -av -k on ".pdu";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -84790,25 +85330,43 @@ select -ne :defaultColorMgtGlobals;
 	setAttr ".otn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 	setAttr ".potn" -type "string" "ACES 1.0 SDR-video (sRGB)";
 select -ne :hardwareRenderGlobals;
-	setAttr ".ctrs" 256;
-	setAttr ".btrs" 512;
-connectAttr "FloorShape.iog" "Material_RefRN.phl[1]";
-connectAttr "groupId3.msg" "Material_RefRN.phl[2]";
-connectAttr "groupId6.msg" "Material_RefRN.phl[3]";
-connectAttr "Wall5Shape.iog.og[1]" "Material_RefRN.phl[4]";
-connectAttr "Wall4Shape.iog.og[1]" "Material_RefRN.phl[5]";
-connectAttr "Material_RefRN.phl[6]" "Wall4Shape.iog.og[1].gco";
-connectAttr "Material_RefRN.phl[7]" "Wall5Shape.iog.og[1].gco";
-connectAttr "Material_RefRN.phl[8]" "Material_RefRN.phl[9]";
-connectAttr "groupId7.msg" "Material_RefRN.phl[10]";
-connectAttr "groupId8.msg" "Material_RefRN.phl[11]";
-connectAttr "Wall5Shape.iog.og[2]" "Material_RefRN.phl[12]";
-connectAttr "Wall4Shape.iog.og[2]" "Material_RefRN.phl[13]";
-connectAttr "TableShape.iog" "Material_RefRN.phl[14]";
-connectAttr "DiningChairShape.iog" "Material_RefRN.phl[15]";
-connectAttr "WoodenFrameShape.iog" "Material_RefRN.phl[16]";
-connectAttr "Material_RefRN.phl[17]" "Wall4Shape.iog.og[2].gco";
-connectAttr "Material_RefRN.phl[18]" "Wall5Shape.iog.og[2].gco";
+	setAttr -av -k on ".cch";
+	setAttr -cb on ".ihi";
+	setAttr -av -k on ".nds";
+	setAttr -cb on ".bnm";
+	setAttr -av -k off -cb on ".ctrs" 256;
+	setAttr -av -k off -cb on ".btrs" 512;
+	setAttr -av -k off -cb on ".fbfm";
+	setAttr -av -k off -cb on ".ehql";
+	setAttr -av -k off -cb on ".eams";
+	setAttr -av -k off -cb on ".eeaa";
+	setAttr -av -k off -cb on ".engm";
+	setAttr -av -k off -cb on ".mes";
+	setAttr -av -k off -cb on ".emb";
+	setAttr -av -k off -cb on ".mbbf";
+	setAttr -av -k off -cb on ".mbs";
+	setAttr -av -k off -cb on ".trm";
+	setAttr -av -k off -cb on ".tshc";
+	setAttr -av -k off -cb on ".enpt";
+	setAttr -av -k off -cb on ".clmt";
+	setAttr -av -k off -cb on ".tcov";
+	setAttr -av -k off -cb on ".lith";
+	setAttr -av -k off -cb on ".sobc";
+	setAttr -av -k off -cb on ".cuth";
+	setAttr -av -k off -cb on ".hgcd";
+	setAttr -av -k off -cb on ".hgci";
+	setAttr -av -k off -cb on ".mgcs";
+	setAttr -av -k off -cb on ".twa";
+	setAttr -av -k off -cb on ".twz";
+	setAttr -k on ".hwcc";
+	setAttr -k on ".hwdp";
+	setAttr -k on ".hwql";
+	setAttr -k on ".hwfr";
+	setAttr -k on ".soll";
+	setAttr -k on ".sosl";
+	setAttr -k on ".bswa";
+	setAttr -k on ".shml";
+	setAttr -k on ".hwel";
 connectAttr "FrameLayer.di" "Frame.do";
 connectAttr "DiningTableLayer.di" "Dining_Table.do";
 connectAttr "LivingRoomLayer.di" "Living_Room_Table.do";
@@ -84830,12 +85388,16 @@ connectAttr "DoorsLayer.di" "Door.do";
 connectAttr "WallLayer.di" "House.do";
 connectAttr "groupId4.id" "Wall4Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Wall4Shape.iog.og[0].gco";
+connectAttr "Material_Ref:displacementShader1SG.mwc" "Wall4Shape.iog.og[1].gco";
 connectAttr "groupId6.id" "Wall4Shape.iog.og[1].gid";
+connectAttr "Material_Ref:standardSurface3SG.mwc" "Wall4Shape.iog.og[2].gco";
 connectAttr "groupId8.id" "Wall4Shape.iog.og[2].gid";
 connectAttr "groupId5.id" "Wall4Shape.ciog.cog[0].cgid";
 connectAttr "groupId1.id" "Wall5Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Wall5Shape.iog.og[0].gco";
+connectAttr "Material_Ref:displacementShader1SG.mwc" "Wall5Shape.iog.og[1].gco";
 connectAttr "groupId3.id" "Wall5Shape.iog.og[1].gid";
+connectAttr "Material_Ref:standardSurface3SG.mwc" "Wall5Shape.iog.og[2].gco";
 connectAttr "groupId7.id" "Wall5Shape.iog.og[2].gid";
 connectAttr "groupId2.id" "Wall5Shape.ciog.cog[0].cgid";
 connectAttr "polyTweakUV1.out" "FloorShape.i";
@@ -85005,6 +85567,1426 @@ connectAttr "layerManager.dli[18]" "DoorsLayer.id";
 connectAttr "layerManager.dli[19]" "WallLayer.id";
 connectAttr "layerManager.dli[20]" "WindowLayer.id";
 connectAttr "polyPlane1.out" "polyTweakUV1.ip";
+connectAttr "Material_Ref:renderLayerManager.rlmi[0]" "Material_Ref:defaultRenderLayer.rlid"
+		;
+connectAttr "Material_Ref:aiMultiply1.out" "Material_Ref:Appartment_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref:file2.oa" "Material_Ref:Appartment_Floor_Mat.sr";
+connectAttr "Material_Ref:aiNormalMap1.out" "Material_Ref:Appartment_Floor_Mat.n"
+		;
+connectAttr "Material_Ref:Appartment_Floor_Mat.oc" "Material_Ref:standardSurface2SG.ss"
+		;
+connectAttr "Material_Ref:AppermentFloorDisplacement.d" "Material_Ref:standardSurface2SG.ds"
+		;
+connectAttr "FloorShape.iog" "Material_Ref:standardSurface2SG.dsm" -na;
+connectAttr "Material_Ref:standardSurface2SG.msg" "Material_Ref:materialInfo1.sg"
+		;
+connectAttr "Material_Ref:Appartment_Floor_Mat.msg" "Material_Ref:materialInfo1.m"
+		;
+connectAttr "Material_Ref:file1.msg" "Material_Ref:materialInfo1.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file1.ws";
+connectAttr "Material_Ref:place2dTexture1.c" "Material_Ref:file1.c";
+connectAttr "Material_Ref:place2dTexture1.tf" "Material_Ref:file1.tf";
+connectAttr "Material_Ref:place2dTexture1.rf" "Material_Ref:file1.rf";
+connectAttr "Material_Ref:place2dTexture1.mu" "Material_Ref:file1.mu";
+connectAttr "Material_Ref:place2dTexture1.mv" "Material_Ref:file1.mv";
+connectAttr "Material_Ref:place2dTexture1.s" "Material_Ref:file1.s";
+connectAttr "Material_Ref:place2dTexture1.wu" "Material_Ref:file1.wu";
+connectAttr "Material_Ref:place2dTexture1.wv" "Material_Ref:file1.wv";
+connectAttr "Material_Ref:place2dTexture1.re" "Material_Ref:file1.re";
+connectAttr "Material_Ref:place2dTexture1.of" "Material_Ref:file1.of";
+connectAttr "Material_Ref:place2dTexture1.r" "Material_Ref:file1.ro";
+connectAttr "Material_Ref:place2dTexture1.n" "Material_Ref:file1.n";
+connectAttr "Material_Ref:place2dTexture1.vt1" "Material_Ref:file1.vt1";
+connectAttr "Material_Ref:place2dTexture1.vt2" "Material_Ref:file1.vt2";
+connectAttr "Material_Ref:place2dTexture1.vt3" "Material_Ref:file1.vt3";
+connectAttr "Material_Ref:place2dTexture1.vc1" "Material_Ref:file1.vc1";
+connectAttr "Material_Ref:place2dTexture1.o" "Material_Ref:file1.uv";
+connectAttr "Material_Ref:place2dTexture1.ofs" "Material_Ref:file1.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file2.ws";
+connectAttr "Material_Ref:place2dTexture2.c" "Material_Ref:file2.c";
+connectAttr "Material_Ref:place2dTexture2.tf" "Material_Ref:file2.tf";
+connectAttr "Material_Ref:place2dTexture2.rf" "Material_Ref:file2.rf";
+connectAttr "Material_Ref:place2dTexture2.mu" "Material_Ref:file2.mu";
+connectAttr "Material_Ref:place2dTexture2.mv" "Material_Ref:file2.mv";
+connectAttr "Material_Ref:place2dTexture2.s" "Material_Ref:file2.s";
+connectAttr "Material_Ref:place2dTexture2.wu" "Material_Ref:file2.wu";
+connectAttr "Material_Ref:place2dTexture2.wv" "Material_Ref:file2.wv";
+connectAttr "Material_Ref:place2dTexture2.re" "Material_Ref:file2.re";
+connectAttr "Material_Ref:place2dTexture2.of" "Material_Ref:file2.of";
+connectAttr "Material_Ref:place2dTexture2.r" "Material_Ref:file2.ro";
+connectAttr "Material_Ref:place2dTexture2.n" "Material_Ref:file2.n";
+connectAttr "Material_Ref:place2dTexture2.vt1" "Material_Ref:file2.vt1";
+connectAttr "Material_Ref:place2dTexture2.vt2" "Material_Ref:file2.vt2";
+connectAttr "Material_Ref:place2dTexture2.vt3" "Material_Ref:file2.vt3";
+connectAttr "Material_Ref:place2dTexture2.vc1" "Material_Ref:file2.vc1";
+connectAttr "Material_Ref:place2dTexture2.o" "Material_Ref:file2.uv";
+connectAttr "Material_Ref:place2dTexture2.ofs" "Material_Ref:file2.fs";
+connectAttr "Material_Ref:file1.oc" "Material_Ref:aiMultiply1.input1";
+connectAttr "Material_Ref:file3.oc" "Material_Ref:aiMultiply1.input2";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file3.ws";
+connectAttr "Material_Ref:place2dTexture3.c" "Material_Ref:file3.c";
+connectAttr "Material_Ref:place2dTexture3.tf" "Material_Ref:file3.tf";
+connectAttr "Material_Ref:place2dTexture3.rf" "Material_Ref:file3.rf";
+connectAttr "Material_Ref:place2dTexture3.mu" "Material_Ref:file3.mu";
+connectAttr "Material_Ref:place2dTexture3.mv" "Material_Ref:file3.mv";
+connectAttr "Material_Ref:place2dTexture3.s" "Material_Ref:file3.s";
+connectAttr "Material_Ref:place2dTexture3.wu" "Material_Ref:file3.wu";
+connectAttr "Material_Ref:place2dTexture3.wv" "Material_Ref:file3.wv";
+connectAttr "Material_Ref:place2dTexture3.re" "Material_Ref:file3.re";
+connectAttr "Material_Ref:place2dTexture3.of" "Material_Ref:file3.of";
+connectAttr "Material_Ref:place2dTexture3.r" "Material_Ref:file3.ro";
+connectAttr "Material_Ref:place2dTexture3.n" "Material_Ref:file3.n";
+connectAttr "Material_Ref:place2dTexture3.vt1" "Material_Ref:file3.vt1";
+connectAttr "Material_Ref:place2dTexture3.vt2" "Material_Ref:file3.vt2";
+connectAttr "Material_Ref:place2dTexture3.vt3" "Material_Ref:file3.vt3";
+connectAttr "Material_Ref:place2dTexture3.vc1" "Material_Ref:file3.vc1";
+connectAttr "Material_Ref:place2dTexture3.o" "Material_Ref:file3.uv";
+connectAttr "Material_Ref:place2dTexture3.ofs" "Material_Ref:file3.fs";
+connectAttr "Material_Ref:file4.oc" "Material_Ref:aiNormalMap1.input";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file4.ws";
+connectAttr "Material_Ref:place2dTexture4.c" "Material_Ref:file4.c";
+connectAttr "Material_Ref:place2dTexture4.tf" "Material_Ref:file4.tf";
+connectAttr "Material_Ref:place2dTexture4.rf" "Material_Ref:file4.rf";
+connectAttr "Material_Ref:place2dTexture4.mu" "Material_Ref:file4.mu";
+connectAttr "Material_Ref:place2dTexture4.mv" "Material_Ref:file4.mv";
+connectAttr "Material_Ref:place2dTexture4.s" "Material_Ref:file4.s";
+connectAttr "Material_Ref:place2dTexture4.wu" "Material_Ref:file4.wu";
+connectAttr "Material_Ref:place2dTexture4.wv" "Material_Ref:file4.wv";
+connectAttr "Material_Ref:place2dTexture4.re" "Material_Ref:file4.re";
+connectAttr "Material_Ref:place2dTexture4.of" "Material_Ref:file4.of";
+connectAttr "Material_Ref:place2dTexture4.r" "Material_Ref:file4.ro";
+connectAttr "Material_Ref:place2dTexture4.n" "Material_Ref:file4.n";
+connectAttr "Material_Ref:place2dTexture4.vt1" "Material_Ref:file4.vt1";
+connectAttr "Material_Ref:place2dTexture4.vt2" "Material_Ref:file4.vt2";
+connectAttr "Material_Ref:place2dTexture4.vt3" "Material_Ref:file4.vt3";
+connectAttr "Material_Ref:place2dTexture4.vc1" "Material_Ref:file4.vc1";
+connectAttr "Material_Ref:place2dTexture4.o" "Material_Ref:file4.uv";
+connectAttr "Material_Ref:place2dTexture4.ofs" "Material_Ref:file4.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file5.ws";
+connectAttr "Material_Ref:place2dTexture5.c" "Material_Ref:file5.c";
+connectAttr "Material_Ref:place2dTexture5.tf" "Material_Ref:file5.tf";
+connectAttr "Material_Ref:place2dTexture5.rf" "Material_Ref:file5.rf";
+connectAttr "Material_Ref:place2dTexture5.mu" "Material_Ref:file5.mu";
+connectAttr "Material_Ref:place2dTexture5.mv" "Material_Ref:file5.mv";
+connectAttr "Material_Ref:place2dTexture5.s" "Material_Ref:file5.s";
+connectAttr "Material_Ref:place2dTexture5.wu" "Material_Ref:file5.wu";
+connectAttr "Material_Ref:place2dTexture5.wv" "Material_Ref:file5.wv";
+connectAttr "Material_Ref:place2dTexture5.re" "Material_Ref:file5.re";
+connectAttr "Material_Ref:place2dTexture5.of" "Material_Ref:file5.of";
+connectAttr "Material_Ref:place2dTexture5.r" "Material_Ref:file5.ro";
+connectAttr "Material_Ref:place2dTexture5.n" "Material_Ref:file5.n";
+connectAttr "Material_Ref:place2dTexture5.vt1" "Material_Ref:file5.vt1";
+connectAttr "Material_Ref:place2dTexture5.vt2" "Material_Ref:file5.vt2";
+connectAttr "Material_Ref:place2dTexture5.vt3" "Material_Ref:file5.vt3";
+connectAttr "Material_Ref:place2dTexture5.vc1" "Material_Ref:file5.vc1";
+connectAttr "Material_Ref:place2dTexture5.o" "Material_Ref:file5.uv";
+connectAttr "Material_Ref:place2dTexture5.ofs" "Material_Ref:file5.fs";
+connectAttr "Material_Ref:file5.ocr" "Material_Ref:AppermentFloorDisplacement.d"
+		;
+connectAttr "Material_Ref:pasted__aiMultiply1.out" "Material_Ref:Appartment_Wall_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__file2.oa" "Material_Ref:Appartment_Wall_Mat.sr"
+		;
+connectAttr "Material_Ref:pasted__aiNormalMap1.out" "Material_Ref:Appartment_Wall_Mat.n"
+		;
+connectAttr "Material_Ref:pasted__file1.oc" "Material_Ref:pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref:pasted__file3.oc" "Material_Ref:pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file1.ws";
+connectAttr "Material_Ref:pasted__place2dTexture1.c" "Material_Ref:pasted__file1.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.tf" "Material_Ref:pasted__file1.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.rf" "Material_Ref:pasted__file1.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.mu" "Material_Ref:pasted__file1.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.mv" "Material_Ref:pasted__file1.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.s" "Material_Ref:pasted__file1.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.wu" "Material_Ref:pasted__file1.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.wv" "Material_Ref:pasted__file1.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.re" "Material_Ref:pasted__file1.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.of" "Material_Ref:pasted__file1.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.r" "Material_Ref:pasted__file1.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.n" "Material_Ref:pasted__file1.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.vt1" "Material_Ref:pasted__file1.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.vt2" "Material_Ref:pasted__file1.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.vt3" "Material_Ref:pasted__file1.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.vc1" "Material_Ref:pasted__file1.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.o" "Material_Ref:pasted__file1.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.ofs" "Material_Ref:pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file3.ws";
+connectAttr "Material_Ref:pasted__place2dTexture3.c" "Material_Ref:pasted__file3.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.tf" "Material_Ref:pasted__file3.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.rf" "Material_Ref:pasted__file3.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.mu" "Material_Ref:pasted__file3.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.mv" "Material_Ref:pasted__file3.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.s" "Material_Ref:pasted__file3.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.wu" "Material_Ref:pasted__file3.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.wv" "Material_Ref:pasted__file3.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.re" "Material_Ref:pasted__file3.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.of" "Material_Ref:pasted__file3.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.r" "Material_Ref:pasted__file3.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.n" "Material_Ref:pasted__file3.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.vt1" "Material_Ref:pasted__file3.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.vt2" "Material_Ref:pasted__file3.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.vt3" "Material_Ref:pasted__file3.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.vc1" "Material_Ref:pasted__file3.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.o" "Material_Ref:pasted__file3.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture3.ofs" "Material_Ref:pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file2.ws";
+connectAttr "Material_Ref:pasted__place2dTexture2.c" "Material_Ref:pasted__file2.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.tf" "Material_Ref:pasted__file2.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.rf" "Material_Ref:pasted__file2.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.mu" "Material_Ref:pasted__file2.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.mv" "Material_Ref:pasted__file2.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.s" "Material_Ref:pasted__file2.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.wu" "Material_Ref:pasted__file2.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.wv" "Material_Ref:pasted__file2.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.re" "Material_Ref:pasted__file2.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.of" "Material_Ref:pasted__file2.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.r" "Material_Ref:pasted__file2.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.n" "Material_Ref:pasted__file2.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.vt1" "Material_Ref:pasted__file2.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.vt2" "Material_Ref:pasted__file2.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.vt3" "Material_Ref:pasted__file2.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.vc1" "Material_Ref:pasted__file2.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.o" "Material_Ref:pasted__file2.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture2.ofs" "Material_Ref:pasted__file2.fs"
+		;
+connectAttr "Material_Ref:pasted__file4.oc" "Material_Ref:pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file4.ws";
+connectAttr "Material_Ref:pasted__place2dTexture4.c" "Material_Ref:pasted__file4.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.tf" "Material_Ref:pasted__file4.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.rf" "Material_Ref:pasted__file4.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.mu" "Material_Ref:pasted__file4.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.mv" "Material_Ref:pasted__file4.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.s" "Material_Ref:pasted__file4.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.wu" "Material_Ref:pasted__file4.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.wv" "Material_Ref:pasted__file4.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.re" "Material_Ref:pasted__file4.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.of" "Material_Ref:pasted__file4.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.r" "Material_Ref:pasted__file4.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.n" "Material_Ref:pasted__file4.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.vt1" "Material_Ref:pasted__file4.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.vt2" "Material_Ref:pasted__file4.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.vt3" "Material_Ref:pasted__file4.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.vc1" "Material_Ref:pasted__file4.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.o" "Material_Ref:pasted__file4.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture4.ofs" "Material_Ref:pasted__file4.fs"
+		;
+connectAttr "Material_Ref:file6.ocr" "Material_Ref:AppartmentWallDisplacemnt.d";
+connectAttr "Material_Ref:AppartmentWallDisplacemnt.d" "Material_Ref:displacementShader1SG.ds"
+		;
+connectAttr "Material_Ref:Appartment_Wall_Mat.oc" "Material_Ref:displacementShader1SG.ss"
+		;
+connectAttr "groupId3.msg" "Material_Ref:displacementShader1SG.gn" -na;
+connectAttr "groupId6.msg" "Material_Ref:displacementShader1SG.gn" -na;
+connectAttr "Wall5Shape.iog.og[1]" "Material_Ref:displacementShader1SG.dsm" -na;
+connectAttr "Wall4Shape.iog.og[1]" "Material_Ref:displacementShader1SG.dsm" -na;
+connectAttr "Material_Ref:displacementShader1SG.msg" "Material_Ref:materialInfo2.sg"
+		;
+connectAttr "Material_Ref:Appartment_Wall_Mat.msg" "Material_Ref:materialInfo2.m"
+		;
+connectAttr "Material_Ref:pasted__file1.msg" "Material_Ref:materialInfo2.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file6.ws";
+connectAttr "Material_Ref:place2dTexture6.c" "Material_Ref:file6.c";
+connectAttr "Material_Ref:place2dTexture6.tf" "Material_Ref:file6.tf";
+connectAttr "Material_Ref:place2dTexture6.rf" "Material_Ref:file6.rf";
+connectAttr "Material_Ref:place2dTexture6.mu" "Material_Ref:file6.mu";
+connectAttr "Material_Ref:place2dTexture6.mv" "Material_Ref:file6.mv";
+connectAttr "Material_Ref:place2dTexture6.s" "Material_Ref:file6.s";
+connectAttr "Material_Ref:place2dTexture6.wu" "Material_Ref:file6.wu";
+connectAttr "Material_Ref:place2dTexture6.wv" "Material_Ref:file6.wv";
+connectAttr "Material_Ref:place2dTexture6.re" "Material_Ref:file6.re";
+connectAttr "Material_Ref:place2dTexture6.of" "Material_Ref:file6.of";
+connectAttr "Material_Ref:place2dTexture6.r" "Material_Ref:file6.ro";
+connectAttr "Material_Ref:place2dTexture6.n" "Material_Ref:file6.n";
+connectAttr "Material_Ref:place2dTexture6.vt1" "Material_Ref:file6.vt1";
+connectAttr "Material_Ref:place2dTexture6.vt2" "Material_Ref:file6.vt2";
+connectAttr "Material_Ref:place2dTexture6.vt3" "Material_Ref:file6.vt3";
+connectAttr "Material_Ref:place2dTexture6.vc1" "Material_Ref:file6.vc1";
+connectAttr "Material_Ref:place2dTexture6.o" "Material_Ref:file6.uv";
+connectAttr "Material_Ref:place2dTexture6.ofs" "Material_Ref:file6.fs";
+connectAttr "Material_Ref:pasted__aiMultiply2.out" "Material_Ref:Cave_Floor_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__file6.oa" "Material_Ref:Cave_Floor_Mat.sr";
+connectAttr "Material_Ref:pasted__aiNormalMap2.out" "Material_Ref:Cave_Floor_Mat.n"
+		;
+connectAttr "Material_Ref:pasted__file5.oc" "Material_Ref:pasted__aiMultiply2.input1"
+		;
+connectAttr "Material_Ref:pasted__file7.oc" "Material_Ref:pasted__aiMultiply2.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file5.ws";
+connectAttr "Material_Ref:pasted__place2dTexture5.c" "Material_Ref:pasted__file5.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.tf" "Material_Ref:pasted__file5.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.rf" "Material_Ref:pasted__file5.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.mu" "Material_Ref:pasted__file5.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.mv" "Material_Ref:pasted__file5.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.s" "Material_Ref:pasted__file5.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.wu" "Material_Ref:pasted__file5.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.wv" "Material_Ref:pasted__file5.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.re" "Material_Ref:pasted__file5.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.of" "Material_Ref:pasted__file5.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.r" "Material_Ref:pasted__file5.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.n" "Material_Ref:pasted__file5.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.vt1" "Material_Ref:pasted__file5.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.vt2" "Material_Ref:pasted__file5.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.vt3" "Material_Ref:pasted__file5.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.vc1" "Material_Ref:pasted__file5.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.o" "Material_Ref:pasted__file5.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.ofs" "Material_Ref:pasted__file5.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file7.ws";
+connectAttr "Material_Ref:pasted__place2dTexture7.c" "Material_Ref:pasted__file7.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.tf" "Material_Ref:pasted__file7.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.rf" "Material_Ref:pasted__file7.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.mu" "Material_Ref:pasted__file7.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.mv" "Material_Ref:pasted__file7.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.s" "Material_Ref:pasted__file7.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.wu" "Material_Ref:pasted__file7.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.wv" "Material_Ref:pasted__file7.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.re" "Material_Ref:pasted__file7.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.of" "Material_Ref:pasted__file7.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.r" "Material_Ref:pasted__file7.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.n" "Material_Ref:pasted__file7.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.vt1" "Material_Ref:pasted__file7.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.vt2" "Material_Ref:pasted__file7.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.vt3" "Material_Ref:pasted__file7.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.vc1" "Material_Ref:pasted__file7.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.o" "Material_Ref:pasted__file7.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture7.ofs" "Material_Ref:pasted__file7.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file6.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file6.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file6.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file6.ws";
+connectAttr "Material_Ref:pasted__place2dTexture6.c" "Material_Ref:pasted__file6.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.tf" "Material_Ref:pasted__file6.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.rf" "Material_Ref:pasted__file6.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.mu" "Material_Ref:pasted__file6.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.mv" "Material_Ref:pasted__file6.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.s" "Material_Ref:pasted__file6.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.wu" "Material_Ref:pasted__file6.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.wv" "Material_Ref:pasted__file6.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.re" "Material_Ref:pasted__file6.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.of" "Material_Ref:pasted__file6.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.r" "Material_Ref:pasted__file6.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.n" "Material_Ref:pasted__file6.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.vt1" "Material_Ref:pasted__file6.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.vt2" "Material_Ref:pasted__file6.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.vt3" "Material_Ref:pasted__file6.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.vc1" "Material_Ref:pasted__file6.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.o" "Material_Ref:pasted__file6.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture6.ofs" "Material_Ref:pasted__file6.fs"
+		;
+connectAttr "Material_Ref:pasted__file8.oc" "Material_Ref:pasted__aiNormalMap2.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file8.ws";
+connectAttr "Material_Ref:pasted__place2dTexture8.c" "Material_Ref:pasted__file8.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.tf" "Material_Ref:pasted__file8.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.rf" "Material_Ref:pasted__file8.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.mu" "Material_Ref:pasted__file8.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.mv" "Material_Ref:pasted__file8.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.s" "Material_Ref:pasted__file8.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.wu" "Material_Ref:pasted__file8.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.wv" "Material_Ref:pasted__file8.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.re" "Material_Ref:pasted__file8.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.of" "Material_Ref:pasted__file8.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.r" "Material_Ref:pasted__file8.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.n" "Material_Ref:pasted__file8.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.vt1" "Material_Ref:pasted__file8.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.vt2" "Material_Ref:pasted__file8.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.vt3" "Material_Ref:pasted__file8.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.vc1" "Material_Ref:pasted__file8.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.o" "Material_Ref:pasted__file8.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture8.ofs" "Material_Ref:pasted__file8.fs"
+		;
+connectAttr "Material_Ref:file7.ocr" "Material_Ref:CaveFloorDisplacement.d";
+connectAttr "Material_Ref:CaveFloorDisplacement.d" "Material_Ref:displacementShader2SG.ds"
+		;
+connectAttr "Material_Ref:Cave_Floor_Mat.oc" "Material_Ref:displacementShader2SG.ss"
+		;
+connectAttr "Material_Ref:displacementShader2SG.msg" "Material_Ref:materialInfo3.sg"
+		;
+connectAttr "Material_Ref:Cave_Floor_Mat.msg" "Material_Ref:materialInfo3.m";
+connectAttr "Material_Ref:pasted__aiMultiply2.msg" "Material_Ref:materialInfo3.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file7.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file7.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file7.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file7.ws";
+connectAttr "Material_Ref:place2dTexture7.c" "Material_Ref:file7.c";
+connectAttr "Material_Ref:place2dTexture7.tf" "Material_Ref:file7.tf";
+connectAttr "Material_Ref:place2dTexture7.rf" "Material_Ref:file7.rf";
+connectAttr "Material_Ref:place2dTexture7.mu" "Material_Ref:file7.mu";
+connectAttr "Material_Ref:place2dTexture7.mv" "Material_Ref:file7.mv";
+connectAttr "Material_Ref:place2dTexture7.s" "Material_Ref:file7.s";
+connectAttr "Material_Ref:place2dTexture7.wu" "Material_Ref:file7.wu";
+connectAttr "Material_Ref:place2dTexture7.wv" "Material_Ref:file7.wv";
+connectAttr "Material_Ref:place2dTexture7.re" "Material_Ref:file7.re";
+connectAttr "Material_Ref:place2dTexture7.of" "Material_Ref:file7.of";
+connectAttr "Material_Ref:place2dTexture7.r" "Material_Ref:file7.ro";
+connectAttr "Material_Ref:place2dTexture7.n" "Material_Ref:file7.n";
+connectAttr "Material_Ref:place2dTexture7.vt1" "Material_Ref:file7.vt1";
+connectAttr "Material_Ref:place2dTexture7.vt2" "Material_Ref:file7.vt2";
+connectAttr "Material_Ref:place2dTexture7.vt3" "Material_Ref:file7.vt3";
+connectAttr "Material_Ref:place2dTexture7.vc1" "Material_Ref:file7.vc1";
+connectAttr "Material_Ref:place2dTexture7.o" "Material_Ref:file7.uv";
+connectAttr "Material_Ref:place2dTexture7.ofs" "Material_Ref:file7.fs";
+connectAttr "Material_Ref:pasted__pasted__aiMultiply1.out" "Material_Ref:Cave_Wall_2_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__pasted__file2.oa" "Material_Ref:Cave_Wall_2_Mat.sr"
+		;
+connectAttr "Material_Ref:pasted__pasted__aiNormalMap1.out" "Material_Ref:Cave_Wall_2_Mat.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__file1.oc" "Material_Ref:pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref:pasted__pasted__file3.oc" "Material_Ref:pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.c" "Material_Ref:pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.tf" "Material_Ref:pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.rf" "Material_Ref:pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.mu" "Material_Ref:pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.mv" "Material_Ref:pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.s" "Material_Ref:pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.wu" "Material_Ref:pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.wv" "Material_Ref:pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.re" "Material_Ref:pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.of" "Material_Ref:pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.r" "Material_Ref:pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.n" "Material_Ref:pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.vt1" "Material_Ref:pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.vt2" "Material_Ref:pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.vt3" "Material_Ref:pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.vc1" "Material_Ref:pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.o" "Material_Ref:pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.ofs" "Material_Ref:pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.c" "Material_Ref:pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.tf" "Material_Ref:pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.rf" "Material_Ref:pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.mu" "Material_Ref:pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.mv" "Material_Ref:pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.s" "Material_Ref:pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.wu" "Material_Ref:pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.wv" "Material_Ref:pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.re" "Material_Ref:pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.of" "Material_Ref:pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.r" "Material_Ref:pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.n" "Material_Ref:pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.vt1" "Material_Ref:pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.vt2" "Material_Ref:pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.vt3" "Material_Ref:pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.vc1" "Material_Ref:pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.o" "Material_Ref:pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.ofs" "Material_Ref:pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.c" "Material_Ref:pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.tf" "Material_Ref:pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.rf" "Material_Ref:pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.mu" "Material_Ref:pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.mv" "Material_Ref:pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.s" "Material_Ref:pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.wu" "Material_Ref:pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.wv" "Material_Ref:pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.re" "Material_Ref:pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.of" "Material_Ref:pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.r" "Material_Ref:pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.n" "Material_Ref:pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.vt1" "Material_Ref:pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.vt2" "Material_Ref:pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.vt3" "Material_Ref:pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.vc1" "Material_Ref:pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.o" "Material_Ref:pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.ofs" "Material_Ref:pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref:pasted__pasted__file4.oc" "Material_Ref:pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.c" "Material_Ref:pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.tf" "Material_Ref:pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.rf" "Material_Ref:pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.mu" "Material_Ref:pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.mv" "Material_Ref:pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.s" "Material_Ref:pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.wu" "Material_Ref:pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.wv" "Material_Ref:pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.re" "Material_Ref:pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.of" "Material_Ref:pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.r" "Material_Ref:pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.n" "Material_Ref:pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.vt1" "Material_Ref:pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.vt2" "Material_Ref:pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.vt3" "Material_Ref:pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.vc1" "Material_Ref:pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.o" "Material_Ref:pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref:file8.ocr" "Material_Ref:Cave2Displacement.d";
+connectAttr "Material_Ref:Cave2Displacement.d" "Material_Ref:Cave2Displacement5.ds"
+		;
+connectAttr "Material_Ref:Cave_Wall_2_Mat.oc" "Material_Ref:Cave2Displacement5.ss"
+		;
+connectAttr "Material_Ref:Cave2Displacement5.msg" "Material_Ref:materialInfo4.sg"
+		;
+connectAttr "Material_Ref:Cave_Wall_2_Mat.msg" "Material_Ref:materialInfo4.m";
+connectAttr "Material_Ref:pasted__pasted__aiMultiply1.msg" "Material_Ref:materialInfo4.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file8.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file8.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file8.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file8.ws";
+connectAttr "Material_Ref:place2dTexture8.c" "Material_Ref:file8.c";
+connectAttr "Material_Ref:place2dTexture8.tf" "Material_Ref:file8.tf";
+connectAttr "Material_Ref:place2dTexture8.rf" "Material_Ref:file8.rf";
+connectAttr "Material_Ref:place2dTexture8.mu" "Material_Ref:file8.mu";
+connectAttr "Material_Ref:place2dTexture8.mv" "Material_Ref:file8.mv";
+connectAttr "Material_Ref:place2dTexture8.s" "Material_Ref:file8.s";
+connectAttr "Material_Ref:place2dTexture8.wu" "Material_Ref:file8.wu";
+connectAttr "Material_Ref:place2dTexture8.wv" "Material_Ref:file8.wv";
+connectAttr "Material_Ref:place2dTexture8.re" "Material_Ref:file8.re";
+connectAttr "Material_Ref:place2dTexture8.of" "Material_Ref:file8.of";
+connectAttr "Material_Ref:place2dTexture8.r" "Material_Ref:file8.ro";
+connectAttr "Material_Ref:place2dTexture8.n" "Material_Ref:file8.n";
+connectAttr "Material_Ref:place2dTexture8.vt1" "Material_Ref:file8.vt1";
+connectAttr "Material_Ref:place2dTexture8.vt2" "Material_Ref:file8.vt2";
+connectAttr "Material_Ref:place2dTexture8.vt3" "Material_Ref:file8.vt3";
+connectAttr "Material_Ref:place2dTexture8.vc1" "Material_Ref:file8.vc1";
+connectAttr "Material_Ref:place2dTexture8.o" "Material_Ref:file8.uv";
+connectAttr "Material_Ref:place2dTexture8.ofs" "Material_Ref:file8.fs";
+connectAttr "Material_Ref:pasted__pasted__pasted__aiMultiply1.out" "Material_Ref:Cave_Wall_3_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__file2.oa" "Material_Ref:Cave_Wall_3_Mat.sr"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref:Cave_Wall_3_Mat.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__file1.oc" "Material_Ref:pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__file3.oc" "Material_Ref:pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.c" "Material_Ref:pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref:pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref:pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref:pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref:pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.s" "Material_Ref:pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref:pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref:pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.re" "Material_Ref:pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.of" "Material_Ref:pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.r" "Material_Ref:pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.n" "Material_Ref:pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref:pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref:pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref:pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref:pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.o" "Material_Ref:pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref:pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.c" "Material_Ref:pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref:pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref:pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref:pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref:pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.s" "Material_Ref:pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref:pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref:pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.re" "Material_Ref:pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.of" "Material_Ref:pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.r" "Material_Ref:pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.n" "Material_Ref:pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref:pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref:pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref:pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref:pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.o" "Material_Ref:pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref:pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.c" "Material_Ref:pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref:pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref:pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref:pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref:pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.s" "Material_Ref:pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref:pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref:pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.re" "Material_Ref:pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.of" "Material_Ref:pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.r" "Material_Ref:pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.n" "Material_Ref:pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref:pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref:pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref:pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref:pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.o" "Material_Ref:pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref:pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__file4.oc" "Material_Ref:pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.c" "Material_Ref:pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref:pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref:pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref:pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref:pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.s" "Material_Ref:pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref:pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref:pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.re" "Material_Ref:pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.of" "Material_Ref:pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.r" "Material_Ref:pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.n" "Material_Ref:pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref:pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref:pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref:pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref:pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.o" "Material_Ref:pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref:displacementShader4SG.msg" "Material_Ref:materialInfo5.sg"
+		;
+connectAttr "Material_Ref:pasted__displacementShader4SG.msg" "Material_Ref:pasted__materialInfo5.sg"
+		;
+connectAttr "Material_Ref:pasted__displacementShader4SG1.msg" "Material_Ref:pasted__materialInfo6.sg"
+		;
+connectAttr "Material_Ref:file9.ocr" "Material_Ref:Cave3Displacemnt.d";
+connectAttr "Material_Ref:Cave3Displacemnt.d" "Material_Ref:displacementShader5SG.ds"
+		;
+connectAttr "Material_Ref:Cave_Wall_3_Mat.oc" "Material_Ref:displacementShader5SG.ss"
+		;
+connectAttr "Material_Ref:displacementShader5SG.msg" "Material_Ref:materialInfo6.sg"
+		;
+connectAttr "Material_Ref:Cave_Wall_3_Mat.msg" "Material_Ref:materialInfo6.m";
+connectAttr "Material_Ref:pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref:materialInfo6.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file9.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file9.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file9.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file9.ws";
+connectAttr "Material_Ref:place2dTexture9.c" "Material_Ref:file9.c";
+connectAttr "Material_Ref:place2dTexture9.tf" "Material_Ref:file9.tf";
+connectAttr "Material_Ref:place2dTexture9.rf" "Material_Ref:file9.rf";
+connectAttr "Material_Ref:place2dTexture9.mu" "Material_Ref:file9.mu";
+connectAttr "Material_Ref:place2dTexture9.mv" "Material_Ref:file9.mv";
+connectAttr "Material_Ref:place2dTexture9.s" "Material_Ref:file9.s";
+connectAttr "Material_Ref:place2dTexture9.wu" "Material_Ref:file9.wu";
+connectAttr "Material_Ref:place2dTexture9.wv" "Material_Ref:file9.wv";
+connectAttr "Material_Ref:place2dTexture9.re" "Material_Ref:file9.re";
+connectAttr "Material_Ref:place2dTexture9.of" "Material_Ref:file9.of";
+connectAttr "Material_Ref:place2dTexture9.r" "Material_Ref:file9.ro";
+connectAttr "Material_Ref:place2dTexture9.n" "Material_Ref:file9.n";
+connectAttr "Material_Ref:place2dTexture9.vt1" "Material_Ref:file9.vt1";
+connectAttr "Material_Ref:place2dTexture9.vt2" "Material_Ref:file9.vt2";
+connectAttr "Material_Ref:place2dTexture9.vt3" "Material_Ref:file9.vt3";
+connectAttr "Material_Ref:place2dTexture9.vc1" "Material_Ref:file9.vc1";
+connectAttr "Material_Ref:place2dTexture9.o" "Material_Ref:file9.uv";
+connectAttr "Material_Ref:place2dTexture9.ofs" "Material_Ref:file9.fs";
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1.out" "Material_Ref:Cave_Wall_4_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file2.oa" "Material_Ref:Cave_Wall_4_Mat.sr"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__aiNormalMap1.out" "Material_Ref:Cave_Wall_4_Mat.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file1.oc" "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1.input1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file3.oc" "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__pasted__file1.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__pasted__file1.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__pasted__file1.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__pasted__file1.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.c" "Material_Ref:pasted__pasted__pasted__pasted__file1.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.tf" "Material_Ref:pasted__pasted__pasted__pasted__file1.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.rf" "Material_Ref:pasted__pasted__pasted__pasted__file1.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.mu" "Material_Ref:pasted__pasted__pasted__pasted__file1.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.mv" "Material_Ref:pasted__pasted__pasted__pasted__file1.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.s" "Material_Ref:pasted__pasted__pasted__pasted__file1.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.wu" "Material_Ref:pasted__pasted__pasted__pasted__file1.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.wv" "Material_Ref:pasted__pasted__pasted__pasted__file1.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.re" "Material_Ref:pasted__pasted__pasted__pasted__file1.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.of" "Material_Ref:pasted__pasted__pasted__pasted__file1.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.r" "Material_Ref:pasted__pasted__pasted__pasted__file1.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.n" "Material_Ref:pasted__pasted__pasted__pasted__file1.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.vt1" "Material_Ref:pasted__pasted__pasted__pasted__file1.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.vt2" "Material_Ref:pasted__pasted__pasted__pasted__file1.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.vt3" "Material_Ref:pasted__pasted__pasted__pasted__file1.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.vc1" "Material_Ref:pasted__pasted__pasted__pasted__file1.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.o" "Material_Ref:pasted__pasted__pasted__pasted__file1.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file1.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__pasted__file3.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__pasted__file3.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__pasted__file3.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__pasted__file3.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.c" "Material_Ref:pasted__pasted__pasted__pasted__file3.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.tf" "Material_Ref:pasted__pasted__pasted__pasted__file3.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.rf" "Material_Ref:pasted__pasted__pasted__pasted__file3.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.mu" "Material_Ref:pasted__pasted__pasted__pasted__file3.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.mv" "Material_Ref:pasted__pasted__pasted__pasted__file3.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.s" "Material_Ref:pasted__pasted__pasted__pasted__file3.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.wu" "Material_Ref:pasted__pasted__pasted__pasted__file3.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.wv" "Material_Ref:pasted__pasted__pasted__pasted__file3.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.re" "Material_Ref:pasted__pasted__pasted__pasted__file3.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.of" "Material_Ref:pasted__pasted__pasted__pasted__file3.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.r" "Material_Ref:pasted__pasted__pasted__pasted__file3.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.n" "Material_Ref:pasted__pasted__pasted__pasted__file3.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.vt1" "Material_Ref:pasted__pasted__pasted__pasted__file3.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.vt2" "Material_Ref:pasted__pasted__pasted__pasted__file3.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.vt3" "Material_Ref:pasted__pasted__pasted__pasted__file3.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.vc1" "Material_Ref:pasted__pasted__pasted__pasted__file3.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.o" "Material_Ref:pasted__pasted__pasted__pasted__file3.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file3.fs"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__pasted__file2.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__pasted__file2.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__pasted__file2.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__pasted__file2.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.c" "Material_Ref:pasted__pasted__pasted__pasted__file2.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.tf" "Material_Ref:pasted__pasted__pasted__pasted__file2.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.rf" "Material_Ref:pasted__pasted__pasted__pasted__file2.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.mu" "Material_Ref:pasted__pasted__pasted__pasted__file2.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.mv" "Material_Ref:pasted__pasted__pasted__pasted__file2.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.s" "Material_Ref:pasted__pasted__pasted__pasted__file2.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.wu" "Material_Ref:pasted__pasted__pasted__pasted__file2.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.wv" "Material_Ref:pasted__pasted__pasted__pasted__file2.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.re" "Material_Ref:pasted__pasted__pasted__pasted__file2.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.of" "Material_Ref:pasted__pasted__pasted__pasted__file2.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.r" "Material_Ref:pasted__pasted__pasted__pasted__file2.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.n" "Material_Ref:pasted__pasted__pasted__pasted__file2.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.vt1" "Material_Ref:pasted__pasted__pasted__pasted__file2.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.vt2" "Material_Ref:pasted__pasted__pasted__pasted__file2.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.vt3" "Material_Ref:pasted__pasted__pasted__pasted__file2.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.vc1" "Material_Ref:pasted__pasted__pasted__pasted__file2.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.o" "Material_Ref:pasted__pasted__pasted__pasted__file2.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file2.fs"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file4.oc" "Material_Ref:pasted__pasted__pasted__pasted__aiNormalMap1.input"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__pasted__pasted__file4.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__pasted__pasted__file4.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__pasted__pasted__file4.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__pasted__pasted__file4.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.c" "Material_Ref:pasted__pasted__pasted__pasted__file4.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.tf" "Material_Ref:pasted__pasted__pasted__pasted__file4.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.rf" "Material_Ref:pasted__pasted__pasted__pasted__file4.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.mu" "Material_Ref:pasted__pasted__pasted__pasted__file4.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.mv" "Material_Ref:pasted__pasted__pasted__pasted__file4.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.s" "Material_Ref:pasted__pasted__pasted__pasted__file4.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.wu" "Material_Ref:pasted__pasted__pasted__pasted__file4.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.wv" "Material_Ref:pasted__pasted__pasted__pasted__file4.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.re" "Material_Ref:pasted__pasted__pasted__pasted__file4.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.of" "Material_Ref:pasted__pasted__pasted__pasted__file4.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.r" "Material_Ref:pasted__pasted__pasted__pasted__file4.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.n" "Material_Ref:pasted__pasted__pasted__pasted__file4.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.vt1" "Material_Ref:pasted__pasted__pasted__pasted__file4.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.vt2" "Material_Ref:pasted__pasted__pasted__pasted__file4.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.vt3" "Material_Ref:pasted__pasted__pasted__pasted__file4.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.vc1" "Material_Ref:pasted__pasted__pasted__pasted__file4.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.o" "Material_Ref:pasted__pasted__pasted__pasted__file4.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file4.fs"
+		;
+connectAttr "Material_Ref:file10.ocr" "Material_Ref:cave4Displacement.d";
+connectAttr "Material_Ref:cave4Displacement.d" "Material_Ref:displacementShader6SG.ds"
+		;
+connectAttr "Material_Ref:Cave_Wall_4_Mat.oc" "Material_Ref:displacementShader6SG.ss"
+		;
+connectAttr "Material_Ref:displacementShader6SG.msg" "Material_Ref:materialInfo7.sg"
+		;
+connectAttr "Material_Ref:Cave_Wall_4_Mat.msg" "Material_Ref:materialInfo7.m";
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1.msg" "Material_Ref:materialInfo7.t"
+		 -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file10.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file10.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file10.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file10.ws";
+connectAttr "Material_Ref:place2dTexture10.c" "Material_Ref:file10.c";
+connectAttr "Material_Ref:place2dTexture10.tf" "Material_Ref:file10.tf";
+connectAttr "Material_Ref:place2dTexture10.rf" "Material_Ref:file10.rf";
+connectAttr "Material_Ref:place2dTexture10.mu" "Material_Ref:file10.mu";
+connectAttr "Material_Ref:place2dTexture10.mv" "Material_Ref:file10.mv";
+connectAttr "Material_Ref:place2dTexture10.s" "Material_Ref:file10.s";
+connectAttr "Material_Ref:place2dTexture10.wu" "Material_Ref:file10.wu";
+connectAttr "Material_Ref:place2dTexture10.wv" "Material_Ref:file10.wv";
+connectAttr "Material_Ref:place2dTexture10.re" "Material_Ref:file10.re";
+connectAttr "Material_Ref:place2dTexture10.of" "Material_Ref:file10.of";
+connectAttr "Material_Ref:place2dTexture10.r" "Material_Ref:file10.ro";
+connectAttr "Material_Ref:place2dTexture10.n" "Material_Ref:file10.n";
+connectAttr "Material_Ref:place2dTexture10.vt1" "Material_Ref:file10.vt1";
+connectAttr "Material_Ref:place2dTexture10.vt2" "Material_Ref:file10.vt2";
+connectAttr "Material_Ref:place2dTexture10.vt3" "Material_Ref:file10.vt3";
+connectAttr "Material_Ref:place2dTexture10.vc1" "Material_Ref:file10.vc1";
+connectAttr "Material_Ref:place2dTexture10.o" "Material_Ref:file10.uv";
+connectAttr "Material_Ref:place2dTexture10.ofs" "Material_Ref:file10.fs";
+connectAttr "Material_Ref:file11.oc" "Material_Ref:Generic_Wood_Mat.bc";
+connectAttr "Material_Ref:Generic_Wood_Mat.oc" "Material_Ref:standardSurface3SG.ss"
+		;
+connectAttr "groupId7.msg" "Material_Ref:standardSurface3SG.gn" -na;
+connectAttr "groupId8.msg" "Material_Ref:standardSurface3SG.gn" -na;
+connectAttr "Wall5Shape.iog.og[2]" "Material_Ref:standardSurface3SG.dsm" -na;
+connectAttr "Wall4Shape.iog.og[2]" "Material_Ref:standardSurface3SG.dsm" -na;
+connectAttr "TableShape.iog" "Material_Ref:standardSurface3SG.dsm" -na;
+connectAttr "DiningChairShape.iog" "Material_Ref:standardSurface3SG.dsm" -na;
+connectAttr "WoodenFrameShape.iog" "Material_Ref:standardSurface3SG.dsm" -na;
+connectAttr "Material_Ref:standardSurface3SG.msg" "Material_Ref:materialInfo8.sg"
+		;
+connectAttr "Material_Ref:Generic_Wood_Mat.msg" "Material_Ref:materialInfo8.m";
+connectAttr "Material_Ref:file11.msg" "Material_Ref:materialInfo8.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file11.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file11.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file11.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file11.ws";
+connectAttr "Material_Ref:place2dTexture11.c" "Material_Ref:file11.c";
+connectAttr "Material_Ref:place2dTexture11.tf" "Material_Ref:file11.tf";
+connectAttr "Material_Ref:place2dTexture11.rf" "Material_Ref:file11.rf";
+connectAttr "Material_Ref:place2dTexture11.mu" "Material_Ref:file11.mu";
+connectAttr "Material_Ref:place2dTexture11.mv" "Material_Ref:file11.mv";
+connectAttr "Material_Ref:place2dTexture11.s" "Material_Ref:file11.s";
+connectAttr "Material_Ref:place2dTexture11.wu" "Material_Ref:file11.wu";
+connectAttr "Material_Ref:place2dTexture11.wv" "Material_Ref:file11.wv";
+connectAttr "Material_Ref:place2dTexture11.re" "Material_Ref:file11.re";
+connectAttr "Material_Ref:place2dTexture11.of" "Material_Ref:file11.of";
+connectAttr "Material_Ref:place2dTexture11.r" "Material_Ref:file11.ro";
+connectAttr "Material_Ref:place2dTexture11.n" "Material_Ref:file11.n";
+connectAttr "Material_Ref:place2dTexture11.vt1" "Material_Ref:file11.vt1";
+connectAttr "Material_Ref:place2dTexture11.vt2" "Material_Ref:file11.vt2";
+connectAttr "Material_Ref:place2dTexture11.vt3" "Material_Ref:file11.vt3";
+connectAttr "Material_Ref:place2dTexture11.vc1" "Material_Ref:file11.vc1";
+connectAttr "Material_Ref:place2dTexture11.o" "Material_Ref:file11.uv";
+connectAttr "Material_Ref:place2dTexture11.ofs" "Material_Ref:file11.fs";
+connectAttr "Material_Ref:file12.oc" "Material_Ref:White_Paint_Mat.bc";
+connectAttr "Material_Ref:White_Paint_Mat.oc" "Material_Ref:standardSurface4SG.ss"
+		;
+connectAttr "Material_Ref:standardSurface4SG.msg" "Material_Ref:materialInfo9.sg"
+		;
+connectAttr "Material_Ref:White_Paint_Mat.msg" "Material_Ref:materialInfo9.m";
+connectAttr "Material_Ref:file12.msg" "Material_Ref:materialInfo9.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file12.ws";
+connectAttr "Material_Ref:place2dTexture12.c" "Material_Ref:file12.c";
+connectAttr "Material_Ref:place2dTexture12.tf" "Material_Ref:file12.tf";
+connectAttr "Material_Ref:place2dTexture12.rf" "Material_Ref:file12.rf";
+connectAttr "Material_Ref:place2dTexture12.mu" "Material_Ref:file12.mu";
+connectAttr "Material_Ref:place2dTexture12.mv" "Material_Ref:file12.mv";
+connectAttr "Material_Ref:place2dTexture12.s" "Material_Ref:file12.s";
+connectAttr "Material_Ref:place2dTexture12.wu" "Material_Ref:file12.wu";
+connectAttr "Material_Ref:place2dTexture12.wv" "Material_Ref:file12.wv";
+connectAttr "Material_Ref:place2dTexture12.re" "Material_Ref:file12.re";
+connectAttr "Material_Ref:place2dTexture12.of" "Material_Ref:file12.of";
+connectAttr "Material_Ref:place2dTexture12.r" "Material_Ref:file12.ro";
+connectAttr "Material_Ref:place2dTexture12.n" "Material_Ref:file12.n";
+connectAttr "Material_Ref:place2dTexture12.vt1" "Material_Ref:file12.vt1";
+connectAttr "Material_Ref:place2dTexture12.vt2" "Material_Ref:file12.vt2";
+connectAttr "Material_Ref:place2dTexture12.vt3" "Material_Ref:file12.vt3";
+connectAttr "Material_Ref:place2dTexture12.vc1" "Material_Ref:file12.vc1";
+connectAttr "Material_Ref:place2dTexture12.o" "Material_Ref:file12.uv";
+connectAttr "Material_Ref:place2dTexture12.ofs" "Material_Ref:file12.fs";
+connectAttr "Material_Ref:aiMultiply2.out" "Material_Ref:Blue_Paint_Mat.bc";
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__file12.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__file12.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__file12.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__file12.ws";
+connectAttr "Material_Ref:pasted__place2dTexture12.c" "Material_Ref:pasted__file12.c"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.tf" "Material_Ref:pasted__file12.tf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.rf" "Material_Ref:pasted__file12.rf"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.mu" "Material_Ref:pasted__file12.mu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.mv" "Material_Ref:pasted__file12.mv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.s" "Material_Ref:pasted__file12.s"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.wu" "Material_Ref:pasted__file12.wu"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.wv" "Material_Ref:pasted__file12.wv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.re" "Material_Ref:pasted__file12.re"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.of" "Material_Ref:pasted__file12.of"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.r" "Material_Ref:pasted__file12.ro"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.n" "Material_Ref:pasted__file12.n"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.vt1" "Material_Ref:pasted__file12.vt1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.vt2" "Material_Ref:pasted__file12.vt2"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.vt3" "Material_Ref:pasted__file12.vt3"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.vc1" "Material_Ref:pasted__file12.vc1"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.o" "Material_Ref:pasted__file12.uv"
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.ofs" "Material_Ref:pasted__file12.fs"
+		;
+connectAttr "Material_Ref:pasted__file12.oc" "Material_Ref:aiMultiply2.input1";
+connectAttr "Material_Ref:colorConstant1.oc" "Material_Ref:aiMultiply2.input2";
+connectAttr "Material_Ref:Blue_Paint_Mat.oc" "Material_Ref:Blue_Paint_MatSG.ss";
+connectAttr "Material_Ref:Blue_Paint_MatSG.msg" "Material_Ref:materialInfo10.sg"
+		;
+connectAttr "Material_Ref:Blue_Paint_Mat.msg" "Material_Ref:materialInfo10.m";
+connectAttr "Material_Ref:pasted__file12.msg" "Material_Ref:materialInfo10.t" -na
+		;
+connectAttr "Material_Ref:file13.oc" "Material_Ref:Marble_Mat.bc";
+connectAttr "Material_Ref:Marble_Mat.oc" "Material_Ref:standardSurface5SG.ss";
+connectAttr "Material_Ref:standardSurface5SG.msg" "Material_Ref:materialInfo11.sg"
+		;
+connectAttr "Material_Ref:Marble_Mat.msg" "Material_Ref:materialInfo11.m";
+connectAttr "Material_Ref:file13.msg" "Material_Ref:materialInfo11.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:file13.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:file13.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:file13.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:file13.ws";
+connectAttr "Material_Ref:place2dTexture13.c" "Material_Ref:file13.c";
+connectAttr "Material_Ref:place2dTexture13.tf" "Material_Ref:file13.tf";
+connectAttr "Material_Ref:place2dTexture13.rf" "Material_Ref:file13.rf";
+connectAttr "Material_Ref:place2dTexture13.mu" "Material_Ref:file13.mu";
+connectAttr "Material_Ref:place2dTexture13.mv" "Material_Ref:file13.mv";
+connectAttr "Material_Ref:place2dTexture13.s" "Material_Ref:file13.s";
+connectAttr "Material_Ref:place2dTexture13.wu" "Material_Ref:file13.wu";
+connectAttr "Material_Ref:place2dTexture13.wv" "Material_Ref:file13.wv";
+connectAttr "Material_Ref:place2dTexture13.re" "Material_Ref:file13.re";
+connectAttr "Material_Ref:place2dTexture13.of" "Material_Ref:file13.of";
+connectAttr "Material_Ref:place2dTexture13.r" "Material_Ref:file13.ro";
+connectAttr "Material_Ref:place2dTexture13.n" "Material_Ref:file13.n";
+connectAttr "Material_Ref:place2dTexture13.vt1" "Material_Ref:file13.vt1";
+connectAttr "Material_Ref:place2dTexture13.vt2" "Material_Ref:file13.vt2";
+connectAttr "Material_Ref:place2dTexture13.vt3" "Material_Ref:file13.vt3";
+connectAttr "Material_Ref:place2dTexture13.vc1" "Material_Ref:file13.vc1";
+connectAttr "Material_Ref:place2dTexture13.o" "Material_Ref:file13.uv";
+connectAttr "Material_Ref:place2dTexture13.ofs" "Material_Ref:file13.fs";
+connectAttr "Material_Ref:pasted__aiMultiply3.out" "Material_Ref:Brown_Paint_Mat.bc"
+		;
+connectAttr "Material_Ref:pasted__pasted__file12.oc" "Material_Ref:pasted__aiMultiply3.input1"
+		;
+connectAttr "Material_Ref:pasted__colorConstant1.oc" "Material_Ref:pasted__aiMultiply3.input2"
+		;
+connectAttr ":defaultColorMgtGlobals.cme" "Material_Ref:pasted__pasted__file12.cme"
+		;
+connectAttr ":defaultColorMgtGlobals.cfe" "Material_Ref:pasted__pasted__file12.cmcf"
+		;
+connectAttr ":defaultColorMgtGlobals.cfp" "Material_Ref:pasted__pasted__file12.cmcp"
+		;
+connectAttr ":defaultColorMgtGlobals.wsn" "Material_Ref:pasted__pasted__file12.ws"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.c" "Material_Ref:pasted__pasted__file12.c"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.tf" "Material_Ref:pasted__pasted__file12.tf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.rf" "Material_Ref:pasted__pasted__file12.rf"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.mu" "Material_Ref:pasted__pasted__file12.mu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.mv" "Material_Ref:pasted__pasted__file12.mv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.s" "Material_Ref:pasted__pasted__file12.s"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.wu" "Material_Ref:pasted__pasted__file12.wu"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.wv" "Material_Ref:pasted__pasted__file12.wv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.re" "Material_Ref:pasted__pasted__file12.re"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.of" "Material_Ref:pasted__pasted__file12.of"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.r" "Material_Ref:pasted__pasted__file12.ro"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.n" "Material_Ref:pasted__pasted__file12.n"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.vt1" "Material_Ref:pasted__pasted__file12.vt1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.vt2" "Material_Ref:pasted__pasted__file12.vt2"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.vt3" "Material_Ref:pasted__pasted__file12.vt3"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.vc1" "Material_Ref:pasted__pasted__file12.vc1"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.o" "Material_Ref:pasted__pasted__file12.uv"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.ofs" "Material_Ref:pasted__pasted__file12.fs"
+		;
+connectAttr "Material_Ref:Brown_Paint_Mat.oc" "Material_Ref:Brown_Paint_MatSG.ss"
+		;
+connectAttr "Material_Ref:Brown_Paint_MatSG.msg" "Material_Ref:materialInfo12.sg"
+		;
+connectAttr "Material_Ref:Brown_Paint_Mat.msg" "Material_Ref:materialInfo12.m";
+connectAttr "Material_Ref:pasted__pasted__file12.msg" "Material_Ref:materialInfo12.t"
+		 -na;
+connectAttr "Material_Ref:pasted__aiMultiply3.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref:pasted__colorConstant1.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref:Brown_Paint_Mat.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "Material_Ref:pasted__pasted__file12.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "Material_Ref:Brown_Paint_MatSG.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
 connectAttr "woodenFrameSG.pa" ":renderPartition.st" -na;
 connectAttr "window1_SG.pa" ":renderPartition.st" -na;
 connectAttr "window1_GlassSG.pa" ":renderPartition.st" -na;
@@ -85032,6 +87014,22 @@ connectAttr "candlesBaseSG.pa" ":renderPartition.st" -na;
 connectAttr "candlesSG.pa" ":renderPartition.st" -na;
 connectAttr "armchair_2_2SG.pa" ":renderPartition.st" -na;
 connectAttr "armchair_1SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:standardSurface2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:displacementShader1SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:displacementShader2SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:Cave2Displacement5.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:displacementShader4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:pasted__displacementShader4SG.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref:pasted__displacementShader4SG1.pa" ":renderPartition.st"
+		 -na;
+connectAttr "Material_Ref:displacementShader5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:displacementShader6SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:standardSurface3SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:standardSurface4SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:Blue_Paint_MatSG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:standardSurface5SG.pa" ":renderPartition.st" -na;
+connectAttr "Material_Ref:Brown_Paint_MatSG.pa" ":renderPartition.st" -na;
 connectAttr "woodenFrame_ncl1_1.msg" ":defaultShaderList1.s" -na;
 connectAttr "window.msg" ":defaultShaderList1.s" -na;
 connectAttr "window1_Glass_ncl1_1.msg" ":defaultShaderList1.s" -na;
@@ -85059,7 +87057,176 @@ connectAttr "candlesBase_ncl1_1.msg" ":defaultShaderList1.s" -na;
 connectAttr "candles_ncl1_1.msg" ":defaultShaderList1.s" -na;
 connectAttr "armchair_2_ncl1_1.msg" ":defaultShaderList1.s" -na;
 connectAttr "armchair_1_ncl1_1.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Appartment_Floor_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:AppermentFloorDisplacement.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref:Appartment_Wall_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:AppartmentWallDisplacemnt.msg" ":defaultShaderList1.s"
+		 -na;
+connectAttr "Material_Ref:Cave_Floor_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:CaveFloorDisplacement.msg" ":defaultShaderList1.s" -na
+		;
+connectAttr "Material_Ref:Cave_Wall_2_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Cave2Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Cave_Wall_3_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Cave3Displacemnt.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Cave_Wall_4_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:cave4Displacement.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Generic_Wood_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:White_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Blue_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Marble_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:Brown_Paint_Mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Material_Ref:place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:aiMultiply1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref:place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:aiNormalMap1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref:place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:place2dTexture6.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__place2dTexture5.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture6.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__aiMultiply2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture7.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__aiNormalMap2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__place2dTexture8.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:place2dTexture7.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:place2dTexture8.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:place2dTexture9.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture2.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__aiMultiply1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__aiNormalMap1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:place2dTexture10.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:place2dTexture11.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:place2dTexture12.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:aiMultiply2.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "Material_Ref:colorConstant1.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:place2dTexture13.msg" ":defaultRenderUtilityList1.u" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__place2dTexture12.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__aiMultiply3.msg" ":defaultRenderUtilityList1.u"
+		 -na;
+connectAttr "Material_Ref:pasted__colorConstant1.msg" ":defaultRenderUtilityList1.u"
+		 -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "Material_Ref:defaultRenderLayer.msg" ":defaultRenderingList1.r" -na
+		;
+connectAttr "Material_Ref:file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file5.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file6.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file7.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__pasted__file1.msg" ":defaultTextureList1.tx" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__file2.msg" ":defaultTextureList1.tx" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__file3.msg" ":defaultTextureList1.tx" -na
+		;
+connectAttr "Material_Ref:pasted__pasted__file4.msg" ":defaultTextureList1.tx" -na
+		;
+connectAttr "Material_Ref:file8.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:file9.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file1.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file2.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file3.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:pasted__pasted__pasted__pasted__file4.msg" ":defaultTextureList1.tx"
+		 -na;
+connectAttr "Material_Ref:file10.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file11.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__file12.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:file13.msg" ":defaultTextureList1.tx" -na;
+connectAttr "Material_Ref:pasted__pasted__file12.msg" ":defaultTextureList1.tx" 
+		-na;
 connectAttr "SquareWindowGlassShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "RoundWindowShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "RoundWindowGlassShape.iog" ":initialShadingGroup.dsm" -na;
