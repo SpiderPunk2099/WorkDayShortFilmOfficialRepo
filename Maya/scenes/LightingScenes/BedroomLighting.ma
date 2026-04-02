@@ -1,23 +1,22 @@
 //Maya ASCII 2026 scene
 //Name: BedroomLighting.ma
-//Last modified: Thu, Apr 02, 2026 12:56:54 AM
+//Last modified: Thu, Apr 02, 2026 10:08:44 AM
 //Codeset: 1252
-file -rdi 1 -ns "BedroomProps_ceiling" -dr 1 -rfn "BedroomProps_ceilingRN" -op
-		 "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/BedroomProps_ceiling.ma";
-file -r -ns "BedroomProps_ceiling" -dr 1 -rfn "BedroomProps_ceilingRN" -op "v=0;"
-		 -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/BedroomProps_ceiling.ma";
+file -rdi 1 -ns "BedroomExtraLighting" -rfn "BedroomExtraLightingRN" -op "v=0;"
+		 -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//scenes/LightingScenes/BedroomExtraLighting.ma";
+file -r -ns "BedroomExtraLighting" -dr 1 -rfn "BedroomExtraLightingRN" -op "v=0;"
+		 -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//scenes/LightingScenes/BedroomExtraLighting.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
 		 -nodeType "aiMeshLight" -nodeType "aiImagerDenoiserOidn" "mtoa" "5.5.4.2";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "E94B9424-4522-FC3C-3076-35914C460C53";
+fileInfo "UUID" "E6FF26EE-429E-489B-AE63-8199140ECE98";
 createNode transform -s -n "persp";
 	rename -uid "2938434B-4B97-A556-B583-6DA2DA098E76";
 	setAttr ".v" no;
@@ -1322,20 +1321,20 @@ createNode aiMeshLight -n "light_pSphere3Shape" -p "light_pSphere3";
 	setAttr ".sc" -type "float3" 1 0.85860002 0.50980002 ;
 	setAttr ".ai_exposure" 18;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "F5A13EFC-4648-57E9-BABF-3CB85B21684D";
-	setAttr -s 107 ".lnk";
-	setAttr -s 107 ".slnk";
+	rename -uid "86901074-4387-5F06-717B-7A8B4F1E2F15";
+	setAttr -s 2 ".lnk";
+	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "4E097ECF-457D-F5C6-34CC-70B491D1C041";
+	rename -uid "DF9B4976-401F-906E-9207-59A76888FB85";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "029CACC7-46B6-880A-D966-AE86189766F7";
+	rename -uid "DCBF5BE1-4D97-204B-A444-4C881308857F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F42AA0CB-4D49-4038-7DB0-1783B205EEB8";
+	rename -uid "FA5A1EE2-4681-DC2E-E74F-76ACB082A1A3";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "C1BE09C4-4886-C0CF-117A-FB8CA6D05A53";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "7D3B3DBE-42A4-CAFB-0ED0-92B2056FC972";
+	rename -uid "E4740278-4CDF-93F6-225A-40BB8149617F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "EA4557E0-4F7D-5549-D857-3596DECB2E59";
 	setAttr ".g" yes;
@@ -1362,7 +1361,7 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -editorChanged \"updateModelPanelBar\" \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n"
 		+ "            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n"
-		+ "            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1038\n            -height 707\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n"
+		+ "            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n"
 		+ "            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -editorChanged \"updateModelPanelBar\" \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
 		+ "            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n"
 		+ "            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
@@ -1408,434 +1407,17 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "DE29706A-4132-8759-9FB9-36AB27A858BB";
 	setAttr ".b" -type "string" "playbackOptions -min 0 -max 200 -ast 0 -aet 230 ";
 	setAttr ".st" 6;
-createNode reference -n "BedroomProps_ceilingRN";
-	rename -uid "21D2C7BE-481A-B530-2FDD-0A8E445D3497";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"BedroomProps_ceilingRN"
-		"BedroomProps_ceiling:chestOfDrawersRN" 3
-		2 "BedroomProps_ceiling:chestOfDrawers:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:chestOfDrawers:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Metallic.png\""
-		
-		2 "BedroomProps_ceiling:chestOfDrawers:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Roughness.png\""
-		
-		"BedroomProps_ceiling:Book_VariationsRN" 0
-		"BedroomProps_ceiling:bookShelfRN" 0
-		"BedroomProps_ceiling:Chair_Workday_ProjectRN" 0
-		"BedroomProps_ceiling:AxeRN" 0
-		"BedroomProps_ceiling:WD_BedRN" 0
-		"BedroomProps_ceiling:NightCapRN" 0
-		"BedroomProps_ceiling:calanderRN" 1
-		2 "BedroomProps_ceiling:calander:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/calendar/calendar/calendar_initialShadingGroup_BaseColor.png\""
-		
-		"BedroomProps_ceiling:Material_RefRN" 5
-		2 "BedroomProps_ceiling:Material_Ref:file11" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file12" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		"BedroomProps_ceiling:deskRN" 5
-		2 "BedroomProps_ceiling:desk1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Mixed_AO.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Metallic.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Normal_OpenGL.png\""
-		
-		"BedroomProps_ceilingRN" 181
-		2 "|BedroomProps_ceiling:pPlane3" "translate" " -type \"double3\" -245.2 0 -592.75493171835603334"
-		
-		2 "BedroomProps_ceiling:desk:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:desk:file1" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
-		
-		2 "BedroomProps_ceiling:desk:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Mixed_AO.png\""
-		
-		2 "BedroomProps_ceiling:desk:file2" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
-		
-		2 "BedroomProps_ceiling:desk:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Metallic.png\""
-		
-		2 "BedroomProps_ceiling:desk:file3" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
-		
-		2 "BedroomProps_ceiling:desk:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:desk:file4" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
-		
-		2 "BedroomProps_ceiling:desk:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Normal_OpenGL.png\""
-		
-		2 "BedroomProps_ceiling:desk:file5" "colorSpace" " -type \"string\" \"sRGB Encoded Rec.709 (sRGB)\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_01/Book_A_01_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_01/Book_A_01_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_01/Book_A_01_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_01/Book_A_01_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_02/Book_A_02_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_02/Book_A_02_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_02/Book_A_02_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file9" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_02/Book_A_02_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file10" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_03/Book_A_03_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file11" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_03/Book_A_03_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_03/Book_A_03_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_03/Book_A_03_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file14" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_04/Book_A_04_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file15" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_04/Book_A_04_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file16" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_04/Book_A_04_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file17" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_04/Book_A_04_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file18" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_05/Book_A_05_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file19" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_05/Book_A_05_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file20" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_05/Book_A_05_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file21" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_05/Book_A_05_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file22" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_06/Book_A_06_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file23" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_06/Book_A_06_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file24" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_06/Book_A_06_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file25" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_A_06/Book_A_06_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file26" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_01/Book_B_01_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file27" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_01/Book_B_01_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file28" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_01/Book_B_01_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file29" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_01/Book_B_01_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file30" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_02/Book_B_02_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file31" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_02/Book_B_02_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file32" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_02/Book_B_02_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file34" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_03/Book_B_03_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file35" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_03/Book_B_03_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file36" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_03/Book_B_03_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file37" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_03/Book_B_03_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file38" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_04/Book_B_04_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file39" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_04/Book_B_04_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file40" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_04/Book_B_04_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file41" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_04/Book_B_04_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file42" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_05/Book_B_05_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file43" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_05/Book_B_05_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file44" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_05/Book_B_05_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file45" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_05/Book_B_05_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file46" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_06/Book_B_06_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file47" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_06/Book_B_06_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file48" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_06/Book_B_06_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file49" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_06/Book_B_06_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file50" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_07/Book_B_07_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file51" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_07/Book_B_07_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file52" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_07/Book_B_07_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file53" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_07/Book_B_07_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file54" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_08/Book_B_08_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file55" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_08/Book_B_08_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file56" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_08/Book_B_08_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file57" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_08/Book_B_08_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file58" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_09/Book_B_09_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file59" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_09/Book_B_09_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file60" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_09/Book_B_09_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file61" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_09/Book_B_09_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file62" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_10/Book_B_10_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file63" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_10/Book_B_10_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file64" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_10/Book_B_10_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file66" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_11/Book_B_11_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file67" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_11/Book_B_11_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file68" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_11/Book_B_11_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file69" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_B_11/Book_B_11_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file70" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_01/Book_C_01_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file71" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_01/Book_C_01_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file72" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_01/Book_C_01_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file73" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_01/Book_C_01_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file74" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_02/Book_C_02_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file75" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_02/Book_C_02_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file76" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_02/Book_C_02_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file77" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_02/Book_C_02_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file78" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_03/Book_C_03_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file79" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_03/Book_C_03_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file80" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_03/Book_C_03_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file81" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_03/Book_C_03_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file82" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_04/Book_C_04_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file83" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_04/Book_C_04_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file84" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_04/Book_C_04_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file85" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_C_04/Book_C_04_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file86" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_D_01/Book_D_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file87" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_D_01/Book_D_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file88" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_D_01/Book_D_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file89" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_D_01/Book_D_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file90" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_01/Book_E_01_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file91" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_01/Book_E_01_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file92" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_01/Book_E_01_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file93" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_01/Book_E_01_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file94" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_02/Book_E_02_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file95" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_02/Book_E_02_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file96" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_02/Book_E_02_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file97" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_E_02/Book_E_02_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file99" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_01/Book_F_01_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file100" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_01/Book_F_01_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file101" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_01/Book_F_01_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file102" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_01/Book_F_01_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file103" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_02/Book_F_02_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file104" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_02/Book_F_02_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file105" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_02/Book_F_02_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file106" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_02/Book_F_02_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file107" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_03/Book_F_03_Geo_standardSurface2_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file108" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_03/Book_F_03_Geo_standardSurface2_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file109" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_03/Book_F_03_Geo_standardSurface2_Normal.png\""
-		
-		2 "BedroomProps_ceiling:Book_Variations1:file110" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Books/Book_F_03/Book_F_03_Geo_standardSurface2_Height.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat01_BaseColor_sRGB.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat01_Roughness_Raw.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat01_Normal_Raw.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat02_BaseColor_sRGB.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat02_Roughness_Raw.png\""
-		
-		2 "BedroomProps_ceiling:NightCap1:file9" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/NightCapTextures-20260301T104232Z-1-001/NightCapTextures/NightCap_NightCapMat02_Normal_Raw.png\""
-		
-		2 "BedroomProps_ceiling:Axe:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Axe_Text/Axe_Geo_standardSurface1_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Axe:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Axe_Text/Axe_Geo_standardSurface1_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:Axe:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Axe_Text/Axe_Geo_standardSurface1_Normal.png\""
-		
-		2 "BedroomProps_ceiling:chestOfDrawers:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:chestOfDrawers:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Metallic.png\""
-		
-		2 "BedroomProps_ceiling:chestOfDrawers:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:calander:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/calendar/calendar/calendar_initialShadingGroup_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Appartment_Floor/Appartemnt_Floor_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Plastered_Wall/Plastered_Wall_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_Painted_basecolor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_ambientocclusion.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file6" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file7" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Ground/Ground_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file1" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file3" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_ambientocclusion.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file2" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file4" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_2/Cave_Test_2_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__file1" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_basecolor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__file3" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_ambientocclusion.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__file2" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__file4" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file9" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_3/Cave_Test_3_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__pasted__file1" 
-		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_basecolor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__pasted__file3" 
-		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__pasted__file2" 
-		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_roughness.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__pasted__pasted__file4" 
-		"fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_normal.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file10" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Cave_4/Cave_Test_4_height.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file11" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file12" "fileTextureName" 
-		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:bookShelf1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Bookshelf Textures-20260323T052524Z-3-001/Bookshelf Textures/bookShelf_Basket_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:bookShelf1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Bookshelf Textures-20260323T052524Z-3-001/Bookshelf Textures/bookShelf_Door_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:bookShelf1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Bookshelf Textures-20260323T052524Z-3-001/Bookshelf Textures/bookShelf_Silver_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:bookShelf1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Bookshelf Textures-20260323T052524Z-3-001/Bookshelf Textures/bookShelf_Wood_BaseColor.png\""
-		
-		2 "BedroomProps_ceiling:Chair_Workday_Project:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Chair_Textures-20260323T053929Z-3-001/Chair_Textures/Twisted_Chair_initialShadingGroup_BaseColor.1001.png\""
-		
-		2 "BedroomProps_ceiling:WD_Bed1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WD_Bed/WD_Bed/WD_Bed_Bed_Frame_Mat_AlbedoTransparency.png\""
-		
-		2 "BedroomProps_ceiling:WD_Bed1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WD_Bed/WD_Bed/WD_Bed_Mattress_Pillow_Mat_AlbedoTransparency.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Base_color.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Mixed_AO.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Metallic.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Roughness.png\""
-		
-		2 "BedroomProps_ceiling:desk1:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Normal_OpenGL.png\""
-		
-		2 "BedroomProps_ceiling:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/GrassyBonesPoster.png\""
-		
-		2 "BedroomProps_ceiling:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/LividLovePoster.png\""
-		
-		2 "BedroomProps_ceiling:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/BonesPoster.png\""
-		
-		2 "BedroomProps_ceiling:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/BewareOfTheMimicPoster.png\"";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode polySphere -n "polySphere1";
 	rename -uid "C1BA7200-4DCE-A6E2-B47C-C9BC68420D03";
 createNode polySphere -n "polySphere2";
 	rename -uid "C29A02A9-48D9-967D-87B1-4FA6DC22E33C";
-createNode reference -n "sharedReferenceNode";
-	rename -uid "B417C9F7-46D7-01B2-FC27-56AA64D868DD";
+createNode reference -n "BedroomExtraLightingRN";
+	rename -uid "2E32BB46-4475-CE14-009D-07AEF6BCFD8C";
 	setAttr ".ed" -type "dataReferenceEdits" 
-		"sharedReferenceNode";
+		"BedroomExtraLightingRN"
+		"BedroomExtraLightingRN" 0;
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -1907,9 +1489,11 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
+	setAttr -s 2 ".r";
 select -ne :lightList1;
-	setAttr -s 5 ".l";
+	setAttr -s 8 ".l";
 select -ne :standardSurface1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
@@ -1924,7 +1508,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".vwm";
 	setAttr -k on ".tpv";
 	setAttr -k on ".uit";
-	setAttr -s 3 ".dsm";
+	setAttr -s 5 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -2066,7 +1650,7 @@ select -ne :defaultResolution;
 	setAttr -av -k on ".isu";
 	setAttr -av -k on ".pdu";
 select -ne :defaultLightSet;
-	setAttr -s 5 ".dsm";
+	setAttr -s 8 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -2134,7 +1718,6 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
-connectAttr "sharedReferenceNode.sr" "BedroomProps_ceilingRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "aiAreaLightShape2.ltd" ":lightList1.l" -na;
