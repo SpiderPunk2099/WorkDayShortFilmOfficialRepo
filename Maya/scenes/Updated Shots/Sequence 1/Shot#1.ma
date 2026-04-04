@@ -7764,7 +7764,7 @@ createNode renderSetup -n "renderSetup";
 	rename -uid "5C85F877-480E-F8CF-28C4-109CF255D8A8";
 createNode reference -n "SkeletonRN";
 	rename -uid "A5A8ACE5-4A6E-0B2B-8DC4-F48C5E0213A2";
-	setAttr -s 1081 ".phl";
+	setAttr -s 1088 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -8846,10 +8846,17 @@ createNode reference -n "SkeletonRN";
 	setAttr ".phl[1079]" 0;
 	setAttr ".phl[1080]" 0;
 	setAttr ".phl[1081]" 0;
+	setAttr ".phl[1082]" 0;
+	setAttr ".phl[1083]" 0;
+	setAttr ".phl[1084]" 0;
+	setAttr ".phl[1085]" 0;
+	setAttr ".phl[1086]" 0;
+	setAttr ".phl[1087]" 0;
+	setAttr ".phl[1088]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SkeletonRN"
 		"SkeletonRN" 0
-		"SkeletonRN" 1307
+		"SkeletonRN" 1314
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Hip_Ctrl_Grp|Skeleton:Hip_Ctrl" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Spine_And_Head|Skeleton:Chest_Ctrl_Grp|Skeleton:Chest_Ctrl" 
@@ -11452,7 +11459,21 @@ createNode reference -n "SkeletonRN";
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Redundancy_Controls|Skeleton:Neck_02_Redundancy_Ctrl_Grp|Skeleton:Neck_02_Redundancy_Ctrl.Operating_Space" 
 		"SkeletonRN.placeHolderList[1080]" ""
 		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Redundancy_Controls|Skeleton:Neck_02_Redundancy_Ctrl_Grp|Skeleton:Neck_02_Redundancy_Ctrl.visibility" 
-		"SkeletonRN.placeHolderList[1081]" "";
+		"SkeletonRN.placeHolderList[1081]" ""
+		5 3 "SkeletonRN" "Skeleton:place2dTexture1.message" "SkeletonRN.placeHolderList[1082]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:file1.message" "SkeletonRN.placeHolderList[1083]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:file2.message" "SkeletonRN.placeHolderList[1084]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:file3.message" "SkeletonRN.placeHolderList[1085]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:SkellyTexture.message" "SkeletonRN.placeHolderList[1086]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:set1.message" "SkeletonRN.placeHolderList[1087]" 
+		""
+		5 3 "SkeletonRN" "Skeleton:bump2d1.message" "SkeletonRN.placeHolderList[1088]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTU -n "Render_Cam_visibility";
@@ -19631,7 +19652,7 @@ createNode reference -n "BedroomProps_ceilingRN";
 		2 "|BedroomProps_ceiling:calander:polySurface15" "scale" " -type \"double3\" 3.473319 3.473319 3.473319"
 		
 		"BedroomProps_ceilingRN" 0
-		"BedroomProps_ceilingRN" 25
+		"BedroomProps_ceilingRN" 26
 		0 "|BedroomProps_ceiling:pPlane3" "|Background|Posters" "-s -r "
 		0 "|BedroomProps_ceiling:pPlane2" "|Background|Posters" "-s -r "
 		0 "|BedroomProps_ceiling:pPlane1" "|Background|Posters" "-s -r "
@@ -20450,10 +20471,32 @@ createNode nodeGraphEditorInfo -n "GemShard:hyperShadePrimaryNodeEditorSavedTabs
 	setAttr ".tgi[0].ni[3].y" 74.285713195800781;
 	setAttr ".tgi[0].ni[3].nvs" 2387;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "FDC7F5B6-4EC5-1AFE-B5C1-80AAD157B4A1";
+	rename -uid "18D0C011-45AB-9684-C22F-83AB77F1334A";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -282.14284593150779 -333.29743417528465 ;
-	setAttr ".tgi[0].vh" -type "double2" 282.93649669362173 332.50378341317071 ;
+	setAttr ".tgi[0].vl" -type "double2" -828.80449588862064 -292.4114627532507 ;
+	setAttr ".tgi[0].vh" -type "double2" 17.486918999359204 519.11246915836909 ;
+	setAttr -s 7 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 197.14285278320312;
+	setAttr ".tgi[0].ni[0].y" 258.57144165039062;
+	setAttr ".tgi[0].ni[0].nvs" 2387;
+	setAttr ".tgi[0].ni[1].x" -417.14285278320312;
+	setAttr ".tgi[0].ni[1].y" 105.71428680419922;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -724.28570556640625;
+	setAttr ".tgi[0].ni[2].y" 37.142856597900391;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 545.71429443359375;
+	setAttr ".tgi[0].ni[3].y" 411.42855834960938;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
+	setAttr ".tgi[0].ni[4].x" 545.71429443359375;
+	setAttr ".tgi[0].ni[4].y" 214.28572082519531;
+	setAttr ".tgi[0].ni[4].nvs" 1923;
+	setAttr ".tgi[0].ni[5].x" -110;
+	setAttr ".tgi[0].ni[5].y" -142.85714721679688;
+	setAttr ".tgi[0].ni[5].nvs" 1923;
+	setAttr ".tgi[0].ni[6].x" -110;
+	setAttr ".tgi[0].ni[6].y" 31.428571701049805;
+	setAttr ".tgi[0].ni[6].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -21825,6 +21868,20 @@ connectAttr "Neck_02_Redundancy_Ctrl_scaleY.o" "SkeletonRN.phl[1078]";
 connectAttr "Neck_02_Redundancy_Ctrl_scaleZ.o" "SkeletonRN.phl[1079]";
 connectAttr "Neck_02_Redundancy_Ctrl_Operating_Space.o" "SkeletonRN.phl[1080]";
 connectAttr "Neck_02_Redundancy_Ctrl_visibility.o" "SkeletonRN.phl[1081]";
+connectAttr "SkeletonRN.phl[1082]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "SkeletonRN.phl[1083]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
+connectAttr "SkeletonRN.phl[1084]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "SkeletonRN.phl[1085]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+		;
+connectAttr "SkeletonRN.phl[1086]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "SkeletonRN.phl[1087]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[4].dn"
+		;
+connectAttr "SkeletonRN.phl[1088]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+		;
 connectAttr "Transform_Ctrl_translateX1.o" "Clock_RigRN.phl[1]";
 connectAttr "Transform_Ctrl_translateZ1.o" "Clock_RigRN.phl[2]";
 connectAttr "Transform_Ctrl_translateY1.o" "Clock_RigRN.phl[3]";
@@ -21974,8 +22031,8 @@ connectAttr "BedroomProps_ceilingRN.phl[3]" "BedroomProps_ceilingRN.phl[4]";
 connectAttr "BaseboardsShape.iog.og[0]" "BedroomProps_ceilingRN.phl[5]";
 connectAttr "Baseboards1Shape.iog.og[0]" "BedroomProps_ceilingRN.phl[6]";
 connectAttr "Baseboards2Shape.iog.og[0]" "BedroomProps_ceilingRN.phl[7]";
-connectAttr "BedroomProps_ceilingRN.phl[8]" "Baseboards1Shape.iog.og[0].gco";
-connectAttr "BedroomProps_ceilingRN.phl[9]" "BaseboardsShape.iog.og[0].gco";
+connectAttr "BedroomProps_ceilingRN.phl[8]" "BaseboardsShape.iog.og[0].gco";
+connectAttr "BedroomProps_ceilingRN.phl[9]" "Baseboards1Shape.iog.og[0].gco";
 connectAttr "BedroomProps_ceilingRN.phl[10]" "Baseboards2Shape.iog.og[0].gco";
 connectAttr "groupId1.msg" "BedroomProps_ceilingRN.phl[11]";
 connectAttr "groupId3.msg" "BedroomProps_ceilingRN.phl[12]";
