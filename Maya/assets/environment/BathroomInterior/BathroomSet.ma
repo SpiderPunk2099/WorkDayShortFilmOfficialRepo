@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: BathroomSet.ma
-//Last modified: Sun, Apr 05, 2026 06:40:57 PM
+//Last modified: Sun, Apr 05, 2026 09:06:55 PM
 //Codeset: 1252
 file -rdi 1 -ns "toilet" -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toilet/toilet.ma";
 file -rdi 1 -ns "Mirror" -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
@@ -25,7 +25,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "4FFCDB39-4035-D8E8-805F-F0BB3E9D5069";
+fileInfo "UUID" "688C4B39-45DB-9642-1CDD-E6A9AE886626";
 createNode transform -s -n "persp";
 	rename -uid "BBAA70D4-44EB-9984-E491-628457B6E1B9";
 	setAttr ".v" no;
@@ -703,15 +703,15 @@ createNode transform -n "Material_Ref:fluidTexture2D1";
 createNode transform -n "Material_Ref:fluidTexture2D2";
 	rename -uid "29B43828-4947-41EC-0258-51886F1C7A06";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9BD62A9B-4435-FF7D-9093-3CA420DDFEC7";
+	rename -uid "B7086661-4D54-489F-26E3-688CA73311CF";
 	setAttr -s 29 ".lnk";
 	setAttr -s 29 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "AB16A084-480E-1434-5925-0AB7F13BD34A";
+	rename -uid "DADECF07-4261-98D5-C06D-8CB53083A4B5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "390D392F-4E8D-8422-424F-2D8D5C142ABB";
+	rename -uid "AD7CF28A-4212-1C36-BC88-01B69D690BFF";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0263F126-438F-EE8F-5F9F-659E5122BCDE";
+	rename -uid "F26956B7-43CD-2583-8B40-FBB63CB00CE5";
 	setAttr ".cdl" 6;
 	setAttr -s 7 ".dli[1:6]"  1 2 3 4 5 6;
 	setAttr -s 7 ".dli";
@@ -719,7 +719,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "353F5EA2-4C1F-AD8E-4B81-D7A233B97C2B";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F1136543-4883-3997-63F3-15B166BC42B9";
+	rename -uid "238855EF-4106-9E0F-37C3-C8ACE7A46274";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1F06E2D0-42AB-6C6F-3AAF-48A29C794E09";
 	setAttr ".g" yes;
@@ -1855,9 +1855,6 @@ createNode file -n "Material_Ref:file5";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Material_Ref:place2dTexture5";
 	rename -uid "A3BAA474-45BE-3FD3-6A0B-FDA4E79FD4FD";
-createNode displacementShader -n "Material_Ref:AppermentFloorDisplacement";
-	rename -uid "9463BB8E-4C1C-F98A-106B-CDBDEE776955";
-	setAttr ".ai_displacement_padding" 0.0010000000474974513;
 createNode standardSurface -n "Material_Ref:Appartment_Wall_Mat";
 	rename -uid "00242C1F-47DB-C468-F54E-4CB1C352C128";
 createNode aiMultiply -n "Material_Ref:pasted__aiMultiply1";
@@ -2297,11 +2294,27 @@ createNode polyTweakUV -n "polyTweakUV2";
 		 1.050619245 1.1508168;
 createNode timeEditor -s -n "timeEditor";
 	rename -uid "1B466FC7-8847-5C5A-11BC-B8B5830A73E8";
+createNode displacementShader -n "Material_Ref:AppermentFloorDisplacement";
+	rename -uid "9463BB8E-4C1C-F98A-106B-CDBDEE776955";
+	setAttr ".ai_displacement_padding" 0.0010000000474974513;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "709B4CDF-4433-DC38-80C5-6DBD4538A444";
+	rename -uid "F050F498-41D6-9CE9-4626-FB83FB6BA98B";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -438.88887144901207 -175.39681842718201 ;
-	setAttr ".tgi[0].vh" -type "double2" 439.68252221112596 174.60316766506807 ;
+	setAttr ".tgi[0].vl" -type "double2" -627.13095138170297 -143.29593207177984 ;
+	setAttr ".tgi[0].vh" -type "double2" 716.76781056148764 389.65037008997331 ;
+	setAttr -s 4 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 101.42857360839844;
+	setAttr ".tgi[0].ni[0].y" 164.28572082519531;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" -512.85711669921875;
+	setAttr ".tgi[0].ni[1].y" 164.28572082519531;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" -205.71427917480469;
+	setAttr ".tgi[0].ni[2].y" 187.14285278320312;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" 408.57144165039062;
+	setAttr ".tgi[0].ni[3].y" 208.57142639160156;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -2390,7 +2403,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".vwm";
 	setAttr -k on ".tpv";
 	setAttr -k on ".uit";
-	setAttr -s 10 ".dsm";
+	setAttr -s 9 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -2800,8 +2813,6 @@ connectAttr "Material_Ref:aiNormalMap1.out" "Material_Ref:Appartment_Floor_Mat.n
 		;
 connectAttr "Material_Ref:Appartment_Floor_Mat.oc" "Material_Ref:standardSurface2SG.ss"
 		;
-connectAttr "Material_Ref:AppermentFloorDisplacement.d" "Material_Ref:standardSurface2SG.ds"
-		;
 connectAttr "Material_Ref:standardSurface2SG.msg" "Material_Ref:materialInfo1.sg"
 		;
 connectAttr "Material_Ref:Appartment_Floor_Mat.msg" "Material_Ref:materialInfo1.m"
@@ -2920,8 +2931,6 @@ connectAttr "Material_Ref:place2dTexture5.vt3" "Material_Ref:file5.vt3";
 connectAttr "Material_Ref:place2dTexture5.vc1" "Material_Ref:file5.vc1";
 connectAttr "Material_Ref:place2dTexture5.o" "Material_Ref:file5.uv";
 connectAttr "Material_Ref:place2dTexture5.ofs" "Material_Ref:file5.fs";
-connectAttr "Material_Ref:file5.ocr" "Material_Ref:AppermentFloorDisplacement.d"
-		;
 connectAttr "Material_Ref:pasted__aiMultiply1.out" "Material_Ref:Appartment_Wall_Mat.bc"
 		;
 connectAttr "Material_Ref:pasted__file2.oa" "Material_Ref:Appartment_Wall_Mat.sr"
@@ -3095,8 +3104,6 @@ connectAttr "Material_Ref:pasted__place2dTexture4.o" "Material_Ref:pasted__file4
 connectAttr "Material_Ref:pasted__place2dTexture4.ofs" "Material_Ref:pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file6.ocr" "Material_Ref:AppartmentWallDisplacemnt.d";
-connectAttr "Material_Ref:AppartmentWallDisplacemnt.d" "Material_Ref:displacementShader1SG.ds"
-		;
 connectAttr "Material_Ref:Appartment_Wall_Mat.oc" "Material_Ref:displacementShader1SG.ss"
 		;
 connectAttr "pCubeShape3.iog.og[0]" "Material_Ref:displacementShader1SG.dsm" -na
@@ -3301,8 +3308,6 @@ connectAttr "Material_Ref:pasted__place2dTexture8.o" "Material_Ref:pasted__file8
 connectAttr "Material_Ref:pasted__place2dTexture8.ofs" "Material_Ref:pasted__file8.fs"
 		;
 connectAttr "Material_Ref:file7.ocr" "Material_Ref:CaveFloorDisplacement.d";
-connectAttr "Material_Ref:CaveFloorDisplacement.d" "Material_Ref:displacementShader2SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Floor_Mat.oc" "Material_Ref:displacementShader2SG.ss"
 		;
 connectAttr "Material_Ref:displacementShader2SG.msg" "Material_Ref:materialInfo3.sg"
@@ -3521,8 +3526,6 @@ connectAttr "Material_Ref:pasted__pasted__place2dTexture4.o" "Material_Ref:paste
 connectAttr "Material_Ref:pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file8.ocr" "Material_Ref:Cave2Displacement.d";
-connectAttr "Material_Ref:Cave2Displacement.d" "Material_Ref:Cave2Displacement5.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_2_Mat.oc" "Material_Ref:Cave2Displacement5.ss"
 		;
 connectAttr "Material_Ref:Cave2Displacement5.msg" "Material_Ref:materialInfo4.sg"
@@ -3747,8 +3750,6 @@ connectAttr "Material_Ref:pasted__displacementShader4SG.msg" "Material_Ref:paste
 connectAttr "Material_Ref:pasted__displacementShader4SG1.msg" "Material_Ref:pasted__materialInfo6.sg"
 		;
 connectAttr "Material_Ref:file9.ocr" "Material_Ref:Cave3Displacemnt.d";
-connectAttr "Material_Ref:Cave3Displacemnt.d" "Material_Ref:displacementShader5SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_3_Mat.oc" "Material_Ref:displacementShader5SG.ss"
 		;
 connectAttr "Material_Ref:displacementShader5SG.msg" "Material_Ref:materialInfo6.sg"
@@ -3967,8 +3968,6 @@ connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.o" "Ma
 connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file10.ocr" "Material_Ref:cave4Displacement.d";
-connectAttr "Material_Ref:cave4Displacement.d" "Material_Ref:displacementShader6SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_4_Mat.oc" "Material_Ref:displacementShader6SG.ss"
 		;
 connectAttr "Material_Ref:displacementShader6SG.msg" "Material_Ref:materialInfo7.sg"
@@ -4218,6 +4217,16 @@ connectAttr "pCubeShape3.wm" "polyAutoProj5.mp";
 connectAttr "polyAutoProj5.out" "groupParts1.ig";
 connectAttr "groupId1.id" "groupParts1.gi";
 connectAttr "groupParts1.og" "polyTweakUV2.ip";
+connectAttr "Material_Ref:file5.ocr" "Material_Ref:AppermentFloorDisplacement.d"
+		;
+connectAttr "Material_Ref:cave4Displacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref:place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref:file10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref:displacementShader6SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
 connectAttr "standardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert1SG.pa" ":renderPartition.st" -na;
 connectAttr "Material_Ref:standardSurface2SG.pa" ":renderPartition.st" -na;
@@ -4412,4 +4421,7 @@ connectAttr "pCubeShape12.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape13.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape14.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape16.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ir";
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ig";
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ib";
 // End of BathroomSet.ma

@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: TreasureGuardSet.ma
-//Last modified: Sun, Apr 05, 2026 06:47:27 PM
+//Last modified: Sun, Apr 05, 2026 09:07:27 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Brick/Documents/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
@@ -79,7 +79,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "F2D5C42E-4FC9-FAB3-9A89-AEA10BA69D75";
+fileInfo "UUID" "64857AE8-42E5-F12A-6C6C-F9BC9CFEA9BF";
 createNode transform -s -n "persp";
 	rename -uid "8BFA3AA2-4407-4690-28F1-0FB5B11C0F2F";
 	setAttr ".v" no;
@@ -144253,7 +144253,7 @@ createNode mesh -n "LoopShape6" -p "Loop06";
 createNode transform -n "TreasureRoom";
 	rename -uid "04A66D1C-4B69-EA4C-20FD-D9AD762158F6";
 createNode fosterParent -n "TreasureCaveSetRN2fosterParent1";
-	rename -uid "A429DBED-4339-A3E9-088A-E7946D319F95";
+	rename -uid "99263331-4E94-A061-85FE-3B88383BA7ED";
 createNode transform -n "CobbleStone_60" -p "TreasureCaveSetRN2fosterParent1";
 	rename -uid "80A7FFFA-4DED-6B6E-7759-69A3B42F1DBA";
 	setAttr ".t" -type "double3" -533.54577596231206 4.082395163000303 -612.15584348668517 ;
@@ -201122,15 +201122,15 @@ createNode mesh -n "polySurfaceShape66" -p "|TreasureCaveSetRN2fosterParent1|pol
 	setAttr ".pd[1]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "313D8DEB-43FF-A509-9D59-C5B215FDFBC6";
-	setAttr -s 243 ".lnk";
-	setAttr -s 243 ".slnk";
+	rename -uid "33775E4C-42AF-3ED0-9187-BAB69969AF52";
+	setAttr -s 73 ".lnk";
+	setAttr -s 73 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "41C0A352-4F2F-59BD-5A2B-D984BE9EC05A";
+	rename -uid "C88CA7D4-4AF3-C18A-7D93-30AA1285E48B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6AC4721E-442E-2D01-44E8-A6ACEE3CBFA9";
+	rename -uid "244119C6-4ABB-E51D-9F43-21A7B659B629";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D990D01A-46F5-D61E-CEEA-93BB9A1327EC";
+	rename -uid "09346977-4B62-E03C-E1BA-4683514113A2";
 	setAttr ".cdl" 7;
 	setAttr -s 12 ".dli[1:11]"  8 1 2 3 4 5 6 7 
 		9 10 11;
@@ -201139,7 +201139,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "BB248915-4DB1-45FF-5677-CBA293FFD67B";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E8DCA3AC-4E9B-39E3-C6DA-878CE3806D9E";
+	rename -uid "8864533F-4F2F-4FC7-9E03-03B7B5901961";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D92EDE65-47E3-13BF-DDD8-60B5998DD95B";
 	setAttr ".g" yes;
@@ -201243,7 +201243,7 @@ createNode reference -n "sharedReferenceNode";
 		"sharedReferenceNode";
 createNode reference -n "TreasureCaveSetRN2";
 	rename -uid "5FF0D5C2-446D-E1AB-72A7-E7A1B094BCCC";
-	setAttr -s 36 ".phl";
+	setAttr -s 39 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -201280,6 +201280,9 @@ createNode reference -n "TreasureCaveSetRN2";
 	setAttr ".phl[34]" 0;
 	setAttr ".phl[35]" 0;
 	setAttr ".phl[36]" 0;
+	setAttr ".phl[37]" 0;
+	setAttr ".phl[38]" 0;
+	setAttr ".phl[39]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"TreasureCaveSetRN2"
 		"TreasureCaveSetRN2" 10
@@ -201307,7 +201310,7 @@ createNode reference -n "TreasureCaveSetRN2";
 		"-na"
 		3 "TreasureCaveSet2:crystalFormations:ShortCrystal_Mat_01.message" "TreasureCaveSet2:crystalFormations:materialInfo2.texture" 
 		"-na"
-		"TreasureCaveSetRN2" 483
+		"TreasureCaveSetRN2" 489
 		0 "|TreasureCaveSet2:Treasure_Set" "|RocksAndPaths" "-s -r "
 		0 "|TreasureCaveSet2:Crystal_Goup_1" "|TreasureRoom" "-s -r "
 		0 "|TreasureCaveSet2:Crystal_Goup_3" "|TreasureRoom" "-s -r "
@@ -202179,14 +202182,27 @@ createNode reference -n "TreasureCaveSetRN2";
 		)
 		2 "TreasureCaveSet2:polyTweakUV119" "uvtk[0:3]" " -s 4 -type \"float2\" -0.26161807999999998 -0.31121283999999999 -0.22889334 -0.31121283999999999 -0.26161807999999998 -0.32527321999999997 -0.22889334 -0.32527321999999997"
 		
-		3 "TreasureCaveSet2:Spiky_rock:Spikey_Rocks_Mat.message" "TreasureCaveSet2:Spiky_rock:materialInfo1.texture" 
+		3 "TreasureCaveSet2:Stalagmite_3:Stalagmite_2_Mat.message" "TreasureCaveSet2:Stalagmite_3:materialInfo1.texture" 
 		"-na"
 		3 "TreasureCaveSet2:Material_Ref:standardSurface5SG.memberWireframeColor" 
 		"|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "TreasureCaveSet2:groupId299.groupId" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.instObjGroups.objectGroups[0].objectGroupId" 
 		""
-		3 "TreasureCaveSet2:polyTweakUV40.output" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_1|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface128|TreasureCaveSet2:polySurfaceShape139.inMesh" 
+		3 "TreasureCaveSet2:Stalagmite_4:Stalagmite_1_Mat.message" "TreasureCaveSet2:Stalagmite_4:materialInfo1.texture" 
+		"-na"
+		3 "TreasureCaveSet2:Spiky_rock:Spikey_Rocks_Mat.message" "TreasureCaveSet2:Spiky_rock:materialInfo1.texture" 
+		"-na"
+		3 "TreasureCaveSet2:Material_Ref:standardSurface5SG.memberWireframeColor" 
+		"|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "TreasureCaveSet2:groupId287.groupId" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 "TreasureCaveSet2:Material_Ref:CaveFloorDisplacement.displacement" ":internal_standInShader.incandescenceR" 
+		""
+		3 "TreasureCaveSet2:Material_Ref:CaveFloorDisplacement.displacement" ":internal_standInShader.incandescenceG" 
+		""
+		3 "TreasureCaveSet2:Material_Ref:CaveFloorDisplacement.displacement" ":internal_standInShader.incandescenceB" 
 		""
 		3 "TreasureCaveSet2:groupId299.message" "TreasureCaveSet2:Material_Ref:standardSurface5SG.groupNodes" 
 		"-na"
@@ -202196,16 +202212,9 @@ createNode reference -n "TreasureCaveSetRN2";
 		"-na"
 		3 "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0]" 
 		"TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" "-na"
-		3 "TreasureCaveSet2:Stalagmite_3:Stalagmite_2_Mat.message" "TreasureCaveSet2:Stalagmite_3:materialInfo1.texture" 
-		"-na"
 		3 "TreasureCaveSet2:polyTweakUV35.output" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_1|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface123|TreasureCaveSet2:polySurfaceShape134.inMesh" 
 		""
-		3 "TreasureCaveSet2:Stalagmite_4:Stalagmite_1_Mat.message" "TreasureCaveSet2:Stalagmite_4:materialInfo1.texture" 
-		"-na"
-		3 "TreasureCaveSet2:Material_Ref:standardSurface5SG.memberWireframeColor" 
-		"|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "TreasureCaveSet2:groupId287.groupId" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGroupId" 
+		3 "TreasureCaveSet2:polyTweakUV40.output" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_1|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface128|TreasureCaveSet2:polySurfaceShape139.inMesh" 
 		""
 		5 4 "TreasureCaveSetRN2" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_1|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface123|TreasureCaveSet2:polySurfaceShape134.inMesh" 
 		"TreasureCaveSetRN2.placeHolderList[1]" ""
@@ -202215,7 +202224,7 @@ createNode reference -n "TreasureCaveSetRN2";
 		"TreasureCaveSetRN2.placeHolderList[3]" ""
 		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.memberWireframeColor" 
 		"|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGrpColor" 
-		"TreasureCaveSetRN2.placeHolderList[4]" "TreasureCaveSetRN2.placeHolderList[5]" "|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.iog.og[0].gco"
+		"TreasureCaveSetRN2.placeHolderList[4]" "TreasureCaveSetRN2.placeHolderList[5]" "|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.iog.og[0].gco"
 		
 		5 4 "TreasureCaveSetRN2" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0].objectGroupId" 
 		"TreasureCaveSetRN2.placeHolderList[6]" ""
@@ -202226,7 +202235,7 @@ createNode reference -n "TreasureCaveSetRN2";
 		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.memberWireframeColor" 
 		"|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.instObjGroups.objectGroups[0].objectGrpColor" 
 		"TreasureCaveSetRN2.placeHolderList[9]" "TreasureCaveSetRN2.placeHolderList[10]" 
-		"|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.iog.og[0].gco"
+		"|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.iog.og[0].gco"
 		
 		5 4 "TreasureCaveSetRN2" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.instObjGroups.objectGroups[0].objectGroupId" 
 		"TreasureCaveSetRN2.placeHolderList[11]" ""
@@ -202238,20 +202247,20 @@ createNode reference -n "TreasureCaveSetRN2";
 		"TreasureCaveSet2:polySurfaceShape134.i"
 		5 3 "TreasureCaveSetRN2" "TreasureCaveSet2:polyTweakUV40.output" "TreasureCaveSetRN2.placeHolderList[15]" 
 		"TreasureCaveSet2:polySurfaceShape139.i"
+		5 3 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:CaveFloorDisplacement.message" 
+		"TreasureCaveSetRN2.placeHolderList[16]" ""
+		5 3 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:file7.message" 
+		"TreasureCaveSetRN2.placeHolderList[17]" ""
+		5 3 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:place2dTexture7.message" 
+		"TreasureCaveSetRN2.placeHolderList[18]" ""
 		5 0 "TreasureCaveSetRN2" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_14|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface127|TreasureCaveSet2:polySurfaceShape127.instObjGroups.objectGroups[0]" 
-		"TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" "TreasureCaveSetRN2.placeHolderList[16]" 
-		"TreasureCaveSetRN2.placeHolderList[17]" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dsm"
+		"TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" "TreasureCaveSetRN2.placeHolderList[19]" 
+		"TreasureCaveSetRN2.placeHolderList[20]" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dsm"
 		
 		5 0 "TreasureCaveSetRN2" "|RocksAndPaths|TreasureCaveSet2:Treasure_Set|TreasureCaveSet2:CobbleStone_Path_Group|TreasureCaveSet2:CobbleStone_13|TreasureCaveSet2:floor1|TreasureCaveSet2:polySurface124|TreasureCaveSet2:polySurfaceShape124.instObjGroups.objectGroups[0]" 
-		"TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" "TreasureCaveSetRN2.placeHolderList[18]" 
-		"TreasureCaveSetRN2.placeHolderList[19]" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dsm"
+		"TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" "TreasureCaveSetRN2.placeHolderList[21]" 
+		"TreasureCaveSetRN2.placeHolderList[22]" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dsm"
 		
-		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
-		"TreasureCaveSetRN2.placeHolderList[20]" ""
-		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
-		"TreasureCaveSetRN2.placeHolderList[21]" ""
-		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
-		"TreasureCaveSetRN2.placeHolderList[22]" ""
 		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
 		"TreasureCaveSetRN2.placeHolderList[23]" ""
 		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
@@ -202264,19 +202273,25 @@ createNode reference -n "TreasureCaveSetRN2";
 		"TreasureCaveSetRN2.placeHolderList[27]" ""
 		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
 		"TreasureCaveSetRN2.placeHolderList[28]" ""
-		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.groupNodes" 
+		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
 		"TreasureCaveSetRN2.placeHolderList[29]" ""
-		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.groupNodes" 
+		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
 		"TreasureCaveSetRN2.placeHolderList[30]" ""
-		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Spiky_rock:file1.message" 
-		"TreasureCaveSet2:Spiky_rock:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[31]" 
+		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.dagSetMembers" 
+		"TreasureCaveSetRN2.placeHolderList[31]" ""
+		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.groupNodes" 
 		"TreasureCaveSetRN2.placeHolderList[32]" ""
+		5 4 "TreasureCaveSetRN2" "TreasureCaveSet2:Material_Ref:standardSurface5SG.groupNodes" 
+		"TreasureCaveSetRN2.placeHolderList[33]" ""
+		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Spiky_rock:file1.message" 
+		"TreasureCaveSet2:Spiky_rock:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[34]" 
+		"TreasureCaveSetRN2.placeHolderList[35]" ""
 		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Stalagmite_3:file1.message" 
-		"TreasureCaveSet2:Stalagmite_3:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[33]" 
-		"TreasureCaveSetRN2.placeHolderList[34]" ""
+		"TreasureCaveSet2:Stalagmite_3:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[36]" 
+		"TreasureCaveSetRN2.placeHolderList[37]" ""
 		5 0 "TreasureCaveSetRN2" "TreasureCaveSet2:Stalagmite_4:file1.message" 
-		"TreasureCaveSet2:Stalagmite_4:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[35]" 
-		"TreasureCaveSetRN2.placeHolderList[36]" "";
+		"TreasureCaveSet2:Stalagmite_4:materialInfo1.texture" "TreasureCaveSetRN2.placeHolderList[38]" 
+		"TreasureCaveSetRN2.placeHolderList[39]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DragonGateTorchRN";
@@ -202647,6 +202662,14 @@ createNode reference -n "DragonGateTorchRN";
 		"DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:WallBase|DragonGateTorch:TopChain|DragonGateTorch:Chain01|DragonGateTorch:ChainShape1.instObjGroups" 
 		"DragonGateTorch:aiStandardSurface1SG.dagSetMembers" "-na"
+		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:TorchHolderRing02|DragonGateTorch:TorchHolderRing02Shape.instObjGroups" 
+		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:TorchHolderRing01|DragonGateTorch:TorchHolderRing01Shape.instObjGroups" 
+		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:WallBase|DragonGateTorch:HookFrame02|DragonGateTorch:HookFrameShape2.instObjGroups" 
+		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
+		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:WallBase|DragonGateTorch:HookFrame01|DragonGateTorch:HookFrameShape1.instObjGroups" 
+		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:Wood10|DragonGateTorch:Wood10Shape.instObjGroups" 
 		"DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:Wood09|DragonGateTorch:Wood09Shape.instObjGroups" 
@@ -202665,14 +202688,6 @@ createNode reference -n "DragonGateTorchRN";
 		"DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:Wood02|DragonGateTorch:Wood02Shape.instObjGroups" 
 		"DragonGateTorch:aiStandardSurface5SG.dagSetMembers" "-na"
-		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:TorchHolderRing02|DragonGateTorch:TorchHolderRing02Shape.instObjGroups" 
-		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:TorchHolderRing01|DragonGateTorch:TorchHolderRing01Shape.instObjGroups" 
-		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:WallBase|DragonGateTorch:HookFrame02|DragonGateTorch:HookFrameShape2.instObjGroups" 
-		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
-		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:WallBase|DragonGateTorch:HookFrame01|DragonGateTorch:HookFrameShape1.instObjGroups" 
-		"DragonGateTorch:aiStandardSurface3SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:Loop06|DragonGateTorch:LoopShape6.instObjGroups" 
 		"DragonGateTorch:aiStandardSurface2SG.dagSetMembers" "-na"
 		3 "|Latern_Grp|Lantern|DragonGateTorch:DragonGateTorch|DragonGateTorch:TorchHolder|DragonGateTorch:Loop05|DragonGateTorch:LoopShape5.instObjGroups" 
@@ -203497,7 +203512,7 @@ createNode standardSurface -n "Material_Ref:Marble_Mat";
 createNode shadingEngine -n "Material_Ref:standardSurface5SG";
 	rename -uid "0D1E017A-4A70-16DA-4BEC-F1B056D37AB0";
 	setAttr ".ihi" 0;
-	setAttr -s 307 ".dsm";
+	setAttr -s 306 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Material_Ref:materialInfo11";
 	rename -uid "578F3D28-4DB3-8985-68DC-89A5E2A6E2C5";
@@ -212574,23 +212589,20 @@ createNode reference -n "Stalagmite_1RN8";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "FFA8C0A4-4685-2BF2-E8D5-C9A24E470E29";
+	rename -uid "5BA759A2-4D3D-1900-4E4B-2782E8503E18";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -138.23668451985571 -856.01347055044346 ;
-	setAttr ".tgi[0].vh" -type "double2" 1767.2682321187392 -96.909885873279634 ;
-	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 531.4285888671875;
-	setAttr ".tgi[0].ni[0].y" -175.71427917480469;
+	setAttr ".tgi[0].vl" -type "double2" 208.34031887841263 -267.4960647454152 ;
+	setAttr ".tgi[0].vh" -type "double2" 1245.5623190990777 143.83226235203017 ;
+	setAttr -s 3 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 937.14288330078125;
+	setAttr ".tgi[0].ni[0].y" -21.428571701049805;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" 862.85711669921875;
-	setAttr ".tgi[0].ni[1].y" -154.28572082519531;
-	setAttr ".tgi[0].ni[1].nvs" 2387;
-	setAttr ".tgi[0].ni[2].x" 1211.4285888671875;
-	setAttr ".tgi[0].ni[2].y" -177.14285278320312;
+	setAttr ".tgi[0].ni[1].x" 322.85714721679688;
+	setAttr ".tgi[0].ni[1].y" 1.4285714626312256;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 630;
+	setAttr ".tgi[0].ni[2].y" 24.285715103149414;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 224.28572082519531;
-	setAttr ".tgi[0].ni[3].y" -198.57142639160156;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -212639,7 +212651,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 152 ".st";
+	setAttr -s 73 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -212652,7 +212664,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 161 ".s";
+	setAttr -s 69 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -212660,12 +212672,12 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 383 ".u";
+	setAttr -s 163 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 	setAttr -s 49 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 309 ".tx";
+	setAttr -s 147 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -212883,31 +212895,37 @@ connectAttr "polyAutoProj3.out" "TreasureCaveSetRN2.phl[12]";
 connectAttr "TreasureCaveSetRN2.phl[13]" "polyAutoProj3.mp";
 connectAttr "TreasureCaveSetRN2.phl[14]" "polyNormal2.ip";
 connectAttr "TreasureCaveSetRN2.phl[15]" "polyNormal1.ip";
-connectAttr "TreasureCaveSetRN2.phl[16]" "TreasureCaveSetRN2.phl[17]";
-connectAttr "TreasureCaveSetRN2.phl[18]" "TreasureCaveSetRN2.phl[19]";
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface129|polySurfaceShape129.iog" "TreasureCaveSetRN2.phl[20]"
+connectAttr "TreasureCaveSetRN2.phl[16]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface128|polySurfaceShape128.iog" "TreasureCaveSetRN2.phl[21]"
+connectAttr "TreasureCaveSetRN2.phl[17]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface127|polySurfaceShape127.iog" "TreasureCaveSetRN2.phl[22]"
+connectAttr "TreasureCaveSetRN2.phl[18]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface126|polySurfaceShape126.iog" "TreasureCaveSetRN2.phl[23]"
+connectAttr "TreasureCaveSetRN2.phl[19]" "TreasureCaveSetRN2.phl[20]";
+connectAttr "TreasureCaveSetRN2.phl[21]" "TreasureCaveSetRN2.phl[22]";
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface129|polySurfaceShape129.iog" "TreasureCaveSetRN2.phl[23]"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface125|polySurfaceShape125.iog" "TreasureCaveSetRN2.phl[24]"
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface128|polySurfaceShape128.iog" "TreasureCaveSetRN2.phl[24]"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface124|polySurfaceShape124.iog" "TreasureCaveSetRN2.phl[25]"
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface127|polySurfaceShape127.iog" "TreasureCaveSetRN2.phl[25]"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface123|polySurfaceShape123.iog" "TreasureCaveSetRN2.phl[26]"
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface126|polySurfaceShape126.iog" "TreasureCaveSetRN2.phl[26]"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface122|polySurfaceShape122.iog" "TreasureCaveSetRN2.phl[27]"
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface125|polySurfaceShape125.iog" "TreasureCaveSetRN2.phl[27]"
 		;
-connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface121|polySurfaceShape121.iog" "TreasureCaveSetRN2.phl[28]"
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface124|polySurfaceShape124.iog" "TreasureCaveSetRN2.phl[28]"
 		;
-connectAttr "TreasureCaveSet2:groupId432.msg" "TreasureCaveSetRN2.phl[29]";
-connectAttr "TreasureCaveSet2:groupId433.msg" "TreasureCaveSetRN2.phl[30]";
-connectAttr "TreasureCaveSetRN2.phl[31]" "TreasureCaveSetRN2.phl[32]";
-connectAttr "TreasureCaveSetRN2.phl[33]" "TreasureCaveSetRN2.phl[34]";
-connectAttr "TreasureCaveSetRN2.phl[35]" "TreasureCaveSetRN2.phl[36]";
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface123|polySurfaceShape123.iog" "TreasureCaveSetRN2.phl[29]"
+		;
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface122|polySurfaceShape122.iog" "TreasureCaveSetRN2.phl[30]"
+		;
+connectAttr "|TreasureCaveSetRN2fosterParent1|CobbleStone_60|floor1|polySurface121|polySurfaceShape121.iog" "TreasureCaveSetRN2.phl[31]"
+		;
+connectAttr "TreasureCaveSet2:groupId432.msg" "TreasureCaveSetRN2.phl[32]";
+connectAttr "TreasureCaveSet2:groupId433.msg" "TreasureCaveSetRN2.phl[33]";
+connectAttr "TreasureCaveSetRN2.phl[34]" "TreasureCaveSetRN2.phl[35]";
+connectAttr "TreasureCaveSetRN2.phl[36]" "TreasureCaveSetRN2.phl[37]";
+connectAttr "TreasureCaveSetRN2.phl[38]" "TreasureCaveSetRN2.phl[39]";
 connectAttr "DragonGateTorchRN.phl[1]" "standardSurface1SG.dsm" -na;
 connectAttr "DragonGateTorchRN.phl[2]" "standardSurface1SG.dsm" -na;
 connectAttr "DragonGateTorchRN.phl[3]" "standardSurface1SG.dsm" -na;
@@ -216546,14 +216564,6 @@ connectAttr "|Chain_Grp|Chain3|chainSegment1|pTorus3|pTorusShape3.iog" "Material
 connectAttr "Material_Ref3:Generic_Metal_MatSG.msg" "materialInfo4.sg";
 connectAttr "Material_Ref3:Generic_Metal_Mat.msg" "materialInfo4.m";
 connectAttr "Material_Ref3:pasted__pasted__file13.msg" "materialInfo4.t" -na;
-connectAttr "Material_Ref:file13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "Material_Ref:Marble_Mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Material_Ref:standardSurface5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
-		;
-connectAttr "Material_Ref:place2dTexture13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
 connectAttr "standardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "Material_Ref:standardSurface5SG.pa" ":renderPartition.st" -na;
 connectAttr "Material_Ref3:Generic_Metal_MatSG.pa" ":renderPartition.st" -na;

@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: DragonGateCaveSet.ma
-//Last modified: Sun, Apr 05, 2026 06:42:36 PM
+//Last modified: Sun, Apr 05, 2026 09:00:35 PM
 //Codeset: 1252
 file -rdi 1 -ns "DragonGate" -rfn "DragonGateRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/dragonGate/DragonGate.ma";
@@ -44,13 +44,14 @@ requires -nodeType "ikSpringSolver" "ikSpringSolver" "1.0";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
 		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.2.1.1";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "7FBDBC53-49A3-76CE-7583-A38DCB5B4DC0";
+fileInfo "UUID" "A4AE6400-47F1-BA3A-3343-2598229E4862";
 createNode transform -s -n "persp";
 	rename -uid "E27BC156-4915-FCDD-C8E6-B982662FF12E";
 	setAttr ".v" no;
@@ -105778,20 +105779,20 @@ createNode mesh -n "polySurfaceShape3" -p "|CaveSet|Stalagmite_01_07|pCube4";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2D01CA56-49CF-F787-7268-E6BA621996AE";
+	rename -uid "62B2AC46-4A3D-49E7-17A0-4A900686A854";
 	setAttr -s 74 ".lnk";
 	setAttr -s 74 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "EB58FDA3-4E22-ED3C-628D-3D96E2DB2466";
+	rename -uid "340CE6B0-46C8-94FD-84FF-4CA1578D8C30";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "FAC5C488-4272-9E00-8920-1A98D4C8DEAF";
+	rename -uid "95A879FC-457D-2778-1722-66850C9088D6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D9DDFD0B-426B-6542-9B26-07B7B3CEE6D5";
+	rename -uid "CB2CE271-4F64-C3ED-F74C-1D9DF2F7F4B4";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "BDF567D6-44B6-150E-0247-B18420EF87F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A6740524-4CE3-7483-65FE-D1B7432DE01C";
+	rename -uid "0D9C0056-4F96-7F52-79C6-229BADC5827A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2DC61098-487B-D616-65ED-A288A155BAB4";
 	setAttr ".g" yes;
@@ -109930,7 +109931,7 @@ createNode reference -n "DragonGateRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DragonGateRN"
 		"DragonGateRN" 0
-		"DragonGateRN" 7
+		"DragonGateRN" 8
 		0 "|DragonGate:DragonGate" "|CaveSet" "-s -r "
 		2 "|CaveSet|DragonGate:DragonGate" "visibility" " 1"
 		2 "|CaveSet|DragonGate:DragonGate" "translate" " -type \"double3\" -2134.32791055737970964 -400 1057.19712774626009377"
@@ -109940,7 +109941,8 @@ createNode reference -n "DragonGateRN";
 		2 "|CaveSet|DragonGate:DragonGate|DragonGate:Gate" "translate" " -type \"double3\" 0 0 0"
 		
 		2 "|CaveSet|DragonGate:DragonGate|DragonGate:Gate|DragonGate:Horizontal|DragonGate:Gate_H_01" 
-		"translate" " -type \"double3\" 0 2.15773923094308273 0";
+		"translate" " -type \"double3\" 0 2.15773923094308273 0"
+		3 "DragonGate:file3.outColor" ":internal_standInShader.incandescence" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
@@ -110496,17 +110498,21 @@ createNode polySoftEdge -n "polySoftEdge6";
 	setAttr ".a" 180;
 createNode reference -n "Material_RefRN";
 	rename -uid "6E582C32-4AA8-F438-996E-B6AF5F4AD716";
-	setAttr -s 6 ".phl";
+	setAttr -s 10 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
 	setAttr ".phl[5]" 0;
 	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".phl[9]" 0;
+	setAttr ".phl[10]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Material_RefRN"
 		"Material_RefRN" 0
-		"Material_RefRN" 12
+		"Material_RefRN" 22
 		2 "Material_Ref:AppermentFloorDisplacement" "aiDisplacementPadding" " 0.0010000000474974513"
 		
 		2 "Material_Ref:AppartmentWallDisplacemnt" "aiDisplacementPadding" " 0.0010000000474974513"
@@ -110519,10 +110525,22 @@ createNode reference -n "Material_RefRN";
 		
 		2 "Material_Ref:cave4Displacement" "aiDisplacementPadding" " 0.0010000000474974513"
 		
+		3 "Material_Ref:Cave3Displacemnt.displacement" "Material_Ref:displacementShader5SG.displacementShader" 
+		""
+		3 "Material_Ref:AppermentFloorDisplacement.displacement" "Material_Ref:standardSurface2SG.displacementShader" 
+		""
+		3 "Material_Ref:cave4Displacement.displacement" "Material_Ref:displacementShader6SG.displacementShader" 
+		""
 		3 "Material_Ref:pasted__aiMultiply2.message" "Material_Ref:materialInfo3.texture" 
 		"-na"
 		3 "Material_Ref:pasted__pasted__aiMultiply1.message" "Material_Ref:materialInfo4.texture" 
 		"-na"
+		3 "Material_Ref:AppartmentWallDisplacemnt.displacement" "Material_Ref:displacementShader1SG.displacementShader" 
+		""
+		3 "Material_Ref:CaveFloorDisplacement.displacement" "Material_Ref:displacementShader2SG.displacementShader" 
+		""
+		3 "Material_Ref:Cave2Displacement.displacement" "Material_Ref:Cave2Displacement5.displacementShader" 
+		""
 		5 4 "Material_RefRN" "Material_Ref:displacementShader2SG.dagSetMembers" 
 		"Material_RefRN.placeHolderList[1]" ""
 		5 0 "Material_RefRN" "Material_Ref:pasted__file5.message" "Material_Ref:materialInfo3.texture" 
@@ -110530,7 +110548,15 @@ createNode reference -n "Material_RefRN";
 		5 4 "Material_RefRN" "Material_Ref:Cave2Displacement5.dagSetMembers" 
 		"Material_RefRN.placeHolderList[4]" ""
 		5 0 "Material_RefRN" "Material_Ref:pasted__pasted__file1.message" "Material_Ref:materialInfo4.texture" 
-		"Material_RefRN.placeHolderList[5]" "Material_RefRN.placeHolderList[6]" "";
+		"Material_RefRN.placeHolderList[5]" "Material_RefRN.placeHolderList[6]" ""
+		5 3 "Material_RefRN" "Material_Ref:cave4Displacement.message" "Material_RefRN.placeHolderList[7]" 
+		""
+		5 3 "Material_RefRN" "Material_Ref:displacementShader6SG.message" "Material_RefRN.placeHolderList[8]" 
+		""
+		5 3 "Material_RefRN" "Material_Ref:file10.message" "Material_RefRN.placeHolderList[9]" 
+		""
+		5 3 "Material_RefRN" "Material_Ref:place2dTexture10.message" "Material_RefRN.placeHolderList[10]" 
+		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode polyTweakUV -n "polyTweakUV11";
@@ -111125,10 +111151,23 @@ createNode reference -n "_UNKNOWN_REF_NODE_";
 		
 		2 ":openPBR_shader1" "sr" " 0.5";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "81DF3560-4C56-4295-9719-D59F1D38379E";
+	rename -uid "A1E131DD-4AC1-C533-43FB-38B47C6F3DC8";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -438.88887144901207 -175.39681842718201 ;
-	setAttr ".tgi[0].vh" -type "double2" 439.68252221112596 174.60316766506807 ;
+	setAttr ".tgi[0].vl" -type "double2" -158.86736392939062 -89.340526246324686 ;
+	setAttr ".tgi[0].vh" -type "double2" 1185.252949552176 443.69363601059297 ;
+	setAttr -s 4 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" 877.14288330078125;
+	setAttr ".tgi[0].ni[0].y" 262.85714721679688;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 570;
+	setAttr ".tgi[0].ni[1].y" 218.57142639160156;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 262.85714721679688;
+	setAttr ".tgi[0].ni[2].y" 241.42857360839844;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" -44.285713195800781;
+	setAttr ".tgi[0].ni[3].y" 218.57142639160156;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -111521,6 +111560,14 @@ connectAttr "Ground03Shape.iog" "Material_RefRN.phl[1]";
 connectAttr "Material_RefRN.phl[2]" "Material_RefRN.phl[3]";
 connectAttr "Walls_03Shape.iog" "Material_RefRN.phl[4]";
 connectAttr "Material_RefRN.phl[5]" "Material_RefRN.phl[6]";
+connectAttr "Material_RefRN.phl[7]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_RefRN.phl[8]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_RefRN.phl[9]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_RefRN.phl[10]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
 connectAttr "polyTweakUV11.out" "Walls_03Shape.i";
 connectAttr "polyTweakUV11.uvtk[0]" "Walls_03Shape.uvst[0].uvtw";
 connectAttr "polyTweakUV9.out" "Ground03Shape.i";

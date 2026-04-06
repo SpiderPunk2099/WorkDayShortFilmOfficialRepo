@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: CaveWalls.ma
-//Last modified: Sun, Apr 05, 2026 06:41:39 PM
+//Last modified: Sun, Apr 05, 2026 09:01:32 PM
 //Codeset: 1252
 requires maya "2023";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "37337042-43EC-8FAD-FCEE-36856FB103C2";
+fileInfo "UUID" "27B80988-4F4A-6E4D-E907-8C8A609A7089";
 createNode transform -s -n "persp";
 	rename -uid "E27BC156-4915-FCDD-C8E6-B982662FF12E";
 	setAttr ".v" no;
@@ -33497,20 +33497,20 @@ createNode transform -n "Material_Ref:fluidTexture2D1";
 createNode transform -n "Material_Ref:fluidTexture2D2";
 	rename -uid "5C1B69E1-484E-33AD-1920-BA95464501CE";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "6A6C187C-4F0E-B718-1745-10B70A683427";
+	rename -uid "3B2A41F0-4DCE-7BBC-030C-B993DD7C0D5E";
 	setAttr -s 19 ".lnk";
 	setAttr -s 19 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E741A4F9-454E-6986-C935-8CA229CFA232";
+	rename -uid "3F4B86C7-40C0-75E4-C766-7DA0695F68B8";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "14DCE238-422C-B05D-325D-F18CE1300EA2";
+	rename -uid "B6407FF5-4A2F-A733-98DC-E797FD594B29";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E9EE2869-4AC1-0B29-9092-CFBE51AA83BE";
+	rename -uid "43ECC412-47C5-7FAD-5441-21B0E04A459A";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "BDF567D6-44B6-150E-0247-B18420EF87F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "075D3B42-4D63-3293-DB94-D2BC0D97A6C0";
+	rename -uid "78B4FE83-4F8E-3E11-4AD8-2DB58C26923F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2DC61098-487B-D616-65ED-A288A155BAB4";
 	setAttr ".g" yes;
@@ -41673,7 +41673,7 @@ createNode displacementShader -n "Material_Ref:cave4Displacement";
 createNode shadingEngine -n "Material_Ref:displacementShader6SG";
 	rename -uid "456056FA-44D9-3DAC-89C8-FFB5A5C4F7CB";
 	setAttr ".ihi" 0;
-	setAttr -s 4 ".dsm";
+	setAttr -s 3 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Material_Ref:materialInfo7";
 	rename -uid "F6FDFF65-4453-6242-133B-C1B2103A456D";
@@ -41794,10 +41794,23 @@ createNode nodeGraphEditorInfo -n "Material_Ref:hyperShadePrimaryNodeEditorSaved
 	setAttr ".tgi[0].ni[5].y" -4684.28564453125;
 	setAttr ".tgi[0].ni[5].nvs" 1923;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "1CDA6661-4311-F73F-EDFD-10B8AD28B882";
+	rename -uid "A65CEEC7-4149-EEE8-EFE3-28A9F3D3629E";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -438.88887144901207 -175.39681842718201 ;
-	setAttr ".tgi[0].vh" -type "double2" 439.68252221112596 174.60316766506807 ;
+	setAttr ".tgi[0].vl" -type "double2" -636.58838324114481 -177.59233118424604 ;
+	setAttr ".tgi[0].vh" -type "double2" 707.13663141848883 355.28506848655724 ;
+	setAttr -s 4 ".tgi[0].ni";
+	setAttr ".tgi[0].ni[0].x" -522.85711669921875;
+	setAttr ".tgi[0].ni[0].y" 130;
+	setAttr ".tgi[0].ni[0].nvs" 1923;
+	setAttr ".tgi[0].ni[1].x" 91.428573608398438;
+	setAttr ".tgi[0].ni[1].y" 130;
+	setAttr ".tgi[0].ni[1].nvs" 1923;
+	setAttr ".tgi[0].ni[2].x" 398.57144165039062;
+	setAttr ".tgi[0].ni[2].y" 174.28572082519531;
+	setAttr ".tgi[0].ni[2].nvs" 1923;
+	setAttr ".tgi[0].ni[3].x" -215.71427917480469;
+	setAttr ".tgi[0].ni[3].y" 152.85714721679688;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -42115,8 +42128,6 @@ connectAttr "Material_Ref:aiNormalMap1.out" "Material_Ref:Appartment_Floor_Mat.n
 		;
 connectAttr "Material_Ref:Appartment_Floor_Mat.oc" "Material_Ref:standardSurface2SG.ss"
 		;
-connectAttr "Material_Ref:AppermentFloorDisplacement.d" "Material_Ref:standardSurface2SG.ds"
-		;
 connectAttr "Material_Ref:standardSurface2SG.msg" "Material_Ref:materialInfo1.sg"
 		;
 connectAttr "Material_Ref:Appartment_Floor_Mat.msg" "Material_Ref:materialInfo1.m"
@@ -42410,8 +42421,6 @@ connectAttr "Material_Ref:pasted__place2dTexture4.o" "Material_Ref:pasted__file4
 connectAttr "Material_Ref:pasted__place2dTexture4.ofs" "Material_Ref:pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file6.ocr" "Material_Ref:AppartmentWallDisplacemnt.d";
-connectAttr "Material_Ref:AppartmentWallDisplacemnt.d" "Material_Ref:displacementShader1SG.ds"
-		;
 connectAttr "Material_Ref:Appartment_Wall_Mat.oc" "Material_Ref:displacementShader1SG.ss"
 		;
 connectAttr "Material_Ref:displacementShader1SG.msg" "Material_Ref:materialInfo2.sg"
@@ -42614,8 +42623,6 @@ connectAttr "Material_Ref:pasted__place2dTexture8.o" "Material_Ref:pasted__file8
 connectAttr "Material_Ref:pasted__place2dTexture8.ofs" "Material_Ref:pasted__file8.fs"
 		;
 connectAttr "Material_Ref:file7.ocr" "Material_Ref:CaveFloorDisplacement.d";
-connectAttr "Material_Ref:CaveFloorDisplacement.d" "Material_Ref:displacementShader2SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Floor_Mat.oc" "Material_Ref:displacementShader2SG.ss"
 		;
 connectAttr "|CaveWall_02|Ground02|Ground02Shape.iog" "Material_Ref:displacementShader2SG.dsm"
@@ -42838,8 +42845,6 @@ connectAttr "Material_Ref:pasted__pasted__place2dTexture4.o" "Material_Ref:paste
 connectAttr "Material_Ref:pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file8.ocr" "Material_Ref:Cave2Displacement.d";
-connectAttr "Material_Ref:Cave2Displacement.d" "Material_Ref:Cave2Displacement5.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_2_Mat.oc" "Material_Ref:Cave2Displacement5.ss"
 		;
 connectAttr "Material_Ref:Cave2Displacement5.msg" "Material_Ref:materialInfo4.sg"
@@ -43064,8 +43069,6 @@ connectAttr "Material_Ref:pasted__displacementShader4SG.msg" "Material_Ref:paste
 connectAttr "Material_Ref:pasted__displacementShader4SG1.msg" "Material_Ref:pasted__materialInfo6.sg"
 		;
 connectAttr "Material_Ref:file9.ocr" "Material_Ref:Cave3Displacemnt.d";
-connectAttr "Material_Ref:Cave3Displacemnt.d" "Material_Ref:displacementShader5SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_3_Mat.oc" "Material_Ref:displacementShader5SG.ss"
 		;
 connectAttr "Material_Ref:displacementShader5SG.msg" "Material_Ref:materialInfo6.sg"
@@ -43284,8 +43287,6 @@ connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.o" "Ma
 connectAttr "Material_Ref:pasted__pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__pasted__pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file10.ocr" "Material_Ref:cave4Displacement.d";
-connectAttr "Material_Ref:cave4Displacement.d" "Material_Ref:displacementShader6SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_4_Mat.oc" "Material_Ref:displacementShader6SG.ss"
 		;
 connectAttr "Walls_02Shape.iog" "Material_Ref:displacementShader6SG.dsm" -na;
@@ -43522,6 +43523,14 @@ connectAttr "Material_Ref:pasted__pasted__file12.msg" "Material_Ref:hyperShadePr
 		;
 connectAttr "Material_Ref:Brown_Paint_MatSG.msg" "Material_Ref:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
+connectAttr "Material_Ref:place2dTexture10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+		;
+connectAttr "Material_Ref:cave4Displacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+		;
+connectAttr "Material_Ref:displacementShader6SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+		;
+connectAttr "Material_Ref:file10.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+		;
 connectAttr "aiStandardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "aiStandardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "Walls_03SG.pa" ":renderPartition.st" -na;
@@ -43717,4 +43726,7 @@ connectAttr "|CaveWall_01|Ground02|Ground02Shape.ciog.cog[0]" ":initialShadingGr
 connectAttr "Walls01Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId4.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ir";
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ig";
+connectAttr "Material_Ref:cave4Displacement.d" ":internal_standInShader.ib";
 // End of CaveWalls.ma
