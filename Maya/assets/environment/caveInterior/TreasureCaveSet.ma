@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: TreasureCaveSet.ma
-//Last modified: Sun, Apr 05, 2026 06:47:44 PM
+//Last modified: Sun, Apr 05, 2026 09:00:57 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Jonat/OneDrive/Documents/GitRepos/WorkDayShortFilm/WorkDayShortFilmOfficialRepo/Maya/assets/characters/skeleton/Skeleton.ma";
@@ -21,7 +21,7 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202511291957-757d6cf478";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "C046C6AD-47EC-1F3B-E7EA-308D0376F74F";
+fileInfo "UUID" "AEF1DE4C-4059-43A0-3368-98BAD3154F22";
 createNode transform -s -n "persp";
 	rename -uid "B5982084-4183-A072-6261-4CAEBBEF777C";
 	setAttr ".v" no;
@@ -240934,15 +240934,15 @@ createNode mesh -n "Stalagmite_4:polySurfaceShape3" -p "Stalagmite_4:Top";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2E17C361-45C5-B849-7D1B-E5A80144EF90";
-	setAttr -s 129 ".lnk";
-	setAttr -s 129 ".slnk";
+	rename -uid "F71C7F9F-4590-05EB-FD58-2997944B484D";
+	setAttr -s 50 ".lnk";
+	setAttr -s 50 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "1E1EE450-4FBD-735E-9907-F7BC3C6C7848";
+	rename -uid "EE99E36F-419D-2CA8-E847-28B6599AFAC0";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "DC24D3A4-4A19-5C93-3E57-DEA9332F8040";
+	rename -uid "76B9A110-4A6A-B56B-93CF-C4AFA214EB0A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4DC5ACA7-40AE-3AEA-44B4-A4826A1CD522";
+	rename -uid "7AD25A38-4F5B-CC84-0C30-E3BB0F0F9617";
 	setAttr ".cdl" 2;
 	setAttr -s 14 ".dli[1:13]"  1 11 2 3 4 5 6 7 
 		8 9 10 12 13;
@@ -240951,7 +240951,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "2528202E-485C-6AEC-D48F-0481B5BE070C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C9BDFD2E-4EB1-DE91-67DB-08AC906D7979";
+	rename -uid "67948285-45CB-F08F-F70F-4492AC15BA36";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4F3627E4-46B7-9264-C29C-17BA14FE5D8B";
 	setAttr ".g" yes;
@@ -269431,7 +269431,7 @@ createNode standardSurface -n "Material_Ref:Marble_Mat";
 createNode shadingEngine -n "Material_Ref:standardSurface5SG";
 	rename -uid "DE983DF6-48D6-EE46-DD9B-9D851D6FBEAF";
 	setAttr ".ihi" 0;
-	setAttr -s 128 ".dsm";
+	setAttr -s 127 ".dsm";
 	setAttr ".ro" yes;
 	setAttr -s 106 ".gn";
 createNode materialInfo -n "Material_Ref:materialInfo11";
@@ -270548,8 +270548,6 @@ createNode file -n "Coin_WithLip14:file3";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Coin_WithLip14:place2dTexture3";
 	rename -uid "A0AB21D4-48DA-8E95-CE24-8380A79112B8";
-createNode mayaUsdLayerManager -n "Coin_WithLip14:mayaUsdLayerManager1";
-	rename -uid "23528A5C-4F57-89DC-369A-B4B52E1D1FB2";
 createNode nodeGraphEditorInfo -n "Coin_WithLip14:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "FF7CB283-481C-DCE2-A53C-108223916F55";
 	setAttr ".def" no;
@@ -280686,23 +280684,23 @@ createNode file -n "file4";
 createNode place2dTexture -n "place2dTexture4";
 	rename -uid "5B83B992-4FF1-EA9F-5A2B-1E8CBA1A108C";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "59B01D4D-4220-ECBC-A112-A6B4942D0C6E";
+	rename -uid "81430B3C-415E-A47E-B6FE-79AEBB21F273";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -1.1175898486913283 -1467.4602591486857 ;
-	setAttr ".tgi[0].vh" -type "double2" 2891.5936654676816 -315.07935255923638 ;
+	setAttr ".tgi[0].vl" -type "double2" 789.8490405088985 -1131.8024226512568 ;
+	setAttr ".tgi[0].vh" -type "double2" 2133.566619346786 -598.92797178419926 ;
 	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 687.14288330078125;
-	setAttr ".tgi[0].ni[0].y" -205.71427917480469;
+	setAttr ".tgi[0].ni[0].x" 1825.7142333984375;
+	setAttr ".tgi[0].ni[0].y" -780;
 	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" 7.1428570747375488;
-	setAttr ".tgi[0].ni[1].y" -204.28572082519531;
+	setAttr ".tgi[0].ni[1].x" 1518.5714111328125;
+	setAttr ".tgi[0].ni[1].y" -824.28570556640625;
 	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" -300;
-	setAttr ".tgi[0].ni[2].y" -227.14285278320312;
+	setAttr ".tgi[0].ni[2].x" 1211.4285888671875;
+	setAttr ".tgi[0].ni[2].y" -801.4285888671875;
 	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 338.57144165039062;
-	setAttr ".tgi[0].ni[3].y" -182.85714721679688;
-	setAttr ".tgi[0].ni[3].nvs" 2387;
+	setAttr ".tgi[0].ni[3].x" 904.28570556640625;
+	setAttr ".tgi[0].ni[3].y" -824.28570556640625;
+	setAttr ".tgi[0].ni[3].nvs" 1923;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -283921,8 +283919,6 @@ connectAttr "Material_Ref:pasted__place2dTexture8.o" "Material_Ref:pasted__file8
 connectAttr "Material_Ref:pasted__place2dTexture8.ofs" "Material_Ref:pasted__file8.fs"
 		;
 connectAttr "Material_Ref:file7.ocr" "Material_Ref:CaveFloorDisplacement.d";
-connectAttr "Material_Ref:CaveFloorDisplacement.d" "Material_Ref:displacementShader2SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Floor_Mat.oc" "Material_Ref:displacementShader2SG.ss"
 		;
 connectAttr "|Treasure_Set|Front_Wall|Walls|polySurface142|polySurfaceShape142.iog" "Material_Ref:displacementShader2SG.dsm"
@@ -284145,8 +284141,6 @@ connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.o" "Material_R
 connectAttr "Material_Ref:pasted__pasted__pasted__place2dTexture4.ofs" "Material_Ref:pasted__pasted__pasted__file4.fs"
 		;
 connectAttr "Material_Ref:file9.ocr" "Material_Ref:Cave3Displacemnt.d";
-connectAttr "Material_Ref:Cave3Displacemnt.d" "Material_Ref:displacementShader5SG.ds"
-		;
 connectAttr "Material_Ref:Cave_Wall_3_Mat.oc" "Material_Ref:displacementShader5SG.ss"
 		;
 connectAttr "|Treasure_Set|Back_Wall|Back_Wall|polySurface49|polySurfaceShape60.iog" "Material_Ref:displacementShader5SG.dsm"
@@ -288295,13 +288289,13 @@ connectAttr "place2dTexture4.vt3" "file4.vt3";
 connectAttr "place2dTexture4.vc1" "file4.vc1";
 connectAttr "place2dTexture4.o" "file4.uv";
 connectAttr "place2dTexture4.ofs" "file4.fs";
-connectAttr "Material_Ref:standardSurface5SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
+connectAttr "Material_Ref:displacementShader2SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
 		;
-connectAttr "Material_Ref:file13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
+connectAttr "Material_Ref:CaveFloorDisplacement.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
 		;
-connectAttr "Material_Ref:place2dTexture13.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "Material_Ref:file7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "Material_Ref:Marble_Mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
+connectAttr "Material_Ref:place2dTexture7.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
 		;
 connectAttr "Pillars1:polySurface130SG.pa" ":renderPartition.st" -na;
 connectAttr "Pillars1:polySurface131SG.pa" ":renderPartition.st" -na;
@@ -288994,4 +288988,7 @@ connectAttr "Stalagmite_1:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_1:groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_4:groupId3.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Stalagmite_4:groupId5.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Material_Ref:CaveFloorDisplacement.d" ":internal_standInShader.ir";
+connectAttr "Material_Ref:CaveFloorDisplacement.d" ":internal_standInShader.ig";
+connectAttr "Material_Ref:CaveFloorDisplacement.d" ":internal_standInShader.ib";
 // End of TreasureCaveSet.ma
