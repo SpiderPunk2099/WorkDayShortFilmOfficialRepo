@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Shot#4(Josh).ma
-//Last modified: Thu, Apr 02, 2026 06:51:03 PM
+//Last modified: Mon, Apr 06, 2026 03:05:28 PM
 //Codeset: 1252
 file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 1 -ns "NightCap" -rfn "NightCapRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/nightCap/NightCap.ma";
@@ -18,29 +18,30 @@ file -r -ns "BedroomProps_ceiling" -dr 1 -rfn "BedroomProps_ceilingRN" -op "v=0;
 file -r -ns "Door" -dr 1 -rfn "DoorRN" -op "v=0;" -typ "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/door/Door.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
-		 "mtoa" "5.5.4.2";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiAreaLight"
+		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.5.4.2";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "AFDB0BEC-4500-DFB2-22D4-99B215871694";
+fileInfo "UUID" "9521F351-46C9-E181-B80E-B088FF183BBB";
 createNode transform -s -n "persp";
 	rename -uid "57DA1D56-4850-216E-6151-CE94C8460881";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1082.4116140332565 9.1985168848542962 -6.9841780731904279 ;
-	setAttr ".r" -type "double3" -6.5999999999653571 -2809.5999999999949 1.1851765531430547e-15 ;
+	setAttr ".t" -type "double3" 835.70064635686822 48.841264072900856 -552.80771542919445 ;
+	setAttr ".r" -type "double3" -9.6000000000002164 -2788.3999999998027 -2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "15D5E5DB-42FB-061D-F841-0D92BCECBA0D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 848.41020543679838;
+	setAttr ".coi" 987.71879487439867;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -68.031285069089193 -54.568830199563678 164.54725221028878 ;
+	setAttr ".tp" -type "double3" -150.51274114131292 -86.181563250459448 -543.60294082780274 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "35F4CC91-44E0-7EB5-0B00-5692634FFA9E";
@@ -205,8 +206,24 @@ createNode transform -n "Door_grp" -p "Props";
 	setAttr ".t" -type "double3" -48.757982514004972 -200.96888845393042 161.63028172880811 ;
 	setAttr ".r" -type "double3" 0 180 0 ;
 	setAttr ".s" -type "double3" 30 30 30 ;
+createNode transform -n "aiAreaLight1";
+	rename -uid "89632818-420D-971A-F63C-7796B726CF0C";
+	setAttr ".t" -type "double3" -144.90852446218028 16.189703307796993 -638.81826473364845 ;
+	setAttr ".r" -type "double3" -150.71562398703654 5.3377291016927 -6.7845410451728663 ;
+	setAttr ".s" -type "double3" 62.406082447625352 62.406082447625352 62.406082447625352 ;
+createNode aiAreaLight -n "aiAreaLightShape1" -p "aiAreaLight1";
+	rename -uid "2DAF385C-4CF3-8C8C-BF2E-728360DF9026";
+	addAttr -ci true -h true -sn "aal" -ln "attributeAliasList" -dt "attributeAlias";
+	setAttr -k off ".v";
+	setAttr ".csh" no;
+	setAttr ".rcsh" no;
+	setAttr ".ai_exposure" 15;
+	setAttr ".ai_use_color_temperature" yes;
+	setAttr ".ai_color_temperature" 5000;
+	setAttr ".ai_translator" -type "string" "quad";
+	setAttr ".aal" -type "attributeAlias" 4 "exposure" "aiExposure" "normalize" "aiNormalize" ;
 createNode fosterParent -n "NightCapRNfosterParent1";
-	rename -uid "F4B60F94-498A-A24C-6C7C-C684FBFFD720";
+	rename -uid "D80FC380-4B33-3824-C737-F88640DF9939";
 createNode parentConstraint -n "NightCap_parentConstraint1" -p "NightCapRNfosterParent1";
 	rename -uid "EDA33881-4974-0ACA-D5B2-96BFB3BDF3D5";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Head_CtrlW0" -dv 1 -min 0 -at "double";
@@ -224,20 +241,20 @@ createNode parentConstraint -n "NightCap_parentConstraint1" -p "NightCapRNfoster
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 14.710725009752906 -2.8760950583695433 2.9657828724385915 ;
 	setAttr ".tg[0].tor" -type "double3" 170.70960707002632 -88.429774139388769 78.321879939990424 ;
-	setAttr ".lr" -type "double3" -17.065977030254455 164.43687181392275 0 ;
+	setAttr ".lr" -type "double3" -9.0145389261711912 164.37422807799865 -0.74451910662149112 ;
 	setAttr ".rst" -type "double3" -167.88127206098662 -243.02321584889989 -526.588169663185 ;
 	setAttr ".rsrr" -type "double3" -17.065977030254455 164.43687181392275 0 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "52283C37-4C2E-8438-5BCF-5CBD7CB62AC4";
+	rename -uid "A229F04B-4918-1704-44FA-A78A0B3BB189";
 	setAttr -s 121 ".lnk";
 	setAttr -s 121 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9865121F-4BEF-B48B-8587-1D8B676B202F";
+	rename -uid "E7E6D6A3-427E-5538-3424-3EAAECA06DE2";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4C5E4406-482B-B7E7-2279-E59E6363433F";
+	rename -uid "1A1D0D3C-4106-528C-9563-CB9D0658E753";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "CE004EA5-40A4-5D15-1D1F-4AA5A5B83B9F";
+	rename -uid "2BF4C2FE-46D4-F483-283D-22A578AF583B";
 	setAttr ".cdl" 1;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 3 ".dli";
@@ -245,13 +262,15 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "3A14901C-41F4-FCF0-1C21-0384CEF4BF0C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "765F7F64-44C9-310A-9C93-F9B92701ED66";
+	rename -uid "632168DE-4CD5-1E64-BD9A-99BD7916B4EE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C66735DA-449E-795D-CACD-A0AF9E7B42E8";
 	setAttr ".g" yes;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "A685328D-45E9-D233-E751-9C9407D645FD";
+	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "5.2.1.1";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=Render_CamShape;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "2419ADBE-48ED-ECE4-0FDA-BCBCF8FFDC9A";
 	setAttr ".ai_translator" -type "string" "gaussian";
@@ -278,7 +297,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -docTag \"RADRENDER\" \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n"
 		+ "            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
-		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1146\n            -height 706\n            -sceneRenderFilter 0\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n"
 		+ "            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n"
 		+ "            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n"
 		+ "            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n"
@@ -548,7 +567,7 @@ createNode reference -n "SkeletonRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SkeletonRN"
 		"SkeletonRN" 0
-		"SkeletonRN" 260
+		"SkeletonRN" 261
 		1 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Hip_Ctrl_Grp|Skeleton:Hip_Ctrl|Skeleton:Hip_CtrlShape" 
 		"lockLength" "ll" " -ci 1 -k 1 -min 0 -max 1 -at \"bool\""
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl" 
@@ -556,6 +575,8 @@ createNode reference -n "SkeletonRN";
 		
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl" 
 		"rotate" " -type \"double3\" -90 90 0"
+		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl" 
+		"Body_Poly" " -k 1 1"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl" 
 		"translate" " -type \"double3\" 0 0 -16.17748365308742109"
 		2 "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl|Skeleton:COG_Ctrl_Grp|Skeleton:COG_Ctrl|Skeleton:Hip_Ctrl_Grp|Skeleton:Hip_Ctrl|Skeleton:Hip_CtrlShape" 
@@ -585,18 +606,18 @@ createNode reference -n "SkeletonRN";
 		2 "Skeleton:Ctrl_Layer" "visibility" " 0"
 		2 "Skeleton:Ctrl_Layer" "displayOrder" " 19"
 		2 "Skeleton:Loc_Layer" "displayOrder" " 25"
-		2 "Skeleton:file1" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDay/Textures/Skeleton/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
+		2 "Skeleton:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
 		
 		2 "Skeleton:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		2 "Skeleton:file1" "viewNameUsed" " 0"
 		2 "Skeleton:file1" "viewNameStr" " -type \"string\" \"<N/A>\""
 		2 "Skeleton:file2" "alphaIsLuminance" " 0"
-		2 "Skeleton:file2" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDay/Textures/Skeleton/SkellyTemp_Toes_lambert1_Normal.1001.png\""
+		2 "Skeleton:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Normal.1001.png\""
 		
 		2 "Skeleton:file2" "colorSpace" " -type \"string\" \"Raw\""
 		2 "Skeleton:file2" "viewNameUsed" " 0"
 		2 "Skeleton:file2" "viewNameStr" " -type \"string\" \"<N/A>\""
-		2 "Skeleton:file3" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDay/Textures/Skeleton/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
+		2 "Skeleton:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
 		
 		2 "Skeleton:file3" "colorSpace" " -type \"string\" \"Raw\""
 		2 "Skeleton:file3" "viewNameUsed" " 0"
@@ -3140,10 +3161,10 @@ createNode reference -n "BedroomProps_ceilingRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BedroomProps_ceilingRN"
 		"BedroomProps_ceiling:BedroomLighting:BedroomExtraLightingRN" 0
-		"BedroomProps_ceiling:Book_VariationsRN" 0
 		"BedroomProps_ceiling:chestOfDrawersRN" 1
 		0 "|BedroomProps_ceiling:chestOfDrawers:chestOfDrawers" "|Props" "-s -r "
 		
+		"BedroomProps_ceiling:Book_VariationsRN" 0
 		"BedroomProps_ceiling:AxeRN" 1
 		0 "|BedroomProps_ceiling:Axe:Axe" "|Props" "-s -r "
 		"BedroomProps_ceiling:BedroomLightingRN" 0
@@ -3155,7 +3176,7 @@ createNode reference -n "BedroomProps_ceilingRN";
 		"BedroomProps_ceiling:calanderRN" 1
 		0 "|BedroomProps_ceiling:calander:polySurface15" "|Props" "-s -r "
 		"BedroomProps_ceilingRN" 0
-		"BedroomProps_ceilingRN" 21
+		"BedroomProps_ceilingRN" 56
 		0 "|BedroomProps_ceiling:pCube1" "|Background" "-s -r "
 		0 "|BedroomProps_ceiling:pCube2" "|Background" "-s -r "
 		0 "|BedroomProps_ceiling:Room" "|Background" "-s -r "
@@ -3165,19 +3186,89 @@ createNode reference -n "BedroomProps_ceilingRN";
 		0 "|BedroomProps_ceiling:Books" "|Props" "-s -r "
 		2 "|BedroomProps_ceiling:Skeleton:Skeleton_Asset" "visibility" " 0"
 		2 "|BedroomProps_ceiling:Nightcap" "visibility" " 0"
+		2 "BedroomProps_ceiling:desk:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Base_color.png\""
+		
+		2 "BedroomProps_ceiling:desk:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Mixed_AO.png\""
+		
+		2 "BedroomProps_ceiling:desk:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Metallic.png\""
+		
+		2 "BedroomProps_ceiling:desk:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Roughness.png\""
+		
+		2 "BedroomProps_ceiling:desk:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Normal_OpenGL.png\""
+		
 		2 "BedroomProps_ceiling:NightCap:Geo_Layer" "displayOrder" " 3"
 		2 "BedroomProps_ceiling:NightCap:Jnt_Layer" "displayOrder" " 9"
 		2 "BedroomProps_ceiling:NightCap:Ctrl_Layer" "displayOrder" " 15"
 		2 "BedroomProps_ceiling:NightCap:Loc_Layer" "displayOrder" " 21"
+		2 "BedroomProps_ceiling:NightCap:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
+		
+		2 "BedroomProps_ceiling:NightCap:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Normal.1001.png\""
+		
+		2 "BedroomProps_ceiling:NightCap:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
+		
 		2 "BedroomProps_ceiling:Knight_Retopo:Geo_Layer" "displayOrder" " 14"
 		2 "BedroomProps_ceiling:Knight_Retopo:Control_Layer" "displayOrder" " 2"
 		2 "BedroomProps_ceiling:Knight_Retopo:Skeleton_Layer" "displayOrder" " 8"
 		
 		2 "BedroomProps_ceiling:Knight_Retopo:Prop_Layer" "displayOrder" " 20"
+		2 "BedroomProps_ceiling:Knight_Retopo:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Knight Textures-20260331T144817Z-3-001/Knight Textures/Knight_SuperTemp_lambert1_BaseColor.1001.png\""
+		
+		2 "BedroomProps_ceiling:Knight_Retopo:file8" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Knight Textures-20260331T144817Z-3-001/Knight Textures/Knight_SuperTemp_lambert1_BaseColor.1001.png\""
+		
+		2 "BedroomProps_ceiling:Knight_Retopo:file9" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Knight Textures-20260331T144817Z-3-001/Knight Textures/Knight_Sword_lambert1_BaseColor.1001.png\""
+		
 		2 "BedroomProps_ceiling:Skeleton:Geo_Layer" "displayOrder" " 5"
 		2 "BedroomProps_ceiling:Skeleton:Jnt_Layer" "displayOrder" " 11"
 		2 "BedroomProps_ceiling:Skeleton:Ctrl_Layer" "displayOrder" " 17"
-		2 "BedroomProps_ceiling:Skeleton:Loc_Layer" "displayOrder" " 23";
+		2 "BedroomProps_ceiling:Skeleton:Loc_Layer" "displayOrder" " 23"
+		2 "BedroomProps_ceiling:Skeleton:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
+		
+		2 "BedroomProps_ceiling:Skeleton:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Normal.1001.png\""
+		
+		2 "BedroomProps_ceiling:Skeleton:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
+		
+		2 "BedroomProps_ceiling:NightCap1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_BaseColor.1001.png\""
+		
+		2 "BedroomProps_ceiling:NightCap1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Normal.1001.png\""
+		
+		2 "BedroomProps_ceiling:NightCap1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Skeleton Textures-20260329T015056Z-3-001/Skeleton Textures/SkellyTemp_Toes_lambert1_Roughness.1001.png\""
+		
+		2 "BedroomProps_ceiling:chestOfDrawers:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:chestOfDrawers:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Metallic.png\""
+		
+		2 "BedroomProps_ceiling:chestOfDrawers:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/ChestOfDrawers_Textures-20260326T052938Z-3-001/ChestOfDrawers_Textures/chestOfDrawers_standardSurface1_Roughness.png\""
+		
+		2 "BedroomProps_ceiling:calander:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/calendar/calendar/calendar_initialShadingGroup_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:Material_Ref:file11" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:Material_Ref:file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:Material_Ref:pasted__file12" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:Material_Ref:file13" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "BedroomProps_ceiling:Material_Ref:pasted__pasted__file12" "fileTextureName" 
+		" -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "BedroomProps_ceiling:desk1:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Base_color.png\""
+		
+		2 "BedroomProps_ceiling:desk1:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Mixed_AO.png\""
+		
+		2 "BedroomProps_ceiling:desk1:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Metallic.png\""
+		
+		2 "BedroomProps_ceiling:desk1:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/WoodenChestTextures/WoodenChestTextures/Desk_Roughness.png\""
+		
+		2 "BedroomProps_ceiling:desk1:file5" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/DeskTextures/Desk/Desk_Normal_OpenGL.png\""
+		
+		2 "BedroomProps_ceiling:file1" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/GrassyBonesPoster.png\""
+		
+		2 "BedroomProps_ceiling:file2" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/LividLovePoster.png\""
+		
+		2 "BedroomProps_ceiling:file3" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/BonesPoster.png\""
+		
+		2 "BedroomProps_ceiling:file4" "fileTextureName" " -type \"string\" \"D:/GithubStuff/University/LocalFiles/WorkDayShortfilmTextures/Textures/Textures/poster art/BewareOfTheMimicPoster.png\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "DoorRN";
@@ -3208,8 +3299,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 0;
-	setAttr -av -k on ".unw";
+	setAttr -k on ".o" 110;
+	setAttr -av -k on ".unw" 110;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
@@ -3278,11 +3369,14 @@ select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 	setAttr -s 17 ".r";
 select -ne :lightList1;
-	setAttr -s 8 ".l";
+	setAttr -s 9 ".l";
 select -ne :defaultTextureList1;
 	setAttr -s 213 ".tx";
 select -ne :standardSurface1;
 	setAttr ".sr" 0.40000000596046448;
+select -ne :openPBR_shader1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
+	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
 	setAttr -av -k on ".cch";
 	setAttr -k on ".fzn";
@@ -3438,7 +3532,7 @@ select -ne :defaultResolution;
 	setAttr -av -k on ".isu";
 	setAttr -av -k on ".pdu";
 select -ne :defaultLightSet;
-	setAttr -s 8 ".dsm";
+	setAttr -s 9 ".dsm";
 select -ne :defaultColorMgtGlobals;
 	setAttr ".cfe" yes;
 	setAttr ".cfp" -type "string" "<MAYA_RESOURCES>/OCIO-configs/Maya2022-default/config.ocio";
@@ -3763,6 +3857,8 @@ connectAttr "layerManager.dli[1]" "Background_Layer.id";
 connectAttr "NightCapRNfosterParent1.msg" "NightCapRN.fp";
 connectAttr "layerManager.dli[3]" "pasted__Background_Layer.id";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "aiAreaLightShape1.ltd" ":lightList1.l" -na;
 connectAttr "BaseboardsShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Baseboards1Shape.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "aiAreaLight1.iog" ":defaultLightSet.dsm" -na;
 // End of Shot#4(Josh).ma
