@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: SkellyPickingUpPhoto.ma
-//Last modified: Sat, Apr 04, 2026 05:31:48 PM
+//Last modified: Tue, Apr 07, 2026 01:03:55 AM
 //Codeset: 1252
 file -rdi 1 -ns "DragonGateCaveSet" -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 		 "mayaAscii" "C:/git/WorkDayShortFilmOfficialRepo/Maya//assets/environment/caveInterior/DragonGateCaveSet.ma";
@@ -31,8 +31,8 @@ file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "C:/g
 requires maya "2023";
 requires -nodeType "ikSpringSolver" "ikSpringSolver" "1.0";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
-		 "mtoa" "5.2.1.1";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
+		 -nodeType "aiImagerDenoiserOidn" "mtoa" "5.2.1.1";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -40,21 +40,21 @@ fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202405151550-05a853e76d";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 26200)";
-fileInfo "UUID" "8AB6B0DF-4FB0-3BB4-C4EE-4189721513C4";
+fileInfo "UUID" "C4F6A549-4E06-0F96-F633-32A233013BC1";
 createNode transform -s -n "persp";
 	rename -uid "AFC8EC40-45D7-8333-8D7A-9883F782C9BD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1135.0251892475096 326.6198106501368 2606.5999416760242 ;
-	setAttr ".r" -type "double3" -9.9383527280672741 -730.19999999998424 3.029651818935049e-16 ;
+	setAttr ".t" -type "double3" -1476.1228409053645 -372.95015603429516 796.17125138167273 ;
+	setAttr ".r" -type "double3" -8.7383527280573254 -875.39999999992153 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9CBAF172-4946-4FB1-3224-B98B697911F0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3231.3577253647318;
+	setAttr ".coi" 112.89288807010199;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -4.6671104431152344 61.531809666194022 -9.2314300537109375 ;
+	setAttr ".tp" -type "double3" -1455.7914904012246 -401.64415108966978 908.61192563592078 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "C513F849-4E53-1FD5-64E9-E48F41F7811A";
@@ -143,6 +143,7 @@ createNode mesh -n "Photograph_white_box_geoShape" -p "Photograph_white_box_geo"
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.49998817527666684 0.50110865564989904 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -166,20 +167,20 @@ createNode parentConstraint -n "Photograph_white_box_geo_parentConstraint1" -p "
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -15.981519400317893 -5.9812789839365337 0.47130275048016301 ;
 	setAttr ".tg[0].tor" -type "double3" 134.60162201515303 64.187104528172412 -29.735398992319826 ;
-	setAttr ".lr" -type "double3" -0.73323864329986721 8.4209904379952238 -20.898469896660899 ;
+	setAttr ".lr" -type "double3" -0.73323864329986377 8.4209904379952096 -20.898469896660906 ;
 	setAttr ".rst" -type "double3" -1469.4415945377916 -401.89716776057264 915.34587290772583 ;
 	setAttr ".rsrr" -type "double3" -0.070044692442533002 -9.6590893999949188 -1.5712055405057237 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "F4CE57BC-468D-74B0-C2BC-4F868725B3ED";
-	setAttr -s 81 ".lnk";
-	setAttr -s 81 ".slnk";
+	rename -uid "46801F7E-4032-F5B9-EB7D-AB8456596130";
+	setAttr -s 82 ".lnk";
+	setAttr -s 82 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8DB824A9-4AC2-9D10-7C3F-4897B24CEFA4";
+	rename -uid "64303BE7-41F3-742F-ADA3-BA8F180A616B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "A734DE46-4393-B34E-BB1F-D29C9F036567";
+	rename -uid "C510BD89-4213-C1B7-8A32-AD930AFB4896";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "76AD77AC-4C74-BDBF-D8E7-65BCDF9CD9B2";
+	rename -uid "1EB7CE4C-4324-BEF2-816A-87B46389A894";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
@@ -187,7 +188,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "720BF69B-4200-C212-2C84-3A8768EACBEA";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "2C0DA090-4FB2-4BA0-D6E8-D9A4E29DE394";
+	rename -uid "247CE894-4045-3FB0-431B-D9954FAEC6FE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "CDAAA94B-4054-83BD-1AA3-39900DEEF8B7";
 	setAttr ".g" yes;
@@ -206,7 +207,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 createNode reference -n "DragonGateCaveSetRN";
 	rename -uid "25386386-4E6D-E520-4C26-F7A2A67F1BE0";
-	setAttr -s 297 ".phl";
+	setAttr -s 296 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -503,7 +504,6 @@ createNode reference -n "DragonGateCaveSetRN";
 	setAttr ".phl[294]" 0;
 	setAttr ".phl[295]" 0;
 	setAttr ".phl[296]" 0;
-	setAttr ".phl[297]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DragonGateCaveSetRN"
 		"DragonGateCaveSet:DragonGateLightingRN" 0
@@ -519,77 +519,77 @@ createNode reference -n "DragonGateCaveSetRN";
 		"DragonGateCaveSetRN" 0
 		"DragonGateCaveSet:roundedRocksRN" 14
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[164]" ""
+		"DragonGateCaveSetRN.placeHolderList[163]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[165]" ""
+		"DragonGateCaveSetRN.placeHolderList[164]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[166]" ""
+		"DragonGateCaveSetRN.placeHolderList[165]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[167]" ""
+		"DragonGateCaveSetRN.placeHolderList[166]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[168]" ""
+		"DragonGateCaveSetRN.placeHolderList[167]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[169]" ""
+		"DragonGateCaveSetRN.placeHolderList[168]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[170]" ""
+		"DragonGateCaveSetRN.placeHolderList[169]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[171]" ""
+		"DragonGateCaveSetRN.placeHolderList[170]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[172]" ""
+		"DragonGateCaveSetRN.placeHolderList[171]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[173]" ""
+		"DragonGateCaveSetRN.placeHolderList[172]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[174]" ""
+		"DragonGateCaveSetRN.placeHolderList[173]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[175]" ""
+		"DragonGateCaveSetRN.placeHolderList[174]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[176]" ""
+		"DragonGateCaveSetRN.placeHolderList[175]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[177]" ""
+		"DragonGateCaveSetRN.placeHolderList[176]" ""
 		"DragonGateCaveSet:BonesRN" 9
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[178]" ""
+		"DragonGateCaveSetRN.placeHolderList[177]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[179]" ""
+		"DragonGateCaveSetRN.placeHolderList[178]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[180]" ""
+		"DragonGateCaveSetRN.placeHolderList[179]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[181]" ""
+		"DragonGateCaveSetRN.placeHolderList[180]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[182]" ""
+		"DragonGateCaveSetRN.placeHolderList[181]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[183]" ""
+		"DragonGateCaveSetRN.placeHolderList[182]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[184]" ""
+		"DragonGateCaveSetRN.placeHolderList[183]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[185]" ""
+		"DragonGateCaveSetRN.placeHolderList[184]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[186]" ""
+		"DragonGateCaveSetRN.placeHolderList[185]" ""
 		"DragonGateCaveSet:Stalagmite_2RN" 6
 		2 "|DragonGateCaveSet:Stalagmite_2:Stalagmite2" "translate" " -type \"double3\" 0 -434.47866634019493404 0"
 		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_2:Stalagmite2|DragonGateCaveSet:Stalagmite_2:Base.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[62]" ""
+		"DragonGateCaveSetRN.placeHolderList[61]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_2:Stalagmite2|DragonGateCaveSet:Stalagmite_2:MiddleRight.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[63]" ""
+		"DragonGateCaveSetRN.placeHolderList[62]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_2:Stalagmite2|DragonGateCaveSet:Stalagmite_2:TopLeft.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[64]" ""
+		"DragonGateCaveSetRN.placeHolderList[63]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_2:Stalagmite2|DragonGateCaveSet:Stalagmite_2:MidHighRight.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[65]" ""
+		"DragonGateCaveSetRN.placeHolderList[64]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_2:Stalagmite2|DragonGateCaveSet:Stalagmite_2:TopRight.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[66]" ""
+		"DragonGateCaveSetRN.placeHolderList[65]" ""
 		"DragonGateCaveSet:Stalagmite_1RN" 5
 		2 "|DragonGateCaveSet:Stalagmite_1:Staligmite1" "translate" " -type \"double3\" 0 -434.47866634019493404 0"
 		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_1:Staligmite1|DragonGateCaveSet:Stalagmite_1:Bottom.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[58]" ""
+		"DragonGateCaveSetRN.placeHolderList[57]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_1:Staligmite1|DragonGateCaveSet:Stalagmite_1:LowMid.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[59]" ""
+		"DragonGateCaveSetRN.placeHolderList[58]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_1:Staligmite1|DragonGateCaveSet:Stalagmite_1:HighMid.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[60]" ""
+		"DragonGateCaveSetRN.placeHolderList[59]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Stalagmite_1:Staligmite1|DragonGateCaveSet:Stalagmite_1:Top.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[61]" ""
-		"DragonGateCaveSet:DragonGateRN" 57
+		"DragonGateCaveSetRN.placeHolderList[60]" ""
+		"DragonGateCaveSet:DragonGateRN" 56
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2.drawOverride" 
@@ -702,433 +702,627 @@ createNode reference -n "DragonGateCaveSetRN";
 		"DragonGateCaveSetRN.placeHolderList[55]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[56]" ""
-		5 4 "DragonGateCaveSetRN" "DragonGateCaveSet:DragonGate:standardSurface1SG.dagSetMembers" 
-		"DragonGateCaveSetRN.placeHolderList[57]" ""
-		"DragonGateCaveSet:Emergency_ButtonRN" 3
+		"DragonGateCaveSet:Emergency_ButtonRN" 13
+		2 "DragonGateCaveSet:Emergency_Button:file1" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/EmergencyButton/Emergency_Button_Cover_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file1" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file2" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/EmergencyButton/Emergency_Button_ButtonBase_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file2" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file3" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/EmergencyButton/Emergency_Button_ButtonBase_Mat_Metallic.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file3" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file4" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/EmergencyButton/Emergency_Button_Button_Mat_BaseColor.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file4" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file5" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/EmergencyButton/Emergency_Button_Button_Mat_Metallic.1001.png\""
+		
+		2 "DragonGateCaveSet:Emergency_Button:file5" "colorSpace" " -type \"string\" \"sRGB\""
+		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[67]" ""
+		"DragonGateCaveSetRN.placeHolderList[66]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[68]" ""
+		"DragonGateCaveSetRN.placeHolderList[67]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[69]" ""
+		"DragonGateCaveSetRN.placeHolderList[68]" ""
+		"DragonGateCaveSet:Material_RefRN" 80
+		2 "DragonGateCaveSet:Material_Ref:file1" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Appartment_Floor/Appartemnt_Floor_Painted_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file1" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file2" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Appartment_Floor/Appartemnt_Floor_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file2" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file3" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Appartment_Floor/Appartemnt_Floor_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file3" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file4" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Appartment_Floor/Appartemnt_Floor_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file4" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file5" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Appartment_Floor/Appartemnt_Floor_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file5" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file1" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Plastered_Wall/Plastered_Wal_Paintedl_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file1" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file3" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Plastered_Wall/Plastered_Wall_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file3" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file2" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Plastered_Wall/Plastered_Wall_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file2" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file4" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Plastered_Wall/Plastered_Wall_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file4" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file6" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Plastered_Wall/Plastered_Wall_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file6" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file5" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Ground/Ground_Painted_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file5" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file7" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Ground/Ground_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file7" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file6" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Ground/Ground_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file6" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file8" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Ground/Ground_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file8" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file7" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Ground/Ground_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file7" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file1" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_2/Cave_Test_2_Painted_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file1" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file3" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_2/Cave_Test_2_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file3" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file2" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_2/Cave_Test_2_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file2" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file4" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_2/Cave_Test_2_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file4" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file8" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_2/Cave_Test_2_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file8" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file1" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_3/Cave_Test_3_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file1" "colorSpace" 
+		" -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file3" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_3/Cave_Test_3_ambientocclusion.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file3" "colorSpace" 
+		" -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file2" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_3/Cave_Test_3_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file2" "colorSpace" 
+		" -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file4" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_3/Cave_Test_3_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file4" "colorSpace" 
+		" -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:file9" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_3/Cave_Test_3_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file9" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file1" 
+		"fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_4/Cave_Test_4_basecolor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file1" 
+		"colorSpace" " -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file3" 
+		"fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_4/Cave_Test_4_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file3" 
+		"colorSpace" " -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file2" 
+		"fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_4/Cave_Test_4_roughness.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file2" 
+		"colorSpace" " -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file4" 
+		"fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_4/Cave_Test_4_normal.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__pasted__file4" 
+		"colorSpace" " -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:file10" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Cave_4/Cave_Test_4_height.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file10" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file11" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file11" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file12" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file12" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file12" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file12" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file13" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file13" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file12" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Generic_Wood/plane_divided_DefaultMaterial_BaseColor.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file12" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file13" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file13" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file13" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__file13" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file14" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Metallic.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:file14" "colorSpace" " -type \"string\" \"sRGB\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file13" "fileTextureName" 
+		" -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Base_color.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__pasted__pasted__file13" "colorSpace" 
+		" -type \"string\" \"sRGB\""
+		2 "DragonGateCaveSet:Material_Ref:pasted__file14" "fileTextureName" " -type \"string\" \"C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/Marble/DefaultMaterial_Metallic.png\""
+		
+		2 "DragonGateCaveSet:Material_Ref:pasted__file14" "colorSpace" " -type \"string\" \"sRGB\""
+		
 		"DragonGateCaveSet:DragonGateTorchRN" 93
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TorchBase.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[70]" ""
+		"DragonGateCaveSetRN.placeHolderList[69]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[71]" ""
+		"DragonGateCaveSetRN.placeHolderList[70]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:HookFrame02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[72]" ""
+		"DragonGateCaveSetRN.placeHolderList[71]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:Hook.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[73]" ""
+		"DragonGateCaveSetRN.placeHolderList[72]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[74]" ""
+		"DragonGateCaveSetRN.placeHolderList[73]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:BaseSphereDetail02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[75]" ""
+		"DragonGateCaveSetRN.placeHolderList[74]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:TopLoop.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[76]" ""
+		"DragonGateCaveSetRN.placeHolderList[75]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[77]" ""
+		"DragonGateCaveSetRN.placeHolderList[76]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[78]" ""
+		"DragonGateCaveSetRN.placeHolderList[77]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TopChain|DragonGateCaveSet:DragonGateTorch:Chain03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[79]" ""
+		"DragonGateCaveSetRN.placeHolderList[78]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[80]" ""
+		"DragonGateCaveSetRN.placeHolderList[79]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:MiddleLoop02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[81]" ""
+		"DragonGateCaveSetRN.placeHolderList[80]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[82]" ""
+		"DragonGateCaveSetRN.placeHolderList[81]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[83]" ""
+		"DragonGateCaveSetRN.placeHolderList[82]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[84]" ""
+		"DragonGateCaveSetRN.placeHolderList[83]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[85]" ""
+		"DragonGateCaveSetRN.placeHolderList[84]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[86]" ""
+		"DragonGateCaveSetRN.placeHolderList[85]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain02|DragonGateCaveSet:DragonGateTorch:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[87]" ""
+		"DragonGateCaveSetRN.placeHolderList[86]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[88]" ""
+		"DragonGateCaveSetRN.placeHolderList[87]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[89]" ""
+		"DragonGateCaveSetRN.placeHolderList[88]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[90]" ""
+		"DragonGateCaveSetRN.placeHolderList[89]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[91]" ""
+		"DragonGateCaveSetRN.placeHolderList[90]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[92]" ""
+		"DragonGateCaveSetRN.placeHolderList[91]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain03|DragonGateCaveSet:DragonGateTorch:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[93]" ""
+		"DragonGateCaveSetRN.placeHolderList[92]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[94]" ""
+		"DragonGateCaveSetRN.placeHolderList[93]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[95]" ""
+		"DragonGateCaveSetRN.placeHolderList[94]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[96]" ""
+		"DragonGateCaveSetRN.placeHolderList[95]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[97]" ""
+		"DragonGateCaveSetRN.placeHolderList[96]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[98]" ""
+		"DragonGateCaveSetRN.placeHolderList[97]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:MIddleChains|DragonGateCaveSet:DragonGateTorch:Chain04|DragonGateCaveSet:DragonGateTorch:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[99]" ""
+		"DragonGateCaveSetRN.placeHolderList[98]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[100]" ""
+		"DragonGateCaveSetRN.placeHolderList[99]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[101]" ""
+		"DragonGateCaveSetRN.placeHolderList[100]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[102]" ""
+		"DragonGateCaveSetRN.placeHolderList[101]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[103]" ""
+		"DragonGateCaveSetRN.placeHolderList[102]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[104]" ""
+		"DragonGateCaveSetRN.placeHolderList[103]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[105]" ""
+		"DragonGateCaveSetRN.placeHolderList[104]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[106]" ""
+		"DragonGateCaveSetRN.placeHolderList[105]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[107]" ""
+		"DragonGateCaveSetRN.placeHolderList[106]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[108]" ""
+		"DragonGateCaveSetRN.placeHolderList[107]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Wood10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[109]" ""
+		"DragonGateCaveSetRN.placeHolderList[108]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchBase.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[110]" ""
+		"DragonGateCaveSetRN.placeHolderList[109]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:TorchHolderRing02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[111]" ""
+		"DragonGateCaveSetRN.placeHolderList[110]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[112]" ""
+		"DragonGateCaveSetRN.placeHolderList[111]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[113]" ""
+		"DragonGateCaveSetRN.placeHolderList[112]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[114]" ""
+		"DragonGateCaveSetRN.placeHolderList[113]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[115]" ""
+		"DragonGateCaveSetRN.placeHolderList[114]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[116]" ""
+		"DragonGateCaveSetRN.placeHolderList[115]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[117]" ""
+		"DragonGateCaveSetRN.placeHolderList[116]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[118]" ""
+		"DragonGateCaveSetRN.placeHolderList[117]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[119]" ""
+		"DragonGateCaveSetRN.placeHolderList[118]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[120]" ""
+		"DragonGateCaveSetRN.placeHolderList[119]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[121]" ""
+		"DragonGateCaveSetRN.placeHolderList[120]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[122]" ""
+		"DragonGateCaveSetRN.placeHolderList[121]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[123]" ""
+		"DragonGateCaveSetRN.placeHolderList[122]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[124]" ""
+		"DragonGateCaveSetRN.placeHolderList[123]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[125]" ""
+		"DragonGateCaveSetRN.placeHolderList[124]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[126]" ""
+		"DragonGateCaveSetRN.placeHolderList[125]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[127]" ""
+		"DragonGateCaveSetRN.placeHolderList[126]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[128]" ""
+		"DragonGateCaveSetRN.placeHolderList[127]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[129]" ""
+		"DragonGateCaveSetRN.placeHolderList[128]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[130]" ""
+		"DragonGateCaveSetRN.placeHolderList[129]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[131]" ""
+		"DragonGateCaveSetRN.placeHolderList[130]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[132]" ""
+		"DragonGateCaveSetRN.placeHolderList[131]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[133]" ""
+		"DragonGateCaveSetRN.placeHolderList[132]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SquareDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[134]" ""
+		"DragonGateCaveSetRN.placeHolderList[133]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsTop|DragonGateCaveSet:DragonGateTorch:SphereDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[135]" ""
+		"DragonGateCaveSetRN.placeHolderList[134]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[136]" ""
+		"DragonGateCaveSetRN.placeHolderList[135]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[137]" ""
+		"DragonGateCaveSetRN.placeHolderList[136]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[138]" ""
+		"DragonGateCaveSetRN.placeHolderList[137]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[139]" ""
+		"DragonGateCaveSetRN.placeHolderList[138]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[140]" ""
+		"DragonGateCaveSetRN.placeHolderList[139]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[141]" ""
+		"DragonGateCaveSetRN.placeHolderList[140]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[142]" ""
+		"DragonGateCaveSetRN.placeHolderList[141]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[143]" ""
+		"DragonGateCaveSetRN.placeHolderList[142]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[144]" ""
+		"DragonGateCaveSetRN.placeHolderList[143]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[145]" ""
+		"DragonGateCaveSetRN.placeHolderList[144]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[146]" ""
+		"DragonGateCaveSetRN.placeHolderList[145]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SquareDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[147]" ""
+		"DragonGateCaveSetRN.placeHolderList[146]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[148]" ""
+		"DragonGateCaveSetRN.placeHolderList[147]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[149]" ""
+		"DragonGateCaveSetRN.placeHolderList[148]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[150]" ""
+		"DragonGateCaveSetRN.placeHolderList[149]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[151]" ""
+		"DragonGateCaveSetRN.placeHolderList[150]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[152]" ""
+		"DragonGateCaveSetRN.placeHolderList[151]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[153]" ""
+		"DragonGateCaveSetRN.placeHolderList[152]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[154]" ""
+		"DragonGateCaveSetRN.placeHolderList[153]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[155]" ""
+		"DragonGateCaveSetRN.placeHolderList[154]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[156]" ""
+		"DragonGateCaveSetRN.placeHolderList[155]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[157]" ""
+		"DragonGateCaveSetRN.placeHolderList[156]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[158]" ""
+		"DragonGateCaveSetRN.placeHolderList[157]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:HolderDetailsBottom|DragonGateCaveSet:DragonGateTorch:SphereDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[159]" ""
+		"DragonGateCaveSetRN.placeHolderList[158]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[160]" ""
+		"DragonGateCaveSetRN.placeHolderList[159]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[161]" ""
+		"DragonGateCaveSetRN.placeHolderList[160]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[162]" ""
+		"DragonGateCaveSetRN.placeHolderList[161]" ""
 		"DragonGateCaveSet:Large_BoulderRN" 2
 		2 "|DragonGateCaveSet:Large_Boulder:LargeBoulder" "translate" " -type \"double3\" 0 -434.47866634019493404 0"
 		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Large_Boulder:LargeBoulder.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[163]" ""
+		"DragonGateCaveSetRN.placeHolderList[162]" ""
 		"DragonGateCaveSetRN" 112
 		2 "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07" "translate" 
 		" -type \"double3\" 455.56190178272009916 -573.90294464896078352 -589.05194234066323133"
 		
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Walls_03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[187]" ""
+		"DragonGateCaveSetRN.placeHolderList[186]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:CaveWall_03|DragonGateCaveSet:Ground03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[188]" ""
+		"DragonGateCaveSetRN.placeHolderList[187]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[189]" ""
+		"DragonGateCaveSetRN.placeHolderList[188]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[190]" ""
+		"DragonGateCaveSetRN.placeHolderList[189]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[191]" ""
+		"DragonGateCaveSetRN.placeHolderList[190]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_02|DragonGateCaveSet:pCube4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[192]" ""
+		"DragonGateCaveSetRN.placeHolderList[191]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TorchBase.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[193]" ""
+		"DragonGateCaveSetRN.placeHolderList[192]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[194]" ""
+		"DragonGateCaveSetRN.placeHolderList[193]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:HookFrame02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[195]" ""
+		"DragonGateCaveSetRN.placeHolderList[194]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:Hook.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[196]" ""
+		"DragonGateCaveSetRN.placeHolderList[195]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[197]" ""
+		"DragonGateCaveSetRN.placeHolderList[196]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:BaseSphereDetail02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[198]" ""
+		"DragonGateCaveSetRN.placeHolderList[197]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:TopLoop.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[199]" ""
+		"DragonGateCaveSetRN.placeHolderList[198]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[200]" ""
+		"DragonGateCaveSetRN.placeHolderList[199]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[201]" ""
+		"DragonGateCaveSetRN.placeHolderList[200]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:WallBase|DragonGateCaveSet:TopChain|DragonGateCaveSet:Chain03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[202]" ""
+		"DragonGateCaveSetRN.placeHolderList[201]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[203]" ""
+		"DragonGateCaveSetRN.placeHolderList[202]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:MiddleLoop02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[204]" ""
+		"DragonGateCaveSetRN.placeHolderList[203]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[205]" ""
+		"DragonGateCaveSetRN.placeHolderList[204]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[206]" ""
+		"DragonGateCaveSetRN.placeHolderList[205]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[207]" ""
+		"DragonGateCaveSetRN.placeHolderList[206]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[208]" ""
+		"DragonGateCaveSetRN.placeHolderList[207]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[209]" ""
+		"DragonGateCaveSetRN.placeHolderList[208]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain02|DragonGateCaveSet:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[210]" ""
+		"DragonGateCaveSetRN.placeHolderList[209]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[211]" ""
+		"DragonGateCaveSetRN.placeHolderList[210]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[212]" ""
+		"DragonGateCaveSetRN.placeHolderList[211]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[213]" ""
+		"DragonGateCaveSetRN.placeHolderList[212]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[214]" ""
+		"DragonGateCaveSetRN.placeHolderList[213]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[215]" ""
+		"DragonGateCaveSetRN.placeHolderList[214]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain03|DragonGateCaveSet:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[216]" ""
+		"DragonGateCaveSetRN.placeHolderList[215]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[217]" ""
+		"DragonGateCaveSetRN.placeHolderList[216]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[218]" ""
+		"DragonGateCaveSetRN.placeHolderList[217]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[219]" ""
+		"DragonGateCaveSetRN.placeHolderList[218]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[220]" ""
+		"DragonGateCaveSetRN.placeHolderList[219]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[221]" ""
+		"DragonGateCaveSetRN.placeHolderList[220]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:MIddleChains|DragonGateCaveSet:Chain04|DragonGateCaveSet:Chain09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[222]" ""
+		"DragonGateCaveSetRN.placeHolderList[221]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[223]" ""
+		"DragonGateCaveSetRN.placeHolderList[222]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[224]" ""
+		"DragonGateCaveSetRN.placeHolderList[223]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood03.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[225]" ""
+		"DragonGateCaveSetRN.placeHolderList[224]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[226]" ""
+		"DragonGateCaveSetRN.placeHolderList[225]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[227]" ""
+		"DragonGateCaveSetRN.placeHolderList[226]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[228]" ""
+		"DragonGateCaveSetRN.placeHolderList[227]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[229]" ""
+		"DragonGateCaveSetRN.placeHolderList[228]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood08.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[230]" ""
+		"DragonGateCaveSetRN.placeHolderList[229]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood09.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[231]" ""
+		"DragonGateCaveSetRN.placeHolderList[230]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Wood10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[232]" ""
+		"DragonGateCaveSetRN.placeHolderList[231]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchBase.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[233]" ""
+		"DragonGateCaveSetRN.placeHolderList[232]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:TorchHolderRing02.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[234]" ""
+		"DragonGateCaveSetRN.placeHolderList[233]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[235]" ""
+		"DragonGateCaveSetRN.placeHolderList[234]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[236]" ""
+		"DragonGateCaveSetRN.placeHolderList[235]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[237]" ""
+		"DragonGateCaveSetRN.placeHolderList[236]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[238]" ""
+		"DragonGateCaveSetRN.placeHolderList[237]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[239]" ""
+		"DragonGateCaveSetRN.placeHolderList[238]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[240]" ""
+		"DragonGateCaveSetRN.placeHolderList[239]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[241]" ""
+		"DragonGateCaveSetRN.placeHolderList[240]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[242]" ""
+		"DragonGateCaveSetRN.placeHolderList[241]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[243]" ""
+		"DragonGateCaveSetRN.placeHolderList[242]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[244]" ""
+		"DragonGateCaveSetRN.placeHolderList[243]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[245]" ""
+		"DragonGateCaveSetRN.placeHolderList[244]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[246]" ""
+		"DragonGateCaveSetRN.placeHolderList[245]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[247]" ""
+		"DragonGateCaveSetRN.placeHolderList[246]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[248]" ""
+		"DragonGateCaveSetRN.placeHolderList[247]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[249]" ""
+		"DragonGateCaveSetRN.placeHolderList[248]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[250]" ""
+		"DragonGateCaveSetRN.placeHolderList[249]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[251]" ""
+		"DragonGateCaveSetRN.placeHolderList[250]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[252]" ""
+		"DragonGateCaveSetRN.placeHolderList[251]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[253]" ""
+		"DragonGateCaveSetRN.placeHolderList[252]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[254]" ""
+		"DragonGateCaveSetRN.placeHolderList[253]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[255]" ""
+		"DragonGateCaveSetRN.placeHolderList[254]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[256]" ""
+		"DragonGateCaveSetRN.placeHolderList[255]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SquareDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[257]" ""
+		"DragonGateCaveSetRN.placeHolderList[256]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsTop|DragonGateCaveSet:SphereDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[258]" ""
+		"DragonGateCaveSetRN.placeHolderList[257]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[259]" ""
+		"DragonGateCaveSetRN.placeHolderList[258]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[260]" ""
+		"DragonGateCaveSetRN.placeHolderList[259]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[261]" ""
+		"DragonGateCaveSetRN.placeHolderList[260]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[262]" ""
+		"DragonGateCaveSetRN.placeHolderList[261]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[263]" ""
+		"DragonGateCaveSetRN.placeHolderList[262]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[264]" ""
+		"DragonGateCaveSetRN.placeHolderList[263]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[265]" ""
+		"DragonGateCaveSetRN.placeHolderList[264]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[266]" ""
+		"DragonGateCaveSetRN.placeHolderList[265]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[267]" ""
+		"DragonGateCaveSetRN.placeHolderList[266]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[268]" ""
+		"DragonGateCaveSetRN.placeHolderList[267]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[269]" ""
+		"DragonGateCaveSetRN.placeHolderList[268]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SquareDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[270]" ""
+		"DragonGateCaveSetRN.placeHolderList[269]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail11.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[271]" ""
+		"DragonGateCaveSetRN.placeHolderList[270]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail10.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[272]" ""
+		"DragonGateCaveSetRN.placeHolderList[271]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail9.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[273]" ""
+		"DragonGateCaveSetRN.placeHolderList[272]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail8.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[274]" ""
+		"DragonGateCaveSetRN.placeHolderList[273]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail7.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[275]" ""
+		"DragonGateCaveSetRN.placeHolderList[274]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail6.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[276]" ""
+		"DragonGateCaveSetRN.placeHolderList[275]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[277]" ""
+		"DragonGateCaveSetRN.placeHolderList[276]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[278]" ""
+		"DragonGateCaveSetRN.placeHolderList[277]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[279]" ""
+		"DragonGateCaveSetRN.placeHolderList[278]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[280]" ""
+		"DragonGateCaveSetRN.placeHolderList[279]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[281]" ""
+		"DragonGateCaveSetRN.placeHolderList[280]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:HolderDetailsBottom|DragonGateCaveSet:SphereDetail.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[282]" ""
+		"DragonGateCaveSetRN.placeHolderList[281]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop04.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[283]" ""
+		"DragonGateCaveSetRN.placeHolderList[282]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop05.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[284]" ""
+		"DragonGateCaveSetRN.placeHolderList[283]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:DragonGateTorch1|DragonGateCaveSet:TorchHolder|DragonGateCaveSet:Loop06.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[285]" ""
+		"DragonGateCaveSetRN.placeHolderList[284]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_03|DragonGateCaveSet:pCube5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[286]" ""
+		"DragonGateCaveSetRN.placeHolderList[285]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[287]" ""
+		"DragonGateCaveSetRN.placeHolderList[286]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_02_04|DragonGateCaveSet:pCube5.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[288]" ""
+		"DragonGateCaveSetRN.placeHolderList[287]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_04|DragonGateCaveSet:pCube4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[289]" ""
+		"DragonGateCaveSetRN.placeHolderList[288]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[290]" ""
+		"DragonGateCaveSetRN.placeHolderList[289]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[291]" ""
+		"DragonGateCaveSetRN.placeHolderList[290]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[292]" ""
+		"DragonGateCaveSetRN.placeHolderList[291]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_06|DragonGateCaveSet:pCube4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[293]" ""
+		"DragonGateCaveSetRN.placeHolderList[292]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube1.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[294]" ""
+		"DragonGateCaveSetRN.placeHolderList[293]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube2.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[295]" ""
+		"DragonGateCaveSetRN.placeHolderList[294]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[296]" ""
+		"DragonGateCaveSetRN.placeHolderList[295]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:CaveSet|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube4.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[297]" "";
+		"DragonGateCaveSetRN.placeHolderList[296]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
@@ -2016,15 +2210,15 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Render_Cam_2\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2351\n            -height 1480\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2350\n            -height 1480\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
 		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n"
 		+ "            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|Render_Cam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
 		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
 		+ "            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1171\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
-		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
+		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
+		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
 		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1170\n            -height 695\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
@@ -2053,8 +2247,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
 		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam_2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2351\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam_2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2351\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam_2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2350\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|Render_Cam_2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2350\\n    -height 1480\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -3101,9 +3295,79 @@ createNode animCurveTA -n "Mouth_Ctrl_rotateZ";
 	setAttr -s 3 ".kiy[1:2]"  0 0;
 createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
 	rename -uid "817ACA3A-455B-DC17-9DD7-E0A85EED7464";
+createNode aiStandardSurface -n "SkellyDadPhotoMat";
+	rename -uid "28448E1A-471C-EAEF-11C0-87BBCF7D8457";
+createNode shadingEngine -n "aiStandardSurface1SG";
+	rename -uid "8B1F7DFA-4B1A-D657-60DF-3DAD2D1442FF";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo1";
+	rename -uid "00797AC3-4660-FFB1-9D9D-75B2C8512A9F";
+createNode file -n "file1";
+	rename -uid "2C8582D7-4472-FBE7-82B6-7ABCCD2BDF44";
+	setAttr ".ftn" -type "string" "C:/Users/joshr/OneDrive/Desktop/WorkDayTextures/Textures-20260401T020828Z-3-001/Textures/SkellyDadPhoto/SkellyDadPhotoWithBorder(Writing)_BaseColor.png";
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "place2dTexture1";
+	rename -uid "E958D228-430B-A0E6-56F9-7DB8E00D4E86";
+createNode polyPlanarProj -n "polyPlanarProj1";
+	rename -uid "C672F65B-4645-2D4F-9490-CDA7EBF126B2";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 1 "f[0:99]";
+	setAttr ".ix" -type "matrix" 7.9240759522725712 -3.0256678945368045 -1.2556996548015591 0
+		 4.876362420390346 12.84313428872842 -0.17392128110767194 0 2.0001769691154045 -0.56991557784930702 13.995328756006627 0
+		 -1455.7914904012246 -401.64415108966978 908.61192563592078 1;
+	setAttr ".ws" yes;
+	setAttr ".pc" -type "double3" -1455.79150390625 -401.64407348632812 908.61187744140625 ;
+	setAttr ".ro" -type "double3" -43.538357874388147 81.400000742057586 -3.4145923532388112e-06 ;
+	setAttr ".ps" -type "double2" 15.965383903249403 10.678102415786952 ;
+	setAttr ".per" yes;
+	setAttr ".cam" -type "matrix" 0.29076316952705383 -1.3484303951263428 -0.71677714586257935 -0.71676278114318848
+		 8.2900616707770758e-17 1.4351822137832642 -0.68885374069213867 -0.68883997201919556
+		 -1.9225819110870361 -0.20393091440200806 -0.10840234905481339 -0.10840018093585968
+		 2170.17138671875 -1201.306884765625 -1183.7379150390625 -1183.5142822265625;
+	setAttr ".prgt" 1680;
+	setAttr ".ptop" 1650;
+createNode polyTweakUV -n "polyTweakUV1";
+	rename -uid "77C1EB60-4EFA-E66C-E12E-F5B9A5C59F45";
+	setAttr ".uopa" yes;
+	setAttr -s 121 ".uvtk[0:120]" -type "float2" 0.0012633204 0.5025965 -0.0095078805
+		 0.44829684 0.0031119883 0.42945504 0.014586538 0.48425084 -0.020478437 0.39481789
+		 -0.0085686594 0.37548357 -0.031637836 0.3421846 -0.020461999 0.32238132 -0.043007214
+		 0.29045945 -0.032573536 0.27009851 -0.05459227 0.23959361 -0.044913042 0.21872692
+		 -0.066391766 0.18969564 -0.057483707 0.16825588 -0.078415528 0.14071114 -0.070287064
+		 0.11872941 -0.090669475 0.092730552 -0.08333464 0.070166767 -0.10316531 0.045760114
+		 -0.096637681 0.022584274 -0.11590151 -0.00018072128 -0.11019492 -0.023982696 0.016884349
+		 0.41086298 0.029049389 0.46611345 0.0045052692 0.35644591 -0.0080976412 0.30281061
+		 -0.020930018 0.25004736 -0.03399894 0.19814314 -0.047313992 0.14714383 -0.060878698
+		 0.097032979 -0.074696839 0.047918271 -0.088778853 -0.00027432386 -0.10313299 -0.047414638
+		 0.031789687 0.39252335 0.044619288 0.44822794 0.018731408 0.33761066 0.0054391846
+		 0.28351921 -0.0080982819 0.23024769 -0.021878581 0.17784236 -0.035917018 0.12629987
+		 -0.050213937 0.07567966 -0.064778879 0.025968812 -0.079624966 -0.022782033 -0.094751224
+		 -0.070540018 0.047801759 0.37443322 0.061277416 0.43057102 0.034083929 0.31907201
+		 0.020116797 0.26447976 0.0059031174 0.21074675 -0.0085697845 0.15781175 -0.023314666
+		 0.10578191 -0.038320933 0.054608304 -0.05361617 0.0043514008 -0.069194928 -0.044956442
+		 -0.085071638 -0.093310297 0.064896435 0.35659653 0.079008088 0.41318738 0.050535765
+		 0.30075604 0.03592163 0.24574028 0.021041384 0.19148569 0.0058973655 0.13808383 -0.0095223272
+		 0.085530162 -0.025230628 0.033836562 -0.041225228 -0.016949488 -0.057524603 -0.066824943
+		 -0.074127212 -0.11577273 0.083054796 0.33896923 0.097786382 0.39598882 0.068071038
+		 0.28271151 0.052822139 0.22719626 0.037299778 0.17249797 0.021502994 0.11861138 0.0054188594
+		 0.065546915 -0.010957457 0.013334863 -0.027641039 -0.03797688 -0.044629727 -0.088403076
+		 -0.061941549 -0.1378852 0.10226245 0.32158601 0.11758722 0.37903297 0.086666539 0.2648797
+		 0.070802957 0.20894243 0.054657843 0.15376998 0.038226511 0.099407524 0.021499835
+		 0.045849066 0.0044680461 -0.006848664 -0.012881614 -0.058700088 -0.030546106 -0.10965806
+		 -0.048538242 -0.15969118 0.12248911 0.30444932 0.1383975 0.36229479 0.10630824 0.24731058
+		 0.089840248 0.19090481 0.073093027 0.13530515 0.056041386 0.080459803 0.038687136
+		 0.026439011 0.021022281 -0.026773501 0.0030259714 -0.079131491 -0.015290596 -0.13060461
+		 -0.033946965 -0.18118139 0.14372246 0.28751725 0.16020314 0.34579086 0.12696564 0.22994502
+		 0.10992093 0.17314793 0.092578724 0.11707045 0.074930221 0.061770421 0.056970026
+		 0.0072733583 0.038682427 -0.046421867 0.020070275 -0.099285424 0.0011143312 -0.15127632
+		 -0.018191971 -0.20240834 0.16594402 0.27079237 0.18297379 0.32946604 0.14863048 0.212833
+		 0.13101925 0.15557803 0.11309732 0.099068254 0.094868377 0.043327387 0.076315477
+		 -0.011645764 0.057434764 -0.065822721 0.038210895 -0.11914948 0.018636905 -0.17167094
+		 -0.001289228 -0.2233016;
 select -ne :time1;
-	setAttr ".o" 61;
-	setAttr ".unw" 61;
+	setAttr ".o" 120;
+	setAttr ".unw" 120;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -3111,20 +3375,20 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 81 ".st";
+	setAttr -s 82 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 50 ".s";
+	setAttr -s 51 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 110 ".u";
+	setAttr -s 111 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 13 ".r";
 select -ne :lightList1;
 	setAttr -s 11 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 87 ".tx";
+	setAttr -s 88 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -s 42 ".dsm";
 	setAttr ".ro" yes;
@@ -3153,6 +3417,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
+connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[163]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[164]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[165]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[166]";
@@ -3175,16 +3440,15 @@ connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[182]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[183]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[184]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[185]";
-connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[186]";
+connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[61]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[62]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[63]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[64]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[65]";
-connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[66]";
+connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[57]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[58]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[59]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[60]";
-connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[61]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[1]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[2]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[3]";
@@ -3241,7 +3505,7 @@ connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[53]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[54]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[55]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[56]";
-connectAttr "Photograph_white_box_geoShape.iog" "DragonGateCaveSetRN.phl[57]";
+connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[66]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[67]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[68]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[69]";
@@ -3338,7 +3602,7 @@ connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[159]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[160]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[161]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[162]";
-connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[163]";
+connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[186]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[187]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[188]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[189]";
@@ -3449,7 +3713,6 @@ connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[293]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[294]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[295]";
 connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[296]";
-connectAttr "Background_Layer.di" "DragonGateCaveSetRN.phl[297]";
 connectAttr "COG_Ctrl_translateX.o" "SkeletonRN.phl[1]";
 connectAttr "COG_Ctrl_translateY.o" "SkeletonRN.phl[2]";
 connectAttr "COG_Ctrl_translateZ.o" "SkeletonRN.phl[3]";
@@ -3676,8 +3939,11 @@ connectAttr "Photograph_white_box_geo_parentConstraint1.cry" "Photograph_white_b
 		;
 connectAttr "Photograph_white_box_geo_parentConstraint1.crz" "Photograph_white_box_geo.rz"
 		;
-connectAttr "polyPlane1.out" "Photograph_white_box_geoShape.i";
+connectAttr "polyTweakUV1.out" "Photograph_white_box_geoShape.i";
+connectAttr "polyTweakUV1.uvtk[0]" "Photograph_white_box_geoShape.uvst[0].uvtw";
 connectAttr "Photograph_white_box_geo_parentConstraint1.w0" "Photograph_white_box_geo_parentConstraint1.tg[0].tw"
+		;
+connectAttr "Photograph_white_box_geo_parentConstraint1_R_Arm_03_FK_CtrlW0.o" "Photograph_white_box_geo_parentConstraint1.w0"
 		;
 connectAttr "Photograph_white_box_geo.ro" "Photograph_white_box_geo_parentConstraint1.cro"
 		;
@@ -3687,12 +3953,12 @@ connectAttr "Photograph_white_box_geo.rp" "Photograph_white_box_geo_parentConstr
 		;
 connectAttr "Photograph_white_box_geo.rpt" "Photograph_white_box_geo_parentConstraint1.crt"
 		;
-connectAttr "Photograph_white_box_geo_parentConstraint1_R_Arm_03_FK_CtrlW0.o" "Photograph_white_box_geo_parentConstraint1.w0"
-		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
@@ -3700,5 +3966,40 @@ connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drive
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "layerManager.dli[1]" "Background_Layer.id";
+connectAttr "file1.oc" "SkellyDadPhotoMat.base_color";
+connectAttr "SkellyDadPhotoMat.out" "aiStandardSurface1SG.ss";
+connectAttr "Photograph_white_box_geoShape.iog" "aiStandardSurface1SG.dsm" -na;
+connectAttr "aiStandardSurface1SG.msg" "materialInfo1.sg";
+connectAttr "SkellyDadPhotoMat.msg" "materialInfo1.m";
+connectAttr "file1.msg" "materialInfo1.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "file1.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file1.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file1.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file1.ws";
+connectAttr "place2dTexture1.c" "file1.c";
+connectAttr "place2dTexture1.tf" "file1.tf";
+connectAttr "place2dTexture1.rf" "file1.rf";
+connectAttr "place2dTexture1.mu" "file1.mu";
+connectAttr "place2dTexture1.mv" "file1.mv";
+connectAttr "place2dTexture1.s" "file1.s";
+connectAttr "place2dTexture1.wu" "file1.wu";
+connectAttr "place2dTexture1.wv" "file1.wv";
+connectAttr "place2dTexture1.re" "file1.re";
+connectAttr "place2dTexture1.of" "file1.of";
+connectAttr "place2dTexture1.r" "file1.ro";
+connectAttr "place2dTexture1.n" "file1.n";
+connectAttr "place2dTexture1.vt1" "file1.vt1";
+connectAttr "place2dTexture1.vt2" "file1.vt2";
+connectAttr "place2dTexture1.vt3" "file1.vt3";
+connectAttr "place2dTexture1.vc1" "file1.vc1";
+connectAttr "place2dTexture1.o" "file1.uv";
+connectAttr "place2dTexture1.ofs" "file1.fs";
+connectAttr "polyPlane1.out" "polyPlanarProj1.ip";
+connectAttr "Photograph_white_box_geoShape.wm" "polyPlanarProj1.mp";
+connectAttr "polyPlanarProj1.out" "polyTweakUV1.ip";
+connectAttr "aiStandardSurface1SG.pa" ":renderPartition.st" -na;
+connectAttr "SkellyDadPhotoMat.msg" ":defaultShaderList1.s" -na;
+connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
+connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
 // End of SkellyPickingUpPhoto.ma
